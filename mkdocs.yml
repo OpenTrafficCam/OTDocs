@@ -1,0 +1,86 @@
+site_name: OpenTrafficCam Documentation
+
+theme:
+  name: material
+  custom_dir: overrides
+  palette:
+    scheme: default
+  font: false
+  language: en
+  logo: assets/OTC_icon_white.svg
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
+    # - navigation.sections
+    - navigation.expands
+    # - search.suggest
+    # - search.highlight
+  icon:
+    repo: fontawesome/brands/github
+
+nav:
+  - Overview:
+    - overview/index.md
+    - What it does: overview/whatitdoes.md
+    - How it works: overview/howitworks.md
+    - Data Structures: overview/datastructures.md
+  - OTCamera:
+    - OTCamera/index.md
+    - In a Nutshell: OTCamera/nutshell.md
+  - OTVision:
+    - OTVision/index.md
+    - In a Nutshell: OTVision/nutshell.md
+  - OTAnalytics:
+    - OTAnalytics/index.md
+    - In a Nutshell: OTAnalytics/nutshell.md
+  - OTLabels:
+    - OTLabels/index.md
+    - In a Nutshell: OTLabels/nutshell.md
+    - Annotation:
+      - OTLabels/annotation/index.md
+      - Extend Coco Dataset: OTLabels/annotation/extend-coco.md
+    - Training:
+      - OTLabels/training/index.md
+  - Contribute:
+      - GitHub: contribute/github.md
+      - Coding: contribute/coding.md
+      - GUI: contribute/gui.md
+      - VS Code: contribute/vscode.md
+      - OTCamera: contribute/otcamera.md
+
+extra_css:
+  - stylesheets/color.css
+  - stylesheets/fonts.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/opentrafficcam
+      name: OpenTrafficCam on LinkedIn
+    - icon: fontawesome/brands/github
+      link: https://github.com/OpenTrafficCam
+      name: OpenTrafficCam on GitHub
+
+copyright: Copyright &copy; 2020 - 2021 OpenTrafficCam Contributors
+repo_url: https://github.com/OpenTrafficCam/OTDocs
+repo_name: OpenTrafficCam/OTDocs
+edit_uri: edit/master/docs/
+
+markdown_extensions:
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - admonition
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.keys
+  # - meta
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      fallback_to_build_date: true
+      type: iso_datetime
+      timezone: Europe/Berlin
