@@ -1,4 +1,4 @@
-# In a nutshell
+# In a Nutshell
 
 > Giving the data a meaning.
 
