@@ -21,33 +21,29 @@ theme:
 
 nav:
   - Overview:
-    - overview/index.md
-    - What it does: overview/whatitdoes.md
-    - How it works: overview/howitworks.md
+    - Welcome: index.md
+    - What it Does: overview/whatitdoes.md
+    - How it Works: overview/howitworks.md
     - Data Structures: overview/datastructures.md
   - OTCamera:
     - OTCamera/index.md
-    - In a Nutshell: OTCamera/nutshell.md
   - OTVision:
     - OTVision/index.md
-    - In a Nutshell: OTVision/nutshell.md
   - OTAnalytics:
     - OTAnalytics/index.md
-    - In a Nutshell: OTAnalytics/nutshell.md
   - OTLabels:
     - OTLabels/index.md
-    - In a Nutshell: OTLabels/nutshell.md
     - Annotation:
       - OTLabels/annotation/index.md
-      - Extend Coco Dataset: OTLabels/annotation/extend-coco.md
+      - OTLabels/annotation/extend-coco.md
     - Training:
       - OTLabels/training/index.md
   - Contribute:
-      - GitHub: contribute/github.md
-      - Coding: contribute/coding.md
-      - GUI: contribute/gui.md
-      - VS Code: contribute/vscode.md
-      - OTCamera: contribute/otcamera.md
+      - contribute/github.md
+      - contribute/coding.md
+      - contribute/gui.md
+      - contribute/vscode.md
+      - contribute/otcamera.md
 
 extra_css:
   - stylesheets/color.css
@@ -82,5 +78,5 @@ plugins:
   - search
   - git-revision-date-localized:
       fallback_to_build_date: true
-      type: iso_datetime
+      type: date
       timezone: Europe/Berlin

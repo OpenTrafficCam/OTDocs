@@ -1,6 +1,6 @@
-# Welcome to Open**Traffic**Cam
+# Welcome to OpenTrafficCam
 
-OpenTrafficCam makes traffic detection easier, faster and more efficient.
+> OpenTrafficCam makes traffic detection easier, faster and more efficient.
 
 Check out our [github page](https://github.com/OpenTrafficCam) for more information.
 
