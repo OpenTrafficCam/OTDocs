@@ -1,4 +1,5 @@
 # In a Nutshell
+
 > The heart of OpenTraffic.
 
 [**OTCamera**](https://github.com/OpenTrafficCam/OTCamera) is a prototype of a mobile camera system for capturing traffic videos.
@@ -10,9 +11,10 @@ Key features:
 * Operation with buttons and/or smartphone
 * Continuous recording over one week
 * Privacy compliant recording
-* Under 400 € per camera system 
+* Under 400 € per camera system
 
 We provide:
+
 * List of hardware components (and where to purchase them)
 * Software needed for video capturing and camera calibration
 * Instructions for assembling the hardware and installing the software
