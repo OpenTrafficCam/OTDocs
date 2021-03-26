@@ -8,37 +8,44 @@ The documentation is fully written in [Markdown](https://python-markdown.github.
 
 ## Contribute
 
-You can update or correct the content of this documentation by editing existing markdown files in the "docs" folder (e.g. directly on Github or using an IDE like VS Code). You can also create new pages by creating new markdown files. In this case you also have to add the new page to the navigation structure in ```mkdocs.yml```. There you can also change settings for the theme.
+You can update or correct the content of this documentation by editing existing or creating new markdown files in ```/docs``` (e.g. directly on Github or using an IDE like VS Code).
+A new page needs to be added to the navigation structure in ```mkdocs.yml```.
+It includes also all settings for the theme.
 
-If you are using VS Code you should consider using the extension [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) to write proper markdown code. [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) could be useful to write markdown.
+If you are using VS Code you should consider using the extension [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) to write proper markdown code.
+[Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) could be helpful to write markdown.
 
-You can commit any changes in any branch except master. To add your changes to the official documentation just open a pull request to master.
+You can commit any changes in any branch except master.
+To add your changes, create a new branch and open a pull request to master.
 
 A ton of additional markdown features are documented in the material theme [reference](https://squidfunk.github.io/mkdocs-material/reference/abbreviations/).
 
 ## Deploy
 
 ### Website
-From the markdown files and the ```mkdocs.yml``` MkDocs creates a static html website. This html represents the public [documentation](https://opentrafficcam.org) of OpenTrafficCam. It is hosted on GitHub Pages and will be deployed automatically. 
-After a pull request to the master branch and a review by the OpenTrafficCam core developers, a GitHub action will deploy the changes.
 
-### Local sneak preview
-If you want to see how your changes will look on the html website before creating a pull request, here is what you have to do:
+MkDocs converts all markdown files using the settings and navigation defined in ```mkdocs.yml``` into a static html website.
+The [documentation](https://opentrafficcam.org) is hosted on GitHub Pages and will be deployed automatically.
+After creating, reviewing and merging a pull request to the master branch, a GitHub action will deploy the changes.
 
-Clone the repository (if not done already) and install dependencies:
+### Local Sneak Preview
+
+If you want to preview your changes before creating a pull request, here is what you have to do.
+
+Clone the repository (if not done already) and install dependencies.
+
 ```bash
 git clone https://github.com/OpenTrafficCam/OTDocs
 pip install --user -r .\requirements.txt
 ```
 
-Then you can run a local server with autoload (you could use ```mkdocs serve``` if you added python to systems PATH):
+You can run a local server with autoload (you could use ```mkdocs serve``` if you added python to systems PATH).
 
 ```bash
 python -m mkdocs serve
 ```
 
-MkDocs builds all content in ```/docs``` and starts a local webserver which monitors for changes.
+MkDocs builds the website and starts a local webserver which monitors for changes.
 
-Open [http://127.0.0.1:8000](http://127.0.0.1:8000) in your browser to access this site. If you change any file inside ```/docs``` MkDocs regenerates that site and instantly reloads your browser.
-
-
+Open [http://127.0.0.1:8000](http://127.0.0.1:8000) in your browser to access this site.
+If you change any file inside ```/docs``` MkDocs regenerates that site and instantly reloads your browser.
