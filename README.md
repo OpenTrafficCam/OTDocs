@@ -16,8 +16,9 @@ If you are using VS Code you should consider using the extension [markdownlint](
 The [YAML] extension is useful to to lint and autoformat the ```mkdocs.yml``` .
 [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) could be helpful to write markdown.
 
-You can commit any changes in any branch except master.
-To add your changes, create a new branch and open a pull request to master.
+You can commit any changes in any branch except `master` and `gh-pages`.
+To add your changes, create a new branch and open a pull request to `master`.
+`gh-pages` branch contains the generated html files for the website and should never be touched.
 
 A ton of additional markdown features are documented in the material theme [reference](https://squidfunk.github.io/mkdocs-material/reference/abbreviations/).
 
