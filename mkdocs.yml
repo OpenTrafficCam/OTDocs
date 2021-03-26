@@ -51,7 +51,7 @@ extra_css:
 
 extra:
   social:
-    - icon: fontawesome/brands/linkedin
+      - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/opentrafficcam
       name: OpenTrafficCam on LinkedIn
     - icon: fontawesome/brands/github
