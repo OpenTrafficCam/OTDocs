@@ -18,7 +18,18 @@ pip install --user -r .\requirements.txt
 
 ## Contribute
 
-You can run a local server with autoload to contribute on the documentation (you could use ```mkdocs serve``` if you added python to systems PATH):
+You can update or correct the content of this documentation by editing existing markdown files in the "docs" folder (e.g. directly on Github or using an IDE like VS Code). You can also create new pages by creating new markdown files. In this case you also have to add the new page to the navigation structure in ```mkdocs.yml```. There you can also change settings for the theme.
+
+If you are using VS Code you should consider using the extension [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) to write proper markdown code. [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) could be useful to write markdown.
+
+You can commit any changes in any branch except master.
+
+## Deploy
+
+MkDocs creates taking From the markdown files and the ```mkdocs.yml``` MkDocs creates a static html website. This html represents the public [documentation](https://opentrafficcam.org) of OpenTrafficCam. It is hosted on GitHub Pages and will be deployed automatically. 
+To add your changes to the official documentation just open a pull request to master. After a review a GitHub action will deploy the changes.
+
+If you want to see how you changes will look on the html website before creating a pull request, you can run a local server with autoload (you could use ```mkdocs serve``` if you added python to systems PATH):
 
 ```bash
 python -m mkdocs serve
@@ -30,13 +41,4 @@ Open [http://127.0.0.1:8000](http://127.0.0.1:8000) in your browser to access th
 
 A ton of additional markdown features are documented in the material theme [reference](https://squidfunk.github.io/mkdocs-material/reference/abbreviations/).
 
-To extend or change the navigation or change settings of the theme have look at the ```mkdocs.yml```.
 
-If you are using VS Code you should consider using the extension [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) to write proper markdown code. [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) could be useful to write markdown.
-
-You can commit any changes in any branch except master.
-
-## Deploy
-
-The public [documentation](https://opentrafficcam.org) is hosted on GitHub Pages and will be deployed automatically. 
-To add your changes to the official documentation just open a pull request to master. After a review a GitHub action will deploy the changes.
