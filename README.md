@@ -13,6 +13,7 @@ A new page needs to be added to the navigation structure in ```mkdocs.yml```.
 It includes also all settings for the theme.
 
 If you are using VS Code you should consider using the extension [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) to write proper markdown code.
+The [YAML] extension is useful to to lint and autoformat the ```mkdocs.yml``` .
 [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) could be helpful to write markdown.
 
 You can commit any changes in any branch except master.
