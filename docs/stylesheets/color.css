@@ -1,7 +1,7 @@
 :root {
-    --md-primary-fg-color: #37483E;
-    --md-accent-fg-color: #71947F;
-    --md-typeset-a-color: var(--md-primary-fg-color)
+  --md-primary-fg-color: #37483e;
+  --md-accent-fg-color: #71947f;
+  --md-typeset-a-color: var(--md-primary-fg-color);
 }
 
 /* All color definitions:
