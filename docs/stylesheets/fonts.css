@@ -238,34 +238,33 @@
 }
 
 .md-header__title {
-  font-family: Amatic SC;
+  font-family: Amatic SC, sans-serif;
   font-size: 1.6rem;
 }
 
 .md-tabs__link {
-  font-family: Amatic SC;
+  font-family: Amatic SC, sans-serif;
   font-weight: 700;
   font-size: 1rem;
 }
 
 .md-announce {
   text-align: center;
-  /* background-color: var(--md-primary-fg-color); */
 }
 
 .md-typeset {
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
 
 .md-typeset blockquote {
-  padding-left: .6rem;
-  padding-right: .6rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
   text-align: center;
-  font-family: Amatic SC;
+  font-family: Amatic SC, sans-serif;
   border-left: none;
   font-size: 180%;
-  margin-top: 0em;
-  margin-bottom: 0em;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 p {
