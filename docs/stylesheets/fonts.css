@@ -288,9 +288,10 @@
     padding-right: .6rem;
     text-align: center;
     font-family: Amatic SC;
-    color: var(--md-default-fg-color--light);
     border-left: none;
     font-size: 180%;
+    margin-top: 0em;
+    margin-bottom: 0em;
 }
 
 p {
