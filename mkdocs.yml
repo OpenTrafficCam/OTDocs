@@ -21,23 +21,23 @@ theme:
 
 nav:
   - Overview:
-    - Welcome: index.md
-    - What it Does: overview/whatitdoes.md
-    - How it Works: overview/howitworks.md
-    - Data Structures: overview/datastructures.md
+      - Welcome: index.md
+      - What it Does: overview/whatitdoes.md
+      - How it Works: overview/howitworks.md
+      - Data Structures: overview/datastructures.md
   - OTCamera:
-    - OTCamera/index.md
+      - OTCamera/index.md
   - OTVision:
-    - OTVision/index.md
+      - OTVision/index.md
   - OTAnalytics:
-    - OTAnalytics/index.md
+      - OTAnalytics/index.md
   - OTLabels:
-    - OTLabels/index.md
-    - Annotation:
-      - OTLabels/annotation/index.md
-      - OTLabels/annotation/extend-coco.md
-    - Training:
-      - OTLabels/training/index.md
+      - OTLabels/index.md
+      - Annotation:
+          - OTLabels/annotation/index.md
+          - OTLabels/annotation/extend-coco.md
+      - Training:
+          - OTLabels/training/index.md
   - Contribute:
       - contribute/github.md
       - contribute/coding.md
@@ -58,7 +58,7 @@ extra:
       link: https://github.com/OpenTrafficCam
       name: OpenTrafficCam on GitHub
 
-copyright: Copyright &copy; 2020 - 2021 OpenTrafficCam Contributors
+copyright: Copyright &copy; 2020 - 2021 OpenTrafficCam Contributors | <a href="https://querplaner.de/impressum">Impressum / Legal Notice</a>
 repo_url: https://github.com/OpenTrafficCam/OTDocs
 repo_name: OpenTrafficCam/OTDocs
 edit_uri: edit/master/docs/
