@@ -10,7 +10,7 @@ theme:
   logo: assets/OTC_icon_white.svg
   favicon: assets/OTC_icon.svg
   features:
-    - navigation.instant
+    # - navigation.instant
     - navigation.tabs
     - navigation.tabs.sticky
     # - navigation.sections
