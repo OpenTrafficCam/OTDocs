@@ -59,7 +59,7 @@ extra:
       link: https://github.com/OpenTrafficCam
       name: OpenTrafficCam on GitHub
 
-copyright: Copyright &copy; 2020 - 2021 OpenTrafficCam Contributors
+copyright: Copyright &copy; 2020 - 2021 OpenTrafficCam Contributors | <a href="https://querplaner.de/impressum">Impressum / Legal Notice</a>
 repo_url: https://github.com/OpenTrafficCam/OTDocs
 repo_name: OpenTrafficCam/OTDocs
 edit_uri: edit/master/docs/
