@@ -14,7 +14,7 @@ Key features:
 
 Pipeline of algorithms:
 
-* Conversion of h264 video files to other formats ([ffmpeg](https://ffmpeg.org/)) 
+* Conversion of h264 video files to other formats ([ffmpeg](https://ffmpeg.org/))
 * Detection (joint localization and classification) of road users in single frames ([YOLOv5 by Jocher/Ultralytics](https://github.com/ultralytics/yolov5))
 * Tracking of detected road users between single frames ([IOU-Tracker by Bochinski et al.](https://github.com/bochinski/iou-tracker))
 * Correction of trajectories for lens distortion ([OpenCV-Library](https://opencv.org/))
