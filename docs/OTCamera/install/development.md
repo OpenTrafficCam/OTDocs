@@ -53,9 +53,9 @@ Setup a hostname, enable SSH, either password based or using public-key authenti
 You can now boot the Pi on LAN or within your Wifi.
 Try to connect to the Pi using a command line:
 
-```bash
-ssh pi@otcamera01
-```
+    ```bash
+    ssh pi@otcamera01
+    ```
 
 If everything is setup correctly, you should be connected to your Raspberry Pi.
 
@@ -101,7 +101,7 @@ Install the [Remote-SSH](https://marketplace.visualstudio.com/items?itemName=ms-
 Add the Pi as [remote host](https://code.visualstudio.com/docs/remote/ssh#_connect-to-a-remote-host).
 Connect to the Pi using the Remote-SSH extension (rightclick on the ne host - "Connect to Host in New Window"). When asked for the operating system of the host, choose "Linux". VS code will download and install the necessary dependencies on the Pi.
 
-Open the extension manager in the new windows an install all nessacery extensions.
+Open the extension manager in the new windows an install all necessary extensions.
 
 ## Setup Git and GitHub
 
