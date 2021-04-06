@@ -152,7 +152,7 @@ Both commands should state, that they are (using) python 3.(x).
 
 ## Install Screen to Run OTCamera in Background
 
-!!! note
+!!! quote
     [Screen](https://www.gnu.org/software/screen/) is a full-screen window manager that multiplexes a physical terminal between several processes, typically interactive shells.
 
 To install screen on the developer pi just run
