@@ -28,6 +28,8 @@ nav:
       - Data Structures: overview/datastructures.md
   - OTCamera:
       - OTCamera/index.md
+      - Installation:
+          - OTCamera/install/development.md
   - OTVision:
       - OTVision/index.md
   - OTAnalytics:
@@ -44,7 +46,6 @@ nav:
       - contribute/coding.md
       - contribute/gui.md
       - contribute/vscode.md
-      - contribute/otcamera.md
 
 extra_css:
   - stylesheets/color.css
