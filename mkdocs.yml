@@ -11,12 +11,13 @@ theme:
   favicon: assets/OTC_icon.svg
   features:
     # - navigation.instant
+    - navigation.tracking
     - navigation.tabs
     - navigation.tabs.sticky
-    # - navigation.sections
-    - navigation.expands
-    # - search.suggest
-    # - search.highlight
+    - navigation.sections
+    - navigation.expand
+    - search.suggest
+    - search.highlight
   icon:
     repo: fontawesome/brands/github
 
