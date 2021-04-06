@@ -31,6 +31,8 @@ nav:
       - OTCamera/index.md
       - Installation:
           - OTCamera/install/development.md
+          - OTCamera/install/soft.md
+          - OTCamera/install/hard.md
   - OTVision:
       - OTVision/index.md
   - OTAnalytics:
