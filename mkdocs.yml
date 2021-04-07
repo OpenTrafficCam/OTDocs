@@ -30,7 +30,7 @@ nav:
   - OTCamera:
       - OTCamera/index.md
       - Installation:
-          - OTCamera/install/prepare.md
+          - OTCamera/install/gettingstarted.md
           - OTCamera/install/development.md
           - OTCamera/install/soft.md
           - OTCamera/install/hard.md
