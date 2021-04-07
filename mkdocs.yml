@@ -30,6 +30,7 @@ nav:
   - OTCamera:
       - OTCamera/index.md
       - Installation:
+          - OTCamera/install/prepare.md
           - OTCamera/install/development.md
           - OTCamera/install/soft.md
           - OTCamera/install/hard.md
@@ -77,6 +78,7 @@ markdown_extensions:
   - pymdownx.highlight
   - pymdownx.superfences
   - pymdownx.keys
+  - pymdownx.snippets
   # - meta
 
 plugins:
