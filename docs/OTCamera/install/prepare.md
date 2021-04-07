@@ -26,7 +26,9 @@ Download and install the [Raspberry Pi Imager](https://www.raspberrypi.org/softw
 It's recommended to use the Raspberry Pi Imager [Advanced Options](https://www.raspberrypi.org/blog/raspberry-pi-imager-update-to-v1-6/) to do some basic setup.
 Just press ++ctrl+shift+x++ on startscreen to access advanced options.
 
-Setup a hostname, enable SSH, either password based or using public-key authentication (recommended!), configure your Wifi credentials and choose the correct locale for Wifi, timezone and keyboard layout. You can also skip the first-run wizard.
+Setup a hostname, enable SSH, either password based or using public-key authentication (recommended!),
+configure your Wifi credentials and choose the correct locale for Wifi, timezone and keyboard layout.
+You can also skip the first-run wizard.
 
 ??? help "How to generate a public key"
 
@@ -36,7 +38,9 @@ Setup a hostname, enable SSH, either password based or using public-key authenti
     ssh-keygen
     ```
 
-    to generate a public private key combination. Add the private key to your ssh-agent (you may need to [update OpenSSH on Windows](https://superuser.com/questions/1395962/is-it-possible-to-update-the-built-in-openssh-client-in-windows-10/1555453#1555453)).
+    to generate a public private key combination. Add the private key to your ssh-agent
+    (you may need to [update OpenSSH on Windows]
+    (https://superuser.com/questions/1395962/is-it-possible-to-update-the-built-in-openssh-client-in-windows-10/1555453#1555453)).
 
 ![Raspberry Pi Imager advanced settings](rpi_imager_2.png)
 
