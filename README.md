@@ -52,5 +52,3 @@ MkDocs builds the website and starts a local webserver which monitors for change
 Open [http://127.0.0.1:8000](http://127.0.0.1:8000) in your browser to access this site.
 If you change any file inside ```/docs``` MkDocs regenerates that site and instantly reloads your browser.
 This even works great if you change a branche while running ```mkdocs serve``` .
-
-hallo
