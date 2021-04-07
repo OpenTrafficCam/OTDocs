@@ -5,8 +5,10 @@ But the development of OTCamera is more fun on a big Pi. Everything is much fast
 
 You will need
 
-* a [prepared](prepare.md) Raspberry Pi 2B/3B(+)/4 (the 2 GB works well) and power supply
+* a [prepared](prepare.md) Raspberry Pi 2B/3B(+)/4 (the 2 GB works well)
 * Camera module (no USB webcam)
+
+You should follow the [Prepare](prepare.md) guide before continuing.
 
 ## Setup VS Code Remote Development Extension
 
