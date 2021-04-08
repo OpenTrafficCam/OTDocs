@@ -7,16 +7,21 @@ The powerbank can be changed during operation without interrupting the recording
 A single power switch is also needed to control startup and shutdown.
 The settings of the OTCamera are done via a smartphone using a web interface.
 
+## Parts
+
 You will need
 
-* a [prepared](gettingstarted.md) [Raspberry Pi Zero WH][zero] (32 Gb High Endurance Micro SD Card recommended)
+* a [prepared](gettingstarted.md) [Raspberry Pi Zero WH][zero]  
+  (32 Gb High Endurance Micro SD Card recommended)  
+  (Select a Zero W with header already soldered, often called Zero W**H**)
 * [Raspberry Pi Camera Module V2 NoIR][cam]
+* 15 cm camera ribbon cable for Zero W (for example Joy-it c-sb-cameraZero15 Kamera-Kabel 15.00 cm)
 * [StromPi v3 rev. 1.1][strompi]
 * [Battery Unit for StromPi 3][strompibat]
 * Switch (for example [Marquardt Rocker Switch 1801][switch])
-* USB powerbank (for example [Anker PowerCore 26800][powerbank]
+* USB powerbank (for example [Anker PowerCore 26800][powerbank])
 * USB-A to micro-USB cable (should be included with powerbank)
-* Housing (for example [Explorer Cases 2712][case]
+* Housing (for example [Explorer Cases 2712][case])
 * 3D printed mounting (comming soon)
 * Ballhead to mount and adjust housing (for example Mantona Onyx 12 ballhead (M1-3612A))
 * Quick release plate (for example Mantona AS-100-2M quick release plate)
@@ -37,7 +42,7 @@ You will need
 
 ## Setup the Software
 
-Before everything is installed in the case, the Raspberry Pi and the StromPi are configured.
+Before everything is installed in the case, the Raspberry Pi and the StromPi must be configured.
 
 Prepare the Raspberry Pi and the StromPi:
 
@@ -46,10 +51,14 @@ Prepare the Raspberry Pi and the StromPi:
 3. Connect the camera using the additional cable to the Raspberry Pi
 4. Plug the Battery Unit onto the StromPi (there is only one plausible way to do it)
 5. Plug the StromPi with Battery onto the Raspberry Pi
+6. Connect the outer micro USB port of the StromPi to your powerbank or a USB charger
+7. The Raspberry Pi will start up
+8. Follow the [Setup the Raspberry](../gettingstarted/#setup-the-raspberry) chapter in the Getting Started guide
 
 <!-- TODO #25 pictures of camera connection and final setup -->
 
 You should follow the [Getting Started](gettingstarted.md) guide before continuing.
+Once the Getting Started Guide has been completed, you should be able to connect to the Raspberry Pi via SSH.
 
 !!! note
     This content is under construction... Sorry :(
