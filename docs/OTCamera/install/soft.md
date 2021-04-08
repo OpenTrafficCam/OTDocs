@@ -60,6 +60,16 @@ Prepare the Raspberry Pi and the StromPi:
 You should follow the [Getting Started](gettingstarted.md) guide before continuing.
 Once the Getting Started Guide has been completed, you should be able to connect to the Raspberry Pi via SSH.
 
+```bash
+sudo apt install git python3 python3-pip
+pip3 install pyserial
+sudo nano /boot/config.txt
+# add the following line at the end of the file without the #
+#enable_uart=1
+git clone https://github.com/joy-it/strompi3
+python3 strompi3/Python-Scripts/StromPi\ Status/V1.72/StromPi3_Status.py
+```
+
 !!! note
     This content is under construction... Sorry :(
 
