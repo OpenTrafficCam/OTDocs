@@ -28,6 +28,27 @@ You will need
     We do not receive any provision from the manufacturers.
     Of course, other parts can also be used.
 
+!!! warning
+    The Raspberry Pi Zero consumes very little power.
+    Some USB powerbanks turn off the USB outputs when the current drops below a threshold.
+    Since the StromPi charges the Battery Unit the first time it is plugged in, the powerbank may not turn off until the Battery Unit is fully charged.
+    The Raspberry is then still supplied with power from the Battery Unit, but the energy of the Powerbank is not used.
+    When buying the powerbank, you therefore have to make sure that it remains switched on even at very low currents.
+
+## Setup the Software
+
+Before everything is installed in the case, the Raspberry Pi and the StromPi are configured.
+
+Prepare the Raspberry Pi and the StromPi:
+
+1. Prepare the micro SD card as described in the [Getting Started](gettingstarted.md) guide
+2. Plug the SD card into the Raspberry Pi
+3. Connect the camera using the additional cable to the Raspberry Pi
+4. Plug the Battery Unit onto the StromPi (there is only one plausible way to do it)
+5. Plug the StromPi with Battery onto the Raspberry Pi
+
+<!-- TODO #25 pictures of camera connection and final setup -->
+
 You should follow the [Getting Started](gettingstarted.md) guide before continuing.
 
 !!! note
