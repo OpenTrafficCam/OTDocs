@@ -39,8 +39,7 @@ You can also skip the first-run wizard.
     ```
 
     to generate a public private key combination. Add the private key to your ssh-agent
-    (you may need to [update OpenSSH on Windows]
-    (https://superuser.com/questions/1395962/is-it-possible-to-update-the-built-in-openssh-client-in-windows-10/1555453#1555453)).
+    (you may need to [update OpenSSH on Windows](https://superuser.com/questions/1395962/is-it-possible-to-update-the-built-in-openssh-client-in-windows-10/1555453#1555453)).
 
 ![Raspberry Pi Imager advanced settings](rpi_imager_2.png)
 
@@ -114,6 +113,8 @@ If everything is setup correctly, you will be asked to add the host key to the l
         $openSshBins | %{ Copy-Item -Path .\OpenSSH-Win64\$_ -Destination C:\Windows\System32\OpenSSH\ }
         Start-Service ssh-agent
         ```
+
+    <!-- TODO: #24 Add how to activate ssh agent -->
 
 ![Command Line](login_ssh.png)
 
