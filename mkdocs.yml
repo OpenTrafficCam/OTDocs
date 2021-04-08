@@ -45,6 +45,7 @@ nav:
       - contribute/gui.md
       - contribute/vscode.md
       - contribute/otcamera.md
+      - contribute/documentation.md
 
 extra_css:
   - stylesheets/color.css
