@@ -40,6 +40,8 @@ You can also skip the first-run wizard.
 
     to generate a public private key combination. Add the private key to your ssh-agent
     (you may need to [update OpenSSH on Windows](https://superuser.com/questions/1395962/is-it-possible-to-update-the-built-in-openssh-client-in-windows-10/1555453#1555453)).
+    
+    <!-- TODO #26 add information where to put the ssh private key -->
 
 ![Raspberry Pi Imager advanced settings](rpi_imager_2.png)
 
@@ -82,6 +84,7 @@ ssh pi@otcamera01
 ```
 
 If everything is setup correctly, you will be asked to add the host key to the list of known hosts (answer: yes) and you should be connected to your Raspberry Pi.
+
 
 ??? help "warning: agent returned different signature type ssh-rsa (expected rsa-sha2-512)"
 
@@ -137,6 +140,7 @@ Change the following settings to appropriate values:
 
 * System Options &rightarrow; Password
 * Interface Options &rightarrow; Camera &rightarrow; enable
+* Interface Options &rightarrow; Serial Port &rightarrow; no &rightarrow; Serial Hardware &rightarrow; yes
 
 ??? help "Setup without Raspberry Pi Imager"
 
