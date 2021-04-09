@@ -40,6 +40,7 @@ nav:
       - Training:
           - OTLabels/training/index.md
   - Contribute:
+      - contribute/index.md
       - contribute/github.md
       - contribute/coding.md
       - contribute/gui.md
