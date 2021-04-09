@@ -50,6 +50,7 @@ nav:
       - contribute/coding.md
       - contribute/gui.md
       - contribute/vscode.md
+      - contribute/documentation.md
 
 extra_css:
   - stylesheets/color.css
