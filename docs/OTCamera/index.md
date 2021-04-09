@@ -1,6 +1,6 @@
 # In a Nutshell
 
-> The heart of OpenTrafficCam.
+> The heart of Open**Traffic**Cam.
 
 [**OTCamera**](https://github.com/OpenTrafficCam/OTCamera) is a mobile camera system for capturing traffic videos.
 
