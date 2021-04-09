@@ -1,6 +1,6 @@
 # Getting Started
 
-> Become a part of OpenTrafficCam
+> Become a part of Open**Traffic**Cam
 
 We are happy if you contribute your own code to OpenTrafficCam.
 This can be bug fixes in the current code, or even completely new stuff.
