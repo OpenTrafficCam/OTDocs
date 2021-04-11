@@ -30,6 +30,7 @@ nav:
       - OTCamera/index.md
   - OTVision:
       - OTVision/index.md
+      - Install: OTVision/install/index.md
   - OTAnalytics:
       - OTAnalytics/index.md
   - OTLabels:
