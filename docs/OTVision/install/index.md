@@ -9,13 +9,13 @@ However, if you want to detect road users in videos with OTVision on a regular b
 ## Install Python 3.9
 Install the 64-bit version Python 3.9.x via Windows installer from www.python.org/downloads/ as follows (Python 3.6.x to 3.8.x should also work, the 32-bit version is not supported):
 
-![Download Python](Download_Python.png)
+![Download Python](Download_Python.PNG)
 
-![Install Python 1](Install_Python_1.png)
+![Install Python 1](Install_Python_1.PNG)
 
-![Install Python 2](Install_Python_2.png)
+![Install Python 2](Install_Python_2.PNG)
 
-![Install Python 3](Install_Python_3.png)
+![Install Python 3](Install_Python_3.PNG)
 
 ## Install NVIDIA Cuda 11.0
 
