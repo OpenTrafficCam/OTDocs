@@ -30,7 +30,7 @@ Install the 64-bit version Python 3.9.x via Windows installer from www.python.or
 
 1. Download and unzip the latest versions of [OTVision](https://github.com/OpenTrafficCam/OTVision/archive/refs/heads/master.zip) and [OTAnalytics](https://github.com/OpenTrafficCam/OTAnalytics/archive/refs/heads/master.zip) from Github.
 
-2. In both folders Double-click the "install.bat" in both folders and wait until the installation of the dependencies is complete.
+2. In both folders Double-click the "install.bat" and wait until the installation of the dependencies is complete.
 
 ## To run OTVision and OTAnalytics
 
