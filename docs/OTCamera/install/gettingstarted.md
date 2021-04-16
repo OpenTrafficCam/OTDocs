@@ -130,6 +130,13 @@ sudo apt update && sudo apt upgrade -y
 sudo reboot
 ```
 
+??? help "A new version of configuration file is available"
+
+    ![ssh upgrade warning](rpi_sshd_upgrade.png)
+
+    If you get this message, don't worry.
+    Keep the local version currently installed, since we changed the ssh server configuration using the RPi Imager.
+
 Reconnect to your pi (open PowerShell and run `ssh pi@otcamera01`) and run the raspberry configuration tool.
 
 ```bash
@@ -138,7 +145,7 @@ sudo raspi-config
 
 Change the following settings to appropriate values:
 
-* System Options &rightarrow; Password
+* System Options &rightarrow; Password (choose a new password for security reasons)
 * Interface Options &rightarrow; Camera &rightarrow; enable
 * Interface Options &rightarrow; Serial Port &rightarrow; no &rightarrow; Serial Hardware &rightarrow; yes
 
@@ -148,13 +155,11 @@ Change the following settings to appropriate values:
 
     * System Options
         * Hostname
-    * Interface Options
-        * Camera (enable)
     * Localization Options
         * Timezone (Europe/Berlin)
         * WLAN Country (DE)
 
-Reboot the Pi afterwards (`sudo reboot`).
+Exit the raspi-config selecting "Finish" and reboot the Pi afterwards.
 
 !!! note
     In the future, we would like to offer a ready-to-use image for the Raspberry Pi, which can be easily installed.
