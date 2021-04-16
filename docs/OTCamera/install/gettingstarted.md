@@ -85,7 +85,6 @@ ssh pi@otcamera01
 
 If everything is setup correctly, you will be asked to add the host key to the list of known hosts (answer: yes) and you should be connected to your Raspberry Pi.
 
-
 ??? help "warning: agent returned different signature type ssh-rsa (expected rsa-sha2-512)"
 
     If you are on Windows you may need to update OpenSSH if you ar getting this error:

@@ -19,12 +19,18 @@ Connect to the Pi using the Remote-SSH extension (rightclick on the ne host - "C
 
 Open the extension manager in the new windows an install all necessary extensions.
 
+Install the linter and autoformatter.
+
+```bash
+pip install black flake8
+```
+
 ## Setup Git and GitHub
 
 Install git using apt.
 
 ```bash
-sudo apt install git
+sudo apt install git -y
 ```
 
 To setup your git commit name and email, login to your github account and copy your [private commit email](https://docs.github.com/en/free-pro-team@latest/github/setting-up-and-managing-your-github-user-account/setting-your-commit-email-address).
@@ -47,7 +53,7 @@ The easiest way to setup your GitHub credentials is to use vs code. In the file 
 To install screen on the developer pi just run
 
 ```bash
-sudo apt-get install screen
+sudo apt install screen -y
 ```
 
 You can now start ```screen``` and use it as an usual terminal. You can run the ```python OTCamera``` to start the camera in an active screen session. Hit ++ctrl+a++ and then ++d++ to detach the current session. Screen will still run in background including the OTCamera. If you start screen including the ```-r``` option you can reconnect to this terminal session:
