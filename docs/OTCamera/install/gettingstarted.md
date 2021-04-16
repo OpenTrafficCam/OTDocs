@@ -161,6 +161,28 @@ Change the following settings to appropriate values:
 
 Exit the raspi-config selecting "Finish" and reboot the Pi afterwards.
 
+## Setup Python and Dependencies
+
+By default, Raspberry OS light doesn't come with PIP installed. We will need it, to install required packages.
+
+```bash
+sudo apt install python3-pip -y
+```
+
+Raspberry OS ships with python 2 and python 3. By default python 2 is used. We want to change that to python 3 by adding two single lines to ```.bashrc```.
+
+```bash
+echo "alias python='/usr/bin/python3'" >> ~/.bashrc
+echo "alias pip=pip3" >> ~/.bashrc
+
+source ~/.bashrc
+
+python --version
+pip --version
+```
+
+Both commands should state, that they are (using) python 3.(x).
+
 !!! note
     In the future, we would like to offer a ready-to-use image for the Raspberry Pi, which can be easily installed.
     The setup will then be much easier.
