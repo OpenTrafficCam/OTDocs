@@ -20,4 +20,4 @@ Procedure
 * By clicking on "recieve coefficients" your camera parameters will be safed on your raspberrypi.
 * Evaluate the reprojection error displayed in the userinterface.
 
-[here put in gif]
+![OTcamera_calibration](OTcamera_calibration.gif)
