@@ -23,8 +23,8 @@ Install the 64-bit version Python 3.9.x via Windows installer from www.python.or
 
 [Download and install version 11.0 of the NVIDIA Cuda Toolkit]([Download](https://developer.download.nvidia.com/compute/cuda/11.0.3/local_installers/cuda_11.0.3_451.82_win10.exe)) with default settings from the NVDIA toolkit [archive](https://developer.nvidia.com/cuda-toolkit-archive).
 
-## Install Visual Studio 2017
-> To be added later, maybe it is just about [downloading and installing Visual Studio Tools for AI](https://marketplace.visualstudio.com/_apis/public/gallery/publishers/ms-toolsai/vsextensions/vstoolsai-vs2017/0.5.0.755748/vspackage) from [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vstoolsai-vs2017)?
+## Install Visual Studio Build Tools 2017
+To get Microsof Visual C++ 14.0 or greater [download and install "Microsoft C++ Build Tools"](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
 
 ## Install OTVision and OTAnalytics
 
