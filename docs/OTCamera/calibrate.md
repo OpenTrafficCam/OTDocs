@@ -1,6 +1,6 @@
 # Calibrate OTCamera
 
-[**OTCamera**] gives you the opportunity to receive distinctive camera parameters. These include intrinsics, extrinsics and distortion coefficients. By using our web browser based program and multiple images of a calibration pattern, like a chessboard you can calculate a camera matrix and distortion coefficients. 
+[**OTCamera**] gives you the opportunity to receive distinctive camera parameters. These include intrinsics, extrinsics and distortion coefficients. By using our web browser based program and multiple images of a calibration pattern, like a chessboard you can calculate a camera matrix and distortion coefficients.
 You will be able to evaluate your calibration with a reprojection error which is used to quantify how closely you can recreate true projection. In other words: You can undistort pictures, trajectories or any other pixel coordinates.
 
 First step
