@@ -41,11 +41,13 @@ nav:
       - Training:
           - OTLabels/training/index.md
   - Contribute:
+      - contribute/index.md
       - contribute/github.md
       - contribute/coding.md
       - contribute/gui.md
       - contribute/vscode.md
       - contribute/otcamera.md
+      - contribute/documentation.md
 
 extra_css:
   - stylesheets/color.css
