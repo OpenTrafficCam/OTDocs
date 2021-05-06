@@ -28,6 +28,7 @@ nav:
       - Data Structures: overview/datastructures.md
   - OTCamera:
       - OTCamera/index.md
+      - OTCamera/calibrate.md
   - OTVision:
       - OTVision/index.md
   - OTAnalytics:
