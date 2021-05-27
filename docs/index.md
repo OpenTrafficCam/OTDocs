@@ -6,7 +6,7 @@ Check out our [github page](https://github.com/OpenTrafficCam) for more informat
 
 This website will cover all the documentation in one place.
 
-OpenTrafficCam is funded by the German Federal Ministry of Transport and Digital Infrastructure as part of the mFUND innovation initiative.
+OpenTrafficCam is funded by the German Federal Ministry of Transport and Digital Infrastructure as part of the research initiative mFUND.
 
 ![mFUND](mFUND_Logo_Claim_sRGB.PNG)
 
