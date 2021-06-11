@@ -165,7 +165,7 @@ Exit the raspi-config selecting "Finish" and reboot the Pi afterwards.
 By default, Raspberry OS light doesn't come with PIP installed. We will need it, to install required packages.
 
 ```bash
-sudo apt install python3-pip python3-picamera python3-gpiozero -y
+sudo apt install python3-pip -y
 ```
 
 Raspberry OS ships with python 2 and python 3. By default python 2 is used. We want to change that to python 3 by adding two single lines to ```.bashrc```.
@@ -181,6 +181,13 @@ pip --version
 ```
 
 Both commands should state, that they are (using) python 3.(x).
+
+OTCamera requires additional python packages, which need to be installed.
+
+```bash
+sudo apt install python3-picamera python3-gpiozero -y
+pip3 install art
+```
 
 !!! note
     In the future, we would like to offer a ready-to-use image for the Raspberry Pi, which can be easily installed.
