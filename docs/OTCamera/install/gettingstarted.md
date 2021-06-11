@@ -186,7 +186,7 @@ OTCamera requires additional python packages, which need to be installed.
 
 ```bash
 sudo apt install python3-picamera python3-gpiozero -y
-pip3 install art
+pip3 install art psutil
 ```
 
 !!! note
