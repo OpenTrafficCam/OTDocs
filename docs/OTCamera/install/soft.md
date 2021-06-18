@@ -40,9 +40,11 @@ You will need
     The Raspberry is then still supplied with power from the Battery Unit, but the energy of the Powerbank is not used.
     When buying the powerbank, you therefore have to make sure that it remains switched on even at very low currents.
 
-## Setup the Software
+## Setup the Raspberry Pi
 
 Before everything is installed in the case, the Raspberry Pi and the StromPi must be configured.
+
+### Prepare
 
 Prepare the Raspberry Pi and the StromPi:
 
@@ -60,15 +62,87 @@ Prepare the Raspberry Pi and the StromPi:
 You should follow the [Getting Started](gettingstarted.md) guide before continuing.
 Once the Getting Started Guide has been completed, you should be able to connect to the Raspberry Pi via SSH.
 
+### Setup StromPi
+
+It is possible to configure the StromPi for different use-cases.
+To be able to use it with the battery unit the StromPi has to be reconfigured.
+
+First, install the dependencies and update the Raspberry Pi's configuration to enable serial communication to the StromPi.
+
 ```bash
 sudo apt install git python3 python3-pip
 pip3 install pyserial
-sudo nano /boot/config.txt
-# add the following line at the end of the file without the #
-#enable_uart=1
+sudo bash -c 'echo "dtoverlay=miniuart-bt" >> /boot/config.txt'
+sudo bash -c 'echo "enable_uart=1" >> /boot/config.txt'
+sudo reboot
+```
+
+After the reboot, we will SSH to the Raspberry Pi again and then clone the StromPi repository to read the current configuration.
+
+```bash
 git clone https://github.com/joy-it/strompi3
 python3 strompi3/Python-Scripts/StromPi\ Status/V1.72/StromPi3_Status.py
 ```
+
+```bash
+---------------------------------
+StromPi-Status:
+---------------------------------
+
+Firmware: v1.72c
+
+Time: 02:12:58
+Date: Tuesday 01.05.18
+
+StromPi-Output: mUSB
+
+StromPi-Mode: mUSB -> Battery
+
+Raspberry Pi Shutdown: Disabled
+ Shutdown-Timer: 30 seconds
+
+Powerfail Warning: Disabled
+
+Serial-Less Mode: Disabled
+
+Power Save Mode: Enabled
+
+PowerOn-Button: Enabled
+
+ PowerOn-Button-Timer: 31 seconds
+
+Battery-Level Shutdown: 10%
+
+Powerfail-Counter: 6
+
+PowerOff Mode: Enabled
+---------------------------------
+Alarm-Configuration:
+---------------------------------
+WakeUp-Alarm: Disabled
+ Alarm-Mode: Time-Alarm
+ Alarm-Time: 00:00
+ Alarm-Date: 01.01
+ WakeUp-Alarm: Monday
+ Weekend Wakeup: Enabled
+ Minute Wakeup Timer: 30 minutes
+
+PowerOff-Alarm: Disabled
+ PowerOff-Alarm-Time: 00:00
+
+Interval-Alarm: Disabled
+ Interval-On-Time: 00 minutes
+ Interval-Off-Time: 00 minutes
+
+---------------------------------
+Voltage-Levels:
+---------------------------------
+Wide-Range-Inputvoltage:  not connected
+LifePo4-Batteryvoltage: 3.458V [100%] [charging]
+microUSB-Inputvoltage: 5.184V
+Output-Voltage: 5.157V
+```
+
 
 !!! note
     This content is under construction... Sorry :(
