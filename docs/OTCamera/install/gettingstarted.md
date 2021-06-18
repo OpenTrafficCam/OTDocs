@@ -85,7 +85,6 @@ ssh pi@otcamera01
 
 If everything is setup correctly, you will be asked to add the host key to the list of known hosts (answer: yes) and you should be connected to your Raspberry Pi.
 
-
 ??? help "warning: agent returned different signature type ssh-rsa (expected rsa-sha2-512)"
 
     If you are on Windows you may need to update OpenSSH if you ar getting this error:
@@ -130,6 +129,13 @@ sudo apt update && sudo apt upgrade -y
 sudo reboot
 ```
 
+??? help "A new version of configuration file is available"
+
+    ![ssh upgrade warning](rpi_sshd_upgrade.png)
+
+    If you get this message, don't worry.
+    Keep the local version currently installed, since we changed the ssh server configuration using the RPi Imager.
+
 Reconnect to your pi (open PowerShell and run `ssh pi@otcamera01`) and run the raspberry configuration tool.
 
 ```bash
@@ -138,7 +144,7 @@ sudo raspi-config
 
 Change the following settings to appropriate values:
 
-* System Options &rightarrow; Password
+* System Options &rightarrow; Password (choose a new password for security reasons)
 * Interface Options &rightarrow; Camera &rightarrow; enable
 * Interface Options &rightarrow; Serial Port &rightarrow; no &rightarrow; Serial Hardware &rightarrow; yes
 
@@ -148,13 +154,40 @@ Change the following settings to appropriate values:
 
     * System Options
         * Hostname
-    * Interface Options
-        * Camera (enable)
     * Localization Options
         * Timezone (Europe/Berlin)
         * WLAN Country (DE)
 
-Reboot the Pi afterwards (`sudo reboot`).
+Exit the raspi-config selecting "Finish" and reboot the Pi afterwards.
+
+## Setup Python and Dependencies
+
+By default, Raspberry OS light doesn't come with PIP installed. We will need it, to install required packages.
+
+```bash
+sudo apt install python3-pip -y
+```
+
+Raspberry OS ships with python 2 and python 3. By default python 2 is used. We want to change that to python 3 by adding two single lines to ```.bashrc```.
+
+```bash
+echo "alias python='/usr/bin/python3'" >> ~/.bashrc
+echo "alias pip=pip3" >> ~/.bashrc
+
+source ~/.bashrc
+
+python --version
+pip --version
+```
+
+Both commands should state, that they are (using) python 3.(x).
+
+OTCamera requires additional python packages, which need to be installed.
+
+```bash
+sudo apt install python3-picamera python3-gpiozero -y
+pip3 install art
+```
 
 !!! note
     In the future, we would like to offer a ready-to-use image for the Raspberry Pi, which can be easily installed.

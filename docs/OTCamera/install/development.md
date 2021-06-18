@@ -19,12 +19,18 @@ Connect to the Pi using the Remote-SSH extension (rightclick on the ne host - "C
 
 Open the extension manager in the new windows an install all necessary extensions.
 
+Install the linter and autoformatter.
+
+```bash
+pip install black flake8
+```
+
 ## Setup Git and GitHub
 
 Install git using apt.
 
 ```bash
-sudo apt install git
+sudo apt install git -y
 ```
 
 To setup your git commit name and email, login to your github account and copy your [private commit email](https://docs.github.com/en/free-pro-team@latest/github/setting-up-and-managing-your-github-user-account/setting-your-commit-email-address).
@@ -38,34 +44,6 @@ git config --global user.email "123456+username@users.noreply.github.com"
 
 The easiest way to setup your GitHub credentials is to use vs code. In the file explorer panel click "Clone Repository" and choose "Clone from GitHub". Depending on your desktop computer settings, a browser tab will open to login into your GitHub account. Afterwards, you can search for "OpenTrafficCam/OTCamera" inside the vs code command prompt and select a folder to pull (choose /home/pi by default).
 
-## Setup Python and Dependencies
-
-By default, Raspberry OS light doesn't come with PIP installed. We will need it, to install required packages.
-
-```bash
-sudo apt-get install python3-pip
-```
-
-Raspberry OS ships with python 2 and python 3. By default python 2 is used. You may want to change that to python 3 by adding two single lines to ```.bashrc```.
-
-```bash
-nano ~/.bashrc
-
-# add the following two lines at the end of the file (without #)
-
-# alias python='/usr/bin/python3'
-# alias pip=pip3
-
-# save & exit (Ctrl+X - Y)
-
-source ~/.bashrc
-
-python --version
-pip --version
-```
-
-Both commands should state, that they are (using) python 3.(x).
-
 ## Install Screen to Run OTCamera in Background
 
 !!! quote
@@ -75,7 +53,7 @@ Both commands should state, that they are (using) python 3.(x).
 To install screen on the developer pi just run
 
 ```bash
-sudo apt-get install screen
+sudo apt install screen -y
 ```
 
 You can now start ```screen``` and use it as an usual terminal. You can run the ```python OTCamera``` to start the camera in an active screen session. Hit ++ctrl+a++ and then ++d++ to detach the current session. Screen will still run in background including the OTCamera. If you start screen including the ```-r``` option you can reconnect to this terminal session:
