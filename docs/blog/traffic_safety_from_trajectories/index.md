@@ -26,7 +26,7 @@ In addition to road safety analysis, TTC is also used for active accident avoida
 
 ![TTC explained](OpenTrafficCam_TTC_854x480.gif)
 
-## Best pracitces
+## Best practices
 
 In order to enable comparisons, e.g. with other traffic facilities, safety indicators like PET and TTC are related to suitable exposure units, such as traffic volume or the total number of interactions in the observation period. For comparisons one also needs statistcal significance of the frequency of conflicts at every individual location. To achieve this one must capture trajectories over a sufficient period of time. In most constellations, conflicts do occur more frequently than accidents that require observation periods of several years. However, recent studis show, that capturing videos over weeks or at least multiple days is the minimum required duration for conflict analyses. One mistake that also should be avoided is to raise the threshold for categorising encounters as conflicts, as this means measuring exposure, but not road safety.
 
