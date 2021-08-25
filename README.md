@@ -38,6 +38,8 @@ Clone the repository (if not done already) and install dependencies.
 
 ```bash
 git clone https://github.com/OpenTrafficCam/OTDocs
+python -m venv venv --upgrade-deps
+.\venv\Scripts\activate
 pip install --user -r .\requirements.txt
 ```
 
