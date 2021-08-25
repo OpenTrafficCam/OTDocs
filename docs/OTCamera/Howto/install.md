@@ -40,6 +40,8 @@ You can also skip the first-run wizard.
 
     to generate a public private key combination. Add the private key to your ssh-agent
     (you may need to [update OpenSSH on Windows](https://superuser.com/questions/1395962/is-it-possible-to-update-the-built-in-openssh-client-in-windows-10/1555453#1555453)).
+    
+    <!-- TODO #26 add information where to put the ssh private key -->
 
 ![Raspberry Pi Imager advanced settings](rpi_imager_2.png)
 
@@ -114,7 +116,7 @@ If everything is setup correctly, you will be asked to add the host key to the l
         Start-Service ssh-agent
         ```
 
-    <!-- TODO: activate ssh agent -->
+    <!-- TODO: #24 Add how to activate ssh agent -->
 
 ![Command Line](login_ssh.png)
 
@@ -127,6 +129,13 @@ sudo apt update && sudo apt upgrade -y
 sudo reboot
 ```
 
+??? help "A new version of configuration file is available"
+
+    ![ssh upgrade warning](rpi_sshd_upgrade.png)
+
+    If you get this message, don't worry.
+    Keep the local version currently installed, since we changed the ssh server configuration using the RPi Imager.
+
 Reconnect to your pi (open PowerShell and run `ssh pi@otcamera01`) and run the raspberry configuration tool.
 
 ```bash
@@ -135,8 +144,9 @@ sudo raspi-config
 
 Change the following settings to appropriate values:
 
-* System Options &rightarrow; Password
+* System Options &rightarrow; Password (choose a new password for security reasons)
 * Interface Options &rightarrow; Camera &rightarrow; enable
+* Interface Options &rightarrow; Serial Port &rightarrow; no &rightarrow; Serial Hardware &rightarrow; yes
 
 ??? help "Setup without Raspberry Pi Imager"
 
@@ -144,10 +154,41 @@ Change the following settings to appropriate values:
 
     * System Options
         * Hostname
-    * Interface Options
-        * Camera (enable)
     * Localization Options
         * Timezone (Europe/Berlin)
         * WLAN Country (DE)
 
-Reboot the Pi afterwards (`sudo reboot`).
+Exit the raspi-config selecting "Finish" and reboot the Pi afterwards.
+
+## Setup Python and Dependencies
+
+By default, Raspberry OS light doesn't come with PIP installed. We will need it, to install required packages.
+
+```bash
+sudo apt install python3-pip -y
+```
+
+Raspberry OS ships with python 2 and python 3. By default python 2 is used. We want to change that to python 3 by adding two single lines to ```.bashrc```.
+
+```bash
+echo "alias python='/usr/bin/python3'" >> ~/.bashrc
+echo "alias pip=pip3" >> ~/.bashrc
+
+source ~/.bashrc
+
+python --version
+pip --version
+```
+
+Both commands should state, that they are (using) python 3.(x).
+
+OTCamera requires additional python packages, which need to be installed.
+
+```bash
+sudo apt install python3-picamera python3-gpiozero pysimpleguiweb -y
+pip3 install art psutil
+```
+
+!!! note
+    In the future, we would like to offer a ready-to-use image for the Raspberry Pi, which can be easily installed.
+    The setup will then be much easier.
