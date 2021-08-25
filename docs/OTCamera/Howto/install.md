@@ -1,4 +1,4 @@
-# Getting Started
+# How to setup your software
 
 No matter which version you want to install, you will always use a Raspberry Pi as a base.
 This guide describes the basic steps you need to perform for each version.
