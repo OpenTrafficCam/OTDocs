@@ -2,13 +2,12 @@
 
 > The **backbone** of OpenTrafficCam.
 
-[**OTLabels**](https://github.com/OpenTrafficCam/OTLabels) is a workflow for the retraining of AI models to detect road users in videos based on existing open source software packages ([CVAT](https://github.com/openvinotoolkit/cvat), [YOLO v5](https://github.com/ultralytics/yolov5)).
+[**OTLabels**](https://github.com/OpenTrafficCam/OTLabels) is a workflow for retraining AI models to detect road users in videos based on custom video frames and existing open source software packages ([CVAT](https://github.com/openvinotoolkit/cvat), [YOLO v5](https://github.com/ultralytics/yolov5)).
 
 ## Key features
 
-* Annotation of vehicles and persons using existing open source software ([CVAT](https://github.com/openvinotoolkit/cvat))
+* Annotation of custom video frames using existing open source software ([CVAT](https://github.com/openvinotoolkit/cvat))
 * Retrain existing neural network models with [YOLO v5](https://github.com/ultralytics/yolov5) for individual optimization of the detection ability
-* Long-term: Real time detection
 * Runs on any Windows laptop. However, a decent GPU with CUDA support is strongly recommended.
 
 ## Content of documentation
