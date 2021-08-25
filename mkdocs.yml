@@ -11,12 +11,13 @@ theme:
   favicon: assets/OTC_icon.svg
   features:
     # - navigation.instant
+    - navigation.tracking
     - navigation.tabs
     - navigation.tabs.sticky
-    # - navigation.sections
-    - navigation.expands
-    # - search.suggest
-    # - search.highlight
+    - navigation.sections
+    - navigation.expand
+    - search.suggest
+    - search.highlight
   icon:
     repo: fontawesome/brands/github
 
@@ -31,9 +32,15 @@ nav:
       - blog/traffic_safety_from_trajectories/index.md
   - OTCamera:
       - OTCamera/index.md
+      - Installation:
+          - OTCamera/install/gettingstarted.md
+          - OTCamera/install/development.md
+          - OTCamera/install/soft.md
+          - OTCamera/install/hard.md
       - OTCamera/calibrate.md
   - OTVision:
       - OTVision/index.md
+      - Install: OTVision/install/index.md
   - OTAnalytics:
       - OTAnalytics/index.md
   - OTLabels:
@@ -49,7 +56,6 @@ nav:
       - contribute/coding.md
       - contribute/gui.md
       - contribute/vscode.md
-      - contribute/otcamera.md
       - contribute/documentation.md
 
 extra_css:
@@ -79,6 +85,9 @@ markdown_extensions:
   - pymdownx.highlight
   - pymdownx.superfences
   - pymdownx.keys
+  - pymdownx.snippets
+  - pymdownx.tasklist:
+      custom_checkbox: true
   # - meta
 
 plugins:
