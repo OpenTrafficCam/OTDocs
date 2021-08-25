@@ -28,7 +28,7 @@ nav:
       - How it Works: overview/howitworks.md
       - Data Structures: overview/datastructures.md
       - Use Cases:
-          - usecases/trafficsafety.md
+          - overview/usecases/trafficsafety.md
   - OTCamera:
       - OTCamera/index.md
       - Installation:

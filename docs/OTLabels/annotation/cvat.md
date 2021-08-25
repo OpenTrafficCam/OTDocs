@@ -1,7 +1,8 @@
 # CVAT
+
 CVAT is a free video and image annotation tool for computer vision.  
 
-We recommend the developers guides for [Installation] (https://github.com/openvinotoolkit/cvat/blob/develop/cvat/apps/documentation/installation.md) as well as the [user's guide] (https://github.com/openvinotoolkit/cvat/blob/develop/cvat/apps/documentation/user_guide.md).
+We recommend the developers guides for [Installation] (<https://github.com/openvinotoolkit/cvat/blob/develop/cvat/apps/documentation/installation.md>) as well as the [user's guide] (<https://github.com/openvinotoolkit/cvat/blob/develop/cvat/apps/documentation/user_guide.md>).
 
 ## Projects, Tasks and Jobs
 
@@ -9,7 +10,8 @@ We define certain set of videos as a **project**.
 Every project has multiple **tasks** (each consists of one video to annotate). Each task has a status ("Pending", "In Progress" and "Completed") and a progress bar showing the number of completed jobs. Open the task with klick on "Open".  
 For each task (or video) multiple **jobs** with a certain amounts of frames from the video are defined. Each job has a status ("annotation", "validation" and "completed"), an "assignee" (responsible for annotation) and a "reviewer" (responsible for reviewing the assignees annotation). Open the job with klick on "Job #...".
 
-## Import data
+## Import datafix
+
 TODO
 
 ## Workflow
@@ -29,4 +31,5 @@ We recommend the following procedure for annotation in CVAT:
   - Check if there are objects from the target classes not already pre-labeled, draw new 2D box and annotate object class
 
 ## Download data
+
 TODO
