@@ -185,7 +185,7 @@ Both commands should state, that they are (using) python 3.(x).
 OTCamera requires additional python packages, which need to be installed.
 
 ```bash
-sudo apt install python3-picamera python3-gpiozero -y
+sudo apt install python3-picamera python3-gpiozero pysimpleguiweb -y
 pip3 install art psutil
 ```
 
