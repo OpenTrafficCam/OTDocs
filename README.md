@@ -34,18 +34,20 @@ After creating, reviewing and merging a pull request to the master branch, a Git
 
 If you want to preview your changes before creating a pull request, here is what you have to do.
 
-Clone the repository (if not done already) and install dependencies.
+Clone the repository (if not done already).
+Create a virtual environment and install dependencies.
 
 ```bash
-git clone https://github.com/OpenTrafficCam/OTDocs
 python -m venv venv --upgrade-deps
 .\venv\Scripts\activate
-pip install --user -r .\requirements.txt
+pip install -r .\requirements.txt
 ```
 
-You can run a local server with autoload (you could use ```mkdocs serve``` if you added python to systems PATH).
+You can run a local server with autoload.
+You should always upgrade your venv since the GitHub Pages deployment always uses the most current versions.
 
 ```bash
+python -m pip install --upgrade -r .\requirements.txt
 python -m mkdocs serve
 ```
 
