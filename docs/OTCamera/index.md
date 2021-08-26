@@ -1,20 +1,18 @@
-# In a Nutshell
+# Features
 
 > The **eye** of OpenTrafficCam.
 
 [**OTCamera**](https://github.com/OpenTrafficCam/OTCamera) is a mobile camera system for capturing traffic videos.
 
 It is not for sale, but for DIY.
-You don't want to build the camera yourself and preferably don't want to have anything to do with the measurement.
+You don't want to build the camera yourself and preferably don't want to have anything to do with the measurement?
 Well, just [write us](mailto:team@opentrafficcam.org).
 
-## TODO: Bild in höherer Auflösung, damit größer
+<!-- TODO: #54 Higher resolution image -->
 
 ![OTCamera](OTCamera.png)
 
 ## Key features
-
-## TODO: Text etwas ausformulieren
 
 * Based on Raspberry Pi Zero W
 * Waterproof case
@@ -25,14 +23,12 @@ Well, just [write us](mailto:team@opentrafficcam.org).
 
 ## Content of this documentation
 
-## TODO: Hier wäre eine Verlinkung auf die entsprechenden Doku-Seiten sinnvoll, z.B. so
-
 * List of [hardware components](https://opentrafficcam.org/OTCamera/Components/hardware/) (and where to purchase them)
 * Software needed for [video capturing](https://opentrafficcam.org/OTCamera/Components/capture/) and [camera calibration](https://opentrafficcam.org/OTCamera/Howto/calibrate/)
 * Instructions for [assembling the hardware](https://opentrafficcam.org/OTCamera/Howto/assemble/) and [installing the software](https://opentrafficcam.org/OTCamera/Howto/install/)
 * Recommendations for [mounting, alignment](https://opentrafficcam.org/OTCamera/Howto/mount_camera/) and [settings of the camera](https://opentrafficcam.org/OTCamera/Howto/settings/)
 
-![OTCamera](OTCamera.png)
+<!-- TODO #55 reduce number of prototypes -->
 
 We are providing this information for three different prototypes.
 

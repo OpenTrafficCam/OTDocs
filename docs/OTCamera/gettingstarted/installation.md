@@ -1,4 +1,4 @@
-# How to setup your software
+# Installation
 
 No matter which version you want to install, you will always use a Raspberry Pi as a base.
 This guide describes the basic steps you need to perform for each version.
@@ -21,7 +21,7 @@ You will need:
 
 Download and install the [Raspberry Pi Imager](https://www.raspberrypi.org/software/), insert the SD-Card and start the Imager.
 
-![Raspberry Pi Imager advanced settings](rpi_imager_1.png)
+![Raspberry Pi Imager advanced settings](installation/rpi_imager_1.png)
 
 It's recommended to use the Raspberry Pi Imager [Advanced Options](https://www.raspberrypi.org/blog/raspberry-pi-imager-update-to-v1-6/) to do some basic setup.
 Just press ++ctrl+shift+x++ on startscreen to access advanced options.
@@ -43,7 +43,7 @@ You can also skip the first-run wizard.
     
     <!-- TODO #26 add information where to put the ssh private key -->
 
-![Raspberry Pi Imager advanced settings](rpi_imager_2.png)
+![Raspberry Pi Imager advanced settings](installation/rpi_imager_2.png)
 
 Now insert the SD card into the PC. Select Raspberry Pi OS Lite (32-bit) as operating system under "Raspberry Pi (Other)". Then select the SD card on which the operating system will be installed.
 
@@ -118,7 +118,7 @@ If everything is setup correctly, you will be asked to add the host key to the l
 
     <!-- TODO: #24 Add how to activate ssh agent -->
 
-![Command Line](login_ssh.png)
+![Command Line](installation/login_ssh.png)
 
 If you have successfully logged in now, we can configure the Raspberry Pi for the OpenTrafficCam.
 
@@ -131,7 +131,7 @@ sudo reboot
 
 ??? help "A new version of configuration file is available"
 
-    ![ssh upgrade warning](rpi_sshd_upgrade.png)
+    ![ssh upgrade warning](installation/rpi_sshd_upgrade.png)
 
     If you get this message, don't worry.
     Keep the local version currently installed, since we changed the ssh server configuration using the RPi Imager.

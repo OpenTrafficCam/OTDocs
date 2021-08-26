@@ -1,1 +1,0 @@
-# How to assemble the camera system

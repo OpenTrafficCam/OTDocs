@@ -1,1 +1,0 @@
-# Hardware components for OTCamera

@@ -32,12 +32,19 @@ nav:
           - overview/usecases/trafficsafety.md
   - OTCamera:
       - OTCamera/index.md
-      - Installation:
-          - OTCamera/install/gettingstarted.md
-          - OTCamera/install/development.md
-          - OTCamera/install/soft.md
-          - OTCamera/install/hard.md
-      - OTCamera/calibrate.md
+      - Getting Started:
+          - OTCamera/gettingstarted/shopping.md
+          - OTCamera/gettingstarted/assembly.md
+          - OTCamera/gettingstarted/installation.md
+      - Recording:
+          - OTCamera/recording/preparation.md
+          - OTCamera/recording/settings.md
+          - OTCamera/recording/mounting.md
+          - OTCamera/recording/record.md
+          - OTCamera/recording/safetywarning.md
+          - OTCamera/recording/getvideos.md
+      - Calibration:
+          - OTCamera/calibration/calibrate.md
   - OTVision:
       - OTVision/index.md
       - Install: OTVision/install/index.md
