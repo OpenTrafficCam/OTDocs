@@ -24,9 +24,11 @@ theme:
 nav:
   - Overview:
       - Welcome: index.md
-      - How it Works: overview/howitworks.md
-      - Data Structures: overview/datastructures.md
+      - overview/gettingstarted.md
+      - overview/dataprivacy.md
       - Use Cases:
+          - overview/usecases/trafficcounts.md
+          - overview/usecases/vehiclespeeds.md
           - overview/usecases/trafficsafety.md
   - OTCamera:
       - OTCamera/index.md
