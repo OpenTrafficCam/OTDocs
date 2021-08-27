@@ -16,7 +16,7 @@ Install the 64-bit version Python 3.9.x via Windows installer from www.python.or
 
 > If you have a modern NVidia graphics card.
 
-[Download and install version 11.0 of the NVIDIA Cuda Toolkit](https://developer.download.nvidia.com/compute/cuda/11.0.3/local_installers/cuda_11.0.3_451.82_win10.exe) with default settings from the NVDIA toolkit [archive](https://developer.nvidia.com/cuda-toolkit-archive).
+Download and install the latest version of the [NVIDIA Cuda Toolkit](https://developer.nvidia.com/cuda-downloads) with default settings from the NVIDIA toolkit.
 
 ## Install OTVision and OTAnalytics
 
