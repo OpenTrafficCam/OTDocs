@@ -1,4 +1,4 @@
-# In a Nutshell
+# Features
 
 > The **heart** of OpenTrafficCam.
 

@@ -35,9 +35,10 @@ nav:
   - OTCamera:
       - OTCamera/index.md
       - Getting Started:
-          - OTCamera/gettingstarted/shopping.md
+          - OTCamera/gettingstarted/requirements.md
           - OTCamera/gettingstarted/assembly.md
           - OTCamera/gettingstarted/installation.md
+          - OTCamera/gettingstarted/firstuse.md
       - Recording:
           - OTCamera/recording/preparation.md
           - OTCamera/recording/settings.md
@@ -49,14 +50,26 @@ nav:
           - OTCamera/calibration/calibrate.md
   - OTVision:
       - OTVision/index.md
-      - Install: OTVision/install/index.md
+      - Getting Started:
+          - OTVision/gettingstarted/requirements.md
+          - OTVision/gettingstarted/installation.md
+          - OTVision/gettingstarted/firstuse.md
+      - Object Detection:
+          - OTVision/objectdetection/convert.md
+          - OTVision/objectdetection/detect.md
+      - Tracking:
+          - OTVision/tracking/track.md
+          - OTVision/tracking/undistort.md
+          - OTVision/tracking/transform.md
   - OTAnalytics:
       - OTAnalytics/index.md
   - OTLabels:
       - OTLabels/index.md
       - Annotation:
           - OTLabels/annotation/index.md
-          - OTLabels/annotation/extend-coco.md
+          - OTLabels/annotation/convert_data.md
+          - OTLabels/annotation/cvat.md
+          - OTLabels/annotation/labels.md
       - Training:
           - OTLabels/training/index.md
   - Contribute:
