@@ -1,8 +1,45 @@
 # CVAT
 
 CVAT is a free video and image annotation tool for computer vision.  
+We recommend the developers guides for [Installation](https://github.com/openvinotoolkit/cvat/blob/develop/cvat/apps/documentation/installation.md) as well as the [user's guide](https://github.com/openvinotoolkit/cvat/blob/develop/cvat/apps/documentation/user_guide.md).
 
-We recommend the developers guides for [Installation] (<https://github.com/openvinotoolkit/cvat/blob/develop/cvat/apps/documentation/installation.md>) as well as the [user's guide] (<https://github.com/openvinotoolkit/cvat/blob/develop/cvat/apps/documentation/user_guide.md>).
+If you want to label your own dataset to retrain models, keep in mind that the format of your new labels needs to be the same as the format of the original dataset. On this page we define our intended organizational and technical annotation workflow using CVAT.
+
+Since YOLOv5 is based on the the MS COCO dataset of 2D bounding boxes, you need to apply your own labels in the frames from your sample videos in the same format. We therefore recommend the following steps:
+
+1. Install and setup an instance of CVAT either on your local computer or on a server (recommended when working in a team).
+2. Import the videos in CVAT and select the frames you want to use for labelling.
+3. Download the dataset from CVAT using the YOLO v1.1 format.
+4. Pre-annotate your frames with the standard YOLOv5x model. The results do probably not meet the desired quality. However, the pre-annotated labels will save you some time since it not nesscary to draw all labels from scratch.
+5. Upload the pre-annotated frames to CVAT and revise the detected labels.
+6. Download the final labels from CVAT and convert them to COCO format (using our cvat_to_coco.py script).
+
+The COCO dataset and consequently the YOLOv5 models can detect 80 classes. However, for the detection of traffic, only six classes are relevant.
+
+## Target classes
+
+Target classes are all road user classes from the initial COCO data set that are relevant for our sample videos:
+
+- Person
+- Bicycle
+- Motorcycle
+- Car
+- Bus
+- Truck
+
+All vehicles or combinations of vehicles are labeled as "truck" if they have
+
+- twin tires (except for regular service buses or coaches),
+- a superstructure or a loading area or
+- a trailer (also cars with trailer, the 2D box includes vehicle and trailer).
+
+Here, as in the COCO dataset, both the "person" and the "bicycle" are labeled separately for bicyclists.
+
+## Object dimensions
+
+The 2D box boundaries are defined by the outermost parts of the objects visible in that frame of the video.
+
+Even if only a part of an object is visible and the class of the object is recognizable for the annotator, it should be labeled.
 
 ## Projects, Tasks and Jobs
 

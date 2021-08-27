@@ -63,15 +63,31 @@ nav:
           - OTVision/tracking/transform.md
   - OTAnalytics:
       - OTAnalytics/index.md
+      - Getting Started:
+          - OTAnalytics/gettingstarted/requirements.md
+          - OTAnalytics/gettingstarted/installation.md
+          - OTAnalytics/gettingstarted/firstuse.md
+      - Preparing Tracks:
+          - OTAnalytics/preparingtracks/data.md
+          - OTAnalytics/preparingtracks/sections.md
+          - OTAnalytics/preparingtracks/movements.md
+      - Traffic Analytics:
+          - OTAnalytics/trafficanalytics/counts.md
   - OTLabels:
       - OTLabels/index.md
+      - Getting Started:
+          - OTLabels/gettingstarted/requirements.md
+          - OTLabels/gettingstarted/installation.md
+          - OTLabels/gettingstarted/data.md
       - Annotation:
-          - OTLabels/annotation/index.md
-          - OTLabels/annotation/convert_data.md
           - OTLabels/annotation/cvat.md
-          - OTLabels/annotation/labels.md
+          - OTLabels/annotation/preprocessingdata.md
       - Training:
-          - OTLabels/training/index.md
+          - OTLabels/training/extendmodel.md
+          - OTLabels/training/newmodel.md
+          - OTLabels/training/performancemeasures.md
+      - Trainend Models:
+          - OTLabels/models/coco6.md
   - Contribute:
       - contribute/index.md
       - contribute/github.md
@@ -79,6 +95,7 @@ nav:
       - contribute/gui.md
       - contribute/vscode.md
       - contribute/documentation.md
+      - contribute/otcamera.md
 
 extra_css:
   - stylesheets/color.css

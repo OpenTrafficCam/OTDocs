@@ -30,16 +30,13 @@ Well, just [write us](mailto:team@opentrafficcam.org).
 
 <!-- TODO #55 reduce number of prototypes -->
 
-We are providing this information for three different prototypes.
+We are providing this information for two different prototypes.
 
-The [Development Version](install/development.md) is intended to actively participate in the development of OTCamera.
+The [Development Version](/contribute/otcamera) is intended to actively participate in the development of OTCamera.
 It is also recommended to set up a development version to adapt the software and hardware to your own requirements.
 In addition, getting started with this prototype is very easy and can easily be done directly at your desk without the need for additional hardware.
 
-The [Soft Version](install/soft.md) is designed for use in the real, hard world.
-Most functions can be controlled via the web interface and it does not require any soldering skills.
-All parts can be purchased from various dealers and are then easily plugged together.
-
-For the [Hard Version](install/hard.md) you need the ability to solder (simple) components to a blank circuit board.
+For the [Field Version](gettingstarted/requirements.md) you need the ability to solder (simple) components to a blank circuit board.
 For this you get the most buttons (yay buttons) and the easiest operation in the field.
+All parts can be purchased from various dealers and are then easily plugged together.
 Also, the power consumption is the lowest (and the battery life the longest) and you can fully customize the hardware to your own needs.
