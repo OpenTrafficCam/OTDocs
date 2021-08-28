@@ -11,43 +11,91 @@ theme:
   favicon: assets/OTC_icon.svg
   features:
     # - navigation.instant
+    - navigation.tracking
     - navigation.tabs
     - navigation.tabs.sticky
-    # - navigation.sections
-    - navigation.expands
-    # - search.suggest
-    # - search.highlight
+    - navigation.sections
+    # - navigation.expand
+    # - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
   icon:
     repo: fontawesome/brands/github
 
 nav:
   - Overview:
       - Welcome: index.md
-      - What it Does: overview/whatitdoes.md
-      - How it Works: overview/howitworks.md
-      - Data Structures: overview/datastructures.md
+      - overview/gettingstarted.md
+      - overview/dataprivacy.md
+      - Use Cases:
+          - overview/usecases/trafficcounts.md
+          - overview/usecases/vehiclespeeds.md
+          - overview/usecases/trafficsafety.md
   - OTCamera:
       - OTCamera/index.md
-      - OTCamera/calibrate.md
+      - Getting Started:
+          - OTCamera/gettingstarted/requirements.md
+          - OTCamera/gettingstarted/assembly.md
+          - OTCamera/gettingstarted/installation.md
+          - OTCamera/gettingstarted/firstuse.md
+      - Recording:
+          - OTCamera/recording/preparation.md
+          - OTCamera/recording/settings.md
+          - OTCamera/recording/mounting.md
+          - OTCamera/recording/record.md
+          - OTCamera/recording/safetywarning.md
+          - OTCamera/recording/getvideos.md
+      - Calibration:
+          - OTCamera/calibration/calibrate.md
   - OTVision:
       - OTVision/index.md
+      - Getting Started:
+          - OTVision/gettingstarted/requirements.md
+          - OTVision/gettingstarted/installation.md
+          - OTVision/gettingstarted/firstuse.md
+      - Object Detection:
+          - OTVision/objectdetection/convert.md
+          - OTVision/objectdetection/detect.md
+      - Tracking:
+          - OTVision/tracking/track.md
+          - OTVision/tracking/undistort.md
+          - OTVision/tracking/transform.md
   - OTAnalytics:
       - OTAnalytics/index.md
+      - Getting Started:
+          - OTAnalytics/gettingstarted/requirements.md
+          - OTAnalytics/gettingstarted/installation.md
+          - OTAnalytics/gettingstarted/firstuse.md
+      - Preparing Tracks:
+          - OTAnalytics/preparingtracks/data.md
+          - OTAnalytics/preparingtracks/sections.md
+          - OTAnalytics/preparingtracks/movements.md
+      - Traffic Analytics:
+          - OTAnalytics/trafficanalytics/counts.md
   - OTLabels:
       - OTLabels/index.md
+      - Getting Started:
+          - OTLabels/gettingstarted/requirements.md
+          - OTLabels/gettingstarted/installation.md
+          - OTLabels/gettingstarted/data.md
       - Annotation:
-          - OTLabels/annotation/index.md
-          - OTLabels/annotation/extend-coco.md
+          - OTLabels/annotation/cvat.md
+          - OTLabels/annotation/preprocessingdata.md
       - Training:
-          - OTLabels/training/index.md
+          - OTLabels/training/extendmodel.md
+          - OTLabels/training/newmodel.md
+          - OTLabels/training/performancemeasures.md
+      - Trainend Models:
+          - OTLabels/models/coco6.md
   - Contribute:
       - contribute/index.md
       - contribute/github.md
       - contribute/coding.md
       - contribute/gui.md
       - contribute/vscode.md
-      - contribute/otcamera.md
       - contribute/documentation.md
+      - contribute/otcamera.md
 
 extra_css:
   - stylesheets/color.css
@@ -76,6 +124,9 @@ markdown_extensions:
   - pymdownx.highlight
   - pymdownx.superfences
   - pymdownx.keys
+  - pymdownx.snippets
+  - pymdownx.tasklist:
+      custom_checkbox: true
   # - meta
 
 plugins:

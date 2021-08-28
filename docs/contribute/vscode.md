@@ -1,6 +1,4 @@
----
-title: 'VS Code Settings'
----
+# VS Code
 
 We are developing OpenTrafficCam using [Visual Studio Code](https://code.visualstudio.com/) using the following extensions:
 
