@@ -53,7 +53,13 @@ TODO
 
 ## Workflow
 
-For each job, the project coordinator assigns the roles of the "assignee" (= annotator) and the "reviewer". The reviewer then starts working on a job by initial labeling (see [Annotation](#annotation)) of the video frames. The assignee should save his labeling work from time to time and can also stop and later repeat working on a job. After finishing the initial labeling, the assignee requests a review (menu - request review, the assigned reviewer should already be named there) and thus sets status of the job to "validation". Then the reviewer checks the initial labeling done by the assignee and raises issues when there is a problem or question. After reviewing all video frames of the job, the reviewer submits the review (see see [Review](#review) by either accepting and completing the job or rejecting it (which sets the status of the job bach to "Annotation"). Now the assignee has to check the issues, update the labels, resolve the issus and again request a review. The review process starts again and if necessary also next annotations, until the reviewer accepts the job and it is marked as "Completed".  
+For each job, the project coordinator assigns the roles of the "assignee" (= annotator) and the "reviewer".
+The reviewer then starts working on a job by initial labeling (see [Annotation](#annotation)) of the video frames.
+The assignee should save his labeling work from time to time and can also stop and later repeat working on a job.
+After finishing the initial labeling, the assignee requests a review (menu - request review, the assigned reviewer should already be named there) and thus sets status of the job to "validation".
+Then the reviewer checks the initial labeling done by the assignee and raises issues when there is a problem or question.
+After reviewing all video frames of the job, the reviewer submits the review (see see [Review](#review) by either accepting and completing the job or rejecting it (which sets the status of the job bach to "Annotation").
+Now the assignee has to check the issues, update the labels, resolve the issus and again request a review. The review process starts again and if necessary also next annotations, until the reviewer accepts the job and it is marked as "Completed".  
 ![CVAT Workflow](cvat-macro-workflow.png)
 
 We recommend the following procedure for annotation in CVAT:
