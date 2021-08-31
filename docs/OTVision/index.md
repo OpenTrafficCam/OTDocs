@@ -14,7 +14,7 @@
 
 ## Content of this documentation
 
-## TODO: Verlinkung der Content-Seiten, Links zur Software dann auf den Content-Seiten
+<!-- ## TODO: Verlinkung der Content-Seiten, Links zur Software dann auf den Content-Seiten -->
 
 * Conversion of h264 video files to other formats ([ffmpeg](https://ffmpeg.org/))
 * Detection (joint localization and classification) of road users in single frames ([YOLOv5 by Jocher/Ultralytics](https://github.com/ultralytics/yolov5))
