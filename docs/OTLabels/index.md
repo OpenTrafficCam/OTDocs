@@ -12,7 +12,7 @@
 
 ## Content of documentation
 
-## TODO: Create content
+<!-- TODO Create content, and add links to content pages, links to the software then on the content pages -->
 
 * [Annotation](https://opentrafficcam.org/OTLabels/Annotation/)
 * [Training](https://opentrafficcam.org/OTLabels/Training/)
