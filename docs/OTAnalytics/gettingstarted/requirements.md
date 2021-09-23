@@ -1,4 +1,5 @@
 # Requirements
 
-!!! info "Coming soon"
-    Unfortunately, there is no content here yet. But we are currently working on completing this website.
+## Hardware prerequisites
+
+Both OTVision and OTAnalytics run on modern 64 bit Windows 10 desktops and laptops (e.g. i5 processor and 8 GB RAM).
