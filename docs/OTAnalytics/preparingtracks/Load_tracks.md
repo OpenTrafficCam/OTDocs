@@ -6,5 +6,4 @@ The intuitive tkinter-based userinterface lets you easily:
 * import output-file from [**OTVision**](https://github.com/OpenTrafficCam/OTVision) to display selected tracks and boundingboxes 
 * play, rewind or scroll through video with mouse or slider
 
-
-![Uploading OTAnalytics_load_tracks.gif…]()
+![OTAnalytics_load_tracks](https://user-images.githubusercontent.com/75123353/134514142-743cd826-5201-49b4-be7f-1f6af9939f0e.gif)
