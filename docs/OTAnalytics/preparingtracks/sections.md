@@ -1,6 +1,6 @@
 # Sections
 
-With [**OTAnalytics**](https://github.com/OpenTrafficCam/OTAnalytics) you can add section and regions:
+With [**OTAnalytics**](https://github.com/OpenTrafficCam/OTAnalytics) you can add sections and regions:
 
 * simply drag and draw to create a linesection
 * use mouseclick events to determine corner of a polygonregion
