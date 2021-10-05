@@ -2,12 +2,12 @@
 
 ## Load Video
 
-OtAnalytics provides a simple and classic Point-and-Click-Userinterface. Your first step should always be to load the previous processed videofile in the most common formats such as mkv or mp4 by clicking on the "load video"-button. The chosen filename will be inserted in the upper left listbox and a canvas with the first videoframe will be created. Width and height of the canvas depend on the videoresolution.
+OTAnalytics provides a simple and classic Point-and-Click-Userinterface. Your first step should always be to load the previous processed videofile in the most common formats such as mkv or mp4 by clicking on the "load video"-button. The chosen filename will be inserted in the upper left listbox and a canvas with the first videoframe will be created. Width and height of the canvas depend on the videoresolution.
 
 
 ## Load and select Tracks
 
-Your next step should be to import the output-file from [**OTVision**](https://github.com/OpenTrafficCam/OTVision). This file contains framewise information about vehicle class, position and size in pixel of detected objects. With this information OTAnalytics can easily calculate bounding boxes and driven tracks. After the import obejcts ids will be displayed in die middle right listbox. You can either select multiple objects or hit the "display all tracks" to see wanted tracks on canvas. Different colors represent different vehicle classes.
+Your next step should be to import the output-file from [**OTVision**](https://github.com/OpenTrafficCam/OTVision). This file contains framewise information about vehicle class, position and size in pixel of detected objects. With this information OTAnalytics can easily calculate bounding boxes and driven tracks. After the import objects ids will be displayed in die middle right listbox. You can either select multiple objects or hit the "display all tracks" to see wanted tracks on canvas. Different colors represent different vehicle classes.
 
 
 ## navigate through video
