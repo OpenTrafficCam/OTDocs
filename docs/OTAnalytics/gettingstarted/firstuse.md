@@ -2,7 +2,7 @@
 
 ## Load Video
 
-OTAnalytics provides a simple and classic Point-and-Click-Userinterface. Your first step should always be to load the previous processed videofile in the most common formats such as mkv or mp4 by clicking on the "load video"-button. The chosen filename will be inserted in the upper left listbox and a canvas with the first videoframe will be created. Width and height of the canvas depend on the videoresolution.
+OTAnalytics provides a simple and classic Point-and-Click-Userinterface. Your first step always should be to load the previous processed videofile in the most common formats such as mkv or mp4 by clicking on the "load video"-button. The chosen filename will be inserted in the upper left listbox and a canvas with the first videoframe will be created. Width and height of the canvas depend on the videoresolution.
 
 
 ## Load and select Tracks
