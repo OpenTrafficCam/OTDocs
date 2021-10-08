@@ -46,7 +46,7 @@ Zukünftig ist eine Erweiterung der FAQ um Inhalte zum Datenschutz bei der Video
     Die Einhaltung des Datenschutzes liegt wie bereits beschrieben entweder in der Verantwortung der Forschungseinrichtung oder des Auftraggebers.
 
     !!! warning "Achtung!"
-        *Neben dem Datenschutz könnte jedoch der Straßenbaulastträger bzw. die Gebietskörperschaft aufgrund ihrer Verkehrssicherungspflicht Einwände haben oder aufgrund der Montage von Kameras an Einbauten oder Bäumen om derem Zuständigkeit.*
+        *Neben dem Datenschutz könnten jedoch der Straßenbaulastträger bzw. die Gebietskörperschaft aufgrund ihrer Verkehrssicherungspflicht Einwände haben oder aufgrund der Montage von Kameras an Einbauten oder Bäumen om derem Zuständigkeit.*
 
 ??? help "Welche sind dabei die relevanten Rechtsvorschriften und wo/für wen gelten sie? Gibt es bereichsspezifische Regelungen?"
 
