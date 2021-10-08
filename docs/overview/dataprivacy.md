@@ -92,7 +92,8 @@ Zukünftig ist eine Erweiterung der FAQ um Inhalte zum Datenschutz bei der Video
     Falls keine personenbezogenen Daten erfasst werden, ist keine Information der Verkehrsbeteiligten notwendig.
 
     Falls personenbezogene Daten erfasst werden, ist grundsätzlich eine Einverständniserklärung der jeweiligen Personen einzuholen.
-    Da dies bei Videobeobachtungen im Verkehrsraum meist nicht möglich ist, soll stattdessen eine gute erkennbare Information der Verkehrsteilnehmenden erfolgen (z.B. über ein auch für Kfz-Führende gut lesbares Schild “Verkehrserhebung”) und Detailinformationen zur Erhebung an bzw. in der Nähe der Kamera (mind. erhebende Institution und Kontaktinformationen, weitere Details z.B. auf einer Website, die per QR-Code erreichbar ist).
+    Da dies bei Videobeobachtungen im Verkehrsraum meist nicht möglich ist, soll stattdessen eine gute erkennbare Information der Verkehrsteilnehmenden erfolgen (z.B. über ein auch für Kfz-Führende gut lesbares Schild “Verkehrserhebung”)
+    und Detailinformationen zur Erhebung an bzw. in der Nähe der Kamera (mind. erhebende Institution und Kontaktinformationen, weitere Details z.B. auf einer Website, die per QR-Code erreichbar ist).
 
     Falls personenbezogene Daten erfasst werden und im Rahmen von Forschungsprojekten eine Information der Verkehrsteilnehmenden über die Verkehrserhebung die Verlässlichkeit der angestrebten Ergebnisse beeinträchtigen würde (z.B. bei der Untersuchung regelkonformen oder sicherheitsrelevanten Verkehrsverhaltens), kann in Einzelfällen darauf verzichtet werden.
     Grundlage hierfür ist der Forschungsparagraph des jeweiligen Landesdatenschutzgesetzes, nach dem die Freiheit von Forschung und Lehre besonders schützenswert ist und das Persönlichkeitsrecht überwiegen kann.
@@ -134,7 +135,8 @@ Zukünftig ist eine Erweiterung der FAQ um Inhalte zum Datenschutz bei der Video
 
 ??? help "Unter welchen Umständen dürfen personenbezogene Daten erhoben werden?"
 
-    Grundsätzlich ist zu prüfen, ob für den Erhebungszweck auch eine Videobeobachtung ohne die Erfassung personenbezogener Daten (bzw. eine Methode gänzlich ohne Videobeobachtung) möglich ist. Wenn dies nicht möglich ist und das Interesse der Allgemeinheit an den Ergebnissen der Videobeobachtung die Interessen der einzelnen Personen (deren Datenschutz) überwiegt, ist eine videobasierte Erfassung personenbezogener Daten grundsätzlich denkbar.
+    Grundsätzlich ist zu prüfen, ob für den Erhebungszweck auch eine Videobeobachtung ohne die Erfassung personenbezogener Daten (bzw. eine Methode gänzlich ohne Videobeobachtung) möglich ist.
+    Wenn dies nicht möglich ist und das Interesse der Allgemeinheit an den Ergebnissen der Videobeobachtung die Interessen der einzelnen Personen (deren Datenschutz) überwiegt, ist eine videobasierte Erfassung personenbezogener Daten grundsätzlich denkbar.
 
     Dabei muss die Zustimmung der betroffenen Personen eingeholt werden oder zumindest eine Information der betroffenen Personen erfolgen (siehe Frage “Muss eine Verkehrskamera als solche erkennbar und ausgewiesen sein oder darf man "verdeckt" filmen?”).
 
@@ -169,4 +171,6 @@ Zukünftig ist eine Erweiterung der FAQ um Inhalte zum Datenschutz bei der Video
     
     Wenn der Förder- oder Auftragnehmer selbst für den Datenschutz verantwortlich ist und die Anfrage von öffentlichen Stellen (z. B. Gebietskörperschaft, Behörde, Universität) kommt, ist die anfragende öffentliche  Stelle auch für die Übermittlung verantwortlich. Das bedeutet, dass die anfragende Stelle sicherstellen muss, dass die Übermittlung der Daten gerechtfertigt ist.
     
-    Einer Übermittlung an eine öffentliche Stelle steht also nichts im Wege. Dies gilt auch, falls die öffentliche Stelle die Daten für einen anderen als den ursprünglichen Erhebungszweck verarbeiten möchte (diese öffentliche Stelle muss dann selbst prüfen, ob dies rechtskonform ist). Vor einer Übermittlung an eine nichtöffentliche Stelle (z.B. an ein Ingenieurbüro) empfehlen wir dringend die Konsultation von Fachleuten für Datenschutz. Die Übermittlung anonymisierter Verkehrsvideos stellt aus datenschutzrechtlicher Sicht natürlich kein Problem dar und kann aus dieser Hinsicht an alle Stellen erfolgen.
+    Einer Übermittlung an eine öffentliche Stelle steht also nichts im Wege. Dies gilt auch, falls die öffentliche Stelle die Daten für einen anderen als den ursprünglichen Erhebungszweck verarbeiten möchte (diese öffentliche Stelle muss dann selbst prüfen, ob dies rechtskonform ist).
+    Vor einer Übermittlung an eine nichtöffentliche Stelle (z.B. an ein Ingenieurbüro) empfehlen wir dringend die Konsultation von Fachleuten für Datenschutz.
+    Die Übermittlung anonymisierter Verkehrsvideos stellt aus datenschutzrechtlicher Sicht natürlich kein Problem dar und kann aus dieser Hinsicht an alle Stellen erfolgen.
