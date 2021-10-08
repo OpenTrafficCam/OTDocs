@@ -127,7 +127,7 @@ Zukünftig ist eine Erweiterung der FAQ um Inhalte zum Datenschutz bei der Video
     Wenn daraus keine weiteren Daten abgeleitet und gespeichert oder übermittelt werden (z.B. das Kennzeichen als Klartext), gilt diese Methode als anerkannt, da sie dem Stand der Technik entspricht.
     Vor dem Einsatz dieser Methode wird jedoch dringend empfohlen, die Konformität mit der entsprechend geltenden Rechtsgrundlage zu prüfen.
 
-    Das zeitversetzte, nachträgliche (manuelle oder automatische) Verpixeln von Kennzeichen oder Gesichtern bei der Sichtung/Auswertung des Videomaterials (s.o.) sollte auf Einzelfälle beschränkt bleiben.
+    Das zeitversetzte, nachträgliche (manuelle oder automatische) Verpixeln von Kennzeichen oder Gesichtern bei der Sichtung/Auswertung des Videomaterials sollte auf Einzelfälle beschränkt bleiben (siehe Frage "Welche Entfernung zur Kamera zählt für die Datenschutzkonformität?").
     Sollten die zuvor genannten Maßnahmen nicht zielführend sein und sind dennoch gehäuft Kennzeichen oder Gesichter in den Videos zu vermuten, kann nicht mehr von einer anonymen Erhebung (Vermeidung der Erhebung personenbezogener Daten) gesprochen werden.
     In diesem Fall müssen die nachfolgend beschriebenen Rahmenbedingungen für die Erhebung personenbezogener Daten eingehalten werden.
 
@@ -169,7 +169,7 @@ Zukünftig ist eine Erweiterung der FAQ um Inhalte zum Datenschutz bei der Video
 
     Wenn es sich um personenbezogene Daten handelt und der öffentliche Förder- oder Auftraggeber für den Datenschutz verantwortlich ist, liegt diese Entscheidung bei ihm (siehe Frage "Wer ist in einem Projekt zuständig für den Datenschutz und trägt die Verantwortung? Die Auftragnehmenden oder die Auftraggebenden?").
     
-    Wenn der Förder- oder Auftragnehmer selbst für den Datenschutz verantwortlich ist und die Anfrage von öffentlichen Stellen (z. B. Gebietskörperschaft, Behörde, Universität) kommt, ist die anfragende öffentliche  Stelle auch für die Übermittlung verantwortlich. Das bedeutet, dass die anfragende Stelle sicherstellen muss, dass die Übermittlung der Daten gerechtfertigt ist.
+    Wenn der Förder- oder Auftragnehmer selbst für den Datenschutz verantwortlich ist und die Anfrage von öffentlichen Stellen (z.B. Gebietskörperschaft, Behörde, Universität) kommt, ist die anfragende öffentliche  Stelle auch für die Übermittlung verantwortlich. Das bedeutet, dass die anfragende Stelle sicherstellen muss, dass die Übermittlung der Daten gerechtfertigt ist.
     
     Einer Übermittlung an eine öffentliche Stelle steht also nichts im Wege. Dies gilt auch, falls die öffentliche Stelle die Daten für einen anderen als den ursprünglichen Erhebungszweck verarbeiten möchte (diese öffentliche Stelle muss dann selbst prüfen, ob dies rechtskonform ist).
     Vor einer Übermittlung an eine nichtöffentliche Stelle (z.B. an ein Ingenieurbüro) empfehlen wir dringend die Konsultation von Fachleuten für Datenschutz.
