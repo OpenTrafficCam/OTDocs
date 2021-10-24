@@ -46,7 +46,7 @@ Zukünftig ist eine Erweiterung der FAQ um Inhalte zum Datenschutz bei der Video
     Die Einhaltung des Datenschutzes liegt wie bereits beschrieben entweder in der Verantwortung der Forschungseinrichtung oder des Auftraggebers.
 
     !!! warning "Achtung!"
-        *Neben dem Datenschutz könnten jedoch der Straßenbaulastträger bzw. die Gebietskörperschaft aufgrund ihrer Verkehrssicherungspflicht Einwände haben oder aufgrund der Montage von Kameras an Einbauten oder Bäumen om derem Zuständigkeit.*
+        *Neben dem Datenschutz könnten jedoch der Straßenbaulastträger bzw. die Gebietskörperschaft aufgrund ihrer Verkehrssicherungspflicht Einwände haben oder aufgrund der Montage von Kameras an Einbauten oder Bäumen in deren Zuständigkeit.*
 
 ??? help "Welche sind dabei die relevanten Rechtsvorschriften und wo/für wen gelten sie? Gibt es bereichsspezifische Regelungen?"
 
@@ -66,7 +66,7 @@ Zukünftig ist eine Erweiterung der FAQ um Inhalte zum Datenschutz bei der Video
 
     Es existieren tatsächlich viele Grauzonen aufgrund der Nichtregulierung spezifischer Einzelfälle (zu denen auch die videobasierte, automatisierte Verkehrserfassung für die Forschung und die Planung zählt), die im Falle rechtlicher Streitigkeiten separat bewertet werden müssen. 
     
-    Wenn für rechtliche Fragestellungen keine dezidierten Rechtsnormen vorliegen, kann sich ein Gericht einerseits auf Präzedenzurteile berufen. Zur videobasierten Verkehrserfassung sind bisher jedoch nurwenige Urteile bekannt (siehe Frage "Gibt es Präzedenz-Urteile zur videobasierten Verkehrserfassung?").
+    Wenn für rechtliche Fragestellungen keine dezidierten Rechtsnormen vorliegen, kann sich ein Gericht einerseits auf Präzedenzurteile berufen. Zur videobasierten Verkehrserfassung sind bisher jedoch nur wenige Urteile bekannt (siehe Frage "Gibt es Präzedenz-Urteile zur videobasierten Verkehrserfassung?").
 
     Andererseits ist eine rechtliche Anerkennung niedergeschriebener Branchenstandards möglich, die in Zusammenarbeit zwischen den datenerhebenden Institutionen und den Aufsichtsbehörden erstellt wurden.
     Ein Beispiel dafür ist der Arbeitskreis "Datenschutz" für Gesundheitsdaten, der in Abstimmung mit den Aufsichtsbehörden ein Rahmenkonzept entwickelt hat, auf das sich im Falle rechtlicher Streitigkeiten berufen werden kann.
