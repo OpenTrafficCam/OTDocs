@@ -38,9 +38,9 @@ The results are shown in the table below.
 | Four-way intersection (2) |             Day             |    Steep     |   0.99    |  0.95  |
 | Four-way intersection (2) |  Night with street lights   |    Steep     |   0.98    |  0.95  |
 | Four-way roundabout       |             Day             |     Flat     |   0.63    |  0.56  |
-| Route section (1)         |             Day             |    Steep     |   1.00    |  0.91  |
-| Route section (2)         |             Day             |    Steep     |   1.00    |  0.97  |
-| Route section (2)         | Night without street lights |    Steep     |   0.06    |  0.12  |
+| Section (1)               |             Day             |    Steep     |   1.00    |  0.91  |
+| Section (2)               |             Day             |    Steep     |   1.00    |  0.97  |
+| Section (2)               | Night without street lights |    Steep     |   0.06    |  0.12  |
 
 ## Conclusion
 
