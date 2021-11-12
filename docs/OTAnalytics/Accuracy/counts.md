@@ -25,7 +25,7 @@ The results are shown in the table below.
 | Route section (2)         | Night without street lights |    Steep     |   0.06    |  0.12  |
 
 The high values for precision and recall in many scenarios show that OpenTrafficCam already works quite well with the official YOLOv5x6 model and a rather simple tracker.
-Thus, on different traffic facilities, counting qualities were achieved that probably even exceed those of manual on-site counts.
+Thus, on different traffic facilities, counting qualities were achieved that probably exceed those of manual on-site counts.
 And even video recordings at night with street-side lighting seem to be no problem for OpenTrafficCam.
 
 Unsatisfactory results, however, occurred with comparatively flat camera angles or night recordings without street lighting.
