@@ -21,11 +21,11 @@ In his diploma thesis OpenTrafficCam contributor Armin Kollascheck investigated 
 | :----------------------------------------: | :---------------------------------------------: |
 |           Three-way intersection           |            Four-way intersection (1)            |
 | ![image](counts/4-way_intersection_2.png)  | ![image](counts/4-way_intersection_2_night.png) |
-|         Four-way intersection (2)          |        Four-way intersection (2) @ night        |
+|         Four-way intersection (2)          |        Four-way intersection (2) at night        |
 | ![image](counts/4-way_roundabout_flat.png) |         ![image](counts/section_1.png)          |
 |            Four-way roundabout             |                   Section (1)                   |
 |       ![image](counts/section_2.png)       |      ![image](counts/section_2_night.png)       |
-|                Section (2)                 |               Section (2) @ night               |
+|                Section (2)                 |               Section (2) at night               |
 
 Armin evaluated the count data automatically generated with OpenTrafficCam against a manually collected and verified ground truth.
 The sample sizes for determining the precision and recall of the automated traffic counts are 200 vehicles for each scenario.
