@@ -20,6 +20,7 @@ theme:
     - navigation.top
     - search.suggest
     - search.highlight
+    - content.tabs.link
   icon:
     repo: fontawesome/brands/github
 
@@ -85,7 +86,7 @@ nav:
       - Training:
           - OTLabels/training/extendmodel.md
           - OTLabels/training/newmodel.md
-          - OTLabels/training/performancemeasures.md
+          - OTLabels/training/validation.md
       - Trainend Models:
           - OTLabels/models/coco6.md
   - Contribute:
@@ -127,6 +128,8 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true  
   # - meta
 
 plugins:
