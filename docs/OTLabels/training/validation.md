@@ -24,12 +24,12 @@ In the task of object detection it is important
 #### Intersection Over Union (IOU)
 
 We can tell if a predicted bounding box matches a ground truth bounding box by calculating and looking at the IOU of the two bounding boxes.
-As Padilla et al explained in the paper[^1], "a perfect match is considered when the area and location of the predicted and ground-truth boxes are the same".
+As Padilla et al. explained in the paper[^1], "a perfect match is considered when the area and location of the predicted and ground-truth boxes are the same".
 Therefore, the IOU is calculated by determining the area of the intersection of the two bounding boxes and dividing it by the area of the union of the two bounding boxes as shown in:
 
 ![IOU Image](assets/iou.svg)
 <p align = "center">
-Illustration adapted from the paper <a href="https://doi.org/10.3390/electronics10030279">"Analysis of Object Detection Metrics with a Companion Open-Source Toolkit"
+Illustration adapted from the paper <a href="https://doi.org/10.3390/electronics10030279">"Analysis of Object Detection Metrics with a Companion Open-Source Toolkit"</a>
 </p>
 
 Thus, two bounding boxes are considered a perfect match if the **IOU = 1**.
@@ -37,9 +37,24 @@ Meaning the predicted and ground truth bounding boxes share the same location an
 
 On the other hand, the **IOU = 0** when there is no intersection between the predicted and the ground truth bounding box.
 
-Usually a an IOU treshold is defined in order to decide whether a predicted and ground truth bounding box are considered a match.
+Usually a an IOU threshold is defined in order to decide whether a predicted and ground truth bounding box are considered a match.
 
-#### True Positives, True Negatives, False Positives, False Negatives
+#### True Positives, False Positives, False Negatives
+
+This section will explain what true positives, false positives, false negatives and true negatives are in the task of object detection.
+Thus, we will look at their definitions explained by Padilla et al. in their paper[^1]:
+
+##### True Positive
+
+A correct detection of a ground-truth bounding box.
+
+##### False Positive
+
+An incorrect detection of a non-existing object or a misplaced detection of an existing object.
+
+##### False Negatives
+
+An undetected ground-truth bounding box.
 
 #### Precision
 
