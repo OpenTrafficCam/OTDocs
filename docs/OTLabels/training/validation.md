@@ -13,11 +13,31 @@ As mentioned above **OTValidate** will also provide tools to analyse the results
 For the **object detection task** OTValidate needs two input files namely an `.otdet` file and the ground truth label data for the object detection task.
 Alternatively, a custom or an existing model can be given over as an input instead of an `.otdet` file.
 
-## Metrics
+## Performance Metrics
+
+In this section we briefly go over the different metrics to evaluate our models on how they fare in the different tasks.
 
 ### Object Detection
 
+In the task of object detection it is important 
+
 #### Intersection Over Union (IOU)
+
+We can tell if a predicted bounding box matches a ground truth bounding box by calculating and looking at the IOU of the two bounding boxes.
+As Padilla et al explained in the paper[^1], "a perfect match is considered when the area and location of the predicted and ground-truth boxes are the same".
+Therefore, the IOU is calculated by determining the area of the intersection of the two bounding boxes and dividing it by the area of the union of the two bounding boxes as shown in:
+
+![IOU Image](assets/iou.svg)
+<p align = "center">
+Illustration adapted from the paper <a href="https://doi.org/10.3390/electronics10030279">"Analysis of Object Detection Metrics with a Companion Open-Source Toolkit"
+</p>
+
+Thus, two bounding boxes are considered a perfect match if the **IOU = 1**.
+Meaning the predicted and ground truth bounding boxes share the same location and the same size.
+
+On the other hand, the **IOU = 0** when there is no intersection between the predicted and the ground truth bounding box.
+
+Usually a an IOU treshold is defined in order to decide whether a predicted and ground truth bounding box are considered a match.
 
 #### True Positives, True Negatives, False Positives, False Negatives
 
@@ -139,3 +159,6 @@ evaluate_detection_performance(
 
 The evaluation results of the models will be saved in the directories containing the annotation data.
 An `out` directory containing all the results will be created there.
+
+
+[^1]: Padilla, R.; Passos, W.L.; Dias, T.L.B.; Netto, S.L.; da Silva, E.A.B. A Comparative Analysis of Object Detection Metrics with a Companion Open-Source Toolkit. Electronics 2021, 10, 279. [https://doi.org/10.3390/electronics10030279](https://doi.org/10.3390/electronics10030279)
