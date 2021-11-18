@@ -1,16 +1,33 @@
 # Traffic counts
 
-## Why is accuracy so important?
+## Why is a high quality of the counts so important?
 
 One of the main goals of OpenTrafficCam are automatic traffic counts at road sections and intersections.
 However, the results of such counts are only suitable for mobility planning if they are of high quality.
 In the worst case, traffic facilities planned based on inaccurate count data can waste public resources and even endanger the health of their users.
 
-## How to measure accuracy?
+## How to measure the quality of the counts?
 
 Precision and Recall, which are used to evaluate machine learning algorithms, can similarly be used as meaningful metrics to evaluate the quality of automated traffic counts.
-The precision metric describes the ratio of vehicles counted correctly by OpenTrafficCam to all vehicles counted by OpenTrafficCam (including incorrect ones).
-On the other hand, the recall metric describes the ratio of vehicles correctly counted by OpenTrafficCam to all vehicles passed in reality (including those not counted by OpenTrafficCam).
+The precision metric describes the ratio of vehicles counted correctly by OpenTrafficCam to all vehicles counted by OpenTrafficCam including incorrect ones.
+On the other hand, the recall metric describes the ratio of vehicles correctly counted by OpenTrafficCam to all vehicles passed in reality including those not counted by OpenTrafficCam.
+
+An Exampel:
+
+- 100 vehicles pass through a junction
+- 80 of them are correctly detected by the system (true positv)
+- 20 are therefore not correctly detected (false negativ)
+- the system indicates that 110 vehicles would have passed the intersection
+- the system has thus detected 30 vehicles that were not present in reality (false positiv)
+
+|                     |  110 got detected  | 20 got not detected |
+|---------------------|:------------------:|:-------------------:|
+| 100 vehicles passed |  80 (true positiv) |  20 (false negativ) |
+| 30 are not real     | 30 (false positiv) |  -- (true negativ)  |
+
+The prescision (or accuracy) is equal to true positiv / (true positiv + false positiv). In this case the prescision would be 80 / (80 + 30) = 0.73.
+The recall (or sensitivity) is equal to true positiv / (true positiv + false negativ). In this case the recall would be 80 / (80 + 20) = 0.80.
+The higher the two measurements are, the higher the quality of the results are.
 
 ## How accurate can you count using OpenTrafficCam?
 
@@ -28,7 +45,7 @@ In his diploma thesis OpenTrafficCam contributor Armin Kollascheck investigated 
 |                Section (2)                 |               Section (2) at night               |
 
 Armin evaluated the count data automatically generated with OpenTrafficCam against a manually collected and verified ground truth.
-The sample sizes for determining the precision and recall of the automated traffic counts are 200 vehicles for each scenario.
+The sample sizes for determining the precision and recall of the automated traffic counts are 200 vehicles for each scenario. The ground truth of 200 vehicles was always counted manually.
 The results are shown in the table below.
 
 | Traffic facility          |          Lighting           | Camera angle | Precision | Recall |
