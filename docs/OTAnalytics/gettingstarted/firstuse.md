@@ -7,12 +7,12 @@ OTAnalytics provides a simple and classic Point-and-Click-Userinterface. Your fi
 
 ## Load and select Detections
 
-Your next step should be to import the output-file from [**OTVision**](https://github.com/OpenTrafficCam/OTVision). This file contains framewise information about vehicles such as class, position and size in pixel of detected objects. With this information OTAnalytics can calculate bounding boxes and driven tracks. After the import object IDs and object class will be displayed in die middle right listbox. You can display a single or multiple track by selecting the object IDs or you can display all tracks at once.
+With click on the "Load tracks"-button a dialogue window pops up which asks for the trackfile from [**OTVision**](https://github.com/OpenTrafficCam/OTVision). This file contains framewise information about vehicles such as class, position and size in pixel of detected objects. With this information OTAnalytics can calculate bounding boxes and driven tracks and colors them dependent on vehicleclass. After the import object IDs and object class will be displayed in die middle right listbox. You can display a single track or multiple tracks by selecting the object IDs or you can display all tracks at once.
 
 
 ## First glance
 
-After importing all necessary files. Its important to check if chosen data correspond to eachother. The easiest way to do this, is to play, slide or scroll through the video. If correct, bounding boxes should overlay vehicles, pedestrians and cyclist. The bounding boxes are annotated with object class and confidence factor. Its also possibil to live draw tracks.
+After importing all necessary files. Its important to check if chosen data correspond to eachother. The easiest way to do this, is to play, slide or scroll through the video. If correct, bounding boxes should overlay vehicles, pedestrians and cyclist. The bounding boxes are annotated with object class and confidence factor. Its also possible to live draw tracks.
 
 
 
