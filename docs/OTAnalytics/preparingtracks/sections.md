@@ -7,4 +7,4 @@ OTAnalytics provides functions to lay down sections for analyzing traffic flow a
 
 For a linesection simply toggle the "Line"-button, click- and drag your mouse over the canvas. Press enter to define a sectionname and finish the creationprocess. Areasections work almost similar. Leftclick to define boundaries and rightclick to automatically close the polygon. Created sections will appear in the middle left listbox. Selected section will be highlighted on canvas and can be deleted or renamed. If you want to continue your work you can ex- and later import a flow-file that contains information about sections and movements.
 
-<"gif">
+![OTAnalytics_add_sections](https://user-images.githubusercontent.com/75123353/142613253-cbd0aaad-72ee-4eb5-8a4b-b87b0c7b154f.gif)
