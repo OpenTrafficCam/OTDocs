@@ -58,7 +58,25 @@ An undetected ground-truth bounding box.
 
 #### Precision
 
+Padilla et al. explain in [ [^1] ] precision as "the ability of a model to identify only relevant objects. It is the percentage of correct positive predictions."
+
+Precision is calculated as:
+
+$$
+Precision = \frac{TP}{TP + FP}
+$$
+
 #### Recall
+
+Padilla et al. explain in [ [^1] ] recall as "the ability of a model to find all relevant cases (all ground-truth bounding boxes). It is the percentage of correct positive predictions among all given ground truths."
+
+Recall is calculated as:
+
+$$
+Recall = \frac{TP}{TP + FN}
+$$
+
+
 
 #### Mean Average Precision
 
