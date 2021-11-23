@@ -76,9 +76,24 @@ $$
 Recall = \frac{TP}{TP + FN}
 $$
 
+#### Average Precision (AP)
 
+As Padilla et al. explained that an object detection model "can be considered good if, when the confidence threshold decreases, its precision remains high as its recall increases"[ [^1] ].
+Taking this into account a model with a large area under a precision-recall curve indicates a high precision and a high recall.
+Thus, the  **average precision** "is a metric based based on the area under a [precision-recall curve]" [ [^1] ].
 
-#### Mean Average Precision
+#### Mean Average Precision (mAP)
+
+We need to keep in mind that the average precision needs to be calculated for each class individually [ [^1] ].
+Hence, the **mean average precision** "is a metric that is able to represent the exactness of the detections among all classes" [ [^1] ].
+
+The mAP is calculated as follows:
+
+$$
+mAP = \frac{1}{C} \sum_{i=1}^{C} AP_i
+$$
+
+where C is the total number of classes and $AP_i$ is the average precision of class $i$ [ [^1] ].
 
 #### Tide Metrics
 
@@ -193,5 +208,6 @@ evaluate_detection_performance(
 The evaluation results of the models will be saved in the directories containing the annotation data.
 An `out` directory containing all the results will be created there.
 
+## References
 
 [^1]: Padilla, R.; Passos, W.L.; Dias, T.L.B.; Netto, S.L.; da Silva, E.A.B. A Comparative Analysis of Object Detection Metrics with a Companion Open-Source Toolkit. Electronics 2021, 10, 279. [https://doi.org/10.3390/electronics10030279](https://doi.org/10.3390/electronics10030279)
