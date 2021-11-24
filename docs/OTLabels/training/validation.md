@@ -19,7 +19,8 @@ In this section we briefly go over the different metrics to evaluate our models 
 
 ### Object Detection
 
-In the task of object detection it is important 
+In the task of object detection a model is considered to be good if it is able to detect and classify an object correctly.
+In this section we are going to have a look in the different object detection performance metrics.
 
 #### Intersection Over Union (IOU)
 
@@ -42,7 +43,7 @@ Usually a an IOU threshold is defined in order to decide whether a predicted and
 #### True Positives, False Positives, False Negatives
 
 This section will explain what true positives, false positives, false negatives and true negatives are in the task of object detection.
-Thus, we will look at their definitions explained by Padilla et al. in their paper[^1]:
+Thus, we will look at their definitions as defined by Padilla et al. in their paper[^1]:
 
 ##### True Positive
 
@@ -95,13 +96,44 @@ $$
 
 where C is the total number of classes and $AP_i$ is the average precision of class $i$ [ [^1] ].
 
-#### Tide Metrics
+#### TIDE Metrics
+
+Bolya et al. created **[TIDE](https://dbolya.github.io/tide/)** a *General Toolbox for Identifying Object Detection Errors*[^2].
+As Bolya et al. explain in their paper[^2] "mAP succinctly summarizes the performance of a model in one number".
+Thus, the mAP performance metric does not give us any insight on what and how the different error types influence its score, that is the mAP score.
+The aim of TIDE is exactly that, to give us this insight on how the different error types affect the mAP score and as Bolya et al. stated in [ [^2] ] giving us "a comprehensive analysis of each model's strengths and weaknesses".
+
+[TIDE](https://dbolya.github.io/tide/) defines six main error types as follows:
+
+!!! info
+    The following descriptions of the error types are directly taken from the [TIDE source code](https://github.com/dbolya/tide/blob/master/tidecv/errors/main_errors.py)
+
+1. **Classification Error**: Error caused when a prediction would have been marked positive if it had the correct class.
+
+2. **Localization Error**: Error caused when a prediction would have been marked positive if it was localized better.
+
+3. **Both Cls and Loc Error**: This detection didn't fall into any of the other error categories.
+
+4. **Duplicate Detection Error**: Error caused when a prediction would have been marked positive if the GT wasn't already in use by another detection.
+
+5. **Background Error**: Error caused when this detection should have been classified as background (IoU < 0.1).
+
+6. **Missed Ground Truth Error**: Represents GT missed by the model. Doesn't include GT corrected elsewhere in the model.
 
 ### Object Tracking
 
+!!! info "Coming soon"
+    Unfortunately, there is no content here yet. But we are currently working on completing this website.
+
 ### Traffic Measures
 
+!!! info "Coming soon"
+    Unfortunately, there is no content here yet. But we are currently working on completing this website.
+
 ## Installation
+
+=== "Windows"
+    TODO: Installation instructions for Windows
 
 === "Linux/ macOS Intel"
 
@@ -121,9 +153,6 @@ where C is the total number of classes and $AP_i$ is the average precision of cl
     cd OTValidate
     make install
     ```
-
-=== "Windows"
-    TODO: Installation instructions for Windows
 
 === "Apple M1"
 
@@ -210,4 +239,6 @@ An `out` directory containing all the results will be created there.
 
 ## References
 
-[^1]: Padilla, R.; Passos, W.L.; Dias, T.L.B.; Netto, S.L.; da Silva, E.A.B. A Comparative Analysis of Object Detection Metrics with a Companion Open-Source Toolkit. Electronics 2021, 10, 279. [https://doi.org/10.3390/electronics10030279](https://doi.org/10.3390/electronics10030279)
+[^1]: Padilla, R., Passos, W. L., Dias, T. L., Netto, S. L., & da Silva, E. A. (2021). A comparative analysis of object detection metrics with a companion open-source toolkit. Electronics, 10(3), 279. [https://doi.org/10.3390/electronics10030279](https://doi.org/10.3390/electronics10030279)
+
+[^2]: Bolya, D., Foley, S., Hays, J., & Hoffman, J. (2020). Tide: A general toolbox for identifying object detection errors. In Computer Vision–ECCV 2020: 16th European Conference, Glasgow, UK, August 23–28, 2020, Proceedings, Part III 16 (pp. 558-573). Springer International Publishing. [https://dbolya.github.io/tide/paper.pdf](https://dbolya.github.io/tide/paper.pdf)
