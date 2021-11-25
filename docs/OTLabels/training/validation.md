@@ -81,7 +81,8 @@ $$
 
 As Padilla et al. explained that an object detection model "can be considered good if, when the confidence threshold decreases, its precision remains high as its recall increases"[ [^1] ].
 Taking this into account a model with a large area under a precision-recall curve indicates a high precision and a high recall.
-Thus, the  **average precision** "is a metric based based on the area under a [precision-recall curve]" [ [^1] ].
+Therefore, the  **average precision** "is a metric based on the area under a [precision-recall curve]" [ [^1] ] with a selected IOU threshold.
+Thus the following notation for example, AP@50 denotes the average precision with IOU threshold at 50%.
 
 #### Mean Average Precision (mAP)
 
@@ -119,6 +120,46 @@ The aim of TIDE is exactly that, to give us this insight on how the different er
 5. **Background Error**: Error caused when this detection should have been classified as background (IoU < 0.1).
 
 6. **Missed Ground Truth Error**: Represents GT missed by the model. Doesn't include GT corrected elsewhere in the model.
+
+#### Confusion Matrix
+
+The confusion matrix gives us a visual insight on how our object detection model performs in the classification task.
+
+Let us have a look first at the confusion matrix of a **binary classification problem**:
+
+![Confusion Matrix Binary](assets/confusion_matrix_binary.svg)
+<p align = "center">
+Illustration adapted from the paper <a href="https://arxiv.org/abs/2010.16061">"Evaluation: from precision, recall and F-measure to ROC, informedness, markedness and correlation"</a> by David M. W. Powers[^3]
+</p>
+
+The rows of the above confusion matrix represent the predicted class whereas the columns represent the ground truth class. Thus a prediction can be categorized as follows:
+
+1. A prediction that has been predicted as positive class and that is found to be an actual/real positive class in the ground truth, is counted as a **true positive**.
+
+1. A prediction that has been predicted as negative class and is found to be an actual/real negative class is counted as a **true negative**.
+
+1. A prediction that has been predicted as positive and is found to be **not** an actual/real positive class is counted as a **false positive**.
+
+1. A prediction that has been predicted as negative and is found to be **not** an actual/real negative class is counted as a **false negative**.
+
+Hence, the confusion matrix gives us a clear visualization of how many of our predictions were classified correctly or incorrectly.
+
+The confusion matrix of multi classification problem looks a little bit different:
+
+![Confusion Matrix Multi](assets/confusion_matrix_multi.svg)
+
+As the image above implies, we now have multiple classes.
+For this example we want to classify the class `car`, `person` and `truck`.
+The green color coded tiles denote the true positive predictions.
+
+Let's take for example the row denoted with the class `car`.
+Here is how it is to be interpreted:
+Out of the 8 cars that have been predicted:
+
+- three were correctly classified as a `car`,
+- none were incorrectly classified as a `person` and
+- 5 were incorrectly classified as `truck`
+
 
 ### Object Tracking
 
@@ -242,3 +283,5 @@ An `out` directory containing all the results will be created there.
 [^1]: Padilla, R., Passos, W. L., Dias, T. L., Netto, S. L., & da Silva, E. A. (2021). A comparative analysis of object detection metrics with a companion open-source toolkit. Electronics, 10(3), 279. [https://doi.org/10.3390/electronics10030279](https://doi.org/10.3390/electronics10030279)
 
 [^2]: Bolya, D., Foley, S., Hays, J., & Hoffman, J. (2020). Tide: A general toolbox for identifying object detection errors. In Computer Vision–ECCV 2020: 16th European Conference, Glasgow, UK, August 23–28, 2020, Proceedings, Part III 16 (pp. 558-573). Springer International Publishing. [https://dbolya.github.io/tide/paper.pdf](https://dbolya.github.io/tide/paper.pdf)
+
+[^3]: Powers, D. M. (2020). Evaluation: from precision, recall and F-measure to ROC, informedness, markedness and correlation. arXiv preprint arXiv:2010.16061.
