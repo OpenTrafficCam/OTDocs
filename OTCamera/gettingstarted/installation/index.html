@@ -10,7 +10,7 @@
       
       
       <link rel="icon" href="../../../assets/OTC_icon.svg">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.4">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
     
     
       
@@ -18,7 +18,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.db9e7362.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.a57b2b03.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.3f5d1f46.min.css">
@@ -612,6 +612,8 @@ OpenTrafficCam is a project that is currently under development. The content on 
       </a>
       
         
+
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
@@ -1610,8 +1612,8 @@ OpenTrafficCam is a project that is currently under development. The content on 
   
   
     <li class="md-nav__item">
-      <a href="../../../OTLabels/training/performancemeasures/" class="md-nav__link">
-        Performance Measures
+      <a href="../../../OTLabels/training/validation/" class="md-nav__link">
+        Validation
       </a>
     </li>
   
@@ -1824,6 +1826,8 @@ OpenTrafficCam is a project that is currently under development. The content on 
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
+
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
@@ -1900,7 +1904,9 @@ Just press <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><
 <p>Setup a hostname, enable SSH, either password based or using public-key authentication (recommended!),
 configure your Wifi credentials and choose the correct locale for Wifi, timezone and keyboard layout.
 You can also skip the first-run wizard.</p>
-<details class="help"><summary>How to generate a public key</summary><p>Generate SSH-Keys for password-less connection. On your desktop computer open a command line terminal (CMD or Powershell on Windows or a bash on Linux) and run</p>
+<details class="help">
+<summary>How to generate a public key</summary>
+<p>Generate SSH-Keys for password-less connection. On your desktop computer open a command line terminal (CMD or Powershell on Windows or a bash on Linux) and run</p>
 <div class="highlight"><pre><span></span><code><span class="n">ssh-keygen</span>
 </code></pre></div>
 <p>to generate a public private key combination. Add the private key to your ssh-agent
@@ -1918,7 +1924,9 @@ You can also skip the first-run wizard.</p>
 <p class="admonition-title">Tip</p>
 <p>Sometimes the verification may fail. Try another USB port on your PC or another card reader. If this does not help, maybe the SD card is broken.</p>
 </div>
-<details class="help"><summary>Setup without Raspberry Pi Imager</summary><ol>
+<details class="help">
+<summary>Setup without Raspberry Pi Imager</summary>
+<ol>
 <li>
 <p>Add an empty file named <code>ssh</code> to the boot partition to <a href="https://www.raspberrypi.org/documentation/remote-access/ssh/README.md">enable ssh on first boot</a>.</p>
 </li>
@@ -1942,7 +1950,9 @@ Try to connect to the Pi using a command line or PowerShell:</p>
 <div class="highlight"><pre><span></span><code><span class="n">ssh</span> <span class="n">pi</span><span class="nv">@otcamera01</span>
 </code></pre></div>
 <p>If everything is setup correctly, you will be asked to add the host key to the list of known hosts (answer: yes) and you should be connected to your Raspberry Pi.</p>
-<details class="help"><summary>warning: agent returned different signature type ssh-rsa (expected rsa-sha2-512)</summary><p>If you are on Windows you may need to update OpenSSH if you ar getting this error:</p>
+<details class="help">
+<summary>warning: agent returned different signature type ssh-rsa (expected rsa-sha2-512)</summary>
+<p>If you are on Windows you may need to update OpenSSH if you ar getting this error:</p>
 <div class="highlight"><pre><span></span><code><span class="n">warning</span><span class="p">:</span> <span class="n">agent</span> <span class="n">returned</span> <span class="n">different</span> <span class="n">signature</span> <span class="nb">type </span><span class="n">ssh-rsa</span> <span class="p">(</span><span class="n">expected</span> <span class="n">rsa-sha2</span><span class="p">-</span><span class="n">512</span><span class="p">)</span>
 </code></pre></div>
 <div class="admonition warning">
@@ -1980,7 +1990,9 @@ We are not liable for any damage you may cause to your system. But we followed t
 <div class="highlight"><pre><span></span><code>sudo apt update <span class="o">&amp;&amp;</span> sudo apt upgrade -y
 sudo reboot
 </code></pre></div>
-<details class="help"><summary>A new version of configuration file is available</summary><p><img alt="ssh upgrade warning" src="rpi_sshd_upgrade.png" /></p>
+<details class="help">
+<summary>A new version of configuration file is available</summary>
+<p><img alt="ssh upgrade warning" src="rpi_sshd_upgrade.png" /></p>
 <p>If you get this message, don't worry.
 Keep the local version currently installed, since we changed the ssh server configuration using the RPi Imager.</p>
 </details>
@@ -1993,7 +2005,9 @@ Keep the local version currently installed, since we changed the ssh server conf
 <li>Interface Options &rightarrow; Camera &rightarrow; enable</li>
 <li>Interface Options &rightarrow; Serial Port &rightarrow; no &rightarrow; Serial Hardware &rightarrow; yes</li>
 </ul>
-<details class="help"><summary>Setup without Raspberry Pi Imager</summary><p>If you did not use the Raspberry Pi Imager, you will need to setup a few more things.</p>
+<details class="help">
+<summary>Setup without Raspberry Pi Imager</summary>
+<p>If you did not use the Raspberry Pi Imager, you will need to setup a few more things.</p>
 <ul>
 <li>System Options<ul>
 <li>Hostname</li>
@@ -2141,10 +2155,16 @@ The setup will then be much easier.</p>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "search.suggest", "search.highlight"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.8397ff9e.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.1e84347e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.b1047164.min.js"></script>
+      
+        <script src="../../../assets/js/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>
