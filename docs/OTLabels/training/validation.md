@@ -38,28 +38,20 @@ Meaning the predicted and ground truth bounding boxes share the same location an
 
 On the other hand, the **IOU = 0** when there is no intersection between the predicted and the ground truth bounding box.
 
-Usually a an IOU threshold is defined in order to decide whether a predicted and ground truth bounding box are considered a match.
+Usually an IOU threshold is defined in order to decide whether a predicted and ground truth bounding box are considered a match.
 
 #### True Positives, False Positives, False Negatives
 
 This section will explain what true positives, false positives, false negatives and true negatives are in the task of object detection.
-Thus, we will look at their definitions as defined by Padilla et al. in their paper[^1]:
+Thus, we will look at their definitions as defined by Padilla et al. [^1]:
 
-##### True Positive
-
-A correct detection of a ground-truth bounding box.
-
-##### False Positive
-
-An incorrect detection of a non-existing object or a misplaced detection of an existing object.
-
-##### False Negatives
-
-An undetected ground-truth bounding box.
+A **True Positive** is a correct detection of a ground-truth bounding box.
+An incorrect detection of a non-existing object or a misplaced detection of an existing object is a **False Positive**.
+An undetected ground-truth bounding box is named **False Negative**.
 
 #### Precision
 
-Padilla et al. explain in [ [^1] ] precision as "the ability of a model to identify only relevant objects. It is the percentage of correct positive predictions."
+Padilla et al. [^1] explain precision as "the ability of a model to identify only relevant objects. It is the percentage of correct positive predictions."
 
 Precision is calculated as:
 
@@ -69,7 +61,7 @@ $$
 
 #### Recall
 
-Padilla et al. explain in [ [^1] ] recall as "the ability of a model to find all relevant cases (all ground-truth bounding boxes). It is the percentage of correct positive predictions among all given ground truths."
+Padilla et al. [^1] explain recall as "the ability of a model to find all relevant cases (all ground-truth bounding boxes). It is the percentage of correct positive predictions among all given ground truths."
 
 Recall is calculated as:
 
@@ -81,13 +73,13 @@ $$
 
 As Padilla et al. explained that an object detection model "can be considered good if, when the confidence threshold decreases, its precision remains high as its recall increases"[ [^1] ].
 Taking this into account a model with a large area under a precision-recall curve indicates a high precision and a high recall.
-Therefore, the  **average precision** "is a metric based on the area under a [precision-recall curve]" [ [^1] ] with a selected IOU threshold.
+Therefore, the  **average precision** "is a metric based on the area under a [precision-recall curve]" [^1] with a selected IOU threshold.
 Thus the following notation for example, AP@50 denotes the average precision with IOU threshold at 50%.
 
 #### Mean Average Precision (mAP)
 
-We need to keep in mind that the average precision needs to be calculated for each class individually [ [^1] ].
-Hence, the **mean average precision** "is a metric that is able to represent the exactness of the detections among all classes" [ [^1] ].
+We need to keep in mind that the average precision needs to be calculated for each class individually.
+Hence, the **mean average precision** "is a metric that is able to represent the exactness of the detections among all classes" [^1].
 
 The mAP is calculated as follows:
 
@@ -95,14 +87,14 @@ $$
 mAP = \frac{1}{C} \sum_{i=1}^{C} AP_i
 $$
 
-where C is the total number of classes and $AP_i$ is the average precision of class $i$ [ [^1] ].
+where C is the total number of classes and $AP_i$ is the average precision of class $i$ [^1].
 
 #### TIDE Metrics
 
 Bolya et al. created **[TIDE](https://dbolya.github.io/tide/)** a *General Toolbox for Identifying Object Detection Errors*[^2].
 As Bolya et al. explain in their paper[^2] "mAP succinctly summarizes the performance of a model in one number".
 Thus, the mAP performance metric does not give us any insight on what and how the different error types influence its score, that is the mAP score.
-The aim of TIDE is exactly that, to give us this insight on how the different error types affect the mAP score and as Bolya et al. stated in [ [^2] ] giving us "a comprehensive analysis of each model's strengths and weaknesses".
+The aim of TIDE is exactly that, to give us this insight on how the different error types affect the mAP score and as Bolya et al. [^2] stated giving us "a comprehensive analysis of each model's strengths and weaknesses".
 
 [TIDE](https://dbolya.github.io/tide/) defines six main error types as follows:
 
@@ -225,7 +217,7 @@ Out of the 8 cars that have been predicted:
 
 ### Image Annotation Data
 
-The folder containing the ground truth annotations of the images need to be in the **YOLOv4** format:
+The folder containing the ground truth annotations of the images need to be in the **YOLO** format:
 
 ```project
 annotation_data
@@ -246,7 +238,7 @@ annotation_data
 
 ### Analyse Object Detection Performance
 
-#### **1. Quickstart Guide**
+#### **Quickstart Guide**
 
 ```python
 from OTValidate  import evaluate_detection_performance
@@ -273,7 +265,7 @@ evaluate_detection_performance(
 )
 ```
 
-#### **2. Results**
+#### **Results**
 
 The evaluation results of the models will be saved in the directories containing the annotation data.
 An `out` directory containing all the results will be created there.

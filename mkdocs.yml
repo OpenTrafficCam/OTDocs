@@ -134,10 +134,10 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tabbed:
-      alternate_style: true  
+      alternate_style: true
   - footnotes
   - pymdownx.arithmatex:
-        generic: true
+      generic: true
   # - meta
 
 plugins:
