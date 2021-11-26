@@ -5,7 +5,7 @@ In the case **OpenTrafficCam**, we want to evaluate and compare different object
 Furthermore, we want to analyse the results of **[OTAnalytics](<https://github.com/OpenTrafficCam/OTAnalytics>)** on a set of traffic performance metrics.
 
 For this purpose we are currently developing **[OTValidate](<https://github.com/OpenTrafficCam/OTValidate>)** which allows the user to analyse and compare the models' performances on object detection and tracking by calculating metrics corresponding to the specific task at hand.
-As mentioned above **OTValidate** will also provide tools to analyse the results of **OTAnalytics** regarding traffic performance.
+As mentioned above **OTValidate** will also provide tools to analyse the results of **OTAnalytics** in regards to traffic performance.
 
 ## OTValidate
 
