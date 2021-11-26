@@ -1,4 +1,4 @@
-# Overview 
+# Overview
 
 Validation gives insight on how well a model or software performs.
 In the case **OpenTrafficCam**, we want to evaluate and compare different object detection models on how well they perform in object detection and object tracking.
