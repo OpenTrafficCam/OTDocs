@@ -1090,7 +1090,7 @@ OpenTrafficCam is a project that is currently under development. The content on 
   
     <li class="md-nav__item">
       <a href="../../" class="md-nav__link">
-        In a Nutshell
+        Features
       </a>
     </li>
   
@@ -1170,9 +1170,54 @@ OpenTrafficCam is a project that is currently under development. The content on 
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          First Use
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         First Use
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#load-video" class="md-nav__link">
+    Load Video
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#load-and-select-detections" class="md-nav__link">
+    Load and select Detections
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#first-glance" class="md-nav__link">
+    First glance
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1213,20 +1258,6 @@ OpenTrafficCam is a project that is currently under development. The content on 
           Preparing Tracks
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../preparingtracks/data/" class="md-nav__link">
-        Data
-      </a>
-    </li>
-  
-
-            
           
             
               
@@ -1833,6 +1864,35 @@ OpenTrafficCam is a project that is currently under development. The content on 
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#load-video" class="md-nav__link">
+    Load Video
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#load-and-select-detections" class="md-nav__link">
+    Load and select Detections
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#first-glance" class="md-nav__link">
+    First glance
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1849,17 +1909,32 @@ OpenTrafficCam is a project that is currently under development. The content on 
 
 
 <h1 id="first-use">First Use<a class="headerlink" href="#first-use" title="Permanent link">&para;</a></h1>
-<div class="admonition info">
-<p class="admonition-title">Coming soon</p>
-<p>Unfortunately, there is no content here yet. But we are currently working on completing this website.</p>
-</div>
+<h2 id="load-video">Load Video<a class="headerlink" href="#load-video" title="Permanent link">&para;</a></h2>
+<p>OTAnalytics provides a simple and classic Point-and-Click-Userinterface.
+Your first step should be to load a videofile in the most common formats such as mkv or mp4 by clicking on the "load video"-button.
+The chosen filename will be inserted in the upper left listbox and a canvas with the first videoframe will be created.
+You can navigate through the video by either by scrolling, sliding or simply playing the video.</p>
+<h2 id="load-and-select-detections">Load and select Detections<a class="headerlink" href="#load-and-select-detections" title="Permanent link">&para;</a></h2>
+<p>With click on the "Load tracks"-button a dialogue window pops up which asks for the trackfile from <a href="https://github.com/OpenTrafficCam/OTVision"><strong>OTVision</strong></a>.
+This file contains framewise information about vehicles such as class, position and size in pixel of detected objects.
+With this information OTAnalytics can calculate bounding boxes and driven tracks and colors them dependent on vehicleclass.
+After the import object IDs and object class will be displayed in die middle right listbox.
+You can display a single track or multiple tracks by selecting the object IDs or you can display all tracks at once.</p>
+<h2 id="first-glance">First glance<a class="headerlink" href="#first-glance" title="Permanent link">&para;</a></h2>
+<p>After importing all necessary files.
+Its important to check if chosen data correspond to eachother.
+The easiest way to do this, is to play, slide or scroll through the video.
+If correct, bounding boxes should overlay vehicles, pedestrians and cyclist.
+The bounding boxes are annotated with object class and confidence factor.
+Its also possible to live draw tracks.</p>
+<p><img alt="OTAnalytics_first_glance" src="../tracks.gif" /></p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 27, 2021</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 28, 2021</span>
       
     
   </small>
@@ -1898,13 +1973,13 @@ OpenTrafficCam is a project that is currently under development. The content on 
       
       
         
-        <a href="../../preparingtracks/data/" class="md-footer__link md-footer__link--next" aria-label="Next: Data" rel="next">
+        <a href="../../preparingtracks/sections/" class="md-footer__link md-footer__link--next" aria-label="Next: Sections" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Data
+              Sections
             </div>
           </div>
           <div class="md-footer__button md-icon">

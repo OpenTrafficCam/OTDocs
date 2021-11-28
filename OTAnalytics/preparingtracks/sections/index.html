@@ -1090,7 +1090,7 @@ OpenTrafficCam is a project that is currently under development. The content on 
   
     <li class="md-nav__item">
       <a href="../../" class="md-nav__link">
-        In a Nutshell
+        Features
       </a>
     </li>
   
@@ -1208,20 +1208,6 @@ OpenTrafficCam is a project that is currently under development. The content on 
               
   
   
-  
-    <li class="md-nav__item">
-      <a href="../data/" class="md-nav__link">
-        Data
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
     
   
   
@@ -1233,9 +1219,40 @@ OpenTrafficCam is a project that is currently under development. The content on 
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Sections
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Sections
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#create-and-delete-sections" class="md-nav__link">
+    Create and delete Sections
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1833,6 +1850,21 @@ OpenTrafficCam is a project that is currently under development. The content on 
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#create-and-delete-sections" class="md-nav__link">
+    Create and delete Sections
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1849,17 +1881,25 @@ OpenTrafficCam is a project that is currently under development. The content on 
 
 
 <h1 id="sections">Sections<a class="headerlink" href="#sections" title="Permanent link">&para;</a></h1>
-<div class="admonition info">
-<p class="admonition-title">Coming soon</p>
-<p>Unfortunately, there is no content here yet. But we are currently working on completing this website.</p>
-</div>
+<p>OTAnalytics provides functions to lay down sections for analyzing traffic flow and volume over time or traffic composition.
+Sections work as sensors which can detect crossing events and associated time and also the direction of objects if driven over multiple sections.
+Sections can easily be modeled as line or areasections depending on your purpose.</p>
+<h2 id="create-and-delete-sections">Create and delete Sections<a class="headerlink" href="#create-and-delete-sections" title="Permanent link">&para;</a></h2>
+<p>For a linesection simply toggle the "Line"-button, click- and drag your mouse over the canvas.
+Press enter to define a sectionname and finish the creationprocess.
+Areasections work almost similar.
+Leftclick to define boundaries and rightclick to automatically close the polygon.
+Created sections will appear in the middle left listbox.
+Selected section will be highlighted on canvas and can be deleted or renamed.
+If you want to continue your work you can ex- and later import a flow-file that contains information about sections and movements.</p>
+<p><img alt="OTAnalytics_add_sections" src="../sections.gif" /></p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 27, 2021</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 28, 2021</span>
       
     
   </small>
@@ -1882,7 +1922,7 @@ OpenTrafficCam is a project that is currently under development. The content on 
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../data/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Data" rel="prev">
+        <a href="../../gettingstarted/firstuse/" class="md-footer__link md-footer__link--prev" aria-label="Previous: First Use" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1891,7 +1931,7 @@ OpenTrafficCam is a project that is currently under development. The content on 
               <span class="md-footer__direction">
                 Previous
               </span>
-              Data
+              First Use
             </div>
           </div>
         </a>
