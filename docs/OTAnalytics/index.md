@@ -1,4 +1,4 @@
-# In a Nutshell
+# Features
 
 > The **brain** of OpenTrafficCam.
 

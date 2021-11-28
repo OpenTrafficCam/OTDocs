@@ -69,11 +69,13 @@ nav:
           - OTAnalytics/gettingstarted/installation.md
           - OTAnalytics/gettingstarted/firstuse.md
       - Preparing Tracks:
-          - OTAnalytics/preparingtracks/data.md
           - OTAnalytics/preparingtracks/sections.md
           - OTAnalytics/preparingtracks/movements.md
       - Traffic Analytics:
           - OTAnalytics/trafficanalytics/counts.md
+      - Accuracy:
+          - OTAnalytics/Accuracy/counts.md
+
   - OTLabels:
       - OTLabels/index.md
       - Getting Started:
