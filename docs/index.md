@@ -16,7 +16,6 @@ OpenTrafficCam consists of three modules. The [**OTCamera**](https://github.com/
 
 In addition to these three modules, we will provide a set of labelled images of German traffic objects with [**OTLabels**](https://github.com/OpenTrafficCam/OTLabels).
 
-## Use Cases
 
 <!-- TODO #49 Short description about Usecases -->
 

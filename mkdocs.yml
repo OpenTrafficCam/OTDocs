@@ -88,7 +88,10 @@ nav:
       - Training:
           - OTLabels/training/extendmodel.md
           - OTLabels/training/newmodel.md
-          - OTLabels/training/validation.md
+      - Validation:
+          - OTLabels/validation/overview.md
+          - OTLabels/validation/gettingstarted.md
+          - OTLabels/validation/metrics.md
       - Trainend Models:
           - OTLabels/models/coco6.md
   - Contribute:

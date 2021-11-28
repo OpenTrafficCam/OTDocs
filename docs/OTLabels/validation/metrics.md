@@ -1,34 +1,21 @@
-# Validation
+# Performance Metrics
 
-Validation gives insight on how well a model or software performs.
-In the case **OpenTrafficCam**, we want to evaluate and compare different object detection models on how well they perform in object detection and object tracking.
-Furthermore, we want to analyse the results of **[OTAnalytics](<https://github.com/OpenTrafficCam/OTAnalytics>)** on a set of traffic performance metrics.
+In this section we briefly go over the different metrics to evaluate our models on how they fare in the tasks of object detection and object tracking.
+Furthermore, we will look into the different metrics used to evaluate the results in terms of traffic analysis.
 
-For this purpose we are currently developing **[OTValidate](<https://github.com/OpenTrafficCam/OTValidate>)** which allows the user to analyse and compare the models' performances on object detection and tracking by calculating metrics corresponding to the specific task at hand.
-As mentioned above **OTValidate** will also provide tools to analyse the results of **OTAnalytics** regarding traffic performance.
-
-## Overview
-
-![OTValidate Overview Image](assets/otvalidate_overview.svg)
-For the **object detection task** OTValidate needs two input files namely an `.otdet` file and the ground truth label data for the object detection task.
-Alternatively, a custom or an existing model can be given over as an input instead of an `.otdet` file.
-
-## Performance Metrics
-
-In this section we briefly go over the different metrics to evaluate our models on how they fare in the different tasks.
-
-### Object Detection
+## Object Detection
 
 In the task of object detection a model is considered to be good if it is able to detect and classify an object correctly.
 In this section we are going to have a look in the different object detection performance metrics.
 
-#### Intersection Over Union (IOU)
+### Intersection Over Union (IOU)
 
 We can tell if a predicted bounding box matches a ground truth bounding box by calculating and looking at the IOU of the two bounding boxes.
 As Padilla et al. explained in the paper[^1], "a perfect match is considered when the area and location of the predicted and ground-truth boxes are the same".
 Therefore, the IOU is calculated by determining the area of the intersection of the two bounding boxes and dividing it by the area of the union of the two bounding boxes as shown in:
 
 ![IOU Image](assets/iou.svg)
+
 <p align = "center">
 Illustration adapted from the paper <a href="https://doi.org/10.3390/electronics10030279">"Analysis of Object Detection Metrics with a Companion Open-Source Toolkit"</a>
 </p>
@@ -40,7 +27,7 @@ On the other hand, the **IOU = 0** when there is no intersection between the pre
 
 Usually an IOU threshold is defined in order to decide whether a predicted and ground truth bounding box are considered a match.
 
-#### True Positives, False Positives, False Negatives
+### True Positives, False Positives, False Negatives
 
 This section will explain what true positives, false positives, false negatives and true negatives are in the task of object detection.
 Thus, we will look at their definitions as defined by Padilla et al. [^1]:
@@ -49,7 +36,7 @@ A **True Positive** is a correct detection of a ground-truth bounding box.
 An incorrect detection of a non-existing object or a misplaced detection of an existing object is a **False Positive**.
 An undetected ground-truth bounding box is named **False Negative**.
 
-#### Precision
+### Precision
 
 Padilla et al. [^1] explain precision as "the ability of a model to identify only relevant objects. It is the percentage of correct positive predictions."
 
@@ -59,7 +46,7 @@ $$
 Precision = \frac{TP}{TP + FP}
 $$
 
-#### Recall
+### Recall
 
 Padilla et al. [^1] explain recall as "the ability of a model to find all relevant cases (all ground-truth bounding boxes). It is the percentage of correct positive predictions among all given ground truths."
 
@@ -69,14 +56,14 @@ $$
 Recall = \frac{TP}{TP + FN}
 $$
 
-#### Average Precision (AP)
+### Average Precision (AP)
 
 As Padilla et al. explained that an object detection model "can be considered good if, when the confidence threshold decreases, its precision remains high as its recall increases"[ [^1] ].
 Taking this into account a model with a large area under a precision-recall curve indicates a high precision and a high recall.
-Therefore, the  **average precision** "is a metric based on the area under a [precision-recall curve]" [^1] with a selected IOU threshold.
+Therefore, the **average precision** "is a metric based on the area under a [precision-recall curve]" [^1] with a selected IOU threshold.
 Thus the following notation for example, AP@50 denotes the average precision with IOU threshold at 50%.
 
-#### Mean Average Precision (mAP)
+### Mean Average Precision (mAP)
 
 We need to keep in mind that the average precision needs to be calculated for each class individually.
 Hence, the **mean average precision** "is a metric that is able to represent the exactness of the detections among all classes" [^1].
@@ -89,9 +76,9 @@ $$
 
 where C is the total number of classes and $AP_i$ is the average precision of class $i$ [^1].
 
-#### TIDE Metrics
+### TIDE Metrics
 
-Bolya et al. created **[TIDE](https://dbolya.github.io/tide/)** a *General Toolbox for Identifying Object Detection Errors*[^2].
+Bolya et al. created **[TIDE](https://dbolya.github.io/tide/)** a _General Toolbox for Identifying Object Detection Errors_[^2].
 As Bolya et al. explain in their paper[^2] "mAP succinctly summarizes the performance of a model in one number".
 Thus, the mAP performance metric does not give us any insight on what and how the different error types influence its score, that is the mAP score.
 The aim of TIDE is exactly that, to give us this insight on how the different error types affect the mAP score and as Bolya et al. [^2] stated giving us "a comprehensive analysis of each model's strengths and weaknesses".
@@ -120,6 +107,7 @@ The confusion matrix gives us a visual insight on how our object detection model
 Let us have a look first at the confusion matrix of a **binary classification problem**:
 
 ![Confusion Matrix Binary](assets/confusion_matrix_binary.svg)
+
 <p align = "center">
 Illustration adapted from the paper <a href="https://arxiv.org/abs/2010.16061">"Evaluation: from precision, recall and F-measure to ROC, informedness, markedness and correlation"</a> by David M. W. Powers[^3]
 </p>
@@ -152,128 +140,17 @@ Out of the 8 cars that have been predicted:
 - none were incorrectly classified as a `person` and
 - 5 were incorrectly classified as `truck`
 
-
-### Object Tracking
-
-!!! info "Coming soon"
-    Unfortunately, there is no content here yet. But we are currently working on completing this website.
-
-### Traffic Measures
+## Object Tracking
 
 !!! info "Coming soon"
     Unfortunately, there is no content here yet. But we are currently working on completing this website.
 
-## Installation
+## Traffic Measures
 
-=== "Windows"
-    TODO: Installation instructions for Windows
-
-=== "Linux/ macOS Intel"
-
-    Install [OTValidate](https://github.com/OpenTrafficCam/OTValidate) by cloning the repository  with git:
-
-    ```bash
-    git clone https://github.com/OpenTrafficCam/OTValidate.git
-    cd OTValidate
-    pip install -r requirements.txt
-    pip install .
-    ```
-
-    Or install by using the `Makefile`:
-
-    ```bash
-    git clone https://github.com/OpenTrafficCam/OTValidate.git
-    cd OTValidate
-    make install
-    ```
-
-=== "Apple M1"
-
-    The installation for machines running on Apple's M1 chip is not as straightforward.
-    There are two ways to install `OTValidate` on an M1 Mac. 
-    As a prerequisite the package manager [Homebrew](https://brew.sh) is required. 
-
-    1. By executing these commands in the following order:
-
-        ```bash
-        git clone https://github.com/OpenTrafficCam/OTValidate.git
-        cd OTValidate
-        brew install openblas
-        OPENBLAS=$(brew --prefix openblas) CFLAGS="-falign-functions=8 ${CFLAGS}" pip install scipy==1.7.2
-        pip install -r requirements.txt
-        pip install .
-        ```
-
-    2. By using the `Makefile`
-    
-        ```bash
-        git clone https://github.com/OpenTrafficCam/OTValidate.git
-        cd OTValidate
-        make install_m1
-        ```
-
-
-## Prerequisites
-
-### Image Annotation Data
-
-The folder containing the ground truth annotations of the images need to be in the **YOLO** format:
-
-```project
-annotation_data
-│   obj.data
-│   obj.names    
-│   train.txt
-│
-└───obj_train_data
-    │   frame_01.png
-    │   frame_01.txt
-    │   frame_02.png
-    │   frame_02.txt
-    │   ...
-    │
-```
-
-## Usage
-
-### Analyse Object Detection Performance
-
-#### **Quickstart Guide**
-
-```python
-from OTValidate  import evaluate_detection_performance
-
-# path to the directory containing the annotated dataset in otdet format
-gt_data = "path/to/data1"
-
-# model weights
-model1 = "path/to/model_weights1.pt"
-model2 = "path/to/model_weights2.pt"
-model3 = "path/to/model_weights3.pt"
-
-```
-
-Use the `evaluate_detection_performance` function to calculate a set of object detection metrics of the respective models:
-
-```python
-evaluate_detection_performance(
-    path_to_model_weights=[model1, model2, model3],
-    yolo_path=yolo_path,
-    otdet_gt_dir=gt_data, 
-    is_gt_xyxy_format=False, # whether the ground truth's bounding box is in xyxy or xywh format
-    normalized=True,
-)
-```
-
-#### **Results**
-
-The evaluation results of the models will be saved in the directories containing the annotation data.
-An `out` directory containing all the results will be created there.
+To see, how well OpenTrafficCam performs see [OTAnalytics](/OTAnalytics/Accuracy/counts/).
 
 ## References
 
 [^1]: Padilla, R., Passos, W. L., Dias, T. L., Netto, S. L., & da Silva, E. A. (2021). A comparative analysis of object detection metrics with a companion open-source toolkit. Electronics, 10(3), 279. [https://doi.org/10.3390/electronics10030279](https://doi.org/10.3390/electronics10030279)
-
 [^2]: Bolya, D., Foley, S., Hays, J., & Hoffman, J. (2020). Tide: A general toolbox for identifying object detection errors. In Computer Vision–ECCV 2020: 16th European Conference, Glasgow, UK, August 23–28, 2020, Proceedings, Part III 16 (pp. 558-573). Springer International Publishing. [https://dbolya.github.io/tide/paper.pdf](https://dbolya.github.io/tide/paper.pdf)
-
 [^3]: Powers, D. M. (2020). Evaluation: from precision, recall and F-measure to ROC, informedness, markedness and correlation. arXiv preprint arXiv:2010.16061.
