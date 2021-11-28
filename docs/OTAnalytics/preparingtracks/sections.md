@@ -14,4 +14,4 @@ Created sections will appear in the middle left listbox.
 Selected section will be highlighted on canvas and can be deleted or renamed.
 If you want to continue your work you can ex- and later import a flow-file that contains information about sections and movements.
 
-![OTAnalytics_add_sections](https://user-images.githubusercontent.com/75123353/142613253-cbd0aaad-72ee-4eb5-8a4b-b87b0c7b154f.gif)
+![OTAnalytics_add_sections](sections.gif)

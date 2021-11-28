@@ -24,4 +24,4 @@ If correct, bounding boxes should overlay vehicles, pedestrians and cyclist.
 The bounding boxes are annotated with object class and confidence factor.
 Its also possible to live draw tracks.
 
-![OTAnalytics_first_glance](https://user-images.githubusercontent.com/75123353/142622658-e4fd2bfa-3274-4920-addd-684d9396b365.gif)
+![OTAnalytics_first_glance](tracks.gif)
