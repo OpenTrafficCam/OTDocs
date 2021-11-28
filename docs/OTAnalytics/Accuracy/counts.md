@@ -12,21 +12,21 @@ Precision and Recall, which are used to evaluate machine learning algorithms, ca
 The precision metric describes the ratio of vehicles counted correctly by OpenTrafficCam to all vehicles counted by OpenTrafficCam including incorrect ones.
 On the other hand, the recall metric describes the ratio of vehicles correctly counted by OpenTrafficCam to all vehicles passed in reality including those not counted by OpenTrafficCam.
 
-An Exampel:
+An Example:
 
 - 100 vehicles pass through a junction
-- 80 of them are correctly detected by the system (true positv)
-- 20 are therefore not correctly detected (false negativ)
+- 80 of them are correctly detected by the system (true positive)
+- 20 are therefore not correctly detected (false negative)
 - the system indicates that 110 vehicles would have passed the intersection
-- the system has thus detected 30 vehicles that were not present in reality (false positiv)
+- the system has thus detected 30 vehicles that were not present in reality (false positive)
 
-|                     |  110 got detected  | 20 got not detected |
-|---------------------|:------------------:|:-------------------:|
-| 100 vehicles passed |  80 (true positiv) |  20 (false negativ) |
-| 30 are not real     | 30 (false positiv) |  -- (true negativ)  |
+|                     |  110 got detected   | 20 got not detected |
+| ------------------- | :-----------------: | :-----------------: |
+| 100 vehicles passed | 80 (true positive)  | 20 (false negative) |
+| 30 are not real     | 30 (false positive) | -- (true negative)  |
 
-The prescision (or accuracy) is equal to true positiv / (true positiv + false positiv). In this case the prescision would be 80 / (80 + 30) = 0.73.
-The recall (or sensitivity) is equal to true positiv / (true positiv + false negativ). In this case the recall would be 80 / (80 + 20) = 0.80.
+The prescision (or accuracy) is equal to true positive / (true positive + false positive). In this case the prescision would be 80 / (80 + 30) = 0.73.
+The recall (or sensitivity) is equal to true positive / (true positive + false negative). In this case the recall would be 80 / (80 + 20) = 0.80.
 The higher the two measurements are, the higher the quality of the results are.
 
 ## How accurate can you count using OpenTrafficCam?
@@ -38,11 +38,11 @@ In his diploma thesis OpenTrafficCam contributor Armin Kollascheck investigated 
 | :----------------------------------------: | :---------------------------------------------: |
 |           Three-way intersection           |            Four-way intersection (1)            |
 | ![image](counts/4-way_intersection_2.png)  | ![image](counts/4-way_intersection_2_night.png) |
-|         Four-way intersection (2)          |        Four-way intersection (2) at night        |
+|         Four-way intersection (2)          |       Four-way intersection (2) at night        |
 | ![image](counts/4-way_roundabout_flat.png) |         ![image](counts/section_1.png)          |
 |            Four-way roundabout             |                   Section (1)                   |
 |       ![image](counts/section_2.png)       |      ![image](counts/section_2_night.png)       |
-|                Section (2)                 |               Section (2) at night               |
+|                Section (2)                 |              Section (2) at night               |
 
 Armin evaluated the count data automatically generated with OpenTrafficCam against a manually collected and verified ground truth.
 The sample sizes for determining the precision and recall of the automated traffic counts are 200 vehicles for each scenario. The ground truth of 200 vehicles was always counted manually.
