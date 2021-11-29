@@ -18,7 +18,7 @@ Install the 64-bit version Python 3.9.x via Windows installer from www.python.or
 
 If you intend to use OTVision on a PC with a modern NVidia graphics card, download and install the latest version of the [NVIDIA Cuda Toolkit](https://developer.nvidia.com/cuda-downloads) with default settings from the NVIDIA toolkit.
 
-## Install OTVision 
+## Install OTVision
 
 1. Download and unzip the latest version of [OTVision](https://github.com/OpenTrafficCam/OTVision/archive/refs/heads/master.zip) from Github.
 
