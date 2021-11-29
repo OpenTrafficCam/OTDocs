@@ -16,11 +16,11 @@ Install the 64-bit version Python 3.9.x via Windows installer from www.python.or
 
 > If you have a modern NVidia graphics card.
 
-Download and install the latest version of the [NVIDIA Cuda Toolkit](https://developer.nvidia.com/cuda-downloads) with default settings from the NVIDIA toolkit.
+If you intend to use OTVision on a PC with a modern NVidia graphics card, download and install the latest version of the [NVIDIA Cuda Toolkit](https://developer.nvidia.com/cuda-downloads) with default settings from the NVIDIA toolkit.
 
-## Install OTVision and OTAnalytics
+## Install OTVision 
 
-1. Download and unzip the latest version of [OTAnalytics](https://github.com/OpenTrafficCam/OTAnalytics/archive/refs/heads/master.zip) from Github.
+1. Download and unzip the latest version of [OTVision](https://github.com/OpenTrafficCam/OTVision/archive/refs/heads/master.zip) from Github.
 
 2. In the unzipped folder double-click the "install_win-py39.bat" (or "install_win-py38.bat" respectively) and wait until the installation of the dependencies is complete.
 
