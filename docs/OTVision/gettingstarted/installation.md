@@ -22,14 +22,6 @@ Install the 64-bit version Python 3.9.x via Windows installer from www.python.or
 
 ![Install Python 3](installation/Install_Python_3.PNG)
 
-![Download Python](installation/Download_Python.PNG)
-
-![Install Python 1](installation/Install_Python_1.PNG)
-
-![Install Python 2](installation/Install_Python_2.PNG)
-
-![Install Python 3](installation/Install_Python_3.PNG)
-
 ## Install NVIDIA Cuda 11.0
 
 > If you have a modern NVidia graphics card.
