@@ -2,7 +2,7 @@
 
 ## Install Python 3.9
 
-Install the 64-bit version Python 3.9.x via Windows installer from [www.python.org/downloads/](https://www.python.org/downloads/)) as follows (Python 3.8.x should also work, the 32-bit version is not supported):
+Install the 64-bit version Python 3.9.x via Windows installer from [www.python.org/downloads/](https://www.python.org/downloads/) as follows (Python 3.8.x should also work, the 32-bit version is not supported):
 
 ??? help "What if I already have another Python version installed?"
 
