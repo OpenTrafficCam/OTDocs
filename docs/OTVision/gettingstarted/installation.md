@@ -8,7 +8,7 @@ Install the 64-bit version Python 3.9.x via Windows installer from www.python.or
 
     In addition, also install Python 3.9. The last installed Python will automatically be the default Python interpreter of your system.
 
-    On Windows, it is also possible to change the default Python interpreter by changing the order of the system-wide environment variables (move Python 3.9 and 3.9/scripts to the top, see animation below).
+    On Windows, it is also possible to change the default Python interpreter by changing the order of the system-wide environment variables (move Python39 and Python39\Scripts to the top, see animation below).
 
     This is necessary e.g. if you have already installed Python 3.9, but another Python version is your default because you installed it in the meantime (e.g. 3.10).
 
