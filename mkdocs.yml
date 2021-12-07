@@ -79,14 +79,12 @@ nav:
           - OTLabels/gettingstarted/requirements.md
           - OTLabels/gettingstarted/installation.md
           - OTLabels/gettingstarted/data.md
-      - Annotation:
-          - OTLabels/annotation/cvat.md
-          - OTLabels/annotation/preprocessingdata.md
       - Training:
-          - OTLabels/training/extendmodel.md
-          - OTLabels/training/newmodel.md
+          - OTLabels/training/cvat.md
+          - OTLabels/training/preprocessingdata.md
+          - OTLabels/training/retrainmodel.md
+      - Validation:
           - OTLabels/training/performancemeasures.md
-      - Trainend Models:
           - OTLabels/models/coco6.md
   - Contribute:
       - contribute/index.md

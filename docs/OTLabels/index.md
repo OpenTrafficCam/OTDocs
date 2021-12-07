@@ -14,7 +14,8 @@
 
 <!-- TODO Create content, and add links to content pages, links to the software then on the content pages -->
 
-* [Annotation](https://opentrafficcam.org/OTLabels/Annotation/)
-* [Training](https://opentrafficcam.org/OTLabels/Training/)
+* [Annotation](https://opentrafficcam.org/OTLabels/Annotation/) <!-- TODO Link aktualisieren -->
+* [Training](https://opentrafficcam.org/OTLabels/Training/) <!-- TODO Link aktualisieren -->
+* [Validation](https://opentrafficcam.org/Trained_Models/) <!-- TODO Link aktualisieren -->
 
 Most of the code describing the workflow will be developed by the OpenTrafficCam contributors (based on python libraries like [NumPy](https://numpy.org/), [pandas](https://pandas.pydata.org/), [tkinter](https://docs.python.org/3/library/tkinter.html) and [OpenCV](https://opencv.org/)).
