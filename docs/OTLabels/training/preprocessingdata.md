@@ -4,7 +4,8 @@ Before retraining the YOLOv5 model, you might want to preprocess your labeled da
 
 ## Convert CVAT output to YOLOv5
 
-OTLabels provides the `cvat_to_yolo.py` script to convert the annotated data to the appropriate format YOLOv5 needs for retraining the model. Before executing the script, you have to setup the configurations for your needs:
+OTLabels provides the `cvat_to_yolo.py` script to convert the annotated data to the appropriate format YOLOv5 needs for retraining the model.
+Before executing the script, you have to setup the configurations for your needs:
 
 - Within the script:
     - Set destPath: path where your data is stored (typically ./data/*).
@@ -12,7 +13,9 @@ OTLabels provides the `cvat_to_yolo.py` script to convert the annotated data to 
     - Set catFile: path to a textfile containing your CVAT labels (standard: labels_CVAT.txt).
     - Set cvatFile: path to a CVAT output file (containing images and lables, see also section **CVAT**: Download data) **or** to a folder containing multiple CVAT output files.
     - Set name: the name of subfolder of *destPath/images* and *destPath/labels* to store the data in.
-- labels_CVAT.txt: a textfile with two columns seperated by acutal commas with headers named *Cat* and *CatId* containing the name and the ID of your CVAT labels. For a exapmple, see the *labels_CVAT.txt* file in the OTLabels repository. Please note that labels **not provided in this file will not be converted and consequently be deleted**.
+- labels_CVAT.txt: a textfile with two columns seperated by acutal commas with headers named *Cat* and *CatId* containing the name and the ID of your CVAT labels.
+  For a example, see the *labels_CVAT.txt* file in the OTLabels repository.
+  Please note that labels **not provided in this file will not be converted and consequently be deleted**.
 
 The script performs the following steps:
 
@@ -23,16 +26,20 @@ The script performs the following steps:
 
 ## Filter the labels
 
-If for some reason you want to filter the labels that are already stored in your data directory, you can use the *filter_labels.py* script. Before executing the script, you have to setup the configurations for your needs:
+If for some reason you want to filter the labels that are already stored in your data directory, you can use the *filter_labels.py* script.
+Before executing the script, you have to setup the configurations for your needs:
 
 - Within the script:
     - Set path: path where the data is stored (typically ./data/*).
-    - Set name: the name of **one or more** subfolder of *destPath/images* and *destPath/lables* to store the data in. More than one name must be provided as list.
+    - Set name: the name of **one or more** subfolder of *destPath/images* and *destPath/lables* to store the data in.
+    More than one name must be provided as list.
     - Set annFile: path to the COCO-annotation file (if you do not have it yet, see below how to get it).
     - Set labelsFilter: path to a text file (standard: label_filter.txt) containing the labels you want to keep.
 - label_filter.txt: a textfile containing the category **names** (e.g., "car") of the labels you want to keep (without quotes and one category name per row).
 
-Please note that the images will not be copied to the corresponding folder in *destPath/images* in order to save file space. Instead, a textfile with all images still containing the filtered labels is created. This file of file names can also be referred to by YOLOv5.
+Please note that the images will not be copied to the corresponding folder in *destPath/images* in order to save file space.
+Instead, a textfile with all images still containing the filtered labels is created.
+This file of file names can also be referred to by YOLOv5.
 
 The script performs the following steps:
 
@@ -45,7 +52,9 @@ Please note that **images and label files not including any label after filterin
 
 ## Get COCO annotation file
 
-This file is necessary to ensure your labels match the labels of the pretrained YOLOv5 models. Use the *get_coco_annotation_files.py* script to download one or more COCO annotation files. Configurations to be made:
+This file is necessary to ensure your labels match the labels of the pretrained YOLOv5 models.
+Use the *get_coco_annotation_files.py* script to download one or more COCO annotation files.
+Configurations to be made:
 
 - Within the script:
     - Set path: path where the data is stored (typically ./data/*).
@@ -54,7 +63,10 @@ This file is necessary to ensure your labels match the labels of the pretrained 
 
 ## Get the original COCO dataset
 
-In some cases you might want to get the original COCO dataset that was used to train the original YOLOv5 models. Therefore, OTLabels provides the *get_coco_data.py* script to download the data. Please note that you could also **use the *get_coco.sh* script from the YOLOv5 repository**. Before executing the script, you have to setup the configurations for your needs:
+In some cases you might want to get the original COCO dataset that was used to train the original YOLOv5 models.
+Therefore, OTLabels provides the *get_coco_data.py* script to download the data.
+Please note that you could also **use the *get_coco.sh* script from the YOLOv5 repository**.
+Before executing the script, you have to setup the configurations for your needs:
 
 - Within the script:
     - Set imageURLs: path of a textfile (standard: coco_image_URLs.txt) containing the URLs of the image data sets.
