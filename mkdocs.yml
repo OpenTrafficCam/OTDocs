@@ -92,6 +92,7 @@ nav:
           - OTLabels/validation/overview.md
           - OTLabels/validation/gettingstarted.md
           - OTLabels/validation/metrics.md
+          - OTLabels/validation/modelvalidation.md
       - Trainend Models:
           - OTLabels/models/coco6.md
   - Contribute:
@@ -143,6 +144,9 @@ markdown_extensions:
   - footnotes
   - pymdownx.arithmatex:
       generic: true
+  - tables
+  - attr_list
+  - md_in_html
   # - meta
 
 plugins:
