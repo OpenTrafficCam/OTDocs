@@ -7,7 +7,7 @@ Thus, we want to investigate which of the four YOLO models might be best suited 
 
 ## Dataset
 
-As mentioned above, the dataset consist of different video recordings capturing different traffic scenes.
+As mentioned above, the dataset consists of different video recordings capturing different traffic scenes.
 Thus, the video recordings are turned into datasets that will be used to evaluate the object detection models.
 It is important to note that not every single frame is selected, but only every $n$-th frame where $n \in \mathbb{N}$ and $n$ is arbitrarily chosen by the user.
 
@@ -40,8 +40,7 @@ As for the YOLO model, a custom trained or an existing model can be loaded into 
 
 OTValidate then uses each model to predict the ground truth images.
 Afterwards, the prediction results and ground truth data are used to calculate the different object detection [metrics](metrics.md) for model comparison.
-In our case, we will use the mAP and the [TIDE metrics](https://github.com/dbolya/tide
-) are used.
+In our case, we will use the mAP and the [TIDE metrics](https://github.com/dbolya/tide).
 
 !!! info
 
@@ -213,9 +212,9 @@ To get behind the a possible reason for this we should have quick peek in the gr
 | ------------------------------------------------------------------ | -------------------------------------------------------------------- |
 | ![Scene Small Object 1](assets/scenes/scene_5_small_objects_1.jpg) | ![Scene 5 Small Object 2](assets/scenes/scene_5_small_objects_2.jpg) |
 
-Objects or vehicles emerging from the road in the upper left corner of the image makes it harder for the models to detect and assign them to the correct class.
-his is reflected in the missed ground truth error and the localization error.
-Thus the further the objects move to the right area of the image, the better they are for the models to detect.
+Objects or vehicles emerging from the road in the upper left corner of the image make it harder for the models to detect and assign them to the correct class.
+This is reflected in the missed ground truth error and the localization error.
+Thus the further the objects move to the right area of the image, the better they are detected by the models.
 
 ## Conclusion and Future Work
 
