@@ -19,30 +19,32 @@ This config file is usually stored in the *data* folder in the *OTLabels* direct
 
 #### *data_structure_labels*.yaml
 
-    # COCO 2017 dataset http://cocodataset.org
-    # Train command: python train.py --data coco.yaml
-    # Default dataset location is next to /yolov5:
-    #   /parent_folder
-    #     /coco
-    #     /yolov5
+```yaml
+# COCO 2017 dataset http://cocodataset.org
+# Train command: python train.py --data coco.yaml
+# Default dataset location is next to /yolov5:
+#   /parent_folder
+#     /coco
+#     /yolov5
 
-    # download command/URL (optional)
-    # download: bash data/scripts/get_coco.sh
+# download command/URL (optional)
+# download: bash data/scripts/get_coco.sh
 
-    # train and val data as 
-    # 1) directory: path/images/, 
-    # 2) file: path/images.txt, or 
-    # 3) list: [path1/images/, path2/images/]
+# train and val data as 
+# 1) directory: path/images/, 
+# 2) file: path/images.txt, or 
+# 3) list: [path1/images/, path2/images/]
 
-    train: ../OTLabels/data/path_to_structure_file_training.txt
-    val: ../OTLabels/data/coco/path_to_structure_file_validation.txt
-    test: ../OTLabels/data/coco/path_to_structure_file_test.txt
+train: ../OTLabels/data/path_to_structure_file_training.txt
+val: ../OTLabels/data/coco/path_to_structure_file_validation.txt
+test: ../OTLabels/data/coco/path_to_structure_file_test.txt
 
-    # number of classes
-    nc: 6
+# number of classes
+nc: 6
 
-    # class names
-    names: ["person", "bicycle", "car", "motorcycle", "bus", "truck"]
+# class names
+names: ["person", "bicycle", "car", "motorcycle", "bus", "truck"]
+```
 
 ### Model structure
 
