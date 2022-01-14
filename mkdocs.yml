@@ -82,12 +82,10 @@ nav:
           - OTLabels/gettingstarted/requirements.md
           - OTLabels/gettingstarted/installation.md
           - OTLabels/gettingstarted/data.md
-      - Annotation:
-          - OTLabels/annotation/cvat.md
-          - OTLabels/annotation/preprocessingdata.md
       - Training:
-          - OTLabels/training/extendmodel.md
-          - OTLabels/training/newmodel.md
+          - OTLabels/training/cvat.md
+          - OTLabels/training/preprocessingdata.md
+          - OTLabels/training/retrainmodel.md
       - Validation:
           - OTLabels/validation/overview.md
           - OTLabels/validation/gettingstarted.md
