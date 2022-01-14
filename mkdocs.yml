@@ -20,6 +20,7 @@ theme:
     - navigation.top
     - search.suggest
     - search.highlight
+    - content.tabs.link
   icon:
     repo: fontawesome/brands/github
 
@@ -68,11 +69,13 @@ nav:
           - OTAnalytics/gettingstarted/installation.md
           - OTAnalytics/gettingstarted/firstuse.md
       - Preparing Tracks:
-          - OTAnalytics/preparingtracks/data.md
           - OTAnalytics/preparingtracks/sections.md
           - OTAnalytics/preparingtracks/movements.md
       - Traffic Analytics:
           - OTAnalytics/trafficanalytics/counts.md
+      - Accuracy:
+          - OTAnalytics/Accuracy/counts.md
+
   - OTLabels:
       - OTLabels/index.md
       - Getting Started:
@@ -84,7 +87,10 @@ nav:
           - OTLabels/training/preprocessingdata.md
           - OTLabels/training/retrainmodel.md
       - Validation:
-          - OTLabels/training/performancemeasures.md
+          - OTLabels/validation/overview.md
+          - OTLabels/validation/gettingstarted.md
+          - OTLabels/validation/metrics.md
+      - Trainend Models:
           - OTLabels/models/coco6.md
   - Contribute:
       - contribute/index.md
@@ -98,6 +104,11 @@ nav:
 extra_css:
   - stylesheets/color.css
   - stylesheets/fonts.css
+
+extra_javascript:
+  - assets/js/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 extra:
   social:
@@ -125,6 +136,11 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - footnotes
+  - pymdownx.arithmatex:
+      generic: true
   # - meta
 
 plugins:
