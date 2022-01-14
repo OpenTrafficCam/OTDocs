@@ -9,18 +9,18 @@
       
       
       <link rel="icon" href="../../../assets/OTC_icon.svg">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.0.3">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.6">
     
     
       
-        <title>Extend Model - OpenTrafficCam Documentation</title>
+        <title>Retraining a Model - OpenTrafficCam Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.62128196.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.cd566b2a.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.9204c3b2.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
         
       
     
@@ -33,7 +33,7 @@
     
       <link rel="stylesheet" href="../../../stylesheets/fonts.css">
     
-    <script>function __md_scope(e,t,_){return new URL(_||(t===localStorage?"../../..":"../../.."),location).pathname+"."+e}function __md_get(e,t=localStorage,_){return JSON.parse(t.getItem(__md_scope(e,t,_)))}function __md_set(e,t,_=localStorage,o){try{_.setItem(__md_scope(e,_,o),JSON.stringify(t))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
 <!-- Matomo -->
 <script type="text/javascript">
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#extend-model" class="md-skip">
+        <a href="#retraining-a-model" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@ OpenTrafficCam is a project that is currently under development. The content on 
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Extend Model
+              Retraining a Model
             
           </span>
         </div>
@@ -1464,27 +1464,29 @@ OpenTrafficCam is a project that is currently under development. The content on 
               
   
   
+    
+  
   
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" type="checkbox" id="__nav_5_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" type="checkbox" id="__nav_5_3" checked>
       
       
       
       
         <label class="md-nav__link" for="__nav_5_3">
-          Annotation
+          Training
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Annotation" data-md-level="2">
+      <nav class="md-nav" aria-label="Training" data-md-level="2">
         <label class="md-nav__title" for="__nav_5_3">
           <span class="md-nav__icon md-icon"></span>
-          Annotation
+          Training
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -1494,7 +1496,7 @@ OpenTrafficCam is a project that is currently under development. The content on 
   
   
     <li class="md-nav__item">
-      <a href="../../annotation/cvat/" class="md-nav__link">
+      <a href="../cvat/" class="md-nav__link">
         CVAT
       </a>
     </li>
@@ -1508,50 +1510,13 @@ OpenTrafficCam is a project that is currently under development. The content on 
   
   
     <li class="md-nav__item">
-      <a href="../../annotation/preprocessingdata/" class="md-nav__link">
+      <a href="../preprocessingdata/" class="md-nav__link">
         Preprocessing Data
       </a>
     </li>
   
 
             
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-    
-  
-  
-    
-      
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" type="checkbox" id="__nav_5_4" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_5_4">
-          Training
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Training" data-md-level="2">
-        <label class="md-nav__title" for="__nav_5_4">
-          <span class="md-nav__icon md-icon"></span>
-          Training
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
           
             
               
@@ -1568,24 +1533,75 @@ OpenTrafficCam is a project that is currently under development. The content on 
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Retraining a Model
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
-        Extend Model
+        Retraining a Model
       </a>
       
-    </li>
-  
+        
 
-            
-          
-            
-              
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
-    <li class="md-nav__item">
-      <a href="../newmodel/" class="md-nav__link">
-        New Model
-      </a>
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#first-step-setting-up-the-config-files" class="md-nav__link">
+    First step: setting up the config files
+  </a>
+  
+    <nav class="md-nav" aria-label="First step: setting up the config files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-structure-and-labels" class="md-nav__link">
+    Data structure and labels
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-structure" class="md-nav__link">
+    Model structure
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#second-step-connecting-to-wandb" class="md-nav__link">
+    Second step: connecting to wandb
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#third-step-retraining-the-model" class="md-nav__link">
+    Third step: retraining the model
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1609,18 +1625,18 @@ OpenTrafficCam is a project that is currently under development. The content on 
     <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_5" type="checkbox" id="__nav_5_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" type="checkbox" id="__nav_5_4" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_5_5">
+        <label class="md-nav__link" for="__nav_5_4">
           Validation
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Validation" data-md-level="2">
-        <label class="md-nav__title" for="__nav_5_5">
+        <label class="md-nav__title" for="__nav_5_4">
           <span class="md-nav__icon md-icon"></span>
           Validation
         </label>
@@ -1686,18 +1702,18 @@ OpenTrafficCam is a project that is currently under development. The content on 
     <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_6" type="checkbox" id="__nav_5_6" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_5" type="checkbox" id="__nav_5_5" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_5_6">
+        <label class="md-nav__link" for="__nav_5_5">
           Trainend Models
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Trainend Models" data-md-level="2">
-        <label class="md-nav__title" for="__nav_5_6">
+        <label class="md-nav__title" for="__nav_5_5">
           <span class="md-nav__icon md-icon"></span>
           Trainend Models
         </label>
@@ -1882,6 +1898,55 @@ OpenTrafficCam is a project that is currently under development. The content on 
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#first-step-setting-up-the-config-files" class="md-nav__link">
+    First step: setting up the config files
+  </a>
+  
+    <nav class="md-nav" aria-label="First step: setting up the config files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-structure-and-labels" class="md-nav__link">
+    Data structure and labels
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-structure" class="md-nav__link">
+    Model structure
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#second-step-connecting-to-wandb" class="md-nav__link">
+    Second step: connecting to wandb
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#third-step-retraining-the-model" class="md-nav__link">
+    Third step: retraining the model
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1892,23 +1957,76 @@ OpenTrafficCam is a project that is currently under development. The content on 
             <article class="md-content__inner md-typeset">
               
                 
-<a href="https://github.com/OpenTrafficCam/OTDocs/edit/master/docs/OTLabels/training/extendmodel.md" title="Edit this page" class="md-content__button md-icon">
+<a href="https://github.com/OpenTrafficCam/OTDocs/edit/master/docs/OTLabels/training/retrainmodel.md" title="Edit this page" class="md-content__button md-icon">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
 </a>
 
 
-<h1 id="extend-model">Extend Model<a class="headerlink" href="#extend-model" title="Permanent link">&para;</a></h1>
-<div class="admonition info">
-<p class="admonition-title">Coming soon</p>
-<p>Unfortunately, there is no content here yet. But we are currently working on completing this website.</p>
-</div>
+<h1 id="retraining-a-model">Retraining a Model<a class="headerlink" href="#retraining-a-model" title="Permanent link">&para;</a></h1>
+<p>Although the pretrained YOLOv5 models (especially the bigger ones like YOLOv5l or YOLOv5xl) return acceptable detection results, we experienced some shortcomings for certain object classes which are not well represented and/or distributed in the COCO dataset used for training the YOLOv5 models.</p>
+<ol>
+<li>Especially county specific differences were identified, since the COCO dataset contains mainly pictures taken in North-American areas (US trucks vs. European trucks).</li>
+<li>Also, less represented object classes (e.g., bicycles) might cause worse detection rate or even false detections and hence, to an uneven detection accuracy between the object classes.</li>
+<li>This might lead to biases in the final counts (e.g., every car is detected, but only every second motorcycle).</li>
+</ol>
+<p>Further, one might condense the 80 classes of the pretrained YOLOv5 models to the relevant six classes (pedestrian, bicycle, car, bus, truck, motorcycle) for detecting moving traffic to reduce noise from non-relevant classes.</p>
+<h2 id="first-step-setting-up-the-config-files">First step: setting up the config files<a class="headerlink" href="#first-step-setting-up-the-config-files" title="Permanent link">&para;</a></h2>
+<p>For retraining, there are two relevant config files that needs to be set up.</p>
+<h3 id="data-structure-and-labels">Data structure and labels<a class="headerlink" href="#data-structure-and-labels" title="Permanent link">&para;</a></h3>
+<p>YOLOv5 needs a config file in <em>yaml</em> format that contains information about file locations and the labels.
+This config file is usually stored in the <em>data</em> folder in the <em>OTLabels</em> directory.</p>
+<h4 id="data_structure_labelsyaml"><em>data_structure_labels</em>.yaml<a class="headerlink" href="#data_structure_labelsyaml" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="c1"># COCO 2017 dataset http://cocodataset.org</span><span class="w"></span>
+<span class="c1"># Train command: python train.py --data coco.yaml</span><span class="w"></span>
+<span class="c1"># Default dataset location is next to /yolov5:</span><span class="w"></span>
+<span class="c1">#   /parent_folder</span><span class="w"></span>
+<span class="c1">#     /coco</span><span class="w"></span>
+<span class="c1">#     /yolov5</span><span class="w"></span>
+
+<span class="c1"># download command/URL (optional)</span><span class="w"></span>
+<span class="c1"># download: bash data/scripts/get_coco.sh</span><span class="w"></span>
+
+<span class="c1"># train and val data as </span><span class="w"></span>
+<span class="c1"># 1) directory: path/images/, </span><span class="w"></span>
+<span class="c1"># 2) file: path/images.txt, or </span><span class="w"></span>
+<span class="c1"># 3) list: [path1/images/, path2/images/]</span><span class="w"></span>
+
+<span class="nt">train</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">../OTLabels/data/path_to_structure_file_training.txt</span><span class="w"></span>
+<span class="nt">val</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">../OTLabels/data/coco/path_to_structure_file_validation.txt</span><span class="w"></span>
+<span class="nt">test</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">../OTLabels/data/coco/path_to_structure_file_test.txt</span><span class="w"></span>
+
+<span class="c1"># number of classes</span><span class="w"></span>
+<span class="nt">nc</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">6</span><span class="w"></span>
+
+<span class="c1"># class names</span><span class="w"></span>
+<span class="nt">names</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;person&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;bicycle&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;car&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;motorcycle&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;bus&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;truck&quot;</span><span class="p p-Indicator">]</span><span class="w"></span>
+</code></pre></div>
+<h3 id="model-structure">Model structure<a class="headerlink" href="#model-structure" title="Permanent link">&para;</a></h3>
+<p>Further, the config file containing the model structure (also in <em>yaml</em> format) needs to be set up or adapted.
+These config files are usually stored in the <em>models</em> folder within the <em>yolov5</em> directory.
+Natively, YOLOv5 comes with one config file for each model (e.g., <em>yolov5s.yaml</em>).
+We strongly recommend to keep the model structure itself as it is and only adapt the number of classes, since the retraining process bases on the trained standard weights, which rely on the original structure.</p>
+<h4 id="model_structureyaml"><em>model_structure</em>.yaml<a class="headerlink" href="#model_structureyaml" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="c1"># parameters</span><span class="w"></span>
+<span class="nt">nc</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">6</span><span class="w">  </span><span class="c1"># number of classes</span><span class="w"></span>
+<span class="nn">...</span><span class="w"></span>
+</code></pre></div>
+<h2 id="second-step-connecting-to-wandb">Second step: connecting to wandb<a class="headerlink" href="#second-step-connecting-to-wandb" title="Permanent link">&para;</a></h2>
+<p>If you want to have your trining process logged and visualized, YOLOv5 comes with the option to connect to weights and biases (wandb).
+For further instructions, please visit <a href="https://github.com/ultralytics/yolov5/issues/1289">the wandb issue on Github</a>.
+Otherwise you can chose the option not to use wandb when asked.</p>
+<h2 id="third-step-retraining-the-model">Third step: retraining the model<a class="headerlink" href="#third-step-retraining-the-model" title="Permanent link">&para;</a></h2>
+<p>Now, you are ready to start with the retraining of your models.
+To start the process, simply execute the <em>train.py</em> with the desired options.</p>
+<p><code>python yolov5/train.py --img **img_size** --batch **batch_size** --epochs **n_epochs** --data path_to/**data_structure_labels**.yaml --weights yolov5/weights/**yolov5_weights** --cfg path_to/**model_structure**.yaml</code></p>
+<p>For further information about the whole retraining process with YOLOv5, please see <a href="https://github.com/ultralytics/yolov5/wiki/Train-Custom-Data">the original documentation on Github</a>.</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 27, 2021</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 14, 2022</span>
       
     
   </small>
@@ -1931,7 +2049,7 @@ OpenTrafficCam is a project that is currently under development. The content on 
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../../annotation/preprocessingdata/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Preprocessing Data" rel="prev">
+        <a href="../preprocessingdata/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Preprocessing Data" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1947,13 +2065,13 @@ OpenTrafficCam is a project that is currently under development. The content on 
       
       
         
-        <a href="../newmodel/" class="md-footer__link md-footer__link--next" aria-label="Next: New Model" rel="next">
+        <a href="../../validation/overview/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              New Model
+              Overview
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -2003,10 +2121,10 @@ OpenTrafficCam is a project that is currently under development. The content on 
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.01824240.min.js"}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.e0abf5b0.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.1514a9a0.min.js"></script>
       
         <script src="../../../assets/js/mathjax.js"></script>
       
