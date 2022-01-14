@@ -10,7 +10,7 @@ Since YOLOv5 is based on the the MS COCO dataset of 2D bounding boxes, you need 
 1. Install and setup an instance of CVAT either on your local computer or on a server (recommended when working in a team).
 2. Import the videos in CVAT and select the frames you want to use for labelling.
 3. Download the dataset from CVAT using the YOLO v1.1 format.
-4. Pre-annotate your frames with the standard YOLOv5x model. The results do probably not meet the desired quality. However, the pre-annotated labels will save you some time since it not nesscary to draw all labels from scratch.
+4. Pre-annotate your frames with the standard YOLOv5x model. The results do probably not meet the desired quality. However, the pre-annotated labels will save you some time since it not necessary to draw all labels from scratch.
 5. Upload the pre-annotated frames to CVAT and revise the detected labels.
 6. Download the final labels from CVAT and convert them to COCO format (using our cvat_to_coco.py script).
 
@@ -57,12 +57,12 @@ For each task (or video) multiple **jobs** with a certain amounts of frames from
 ## Workflow
 
 For each job, the project coordinator assigns the roles of the "assignee" (= annotator) and the "reviewer".
-The reviewer then starts working on a job by initial labeling (see [Annotation](#annotation)) of the video frames.
+The reviewer then starts working on a job by initial labeling of the video frames.
 The assignee should save his labeling work from time to time and can also stop and later repeat working on a job.
 After finishing the initial labeling, the assignee requests a review (menu - request review, the assigned reviewer should already be named there) and thus sets status of the job to "validation".
 Then the reviewer checks the initial labeling done by the assignee and raises issues when there is a problem or question.
-After reviewing all video frames of the job, the reviewer submits the review (see see [Review](#review) by either accepting and completing the job or rejecting it (which sets the status of the job bach to "Annotation").
-Now the assignee has to check the issues, update the labels, resolve the issus and again request a review. The review process starts again and if necessary also next annotations, until the reviewer accepts the job and it is marked as "Completed".  
+After reviewing all video frames of the job, the reviewer submits the review by either accepting and completing the job or rejecting it (which sets the status of the job bach to "Annotation").
+Now the assignee has to check the issues, update the labels, resolve the issues and again request a review. The review process starts again and if necessary also next annotations, until the reviewer accepts the job and it is marked as "Completed".  
 ![CVAT Workflow](cvat-macro-workflow.png)
 
 We recommend the following procedure for annotation in CVAT:
@@ -78,7 +78,7 @@ We recommend the following procedure for annotation in CVAT:
 
 ## Download data
 
-<!-- TODO Add description for downloading annotatopn data -->
+<!-- TODO Add description for downloading annotation data -->
 
 !!! info "Coming soon"
     Unfortunately, there is no content here yet. But we are currently working on completing this website.
