@@ -160,12 +160,10 @@ Thus, such case could influence the values of the calculated metrics for better 
 
 Scene 4 captures a rural road.
 
-| Scene 4                                                                        | Scene 5                                                                        |
+| Scene 4                                                                        |                                                                                |
 | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
-| ![Scene 4](assets/scenes/scene_4.jpg)                                          | ![Scene 5](assets/scenes/scene_5.jpg)                                          |
-| ![Scene 4 mAP](assets/plots/scene_4/mAP_diagram_scene_4.png)                   | ![Scene 5 mAP](assets/plots/scene_5/mAP_diagram_scene_5.png)                   |
-| ![Scene 4 TIDE](assets/plots/scene_4/tide_errors_diagram_scene_4.png)          | ![Scene 5 TIDE](assets/plots/scene_5/tide_errors_diagram_scene_5.png)          |
-| ![Scene 4 TIDE Stacked](assets/plots/scene_4/tide_stacked_diagram_scene_4.png) | ![Scene 5 TIDE Stacked](assets/plots/scene_5/tide_stacked_diagram_scene_5.png) |
+| ![Scene 4](assets/scenes/scene_4.jpg)                                          | ![Scene 4 mAP](assets/plots/scene_4/mAP_diagram_scene_4.png)                   |
+| ![Scene 4 TIDE](assets/plots/scene_4/tide_errors_diagram_scene_4.png)          | ![Scene 4 TIDE Stacked](assets/plots/scene_4/tide_stacked_diagram_scene_4.png) |
 
 The **Missed Ground Truth Error** (Miss) is pretty high for the YOLOv5s and the YOLOv5x models with an error value over 50% compared to the YOLOv5m and YOLOv5l models.
 At this moment, we could not come up with an explanation of why the YOLOv5x model's missed ground truth error is that much higher than its `m` and `l` counterpart.
