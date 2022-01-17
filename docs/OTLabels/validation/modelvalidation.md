@@ -16,7 +16,7 @@ Here is how the scenes are looking like:
 | Scenes                                |                                       |                                       |                                                   |
 | ------------------------------------- | ------------------------------------- | ------------------------------------------------- | ------------------------------------- |
 | ![Scene 1](assets/scenes/scene_1.jpg) | ![Scene 2](assets/scenes/scene_2.jpg) | ![Scene 3](assets/scenes/scene_3.jpg) | ![Scene 3 Night](assets/scenes/scene_3_night.jpg) |
-| ![Scene 4](assets/scenes/scene_4.jpg) | ![Scene 5](assets/scenes/scene_5.jpg) | ![Scene 6](assets/scenes/scene_6.jpg) | ![Scene 6 Night](assets/scenes/scene_6_night.jpg) |
+| ![Scene 4](assets/scenes/scene_4.jpg) | ![Scene 5](assets/scenes/scene_5.jpg) |                                       |                                                   |
 
 As seen above, there are two instances where scenes were also recorded at night.
 This makes it interesting to see how the YOLO models perform in detecting traffic objects in low light conditions.
