@@ -13,10 +13,10 @@ It is important to note that not every single frame is selected, but only every 
 
 Here is how the scenes are looking like:
 
-| Scenes                                |                                       |                                       |                                                   |
-| ------------------------------------- | ------------------------------------- | ------------------------------------------------- | ------------------------------------- |
-| ![Scene 1](assets/scenes/scene_1.jpg) | ![Scene 2](assets/scenes/scene_2.jpg) | ![Scene 3](assets/scenes/scene_3.jpg) | ![Scene 3 Night](assets/scenes/scene_3_night.jpg) |
-| ![Scene 4](assets/scenes/scene_4.jpg) | ![Scene 5](assets/scenes/scene_5.jpg) |                                       |                                                   |
+| Scenes                                |                                       |                                                   |                                                   |
+| ------------------------------------- | ------------------------------------- | ------------------------------------------------- | ------------------------------------------------- |
+| ![Scene 1](assets/scenes/scene_1.jpg) | ![Scene 2](assets/scenes/scene_2.jpg) | ![Scene 3](assets/scenes/scene_3.jpg)             | ![Scene 3 Night](assets/scenes/scene_3_night.jpg) |
+| ![Scene 4](assets/scenes/scene_4.jpg) | ![Scene 5](assets/scenes/scene_5.jpg) | ![Scene 5 Night](assets/scenes/scene_5_night.jpg) |                                                   |
 
 As seen above, there are two instances where scenes were also recorded at night.
 This makes it interesting to see how the YOLO models perform in detecting traffic objects in low light conditions.
@@ -34,8 +34,7 @@ The class labels to be considered for our evaluation of the YOLO models are:
 
 The YOLO models are evaluated with the help of [OTValidate](overview.md).
 As a prerequisite, what OTValidate needs in order to start the evaluation are the YOLO models and the labeled ground truth data.
-In our case the ground truth labeled data is our custom dataset, which needs to be in the [CVAT YOLO format](https://openvinotoolkit.github.io/cvat/docs/manual/advanced/downloading-annotations/
-).
+In our case the ground truth labeled data is our custom dataset, which needs to be in the CVAT YOLO format.
 As for the YOLO model, a custom trained or an existing model can be loaded into OTValidate.
 
 OTValidate then uses each model to predict the ground truth images.
@@ -67,11 +66,11 @@ Meaning, by only looking at the mAP metric the YOLOv5s, YOLOv5m, and the YOLOv5x
 
 Nevertheless, let us also have a look at the TIDE metrics to get an insight on the types of errors made by the models:
 
-| TIDE Metrics                                                      |                                                                        |
-| ----------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| ![All TIDE](assets/plots/all/tide_errors_diagram_all.png)         | ![All TIDE Stacked](assets/plots/all/tide_stacked_diagram_all.png)     |
+| TIDE Metrics                                              |                                                                    |
+| --------------------------------------------------------- | ------------------------------------------------------------------ |
+| ![All TIDE](assets/plots/all/tide_errors_diagram_all.png) | ![All TIDE Stacked](assets/plots/all/tide_stacked_diagram_all.png) |
 
-What immediately stands out are the **Missed Ground Truth Error**(Miss) and the **Classification Error**(Cls).
+What immediately stands out are the [**Missed Ground Truth Error**(Miss)](/OTLabels/validation/metrics/#tide-metrics) and the [**Classification Error**(Cls)](/OTLabels/validation/metrics/#tide-metrics).
 Meaning, the models were not able to detect many ground truth bounding boxes or be able to classify them correctly.
 Thus, the models were able to detect the majority of the bounding boxes, but had problems predicting the correct classes.
 
@@ -89,7 +88,7 @@ Still, let us try to find out why the  **Missed Ground Truth Error** appears to 
 #### Scene 1 & 2
 
 | Scene 1                                                                        | Scene 2                                                                        |
-|--------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
+| ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
 | ![Scene 1](assets/scenes/scene_1.jpg)                                          | ![Scene 2](assets/scenes/scene_2.jpg)                                          |
 | ![Scene 1 mAP](assets/plots/scene_1/mAP_diagram_scene_1.png)                   | ![Scene 2 mAP](assets/plots/scene_2/mAP_diagram_scene_2.png)                   |
 | ![Scene 1 TIDE](assets/plots/scene_1/tide_errors_diagram_scene_1.png)          | ![Scene 2 TIDE](assets/plots/scene_2/tide_errors_diagram_scene_2.png)          |
@@ -120,10 +119,10 @@ There are two datasets capturing scene 2 at daylight and nighttime respectively.
 
 | Scene 3                                                                        | At Night                                                                                   |
 | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
-| ![Scene 3](assets/scenes/scene_3.jpg)                                  | ![Scene 3 Night](assets/scenes/scene_3_night.jpg)                                          |
+| ![Scene 3](assets/scenes/scene_3.jpg)                                          | ![Scene 3 Night](assets/scenes/scene_3_night.jpg)                                          |
 | ![Scene 3 mAP](assets/plots/scene_3/mAP_diagram_scene_3.png)                   | ![Scene 3 mAP Night](assets/plots/scene_3/mAP_diagram_scene_3_night.png)                   |
-| ![Scene 3 TIDE](assets/plots/scene_3/tide_errors_diagram_scene_3.png)  | ![Scene 3 TIDE Night](assets/plots/scene_3/tide_errors_diagram_scene_3_night.png)          |
-| ![Scene 3 TIDE Stacked](assets/plots/scene_3/tide_stacked_diagram_scene_3.png)  | ![Scene 3 TIDE Stacked Night](assets/plots/scene_3/tide_stacked_diagram_scene_3_night.png) |
+| ![Scene 3 TIDE](assets/plots/scene_3/tide_errors_diagram_scene_3.png)          | ![Scene 3 TIDE Night](assets/plots/scene_3/tide_errors_diagram_scene_3_night.png)          |
+| ![Scene 3 TIDE Stacked](assets/plots/scene_3/tide_stacked_diagram_scene_3.png) | ![Scene 3 TIDE Stacked Night](assets/plots/scene_3/tide_stacked_diagram_scene_3_night.png) |
 
 Comparing these two datasets, it is not surprising that the models' mAP evaluated on the dataset taken at daylight fares much better to the one evaluated at nighttime.
 The low light condition makes it really hard for the models to detect any of the objects.
@@ -132,9 +131,9 @@ The biggest drop in performance in terms of the mAP metric is seen from the YOLO
 But then, why is the **Missed Ground Truth Error** (Miss) much lower and the **Classification Error** (Cls) that much higher of the nighttime dataset of Scene 3 compared to the one taken at daylight?
 Let's have a closer look at the two datasets first:
 
-| Scene 3 at daylight                                                      | Scene 3 at nighttime                                       |
-|--------------------------------------------------------------------------|------------------------------------------------------------|
-| ![Scene 3 Ground Truth Information](assets/plots/scene_3/gt_scene_3.svg) | ![Scene 3 Night](assets/plots/scene_3/gt_scene_3_night.svg)|
+| Scene 3 at daylight                                                      | Scene 3 at nighttime                                        |
+| ------------------------------------------------------------------------ | ----------------------------------------------------------- |
+| ![Scene 3 Ground Truth Information](assets/plots/scene_3/gt_scene_3.svg) | ![Scene 3 Night](assets/plots/scene_3/gt_scene_3_night.svg) |
 
 Overall, the amount of ground truth bounding boxes in scene 3 taken at daylight is more than twice as big as the one taken at nighttime.
 This implies that there is less traffic at nighttime, which makes sense.
@@ -160,21 +159,21 @@ Thus, such case could influence the values of the calculated metrics for better 
 
 Scene 4 captures a rural road.
 
-| Scene 4                                                                        |                                                                                |
-| ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
-| ![Scene 4](assets/scenes/scene_4.jpg)                                          | ![Scene 4 mAP](assets/plots/scene_4/mAP_diagram_scene_4.png)                   |
-| ![Scene 4 TIDE](assets/plots/scene_4/tide_errors_diagram_scene_4.png)          | ![Scene 4 TIDE Stacked](assets/plots/scene_4/tide_stacked_diagram_scene_4.png) |
+| Scene 4                                                               |                                                                                |
+| --------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| ![Scene 4](assets/scenes/scene_4.jpg)                                 | ![Scene 4 mAP](assets/plots/scene_4/mAP_diagram_scene_4.png)                   |
+| ![Scene 4 TIDE](assets/plots/scene_4/tide_errors_diagram_scene_4.png) | ![Scene 4 TIDE Stacked](assets/plots/scene_4/tide_stacked_diagram_scene_4.png) |
 
 The **Missed Ground Truth Error** (Miss) is pretty high for the YOLOv5s and the YOLOv5x models with an error value over 50% compared to the YOLOv5m and YOLOv5l models.
 At this moment, we could not come up with an explanation of why the YOLOv5x model's missed ground truth error is that much higher than its `m` and `l` counterpart.
 But there is an explanation why the missed ground truth error is high across all models.
 The reason lies in the dataset of scene 4 itself:
 
-| Scene 4 - images with cut off objects                                  |                                                                            |
-| ---------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| ![Scene 4 Person cut off 1](assets/scenes/scene_4_cutoff_person_1.jpg) | ![Scene 4 Person cut off 2](assets/scenes/scene_4_cutoff_person_2.jpg)     |
-| ![Scene 4 Person cut off 3](assets/scenes/scene_4_cutoff_person_3.jpg) | ![Scene 4 Person cut off](assets/scenes/scene_4_cutoff_car_1.jpg)          |
-| ![Scene 4 Person cut off](assets/scenes/scene_4_cutoff_car_2.jpg)      | ![Scene 4 Truck cut off](assets/scenes/scene_4_cutoff_truck.jpg)           |
+| Scene 4 - images with cut off objects                                  |                                                                        |
+| ---------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| ![Scene 4 Person cut off 1](assets/scenes/scene_4_cutoff_person_1.jpg) | ![Scene 4 Person cut off 2](assets/scenes/scene_4_cutoff_person_2.jpg) |
+| ![Scene 4 Person cut off 3](assets/scenes/scene_4_cutoff_person_3.jpg) | ![Scene 4 Person cut off](assets/scenes/scene_4_cutoff_car_1.jpg)      |
+| ![Scene 4 Person cut off](assets/scenes/scene_4_cutoff_car_2.jpg)      | ![Scene 4 Truck cut off](assets/scenes/scene_4_cutoff_truck.jpg)       |
 
 The images above contain objects, which are surrounded by red bounding boxes, that are only partly in their respective image.
 Therefore, a model might not have been able to detect these objects due to a low confidence score and thus resulting in misses.
@@ -187,7 +186,7 @@ Most images in the dataset do not contain bounding box annotations.
 There are a total of 110 labeled objects in a dataset consisting of 401 images.
 As a result, even a small number of cut off objects could have a great impact on the metrics.
 
-### Scene 5
+#### Scene 5
 
 Scene 5 captures a rural road.
 
@@ -204,7 +203,7 @@ Unsurprisingly, the models performed tremendously better on the dataset taken du
 
 It is not surprising that all models evaluated on the nighttime dataset have a high **Missed Ground Truth Error** (Miss) which is due to the worse light conditions.
 What is standing out is the fact that the models evaluated on the day dataset also have a high miss error rate.
-To get behind the a possible reason for this we should have quick peek in the ground truth dataset:
+To get behind the possible reason for this we should have quick peek in the ground truth dataset:
 
 |                                                                    |                                                                      |
 | ------------------------------------------------------------------ | -------------------------------------------------------------------- |
@@ -222,10 +221,6 @@ But there is not a big increase in performance in terms of object detection upon
 
 Another important aspect to look into in the future is how much time the models under discussion take to detect the images.
 Depending on the use case and resources at hand, choosing the `YOLOv5x` model which might need much more time to finish the detection might not be suitable and thus taking the `YOLOv5m` or `YOLOv5l` model might be the better choice.
-
-We also learned that how and where a camera is set up to capture a scene also influences the ability of the models to detect objects.
-Therefore, it might be interesting to see if other camera views would improve the models performance.
-In addition to that the timestamp needs to be placed at a position where it does not obstruct the area of interest which is any area with traffic.
 
 What we are also currently working on is to train our own models using the YOLOv5 models as our foundation on a custom dataset.
 Thus it would be interesting to see if there would be a significant increase in performance by using custom trained models.
