@@ -221,10 +221,11 @@ Looking at mAP and TIDE metrics gave us insight to how the YOLOv5 models perform
 But there is not a big increase in performance in terms of object detection upon choosing the `YOLOv5x` over the `YOLOv5m` or `YOLOv5l` model.
 
 Another important aspect to look into in the future is how much time the models under discussion take to detect the images.
-Depending on the use case and resources at hand, choosing the `YOLOv5x` model that might need much more time to finish the detection might not be suitable and taking `YOLOv5m` or `YOLOv5l` model might be the better choice.
+Depending on the use case and resources at hand, choosing the `YOLOv5x` model which might need much more time to finish the detection might not be suitable and thus taking the `YOLOv5m` or `YOLOv5l` model might be the better choice.
 
 We also learned that how and where a camera is set up to capture a scene also influences the ability of the models to detect objects.
 Therefore, it might be interesting to see if other camera views would improve the models performance.
+In addition to that the timestamp needs to be placed at a position where it does not obstruct the area of interest which is any area with traffic.
 
 What we are also currently working on is to train our own models using the YOLOv5 models as our foundation on a custom dataset.
 Thus it would be interesting to see if there would be a significant increase in performance by using custom trained models.
