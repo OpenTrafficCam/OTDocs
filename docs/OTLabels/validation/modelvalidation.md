@@ -181,7 +181,7 @@ The reason lies in the dataset of scene 4 itself:
 The images above contain objects, which are surrounded by red bounding boxes, that are only partly in their respective image.
 Therefore, a model might not have been able to detect these objects due to a low confidence score and thus resulting in misses.
 These type of images appear often in the dataset.
-Another thing to keep in mind is that there is not much traffic on a rural road.
+Another thing to keep in mind is that there is not much traffic on this rural road.
 Most images in the dataset do not contain bounding box annotations.
 
 ![Ground Truth Info](assets/plots/scene_4/gt_scene_4.svg)
