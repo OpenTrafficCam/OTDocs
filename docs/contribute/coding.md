@@ -37,7 +37,7 @@ The following table from [RealPython.com](https://realpython.com/python-pep8/#na
 | file              | D:\tmp\testfile_detections.csv                |
 | path              | "D:\tmp\" or "D:\tmp\testfile_detections.csv" |
 
-### Suffix
+### File extensions
 
 Files get an extension according to their content.
 
