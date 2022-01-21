@@ -35,15 +35,13 @@ The following table from [RealPython.com](https://realpython.com/python-pep8/#na
 
 ### Suffix
 
-Files get a suffix according to their content.
+Files get an extension according to their content.
 
-| Suffix        | Description                                                     |
+| Extension     | Description                                                     |
 | ------------- | --------------------------------------------------------------- |
-| \_detections  | detections as bounding boxes                                    |
-| \_tracks-px   | trajectories in pixel coordinates                               |
-| \_tracks-corr | trajectories in pixel coordinates corrected for lens distortion |
-| \_tracks-utm  | trajectories transformed to UTM coordinates                     |
-| \_refpts      | reference points to convert pixel to UTM coordinates            |
+| \.otdet       | detections as bounding boxes                                    |
+| \.ottrk       | trajectories in pixel (and UTM) coordinates                     |
+| \.otrfpts     | reference points to convert pixel to UTM coordinates            |
 
 ## Code documentation
 
@@ -120,7 +118,7 @@ We try to develop OpenTrafficCam using as few dependencies as possible. For basi
 | Data handling      | [pandas](https://pypi.org/project/pandas/), [NumPy](https://pypi.org/project/numpy/)                                            |
 | Shape handling     | [GeoPandas](https://pypi.org/project/geopandas/), [Shapely](https://pypi.org/project/Shapely/)                                  |
 | Plotting, graphing | [Plotly](https://pypi.org/project/plotly/)                                                                                      |
-| User interface     | [PySimpleGui](https://pypi.org/project/PySimpleGUI/)                                                                            |
+| User interface     | [Tkinter](https://docs.python.org/3/library/tkinter.html)                                                                            |
 | Web                | [PySimpleGUIWeb](https://pypi.org/project/PySimpleGUIWeb/) (camera system), [Dash](https://pypi.org/project/dash/) (dashboards) |
 
 ## Linting/Autoformatting
