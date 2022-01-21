@@ -29,7 +29,7 @@ The following table from [RealPython.com](https://realpython.com/python-pep8/#na
 | dir               | D:\tmp\                                       |
 | filename          | testfile                                      |
 | suffix            | \_detections                                  |
-| filetype          | .csv                                          |
+| file type         | .csv                                          |
 | file              | D:\tmp\testfile_detections.csv                |
 | path              | "D:\tmp\" or "D:\tmp\testfile_detections.csv" |
 
