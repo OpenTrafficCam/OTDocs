@@ -114,7 +114,7 @@ Try to avoid inline comments.
 
 We try to develop OpenTrafficCam using as few dependencies as possible.
 For basic functionality we prefer packages that come with the Python standard distribution (like pathlib or Tkinter).
-However, OpenTrafficCam would not be possible without code from third party libraries, especially when it comes to videos, images, data analysis, neural networks or Web.
+However, OpenTrafficCam would not be possible without code from third party libraries, especially when it comes to videos, images, data analysis, neural networks or web development.
 These are the  libraries we intend to use for specific functionalities throughout the whole framework (we are grateful to the authors):
 
 | Functionality      | Library                                                                                                                         |
