@@ -1,8 +1,12 @@
 # Coding (Python)
 
-Coding standards are not about right and wrong or good and bad. They are about uniformity, so people can easily read and contribute to the code regardless who worked on the software before.
+Coding standards are not about right and wrong or good and bad.
+They are about uniformity, so people can easily read and contribute to the code regardless who worked on the software before.
 
-For now, nearly all code is Python so we just agreed on coding conventions for the Python programming language. We basically follow the [PEP 8 Style Guide for Python Code](https://www.python.org/dev/peps/pep-0008/). A good summary and some additions can be found in the [Hitchhikers Guide](https://docs.python-guide.org/writing/style/) or at [RealPython.com](https://realpython.com/python-pep8/). Below we defined what we consider the most important standards.
+For now, nearly all code is Python so we just agreed on coding conventions for the Python programming language.
+We basically follow the [PEP 8 Style Guide for Python Code](https://www.python.org/dev/peps/pep-0008/).
+A good summary and some additions can be found in the [Hitchhikers Guide](https://docs.python-guide.org/writing/style/) or at [RealPython.com](https://realpython.com/python-pep8/).
+Below we defined what we consider the most important standards.
 
 ## Naming Conventions
 
@@ -108,7 +112,10 @@ Try to avoid inline comments.
 
 ## Dependencies
 
-We try to develop OpenTrafficCam using as few dependencies as possible. For basic functionality we prefer packages that come with the Python standard distribution (like pathlib). However, OpenTrafficCam would not be possible without code from third party libraries, especially when it comes to videos, images, data analysis, neural networks or GUI. These are the  libraries we intend to use for specific functionalities throughout the whole framework (we are grateful to the authors):
+We try to develop OpenTrafficCam using as few dependencies as possible.
+For basic functionality we prefer packages that come with the Python standard distribution (like pathlib or Tkinter).
+However, OpenTrafficCam would not be possible without code from third party libraries, especially when it comes to videos, images, data analysis, neural networks or Web.
+These are the  libraries we intend to use for specific functionalities throughout the whole framework (we are grateful to the authors):
 
 | Functionality      | Library                                                                                                                         |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------- |
@@ -123,7 +130,8 @@ We try to develop OpenTrafficCam using as few dependencies as possible. For basi
 
 ## Linting/Autoformatting
 
-To match PEP8 specs and write pretty code we use [flake8](https://github.com/PyCQA/flake8) to check against structural and style errors and [black](https://github.com/psf/black) for autoformatting. Additionally the package [flake8-docstrings](https://pypi.org/project/flake8-docstrings/) can be used to lint the docstrings.
+To match PEP8 specs and write pretty code we use [flake8](https://github.com/PyCQA/flake8) to check against structural and style errors and [black](https://github.com/psf/black) for autoformatting.
+Additionally the package [flake8-docstrings](https://pypi.org/project/flake8-docstrings/) can be used to lint the docstrings.
 
 The following settings are set in the `.flake8` file:
 
