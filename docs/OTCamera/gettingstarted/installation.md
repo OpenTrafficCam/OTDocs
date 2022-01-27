@@ -94,7 +94,7 @@ If everything is setup correctly, you will be asked to add the host key to the l
     ```
 
     !!! warning
-        This guide should run on Windows 10 but you are modifing your system files.
+        This guide should run on Windows 10 but you are modifying your system files.
         Please do not do anything you do not understand! Read the [source](https://superuser.com/a/1609071) for more information.
         We are not liable for any damage you may cause to your system. But we followed the steps ourselves and everything went well.
 
@@ -146,7 +146,6 @@ Change the following settings to appropriate values:
 
 * System Options &rightarrow; Password (choose a new password for security reasons)
 * Interface Options &rightarrow; Camera &rightarrow; enable
-* Interface Options &rightarrow; Serial Port &rightarrow; no &rightarrow; Serial Hardware &rightarrow; yes
 
 ??? help "Setup without Raspberry Pi Imager"
 
@@ -185,8 +184,7 @@ Both commands should state, that they are (using) python 3.(x).
 OTCamera requires additional python packages, which need to be installed.
 
 ```bash
-sudo apt install python3-picamera python3-gpiozero -y
-pip3 install pysimpleguiweb art psutil
+pip install -r requirements.txt --upgrade
 ```
 
 !!! note
