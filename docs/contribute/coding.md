@@ -115,7 +115,7 @@ Try to avoid inline comments.
 We try to develop OpenTrafficCam using as few dependencies as possible.
 For basic functionality we prefer packages that come with the Python standard distribution (like pathlib or Tkinter).
 However, OpenTrafficCam would not be possible without code from third party libraries, especially when it comes to videos, images, data analysis, neural networks or web development.
-These are the  libraries we intend to use for specific functionalities throughout the whole framework (we are grateful to the authors):
+These are the libraries we intend to use for specific functionalities throughout the whole framework (we are grateful to the authors):
 
 | Functionality      | Library                                                                                                                         |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------- |
@@ -126,7 +126,7 @@ These are the  libraries we intend to use for specific functionalities throughou
 | Shape handling     | [GeoPandas](https://pypi.org/project/geopandas/), [Shapely](https://pypi.org/project/Shapely/)                                  |
 | Plotting, graphing | [Plotly](https://pypi.org/project/plotly/)                                                                                      |
 | User interface     | [Tkinter](https://docs.python.org/3/library/tkinter.html)                                                                            |
-| Web                | [PySimpleGUIWeb](https://pypi.org/project/PySimpleGUIWeb/) (camera system), [Dash](https://pypi.org/project/dash/) (dashboards) |
+| Web                | [Dash](https://pypi.org/project/dash/) (dashboards) |
 
 ## Linting/Autoformatting
 
