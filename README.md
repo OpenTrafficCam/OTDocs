@@ -41,12 +41,14 @@ Create a virtual environment and install dependencies.
 python -m venv venv --upgrade-deps
 .\venv\Scripts\activate
 pip install -r .\requirements.txt
+deactivate
 ```
 
 You can run a local server with autoload.
 You should always upgrade your venv since the GitHub Pages deployment always uses the most current versions.
 
 ```bash
+.\venv\Scripts\activate
 python -m pip install --upgrade -r .\requirements.txt
 python -m mkdocs serve
 ```
@@ -56,3 +58,10 @@ MkDocs builds the website and starts a local webserver which monitors for change
 Open [http://127.0.0.1:8000](http://127.0.0.1:8000) in your browser to access this site.
 If you change any file inside ```/docs``` MkDocs regenerates that site and instantly reloads your browser.
 This even works great if you change a branche while running ```mkdocs serve``` .
+
+To stop the web server, type "Ctrl + C" .
+The virtual environment can then be closed with the following command.
+
+```bash
+deactivate
+```
