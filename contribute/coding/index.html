@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../../assets/OTC_icon.svg">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.8">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.9">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.6e60f8b8.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2b4465f4.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
@@ -1801,8 +1801,8 @@ OpenTrafficCam is a project that is currently under development. The content on 
 </li>
         
           <li class="md-nav__item">
-  <a href="#suffix" class="md-nav__link">
-    Suffix
+  <a href="#file-extensions" class="md-nav__link">
+    File extensions
   </a>
   
 </li>
@@ -1980,8 +1980,8 @@ OpenTrafficCam is a project that is currently under development. The content on 
 </li>
         
           <li class="md-nav__item">
-  <a href="#suffix" class="md-nav__link">
-    Suffix
+  <a href="#file-extensions" class="md-nav__link">
+    File extensions
   </a>
   
 </li>
@@ -2057,8 +2057,12 @@ OpenTrafficCam is a project that is currently under development. The content on 
 
 
 <h1 id="coding-python">Coding (Python)<a class="headerlink" href="#coding-python" title="Permanent link">&para;</a></h1>
-<p>Coding standards are not about right and wrong or good and bad. They are about uniformity, so people can easily read and contribute to the code regardless who worked on the software before.</p>
-<p>For now, nearly all code is Python so we just agreed on coding conventions for the Python programming language. We basically follow the <a href="https://www.python.org/dev/peps/pep-0008/">PEP 8 Style Guide for Python Code</a>. A good summary and some additions can be found in the <a href="https://docs.python-guide.org/writing/style/">Hitchhikers Guide</a> or at <a href="https://realpython.com/python-pep8/">RealPython.com</a>. Below we defined what we consider the most important standards.</p>
+<p>Coding standards are not about right and wrong or good and bad.
+They are about uniformity, so people can easily read and contribute to the code regardless who worked on the software before.</p>
+<p>For now, nearly all code is Python so we just agreed on coding conventions for the Python programming language.
+We basically follow the <a href="https://www.python.org/dev/peps/pep-0008/">PEP 8 Style Guide for Python Code</a>.
+A good summary and some additions can be found in the <a href="https://docs.python-guide.org/writing/style/">Hitchhikers Guide</a> or at <a href="https://realpython.com/python-pep8/">RealPython.com</a>.
+Below we defined what we consider the most important standards.</p>
 <h2 id="naming-conventions">Naming Conventions<a class="headerlink" href="#naming-conventions" title="Permanent link">&para;</a></h2>
 <p>All names should be as short as possible but as long as necessary to understand them.</p>
 <h3 id="general">General<a class="headerlink" href="#general" title="Permanent link">&para;</a></h3>
@@ -2131,7 +2135,7 @@ OpenTrafficCam is a project that is currently under development. The content on 
 <td>_detections</td>
 </tr>
 <tr>
-<td>filetype</td>
+<td>file type</td>
 <td>.csv</td>
 </tr>
 <tr>
@@ -2144,34 +2148,26 @@ OpenTrafficCam is a project that is currently under development. The content on 
 </tr>
 </tbody>
 </table>
-<h3 id="suffix">Suffix<a class="headerlink" href="#suffix" title="Permanent link">&para;</a></h3>
-<p>Files get a suffix according to their content.</p>
+<h3 id="file-extensions">File extensions<a class="headerlink" href="#file-extensions" title="Permanent link">&para;</a></h3>
+<p>Files get an extension according to their content.</p>
 <table>
 <thead>
 <tr>
-<th>Suffix</th>
+<th>Extension</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>_detections</td>
+<td>.otdet</td>
 <td>detections as bounding boxes</td>
 </tr>
 <tr>
-<td>_tracks-px</td>
-<td>trajectories in pixel coordinates</td>
+<td>.ottrk</td>
+<td>trajectories in pixel (and UTM) coordinates</td>
 </tr>
 <tr>
-<td>_tracks-corr</td>
-<td>trajectories in pixel coordinates corrected for lens distortion</td>
-</tr>
-<tr>
-<td>_tracks-utm</td>
-<td>trajectories transformed to UTM coordinates</td>
-</tr>
-<tr>
-<td>_refpts</td>
+<td>.otrfpts</td>
 <td>reference points to convert pixel to UTM coordinates</td>
 </tr>
 </tbody>
@@ -2226,7 +2222,10 @@ OpenTrafficCam is a project that is currently under development. The content on 
 </code></pre></div>
 <p>Try to avoid inline comments.</p>
 <h2 id="dependencies">Dependencies<a class="headerlink" href="#dependencies" title="Permanent link">&para;</a></h2>
-<p>We try to develop OpenTrafficCam using as few dependencies as possible. For basic functionality we prefer packages that come with the Python standard distribution (like pathlib). However, OpenTrafficCam would not be possible without code from third party libraries, especially when it comes to videos, images, data analysis, neural networks or GUI. These are the  libraries we intend to use for specific functionalities throughout the whole framework (we are grateful to the authors):</p>
+<p>We try to develop OpenTrafficCam using as few dependencies as possible.
+For basic functionality we prefer packages that come with the Python standard distribution (like pathlib or Tkinter).
+However, OpenTrafficCam would not be possible without code from third party libraries, especially when it comes to videos, images, data analysis, neural networks or web development.
+These are the libraries we intend to use for specific functionalities throughout the whole framework (we are grateful to the authors):</p>
 <table>
 <thead>
 <tr>
@@ -2261,16 +2260,17 @@ OpenTrafficCam is a project that is currently under development. The content on 
 </tr>
 <tr>
 <td>User interface</td>
-<td><a href="https://pypi.org/project/PySimpleGUI/">PySimpleGui</a></td>
+<td><a href="https://docs.python.org/3/library/tkinter.html">Tkinter</a></td>
 </tr>
 <tr>
 <td>Web</td>
-<td><a href="https://pypi.org/project/PySimpleGUIWeb/">PySimpleGUIWeb</a> (camera system), <a href="https://pypi.org/project/dash/">Dash</a> (dashboards)</td>
+<td><a href="https://pypi.org/project/dash/">Dash</a> (dashboards)</td>
 </tr>
 </tbody>
 </table>
 <h2 id="lintingautoformatting">Linting/Autoformatting<a class="headerlink" href="#lintingautoformatting" title="Permanent link">&para;</a></h2>
-<p>To match PEP8 specs and write pretty code we use <a href="https://github.com/PyCQA/flake8">flake8</a> to check against structural and style errors and <a href="https://github.com/psf/black">black</a> for autoformatting. Additionally the package <a href="https://pypi.org/project/flake8-docstrings/">flake8-docstrings</a> can be used to lint the docstrings.</p>
+<p>To match PEP8 specs and write pretty code we use <a href="https://github.com/PyCQA/flake8">flake8</a> to check against structural and style errors and <a href="https://github.com/psf/black">black</a> for autoformatting.
+Additionally the package <a href="https://pypi.org/project/flake8-docstrings/">flake8-docstrings</a> can be used to lint the docstrings.</p>
 <p>The following settings are set in the <code>.flake8</code> file:</p>
 <div class="highlight"><pre><span></span><code><span class="k">[flake8]</span><span class="w"></span>
 <span class="na">max-line-length</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">88</span><span class="w"></span>
@@ -2282,7 +2282,7 @@ OpenTrafficCam is a project that is currently under development. The content on 
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 26, 2021</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 4, 2022</span>
       
     
   </small>
