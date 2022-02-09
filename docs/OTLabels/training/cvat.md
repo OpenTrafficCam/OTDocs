@@ -44,8 +44,8 @@ Even if only a part of an object is visible and the class of the object is recog
 ## Projects, Tasks and Jobs
 
 We define certain set of videos as a **project**.
-Every project has multiple **tasks** (each consists of one video to annotate). Each task has a status ("Pending", "In Progress" and "Completed") and a progress bar showing the number of completed jobs. Open the task with klick on "Open".  
-For each task (or video) multiple **jobs** with a certain amounts of frames from the video are defined. Each job has a status ("annotation", "validation" and "completed"), an "assignee" (responsible for annotation) and a "reviewer" (responsible for reviewing the assignees annotation). Open the job with klick on "Job #...".
+Every project has multiple **tasks** (each consists of one video to annotate). Each task has a status ("Pending", "In Progress" and "Completed") and a progress bar showing the number of completed jobs. Open the task with click on "Open".  
+For each task (or video) multiple **jobs** with a certain amounts of frames from the video are defined. Each job has a status ("annotation", "validation" and "completed"), an "assignee" (responsible for annotation) and a "reviewer" (responsible for reviewing the assignees annotation). Open the job with click on "Job #...".
 
 ## Import datafix
 
@@ -58,7 +58,7 @@ For each task (or video) multiple **jobs** with a certain amounts of frames from
 
 For each job, the project coordinator assigns the roles of the "assignee" (= annotator) and the "reviewer".
 The reviewer then starts working on a job by initial labeling of the video frames.
-The assignee should save his labeling work from time to time and can also stop and later repeat working on a job.
+The assignee should save his labeling work from time to time and can also stop and later resume working on a job.
 After finishing the initial labeling, the assignee requests a review (menu - request review, the assigned reviewer should already be named there) and thus sets status of the job to "validation".
 Then the reviewer checks the initial labeling done by the assignee and raises issues when there is a problem or question.
 After reviewing all video frames of the job, the reviewer submits the review by either accepting and completing the job or rejecting it (which sets the status of the job bach to "Annotation").

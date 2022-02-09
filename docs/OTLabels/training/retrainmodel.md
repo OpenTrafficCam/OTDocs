@@ -48,10 +48,10 @@ names: ["person", "bicycle", "car", "motorcycle", "bus", "truck"]
 
 ### Model structure
 
-Further, the config file containing the model structure (also in *yaml* format) needs to be set up or adapted.
-These config files are usually stored in the *models* folder within the *yolov5* directory.
-Natively, YOLOv5 comes with one config file for each model (e.g., *yolov5s.yaml*).
-We strongly recommend to keep the model structure itself as it is and only adapt the number of classes, since the retraining process bases on the trained standard weights, which rely on the original structure.
+Further, the configuration file containing the model structure (also in *yaml* format) needs to be set up or adapted.
+These configuration files are usually stored in the *models* folder within the *yolov5* directory.
+Natively, YOLOv5 comes with one configuration file for each model (e.g., *yolov5s.yaml*).
+We strongly recommend to keep the model structure itself as it is and only adapt the number of classes, since the retraining process is based on the trained standard weights, which rely on the original structure.
 
 #### *model_structure*.yaml
 
@@ -63,7 +63,7 @@ nc: 6  # number of classes
 
 ## Second step: connecting to wandb
 
-If you want to have your trining process logged and visualized, YOLOv5 comes with the option to connect to weights and biases (wandb).
+If you want to have your training process logged and visualized, YOLOv5 comes with the option to connect to weights and biases (wandb).
 For further instructions, please visit [the wandb issue on Github](https://github.com/ultralytics/yolov5/issues/1289).
 Otherwise you can chose the option not to use wandb when asked.
 
