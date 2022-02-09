@@ -52,7 +52,7 @@ For each task (or video) multiple **jobs** with a certain amounts of frames from
 <!-- TODO Add description for importing datafix -->
 
 !!! info "Coming soon"
-    Unfortunately, there is no content here yet. But we are currently working on completing this website.
+    Unfortunately, there is no content here yet. But we are currently working on completing this site.
 
 ## Workflow
 
@@ -81,4 +81,4 @@ We recommend the following procedure for annotation in CVAT:
 <!-- TODO Add description for downloading annotation data -->
 
 !!! info "Coming soon"
-    Unfortunately, there is no content here yet. But we are currently working on completing this website.
+    Unfortunately, there is no content here yet. But we are currently working on completing this site.

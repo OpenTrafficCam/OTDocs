@@ -39,11 +39,11 @@ Before executing the script, you have to setup the configurations for your needs
 
 Please note that the images will not be copied to the corresponding folder in *destPath/images* in order to save file space.
 Instead, a text file with all images still containing the filtered labels is created.
-This file of file names can also be referred to by YOLOv5.
+This file of filenames can also be referred to by YOLOv5.
 
 The script performs the following steps:
 
-1. Get the category ids to the corresponding category name.
+1. Get the category IDs to the corresponding category name.
 2. Import the label files.
 3. Filter the labels by the provided category names.
 4. Export the labels to the directory *destPath/labels/name_filtered*.
@@ -59,7 +59,7 @@ Configurations to be made:
 - Within the script:
   - Set path: path where the data is stored (typically ./data/*).
   - Set URLFile: path to the config file that stores the URLs of the annotation files
-- coco_annotation_json_URLs.txt: a text file containing the URLS of the annotation files (without quotes and one URL per row)
+- coco_annotation_json_URLs.txt: a text file containing the URLs of the annotation files (without quotes and one URL per row)
 
 ## Get the original COCO dataset
 
@@ -72,4 +72,4 @@ Before executing the script, you have to setup the configurations for your needs
   - Set imageURLs: path of a text file (standard: coco_image_URLs.txt) containing the URLs of the image data sets.
   - Set annURL: URL to the labels.
   - Set destPath: path where your data is stored (typically ./data/*).
-- coco_image_URLs.txt: a text file containing the URLS of the images for training, validation and testing (without quotes and one URL per row).
+- coco_image_URLs.txt: a text file containing the URLs of the images for training, validation and testing (without quotes and one URL per row).

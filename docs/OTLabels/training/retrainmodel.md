@@ -64,7 +64,7 @@ nc: 6  # number of classes
 ## Second step: connecting to wandb
 
 If you want to have your training process logged and visualized, YOLOv5 comes with the option to connect to weights and biases (wandb).
-For further instructions, please visit [the wandb issue on Github](https://github.com/ultralytics/yolov5/issues/1289).
+For further instructions, please visit [the wandb issue on GitHub](https://github.com/ultralytics/yolov5/issues/1289).
 Otherwise you can chose the option not to use wandb when asked.
 
 ## Third step: retraining the model
@@ -74,4 +74,4 @@ To start the process, simply execute the *train.py* with the desired options.
 
 `python yolov5/train.py --img **img_size** --batch **batch_size** --epochs **n_epochs** --data path_to/**data_structure_labels**.yaml --weights yolov5/weights/**yolov5_weights** --cfg path_to/**model_structure**.yaml`
 
-For further information about the whole retraining process with YOLOv5, please see [the original documentation on Github](https://github.com/ultralytics/yolov5/wiki/Train-Custom-Data).
+For further information about the whole retraining process with YOLOv5, please see [the original documentation on GitHub](https://github.com/ultralytics/yolov5/wiki/Train-Custom-Data).
