@@ -145,7 +145,7 @@ sudo raspi-config
 Change the following settings to appropriate values:
 
 * System Options &rightarrow; Password (choose a new password for security reasons)
-* Interface Options &rightarrow; Camera &rightarrow; enable
+* Interface Options &rightarrow; I1 Legacy Camera &rightarrow; yes
 
 ??? help "Setup without Raspberry Pi Imager"
 
@@ -161,25 +161,30 @@ Exit the raspi-config selecting "Finish" and reboot the Pi afterwards.
 
 ## Setup Python and Dependencies
 
-By default, Raspberry OS light doesn't come with PIP installed. We will need it, to install required packages.
+By default, Raspberry OS light doesn't come with PIP and git installed. We will need it, to install required packages.
 
-```bash
-sudo apt install python3-pip -y
+```bash 
+sudo apt install python3-pip git -y
 ```
 
-Raspberry OS ships with python 2 and python 3. By default python 2 is used. We want to change that to python 3 by adding two single lines to ```.bashrc```.
+??? help "If you are using RaspberryPi OS legacy"
 
-```bash
-echo "alias python='/usr/bin/python3'" >> ~/.bashrc
-echo "alias pip=pip3" >> ~/.bashrc
+    Since the latest RaspberryPi OS python3 is the default python version.
+    If you are using (not recommended) an older version of RaspberryPi OS, you need to make python3 your default version.
 
-source ~/.bashrc
+    Raspberry OS legacy ships with python 2 and python 3. By default python 2 is used. We want to change that to python 3 by adding two single lines to ```.bashrc```.
 
-python --version
-pip --version
-```
+    ```bash
+    echo "alias python='/usr/bin/python3'" >> ~/.bashrc
+    echo "alias pip=pip3" >> ~/.bashrc
 
-Both commands should state, that they are (using) python 3.(x).
+    source ~/.bashrc
+
+    python --version
+    pip --version
+    ```
+
+    Both commands should state, that they are (using) python 3.(x).
 
 OTCamera requires additional python packages, which need to be installed.
 
