@@ -195,3 +195,49 @@ pip install -r requirements.txt --upgrade
 !!! note
     In the future, we would like to offer a ready-to-use image for the Raspberry Pi, which can be easily installed.
     The setup will then be much easier.
+
+## Clone OTCamera
+
+TODO
+
+## Setup Webserver for Preview
+
+We are currently using nginx (a small webserver) to serve a small html file including a preview of the camera view.
+
+To install nginx:
+
+```bash
+sudo apt install nginx -y
+```
+
+We need to configure nginx to serve the OTCamera GUI.
+Open the nginx config file `/etc/nginx/sites-available/default` and edit the webserver root.
+
+```bash
+sudo nano /etc/nginx/sites-available/default
+```
+
+You should see something like this (there may be some comment lines starting with # which you can ignore).
+
+```py title="/etc/nginx/sites-available/default" linenums="1" hl_lines="5"
+server {
+        listen 80 default_server;
+        listen [::]:80 default_server;
+
+        root /var/www/html;
+
+        index index.html index.htm index.nginx-debian.html;
+
+        server_name _;
+
+        location / {
+                try_files $uri $uri/ =404;
+        }
+
+}
+
+```
+
+The important line is we need to change is highlighted.
+Replace `/var/www/html` with the full path to the `OTCamera/gui/webfiles` folder.
+If you followed this guide it should be `/home/pi/OTCamera/webfiles`.
