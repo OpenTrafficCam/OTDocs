@@ -1,5 +1,4 @@
 {
-    "python.pythonPath": "venv/bin/python"
     "yaml.schemas": {
         "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml"
     }
