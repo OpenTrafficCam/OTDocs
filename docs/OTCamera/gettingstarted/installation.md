@@ -163,7 +163,7 @@ Exit the raspi-config selecting "Finish" and reboot the Pi afterwards.
 
 By default, Raspberry OS light doesn't come with PIP and git installed. We will need it, to install required packages.
 
-```bash 
+```bash
 sudo apt install python3-pip git -y
 ```
 
@@ -186,19 +186,25 @@ sudo apt install python3-pip git -y
 
     Both commands should state, that they are (using) python 3.(x).
 
+!!! note
+    In the future, we would like to offer a ready-to-use image for the Raspberry Pi, which can be easily installed.
+    The setup will then be much easier.
+
+## Clone and Install OTCamera
+
+We'll need to download OTCamera using git to get all the code we'll need to run OTCamera.
+
+```bash
+git clone https://github.com/OpenTrafficCam/OTCamera.git
+cd OTCamera
+
+```
+
 OTCamera requires additional python packages, which need to be installed.
 
 ```bash
 pip install -r requirements.txt --upgrade
 ```
-
-!!! note
-    In the future, we would like to offer a ready-to-use image for the Raspberry Pi, which can be easily installed.
-    The setup will then be much easier.
-
-## Clone OTCamera
-
-TODO
 
 ## Setup Webserver for Preview
 
