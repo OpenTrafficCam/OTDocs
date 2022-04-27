@@ -25,10 +25,14 @@ Download and install the [Raspberry Pi Imager](https://www.raspberrypi.org/softw
 
 It's recommended to use the Raspberry Pi Imager [Advanced Options](https://www.raspberrypi.org/blog/raspberry-pi-imager-update-to-v1-6/) to do some basic setup.
 Just press ++ctrl+shift+x++ on startscreen to access advanced options.
+In newer Raspberry Pi Imager versions you just need to press the gear symbol.
 
 Setup a hostname, enable SSH, either password based or using public-key authentication (recommended!),
 configure your Wifi credentials and choose the correct locale for Wifi, timezone and keyboard layout.
 You can also skip the first-run wizard.
+
+If you set the default username to anything different than "pi" (which is recommended) you'll need to replace "pi" in the following documentation with your username.
+For example: instead of connecting to `ssh pi@hostname` you'll need `ssh username@hostname`.
 
 ??? help "How to generate a public key"
 
