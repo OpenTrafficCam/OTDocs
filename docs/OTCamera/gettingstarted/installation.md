@@ -1,11 +1,11 @@
 # Installation
 
 No matter which version you want to install, you will always use a Raspberry Pi as a base.
-This guide describes the basic steps you need to perform for each version.
 
 You will need:
 
-* Raspberry Pi 2B/3B(+)/4/Zero W and power supply
+* Raspberry Pi 2B / 3B(+) / 4 / Zero W / Zero 2W and power supply
+* We recommend a Zero W or Zero 2W because they draw substantially less power.
 * Micro SD card (a High Endurance version is recommended)
 * SD Card Reader
 * [Raspberry Pi Imager](https://www.raspberrypi.org/software/).
@@ -13,7 +13,7 @@ You will need:
 !!! warning
 
     Even though we have completed the guide ourselves, every PC is different and Raspberry OS can change as well.
-    There are steps described with which you can break your Windows on the PC.
+    There are steps described with which you can break your Windows, macOS or Linux on your PC.
     You should know what you are doing.
     We are not responsible for any damage that may occur.
 
@@ -49,7 +49,7 @@ For example: instead of connecting to `ssh pi@hostname` you'll need `ssh usernam
 
 ![Raspberry Pi Imager advanced settings](installation/rpi_imager_2.png)
 
-Now insert the SD card into the PC. Select Raspberry Pi OS Lite (32-bit) as operating system under "Raspberry Pi (Other)". Then select the SD card on which the operating system will be installed.
+Now insert the SD card into your PC. Select Raspberry Pi OS Lite (32-bit) as operating system under "Raspberry Pi (Other)". Then select the SD card on which the operating system will be installed.
 
 !!! warning
 
@@ -149,7 +149,8 @@ sudo raspi-config
 Change the following settings to appropriate values:
 
 * System Options &rightarrow; Password (choose a new password for security reasons)
-* Interface Options &rightarrow; I1 Legacy Camera &rightarrow; yes
+* Interface Options &rightarrow; I1 Legacy Camera &rightarrow; yes (since the new camera api is not supported by picamerax)
+* Advanced options &rightarrow; GL driver &rightarrow; G1 Legacy (This may take a while, but saves a lot of energy.)
 
 ??? help "Setup without Raspberry Pi Imager"
 
@@ -163,9 +164,49 @@ Change the following settings to appropriate values:
 
 Exit the raspi-config selecting "Finish" and reboot the Pi afterwards.
 
+After a reboot we also want to disable the HDMI output for additional power saving. [CNX Software](https://www.cnx-software.com/2021/12/09/raspberry-pi-zero-2-w-power-consumption/) made some great power measurements for some Raspberry Pis. We'll need to add a specific line to the file `/etc/rc.local` in order to deactivate HDMI on every boot.
+
+```bash
+sudo nano /etc/rc.local
+```
+
+This opens the texteditor nano. We need to insert `/usr/bin/tvservice -o` in this file as highlighted below:
+
+```sh hl_lines="20" linenums="1" title="/etc/rc.local"
+#!/bin/sh -e
+#
+# rc.local
+#
+# This script is executed at the end of each multiuser runlevel.
+# Make sure that the script will "exit 0" on success or any other
+# value on error.
+#
+# In order to enable or disable this script just change the execution
+# bits.
+#
+# By default this script does nothing.
+
+# Print the IP address
+_IP=$(hostname -I) || true
+if [ "$_IP" ]; then
+  printf "My IP address is %s\n" "$_IP"
+fi
+
+/usr/bin/tvservice -o
+
+exit 0
+```
+
+Press ++ctrl+x++ and ++y++ to save the file and exit nano.
+Rebooting the Pi activates the new settings.
+
+```bash
+sudo reboot
+```
+
 ## Setup Python and Dependencies
 
-By default, Raspberry OS light doesn't come with PIP and git installed. We will need it, to install required packages.
+By default, Raspberry OS light doesn't come with PIP and git installed. We will need it to install required packages.
 
 ```bash
 sudo apt install python3-pip git -y
@@ -191,8 +232,9 @@ sudo apt install python3-pip git -y
     Both commands should state, that they are (using) python 3.(x).
 
 !!! note
-    In the future, we would like to offer a ready-to-use image for the Raspberry Pi, which can be easily installed.
+    We are planning to offer a ready-to-use image for the Raspberry Pi, which can be easily installed.
     The setup will then be much easier.
+    Stay tuned :)
 
 ## Clone and Install OTCamera
 
@@ -248,6 +290,6 @@ server {
 
 ```
 
-The important line is we need to change is highlighted.
+The important line we need to change is highlighted.
 Replace `/var/www/html` with the full path to the `OTCamera/gui/webfiles` folder.
 If you followed this guide it should be `/home/pi/OTCamera/webfiles`.
