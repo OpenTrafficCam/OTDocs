@@ -148,7 +148,7 @@ sudo raspi-config
 
 Change the following settings to appropriate values:
 
-* System Options &rightarrow; Password (choose a new password for security reasons)
+* System Options &rightarrow; Password (if not already done with Raspi Imager choose a new password for security reasons)
 * Interface Options &rightarrow; I1 Legacy Camera &rightarrow; yes (since the new camera api is not supported by picamerax)
 * Advanced options &rightarrow; GL driver &rightarrow; G1 Legacy (This may take a while, but saves a lot of energy.)
 
@@ -170,9 +170,10 @@ After a reboot we also want to disable the HDMI output for additional power savi
 sudo nano /etc/rc.local
 ```
 
-This opens the texteditor nano. We need to insert `/usr/bin/tvservice -o` in this file as highlighted below:
+This opens the texteditor nano. We need to insert `/usr/bin/tvservice -o` in this file as highlighted below.
+Additionally we'll insert `sbin/iw dev wlan0 set power_save off` to disable automatic wifi power saving since we'll deactivate it anyways as soon as we don't need wifi.
 
-```sh hl_lines="20" linenums="1" title="/etc/rc.local"
+```sh hl_lines="20-21" linenums="1" title="/etc/rc.local"
 #!/bin/sh -e
 #
 # rc.local
@@ -193,11 +194,12 @@ if [ "$_IP" ]; then
 fi
 
 /usr/bin/tvservice -o
+sbin/iw dev wlan0 set power_save off
 
 exit 0
 ```
 
-Press ++ctrl+x++ and ++y++ to save the file and exit nano.
+Press ++ctrl+x++ and ++y++ and ++enter++ to save the file and exit nano.
 Rebooting the Pi activates the new settings.
 
 ```bash
