@@ -129,8 +129,7 @@ If you have successfully logged in now, we can configure the Raspberry Pi for th
 Update the pi by running apt and reboot.
 
 ```bash
-sudo apt update && sudo apt upgrade -y
-sudo reboot
+sudo apt update && sudo apt upgrade -y && sudo reboot
 ```
 
 ??? help "A new version of configuration file is available"
@@ -194,15 +193,47 @@ if [ "$_IP" ]; then
 fi
 
 /usr/bin/tvservice -o
-sbin/iw dev wlan0 set power_save off
+/sbin/iw dev wlan0 set power_save off
 
 exit 0
 ```
 
 Press ++ctrl+x++ and ++y++ and ++enter++ to save the file and exit nano.
+
+Additionally we will disable bluetooth and the camera and onboard LED's.
+Edit `/boot/config.txt`to do so.
+
+```sh
+sudo nano /boot/config.txt
+```
+
+The config is quite long. We will add some lines (highlighted) at the end of the file:
+
+```sh hl_lines="15-19" linenums="1" title="/boot/config.txt (end of file)"
+...
+# (e.g. for USB device mode) or if USB support is not required.
+otg_mode=1
+
+[all]
+
+[pi4]
+dtoverlay=vc4-fkms-v3d
+# Run as fast as firmware / board allows
+arm_boost=1
+
+[all]
+gpu_mem=128
+
+# OTCamera
+dtoverlay=disable-bt
+disable_camera_led=1
+dtparam=act_led_trigger=none
+dtparam=act_led_activelow=on
+```
+
 Rebooting the Pi activates the new settings.
 
-```bash
+```sh
 sudo reboot
 ```
 
@@ -243,14 +274,14 @@ sudo apt install python3-pip git -y
 We'll need to download OTCamera using git to get all the code we'll need to run OTCamera.
 
 ```bash
-git clone https://github.com/OpenTrafficCam/OTCamera.git
-cd OTCamera
+git clone --depth 1 https://github.com/OpenTrafficCam/OTCamera.git
 
 ```
 
 OTCamera requires additional python packages, which need to be installed.
 
 ```bash
+cd OTCamera
 pip install -r requirements.txt --upgrade
 ```
 
@@ -294,4 +325,11 @@ server {
 
 The important line we need to change is highlighted.
 Replace `/var/www/html` with the full path to the `OTCamera/gui/webfiles` folder.
-If you followed this guide it should be `/home/pi/OTCamera/webfiles`.
+If your username is `pi` it should be `/home/pi/OTCamera/webfiles`.
+
+Restart nginx afterwards to let it know about the new directory:
+
+```sh
+sudo systemctl restart nginx.service
+```
+
