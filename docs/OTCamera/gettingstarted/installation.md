@@ -507,3 +507,35 @@ sudo reboot
 ```
 
 All good? We hope so!
+
+## Start OTCamera on startup
+
+Now we want to start OTCamera every time the Raspberry starts.
+To do so, we will setup and enable a service.
+Edit `otcamera.service` inside the OTCamera repository according to your username and path.
+
+```sh hl_lines="5-6" linenums="1" title="./raspi-files/otcamera.service"
+[Unit]
+Description=This service starts OTCamera and keeps it running
+
+[Service]
+User=pi
+WorkingDirectory=/home/pi/OTCamera
+Restart=always
+RestartSec=3
+ExecStart=/usr/bin/python3 run.py
+
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Now copy the file to `/lib/systemd/system` and enable it:
+
+```sh
+sudo cp ./raspi-files/otcamera.service /lib/systemd/system
+sudo systemctl daemon-reload
+systemctl enable otcamera.service
+```
+
+After rebooting the Raspberry you should be able to access it's wifi ap and to open the OTCamera status website using the Raspberry's ip address: <http://10.10.50.1>
