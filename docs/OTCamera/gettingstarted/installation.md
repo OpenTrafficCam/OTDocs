@@ -28,7 +28,7 @@ Just press ++ctrl+shift+x++ on startscreen to access advanced options.
 In newer Raspberry Pi Imager versions you just need to press the gear symbol.
 
 Setup a hostname, enable SSH, either password based or using public-key authentication (recommended!),
-configure your Wifi credentials and choose the correct locale for Wifi, timezone and keyboard layout.
+configure your Wi-Fi credentials and choose the correct locale for Wi-Fi, timezone and keyboard layout.
 You can also skip the first-run wizard.
 
 If you set the default username to anything different than "pi" (which is recommended) you'll need to replace "pi" in the following documentation with your username.
@@ -36,7 +36,7 @@ For example: instead of connecting to `ssh pi@hostname` you'll need `ssh usernam
 
 ??? help "How to generate a public key"
 
-    Generate SSH-Keys for password-less connection. On your desktop computer open a command line terminal (CMD or Powershell on Windows or a bash on Linux) and run
+    Generate SSH-Keys for password-less connection. On your desktop computer open a command-line terminal (CMD or Powershell on Windows or a bash on Linux) and run
 
     ```powershell
     ssh-keygen
@@ -64,7 +64,7 @@ Press the Write button and wait until the Raspberry Pi Imager has completely wri
 
     1. Add an empty file named `ssh` to the boot partition to [enable ssh on first boot](https://www.raspberrypi.org/documentation/remote-access/ssh/README.md).
 
-    2. Add your Wifi credentials as described in the [Raspberry Pi Documentation](https://www.raspberrypi.org/documentation/configuration/wireless/headless.md)
+    2. Add your Wi-Fi credentials as described in the [Raspberry Pi Documentation](https://www.raspberrypi.org/documentation/configuration/wireless/headless.md)
 
     3. Connect to the pi using ssh (`ssh pi@raspberry`)to the Pi using password authentication.
 
@@ -80,7 +80,7 @@ Press the Write button and wait until the Raspberry Pi Imager has completely wri
 ## Setup the Raspberry
 
 Now, take the SD-Card and insert it in the Raspberry.
-You can now boot the Pi on LAN or within your Wifi by connecting it to the power supply.
+You can now boot the Pi on LAN or within your Wi-Fi by connecting it to the power supply.
 Try to connect to the Pi using a command line or PowerShell:
 
 ```powershell
@@ -148,7 +148,7 @@ sudo raspi-config
 Change the following settings to appropriate values:
 
 * System Options &rightarrow; Password (if not already done with Raspi Imager choose a new password for security reasons)
-* Interface Options &rightarrow; I1 Legacy Camera &rightarrow; yes (since the new camera api is not supported by picamerax)
+* Interface Options &rightarrow; I1 Legacy Camera &rightarrow; yes (since the new camera API is not supported by picamerax)
 * Advanced options &rightarrow; GL driver &rightarrow; G1 Legacy (This may take a while, but saves a lot of energy.)
 
 ??? help "Setup without Raspberry Pi Imager"
@@ -170,7 +170,7 @@ sudo nano /etc/rc.local
 ```
 
 This opens the texteditor nano. We need to insert `/usr/bin/tvservice -o` in this file as highlighted below.
-Additionally we'll insert `sbin/iw dev wlan0 set power_save off` to disable automatic wifi power saving since we'll deactivate it anyways as soon as we don't need wifi.
+Additionally we'll insert `sbin/iw dev wlan0 set power_save off` to disable automatic Wi-Fi power saving since we'll deactivate it anyways as soon as we don't need Wi-Fi.
 
 ```sh hl_lines="20-21" linenums="1" title="/etc/rc.local"
 #!/bin/sh -e
@@ -287,7 +287,7 @@ pip install -r requirements.txt --upgrade
 
 ## Setup Webserver for Preview
 
-We are currently using nginx (a small webserver) to serve a small html file including a preview of the camera view.
+We are currently using nginx (a small webserver) to serve a small HTML file including a preview of the camera view.
 
 To install nginx:
 
@@ -333,9 +333,9 @@ Restart nginx afterwards to let it know about the new directory:
 sudo systemctl restart nginx.service
 ```
 
-## Setup Wifi Accesspoint
+## Setup Wi-Fi Accesspoint
 
-In order to access the OTCamera Raspberry Pi in field, we will let the Raspberry create it's own wifi.
+In order to access the OTCamera Raspberry Pi in field, we will let the Raspberry create it's own Wi-Fi.
 First, we'll need to install some packages:
 
 ```sh
@@ -394,19 +394,19 @@ rsn_pairwise=CCMP
 country_code=DE
 ```
 
-If you are planning to connect OTCamera to your own wifi
+If you are planning to connect OTCamera to your own Wi-Fi
 (e.g. to transfer files in office or to get internet access to update etc.)
-you must use the same wifi channel as your office wifi network
+you must use the same Wi-Fi channel as your office Wi-Fi network
 (since the Raspberry has just one antanna).
-You should edit your office wifi to always use the same channel to avoid automatic channel selection.
+You should edit your office Wi-Fi to always use the same channel to avoid automatic channel selection.
 
-The name of the wifi is specified just after `ssid=` and the password in line 3.
+The name of the Wi-Fi is specified just after `ssid=` and the password in line 3.
 
 Depending on where you will use OTCamera you should set the according [contry code](https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes) in the last line (for us it's Germany --> DE).
 
 Save and exit the file.
 
-If you will connect to the OTCamera's wifi your device will need a valid ip address.
+If you will connect to the OTCamera's Wi-Fi your device will need a valid ip address.
 dhcpcd and dnsmasq will help us doing by adding some lines (12-14) to the end of `/etc/dhcpcd.conf`:
 
 ```sh hl_lines="12-14" linenums="1" title="/etc/dhcpcd.conf"
@@ -426,7 +426,7 @@ interface uap0
         nohook wpa_supplicant
 ```
 
-If your office wifi uses the same address range you should use another one by, for example, using 51 instead of 50. But you need to remember that address to connect to your OTCamera later on.
+If your office Wi-Fi uses the same address range you should use another one by, for example, using 51 instead of 50. But you need to remember that address to connect to your OTCamera later on.
 
 Finally, let's configure dnsmasq's config (`/etc/dnsmasq.conf`).
 It's a quite long file with a lot of explaining comments.
@@ -500,7 +500,7 @@ fi
 exit 0
 ```
 
-Yeah, we're done! If you carfully followed this steps and we maintained this manual (...) the Raspberry should still connect to your wifi and will also create it's own wifi. It could take a minute or two, so don't worry to early. Let's try:
+Yeah, we're done! If you carfully followed this steps and we maintained this manual (...) the Raspberry should still connect to your Wi-Fi and will also create it's own Wi-Fi. It could take a minute or two, so don't worry to early. Let's try:
 
 ```sh
 sudo reboot
@@ -538,4 +538,4 @@ sudo systemctl daemon-reload
 systemctl enable otcamera.service
 ```
 
-After rebooting the Raspberry you should be able to access it's wifi ap and to open the OTCamera status website using the Raspberry's ip address: <http://10.10.50.1>
+After rebooting the Raspberry you should be able to access it's Wi-Fi ap and to open the OTCamera status site using the Raspberry's ip address: <http://10.10.50.1>

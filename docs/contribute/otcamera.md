@@ -33,7 +33,7 @@ If not already done install git using apt.
 sudo apt install git -y
 ```
 
-To setup your git commit name and email, login to your github account and copy your [private commit email](https://docs.github.com/en/free-pro-team@latest/github/setting-up-and-managing-your-github-user-account/setting-your-commit-email-address).
+To setup your git commit name and email, login to your GitHub account and copy your [private commit email](https://docs.github.com/en/free-pro-team@latest/github/setting-up-and-managing-your-github-user-account/setting-your-commit-email-address).
 
 On the pi run
 
