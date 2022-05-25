@@ -81,7 +81,7 @@ Press the Write button and wait until the Raspberry Pi Imager has completely wri
 
 Now, take the SD-Card and insert it in the Raspberry.
 You can now boot the Pi on LAN or within your Wi-Fi by connecting it to the power supply.
-Try to connect to the Pi using a command line or PowerShell:
+Try to connect to the Pi using a command-line or PowerShell:
 
 ```powershell
 ssh pi@otcamera01
