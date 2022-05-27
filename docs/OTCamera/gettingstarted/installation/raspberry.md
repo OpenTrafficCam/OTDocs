@@ -136,7 +136,7 @@ sudo nano /boot/config.txt
 
 The config is quite long. We will add some lines (highlighted) at the end of the file:
 
-```txt hl_lines="15-19" linenums="1" title="/boot/config.txt (end of file)"
+```txt hl_lines="15-27" linenums="1" title="/boot/config.txt (end of file)"
 ...
 # (e.g. for USB device mode) or if USB support is not required.
 otg_mode=1
@@ -156,7 +156,19 @@ dtoverlay=disable-bt
 disable_camera_led=1
 dtparam=act_led_trigger=none
 dtparam=act_led_activelow=on
+dtparam=audio=off
+display_auto_detect=0
+gpio=6,16,18,19=ip
+gpio=16,18,19=pu
+gpio=6=pd
+gpio=5,12,13=op
+gpio=5,12=dl
+gpio=13=dh
 ```
+
+Lines 22 to 27 define the default state of the GPIO pins.
+If you are using the OTCamera PCB, you want to add those lines.
+If you are not using it, you may want to adjust settings to your specific setup.
 
 Rebooting the Pi activates the new settings.
 
