@@ -2,9 +2,9 @@
 
 The Raspberry Pi itself doesn't bring a hardware clock.
 It's assumed that a Pi always has a internet connection to get the current time.
-Since we want to use OTCamera in field and thus may not have a Wi-Fi connection to access internet, we'll need a dedicated hardware clock (i.e. real time clock or RTC).
+Since we want to use OTCamera in the field and thus may not have a Wi-Fi connection to access internet, we'll need a dedicated hardware clock (i.e. real time clock or RTC).
 It contains a backup battery (a coin cell) to keep track of time.
-The Pi will use the hardware clocks time to set the system time.
+The Pi will use the hardware clock time to set the system time.
 
 There are several RTC chips out there.
 There are even several RTC modules that are specifically designed to use with a Pi.
@@ -77,7 +77,7 @@ sudo systemctl disable fake-hwclock
 ```
 
 Additionally, we'll need to comment out some lines in `/lib/udev/hwclock-set`.
-So run `sudo nano /lib/udev/hwclock-set` and add `#` at the line beginnings:
+So run `sudo nano /lib/udev/hwclock-set` and add `#` at the beginning of the lines:
 
 ```txt hl_lines="7-11" linenums="1" title="/lib/udev/hwclock-set"
 #!/bin/sh
@@ -94,15 +94,15 @@ dev=$1
 /sbin/hwclock --rtc=$dev --hctosys
 ```
 
-The Pi should now be able to communicate to the RTC.
+The Pi should now be able to communicate with the RTC.
 Let's try it:
 
 ```bash
 sudo hwclock -r
 ```
 
-The Pi should synced the time automagically.
-If not, check if the Pi know the correct time and sync it once:
+The Pi should now have automatically synced the time.
+If not, check if the Pi knows the correct time and sync it once:
 
 ```bash
 date
@@ -112,4 +112,4 @@ sudo hwclock -w
 Done :)
 
 Your OTCamera should now be able to keep track of time without any USB power connected and without access to the internet.
-You should always make sure to boot your OTCamera once within Wi-Fi range to update time, even if the DS3231 is quite accurate.
+We recommend booting your OTCamera once within Wi-Fi range before each recording to update the time, although the DS3231 is fairly accurate.
