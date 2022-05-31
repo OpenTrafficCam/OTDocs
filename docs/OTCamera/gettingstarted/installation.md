@@ -17,8 +17,11 @@ You will need:
     You should know what you are doing.
     We are not responsible for any damage that may occur.
 
-On the following sites you'll get all the information to install OTCamera manually on your Raspberry Pi.
-We also provide a simple quick installer which will do most of the work.
+We provide a simple quick installer which will do most of the work for you.
+
+!!! info
+    If you like, you can also setup the Raspberry Pi and install OTCamera manually.
+    The necessary steps are described on the following pages.
 
 ## Quick Installer
 
@@ -31,13 +34,13 @@ wget https://raw.githubusercontent.com/OpenTrafficCam/OTCamera/first-version/ras
 sudo bash install_otcamera.sh
 ```
 
-You will be asked some config values.
+You will be asked for some config values.
 
-After the installer completed, just restart the Raspberry Pi and everthing should be ready to go.
+After the installer complete, simply reboot the Raspberry Pi and the OTCamera software should be up and running.
 
 If not, please report your issues using the [GitHub issue tracker](https://github.com/OpenTrafficCam/OTCamera/issues).
 
 !!! note
     We are planning to offer a ready-to-use image for the Raspberry Pi, which can be easily installed.
-    The setup will then be much easier.
+    The setup will then be even easier.
     Stay tuned :)
