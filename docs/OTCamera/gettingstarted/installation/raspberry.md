@@ -57,7 +57,7 @@ sudo apt update && sudo apt upgrade -y && sudo reboot
 
 ??? help "A new version of configuration file is available"
 
-    ![ssh upgrade warning](installation/rpi_sshd_upgrade.png)
+    ![ssh upgrade warning](rpi_sshd_upgrade.png)
 
     If you get this message, don't worry.
     Keep the local version currently installed, since we changed the ssh server configuration using the RPi Imager.
