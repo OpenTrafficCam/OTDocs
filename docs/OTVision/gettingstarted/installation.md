@@ -2,7 +2,7 @@
 
 ## Install Python 3.9
 
-Install the 64-bit version Python 3.9.x via Windows installer from [www.python.org/downloads/](https://www.python.org/downloads/) as follows (Python 3.8.x should also work, the 32-bit version is not supported):
+If not done yet, install the latest 64-bit version of Python 3.9 via Windows installer from [www.python.org/downloads/](https://www.python.org/downloads/) as follows (Python 3.8.x should also work, the 32-bit version is not supported):
 
 ??? help "What if I already have another Python version installed?"
 
@@ -42,4 +42,7 @@ If you intend to use OTVision on a PC with a modern NVidia graphics card, downlo
 
 Maybe you also have to manually install Microsoft Visual C++ 14.0 or greater from the [Visual Studio Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/).
 
-For further problems please open an issue in the OTVision or OTAnalytics repositories on Github.
+In case of further problems please [open an issue](https://github.com/OpenTrafficCam/OTVision/issues/new) in the OTVision repository on Github.
+
+We also welcome code contributions (e.g. fixing bugs or adding features) from other programmers by forking the repository and creating a pull request.
+Please check the [contribute section](https://opentrafficcam.org/contribute/) of this documentation first.

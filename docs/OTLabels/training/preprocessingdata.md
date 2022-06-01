@@ -8,12 +8,12 @@ OTLabels provides the `cvat_to_yolo.py` script to convert the annotated data to 
 Before executing the script, you have to setup the configurations for your needs:
 
 - Within the script:
-    - Set destPath: path where your data is stored (typically ./data/*).
-    - Set annFile: path to the COCO-annotation file (if you do not have it yet, see below how to get it).
-    - Set catFile: path to a textfile containing your CVAT labels (standard: labels_CVAT.txt).
-    - Set cvatFile: path to a CVAT output file (containing images and lables, see also section **CVAT**: Download data) **or** to a folder containing multiple CVAT output files.
-    - Set name: the name of subfolder of *destPath/images* and *destPath/labels* to store the data in.
-- labels_CVAT.txt: a textfile with two columns seperated by acutal commas with headers named *Cat* and *CatId* containing the name and the ID of your CVAT labels.
+  - Set destPath: path where your data is stored (typically ./data/*).
+  - Set annFile: path to the COCO-annotation file (if you do not have it yet, see below how to get it).
+  - Set catFile: path to a text file containing your CVAT labels (standard: labels_CVAT.txt).
+  - Set cvatFile: path to a CVAT output file (containing images and labels, see also section **CVAT**: Download data) **or** to a folder containing multiple CVAT output files.
+  - Set name: the name of subfolder of *destPath/images* and *destPath/labels* to store the data in.
+- labels_CVAT.txt: a text file with two columns separated by actual commas with headers named *Cat* and *CatId* containing the name and the ID of your CVAT labels.
   For a example, see the *labels_CVAT.txt* file in the OTLabels repository.
   Please note that labels **not provided in this file will not be converted and consequently be deleted**.
 
@@ -30,24 +30,24 @@ If for some reason you want to filter the labels that are already stored in your
 Before executing the script, you have to setup the configurations for your needs:
 
 - Within the script:
-    - Set path: path where the data is stored (typically ./data/*).
-    - Set name: the name of **one or more** subfolder of *destPath/images* and *destPath/lables* to store the data in.
+  - Set path: path where the data is stored (typically ./data/*).
+  - Set name: the name of **one or more** subfolder of *destPath/images* and *destPath/labels* to store the data in.
     More than one name must be provided as list.
-    - Set annFile: path to the COCO-annotation file (if you do not have it yet, see below how to get it).
-    - Set labelsFilter: path to a text file (standard: label_filter.txt) containing the labels you want to keep.
-- label_filter.txt: a textfile containing the category **names** (e.g., "car") of the labels you want to keep (without quotes and one category name per row).
+  - Set annFile: path to the COCO-annotation file (if you do not have it yet, see below how to get it).
+  - Set labelsFilter: path to a text file (standard: label_filter.txt) containing the labels you want to keep.
+- label_filter.txt: a text file containing the category **names** (e.g., "car") of the labels you want to keep (without quotes and one category name per row).
 
 Please note that the images will not be copied to the corresponding folder in *destPath/images* in order to save file space.
-Instead, a textfile with all images still containing the filtered labels is created.
-This file of file names can also be referred to by YOLOv5.
+Instead, a text file with all images still containing the filtered labels is created.
+This file of filenames can also be referred to by YOLOv5.
 
 The script performs the following steps:
 
-1. Get the category ids to the corresponding category name.
+1. Get the category IDs to the corresponding category name.
 2. Import the label files.
 3. Filter the labels by the provided category names.
-4. Export the lables to the directory *destPath/labels/name_filtered*.
-5. Create a textfile with all image files in the directory *path*.
+4. Export the labels to the directory *destPath/labels/name_filtered*.
+5. Create a text file with all image files in the directory *path*.
 Please note that **images and label files not including any label after filtering are not exported**.
 
 ## Get COCO annotation file
@@ -57,9 +57,9 @@ Use the *get_coco_annotation_files.py* script to download one or more COCO annot
 Configurations to be made:
 
 - Within the script:
-    - Set path: path where the data is stored (typically ./data/*).
-    - Set URLFile: path to the config file that stores the URLs of the annotation files
-- coco_annotation_json_URLs.txt: a textfile containing the URLS of the annotation files (without quotes and one URL per row)
+  - Set path: path where the data is stored (typically ./data/*).
+  - Set URLFile: path to the config file that stores the URLs of the annotation files
+- coco_annotation_json_URLs.txt: a text file containing the URLs of the annotation files (without quotes and one URL per row)
 
 ## Get the original COCO dataset
 
@@ -69,7 +69,7 @@ Please note that you could also **use the *get_coco.sh* script from the YOLOv5 r
 Before executing the script, you have to setup the configurations for your needs:
 
 - Within the script:
-    - Set imageURLs: path of a textfile (standard: coco_image_URLs.txt) containing the URLs of the image data sets.
-    - Set annURL: URL to the labels.
-    - Set destPath: path where your data is stored (typically ./data/*).
-- coco_image_URLs.txt: a textfile containing the URLS of the images for training, validation and testing (without quotes and one URL per row).
+  - Set imageURLs: path of a text file (standard: coco_image_URLs.txt) containing the URLs of the image data sets.
+  - Set annURL: URL to the labels.
+  - Set destPath: path where your data is stored (typically ./data/*).
+- coco_image_URLs.txt: a text file containing the URLs of the images for training, validation and testing (without quotes and one URL per row).

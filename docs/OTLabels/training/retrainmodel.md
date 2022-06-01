@@ -48,10 +48,10 @@ names: ["person", "bicycle", "car", "motorcycle", "bus", "truck"]
 
 ### Model structure
 
-Further, the config file containing the model structure (also in *yaml* format) needs to be set up or adapted.
-These config files are usually stored in the *models* folder within the *yolov5* directory.
-Natively, YOLOv5 comes with one config file for each model (e.g., *yolov5s.yaml*).
-We strongly recommend to keep the model structure itself as it is and only adapt the number of classes, since the retraining process bases on the trained standard weights, which rely on the original structure.
+Further, the configuration file containing the model structure (also in *yaml* format) needs to be set up or adapted.
+These configuration files are usually stored in the *models* folder within the *yolov5* directory.
+Natively, YOLOv5 comes with one configuration file for each model (e.g., *yolov5s.yaml*).
+We strongly recommend to keep the model structure itself as it is and only adapt the number of classes, since the retraining process is based on the trained standard weights, which rely on the original structure.
 
 #### *model_structure*.yaml
 
@@ -63,8 +63,8 @@ nc: 6  # number of classes
 
 ## Second step: connecting to wandb
 
-If you want to have your trining process logged and visualized, YOLOv5 comes with the option to connect to weights and biases (wandb).
-For further instructions, please visit [the wandb issue on Github](https://github.com/ultralytics/yolov5/issues/1289).
+If you want to have your training process logged and visualized, YOLOv5 comes with the option to connect to weights and biases (wandb).
+For further instructions, please visit [the wandb issue on GitHub](https://github.com/ultralytics/yolov5/issues/1289).
 Otherwise you can chose the option not to use wandb when asked.
 
 ## Third step: retraining the model
@@ -74,4 +74,4 @@ To start the process, simply execute the *train.py* with the desired options.
 
 `python yolov5/train.py --img **img_size** --batch **batch_size** --epochs **n_epochs** --data path_to/**data_structure_labels**.yaml --weights yolov5/weights/**yolov5_weights** --cfg path_to/**model_structure**.yaml`
 
-For further information about the whole retraining process with YOLOv5, please see [the original documentation on Github](https://github.com/ultralytics/yolov5/wiki/Train-Custom-Data).
+For further information about the whole retraining process with YOLOv5, please see [the original documentation on GitHub](https://github.com/ultralytics/yolov5/wiki/Train-Custom-Data).

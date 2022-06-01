@@ -1,8 +1,12 @@
 # Coding (Python)
 
-Coding standards are not about right and wrong or good and bad. They are about uniformity, so people can easily read and contribute to the code regardless who worked on the software before.
+Coding standards are not about right and wrong or good and bad.
+They are about uniformity, so people can easily read and contribute to the code regardless who worked on the software before.
 
-For now, nearly all code is Python so we just agreed on coding conventions for the Python programming language. We basically follow the [PEP 8 Style Guide for Python Code](https://www.python.org/dev/peps/pep-0008/). A good summary and some additions can be found in the [Hitchhikers Guide](https://docs.python-guide.org/writing/style/) or at [RealPython.com](https://realpython.com/python-pep8/). Below we defined what we consider the most important standards.
+For now, nearly all code is Python so we just agreed on coding conventions for the Python programming language.
+We basically follow the [PEP 8 Style Guide for Python Code](https://www.python.org/dev/peps/pep-0008/).
+A good summary and some additions can be found in the [Hitchhikers Guide](https://docs.python-guide.org/writing/style/) or at [RealPython.com](https://realpython.com/python-pep8/).
+Below we defined what we consider the most important standards.
 
 ## Naming Conventions
 
@@ -29,21 +33,19 @@ The following table from [RealPython.com](https://realpython.com/python-pep8/#na
 | dir               | D:\tmp\                                       |
 | filename          | testfile                                      |
 | suffix            | \_detections                                  |
-| filetype          | .csv                                          |
+| file type         | .csv                                          |
 | file              | D:\tmp\testfile_detections.csv                |
 | path              | "D:\tmp\" or "D:\tmp\testfile_detections.csv" |
 
-### Suffix
+### File extensions
 
-Files get a suffix according to their content.
+Files get an extension according to their content.
 
-| Suffix        | Description                                                     |
+| Extension     | Description                                                     |
 | ------------- | --------------------------------------------------------------- |
-| \_detections  | detections as bounding boxes                                    |
-| \_tracks-px   | trajectories in pixel coordinates                               |
-| \_tracks-corr | trajectories in pixel coordinates corrected for lens distortion |
-| \_tracks-utm  | trajectories transformed to UTM coordinates                     |
-| \_refpts      | reference points to convert pixel to UTM coordinates            |
+| \.otdet       | detections as bounding boxes                                    |
+| \.ottrk       | trajectories in pixel (and UTM) coordinates                     |
+| \.otrfpts     | reference points to convert pixel to UTM coordinates            |
 
 ## Code documentation
 
@@ -110,7 +112,10 @@ Try to avoid inline comments.
 
 ## Dependencies
 
-We try to develop OpenTrafficCam using as few dependencies as possible. For basic functionality we prefer packages that come with the Python standard distribution (like pathlib). However, OpenTrafficCam would not be possible without code from third party libraries, especially when it comes to videos, images, data analysis, neural networks or GUI. These are the  libraries we intend to use for specific functionalities throughout the whole framework (we are grateful to the authors):
+We try to develop OpenTrafficCam using as few dependencies as possible.
+For basic functionality we prefer packages that come with the Python standard distribution (like pathlib or Tkinter).
+However, OpenTrafficCam would not be possible without code from third party libraries, especially when it comes to videos, images, data analysis, neural networks or web development.
+These are the libraries we intend to use for specific functionalities throughout the whole framework (we are grateful to the authors):
 
 | Functionality      | Library                                                                                                                         |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------- |
@@ -120,12 +125,13 @@ We try to develop OpenTrafficCam using as few dependencies as possible. For basi
 | Data handling      | [pandas](https://pypi.org/project/pandas/), [NumPy](https://pypi.org/project/numpy/)                                            |
 | Shape handling     | [GeoPandas](https://pypi.org/project/geopandas/), [Shapely](https://pypi.org/project/Shapely/)                                  |
 | Plotting, graphing | [Plotly](https://pypi.org/project/plotly/)                                                                                      |
-| User interface     | [PySimpleGui](https://pypi.org/project/PySimpleGUI/)                                                                            |
-| Web                | [PySimpleGUIWeb](https://pypi.org/project/PySimpleGUIWeb/) (camera system), [Dash](https://pypi.org/project/dash/) (dashboards) |
+| User interface     | [Tkinter](https://docs.python.org/3/library/tkinter.html)                                                                            |
+| Web                | [Dash](https://pypi.org/project/dash/) (dashboards) |
 
 ## Linting/Autoformatting
 
-To match PEP8 specs and write pretty code we use [flake8](https://github.com/PyCQA/flake8) to check against structural and style errors and [black](https://github.com/psf/black) for autoformatting. Additionally the package [flake8-docstrings](https://pypi.org/project/flake8-docstrings/) can be used to lint the docstrings.
+To match PEP8 specs and write pretty code we use [flake8](https://github.com/PyCQA/flake8) to check against structural and style errors and [black](https://github.com/psf/black) for autoformatting.
+Additionally the package [flake8-docstrings](https://pypi.org/project/flake8-docstrings/) can be used to lint the docstrings.
 
 The following settings are set in the `.flake8` file:
 
