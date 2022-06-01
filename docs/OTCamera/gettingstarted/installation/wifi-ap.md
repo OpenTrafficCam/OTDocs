@@ -135,7 +135,7 @@ Make sure you are still inside the OTCamera directory.
 sudo cp ./raspi-files/usr/local/bin/wifistart /usr/local/bin/wifistart
 ```
 
-Last but not least, let's and this script to `/etc/rc.local` to start at boot.
+Last but not least, let's add this script to `/etc/rc.local` to start it at boot.
 
 ```sh hl_lines="23" linenums="1" title="/etc/rc.local"
 #!/bin/sh -e
