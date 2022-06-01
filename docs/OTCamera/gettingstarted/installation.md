@@ -18,6 +18,8 @@ You will need:
     We are not responsible for any damage that may occur.
 
 We provide a simple quick installer which will do most of the work for you.
+We're assuming that you'll use an DS3132 RTC module.
+If you are using a different or no RTC module you should adjust the quick installer.
 
 !!! info
     If you like, you can also setup the Raspberry Pi and install OTCamera manually.
