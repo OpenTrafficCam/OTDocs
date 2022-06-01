@@ -1,3 +1,5 @@
 {
-    "python.pythonPath": "venv\\Scripts\\python.exe"
+    "yaml.schemas": {
+        "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml"
+    }
 }
