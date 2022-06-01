@@ -57,3 +57,8 @@ Press the Write button and wait until the Raspberry Pi Imager has completely wri
         ```
 
         Copy your public key on the host and paste it on the pi, save&close using Ctrl+X - Enter - Y.
+
+## Next steps
+
+You're now ready to boot your Raspberry Pi to install OTCamera.
+You can either do it by using our [Quick Installer](../#quick-installer) or follwing all steps on the next sites.
