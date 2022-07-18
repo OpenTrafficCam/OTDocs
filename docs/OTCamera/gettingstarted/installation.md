@@ -27,9 +27,24 @@ If you are using a different or no RTC module you should adjust the quick instal
     If you like, you can also setup the Raspberry Pi and install OTCamera manually.
     The necessary steps are described on the following pages.
 
-To use the quick installer you'll need to [prepare a SD-Card](prepare-sd-card/) first.
+### Prepare the SD-Card
 
-If you can connect to your Raspberry Pi using SSH download and run the quick installer:
+To use the quick installer you'll need to [prepare a SD-Card](prepare-sd-card/) first.
+If done correctly you should now be able to connect to your Raspberry Pi via SSH.
+
+### Update and Upgrade the System
+
+After preparing the SD-Card it is important to update and upgrade the Raspberry Pi before using the quick installer.
+
+To do this execute the following command:
+
+```bash
+sudo apt update && sudo apt upgrade -y && sudo reboot
+```
+
+### Download and Run Quick Installer
+
+Connect to your Raspberry Pi via SSH again after reboot and download and run the quick installer:
 
 ```bash
 wget https://raw.githubusercontent.com/OpenTrafficCam/OTCamera/first-version/raspi-files/install_otcamera.sh
