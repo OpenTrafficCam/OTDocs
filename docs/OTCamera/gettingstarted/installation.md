@@ -47,7 +47,7 @@ sudo apt update && sudo apt upgrade -y && sudo reboot
 Connect to your Raspberry Pi via SSH again after reboot and download and run the quick installer:
 
 ```bash
-wget https://raw.githubusercontent.com/OpenTrafficCam/OTCamera/first-version/raspi-files/install_otcamera.sh
+wget https://raw.githubusercontent.com/OpenTrafficCam/OTCamera/master/raspi-files/install_otcamera.sh
 sudo bash install_otcamera.sh
 ```
 
