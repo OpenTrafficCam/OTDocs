@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../../../assets/OTC_icon.svg">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.8">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
     
     
       
@@ -655,6 +655,33 @@ OpenTrafficCam is a project that is currently under development. The content on 
   <a href="#quick-installer" class="md-nav__link">
     Quick Installer
   </a>
+  
+    <nav class="md-nav" aria-label="Quick Installer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prepare-the-sd-card" class="md-nav__link">
+    Prepare the SD-Card
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-and-upgrade-the-system" class="md-nav__link">
+    Update and Upgrade the System
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#download-and-run-quick-installer" class="md-nav__link">
+    Download and Run Quick Installer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1995,6 +2022,33 @@ OpenTrafficCam is a project that is currently under development. The content on 
     Quick Installer
   </a>
   
+    <nav class="md-nav" aria-label="Quick Installer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prepare-the-sd-card" class="md-nav__link">
+    Prepare the SD-Card
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-and-upgrade-the-system" class="md-nav__link">
+    Update and Upgrade the System
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#download-and-run-quick-installer" class="md-nav__link">
+    Download and Run Quick Installer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -2041,9 +2095,17 @@ If you are using a different or no RTC module you should adjust the quick instal
 <p>If you like, you can also setup the Raspberry Pi and install OTCamera manually.
 The necessary steps are described on the following pages.</p>
 </div>
-<p>To use the quick installer you'll need to <a href="prepare-sd-card/">prepare a SD-Card</a> first.</p>
-<p>If you can connect to your Raspberry Pi using SSH download and run the quick installer:</p>
-<div class="highlight"><pre><span></span><code>wget https://raw.githubusercontent.com/OpenTrafficCam/OTCamera/first-version/raspi-files/install_otcamera.sh
+<h3 id="prepare-the-sd-card">Prepare the SD-Card<a class="headerlink" href="#prepare-the-sd-card" title="Permanent link">&para;</a></h3>
+<p>To use the quick installer you'll need to <a href="prepare-sd-card/">prepare a SD-Card</a> first.
+If done correctly you should now be able to connect to your Raspberry Pi via SSH.</p>
+<h3 id="update-and-upgrade-the-system">Update and Upgrade the System<a class="headerlink" href="#update-and-upgrade-the-system" title="Permanent link">&para;</a></h3>
+<p>After preparing the SD-Card it is important to update and upgrade the Raspberry Pi before using the quick installer.</p>
+<p>To do this execute the following command:</p>
+<div class="highlight"><pre><span></span><code>sudo apt update <span class="o">&amp;&amp;</span> sudo apt upgrade -y <span class="o">&amp;&amp;</span> sudo reboot
+</code></pre></div>
+<h3 id="download-and-run-quick-installer">Download and Run Quick Installer<a class="headerlink" href="#download-and-run-quick-installer" title="Permanent link">&para;</a></h3>
+<p>Connect to your Raspberry Pi via SSH again after reboot and download and run the quick installer:</p>
+<div class="highlight"><pre><span></span><code>wget https://raw.githubusercontent.com/OpenTrafficCam/OTCamera/master/raspi-files/install_otcamera.sh
 sudo bash install_otcamera.sh
 </code></pre></div>
 <p>You will be asked for some config values.</p>
@@ -2061,7 +2123,7 @@ Stay tuned :)</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 1, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 18, 2022</span>
       
     
   </small>
@@ -2164,7 +2226,7 @@ Stay tuned :)</p>
     <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link"], "search": "../../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.0238f547.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
       
         <script src="../../../assets/js/mathjax.js"></script>
       
