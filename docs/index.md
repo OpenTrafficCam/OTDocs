@@ -43,12 +43,36 @@ So all transport professionals and anyone else interested are very welcome to tr
 
 ## How it works
 
-OpenTrafficCam consists of three modules. The [**OTCamera**](https://github.com/OpenTrafficCam/OTCamera) hardware itself to record videos,
-[**OTVision**](https://github.com/OpenTrafficCam/OTVision), a collection of algorithms to generate trajectories of objects (road users) based on the videos and
-[**OTAnalytics**](https://github.com/OpenTrafficCam/OTAnalytics) to gather traffic measures based on the trajectories.
+OpenTrafficCam consists of three modules. The [**OTCamera**](https://opentrafficcam.org/OTCamera/) hardware itself to record videos,
+[**OTVision**](https://opentrafficcam.org/OTVision/), a collection of algorithms to generate trajectories
+of objects (road users) based on the videos and
+[**OTAnalytics**](https://opentrafficcam.org/OTAnalytics/) to gather traffic measures based on the trajectories.
+Each of the three modules comes with easy installation, a basic graphical user interface and a detailed user documentation.
+The Open Source version offers the most common use cases of video-based traffic surveying,
+such as traffic counts and speed measurements.
 
-In addition to these three modules, we will provide a set of labelled images of German traffic objects with [**OTLabels**](https://github.com/OpenTrafficCam/OTLabels).
+In addition to the three main modules, we will provide a set of labelled images of German traffic objects with
+[**OTLabels**](https://opentrafficcam.org/OTLabels/).
 
+![framework](framework_OTC_website.png)
+
+As described on the following pages of this documentation, some manual work, patience and basic technical skills
+are required to assemble OTCamera.
+And in order to regularly extract trajectories from videos using OTVision oder train your own AI using OTLabels,
+you will need a powerful machine with a strong graphics card.
+
+!!! check "Don´t want to deal with it? We got your back!"
+    We offer various services related to OpenTrafficCam:
+
+    - Selling and renting OTCameras
+    - Analyze your video material
+    - Setting up the OpenTrafficCam pipeline in your environment
+    - Conducting whole traffic surveys for you
+    - Development of features beyond the current open source version
+    - Courses on how to set up, use and get the best out of OpenTrafficCam
+    - Consulting on traffic analysis, modeling and optimization
+
+    [:octicons-mail-16: Contact us for more information](mailto:team@opentrafficcam.org){ .md-button }
 
 <!-- TODO #49 Short description about Usecases -->
 
