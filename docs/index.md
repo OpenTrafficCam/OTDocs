@@ -67,13 +67,19 @@ you will need a powerful machine with a strong graphics card.
 !!! check "Don´t want to deal with it? We got your back!"
     We offer various services related to OpenTrafficCam:
 
-    - Selling and renting OTCameras
-    - Analyze your video material
-    - Setting up the OpenTrafficCam pipeline in your environment
-    - Conducting whole traffic surveys for you
-    - Development of features beyond the current open source version
-    - Courses on how to set up, use and get the best out of OpenTrafficCam
-    - Consulting on traffic analysis, modeling and optimization
+    :material-video-wireless: Selling and renting OTCameras
+
+    :material-image-search: Processing and analyzing your videos
+
+    :material-check-network: Setting up the OpenTrafficCam pipeline in your environment
+
+    :material-video-marker: Conducting whole traffic surveys for you
+
+    :material-cloud-braces: Developing features beyond the current open source version
+
+    :material-projector-screen: Courses on how to set up, use and get the best out of OpenTrafficCam
+
+    :material-account-supervisor: Consulting on traffic analysis, modeling and optimization
 
     [:octicons-mail-16: Contact us for more information](mailto:team@opentrafficcam.org){ .md-button }
 
