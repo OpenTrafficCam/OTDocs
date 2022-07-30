@@ -7,7 +7,7 @@
 Welcome to **OpenTrafficCam**, the only fully integrated open source workflow for video-based recording
 and automated analysis of road traffic.
 
-This website will cover all the documentation in one place.
+This site will cover all the documentation in one place.
 
 Check out our [GitHub page](https://github.com/OpenTrafficCam) for downloads and code.
 
@@ -42,7 +42,7 @@ So all transport professionals and anyone else interested are very welcome to tr
         [**OTAnalytics**](https://github.com/OpenTrafficCam/OTAnalytics) or
         [**OTLabels**](https://github.com/OpenTrafficCam/OTLabels).
     - Researchers and developers can support by [**contributing code**](https://opentrafficcam.org/contribute/)
-        or [contacting us](mailto:team@opentrafficcam.org) for scientific collaboration.
+        or [**contacting us**](mailto:team@opentrafficcam.org) for scientific collaboration.
 
 ## How it works
 
@@ -59,7 +59,7 @@ In addition to the three main modules, we will provide a set of labelled images 
 
 ![framework](framework_OTC_website.png)
 
-As described on the following pages of this documentation, some manual work, patience and basic technical skills
+As described on the following pages of this documentation, some manual work, patience and basic skills
 are required to assemble OTCamera.
 And in order to regularly extract trajectories from videos using OTVision oder train your own AI using OTLabels,
 you will need a powerful machine with a strong graphics card.
