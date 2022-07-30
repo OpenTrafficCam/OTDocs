@@ -2,11 +2,14 @@
 
 ![OpenTrafficCam Overview](OpenTrafficCam_1200.svg)
 
-> Open**Traffic**Cam makes traffic detection easier, faster and more efficient.
+> Open**Traffic**Cam makes analyzing traffic easier, faster and more efficient.
 
-Welcome to **OpenTrafficCam**, the only fully integrated OpenSource-workflow for video-based traffic detection. This website will cover all the documentation in one place. Please also check out our [github page](https://github.com/OpenTrafficCam) for further information and the code.
+Welcome to **OpenTrafficCam**, the only fully integrated open source workflow for video-based recording
+and automated analysis of road traffic.
 
-<!-- TODO Ausführlicher beschreiben, insbesondere mit Fokus auf die Funktionen (und nicht nur auf die Teilprojekte ( "What it does")). Wie nennen wir die "parts" (den Begriff finde ich nicht gut)? "OTC Modules"? -->
+This website will cover all the documentation in one place.
+
+Check out our [GitHub page](https://github.com/OpenTrafficCam) for downloads and code.
 
 ## Motivation
 
