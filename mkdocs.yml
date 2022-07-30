@@ -28,7 +28,6 @@ theme:
 nav:
         - Overview:
                   - Welcome: index.md
-                  - overview/gettingstarted.md
                   - overview/dataprivacy.md
                   - Use Cases:
                             - overview/usecases/trafficcounts.md
