@@ -14,7 +14,7 @@ Check out our [GitHub page](https://github.com/OpenTrafficCam) for downloads and
 ## Motivation
 
 Thanks to the rapid development of computer hardware and machine learning in the last decade,
-the automatic object detection is state of the art in many business sectors.
+automatic object detection is state of the art in many business sectors.
 Road traffic, on the other hand, is still often surveyed manually at great expense.
 There exist tools that optimize some of the processing steps,
 but they can hardly be used without programming skills or they cause significant costs.
@@ -25,7 +25,7 @@ OpenTrafficCam aims at adressing this gap and creating a stronger data base
 for transportation planning, policy and research.
 In doing so, we ourselves benefit substantially from other open source projects.
 Consequently, we also publish large parts of OpenTrafficCam as open source hardware and software
-under the GPL license.
+under the [GPL license](https://github.com/OpenTrafficCam/OTVision/blob/master/LICENSE).
 This also helps in efficiently using limited public resources for road infrastructure planning and research
 and in avoiding substantial vendor locks.
 So all transport professionals and anyone else interested are very welcome to try OpenTrafficCam.
@@ -51,18 +51,17 @@ OpenTrafficCam consists of three modules. The [**OTCamera**](https://opentraffic
 of objects (road users) based on the videos and
 [**OTAnalytics**](https://opentrafficcam.org/OTAnalytics/) to gather traffic measures based on the trajectories.
 Each of the three modules comes with easy installation, a basic graphical user interface and a detailed user documentation.
-The Open Source version offers the most common use cases of video-based traffic surveying,
+The Open Source version covers the most common use cases of video-based traffic surveying,
 such as traffic counts and speed measurements.
 
-In addition to the three main modules, we will provide a set of labelled images of German traffic objects with
-[**OTLabels**](https://opentrafficcam.org/OTLabels/).
+In addition to the three main modules, with [**OTLabels**](https://opentrafficcam.org/OTLabels/) we will provide a set of labelled images of German traffic objects along with algorithms to train object detection models on custom data sets.
 
 ![framework](framework_OTC_website.png)
 
 As described on the following pages of this documentation, some manual work, patience and basic skills
 are required to assemble OTCamera.
-And in order to regularly extract trajectories from videos using OTVision oder train your own AI using OTLabels,
-you will need a powerful machine with a strong graphics card.
+And in order to regularly extract trajectories from videos using OTVision or train your own customn object detection models
+using OTLabels, you will need a powerful machine with a strong graphics card.
 
 !!! check "Don´t want to deal with it? We got your back!"
     We offer various services related to OpenTrafficCam:
