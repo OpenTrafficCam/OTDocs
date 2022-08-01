@@ -59,7 +59,7 @@ The Open Source version covers the most common use cases of video-based traffic 
 such as traffic counts and speed measurements.
 
 In addition to the three main modules, with [**OTLabels**](https://opentrafficcam.org/OTLabels/)
-we will provide a set of labelled images of German traffic objects along with algorithms
+we will provide a set of labelled images of German road users and vehicles along with algorithms
 to train object detection models on custom data sets.
 
 ![framework](framework_OTC_website.png)
@@ -78,11 +78,11 @@ using OTLabels, you will need a powerful machine with a strong graphics card.
 
     :material-check-network: Setting up the OpenTrafficCam pipeline in your environment
 
+    :material-monitor-screenshot: Onboarding and support to get the most out of OpenTrafficCam
+
     :material-video-marker: Conducting whole traffic surveys for you
-
+    
     :material-cloud-braces: Developing features beyond the current open source version
-
-    :material-projector-screen: Courses on how to set up, use and get the best out of OpenTrafficCam
 
     :material-account-supervisor: Consulting on traffic analysis, modeling and optimization
 
