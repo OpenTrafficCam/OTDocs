@@ -19,20 +19,20 @@ Road traffic, on the other hand, is still often surveyed manually at great expen
 There exist tools that optimize some of the processing steps,
 but they can hardly be used without programming skills or they cause significant costs.
 This is why research and planning still have to be conducted with minimal data or sometimes without any at all.
-This lack of data primarily affects sustainable modes of transportation such as walking and bicycling.
+This lack of data primarily affects sustainable modes of transportation such as walking and cycling.
 
-OpenTrafficCam aims at adressing this gap and creating a stronger data base
+OpenTrafficCam aims to address this gap for a stronger data base
 for transportation planning, policy and research.
 In doing so, we ourselves benefit substantially from other open source projects.
 Consequently, we also publish large parts of OpenTrafficCam as open source hardware and software
-under the [GPL license](https://github.com/OpenTrafficCam/OTVision/blob/master/LICENSE).
+under the [GNU General Public License v3.0](https://github.com/OpenTrafficCam/OTVision/blob/master/LICENSE).
 This also helps in efficiently using limited public resources for road infrastructure planning and research
 and in avoiding substantial vendor locks.
 So all transport professionals and anyone else interested are very welcome to try OpenTrafficCam.
 
 !!! hint "You want to support?"
 
-    Developing, maintaing and organizing open source requires quite a lot of time and money.
+    Developing, maintaining and organizing open source requires quite a lot of time and money.
     But fortunately, there are several ways to support us:
 
     - Traffic engineers can help by spreading the word and submitting questions, bugs or feature ideas as issues
@@ -43,24 +43,30 @@ So all transport professionals and anyone else interested are very welcome to tr
         [**OTLabels**](https://github.com/OpenTrafficCam/OTLabels).
     - Researchers and developers can support by [**contributing code**](https://opentrafficcam.org/contribute/)
         or [**contacting us**](mailto:team@opentrafficcam.org) for scientific collaboration.
+    - Users, such as municipalities or engineering companies, can contact us to fund specific enhancements to meet their use case and thus help all other users.
 
 ## How it works
 
-OpenTrafficCam consists of three modules. The [**OTCamera**](https://opentrafficcam.org/OTCamera/) hardware itself to record videos,
-[**OTVision**](https://opentrafficcam.org/OTVision/), a collection of algorithms to generate trajectories
+OpenTrafficCam consists of multiple modules. The core is composed of three:
+
+1. The [**OTCamera**](https://opentrafficcam.org/OTCamera/) hardware itself to record videos,
+1. [**OTVision**](https://opentrafficcam.org/OTVision/), a collection of algorithms to generate trajectories
 of objects (road users) based on the videos and
-[**OTAnalytics**](https://opentrafficcam.org/OTAnalytics/) to gather traffic measures based on the trajectories.
+1. [**OTAnalytics**](https://opentrafficcam.org/OTAnalytics/) to gather traffic measures based on these trajectories.
+
 Each of the three modules comes with easy installation, a basic graphical user interface and a detailed user documentation.
 The Open Source version covers the most common use cases of video-based traffic surveying,
 such as traffic counts and speed measurements.
 
-In addition to the three main modules, with [**OTLabels**](https://opentrafficcam.org/OTLabels/) we will provide a set of labelled images of German traffic objects along with algorithms to train object detection models on custom data sets.
+In addition to the three main modules, with [**OTLabels**](https://opentrafficcam.org/OTLabels/)
+we will provide a set of labelled images of German traffic objects along with algorithms
+to train object detection models on custom data sets.
 
 ![framework](framework_OTC_website.png)
 
 As described on the following pages of this documentation, some manual work, patience and basic skills
 are required to assemble OTCamera.
-And in order to regularly extract trajectories from videos using OTVision or train your own customn object detection models
+And in order to regularly extract trajectories from videos using OTVision or train your own custom object detection models
 using OTLabels, you will need a powerful machine with a strong graphics card.
 
 !!! check "Don´t want to deal with it? We got your back!"
@@ -86,21 +92,16 @@ using OTLabels, you will need a powerful machine with a strong graphics card.
 
 ## Who we are
 
-OpenTrafficCam is coordinated and lead developed by the German startup
-[**platomo**](https://platomo.de/),
+OpenTrafficCam is coordinated and lead developed by the German startup [**platomo**](https://platomo.de/),
 a team of traffic engineers, software and hardware developers.
 The core team also includes traffic and photogrammetry researchers from the
 [**TU Dresden**](https://tu-dresden.de/bu/verkehr/ivs/ivst).
 
-<br/>
+[![platomo](platomo_logo_black_h50.png){style="padding: 1.2em"}](https://platomo.de/)
+[![TU Dresden](TUD_Logo_HKS41_h50.png){style="padding: 1.2em"}](https://tu-dresden.de/bu/verkehr/ivs/ivst)
 
-[![platomo](platomo_logo_black_h50.png)](https://platomo.de/){style="padding:20px"}
-[![TU Dresden](TUD_Logo_HKS41_h50.png)](https://tu-dresden.de/bu/verkehr/ivs/ivst){style="padding:20px"}
-
-<br/>
-
-OpenTrafficCam is funded by the **German Federal Ministry Digital and Transport**
+OpenTrafficCam is funded by the **German Federal Ministry for Digital and Transport**
 as part of the research initiative **mFUND**.
 
-![mFUND](mFUND_Logo_Claim_sRGB_h175.PNG){style="padding:20px"}
-![German Federal Ministry of Transport and Digital Infrastructure](BMVI_Fz_2017_WebSVG_de.svg){style="padding:20px"}
+![mFUND](mFUND_Logo_Claim_sRGB_h175.PNG){style="padding: 1.2em"}
+![German Federal Ministry for Digital and Transport](BMVI_Fz_2017_WebSVG_de.svg){style="padding: 1.2em"}
