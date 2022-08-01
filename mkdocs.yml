@@ -164,3 +164,4 @@ plugins:
                   fallback_to_build_date: true
                   type: date
                   timezone: Europe/Berlin
+        # - glightbox # to zoom images on click.
