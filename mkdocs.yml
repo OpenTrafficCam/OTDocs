@@ -28,7 +28,6 @@ theme:
 nav:
         - Overview:
                   - Welcome: index.md
-                  - overview/gettingstarted.md
                   - overview/dataprivacy.md
                   - Use Cases:
                             - overview/usecases/trafficcounts.md
@@ -139,6 +138,9 @@ markdown_extensions:
                   permalink: true
                   toc_depth: 3
         - admonition
+        - pymdownx.emoji:
+                  emoji_index: !!python/name:materialx.emoji.twemoji
+                  emoji_generator: !!python/name:materialx.emoji.to_svg
         - pymdownx.details
         - pymdownx.highlight
         - pymdownx.superfences
@@ -162,3 +164,4 @@ plugins:
                   fallback_to_build_date: true
                   type: date
                   timezone: Europe/Berlin
+        # - glightbox # to zoom images on click.
