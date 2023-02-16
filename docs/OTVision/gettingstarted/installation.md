@@ -4,7 +4,7 @@
 
 In this section, we provide instructions how to install OTVision on the most common Operating Systems.
 
-Before installing OTVision, **please be sure you completed the installation of the pre-requisites**. A description can be found [here](gettingstarted/requirements/).
+Before installing OTVision, **please be sure you completed the installation of the pre-requisites**. A description can be found [here](../requirements/).
 
 ## Install OTVision
 

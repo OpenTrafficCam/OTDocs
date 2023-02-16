@@ -14,7 +14,7 @@ If you want to detect road users in videos with OTVision on a regular basis, we 
 
 OTVision is completely based on Open Source *Python* packages. Thus, it runs on Windows, MacOS and Linux systems after setting up the environment correctly. Consequently, a recent version of *Python* (currently supported: *Python 3.10*) needs to be installed on the system. An instruction how to do that on a Windows system can be found below.
 
-If you want to use videos recorded by [OTCamera](OTCamera/index) with OTVision, you need to convert the videos to .mp4 files first. For the convertion, we use the Open Source software *ffmpeg*.
+If you want to use videos recorded by [OTCamera](/OTCamera) with OTVision, you need to convert the videos to .mp4 files first. For the convertion, we use the Open Source software *ffmpeg*.
 
 To achieve the maximum performance on systems with a NVidia graphics card, the CUDA drivers have to be installed correctly. A detailed instruction how to do that on a Windows system can be found below.
 
