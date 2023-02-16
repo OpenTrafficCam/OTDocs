@@ -36,7 +36,17 @@ To achieve the maximum performance on systems with a NVidia graphics card, the C
 
 === "MacOS"
 
-    We recommend the installation using Homebrew using the command `$ brew install python` in the terminal.
+    #### Homebrew
+
+    We recommend the installation using Homebrew using the command 
+    
+    `$ brew install python@3.10` 
+    
+    in the terminal.
+
+    #### Manual installation
+
+    Alternatively, you can download a MacOS installer for python 3.10 from [python.org](https://www.python.org/downloads/release/python-3109/).
 
 ### Install ffmpeg
 
@@ -67,7 +77,7 @@ For the conversion of video files recorded by OTCamera, we use the Open Source s
     $ sudo apt install ffmpeg
     ``` 
 
-    #### Manual install
+    #### Manual installation
 
     For the manual installation of *ffmpeg* on Linux or if you use another Linux distribution than Ubuntu, please refer to the instructions on the [developers website](https://ffmpeg.org/download.html).
 
