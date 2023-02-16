@@ -1,5 +1,9 @@
 # Requirements
 
+> it runs on **any** system
+
+**OTVision** is designed to run on any system. However, a few prerequisites need to be installed before installing **OTVision**.
+
 ## Hardware prerequisites
 
 OTVision runs on modern 64 bit desktops and laptops (e.g. i5 processor and 8 GB RAM). Apple Silicon processors can also be used to run OTVision. However, they are not supported natively and therefore might not perfrom at their maximum.
