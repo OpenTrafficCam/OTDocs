@@ -44,7 +44,9 @@ To achieve the maximum performance on systems with a NVidia graphics card, the C
 
     We recommend the installation using Homebrew using the command 
     
-    `$ brew install python@3.10` 
+    ```text
+    brew install python@3.10
+    ``` 
     
     in the terminal.
 
@@ -64,11 +66,17 @@ For the conversion of video files recorded by OTCamera, we use the Open Source s
     2. Unzip this file by using any file archiver such as Winrar or 7z in the folder of your choice (e.g., `C:\ffmpeg`).
     3. Now, run cmd as an administrator and set the environment path variable for ffmpeg by running 
     
-        `$ setx /m PATH "path_to_your_ffmpeg_folder\bin;%PATH%"`
+        ```text 
+        setx /m PATH "path_to_your_ffmpeg_folder\bin;%PATH%"
+        ```
         
         where `path_to_your_ffmpeg_folder` represents the folder that you have *ffmpeg* unzipped in.
     
-    4. Restart your computer and verify the installation by running `$ ffmpeg -version`
+    4. Restart your computer and verify the installation by running 
+
+        ```text 
+        ffmpeg -version
+        ```
 
 === "Linux"
 
@@ -77,8 +85,8 @@ For the conversion of video files recorded by OTCamera, we use the Open Source s
     If you use Ubuntu, you can install *ffmpeg* using the official Ubuntu repositories.
 
     ```
-    $ sudo apt update
-    $ sudo apt install ffmpeg
+    sudo apt update
+    sudo apt install ffmpeg
     ``` 
 
     #### Manual installation
@@ -89,7 +97,10 @@ For the conversion of video files recorded by OTCamera, we use the Open Source s
 
     #### Homebrew
 
-    For the installation using Homebrew, use the command `$ brew install ffmpeg` in the terminal.
+    For the installation using Homebrew, use the following command in the terminal:
+        ```text
+        brew install ffmpeg
+        ```
 
     #### Manual install
 

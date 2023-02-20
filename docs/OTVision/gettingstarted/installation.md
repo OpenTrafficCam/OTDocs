@@ -26,9 +26,19 @@ For the installation of **OTVision**, we provide install scripts for the most co
 
     1. Download and unzip the latest version of [**OTVision**](https://github.com/OpenTrafficCam/OTVision/archive/refs/heads/master.zip) from Github or clone the [**OTVision** repository](https://github.com/OpenTrafficCam/OTVision).
 
-    2. In the terminal, navigate to the **OTVision** folder. Then the run `$ ./install.sh` and wait until the installation of the dependencies is complete.
+    2. In the terminal, navigate to the **OTVision** folder. Then the run 
+    
+        ```text 
+        ./install.sh
+        ``` 
+    
+        and wait until the installation of the dependencies is complete.
 
-    Developers are recommended to install the dev-environment as well. Additional Python packages that are needed for development will be installed. Therefore, also run `$ ./install_dev.sh` in your **OTVision** folder from the terminal and wait until the installation of the dependencies is complete.
+    Developers are recommended to install the dev-environment as well. Additional Python packages that are needed for development will be installed. Therefore, also run 
+    ```text 
+    ./install_dev.sh
+    ``` 
+    in your **OTVision** folder from the terminal and wait until the installation of the dependencies is complete.
 
 ## If you encounter problems
 
