@@ -4,12 +4,22 @@
 
 [**OTVision**](https://github.com/OpenTrafficCam/OTVision) is a collection of algorithms to generate trajectories of road users in traffic videos extended by self-developed functionalities. Most of the algorithms have been developed in previous open source projects. We modify and link them together with our own developments to a working pipeline.
 
+This pipeline consists of three core functionalities of **OTVision**: *Convert*, *Detect* and *Track*.
+
+```mermaid
+graph LR
+    vf((Video Files)) .-> conv[<b>Convert</b>\n\n...raw video\nfiles];
+    conv --> det[<b>Detect</b>\n\n...road users\nin single\nframes];
+    det --> tr[<b>Track</b>\n\n...detected road\nusers over\nmultiple frames];
+    tr .-> traj((Trajectories));
+```
+
 ## Key features
 
-* Automated video format convertion
-* Detection of road users using state-of-the-art AI object detection models (currently: YOLOv5)
 * Can be used without programming knowledge
-* Result: Trajectories in image coordinates
+* Automated video format convertion
+* Detection of road users using state-of-the-art AI object detection models (currently: YOLOv5) over multiple frames and videos
+* **Result:** Trajectories in image coordinates
 
 ## Content of this documentation
 
