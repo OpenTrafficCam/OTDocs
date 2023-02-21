@@ -65,8 +65,8 @@ nav:
           - OTVision/usage/convert.md
           - OTVision/usage/detect.md
           - OTVision/usage/track.md
-          - OTVision/usage/pipeline.md
-      - OTVision/gettingstarted/configuration.md
+      #     - OTVision/usage/pipeline.md
+      # - OTVision/gettingstarted/configuration.md
 
   - OTAnalytics:
       - OTAnalytics/index.md
