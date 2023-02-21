@@ -14,13 +14,13 @@ For the installation of **OTVision**, we provide install scripts for the most co
 
     For the installation of **OTVision** on Windows systems, please perform the following steps:
 
-    1. Download and unzip the latest version of [**OTVision**](https://github.com/OpenTrafficCam/OTVision/archive/refs/heads/master.zip) from Github or clone the [**OTVision** repository](https://github.com/OpenTrafficCam/OTVision).
+    1. Download and unzip the latest version of [**OTVision**](https://github.com/OpenTrafficCam/OTVision/archive/refs/heads/master.zip) from GitHub or clone the [**OTVision** repository](https://github.com/OpenTrafficCam/OTVision).
 
     2. In the unzipped folder double-click the `install.cmd` and wait until the installation of the dependencies is complete.
 
     Developers are recommended to install the dev-environment as well. Additional Python packages that are needed for development will be installed. Therefore, also double-click the `install_dev.cmd` in your **OTVision** folder and wait until the installation of the dependencies is complete.
 
-=== "Linux / MacOS"
+=== "Linux / macOS"
 
     For the installation of **OTVision** on Linux and macOS systems, please perform the following steps:
 
@@ -44,7 +44,7 @@ For the installation of **OTVision**, we provide install scripts for the most co
 
 Maybe you also have to manually install Microsoft Visual C++ 14.0 or greater from the [Visual Studio Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/).
 
-In case of further problems please [open an issue](https://github.com/OpenTrafficCam/OTVision/issues/new) in the **OTVision** repository on Github.
+In case of further problems please [open an issue](https://github.com/OpenTrafficCam/OTVision/issues/new) in the **OTVision** repository on GitHub.
 
 We also welcome code contributions (e.g. fixing bugs or adding features) from other programmers by forking the repository and creating a pull request.
 Please check the [contribute section](https://opentrafficcam.org/contribute/) of this documentation first.

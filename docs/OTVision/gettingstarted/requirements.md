@@ -36,7 +36,9 @@ To achieve the maximum performance on systems with a NVidia graphics card, the C
 
 === "Linux"
 
-    Depending on the Linux distribution you are using, Python 3.10 might not be the pre-installed version. In that case, install Python 3.10 manually using additional sources. Since the sources might differ depending on the Linux distribution you are using, we kindly ask you to use a search engine for a detailed instruction on how to install Python 3.10 manually for your distribution. In any case, please make sure that you also have the python virtual environment package `python3.10-venv` installed.
+    Depending on the Linux distribution you are using, Python 3.10 might not be the pre-installed version. In that case, install Python 3.10 manually using additional sources. Since the sources might differ depending on the Linux distribution you are using, we kindly ask you to use a search engine for a detailed instruction on how to install Python 3.10 manually for your distribution. 
+    
+    In any case, please make sure that you also have the python virtual environment package `python3.10-venv` installed.
 
 === "macOS"
 
