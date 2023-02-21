@@ -1,6 +1,5 @@
 # track.py
 
-
 ## Synopsis
 
 ```text
