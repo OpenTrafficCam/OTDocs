@@ -12,7 +12,7 @@ If you want to detect road users in videos with **OTVision** on a regular basis,
 
 ## Software prerequisites
 
-**OTVision** is completely based on Open Source *Python* packages. Thus, it runs on Windows, MacOS and Linux systems after setting up the environment correctly. Consequently, a recent version of *Python* (currently supported: *Python 3.10*) needs to be installed on the system. An instruction how to do that on a Windows system can be found below.
+**OTVision** is completely based on Open Source *Python* packages. Thus, it runs on Windows, macOS and Linux systems after setting up the environment correctly. Consequently, a recent version of *Python* (currently supported: *Python 3.10*) needs to be installed on the system. An instruction how to do that on a Windows system can be found below.
 
 If you want to use videos recorded by [**OTCamera**](/OTCamera) with **OTVision**, you need to convert the videos to .mp4 files first. For the convertion, we use the Open Source software *ffmpeg*.
 
@@ -38,7 +38,7 @@ To achieve the maximum performance on systems with a NVidia graphics card, the C
 
     Depending on the Linux distribution you are using, Python 3.10 might not be the pre-installed version. In that case, install Python 3.10 manually using additional sources. Since the sources might differ depending on the Linux distribution you are using, we kindly ask you to use a search engine for a detailed instruction on how to install Python 3.10 manually for your distribution. In any case, please make sure that you also have the python virtual environment package `python3.10-venv` installed.
 
-=== "MacOS"
+=== "macOS"
 
     #### Homebrew
 
@@ -52,7 +52,7 @@ To achieve the maximum performance on systems with a NVidia graphics card, the C
 
     #### Manual installation
 
-    Alternatively, you can download a MacOS installer for python 3.10 from [python.org](https://www.python.org/downloads/release/python-3109/).
+    Alternatively, you can download a macOS installer for python 3.10 from [python.org](https://www.python.org/downloads/release/python-3109/).
 
 ### Install ffmpeg
 
@@ -93,7 +93,7 @@ For the conversion of video files recorded by OTCamera, we use the Open Source s
 
     For the manual installation of *ffmpeg* on Linux or if you use another Linux distribution than Ubuntu, please refer to the instructions on the [developers website](https://ffmpeg.org/download.html).
 
-=== "MacOS"
+=== "macOS"
 
     #### Homebrew
 
@@ -104,7 +104,7 @@ For the conversion of video files recorded by OTCamera, we use the Open Source s
 
     #### Manual install
 
-    For the manual installation of *ffmpeg* on MacOS, please refer to the instructions on the [developers website](https://ffmpeg.org/download.html).
+    For the manual installation of *ffmpeg* on macOS, please refer to the instructions on the [developers website](https://ffmpeg.org/download.html).
 
 ### Optional: Install NVIDIA Cuda 11.0
 

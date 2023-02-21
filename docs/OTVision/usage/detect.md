@@ -23,7 +23,7 @@ Path to custom user [configuration](../configuration/) yaml file. If not provide
 
 `-f <filetypes>, --filetypes=<filetypes>`
 
-Filetypes of files in folders to select for detection. If not provided, `mp4` is used.
+File types of files in folders to select for detection. If not provided, `mp4` is used.
 
 `-w <weights>, --weights=<weights>`
 

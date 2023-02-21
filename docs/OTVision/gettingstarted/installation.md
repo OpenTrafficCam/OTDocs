@@ -22,9 +22,9 @@ For the installation of **OTVision**, we provide install scripts for the most co
 
 === "Linux / MacOS"
 
-    For the installation of **OTVision** on Linux and MacOS systems, please perform the following steps:
+    For the installation of **OTVision** on Linux and macOS systems, please perform the following steps:
 
-    1. Download and unzip the latest version of [**OTVision**](https://github.com/OpenTrafficCam/OTVision/archive/refs/heads/master.zip) from Github or clone the [**OTVision** repository](https://github.com/OpenTrafficCam/OTVision).
+    1. Download and unzip the latest version of [**OTVision**](https://github.com/OpenTrafficCam/OTVision/archive/refs/heads/master.zip) from GitHub or clone the [**OTVision** repository](https://github.com/OpenTrafficCam/OTVision).
 
     2. In the terminal, navigate to the **OTVision** folder. Then the run 
     

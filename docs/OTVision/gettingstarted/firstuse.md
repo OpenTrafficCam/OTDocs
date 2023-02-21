@@ -2,7 +2,7 @@
 
 > Lets **try** it out
 
-**OTVision** can be executed from any command line tool (e.g., Terminal, PowerShell). It is possible to either execute the whole pipeline (convert -> detect -> track) with one command (TODO) or execute the single parts individually.
+**OTVision** can be executed from any command-line tool (e.g., Terminal, PowerShell). It is possible to either execute the whole pipeline (convert -> detect -> track) with one command (TODO) or execute the single parts individually.
 
 The [configuration](../configuration) is stored in a configuration file (yaml), which can be referenced to when executing **OTVision**.
 
@@ -23,7 +23,7 @@ If you want to process videos recorded with **OTCamera**, you need to convert th
 
 In case you have raw videos (e.g., h264 from **OTCamera**), you need to convert the videos to the supported video formats (see [**Input Data**](../firstuse/#input-data)) first. Therefore, **OTVision** provides the `convert.py` script.
 
-In order to start the video conversion, navigate to the OTVision directory in your command line tool and excute the following command:
+In order to start the video conversion, navigate to the OTVision directory in your command-line tool and excute the following command:
 
 ``` text
     python convert.py -p "your_file_path"
@@ -35,7 +35,7 @@ where `your_file_path` is either the path to a single h264 video file or a folde
 
 If you have converted your video files to one of the accepted file formats or you already have your video files in the accepted format of OTVision (see [**Input Data**](../firstuse/#input-data)), you are ready to start the detection of the road users in the single video frames. Therefore, **OTVision** provides the `detect.py` script.
 
-In order to start the detection, navigate to the OTVision directory in your command line tool and excute the following command:
+In order to start the detection, navigate to the OTVision directory in your command-line tool and excute the following command:
 
 ``` text
     python detect.py -p "your_file_path"
@@ -49,7 +49,7 @@ The detected objects will be saved in an *otdet* file. For each video file, an *
 
 With the detected road users in one or more *otdet* files, you are ready to start the tracking of the road users. Therefore, **OTVision** provides the `track.py` script.
 
-In order to start the tracking, navigate to the OTVision directory in your command line tool and excute the following command:
+In order to start the tracking, navigate to the OTVision directory in your command-line tool and excute the following command:
 
 ``` text
     python track.py -p "your_file_path"
