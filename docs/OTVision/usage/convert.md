@@ -13,22 +13,22 @@ In case you have raw videos (e.g., h264 from **OTCamera**), you need to convert 
 
 `-p <paths>, --paths=<paths>`
 
-&emsp;Path or list of paths to h264 (or other) video files or folders containing h264 video files.
+Path or list of paths to h264 (or other) video files or folders containing h264 video files.
 
-OPTIONAL:
+### Optional
 
 `-c <path_to_config_file>, --config=<path_to_config_file>`
 
-&emsp;Path to custom user [configuration](../configuration/) yaml file. If not provided, `user_config.otvision.yaml` is used.
+Path to custom user [configuration](../configuration/) yaml file. If not provided, `user_config.otvision.yaml` is used.
 
 `--delete_input`
 
-&emsp;Delete input files after convert. If not provided, `false` is used.
+Delete input files after convert. If not provided, `false` is used.
 
 `-o, --overwrite`
 
-&emsp;verwrite existing output files. If not provided, `false` is used.
+Overwrite existing output files. If not provided, `false` is used.
 
 `-d, --debug`
 
-&emsp;Logging in debug mode. If not provided, `false` is used.
+Logging in debug mode. If not provided, `false` is used.
