@@ -83,7 +83,7 @@ you need to convert them to the supported video formats
 (see [convert.py](../firstuse/#detect)) first.
 Therefore, we provide the `convert.py` script.
 
-In order to convert the `.h264` videos, run the following command:
+To convert `.h264` videos, run the following command after activating the venv:
 
 ``` text
 python convert.py -p "path/to/your/h264 files"
@@ -103,7 +103,7 @@ formats,
 you are ready to detect of the road users in the single frames of each video.
 Therefore, we provide the `detect.py` script.
 
-In order to start the detection, run the following command:
+To detect video files, run the following command after activating your venv:
 
 ``` text
 python detect.py -p "path/to/your/video files"
@@ -121,7 +121,7 @@ With the detected road users in one or more *otdet* files, you are ready to trac
 road users over multiple frames of the video.
 Therefore, we provide the `track.py` script.
 
-In order to start tracking, run the following command:
+To track `.otdet` files, run the following command after activating your venv:
 
 ``` text
 python track.py -p "path/to/your/otdet files"
