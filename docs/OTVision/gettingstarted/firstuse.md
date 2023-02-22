@@ -1,63 +1,138 @@
-# First Use
+# Basic Use
 
 > Lets **try** it out
 
-**OTVision** can be executed from any command-line tool (e.g., Terminal, PowerShell). It is possible to either execute the whole pipeline (convert -> detect -> track) with one command (TODO) or execute the single parts individually.
+**OTVision** can be executed from any command-line tool (e.g., the Terminal on macOS
+and Linux or the Command Prompt on Windows).
 
-The [configuration](../configuration) is stored in a configuration file (yaml), which can be referenced to when executing **OTVision**.
+## The Command Line Interface
 
-A graphical user interface will be provided in a later stage of development.
+We provide a Command Line Interface (CLI) to run the OTVision pipeline or parts of it.
+This documentation is written for using the Command Prompt on Windows or the integrated
+terminals in Linux or macOS.
 
-## Input data
+### Navigate to the OTVision root directory
 
-In the current version, **OTVision** is tested with the following image and video file formats:
+```bash
+cd "path/to/OTVision"
+```
 
-| File type   | File format                          |
-| ----------- | ------------------------------------ |
-| Images      | *\*.jpg,  \*.jpeg, \*.jpg*           |
-| Videos      | *\*.avi, \*.mkv, \*.m4v, \*.mov, \*.mp4, \*.mpg, \*.mpeg, \*.wmv* |
+!!! info "On macOS you can open a terminal by right click on the OTVision directory"
 
-If you want to process videos recorded with **OTCamera**, you need to convert the video files from h264 to a file format that is accepted by OTVision (standard setting: mp4). This can be done executing the `convert.py`script.
+!!! warning "Don´t choose the wrong directory"
+
+    Maybe your OTVision root directory is called `OTVision-main`,
+    if you downloaded it from Github (this is the correct directory).
+
+    Inside the OTVision root directory, there is another directory called `OTVision`
+    (this child directory is the wrong directory in every case)
+
+### Activate virtual environment
+
+Before using OTVision, you have to activate the virtual environment that was created
+by running the [installation scripts](../installation):
+
+=== "Windows command prompt"
+
+    ```cmd 
+    venv\Scripts\activate
+    ``` 
+
+=== "Linux / macOS terminal"
+
+    ```bash
+    source venv/bin/activate
+    ```
+
+Now you should be inside the virtual environment, indicated by the `(venv)`
+in braces in front of your current working directory in the terminal.
+
+### Build your command
+
+Every command consists of three parts:
+
+1. Invoke the Python interpreter with `python`
+1. Specify the script you want to run (`convert.py`, `detect.py` or `track.py`).
+1. Specify the parameters for your script:
+
+    For basic use, you only have to specify one parameter:
+    The path(s) to the data you want to process.
+    You can specify a file or folder path (in quotation marks) after the
+    `-p` (or `--paths`) tag.
+
+    ??? info "Some hints about specifying the paths"
+
+        You can just drag a file or folder and drop them into the terminal.
+        
+        If you provide a path to a folder, every file within the folder will be
+        processed.
+        
+        You can also provide multiple paths straight after one another
+        (each in quotation marks).
+
+    All other parameters are optional.
+    They can also be set via tags in the CLI (see "Usage" section) or
+    [via a separate configuration file](../configuration).
+
+Have a look at the basic examples provided below.
 
 ## Convert
 
-In case you have raw videos (e.g., h264 from **OTCamera**), you need to convert the videos to the supported video formats (see [**Input Data**](../firstuse/#input-data)) first. Therefore, **OTVision** provides the `convert.py` script.
+In case you have raw videos `.h264` videos (e.g. from **OTCamera**),
+you need to convert them to the supported video formats
+(see [convert.py](../firstuse/#detect)) first.
+Therefore, we provide the `convert.py` script.
 
-In order to start the video conversion, navigate to the OTVision directory in your command-line tool and excute the following command:
+In order to convert the `.h264` videos, run the following command:
 
 ``` text
-    python convert.py -p "your_file_path"
+python convert.py -p "path/to/your/h264 files"
 ```
 
-where `your_file_path` is either the path to a single h264 video file or a folder including h264 video files. If you provide a folder, every h264 video file within the folder will be converted.
+where `path/to/your/h264 files` is either the path to a single h264 video file
+or a folder including h264 video files.
+
+Each converted video will by default be saved as a `.mp4` file in the same folder
+as the input `.h264` file.
 
 ## Detect
 
-If you have converted your video files to one of the accepted file formats or you already have your video files in the accepted format of OTVision (see [**Input Data**](../firstuse/#input-data)), you are ready to start the detection of the road users in the single video frames. Therefore, **OTVision** provides the `detect.py` script.
+If you have converted your video files to one of the accepted file formats
+(`.avi`,`.mkv`,`.mov`,`.mp4`) or you already have your video files in one of those
+formats,
+you are ready to detect of the road users in the single frames of each video.
+Therefore, we provide the `detect.py` script.
 
-In order to start the detection, navigate to the OTVision directory in your command-line tool and excute the following command:
+In order to start the detection, run the following command:
 
 ``` text
-    python detect.py -p "your_file_path"
+python detect.py -p "path/to/your/video files"
 ```
 
-where `your_file_path` is either the path to a single video file or a folder including your video files. If you provide a folder, every video file within the folder will be converted.
+where `path/to/your/video files` is either the path to a single video file or a folder
+including your video files.
 
-The detected objects will be saved in an *otdet* file. For each video file, an *otdet* file is created with the same name as the video file.
+For each video file, the detected objects will be written to a separate `.otdet` file
+in the same folder as the input video file.
 
 ## Track
 
-With the detected road users in one or more *otdet* files, you are ready to start the tracking of the road users. Therefore, **OTVision** provides the `track.py` script.
+With the detected road users in one or more *otdet* files, you are ready to track the
+road users over multiple frames of the video.
+Therefore, we provide the `track.py` script.
 
-In order to start the tracking, navigate to the OTVision directory in your command-line tool and excute the following command:
+In order to start tracking, run the following command:
 
 ``` text
-    python track.py -p "your_file_path"
+python track.py -p "path/to/your/otdet files"
 ```
 
-where `your_file_path` is either the path to a single *otdet* file or a folder including your *otdet* files. If you provide a folder, every *otdet* file within the folder will be tracked.
+where `path/to/your/otdet files` is either the path to a single `.otdet` file
+or a folder including your `.otdet` files.
+If you provide a folder, every *otdet* file within the folder will be tracked.
 
-The trajecotries of the raod users will be saved in an *ottrk* file. For each *otdet* file, an *otdet* file is created with the same name as the video file and the *otdet* file.
+For each video file, the tracks will be written to a separate `.ottrk` file
+in the same folder as the input `.otdet` file.
 
 ## Run the Pipeline
 
