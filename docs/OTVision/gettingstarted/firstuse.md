@@ -5,9 +5,9 @@
 **OTVision** can be executed from any command-line tool (e.g., the Terminal on macOS
 and Linux or the Command Prompt on Windows).
 
-## The Command Line Interface
+## The Command-Line Interface
 
-We provide a Command Line Interface (CLI) to run the OTVision pipeline or parts of it.
+We provide a command-line interface (CLI) to run the OTVision pipeline or parts of it.
 This documentation is written for using the Command Prompt on Windows or the integrated
 terminals in Linux or macOS.
 
