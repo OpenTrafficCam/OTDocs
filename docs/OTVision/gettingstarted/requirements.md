@@ -201,11 +201,11 @@ PATH on your system:
     For the manual installation of *ffmpeg* on macOS, please refer to the instructions
     on the [developers website](https://ffmpeg.org/download.html).
 
-### Optional: NVIDIA Cuda 11.0
+### Optional: Nvidia CUDA
 
 > If you have a modern NVidia graphics card.
 
-If you intend to use **OTVision** on a Windows or Linux PC with a modern NVidia graphics
-card, download and install the latest version of the
-[NVIDIA Cuda Toolkit](https://developer.nvidia.com/cuda-downloads) with default
-settings.
+If you intend to use **OTVision** on a Windows or Linux PC with a modern
+NVidia graphics card, download and install the latest version of the
+[NVIDIA Cuda Toolkit](https://developer.nvidia.com/cuda-downloads) that is
+[supported by PyTorch](https://pytorch.org/) on your platform.

@@ -67,6 +67,68 @@ We provide install scripts for the most common operating systems.
         and wait until the installation of the dependencies is complete.
         Find more information [here](https://opentrafficcam.org/contribute/).
 
+??? warning "Read this if you want to detect road users on a Nvidia GPU"
+
+    If you have a
+    [Windows or Linux PC with a Nvidia graphics card](../requirements/#hardware-prerequisites)
+    and already [installed CUDA](../requirements/#optional-nvidia-cuda-117),
+    you have to do the following additional steps in your Terminal/Command Prompt:
+
+    #### Check CUDA version
+
+    Check the CUDA version (or if CUDA is installed at all)
+
+    ```bash
+    nvcc --version
+    ```
+    
+    #### Navigate to the OTVision root directory
+
+    ```bash
+    cd "path/to/OTVision"
+    ```
+
+    ??? warning "Don´t choose the wrong directory"
+
+        Maybe your OTVision root directory is called `OTVision-main`,
+        if you downloaded it from Github (this is the correct directory).
+
+        Inside the OTVision root directory, there is another directory called `OTVision`
+        (this child directory is the wrong directory in every case)
+
+    #### Activate virtual environment
+
+    Activate the virtual environment that was created
+    by running the [installation scripts](../installation):
+
+    === "Windows command prompt"
+
+        ```cmd 
+        venv\Scripts\activate
+        ``` 
+
+    === "Linux / macOS terminal"
+
+        ```bash
+        source venv/bin/activate
+        ```
+
+    Now you should be inside the virtual environment, indicated by the `(venv)`
+    in braces in front of your current working directory in the terminal.
+
+    #### Install torch and torchvision for CUDA
+
+    Depending on your operating system (Windows or Linux) and your CUDA version
+    you can select, copy and run the install command from the
+    [PyTorch Website](https://pytorch.org/) under "INSTALL PYTORCH"
+    (choose Build="Stable", Package="pip" and Language="Python").
+
+    E.g. for CUDA 11.7 and the latest stable PyTorch Build, the command is:
+
+    ```bash
+    pip3 install torch torchvision --extra-index-url https://download.pytorch.org/whl/cu117
+    ```
+
 ## If you encounter problems
 
 Maybe you also have to manually install Microsoft Visual C++ 14.0 or greater from the
