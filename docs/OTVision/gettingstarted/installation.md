@@ -25,7 +25,7 @@ We provide install scripts for the most common operating systems.
     2. In the unzipped folder double-click the `install.cmd` and wait until the
     installation of the dependencies is complete.
 
-    ??? "What is installed here?"
+    ??? question "What is installed here?"
 
         The `install.cmd` script will create and activate a virtual environment (venv)
         and install the Python packages specified in the requirements.txt via pip
@@ -55,7 +55,7 @@ We provide install scripts for the most common operating systems.
     
         and wait until the installation of the dependencies is complete.
 
-    ??? "What is installed here?"
+    ??? question "What is installed here?"
 
         The `install.sh` script will create and activate a virtual environment (venv)
         and install the Python packages specified in the requirements.txt via pip
@@ -67,7 +67,7 @@ We provide install scripts for the most common operating systems.
         and wait until the installation of the dependencies is complete.
         Find more information [here](https://opentrafficcam.org/contribute/).
 
-??? warning "Read this if you want to detect road users on a Nvidia GPU"
+??? warning "Read this if you want to detect road users on a Nvidia GPU!"
 
     If you have a
     [Windows or Linux PC with a Nvidia graphics card](../requirements/#hardware-prerequisites)
