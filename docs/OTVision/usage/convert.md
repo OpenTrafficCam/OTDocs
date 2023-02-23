@@ -66,7 +66,7 @@ input `.h264` filenames.
 
 - In this case, an [`input_fps`](#input_fps) has to be specified.
 
-This parameter is optional.
+This parameter is optional and defaults to `--fps_from_filename`.
 
 ### input_fps
 
@@ -77,11 +77,9 @@ This parameter is optional.
 parameter as follows:
 `--input_fps 20`
 
-If not provided, defaults to `20`
-
 If `--fps_from_filename` is used, `input_fps` will be ignored.
 
-This parameter is optional.
+This parameter is optional and defaults to `20`.
 
 ### overwrite
 
@@ -89,9 +87,8 @@ This parameter is optional.
 
 `-no-o` or `--no-overwrite` to prevent overwriting existing `.mp4` files.
 
-If not provided, defaults to `--overwrite` and existing `.mp4` files are overwritten.
-
 This parameter is optional.
+It defaults to `--overwrite` and existing `.mp4` files are overwritten.
 
 ### delete input
 
@@ -99,6 +96,5 @@ This parameter is optional.
 
 `--no-delete_input` to keep input `.h264` files after conversion to `.mp4` .
 
-If not provided, defaults to `--no-delete_input` and input `.h264` files are kept.
-
 This parameter is optional.
+It defaults to `--no-delete_input` and input `.h264` files are kept.
