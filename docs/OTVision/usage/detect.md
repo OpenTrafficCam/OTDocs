@@ -60,7 +60,7 @@ This parameter is optional and defaults to `YOLOv5s.pt`.
 
 ### conf
 
-`--conf <confidence>`
+`--conf <float>`
 
 The YOLOv5 models confidence threshold.
 Should be a float value between zero and one.
@@ -72,7 +72,7 @@ This parameter is optional and defaults to `0.25`.
 
 ### iou
 
-`--iou <iou>`
+`--iou <float>`
 
 The YOLOv5 models IOU threshold.
 Should be a float value between zero and one.
@@ -84,7 +84,7 @@ This parameter is optional and defaults to `0.45`.
 
 ### chunksize
 
-`--chunksize <chunksize>`
+`--chunksize <int>`
 
 The number of frames of a video to be detect by YOLOv5 in one iteration.
 Should be an integer above zero.

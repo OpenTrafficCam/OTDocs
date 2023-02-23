@@ -71,9 +71,9 @@ This parameter is optional and defaults to `--fps_from_filename`.
 
 ### input_fps
 
-`--input_fps <fps>` to set the frame rate for all input `.h264` files.
+`--input_fps <int>` to set the frame rate for all input `.h264` files.
 
-- `fps` should be an integer value above zero.
+- `input_fps` should be an integer value above zero.
 - E.g. if the input `.h264` have been recorded at 20 frames per second, specify this
 parameter as follows:
 `--input_fps 20`
