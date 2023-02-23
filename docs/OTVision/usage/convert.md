@@ -3,32 +3,98 @@
 ## Synopsis
 
 ```text
-convert.py  [-p paths] [-c config] [--delete_input]
-            [-o overwrite] [-d debug]
+python  convert.py  [-p paths] [-c config]
+                    [--fps_from_filename] [--input_fps]
+                    [--delete_input] [-o overwrite]
 ```
 
 ## Description
 
-In case you have raw videos (e.g., h264 from **OTCamera**), you need to convert the videos to the supported video formats (see [**Input Data**](../firstuse/#input-data)) first. Therefore, **OTVision** provides the `convert.py` script.
+In case you have raw `.h264` videos (e.g. from **OTCamera**), you need to convert
+the videos to a supported video format.
+We suggest converting to `.mp4` and for now set this as the default output file type.
 
-`-p <paths>, --paths=<paths>`
+## Parameters
 
-Path or list of paths to h264 (or other) video files or folders containing h264 video files.
+### paths (required)
 
-### Optional
+`-p "path/to/h264 files" "path/to/other h264 files"`
 
-`-c <path_to_config_file>, --config=<path_to_config_file>`
+or
 
-Path to custom user [configuration](../configuration/) yaml file. If not provided, `user_config.otvision.yaml` is used.
+`--paths "path/to/h264 files" "path/to/other h264 files"`
 
-`--delete_input`
+One or multiple paths to `.h264` files or folders containing `.h264` video files.
 
-Delete input files after convert. If not provided, `false` is used.
+This parameter is required to run the `convert.py` script.
+It has to be specified either using the CLI or in the
+[configuration](../configuration/) yaml file.
 
-`-o, --overwrite`
+### config
 
-Overwrite existing output files. If not provided, `false` is used.
+`-c "path/to/config file"`
 
-`-d, --debug`
+or
 
-Logging in debug mode. If not provided, `false` is used.
+`--config "path/to/config file"`
+
+Path to a custom user [configuration](../configuration/) yaml file.
+Other parameters (including `paths`) are parsed from this configuration file.
+If not provided, default values are used for the other parameters.
+This parameter is optional.
+
+!!! warning
+    Any other parameters passed to the CLI will overwrite respective parameters from
+    the config file.
+
+### fps_from_filename
+
+`--fps_from_filename` to parse the video frame rates from the input `.h264` file names.
+
+- In this case the frame rate of each input `.h264` file has to be specified in
+the file name using the following pattern: `_FR<fps>_` (where `fps` is the frame rate)
+- An example would be `_FR20_` in the following file name:
+    `OTCamera01_FR20_2022-01-01_12-15-00.h264`
+- In this case, [`input_fps`](#input_fps) will be ignored
+
+`--no-fps_from_filename` to prevent parsing the video frame rates from the
+input `.h264` file names.
+
+- In this case, an [`input_fps`](#input_fps) has to be specified.
+
+This parameter is optional.
+
+### input_fps
+
+`--input_fps <fps>` to set the frame rate for all input `.h264` files.
+
+- `fps` should be an integer value above zero.
+- E.g. if the input `.h264` have been recorded at 20 frames per second, specify this
+parameter as follows:
+`--input_fps 20`
+
+If not provided, defaults to `20`
+
+If `--fps_from_filename` is used, `input_fps` will be ignored.
+
+This parameter is optional.
+
+### overwrite
+
+`-o` or `--overwrite` to overwrite existing `.mp4` files.
+
+`-no-o` or `--no-overwrite` to prevent overwriting existing `.mp4` files.
+
+If not provided, defaults to `--overwrite` and existing `.mp4` files are overwritten.
+
+This parameter is optional.
+
+### delete input
+
+`--delete_input` to delete input `.h264` files after conversion to `.mp4` .
+
+`--no-delete_input` to keep input `.h264` files after conversion to `.mp4` .
+
+If not provided, defaults to `--no-delete_input` and input `.h264` files are kept.
+
+This parameter is optional.
