@@ -44,8 +44,9 @@ or
 
 Path to a custom user [configuration](../configuration/) yaml file.
 Other parameters (including `paths`) are parsed from this configuration file.
-If not provided, default values are used for the other parameters.
+
 This parameter is optional.
+If not provided, default values are used for the other parameters.
 
 !!! warning
     Any other parameters passed to the CLI will overwrite respective parameters from
