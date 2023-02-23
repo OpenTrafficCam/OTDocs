@@ -49,16 +49,16 @@ This parameter is optional.
 
 ### fps_from_filename
 
-`--fps_from_filename` to parse the video frame rates from the input `.h264` file names.
+`--fps_from_filename` to parse the video frame rates from the input `.h264` filenames.
 
 - In this case the frame rate of each input `.h264` file has to be specified in
-the file name using the following pattern: `_FR<fps>_` (where `fps` is the frame rate)
-- An example would be `_FR20_` in the following file name:
+the filename using the following pattern: `_FR<fps>_` (where `fps` is the frame rate)
+- An example would be `_FR20_` in the following filename:
     `OTCamera01_FR20_2022-01-01_12-15-00.h264`
 - In this case, [`input_fps`](#input_fps) will be ignored
 
 `--no-fps_from_filename` to prevent parsing the video frame rates from the
-input `.h264` file names.
+input `.h264` filenames.
 
 - In this case, an [`input_fps`](#input_fps) has to be specified.
 
