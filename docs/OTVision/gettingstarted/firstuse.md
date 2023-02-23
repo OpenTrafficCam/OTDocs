@@ -117,7 +117,7 @@ in the same folder as the input video file.
 
 ## Track
 
-With the detected road users in one or more *otdet* files, you are ready to track the
+With the detected road users in one or more `.otdet` files, you are ready to track the
 road users over multiple frames of the video.
 Therefore, we provide the `track.py` script.
 
@@ -129,7 +129,7 @@ python track.py -p "path/to/your/otdet files"
 
 where `path/to/otdet files` is either the path to a single `.otdet` file
 or a folder including your `.otdet` files.
-If you provide a folder, every *otdet* file within the folder will be tracked.
+If you provide a folder, every `.otdet` file within the folder will be tracked.
 
 For each video file, the tracks will be written to a separate `.ottrk` file
 in the same folder as the input `.otdet` file.
