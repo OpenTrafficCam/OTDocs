@@ -88,8 +88,7 @@ This parameter is optional and defaults to `20`.
 
 `-no-o` or `--no-overwrite` to prevent overwriting existing `.mp4` files.
 
-This parameter is optional.
-It defaults to `--overwrite` and existing `.mp4` files are overwritten.
+This parameter is optional and defaults to `--overwrite`.
 
 ### delete input
 
@@ -97,5 +96,4 @@ It defaults to `--overwrite` and existing `.mp4` files are overwritten.
 
 `--no-delete_input` to keep input `.h264` files after conversion to `.mp4` .
 
-This parameter is optional.
-It defaults to `--no-delete_input` and input `.h264` files are kept.
+This parameter is optional and defaults to `--no-delete_input`.
