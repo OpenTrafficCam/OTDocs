@@ -72,7 +72,7 @@ Every command consists of three parts:
 
     All other parameters are optional.
     They can also be set via tags in the CLI (see "Usage" section) or
-    [via a separate configuration file](../configuration).
+    [via a separate configuration file](../advanced_usage/configuration.md).
 
 Have a look at the basic examples provided below.
 

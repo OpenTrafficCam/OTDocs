@@ -32,7 +32,7 @@ One or multiple paths to `.h264` files or folders containing `.h264` video files
 
 This parameter is required to run the `convert.py` script.
 It has to be specified either using the CLI or in the
-[configuration](../configuration/) yaml file.
+[configuration](../advanced_usage/configuration.md) yaml file.
 
 ### config
 
@@ -42,11 +42,15 @@ or
 
 `--config "path/to/config file"`
 
-Path to a custom user [configuration](../configuration/) yaml file.
+Path to a custom user [configuration](../advanced_usage/configuration.md) yaml file.
 Other parameters (including `paths`) are parsed from this configuration file.
 
 This parameter is optional.
-If not provided, default values are used for the other parameters.
+By default, the `user_config.otvision.yaml` in the root directory is read.
+This also overrides the default values of the following parameters.
+If the `user_config.otvision.yaml` in the root directory is missing and no other
+configuration file is specified, the default values of the following parameters are as
+described below.
 
 !!! warning
     Any other parameters passed to the CLI will overwrite respective parameters from
