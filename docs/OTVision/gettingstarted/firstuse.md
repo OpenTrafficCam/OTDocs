@@ -1,4 +1,4 @@
-# Basic Use
+# Basic Usage
 
 > Lets **try** it out
 
