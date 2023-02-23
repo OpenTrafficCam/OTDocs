@@ -89,7 +89,7 @@ To convert `.h264` videos, run the following command after activating the venv:
 python convert.py -p "path/to/your/h264 files"
 ```
 
-where `path/to/your/h264 files` is either the path to a single h264 video file
+where `path/to/h264 files` is either the path to a single h264 video file
 or a folder including h264 video files.
 
 Each converted video will by default be saved as a `.mp4` file in the same folder
@@ -109,7 +109,7 @@ To detect video files, run the following command after activating your venv:
 python detect.py -p "path/to/your/video files"
 ```
 
-where `path/to/your/video files` is either the path to a single video file or a folder
+where `path/to/video files` is either the path to a single video file or a folder
 including your video files.
 
 For each video file, the detected objects will be written to a separate `.otdet` file
@@ -127,7 +127,7 @@ To track `.otdet` files, run the following command after activating your venv:
 python track.py -p "path/to/your/otdet files"
 ```
 
-where `path/to/your/otdet files` is either the path to a single `.otdet` file
+where `path/to/otdet files` is either the path to a single `.otdet` file
 or a folder including your `.otdet` files.
 If you provide a folder, every *otdet* file within the folder will be tracked.
 
