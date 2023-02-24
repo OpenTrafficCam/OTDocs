@@ -12,7 +12,7 @@ python  detect.py   [-p paths] [-c config] [-w weights]
 
 If you have [converted](../usage/convert.md) your video files to one of the supported
 file formats (`.avi`,`.mkv`,`.mov`,`.mp4`) or you already have such video files,
-you are ready to start the detection of the road users in the video´s frames.
+you are ready to start the detection of the road users in each video frame.
 
 ## Parameters
 
@@ -26,7 +26,7 @@ or
 
 One or multiple paths to video files or folders containing video files.
 
-This parameter is required to run the `detect.py` script.
+This parameter is required to run `detect.py`.
 It has to be specified either using the CLI or in the
 [configuration](../advanced_usage/configuration.md) yaml file.
 
@@ -43,13 +43,13 @@ Other parameters (including `paths`) are parsed from this configuration file.
 
 This parameter is optional.
 By default, the `user_config.otvision.yaml` in the root directory is read.
-This also overrides the default values of the following parameters.
+This also overrides the default values of all parameters.
 If the `user_config.otvision.yaml` in the root directory is missing and no other
-configuration file is specified, the default values of the following parameters are as
-described below.
+configuration file is specified, the default values of the parameters as
+described below are used.
 
 !!! warning
-    Any other parameters passed to the CLI will overwrite respective parameters from
+    Any parameter passed to the CLI will overwrite the respective parameter from
     the config file.
 
 ### weights
@@ -58,7 +58,7 @@ described below.
 or
 `--weights <weights>`
 
-Name of weights from PyTorch hub or Path to weights file.
+Name of weights from PyTorch hub or path to weights file.
 
 This parameter is optional and defaults to `YOLOv5s.pt`.
 
@@ -66,10 +66,10 @@ This parameter is optional and defaults to `YOLOv5s.pt`.
 
 `--conf <float>`
 
-The YOLOv5 models confidence threshold.
+The YOLOv5 model confidence threshold.
 Should be a float value between zero and one.
 
-The confidence threshold is the minimum confidence for a detectiob to be considered
+The confidence threshold is the minimum confidence for a detection to be considered
 a true detection (otherwise this detection will be ignored entirely).
 
 This parameter is optional and defaults to `0.25`.
@@ -78,7 +78,7 @@ This parameter is optional and defaults to `0.25`.
 
 `--iou <float>`
 
-The YOLOv5 models IOU threshold.
+The YOLOv5 model IOU threshold.
 Should be a float value between zero and one.
 
 The IOU threshold is the overlap threshold for areas of bounding boxes used in
@@ -90,7 +90,7 @@ This parameter is optional and defaults to `0.45`.
 
 `--chunksize <int>`
 
-The number of frames of a video to be detect by YOLOv5 in one iteration.
+The number of frames of a video to be detected by YOLOv5 in one iteration.
 Should be an integer above zero.
 
 This parameter is optional and defaults to `1`.
