@@ -186,9 +186,9 @@ Before using the `convert.py` script, make sure that ffmpeg is installed and ava
 
     For the installation using Homebrew, use the following command in the terminal:
 
-        ```text
-        brew install ffmpeg
-        ```
+    ```text
+    brew install ffmpeg
+    ```
 
     #### Manual install
 

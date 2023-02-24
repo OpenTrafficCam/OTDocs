@@ -46,7 +46,7 @@ by running the [installation scripts](../installation):
     source venv/bin/activate
     ```
 
-The virtual environment should be activate, indicated by the `(venv)`
+The virtual environment should be activated, indicated by the `(venv)`
 in braces in front of your current working directory in the terminal.
 
 ### Build your command
