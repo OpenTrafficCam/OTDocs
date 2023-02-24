@@ -1,37 +1,35 @@
 # Requirements
 
-**OTVision** is designed to run on any of the current computer operating systems
-(Windows, Linux and Mac).
+**OTVision** is designed to run on most modern operating systems (Windows, Linux and Mac).
 However, a few prerequisites are required before installing **OTVision** itself.
 
 ## Hardware prerequisites
 
-**OTVision** runs on modern 64 bit desktops and laptops (e.g. i5 or Apple Silicon
-processor and 8 GB RAM).
-Apple Silicon processors can also be used to run **OTVision**.
+**OTVision** runs on modern desktops and laptops (e.g. Intel i5+ of the last few generations, AMD Zen chips or Apple Silicon
+processors and 8 GB RAM).
 
 If you want to detect road users in videos with **OTVision** on a regular basis, we
-strongly recommend purchasing a powerful desktop computer
-(>= i7, >= 16 GB RAM)
-with a NVidia graphics card (>= GeForce 10XX Series; `better = faster`).
-Make sure that the drivers of the graphics card as well as the
+strongly recommend purchasing a powerful desktop computer or workstation
+(>= 8+ cores, >= 16 GB RAM)
+with a Nvidia graphics card (>= GeForce 10XX Series, better is usually faster).
+Make sure that the Nvidia drivers as well as the
 [NVidia CUDA Toolkit](#optional-nvidia-cuda)
-are installed to get the best performance.
+are installed and up-to-date to get the best performance.
 
 !!! info "Apple Neural Engine"
 
     Accelerated detection using the Apple Neural Engine is not yet supported.
-    Detection on Apple silicon chips is currently perfomed using the CPU only.
+    Detection on Apple silicon chips is currently performed using CPU only.
 
 ## Software prerequisites
 
 ### Python 3.10
 
-**OTVision** is based on Open Source *Python* packages.
+**OTVision** is based on Open Source Python packages.
 Thus, it runs on Windows, macOS and Linux systems after setting up the environment
 correctly.
-Consequently, *Python* needs to be installed on your system.
-Currently we support only *Python 3.10*.
+Consequently, Python needs to be installed on your system.
+Currently OTVision runs best on Python 3.10.
 An instruction how to do that on a Windows system can be found below.
 
 ??? help "What if I want to use another Python version?"
@@ -45,26 +43,25 @@ An instruction how to do that on a Windows system can be found below.
 === "Windows"
 
     If not done yet, install the latest 64-bit version of Python 3.10 via Windows
-    installer from [www.python.org/downloads/](https://www.python.org/downloads/).
+    installer ([www.python.org/downloads](https://www.python.org/downloads/)).
 
     Please make sure to check the following boxes during installation:
 
-    - Add Python to PATH
-    - Install pip
-    - All advanced options
+    - [x] Add Python to PATH
+    - [x] Install pip
+    - [x] All advanced options
 
     ??? help "What if I already have another Python version installed?"
 
-        In addition, also install Python 3.10. The last installed Python will
-        automatically be the default Python interpreter of your system.
+        In addition, also install Python 3.10. On most operating systems you can choose
+        the python version to use by using `python-3.10`oder `python3.10` styled commands.
 
         On Windows, it is also possible to change the default Python interpreter by
         changing the order of the system-wide environment variables (move Python310 and
         Python310\Scripts to the top, see animation below).
 
         This is necessary e.g. if you have already installed Python 3.10, but another
-        Python version is your default because you installed it in the meantime
-        (e.g. 3.11).
+        Python version is your default because you installed it (e.g. 3.11).
 
         ![Change default Python](installation/change_default_python_version_win10.gif)
     
@@ -74,7 +71,7 @@ An instruction how to do that on a Windows system can be found below.
     python --version
     ```
 
-    If `Python 3.10.x` returns, you are good!
+    If `Python 3.10.x` is returned, you are good!
 
 === "Linux"
 
@@ -95,12 +92,6 @@ An instruction how to do that on a Windows system can be found below.
     In any case, please make sure that you also have the python virtual environment
     package `python3.10-venv` installed.
 
-    To check your Python installation, run this command in the terminal again:
-    
-    ```text
-    python3.10 --version
-    ```
-
 === "macOS"
 
     Depending on the macOS version you are using,
@@ -116,7 +107,7 @@ An instruction how to do that on a Windows system can be found below.
 
     #### Homebrew
 
-    We recommend installing Python from the terminal via [Homebrew](https://brew.sh/): 
+    We recommend installing Python using [Homebrew](https://brew.sh/): 
     
     ```text
     brew install python@3.10
@@ -139,10 +130,9 @@ An instruction how to do that on a Windows system can be found below.
 
 If you want to use videos recorded by [**OTCamera**](/OTCamera) with **OTVision**,
 you need to convert the videos to .mp4 files first.
-For the conversion, we use the Open Source software *ffmpeg*.
+For the conversion, we use the Open Source software ffmpeg.
 
-Before using the `convert.py` script, make sure that *ffmpeg* is installed and added to
-PATH on your system:
+Before using the `convert.py` script, make sure that ffmpeg is installed and available systemwide:
 
 === "Windows"
 
@@ -150,17 +140,23 @@ PATH on your system:
     
     1. Download the file `ffmpeg-git-full.7z` from
         [gyan.dev](https://www.gyan.dev/ffmpeg/builds/).  
-    2. Unzip this file by using any file archiver such as Winrar or 7z in the folder of
+    2. Unzip this file by using any file archiver such as 7zip in a folder of
         your choice (e.g., `C:\ffmpeg`).
-    3. Now, run cmd as an administrator and set the environment path variable for ffmpeg
-        by running 
+    3. Now, open a Command Prompt with administrator privileges and set the environment path variable for ffmpeg:
     
-        ```text 
+        ```bat 
         setx /m PATH "path_to_your_ffmpeg_folder\bin;%PATH%"
         ```
         
         where `path_to_your_ffmpeg_folder` represents the folder that you have *ffmpeg*
             unzipped in.
+
+        If you unzipped to `C:\ffmpeg`, for example: 
+
+        ```bat 
+        setx /m PATH "C:\ffmpeg\bin;%PATH%"
+        ```
+        
     
     4. Restart your computer and verify the installation by running 
 
@@ -172,17 +168,16 @@ PATH on your system:
 
     #### Ubuntu repositories
 
-    If you use Ubuntu, you can install *ffmpeg* using the official Ubuntu repositories.
+    If you use Ubuntu, you can install ffmpeg using the official Ubuntu repositories.
 
     ```
-    sudo apt update
     sudo apt install ffmpeg
     ``` 
 
     #### Manual installation
 
-    For the manual installation of *ffmpeg* on Linux or if you use another Linux
-    distribution than Ubuntu, please refer to the instructions on the
+    For the manual installation of ffmpeg on Linux or if you use another 
+    distribution, please refer to the instructions on the
     [developers website](https://ffmpeg.org/download.html).
 
 === "macOS"
@@ -190,20 +185,19 @@ PATH on your system:
     #### Homebrew
 
     For the installation using Homebrew, use the following command in the terminal:
+
         ```text
         brew install ffmpeg
         ```
 
     #### Manual install
 
-    For the manual installation of *ffmpeg* on macOS, please refer to the instructions
+    For the manual installation of ffmpeg on macOS, please refer to the instructions
     on the [developers website](https://ffmpeg.org/download.html).
 
-### Optional: Nvidia CUDA
-
-> If you have a modern NVidia graphics card.
+### Nvidia CUDA (optional)
 
 If you intend to use **OTVision** on a Windows or Linux PC with a modern
-NVidia graphics card, download and install the latest version of the
+Nvidia graphics card, download and install the latest version of the
 [NVIDIA Cuda Toolkit](https://developer.nvidia.com/cuda-downloads) that is
 [supported by PyTorch](https://pytorch.org/) on your platform.
