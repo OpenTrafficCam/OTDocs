@@ -7,7 +7,7 @@ and Linux or the Command Prompt on Windows).
 
 ## The Command-Line Interface
 
-We provide a command-line interface (CLI) to run the OTVision pipeline or parts of it.
+We provide a command-line interface (CLI) to run the OTVision pipeline steps.
 This documentation is written for using the Command Prompt on Windows or the integrated
 terminals in Linux or macOS.
 
@@ -133,8 +133,3 @@ If you provide a folder, every `.otdet` file within the folder will be tracked.
 
 For each video file, the tracks will be written to a separate `.ottrk` file
 in the same folder as the input `.otdet` file.
-
-## Run the Pipeline
-
-!!! info "Coming soon"
-    Unfortunately, this functionaility is not tested yet.
