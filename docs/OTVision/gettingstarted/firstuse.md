@@ -1,7 +1,5 @@
 # Basic Usage
 
-> Lets **try** it out
-
 **OTVision** can be executed from any command-line tool (e.g., the Terminal on macOS
 and Linux or the Command Prompt on Windows).
 

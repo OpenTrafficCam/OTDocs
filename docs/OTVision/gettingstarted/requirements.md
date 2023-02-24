@@ -1,7 +1,5 @@
 # Requirements
 
-> it runs on **any** system
-
 **OTVision** is designed to run on any of the current computer operating systems
 (Windows, Linux and Mac).
 However, a few prerequisites are required before installing **OTVision** itself.

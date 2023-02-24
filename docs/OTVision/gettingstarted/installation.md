@@ -1,7 +1,5 @@
 # Installation
 
-> **Automatic** installation with one command
-
 In this section, we provide instructions how to install **OTVision** on the most common
 Operating Systems.
 
