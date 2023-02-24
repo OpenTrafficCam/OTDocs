@@ -1,4 +1,4 @@
-# detect.py
+# Detect
 
 ## Synopsis
 

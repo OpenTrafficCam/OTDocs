@@ -1,4 +1,4 @@
-# Configuration
+# Configuration File
 
 > **configure** it for your own needs
 
