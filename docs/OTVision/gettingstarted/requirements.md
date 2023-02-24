@@ -13,7 +13,7 @@ strongly recommend purchasing a powerful desktop computer or workstation
 (>= 8+ cores, >= 16 GB RAM)
 with a Nvidia graphics card (>= GeForce 10XX Series, better is usually faster).
 Make sure that the Nvidia drivers as well as the
-[NVidia CUDA Toolkit](#optional-nvidia-cuda)
+[NVidia CUDA Toolkit](#nvidia-cuda-optional)
 are installed and up-to-date to get the best performance.
 
 !!! info "Apple Neural Engine"
