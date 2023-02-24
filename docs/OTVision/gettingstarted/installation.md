@@ -1,48 +1,124 @@
 # Installation
 
-## Install Python 3.9
+In this section, we provide instructions how to install **OTVision** on the most common
+Operating Systems.
 
-If not done yet, install the latest 64-bit version of Python 3.9 via Windows installer from [www.python.org/downloads/](https://www.python.org/downloads/) as follows (Python 3.8.x should also work, the 32-bit version is not supported):
-
-??? help "What if I already have another Python version installed?"
-
-    In addition, also install Python 3.9. The last installed Python will automatically be the default Python interpreter of your system.
-
-    On Windows, it is also possible to change the default Python interpreter by changing the order of the system-wide environment variables (move Python39 and Python39\Scripts to the top, see animation below).
-
-    This is necessary e.g. if you have already installed Python 3.9, but another Python version is your default because you installed it in the meantime (e.g. 3.10).
-
-    ![Change default Python](installation/change_default_python_version_win10.gif)
-
-![Download Python](installation/Download_Python.PNG)
-
-![Install Python 1](installation/Install_Python_1.PNG)
-
-![Install Python 2](installation/Install_Python_2.PNG)
-
-![Install Python 3](installation/Install_Python_3.PNG)
-
-## Install NVIDIA Cuda 11.0
-
-> If you have a modern NVidia graphics card.
-
-If you intend to use OTVision on a PC with a modern NVidia graphics card, download and install the latest version of the [NVIDIA Cuda Toolkit](https://developer.nvidia.com/cuda-downloads) with default settings from the NVIDIA toolkit.
+Before installing **OTVision**, make sure your system meets all
+[requirements](../requirements/).
 
 ## Install OTVision
 
-1. Download and unzip the latest version of [OTVision](https://github.com/OpenTrafficCam/OTVision/archive/refs/heads/master.zip) from Github.
+We provide install scripts for the most common operating systems.
 
-2. In the unzipped folder double-click the "install_win-py39.bat" (or "install_win-py38.bat" respectively) and wait until the installation of the dependencies is complete.
+Download and unzip the latest version of
+[**OTVision**](https://github.com/OpenTrafficCam/OTVision/archive/refs/heads/master.zip)
+from GitHub or clone the
+[**OTVision** repository](https://github.com/OpenTrafficCam/OTVision).
 
-## To run OTVision
+=== "Windows"
 
-... double click the "OTVision.bat" to run the Software via graphical user interface.
+    Inside the unzipped folder open the `install.cmd` and wait until the
+    installation of the dependencies is complete.
+
+=== "Linux / macOS"
+
+    In a terminal, navigate to the **OTVision** folder and run the installer.
+
+    ```text 
+    ./install.sh
+    ``` 
+
+    The installation of the dependencies could take a moment.
+
+??? question "What is installed here?"
+
+    The `install` script will create and activate a virtual environment (venv)
+    and install the Python packages specified in the requirements.txt via pip
+    from the [Python Package Index](https://pypi.org/).
+    
+    If you want to contribute code, additional requirements should to be installed
+    in this virtual environment.
+    Therefore, also run the `install_dev.sh` in your **OTVision** folder
+    and wait until the installation of the dependencies is complete.
+    Find more information [here](https://opentrafficcam.org/contribute/).
+
+## Nvidia CUDA (optional)
+
+If you have a
+[Windows or Linux PC with a Nvidia graphics card](../requirements/#hardware-prerequisites)
+and already [installed CUDA](../requirements/#nvidia-cuda-optional),
+you have to perform additional steps in your Terminal/Command Prompt:
+
+### Check CUDA version
+
+Check if CUDA is recognized and available.
+
+```bash
+nvcc --version
+```
+
+Navigate to the OTVision root directory.
+
+```bash
+cd "path/to/OTVision"
+```
+
+!!! note "Where is the OTVision root directory?"
+
+    It's the folder you downloaded und unzipped.
+
+    Maybe your OTVision root directory is called `OTVision-main` after unzipping,
+    if you downloaded it from Github. This is the correct directory.
+
+    Inside the OTVision root directory, there is another directory called `OTVision`
+    (this child directory is the wrong directory).
+
+#### Activate virtual environment
+
+Activate the virtual environment that was created
+by running the [installation scripts](../installation).
+
+=== "Windows command prompt"
+
+    Open a Command Prompt an run:
+
+    ```cmd 
+    venv\Scripts\activate
+    ``` 
+
+=== "Linux / macOS terminal"
+
+    ```bash
+    source venv/bin/activate
+    ```
+
+The virtual environment should be activated, indicated by the `(venv)`
+in braces in front of your current working directory in the terminal.
+
+#### Install torch and torchvision for CUDA
+
+Depending on your operating system (Windows or Linux) and your CUDA version
+you can select, copy and run the install command from the
+[PyTorch site](https://pytorch.org/) under "INSTALL PYTORCH"
+(choose Build="Stable", Package="pip" and Language="Python").
+
+E.g., for CUDA 11.7 and the latest stable PyTorch Build, the command is:
+
+```bash
+pip3 install torch torchvision --extra-index-url https://download.pytorch.org/whl/cu117
+```
 
 ## If you encounter problems
 
-Maybe you also have to manually install Microsoft Visual C++ 14.0 or greater from the [Visual Studio Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/).
+Maybe you also have to install Microsoft Visual C++ 14.0 or greater from the
+[Visual Studio Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/).
 
-In case of further problems please [open an issue](https://github.com/OpenTrafficCam/OTVision/issues/new) in the OTVision repository on Github.
+In case of further problems please
+[open an issue](https://github.com/OpenTrafficCam/OTVision/issues/new)
+in the **OTVision** repository on GitHub or contact us.
+We are happy to know about you experience.
 
-We also welcome code contributions (e.g. fixing bugs or adding features) from other programmers by forking the repository and creating a pull request.
-Please check the [contribute section](https://opentrafficcam.org/contribute/) of this documentation first.
+We also welcome code contributions (e.g., fixing bugs or adding features) from other
+programmers by forking the repository and creating a pull request.
+Please check the [contribute section](/contribute/)
+of this documentation first.
