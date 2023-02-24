@@ -1,7 +1,5 @@
 # Configuration File
 
-> **configure** it for your own needs
-
 If you´re getting tired of providing all those parameters to the CLI, you can also
 specify them in a configuration `yaml` file and pass it´s path to the CLI instead.
 
@@ -19,7 +17,7 @@ You can specify parameters for the sub-tasks that are provided by OTVision
 The scripts for the respective sub-tasks only read the parameters they need.
 
 !!! warning
-    Any other parameters passed to the CLI will overwrite respective parameters from
+    Any parameter passed to the CLI will overwrite the respective parameter from
     the config file.
 
 In case of any problems, we suggest looking at
