@@ -12,11 +12,12 @@ The current pipeline consists of three core functionalities of **OTVision**:
 
 ```mermaid
 graph LR
-    subgraph OTVision
+    subgraph OTVision["OTVision:"]
         direction LR
         conv(<b>convert</b>\n\n...raw video\nfiles to mp4)
-            --> det(<b>detect</b>\n\n...road users\nin single\nframes)
-        det --> tr(<b>track</b>\n\n...detected road\nusers over\nmultiple frames)
+        det(<b>detect</b>\n\n...road users\nin single\nframes)
+        tr(<b>track</b>\n\n...detected road\nusers over\nmultiple frames)
+        conv --> det --> tr
     end
     tr .-> traj[/.ottrk\nTrajectories/]
     vf[/.mp4\nVideo Files/] .-> det
