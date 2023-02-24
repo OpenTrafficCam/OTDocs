@@ -11,7 +11,7 @@ python  track.py    [-p paths] [-c config]
 ## Description
 
 With the detected road users in one or more `.otdet` files, you are ready to start
-tracking road users over successice frames and even videos.
+tracking road users over consecutive frames and even consecutive videos.
 
 ## Parameters
 
@@ -42,13 +42,13 @@ Other parameters (including `paths`) are parsed from this configuration file.
 
 This parameter is optional.
 By default, the `user_config.otvision.yaml` in the root directory is read.
-This also overrides the default values of the following parameters.
+This also overrides the default values of all parameters.
 If the `user_config.otvision.yaml` in the root directory is missing and no other
-configuration file is specified, the default values of the following parameters are as
-described below.
+configuration file is specified, the default values of the parameters as
+described below are used.
 
 !!! warning
-    Any other parameters passed to the CLI will overwrite respective parameters from
+    Any parameter passed to the CLI will overwrite the respective parameter from
     the config file.
 
 ### sigma_l
@@ -56,7 +56,7 @@ described below.
 `--sigma_l <float>`
 
 The lower confidence threshold for the IOU tracker.
-Detections with confidences below `sigma_l` are not even considered for tracking.
+Detections with confidences below `sigma_l` are not considered for tracking at all.
 
 This parameter is optional and defaults to `0.27`.
 
@@ -86,7 +86,7 @@ This parameter is optional and defaults to `0.38`.
 `--t_min <int>`
 
 Minimum number of detections to count as a valid track.
-All tracks with less detections will be dissmissed.
+All tracks with less detections will be dismissed.
 
 This parameter is optional and defaults to `5`.
 
