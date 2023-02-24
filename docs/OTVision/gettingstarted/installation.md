@@ -99,7 +99,7 @@ in braces in front of your current working directory in the terminal.
 
 Depending on your operating system (Windows or Linux) and your CUDA version
 you can select, copy and run the install command from the
-[PyTorch Website](https://pytorch.org/) under "INSTALL PYTORCH"
+[PyTorch site](https://pytorch.org/) under "INSTALL PYTORCH"
 (choose Build="Stable", Package="pip" and Language="Python").
 
 E.g., for CUDA 11.7 and the latest stable PyTorch Build, the command is:
