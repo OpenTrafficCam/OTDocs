@@ -1,5 +1,7 @@
 ---
 site_name: OpenTrafficCam Documentation
+site_url:  https://opentrafficcam.org/
+site_author: OpenTrafficCam Contributors
 
 theme:
         name: material
@@ -127,7 +129,7 @@ extra:
                   name: OpenTrafficCam on GitHub
 
 copyright: >
-        Copyright &copy; 2020 - 2022 OpenTrafficCam Contributors
+        Copyright &copy; 2020 - 2023 OpenTrafficCam Contributors
         <a href="https://platomo.de/impressum/">Impressum / Legal Notice</a>
 repo_url: https://github.com/OpenTrafficCam/OTDocs
 repo_name: OpenTrafficCam/OTDocs
