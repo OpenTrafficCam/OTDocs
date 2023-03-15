@@ -18,6 +18,14 @@ you are ready to start the detection of the road users in each video frame.
 
 ### paths (required)
 
+!!! info "File name convention"
+
+    In the the video files recorded by **OTCamera**, the start date and time of the video file are provided in the file name. 
+    In order to prevent to set the start date and time in the config file for each indivdual video file, the current version of **OTVision** reads the start date and time from the viedeo file name.
+    
+    In case you use **OTVision** to precess video files recorded by **other camera systems**, please make sure that the file name of these files contains the start date and time in the following format:
+    `YYYY-MM-TT_hh-mm-ss`
+
 `-p "path/to/video files" "path/to/other video files"`
 
 or
