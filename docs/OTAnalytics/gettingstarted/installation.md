@@ -24,7 +24,7 @@ If not done yet, install the 64-bit version Python 3.9.x via Windows installer f
 
 ## Install OTAnalytics
 
-1. Download and unzip the latest version of [OTAnalytics](https://github.com/OpenTrafficCam/OTAnalytics/archive/refs/heads/master.zip) from Github.
+1. Download and unzip the latest version of [OTAnalytics](https://github.com/OpenTrafficCam/OTAnalytics/archive/refs/heads/first-version.zip) from Github.
 
 2. In the unzipped folder Double-click the "install.bat" and wait until the installation of the dependencies is complete.
 
