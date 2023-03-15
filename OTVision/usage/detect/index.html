@@ -2180,6 +2180,13 @@ file formats (<code>.avi</code>,<code>.mkv</code>,<code>.mov</code>,<code>.mp4</
 you are ready to start the detection of the road users in each video frame.</p>
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
 <h3 id="paths-required">paths (required)<a class="headerlink" href="#paths-required" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Filename convention</p>
+<p>To prevent to set the start date and time in the config file for each indivdual video file, the current version of <strong>OTVision</strong> reads the start date and time from the video file names.</p>
+<p>Video files recorded by <strong>OTCamera</strong> already contain the start date and time in the file name. </p>
+<p>In case you use <strong>OTVision</strong> to process video files recorded by <strong>other camera systems</strong>, please make sure that the file name of these files contain the start date and time in the following format:
+<code>YYYY-MM-TT_hh-mm-ss</code></p>
+</div>
 <p><code>-p "path/to/video files" "path/to/other video files"</code></p>
 <p>or</p>
 <p><code>--paths "path/to/video files" "path/to/other video files"</code></p>
@@ -2251,7 +2258,7 @@ using a cached model from previous detection runs.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 24, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 15, 2023</span>
       
     
   </small>
