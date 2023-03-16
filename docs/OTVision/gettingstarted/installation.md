@@ -129,5 +129,5 @@ of this documentation first.
 If you want to contribute code, additional requirements should to be installed
 in the virtual environment.
 Clone the [**OTVision** repository](https://github.com/OpenTrafficCam/OTVision)
-from github. Run the `install_dev.sh` in your **OTVision** folder
+from GitHub. Run the `install_dev.sh` in your **OTVision** folder
 and wait until the installation of the dependencies is complete.
