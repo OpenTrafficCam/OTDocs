@@ -35,13 +35,6 @@ from GitHub or clone the
     The `install` script will create and activate a virtual environment (venv)
     and install the Python packages specified in the requirements.txt via pip
     from the [Python Package Index](https://pypi.org/).
-    
-    If you want to contribute code, additional requirements should to be installed
-    in this virtual environment.
-    Clone the [**OTVision** repository](https://github.com/OpenTrafficCam/OTVision) 
-    from github. Run the `install_dev.sh` in your **OTVision** folder
-    and wait until the installation of the dependencies is complete.
-    Find more information [here](https://opentrafficcam.org/contribute/).
 
 ## Nvidia CUDA (optional)
 
@@ -121,7 +114,15 @@ In case of further problems please
 in the **OTVision** repository on GitHub or contact us.
 We are happy to know about you experience.
 
-We also welcome code contributions (e.g., fixing bugs or adding features) from other
-programmers by forking the repository and creating a pull request.
+## Contribute
+
+We also welcome code contributions (e.g., fixing bugs or adding features) from others
+by forking the repository and creating a pull request.
 Please check the [contribute section](/contribute/)
 of this documentation first.
+
+If you want to contribute code, additional requirements should to be installed
+in the virtual environment.
+Clone the [**OTVision** repository](https://github.com/OpenTrafficCam/OTVision)
+from github. Run the `install_dev.sh` in your **OTVision** folder
+and wait until the installation of the dependencies is complete.
