@@ -1031,6 +1031,20 @@ OpenTrafficCam is a project that is currently under development. The content on 
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#activate-virtual-environment" class="md-nav__link">
+    Activate virtual environment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-torch-and-torchvision-for-cuda" class="md-nav__link">
+    Install torch and torchvision for CUDA
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1039,6 +1053,13 @@ OpenTrafficCam is a project that is currently under development. The content on 
         <li class="md-nav__item">
   <a href="#if-you-encounter-problems" class="md-nav__link">
     If you encounter problems
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contribute" class="md-nav__link">
+    Contribute
   </a>
   
 </li>
@@ -2026,6 +2047,20 @@ OpenTrafficCam is a project that is currently under development. The content on 
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#activate-virtual-environment" class="md-nav__link">
+    Activate virtual environment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-torch-and-torchvision-for-cuda" class="md-nav__link">
+    Install torch and torchvision for CUDA
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2034,6 +2069,13 @@ OpenTrafficCam is a project that is currently under development. The content on 
         <li class="md-nav__item">
   <a href="#if-you-encounter-problems" class="md-nav__link">
     If you encounter problems
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contribute" class="md-nav__link">
+    Contribute
   </a>
   
 </li>
@@ -2064,7 +2106,7 @@ Operating Systems.</p>
 <h2 id="install-otvision">Install OTVision<a class="headerlink" href="#install-otvision" title="Permanent link">&para;</a></h2>
 <p>We provide install scripts for the most common operating systems.</p>
 <p>Download and unzip the latest version of
-<a href="https://github.com/OpenTrafficCam/OTVision/archive/refs/heads/master.zip"><strong>OTVision</strong></a>
+<a href="https://github.com/OpenTrafficCam/OTVision/releases"><strong>OTVision</strong></a>
 from GitHub or clone the
 <a href="https://github.com/OpenTrafficCam/OTVision"><strong>OTVision</strong> repository</a>.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Windows</label><label for="__tabbed_1_2">Linux / macOS</label></div>
@@ -2086,17 +2128,14 @@ installation of the dependencies is complete.</p>
 <p>The <code>install</code> script will create and activate a virtual environment (venv)
 and install the Python packages specified in the requirements.txt via pip
 from the <a href="https://pypi.org/">Python Package Index</a>.</p>
-<p>If you want to contribute code, additional requirements should to be installed
-in this virtual environment.
-Therefore, also run the <code>install_dev.sh</code> in your <strong>OTVision</strong> folder
-and wait until the installation of the dependencies is complete.
-Find more information <a href="https://opentrafficcam.org/contribute/">here</a>.</p>
 </details>
 <h2 id="nvidia-cuda-optional">Nvidia CUDA (optional)<a class="headerlink" href="#nvidia-cuda-optional" title="Permanent link">&para;</a></h2>
 <p>If you have a
 <a href="../requirements/#hardware-prerequisites">Windows or Linux PC with a Nvidia graphics card</a>
 and already <a href="../requirements/#nvidia-cuda-optional">installed CUDA</a>,
-you have to perform additional steps in your Terminal/Command Prompt:</p>
+you chose the release with the suffix <code>-cuda</code>. It contains the requirements to use CUDA.
+If you want to contribute to <strong>OTVision</strong> and use CUDA, you have to perform additional
+steps in your Terminal/Command Prompt:</p>
 <h3 id="check-cuda-version">Check CUDA version<a class="headerlink" href="#check-cuda-version" title="Permanent link">&para;</a></h3>
 <p>Check if CUDA is recognized and available.</p>
 <div class="highlight"><pre><span></span><code>nvcc<span class="w"> </span>--version
@@ -2112,7 +2151,7 @@ if you downloaded it from Github. This is the correct directory.</p>
 <p>Inside the OTVision root directory, there is another directory called <code>OTVision</code>
 (this child directory is the wrong directory).</p>
 </div>
-<h4 id="activate-virtual-environment">Activate virtual environment<a class="headerlink" href="#activate-virtual-environment" title="Permanent link">&para;</a></h4>
+<h3 id="activate-virtual-environment">Activate virtual environment<a class="headerlink" href="#activate-virtual-environment" title="Permanent link">&para;</a></h3>
 <p>Activate the virtual environment that was created
 by running the <a href="../installation">installation scripts</a>.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Windows command prompt</label><label for="__tabbed_2_2">Linux / macOS terminal</label></div>
@@ -2130,7 +2169,10 @@ by running the <a href="../installation">installation scripts</a>.</p>
 </div>
 <p>The virtual environment should be activated, indicated by the <code>(venv)</code>
 in braces in front of your current working directory in the terminal.</p>
-<h4 id="install-torch-and-torchvision-for-cuda">Install torch and torchvision for CUDA<a class="headerlink" href="#install-torch-and-torchvision-for-cuda" title="Permanent link">&para;</a></h4>
+<h3 id="install-torch-and-torchvision-for-cuda">Install torch and torchvision for CUDA<a class="headerlink" href="#install-torch-and-torchvision-for-cuda" title="Permanent link">&para;</a></h3>
+<p>If you downloaded a <code>-cuda</code> release, you are good to go, if the CUDA version
+in the <code>requirements.txt</code> matches your system.</p>
+<p>To install another version you can do so follwing the PyTorch documentation:</p>
 <p>Depending on your operating system (Windows or Linux) and your CUDA version
 you can select, copy and run the install command from the
 <a href="https://pytorch.org/">PyTorch site</a> under "INSTALL PYTORCH"
@@ -2145,10 +2187,16 @@ you can select, copy and run the install command from the
 <a href="https://github.com/OpenTrafficCam/OTVision/issues/new">open an issue</a>
 in the <strong>OTVision</strong> repository on GitHub or contact us.
 We are happy to know about you experience.</p>
-<p>We also welcome code contributions (e.g., fixing bugs or adding features) from other
-programmers by forking the repository and creating a pull request.
+<h2 id="contribute">Contribute<a class="headerlink" href="#contribute" title="Permanent link">&para;</a></h2>
+<p>We also welcome code contributions (e.g., fixing bugs or adding features) from others
+by forking the repository and creating a pull request.
 Please check the <a href="/contribute/">contribute section</a>
 of this documentation first.</p>
+<p>If you want to contribute code, additional requirements should to be installed
+in the virtual environment.
+Clone the <a href="https://github.com/OpenTrafficCam/OTVision"><strong>OTVision</strong> repository</a>
+from GitHub. Run the <code>install_dev.sh</code> in your <strong>OTVision</strong> folder
+and wait until the installation of the dependencies is complete.</p>
 
   <hr>
 <div class="md-source-file">
