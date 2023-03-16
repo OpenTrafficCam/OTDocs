@@ -69,7 +69,7 @@ cd "path/to/OTVision"
     Inside the OTVision root directory, there is another directory called `OTVision`
     (this child directory is the wrong directory).
 
-#### Activate virtual environment
+### Activate virtual environment
 
 Activate the virtual environment that was created
 by running the [installation scripts](../installation).
@@ -91,7 +91,12 @@ by running the [installation scripts](../installation).
 The virtual environment should be activated, indicated by the `(venv)`
 in braces in front of your current working directory in the terminal.
 
-#### Install torch and torchvision for CUDA
+### Install torch and torchvision for CUDA
+
+If you downloaded a `-cuda` release, you are good to go, if the CUDA version
+in the `requirements.txt` matches your system.
+
+To install another version you can do so follwing the PyTorch documentation:
 
 Depending on your operating system (Windows or Linux) and your CUDA version
 you can select, copy and run the install command from the
