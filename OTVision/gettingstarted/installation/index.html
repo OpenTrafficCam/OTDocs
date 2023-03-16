@@ -2064,7 +2064,7 @@ Operating Systems.</p>
 <h2 id="install-otvision">Install OTVision<a class="headerlink" href="#install-otvision" title="Permanent link">&para;</a></h2>
 <p>We provide install scripts for the most common operating systems.</p>
 <p>Download and unzip the latest version of
-<a href="https://github.com/OpenTrafficCam/OTVision/releases"><strong>OTVision</strong></a>
+<a href="https://github.com/OpenTrafficCam/OTVision/archive/refs/heads/master.zip"><strong>OTVision</strong></a>
 from GitHub or clone the
 <a href="https://github.com/OpenTrafficCam/OTVision"><strong>OTVision</strong> repository</a>.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Windows</label><label for="__tabbed_1_2">Linux / macOS</label></div>
@@ -2088,8 +2088,7 @@ and install the Python packages specified in the requirements.txt via pip
 from the <a href="https://pypi.org/">Python Package Index</a>.</p>
 <p>If you want to contribute code, additional requirements should to be installed
 in this virtual environment.
-Clone the <a href="https://github.com/OpenTrafficCam/OTVision"><strong>OTVision</strong> repository</a> 
-from github. Run the <code>install_dev.sh</code> in your <strong>OTVision</strong> folder
+Therefore, also run the <code>install_dev.sh</code> in your <strong>OTVision</strong> folder
 and wait until the installation of the dependencies is complete.
 Find more information <a href="https://opentrafficcam.org/contribute/">here</a>.</p>
 </details>
@@ -2097,9 +2096,7 @@ Find more information <a href="https://opentrafficcam.org/contribute/">here</a>.
 <p>If you have a
 <a href="../requirements/#hardware-prerequisites">Windows or Linux PC with a Nvidia graphics card</a>
 and already <a href="../requirements/#nvidia-cuda-optional">installed CUDA</a>,
-you chose the release with the suffix <code>-cuda</code>. It contains the requirements to use CUDA.
-If you want to contribute to <strong>OTVision</strong> and use CUDA, you have to perform additional
-steps in your Terminal/Command Prompt:</p>
+you have to perform additional steps in your Terminal/Command Prompt:</p>
 <h3 id="check-cuda-version">Check CUDA version<a class="headerlink" href="#check-cuda-version" title="Permanent link">&para;</a></h3>
 <p>Check if CUDA is recognized and available.</p>
 <div class="highlight"><pre><span></span><code>nvcc<span class="w"> </span>--version
