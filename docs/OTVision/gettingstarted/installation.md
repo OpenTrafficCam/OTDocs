@@ -11,7 +11,7 @@ Before installing **OTVision**, make sure your system meets all
 We provide install scripts for the most common operating systems.
 
 Download and unzip the latest version of
-[**OTVision**](https://github.com/OpenTrafficCam/OTVision/archive/refs/heads/master.zip)
+[**OTVision**](https://github.com/OpenTrafficCam/OTVision/releases)
 from GitHub or clone the
 [**OTVision** repository](https://github.com/OpenTrafficCam/OTVision).
 
@@ -38,7 +38,8 @@ from GitHub or clone the
     
     If you want to contribute code, additional requirements should to be installed
     in this virtual environment.
-    Therefore, also run the `install_dev.sh` in your **OTVision** folder
+    Clone the [**OTVision** repository](https://github.com/OpenTrafficCam/OTVision) 
+    from github. Run the `install_dev.sh` in your **OTVision** folder
     and wait until the installation of the dependencies is complete.
     Find more information [here](https://opentrafficcam.org/contribute/).
 
@@ -47,7 +48,9 @@ from GitHub or clone the
 If you have a
 [Windows or Linux PC with a Nvidia graphics card](../requirements/#hardware-prerequisites)
 and already [installed CUDA](../requirements/#nvidia-cuda-optional),
-you have to perform additional steps in your Terminal/Command Prompt:
+you chose the release with the suffix `-cuda`. It contains the requirements to use CUDA.
+If you want to contribute to **OTVision** and use CUDA, you have to perform additional
+steps in your Terminal/Command Prompt:
 
 ### Check CUDA version
 
