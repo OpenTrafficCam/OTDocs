@@ -3,8 +3,8 @@
 The main purpose of OpenTrafficCam is to automatically obtain traffic metrics from
 video footage.
 
-For this purpose, the "autocount" button will generate a list of events, where each
-event represents a road user crossing a section.
+For this purpose, the "Generate event list" button will generate a list of events,
+where each event represents a road user crossing a section.
 For each event, the section name, the road user class, the time and the pixel
 coordinates will be saved.
 

@@ -77,8 +77,8 @@ nav:
                             - OTAnalytics/gettingstarted/installation.md
                             - OTAnalytics/gettingstarted/firstuse.md
                   - Usage:
-                            - OTAnalytics/preparingtracks/sections.md
-                            - OTAnalytics/trafficanalytics/events.md
+                            - OTAnalytics/usage/sections.md
+                            - OTAnalytics/usage/events.md
                   - Accuracy:
                             - OTAnalytics/Accuracy/counts.md
 
