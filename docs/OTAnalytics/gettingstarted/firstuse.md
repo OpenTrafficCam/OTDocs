@@ -5,7 +5,7 @@
 OTAnalytics provides a simple graphical user interface.
 Your first step should be to load a video file in the most common formats (e.g. mp4)
 by clicking on the "load video"-button.
-The chosen file name will be inserted in the upper left listbox and a canvas with the
+The chosen filename will be inserted in the upper left listbox and a canvas with the
 first videoframe will be created.
 You can navigate through the video by either by scrolling, sliding or simply playing
 the video.
