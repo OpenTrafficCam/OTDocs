@@ -114,6 +114,23 @@ python detect.py -p "path/to/your/video files"
 where `path/to/video files` is either the path to a single video file or a folder
 containing multiple video files.
 
+!!! info "Naming convention for your video files"
+    The file names must contain the date and time of the start of the video in the
+    following pattern:
+
+    `YYYY-MM-DD_HH-MM-SS`
+
+    Example: `path/to/my/video_2023-04-26_12-15-00.mp4`
+
+    By specifying this, OTVision can link the detections and tracks in successive videos
+    so that there are no 'cracks' through many individual videos.
+
+    If you use [OTCamera](https://opentrafficcam.org/OTCamera/) to record your videos,
+    the video files are automatically named according to this pattern.
+
+    If you do not know the start date and time, you can simply use a dummy date
+    (e.g. `1970-01-01_00-00-00`).
+
 For each video file, the detected objects will be written to a separate `.otdet` file
 in the same folder with the same name as the input video file.
 
