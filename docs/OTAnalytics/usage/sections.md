@@ -15,7 +15,7 @@ Created sections will appear in the middle left listbox.
 The selected section will be highlighted on canvas and can be deleted or renamed.
 
 You can also save and load a section configuration.
-They are saved as filetype `.otflow` in `JSON` format.
+They are saved as file type `.otflow` in `JSON` format.
 
 ![OTAnalytics_add_sections](sections.gif)
 

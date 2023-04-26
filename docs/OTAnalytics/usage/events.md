@@ -8,7 +8,7 @@ where each event represents a road user crossing a section.
 For each event, the section name, the road user class, the time and the pixel
 coordinates will be saved.
 
-An eventlist with filetype `_events.csv`  is exported in comma-separated `CSV` format.
+An eventlist with file type `_events.csv`  is exported in comma-separated `CSV` format.
 You can aggregate these events to determine traffic counts or other traffic metrics.
 
 !!! warning "Early prototype"
