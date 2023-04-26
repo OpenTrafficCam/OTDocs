@@ -30,9 +30,7 @@ If not done yet, install the 64-bit version Python 3.9.x via Windows installer f
 ## Install OTAnalytics
 
 1. Download and unzip the latest version of
-   [OTAnalytics](
-    https://github.com/OpenTrafficCam/OTAnalytics/archive/refs/heads/first-version.zip
-    )
+   [OTAnalytics][1]
    from GitHub.
 
 2. In the unzipped folder Double-click the "install.bat" and wait until
@@ -61,3 +59,5 @@ of this documentation first.
     which will also be tested Mac and Linux machines.
     
     Stay tuned :)
+
+[1]: https://github.com/OpenTrafficCam/OTAnalytics/archive/refs/heads/first-version.zip
