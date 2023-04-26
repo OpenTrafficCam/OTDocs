@@ -14,6 +14,9 @@ You can aggregate these events to determine traffic counts or other traffic metr
 !!! warning "Early prototype"
 
     The version of OTAnalytics described in this documentation is in early
-    prototype stage.
+    prototype stage. It is only tested on 64 bit Windows 10 machines.
 
-    We are currently working on a stable release. Stay tuned :)
+    We are currently working on a stable release,
+    which will also be tested Mac and Linux machines.
+    
+    Stay tuned :)
