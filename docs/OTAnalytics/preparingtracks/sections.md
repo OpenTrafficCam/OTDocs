@@ -1,17 +1,30 @@
-# Sections
+# Define sections
 
-OTAnalytics provides functions to lay down sections for analyzing traffic flow and volume over time or traffic composition.
-Sections work as sensors which can detect crossing events and associated time and also the direction of objects if driven over multiple sections.
-Sections can easily be modeled as line or areasections depending on your purpose.
+OTAnalytics provides functions to define sections for analyzing traffic flows at
+specific locations in your video.
+Sections work as sensors which can detect road user´s crossing events
+and their associated time.
 
 ## Create and delete Sections
 
-For a linesection simply toggle the "Line"-button, click- and drag your mouse over the canvas.
-Press enter to define a sectionname and finish the creationprocess.
-Areasections work almost similar.
-Leftclick to define boundaries and rightclick to automatically close the polygon.
+To create a section, click the "New" button, then click and drag your mouse over the
+canvas.
+Press enter to define a section name and finish the creation process.
+
 Created sections will appear in the middle left listbox.
-Selected section will be highlighted on canvas and can be deleted or renamed.
-If you want to continue your work you can ex- and later import a flow-file that contains information about sections and movements.
+The selected section will be highlighted on canvas and can be deleted or renamed.
+
+You can also save and load a section configuration.
+They are saved as filetype `.otflow` in `JSON` format.
 
 ![OTAnalytics_add_sections](sections.gif)
+
+!!! warning "Early prototype"
+
+    The version of OTAnalytics described in this documentation is in early
+    prototype stage. It is only tested on 64 bit Windows 10 machines.
+
+    We are currently working on a stable release,
+    which will also be tested Mac and Linux machines.
+    
+    Stay tuned :)

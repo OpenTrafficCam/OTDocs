@@ -1,6 +1,6 @@
 ---
 site_name: OpenTrafficCam Documentation
-site_url:  https://opentrafficcam.org/
+site_url: https://opentrafficcam.org/
 site_author: OpenTrafficCam Contributors
 
 theme:
@@ -76,11 +76,9 @@ nav:
                             - OTAnalytics/gettingstarted/requirements.md
                             - OTAnalytics/gettingstarted/installation.md
                             - OTAnalytics/gettingstarted/firstuse.md
-                  - Preparing Tracks:
+                  - Usage:
                             - OTAnalytics/preparingtracks/sections.md
-                            - OTAnalytics/preparingtracks/movements.md
-                  - Traffic Analytics:
-                            - OTAnalytics/trafficanalytics/counts.md
+                            - OTAnalytics/trafficanalytics/events.md
                   - Accuracy:
                             - OTAnalytics/Accuracy/counts.md
 
