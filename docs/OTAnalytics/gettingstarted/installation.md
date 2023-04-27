@@ -33,30 +33,34 @@ If not done yet, install the 64-bit version Python 3.9.x via Windows installer f
    [OTAnalytics][1]
    from GitHub.
 
-2. In the unzipped folder Double-click the "install.bat" and wait until
+2. In the unzipped folder double click the "install.bat" and wait until
    the installation of the dependencies is complete.
 
 ## To run OTAnalytics
 
-... double click the "OTAnalytics.bat" to run the Software via graphical user interface.
+... double click the "OTAnalytics.bat" to start the graphical user interface.
 
 ## If you encounter problems
 
 ... please [open an issue](https://github.com/OpenTrafficCam/OTAnalytics/issues/new)
 in the OTAnalytics repository on GitHub.
 
-We also welcome code contributions (e.g. fixing bugs or adding features) from other
-programmers by forking the repository and creating a pull request.
+We also welcome code contributions (e.g. fixing bugs or adding features) from others
+by forking the repository and creating a pull request.
 Please check the [contribute section](https://opentrafficcam.org/contribute/)
 of this documentation first.
 
 !!! warning "Early prototype"
 
-    The version of OTAnalytics described in this documentation is in early
-    prototype stage. It is only tested on 64 bit Windows 10 machines.
+    The currently available version of OTAnalytics described in this
+    documentation is in early prototype stage.
+    This version works and offers an impression of the functionality.  
 
-    We are currently working on a stable release,
-    which will also be tested Mac and Linux machines.
+    It is partially tested on Windows 10.
+
+    We are currently working on a complete re-implementation
+    for a stable release.
+    It will also be tested on Mac and Linux.
     
     Stay tuned :)
 
