@@ -16,7 +16,7 @@
         <link rel="prev" href="../installation/">
       
       
-        <link rel="next" href="../../preparingtracks/sections/">
+        <link rel="next" href="../../usage/sections/">
       
       <link rel="icon" href="../../../assets/OTC_icon.svg">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.7">
@@ -1280,21 +1280,21 @@ OpenTrafficCam is a project that is currently under development. The content on 
       
         <li class="md-nav__item">
   <a href="#load-video" class="md-nav__link">
-    Load Video
+    Load video
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#load-and-select-detections" class="md-nav__link">
-    Load and select Detections
+  <a href="#load-and-select-trajectories" class="md-nav__link">
+    Load and select trajectories
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#first-glance" class="md-nav__link">
-    First glance
+  <a href="#check-trajectories" class="md-nav__link">
+    Check Trajectories
   </a>
   
 </li>
@@ -1333,14 +1333,14 @@ OpenTrafficCam is a project that is currently under development. The content on 
       
       
         <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
-          Preparing Tracks
+          Usage
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_4_3">
           <span class="md-nav__icon md-icon"></span>
-          Preparing Tracks
+          Usage
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -1350,8 +1350,8 @@ OpenTrafficCam is a project that is currently under development. The content on 
   
   
     <li class="md-nav__item">
-      <a href="../../preparingtracks/sections/" class="md-nav__link">
-        Sections
+      <a href="../../usage/sections/" class="md-nav__link">
+        Define Sections
       </a>
     </li>
   
@@ -1364,8 +1364,8 @@ OpenTrafficCam is a project that is currently under development. The content on 
   
   
     <li class="md-nav__item">
-      <a href="../../preparingtracks/movements/" class="md-nav__link">
-        Movements
+      <a href="../../usage/events/" class="md-nav__link">
+        Obtain Traffic Metrics
       </a>
     </li>
   
@@ -1397,62 +1397,12 @@ OpenTrafficCam is a project that is currently under development. The content on 
       
       
         <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
-          Traffic Analytics
+          Accuracy
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_4_4">
-          <span class="md-nav__icon md-icon"></span>
-          Traffic Analytics
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../trafficanalytics/counts/" class="md-nav__link">
-        Traffic Counts
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-      
-      
-      
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" >
-      
-      
-      
-        <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
-          Accuracy
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_4_5">
           <span class="md-nav__icon md-icon"></span>
           Accuracy
         </label>
@@ -1993,21 +1943,21 @@ OpenTrafficCam is a project that is currently under development. The content on 
       
         <li class="md-nav__item">
   <a href="#load-video" class="md-nav__link">
-    Load Video
+    Load video
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#load-and-select-detections" class="md-nav__link">
-    Load and select Detections
+  <a href="#load-and-select-trajectories" class="md-nav__link">
+    Load and select trajectories
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#first-glance" class="md-nav__link">
-    First glance
+  <a href="#check-trajectories" class="md-nav__link">
+    Check Trajectories
   </a>
   
 </li>
@@ -2031,32 +1981,52 @@ OpenTrafficCam is a project that is currently under development. The content on 
 
 
 <h1 id="first-use">First Use<a class="headerlink" href="#first-use" title="Permanent link">&para;</a></h1>
-<h2 id="load-video">Load Video<a class="headerlink" href="#load-video" title="Permanent link">&para;</a></h2>
-<p>OTAnalytics provides a simple and classic Point-and-Click-Userinterface.
-Your first step should be to load a videofile in the most common formats such as mkv or mp4 by clicking on the "load video"-button.
-The chosen filename will be inserted in the upper left listbox and a canvas with the first videoframe will be created.
-You can navigate through the video by either by scrolling, sliding or simply playing the video.</p>
-<h2 id="load-and-select-detections">Load and select Detections<a class="headerlink" href="#load-and-select-detections" title="Permanent link">&para;</a></h2>
-<p>With click on the "Load tracks"-button a dialogue window pops up which asks for the trackfile from <a href="https://github.com/OpenTrafficCam/OTVision"><strong>OTVision</strong></a>.
-This file contains framewise information about vehicles such as class, position and size in pixel of detected objects.
-With this information OTAnalytics can calculate bounding boxes and driven tracks and colors them dependent on vehicleclass.
-After the import object IDs and object class will be displayed in die middle right listbox.
-You can display a single track or multiple tracks by selecting the object IDs or you can display all tracks at once.</p>
-<h2 id="first-glance">First glance<a class="headerlink" href="#first-glance" title="Permanent link">&para;</a></h2>
-<p>After importing all necessary files.
-Its important to check if chosen data correspond to eachother.
+<h2 id="load-video">Load video<a class="headerlink" href="#load-video" title="Permanent link">&para;</a></h2>
+<p>OTAnalytics provides a simple graphical user interface.
+Your first step should be to load a video file in the most common formats (e.g. mp4)
+by clicking on the "load video"-button.
+The chosen filename will be inserted in the upper left listbox and a canvas with the
+first videoframe will be created.
+You can navigate through the video by either mouse wheel scrolling, sliding or simply playing
+the video.</p>
+<h2 id="load-and-select-trajectories">Load and select trajectories<a class="headerlink" href="#load-and-select-trajectories" title="Permanent link">&para;</a></h2>
+<p>A click on the "Load tracks"-button opens a dialogue window which asks for a
+tracks file from <a href="https://github.com/OpenTrafficCam/OTVision"><strong>OTVision</strong></a>.
+Here you have to select a file with <code>.ottrk</code> extension,
+which corresponds to the video you loaded earlier.
+This file contains framewise information about road users such as class, position,
+and size.</p>
+<p>After loading the tracks, the road users ID´s and classes will be displayed in a listbox.
+The user interface also provides multiple options to display the tracks on the canvas:</p>
+<ul>
+<li>a single track or multiple tracks by selecting the road users IDs or
+    you can display all tracks at once.</li>
+<li>bounding boxes and tracks of the cars currently visible on the canvas.</li>
+</ul>
+<h2 id="check-trajectories">Check Trajectories<a class="headerlink" href="#check-trajectories" title="Permanent link">&para;</a></h2>
+<p>After importing all necessary files,
+it is important to check if chosen data correspond to eachother.
 The easiest way to do this, is to play, slide or scroll through the video.
-If correct, bounding boxes should overlay vehicles, pedestrians and cyclist.
-The bounding boxes are annotated with object class and confidence factor.
-Its also possible to live draw tracks.</p>
+The bounding boxes should overlay vehicles, pedestrians, and cyclists.</p>
 <p><img alt="OTAnalytics_first_glance" src="../tracks.gif" /></p>
+<div class="admonition warning">
+<p class="admonition-title">Early prototype</p>
+<p>The currently available version of OTAnalytics described in this
+documentation is in early prototype stage.
+This version works and offers an impression of the functionality.  </p>
+<p>It is partially tested on Windows 10.</p>
+<p>We are currently working on a complete re-implementation
+for a stable release.
+It will also be tested on Mac and Linux.</p>
+<p>Stay tuned :)</p>
+</div>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 28, 2021</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 27, 2023</span>
       
     
   </small>
