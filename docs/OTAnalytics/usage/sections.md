@@ -9,7 +9,7 @@ and their associated time.
 
 To create a section, click the "New" button, then click and drag your mouse over the
 canvas.
-Press enter to define a section name and finish the creation process.
+Press enter to define a section name and finish the creation.
 
 Created sections will appear in the middle left listbox.
 The selected section will be highlighted on canvas and can be deleted or renamed.
@@ -21,10 +21,14 @@ They are saved as file type `.otflow` in `JSON` format.
 
 !!! warning "Early prototype"
 
-    The version of OTAnalytics described in this documentation is in early
-    prototype stage. It is only tested on 64 bit Windows 10 machines.
+    The currently available version of OTAnalytics described in this
+    documentation is in early prototype stage.
+    This version works and offers an impression of the functionality.  
 
-    We are currently working on a stable release,
-    which will also be tested Mac and Linux machines.
+    It is partially tested on Windows 10.
+
+    We are currently working on a complete re-implementation
+    for a stable release.
+    It will also be tested on Mac and Linux.
     
     Stay tuned :)
