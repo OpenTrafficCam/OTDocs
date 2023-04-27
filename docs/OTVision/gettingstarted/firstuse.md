@@ -22,7 +22,7 @@ cd "path/to/OTVision"
     It's the folder you downloaded und unzipped.
 
     Maybe your OTVision root directory is called `OTVision-main` after unzipping,
-    if you downloaded it from Github. This is the correct directory.
+    if you downloaded it from GitHub. This is the correct directory.
 
     Inside the OTVision root directory, there is another directory called `OTVision`
     (this child directory is the wrong directory).
@@ -115,7 +115,7 @@ where `path/to/video files` is either the path to a single video file or a folde
 containing multiple video files.
 
 !!! info "Naming convention for your video files"
-    The file names must contain the date and time of the start of the video in the
+    The filenames must contain the date and time of the start of the video in the
     following pattern:
 
     `YYYY-MM-DD_HH-MM-SS`
