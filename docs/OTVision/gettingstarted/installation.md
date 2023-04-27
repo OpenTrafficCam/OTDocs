@@ -103,10 +103,10 @@ you can select, copy and run the install command from the
 [PyTorch site](https://pytorch.org/) under "INSTALL PYTORCH"
 (choose Build="Stable", Package="pip" and Language="Python").
 
-E.g., for CUDA 11.7 and the latest stable PyTorch Build, the command is:
+E.g., for CUDA 11.6 and the latest stable PyTorch Build, the command is:
 
 ```bash
-pip3 install torch torchvision --extra-index-url https://download.pytorch.org/whl/cu117
+pip3 install torch torchvision --extra-index-url https://download.pytorch.org/whl/cu116
 ```
 
 ## If you encounter problems
