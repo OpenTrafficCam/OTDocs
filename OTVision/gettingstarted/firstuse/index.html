@@ -2063,7 +2063,7 @@ terminals in Linux or macOS.</p>
 <p class="admonition-title">Where is the OTVision root directory?</p>
 <p>It's the folder you downloaded und unzipped.</p>
 <p>Maybe your OTVision root directory is called <code>OTVision-main</code> after unzipping,
-if you downloaded it from Github. This is the correct directory.</p>
+if you downloaded it from GitHub. This is the correct directory.</p>
 <p>Inside the OTVision root directory, there is another directory called <code>OTVision</code>
 (this child directory is the wrong directory).</p>
 </div>
@@ -2133,6 +2133,19 @@ Therefore, we provide the <code>detect.py</code> script.</p>
 </code></pre></div>
 <p>where <code>path/to/video files</code> is either the path to a single video file or a folder
 containing multiple video files.</p>
+<div class="admonition info">
+<p class="admonition-title">Naming convention for your video files</p>
+<p>The filenames must contain the date and time of the start of the video in the
+following pattern:</p>
+<p><code>YYYY-MM-DD_HH-MM-SS</code></p>
+<p>Example: <code>path/to/my/video_2023-04-26_12-15-00.mp4</code></p>
+<p>By specifying this, OTVision can link the detections and tracks in successive videos
+so that there are no 'cracks' through many individual videos.</p>
+<p>If you use <a href="https://opentrafficcam.org/OTCamera/">OTCamera</a> to record your videos,
+the video files are automatically named according to this pattern.</p>
+<p>If you do not know the start date and time, you can simply use a dummy date
+(e.g. <code>1970-01-01_00-00-00</code>).</p>
+</div>
 <p>For each video file, the detected objects will be written to a separate <code>.otdet</code> file
 in the same folder with the same name as the input video file.</p>
 <h2 id="track">Track<a class="headerlink" href="#track" title="Permanent link">&para;</a></h2>
@@ -2153,7 +2166,7 @@ in the same folder as the input <code>.otdet</code> file.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 24, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 27, 2023</span>
       
     
   </small>
