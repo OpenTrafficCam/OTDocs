@@ -198,6 +198,5 @@ Before using the `convert.py` script, make sure that ffmpeg is installed and ava
 ### Nvidia CUDA (optional)
 
 If you intend to use **OTVision** on a Windows or Linux PC with a modern
-Nvidia graphics card, download and install the latest version of the
-[NVIDIA Cuda Toolkit](https://developer.nvidia.com/cuda-downloads) that is
-[supported by PyTorch](https://pytorch.org/) on your platform.
+Nvidia graphics card, download and install version **11.6** of the
+[NVIDIA Cuda Toolkit](https://developer.nvidia.com/cuda-downloads).
