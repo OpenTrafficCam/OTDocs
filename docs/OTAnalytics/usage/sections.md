@@ -1,11 +1,11 @@
-# Define sections
+# Define Sections
 
 OTAnalytics provides functions to define sections for analyzing traffic flows at
 specific locations in your video.
 Sections work as sensors which can detect road user´s crossing events
 and their associated time.
 
-## Create and delete Sections
+## Create and Delete Sections
 
 To create a section, click the "New" button, then click and drag your mouse over the
 canvas.

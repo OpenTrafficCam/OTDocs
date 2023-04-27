@@ -1,4 +1,4 @@
-# Obtain traffic metrics
+# Obtain Traffic Metrics
 
 The main purpose of OpenTrafficCam is to automatically obtain traffic metrics from
 video footage.
