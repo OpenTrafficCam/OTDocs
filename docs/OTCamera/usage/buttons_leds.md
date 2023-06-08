@@ -11,7 +11,9 @@ The switches from left to right are:
 
 The three LEDs correspond to the rightmost three switches.
 
-The **Reset** switch functions as a constant power supply for the Raspberry Pi.
+## Reset Switch
+
+The Reset switch functions as a constant power supply for the Raspberry Pi.
 When the switch is turned off, the power supply to the Raspberry Pi is interrupted.
 Therefore, it is recommended to keep the Reset switch always turned on unless there is a problem with the Raspberry Pi.
 
@@ -21,7 +23,9 @@ Therefore, it is recommended to keep the Reset switch always turned on unless th
 
 The other three switches are used for normal operation.
 
-The **Boot** switch is used to power the system on and off.
+## Boot Switch and LED
+
+The Boot switch is used to power the system on and off.
 When it is turned on, the green LED below the switch remains continuously lit.
 
 Once the Raspberry Pi has finished booting and OTCamera has been launched, the green LED starts blinking.
@@ -30,7 +34,9 @@ If it blinks only once, the system is running on internal battery power.
 
 After OTCamera has finished booting, the other two LEDs also start blinking (if the Wi-Fi and 24/7 switches are turned on).
 
-The **Wi-Fi** switch controls the Wi-Fi module of the Raspberry Pi.
+## Wi-Fi Switch and LED
+
+The Wi-Fi switch controls the Wi-Fi module of the Raspberry Pi.
 This includes both the connection to a Wi-Fi network and the Wi-Fi access point of the OTCamera itself.
 
 When the switch is turned off, the Wi-Fi is turned off after a configurable time period (default is 15 minutes).
@@ -46,7 +52,9 @@ If the switch is turned off again, the timer starts again from the beginning.
 
 If the Wi-Fi switch is already turned off when OTCamera starts up, the Wi-Fi is immediately turned off after the start (without a timer).
 
-The **24/7** switch controls when OTCamera records videos.
+## 24/7 Switch and Record LED
+
+The 24/7 switch controls when OTCamera records videos.
 If the switch is turned on, recording is continuous.
 If the switch is turned off, recording only occurs between a configured start and end time (default is from 06:00 AM to 10:00 PM).
 
