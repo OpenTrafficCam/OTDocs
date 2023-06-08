@@ -51,7 +51,7 @@ nav:
       - Usage:
           - OTCamera/usage/preparation_safety.md
           - OTCamera/usage/mounting.md
-          - OTCamera/usage/recording.md
+          - OTCamera/usage/buttons_leds.md
           - OTCamera/usage/getvideos.md
       - Advanced Usage:
           - OTCamera/advanced_usage/configration.md
