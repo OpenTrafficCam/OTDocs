@@ -55,7 +55,7 @@ nav:
           - OTCamera/usage/getvideos.md
       - Advanced Usage:
           - OTCamera/advanced_usage/configration.md
-          - OTCamera/advanced_usage/calibrate.md
+          # - OTCamera/advanced_usage/calibrate.md
   - OTVision:
       - OTVision/index.md
       - Getting Started:
