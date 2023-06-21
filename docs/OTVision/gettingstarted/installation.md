@@ -11,7 +11,7 @@ Before installing **OTVision**, make sure your system meets all
 We provide install scripts for the most common operating systems.
 
 Download and unzip the latest version of
-[**OTVision**](https://github.com/OpenTrafficCam/OTVision/archive/refs/heads/master.zip)
+[**OTVision**](https://github.com/OpenTrafficCam/OTVision/releases)
 from GitHub or clone the
 [**OTVision** repository](https://github.com/OpenTrafficCam/OTVision).
 
@@ -35,19 +35,15 @@ from GitHub or clone the
     The `install` script will create and activate a virtual environment (venv)
     and install the Python packages specified in the requirements.txt via pip
     from the [Python Package Index](https://pypi.org/).
-    
-    If you want to contribute code, additional requirements should to be installed
-    in this virtual environment.
-    Therefore, also run the `install_dev.sh` in your **OTVision** folder
-    and wait until the installation of the dependencies is complete.
-    Find more information [here](https://opentrafficcam.org/contribute/).
 
 ## Nvidia CUDA (optional)
 
 If you have a
 [Windows or Linux PC with a Nvidia graphics card](../requirements/#hardware-prerequisites)
 and already [installed CUDA](../requirements/#nvidia-cuda-optional),
-you have to perform additional steps in your Terminal/Command Prompt:
+you chose the release with the suffix `-cuda`. It contains the requirements to use CUDA.
+If you want to contribute to **OTVision** and use CUDA, you have to perform additional
+steps in your Terminal/Command Prompt:
 
 ### Check CUDA version
 
@@ -73,7 +69,7 @@ cd "path/to/OTVision"
     Inside the OTVision root directory, there is another directory called `OTVision`
     (this child directory is the wrong directory).
 
-#### Activate virtual environment
+### Activate virtual environment
 
 Activate the virtual environment that was created
 by running the [installation scripts](../installation).
@@ -95,17 +91,22 @@ by running the [installation scripts](../installation).
 The virtual environment should be activated, indicated by the `(venv)`
 in braces in front of your current working directory in the terminal.
 
-#### Install torch and torchvision for CUDA
+### Install torch and torchvision for CUDA
+
+If you downloaded a `-cuda` release, you are good to go, if the CUDA version
+in the `requirements.txt` matches your system.
+
+To install another version you can do so follwing the PyTorch documentation:
 
 Depending on your operating system (Windows or Linux) and your CUDA version
 you can select, copy and run the install command from the
 [PyTorch site](https://pytorch.org/) under "INSTALL PYTORCH"
 (choose Build="Stable", Package="pip" and Language="Python").
 
-E.g., for CUDA 11.7 and the latest stable PyTorch Build, the command is:
+E.g., for CUDA 11.6 and the latest stable PyTorch Build, the command is:
 
 ```bash
-pip3 install torch torchvision --extra-index-url https://download.pytorch.org/whl/cu117
+pip3 install torch torchvision --extra-index-url https://download.pytorch.org/whl/cu116
 ```
 
 ## If you encounter problems
@@ -118,7 +119,15 @@ In case of further problems please
 in the **OTVision** repository on GitHub or contact us.
 We are happy to know about you experience.
 
-We also welcome code contributions (e.g., fixing bugs or adding features) from other
-programmers by forking the repository and creating a pull request.
+## Contribute
+
+We also welcome code contributions (e.g., fixing bugs or adding features) from others
+by forking the repository and creating a pull request.
 Please check the [contribute section](/contribute/)
 of this documentation first.
+
+If you want to contribute code, additional requirements should to be installed
+in the virtual environment.
+Clone the [**OTVision** repository](https://github.com/OpenTrafficCam/OTVision)
+from GitHub. Run the `install_dev.sh` in your **OTVision** folder
+and wait until the installation of the dependencies is complete.
