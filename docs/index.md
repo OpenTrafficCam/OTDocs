@@ -2,29 +2,29 @@
 
 ![OpenTrafficCam Overview](OpenTrafficCam_1200.svg)
 
-> Open**Traffic**Cam makes analyzing traffic easier, faster and more efficient.
+> You are looking for a tool that makes analyzing traffic easier, faster and more efficient? 
 
-Welcome to **OpenTrafficCam**, the only fully integrated open source workflow for video-based recording
+Welcome to **OpenTrafficCam** - the only fully integrated open source workflow for video-based recording
 and automated analysis of road traffic.
 
-This site will cover all the documentation in one place.
+On this website you will find all the information about the process steps to set up the OpenTrafficCam. 
 
-Check out our [GitHub page](https://github.com/OpenTrafficCam) for downloads and code.
+You want to know more? Check out our [GitHub page](https://github.com/OpenTrafficCam) for downloads and codes.
 
 ## Motivation
 
 Thanks to the rapid development of computer hardware and machine learning in the last decade,
 automatic object detection is state of the art in many business sectors.
-Road traffic, on the other hand, is still often surveyed manually at great expense.
-There exist tools that optimize some of the processing steps,
+However, most of the time road traffic is still surveyed manually to a great expense.
+There are tools that optimize some of the processing steps,
 but they can hardly be used without programming skills or they cause significant costs.
-This is why research and planning still have to be conducted with minimal data or sometimes without any at all.
+This is why research and planning still have to be conducted with minimal or sometimes without any data at all.
 This lack of data primarily affects sustainable modes of transportation such as walking and cycling.
 
 OpenTrafficCam aims to address this gap for a stronger data base
 for transportation planning, policy and research.
 In doing so, we ourselves benefit substantially from other open source projects.
-Consequently, we also publish large parts of OpenTrafficCam as open source hardware and software
+Consequently, we publish large parts of OpenTrafficCam as open source hardware and software
 under the [GNU General Public License v3.0](https://github.com/OpenTrafficCam/OTVision/blob/master/LICENSE).
 This also helps in efficiently using limited public resources for road infrastructure planning and research
 and in avoiding substantial vendor locks.
