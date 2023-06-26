@@ -1,7 +1,7 @@
 # Overview
 
 Validation gives insight on how well a model or software performs.
-In the case **OpenTrafficCam**, we want to evaluate and compare different object detection models on how well they perform in object detection and object tracking.
+In the case of **OpenTrafficCam**, we want to evaluate and compare different object detection models on how well they perform in object detection and object tracking.
 Furthermore, we want to analyse the results of **[OTAnalytics](<https://github.com/OpenTrafficCam/OTAnalytics>)** on a set of traffic performance metrics.
 
 For this purpose we are currently developing **[OTValidate](<https://github.com/OpenTrafficCam/OTValidate>)** which allows the user to analyse and compare the models' performances on object detection and tracking by calculating metrics corresponding to the specific task at hand.

@@ -7,7 +7,7 @@
 ## Key features
 
 * Generation of traffic flow matrices and node flow diagrams
-* Measurement of time gaps, velocities and accelerations
+* Measurement of time gaps, speeds and accelerations
 * Long-term: Analysis of near-accidents (e.g. TTC, PET)
 * Visualization of traffic data
 * Import of trajectories from other systems (e.g. DataFromSky)

@@ -2,7 +2,7 @@
 
 ## Why is a high quality of the counts so important?
 
-One of the main goals of OpenTrafficCam are automatic traffic counts at road sections and intersections.
+One of the main goals of OpenTrafficCam is automatic traffic counting at road sections and intersections.
 However, the results of such counts are only suitable for mobility planning if they are of high quality.
 In the worst case, traffic facilities planned based on inaccurate count data can waste public resources and even endanger the health of their users.
 
@@ -10,14 +10,14 @@ In the worst case, traffic facilities planned based on inaccurate count data can
 
 Precision and Recall, which are used to evaluate machine learning algorithms, can similarly be used as meaningful metrics to evaluate the quality of automated traffic counts.
 The precision metric describes the ratio of vehicles counted correctly by OpenTrafficCam to all vehicles counted by OpenTrafficCam including incorrect ones.
-On the other hand, the recall metric describes the ratio of vehicles correctly counted by OpenTrafficCam to all vehicles passed in reality including those not counted by OpenTrafficCam.
+Whereas the recall metric describes the ratio of vehicles correctly counted by OpenTrafficCam to all vehicles passed in reality including those not counted by OpenTrafficCam.
 
 An Example:
 
 - 100 vehicles pass through a junction
 - 80 of them are correctly detected by the system (true positive)
 - 20 are therefore not correctly detected (false negative)
-- the system indicates that 110 vehicles would have passed the intersection
+- the system indicates that 110 vehicles passed the intersection
 - the system has thus detected 30 vehicles that were not present in reality (false positive)
 
 |                     |  110 got detected   | 20 got not detected |

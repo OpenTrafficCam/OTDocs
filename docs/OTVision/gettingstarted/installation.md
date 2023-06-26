@@ -117,16 +117,16 @@ Maybe you also have to install Microsoft Visual C++ 14.0 or greater from the
 In case of further problems please
 [open an issue](https://github.com/OpenTrafficCam/OTVision/issues/new)
 in the **OTVision** repository on GitHub or contact us.
-We are happy to know about you experience.
+We are happy to know about your experience.
 
 ## Contribute
 
-We also welcome code contributions (e.g., fixing bugs or adding features) from others
+We welcome code contributions (e.g., fixing bugs or adding features) from others
 by forking the repository and creating a pull request.
 Please check the [contribute section](/contribute/)
 of this documentation first.
 
-If you want to contribute code, additional requirements should to be installed
+If you want to contribute code, additional requirements should be installed
 in the virtual environment.
 Clone the [**OTVision** repository](https://github.com/OpenTrafficCam/OTVision)
 from GitHub. Run the `install_dev.sh` in your **OTVision** folder

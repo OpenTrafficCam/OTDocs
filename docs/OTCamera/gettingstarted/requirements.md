@@ -9,11 +9,11 @@ The single parts for the PCB as well as basic soldering skills are required to a
 
 ![PCB](pcb3d.jpeg)
 
-As housing a common waterproof explorer case is used in addition to a 3d printed inlay which carries all OTCamera parts.
+As case a common waterproof explorer case is used in addition to a 3d printed inlay which carries all OTCamera parts.
 
-To power everthing up, we will use a USB Power Bank.
+To power everthing up, its best to use an external USB-battery
 
-All in all we will need:
+All in all you need:
 
 - Raspberry Pi Zero W
 - Raspbrry Pi Camera Module V2
@@ -37,5 +37,5 @@ All in all we will need:
 - three LEDs (for example Barthelme 6V DC, 9.5mm)
 - some cables and cable shoes
 
-To assemble everything, we will need a drill, a soldering iron and some basics tools as well.
+To assemble everything, you will need a drill, a soldering iron and some basics tools as well.
 

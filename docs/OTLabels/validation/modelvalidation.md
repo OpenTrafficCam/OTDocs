@@ -1,6 +1,6 @@
 # Model Validation
 
-In this section we will compare the different YOLO models on how good they fare in the object detection task.
+In this section you will find the comparison of the different YOLO models on how good they fare in the object detection task.
 The YOLO models to be evaluated are YOLOv5s, YOLOv5m, YOLOv5l and YOLOv5x.
 The models are evaluated on a custom dataset consisting of custom video recordings.
 Thus, we want to investigate which of the four YOLO models might be best suited in the detection of traffic objects.
@@ -11,7 +11,7 @@ As mentioned above, the dataset consists of different video recordings capturing
 Thus, the video recordings are turned into datasets that will be used to evaluate the object detection models.
 It is important to note that not every single frame is selected, but only every $n$-th frame where $n \in \mathbb{N}$ and $n$ is arbitrarily chosen by the user.
 
-Here is how the scenes are looking like:
+Here is how the scenes look like:
 
 | Scenes                                |                                       |                                                   |                                                   |
 | ------------------------------------- | ------------------------------------- | ------------------------------------------------- | ------------------------------------------------- |
@@ -43,15 +43,15 @@ In our case, we will use the mAP and the [TIDE metrics](https://github.com/dboly
 
 !!! info
 
-    OTValidate takes a list of class labels as a parameter.
+    OTValidate uses a list of class labels as a parameter.
     All predictions and ground truth data are then filtered according to that list of class labels.
     Meaning, all predictions or ground truth data, whose predicted or labeled class are not contained in the list, are discarded and therefore not regarded in the evaluation process.
     This is especially useful if the ground truth data contains class labels that the model can't predict. 
 
 ## Evaluation
 
-In this section we will discuss the evaluation results of each model and put them under comparison.
-Specifically, we will evaluate the models on each dataset depicted by the scenes as shown above in the table and on all the ground truth data.
+In this section you will find the evaluation results of each model as well as the comparison. 
+Specifically, the models are evaluated based on each dataset depicted by the scenes as shown above in the table and on all the ground truth data.
 The models confidence and IOU threshold are set to 0.25 and 0.5 respectively.
 Meaning, all detections that have an IOU lower than 0.5 are not regarded as possible detections and all detections with a confidence lower than 0.25 are discarded.
 

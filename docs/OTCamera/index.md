@@ -6,7 +6,7 @@
 
 It is not for sale, but for DIY.
 You don't want to build the camera yourself and preferably don't want to have anything to do with the measurement?
-Well, just [write us](mailto:team@opentrafficcam.org).
+Just [write us](mailto:team@opentrafficcam.org).
 
 <!-- TODO: #54 Higher resolution image -->
 
