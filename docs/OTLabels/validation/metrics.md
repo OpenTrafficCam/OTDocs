@@ -14,11 +14,12 @@ We can tell if a predicted bounding box matches a ground truth bounding box by c
 As Padilla et al. explained in the paper[^1], "a perfect match is considered when the area and location of the predicted and ground-truth boxes are the same".
 Therefore, the IOU is calculated by determining the area of the intersection of the two bounding boxes and dividing it by the area of the union of the two bounding boxes as shown in:
 
+<figure markdown>
 ![IOU Image](assets/iou.svg)
-
-<p align = "center">
-Illustration adapted from the paper <a href="https://doi.org/10.3390/electronics10030279">"Analysis of Object Detection Metrics with a Companion Open-Source Toolkit"</a>
-</p>
+<figcaption markdown>
+Illustration adapted from the paper ["Analysis of Object Detection Metrics with a Companion Open-Source Toolkit"](https://doi.org/10.3390/electronics10030279)
+</figcaption>
+</figure>
 
 Thus, two bounding boxes are considered a perfect match if the **IOU = 1**.
 Meaning the predicted and ground truth bounding boxes share the same location and the same size.
@@ -81,7 +82,8 @@ where C is the total number of classes and $AP_i$ is the average precision of cl
 Bolya et al. created [TIDE](https://dbolya.github.io/tide/) a _General Toolbox for Identifying Object Detection Errors_[^2].
 As Bolya et al. explain in their paper[^2] "mAP succinctly summarizes the performance of a model in one number".
 Thus, the mAP performance metric does not give us any insight on what and how the different error types influence its score, that is the mAP score.
-The aim of TIDE is exactly that, to give us this insight on how the different error types affect the mAP score and as Bolya et al. [^2] stated giving us "a comprehensive analysis of each model's strengths and weaknesses".
+The aim of TIDE is exactly that, to give us this insight on how the different error types affect the mAP score and as Bolya et al.
+[^2] stated giving us "a comprehensive analysis of each model's strengths and weaknesses".
 
 [TIDE](https://dbolya.github.io/tide/) defines six main error types as follows:
 
@@ -106,11 +108,12 @@ The confusion matrix gives us a visual insight on how our object detection model
 
 Let us have a look first at the confusion matrix of a **binary classification problem**:
 
+<figure markdown>
 ![Confusion Matrix Binary](assets/confusion_matrix_binary.svg)
-
-<p align = "center">
-Illustration adapted from the paper <a href="https://arxiv.org/abs/2010.16061">"Evaluation: from precision, recall and F-measure to ROC, informedness, markedness and correlation"</a> by David M. W. Powers[^3]
-</p>
+<figcaption markdown>
+Illustration adapted from the paper [Evaluation: from precision, recall and F-measure to ROC, informedness, markedness and correlation"](https://arxiv.org/abs/2010.16061) by David M. W. Powers
+</figcaption>
+</figure>
 
 The rows of the above confusion matrix represent the predicted class whereas the columns represent the ground truth class. Thus a prediction can be categorized as follows:
 
