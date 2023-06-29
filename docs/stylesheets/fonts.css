@@ -313,10 +313,15 @@
   padding-right: 0.6rem;
   text-align: center;
   font-family: Amatic SC, sans-serif;
-  border-left: none;
-  font-size: 180%;
+  font-size: 220%;
+  font-weight: 700;
   margin-top: 0;
   margin-bottom: 0;
+  letter-spacing: 0.03em;
+}
+
+[dir=ltr] .md-typeset blockquote {
+    border-left: none
 }
 
 p {
