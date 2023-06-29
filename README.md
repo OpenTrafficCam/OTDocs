@@ -8,25 +8,25 @@ The documentation is fully written in [Markdown](https://python-markdown.github.
 
 ## Contribute
 
-You can update or correct the content of this documentation by editing existing or creating new markdown files in ```/docs``` (e.g. directly on Github or using an IDE like VS Code).
+You can update or correct the content of this documentation by editing existing or creating new Markdown files in ```/docs``` (e.g. directly on GitHub or using an IDE like VS Code).
 A new page needs to be added to the navigation structure in ```mkdocs.yml```.
 It includes also all settings for the theme.
 
-If you are using VS Code you should consider using the extension [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) to write proper markdown code.
+If you are using VS Code you should consider using the extension [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) to write proper Markdown code.
 The [YAML] extension is useful to to lint and autoformat the ```mkdocs.yml``` .
-[Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) could be helpful to write markdown.
+[Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) could be helpful to write Markdown.
 
 You can commit any changes in any branch except `master` and `gh-pages`.
 To add your changes, create a new branch and open a pull request to `master`.
-`gh-pages` branch contains the generated html files for the website and should never be touched.
+`gh-pages` branch contains the generated HTML files for the site and should never be touched.
 
-A ton of additional markdown features are documented in the material theme [reference](https://squidfunk.github.io/mkdocs-material/reference/abbreviations/).
+A ton of additional Markdown features are documented in the material theme [reference](https://squidfunk.github.io/mkdocs-material/reference/abbreviations/).
 
 ## Deploy
 
-### Website
+### Site
 
-MkDocs converts all markdown files using the settings and navigation defined in ```mkdocs.yml``` into a static html website.
+MkDocs converts all Markdown files using the settings and navigation defined in ```mkdocs.yml``` into a static HTML site.
 The [documentation](https://opentrafficcam.org) is hosted on GitHub Pages and will be deployed automatically.
 After creating, reviewing and merging a pull request to the master branch, a GitHub action will deploy the changes.
 
@@ -53,7 +53,7 @@ python3 -m pip install --upgrade -r requirements.txt
 python3 -m mkdocs serve
 ```
 
-MkDocs builds the website and starts a local webserver which monitors for changes.
+MkDocs builds the site and starts a local webserver which monitors for changes.
 
 Open [http://127.0.0.1:8000](http://127.0.0.1:8000) in your browser to access this site.
 If you change any file inside ```/docs``` MkDocs regenerates that site and instantly reloads your browser.
