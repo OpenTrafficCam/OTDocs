@@ -1,14 +1,14 @@
 # Requirements
 
-**OTVision** is designed to run on most modern operating systems (Windows, Linux and Mac).
-However, a few prerequisites are required before installing **OTVision**.
+OTVision is designed to run on most modern operating systems (Windows, Linux and Mac).
+However, a few prerequisites are required before installing OTVision.
 
 ## Hardware prerequisites
 
-**OTVision** runs on modern desktops and laptops (e.g. Intel i5+ of the last few generations, AMD Zen chips or Apple Silicon
+OTVision runs on modern desktops and laptops (e.g. Intel i5+ of the last few generations, AMD Zen chips or Apple Silicon
 processors and 8 GB RAM).
 
-If you want to detect road users in videos with **OTVision** on a regular basis, we
+If you want to detect road users in videos with OTVision on a regular basis, we
 strongly recommend purchasing a powerful desktop computer or workstation
 (>= 8+ cores, >= 16 GB RAM)
 with a Nvidia graphics card (>= GeForce 10XX Series, better is usually faster).
@@ -25,7 +25,7 @@ are installed and up-to-date to get the best performance.
 
 ### Python 3.10
 
-**OTVision** is based on Open Source Python packages.
+OTVision is based on Open Source Python packages.
 Thus, it runs on Windows, macOS and Linux systems after setting up the environment
 correctly.
 Consequently, Python needs to be installed on your system.
@@ -128,7 +128,7 @@ An instruction on how to do that on a Windows system can be found below.
 
 ### ffmpeg
 
-If you want to use videos recorded by [**OTCamera**](/OTCamera) with **OTVision**,
+If you want to use videos recorded by [OTCamera](/OTCamera) with OTVision,
 you need to convert the videos to .mp4 files first.
 For the conversion, we use the Open Source software ffmpeg.
 
@@ -197,6 +197,6 @@ Before using the `convert.py` script, make sure that ffmpeg is installed and ava
 
 ### Nvidia CUDA (optional)
 
-If you intend to use **OTVision** on a Windows or Linux PC with a modern
+If you intend to use OTVision on a Windows or Linux PC with a modern
 Nvidia graphics card, download and install version **11.6** of the
 [NVIDIA Cuda Toolkit](https://developer.nvidia.com/cuda-toolkit-archive).

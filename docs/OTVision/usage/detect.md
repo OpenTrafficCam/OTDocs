@@ -20,14 +20,14 @@ you are ready to start the detection of the road users in each video frame.
 
 !!! info "Filename convention"
   
-    To prevent to set the start date and time in the config file for each indivdual
-    video file, the current version of **OTVision** reads the start date and time from
+    To prevent to set the start date and time in the config file for each individual
+    video file, the current version of OTVision reads the start date and time from
     the video filenames.
 
-    Video files recorded by **OTCamera** already contain the start date and time in the
+    Video files recorded by OTCamera already contain the start date and time in the
     filename. 
 
-    In case you use **OTVision** to process video files recorded by
+    In case you use OTVision to process video files recorded by
     **other camera systems**,
     please make sure that the filename of these files contain the start date and time
     in the following format:

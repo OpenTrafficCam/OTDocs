@@ -2,7 +2,7 @@
 
 > The **brain** of OpenTrafficCam.
 
-[**OTAnalytics**](https://github.com/OpenTrafficCam/OTAnalytics) is a set of self developed algorithms to gather traffic measures based on trajectories of road users.
+[OTAnalytics](https://github.com/OpenTrafficCam/OTAnalytics) is a set of self developed algorithms to gather traffic measures based on trajectories of road users.
 
 ## Key features
 

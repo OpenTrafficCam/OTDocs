@@ -78,7 +78,7 @@ where C is the total number of classes and $AP_i$ is the average precision of cl
 
 ### TIDE Metrics
 
-Bolya et al. created **[TIDE](https://dbolya.github.io/tide/)** a _General Toolbox for Identifying Object Detection Errors_[^2].
+Bolya et al. created [TIDE](https://dbolya.github.io/tide/) a _General Toolbox for Identifying Object Detection Errors_[^2].
 As Bolya et al. explain in their paper[^2] "mAP succinctly summarizes the performance of a model in one number".
 Thus, the mAP performance metric does not give us any insight on what and how the different error types influence its score, that is the mAP score.
 The aim of TIDE is exactly that, to give us this insight on how the different error types affect the mAP score and as Bolya et al. [^2] stated giving us "a comprehensive analysis of each model's strengths and weaknesses".
@@ -153,4 +153,3 @@ To see, how well OpenTrafficCam performs see [OTAnalytics](/OTAnalytics/Accuracy
 
 [^1]: Padilla, R., Passos, W. L., Dias, T. L., Netto, S. L., & da Silva, E. A. (2021). A comparative analysis of object detection metrics with a companion open-source toolkit. Electronics, 10(3), 279. [https://doi.org/10.3390/electronics10030279](https://doi.org/10.3390/electronics10030279)
 [^2]: Bolya, D., Foley, S., Hays, J., & Hoffman, J. (2020). Tide: A general toolbox for identifying object detection errors. In Computer Vision–ECCV 2020: 16th European Conference, Glasgow, UK, August 23–28, 2020, Proceedings, Part III 16 (pp. 558-573). Springer International Publishing. [https://dbolya.github.io/tide/paper.pdf](https://dbolya.github.io/tide/paper.pdf)
-[^3]: Powers, D. M. (2020). Evaluation: from precision, recall and F-measure to ROC, informedness, markedness and correlation. arXiv preprint arXiv:2010.16061.

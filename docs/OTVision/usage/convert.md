@@ -10,7 +10,7 @@ python  convert.py  [-p paths] [-c config]
 
 ## Description
 
-In case you use raw `.h264` videos (e.g. from **OTCamera**), you need to convert
+In case you use raw `.h264` videos (e.g. from OTCamera), you need to convert
 the videos to a supported video format.
 
 As `.h264` does not include metadata, the frame rate of the video has to be
