@@ -1,6 +1,6 @@
 # Model Validation
 
-In this section you will find the comparison of the different YOLO models on how good they fare in the object detection task.
+In this section you will find a comparison of the different YOLO models on how well they perform in the object detection.
 The YOLO models to be evaluated are YOLOv5s, YOLOv5m, YOLOv5l and YOLOv5x.
 The models are evaluated on a custom dataset consisting of custom video recordings.
 Thus, we want to investigate which of the four YOLO models might be best suited in the detection of traffic objects.

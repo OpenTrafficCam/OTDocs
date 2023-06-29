@@ -7,7 +7,7 @@
 Welcome to **OpenTrafficCam** - the only fully integrated open source workflow for video-based recording
 and automated analysis of road traffic.
 
-On this site you will find all the information about the process steps to set up the OpenTrafficCam.
+On this site you will find all the information about the process steps to set up OpenTrafficCam.
 
 You want to know more? Check out our [GitHub page](https://github.com/OpenTrafficCam) for downloads and codes.
 
@@ -54,7 +54,7 @@ OpenTrafficCam consists of multiple modules. The core is composed of three:
 of objects (road users) based on the videos and
 1. [OTAnalytics](https://opentrafficcam.org/OTAnalytics/) to gather traffic measures based on these trajectories.
 
-Each of the three modules comes with easy installation, a basic user interface and a detailed user documentation.
+Each of the three modules comes with (easy) installation, a basic user interface and a documentation.
 The Open Source version covers the most common use cases of video-based traffic surveying,
 such as traffic counts and speed measurements.
 
