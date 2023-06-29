@@ -38,19 +38,14 @@ Clone the repository (if not done already).
 Create a virtual environment and install dependencies.
 
 ```bash
-python3 -m venv venv --upgrade-deps
-source venv/bin/activate
-pip install -r requirements.txt
-deactivate
+sh ./install_dev.sh
 ```
 
 You can run a local server with autoload.
 You should always upgrade your venv since the GitHub Pages deployment always uses the most current versions.
 
 ```bash
-source venv/bin/activate
-python3 -m pip install --upgrade -r requirements.txt
-python3 -m mkdocs serve
+sh ./start_local_server.sh
 ```
 
 MkDocs builds the site and starts a local webserver which monitors for changes.
