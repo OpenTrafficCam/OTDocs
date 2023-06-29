@@ -13,7 +13,7 @@ A new page needs to be added to the navigation structure in ```mkdocs.yml```.
 It includes also all settings for the theme.
 
 If you are using VS Code you should consider using the extension [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) to write proper Markdown code.
-The [YAML] extension is useful to to lint and autoformat the ```mkdocs.yml``` .
+The [YAML] extension is useful to lint and autoformat the ```mkdocs.yml``` .
 [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) could be helpful to write Markdown.
 
 You can commit any changes in any branch except `master` and `gh-pages`.
@@ -22,27 +22,33 @@ To add your changes, create a new branch and open a pull request to `master`.
 
 A ton of additional Markdown features are documented in the material theme [reference](https://squidfunk.github.io/mkdocs-material/reference/abbreviations/).
 
-## Deploy
-
-### Site
+## Deployment
 
 MkDocs converts all Markdown files using the settings and navigation defined in ```mkdocs.yml``` into a static HTML site.
 The [documentation](https://opentrafficcam.org) is hosted on GitHub Pages and will be deployed automatically.
 After creating, reviewing and merging a pull request to the master branch, a GitHub action will deploy the changes.
 
-### Local Sneak Preview
+## Local Development Server
 
 If you want to preview your changes before creating a pull request, here is what you have to do.
 
+### Installation
+
 Clone the repository (if not done already).
 Create a virtual environment and install dependencies.
+We provide an install script.
+Open a terminal and start the install script.
 
 ```bash
 sh ./install_dev.sh
 ```
 
+The script deletes previous installs, so you can use it to update your local environment.
+
+### Run
+
 You can run a local server with autoload.
-You should always upgrade your venv since the GitHub Pages deployment always uses the most current versions.
+You should always upgrade your venv.
 
 ```bash
 sh ./start_local_server.sh
@@ -52,11 +58,6 @@ MkDocs builds the site and starts a local webserver which monitors for changes.
 
 Open [http://127.0.0.1:8000](http://127.0.0.1:8000) in your browser to access this site.
 If you change any file inside ```/docs``` MkDocs regenerates that site and instantly reloads your browser.
-This even works great if you change a branche while running ```mkdocs serve``` .
+This even works great if you change a branch while running ```mkdocs serve``` .
 
-To stop the web server, type "Ctrl + C" .
-The virtual environment can then be closed with the following command.
-
-```bash
-deactivate
-```
+To stop the web server, press "Ctrl + C" or by closing the terminal.
