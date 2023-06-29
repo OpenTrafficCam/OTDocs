@@ -16,7 +16,7 @@ Just [write us](mailto:team@opentrafficcam.org).
 
 * Based on Raspberry Pi Zero W
 * Waterproof case
-* Operation with buttons and/or smartphone
+* Operation with buttons and/or web ui
 * Continuous recording for about one week
 * Privacy compliant recording
 * Under 400 € per camera system

@@ -9,7 +9,7 @@ The single parts for the PCB as well as basic soldering skills are required to a
 
 ![PCB](pcb3d.jpeg)
 
-As case a common waterproof explorer case is used in addition to a 3d printed inlay which carries all OTCamera parts.
+As case a common waterproof explorer case is used in addition to a 3D printed inlay which carries all OTCamera parts.
 
 To power everthing up, its best to use an external USB-battery
 
@@ -33,9 +33,8 @@ All in all you need:
 - 47 kΩ resistor
 - Si-diode
 - 1 cell LiPo battery
-- four switches (3d print is optimized for Marquardt 1801)
+- four switches (3D print is optimized for Marquardt 1801)
 - three LEDs (for example Barthelme 6V DC, 9.5mm)
 - some cables and cable shoes
 
 To assemble everything, you will need a drill, a soldering iron and some basics tools as well.
-

@@ -50,7 +50,7 @@ In our case, we will use the mAP and the [TIDE metrics](https://github.com/dboly
 
 ## Evaluation
 
-In this section you will find the evaluation results of each model as well as the comparison. 
+In this section you will find the evaluation results of each model as well as the comparison.
 Specifically, the models are evaluated based on each dataset depicted by the scenes as shown above in the table and on all the ground truth data.
 The models confidence and IOU threshold are set to 0.25 and 0.5 respectively.
 Meaning, all detections that have an IOU lower than 0.5 are not regarded as possible detections and all detections with a confidence lower than 0.25 are discarded.

@@ -2,12 +2,12 @@
 
 ![OpenTrafficCam Overview](OpenTrafficCam_1200.svg)
 
-> You are looking for a tool that makes analyzing traffic easier, faster and more efficient? 
+> You are looking for a tool that makes analyzing traffic easier, faster and more efficient?
 
 Welcome to **OpenTrafficCam** - the only fully integrated open source workflow for video-based recording
 and automated analysis of road traffic.
 
-On this website you will find all the information about the process steps to set up the OpenTrafficCam. 
+On this site you will find all the information about the process steps to set up the OpenTrafficCam.
 
 You want to know more? Check out our [GitHub page](https://github.com/OpenTrafficCam) for downloads and codes.
 
