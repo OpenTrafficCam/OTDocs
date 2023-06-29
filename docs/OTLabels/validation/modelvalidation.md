@@ -216,11 +216,13 @@ Thus the further the objects move to the right area of the image, the better the
 ## Conclusion and Future Work
 
 We have evaluated the `YOLOv5s`, `YOLOv5m`, `YOLOv5x`, and the `YOLOv5l` object detection models on a custom dataset consisting of videos capturing different scenes of traffic junctions and roads.
-Looking at mAP and TIDE metrics gave us insight to how the YOLOv5 models performed on our custom dataset and we can come to the conclusion that a `YOLOv5m`, `YOLOv5l` and `YOLOv5x` models performed far better than the `YOLOv5s`.
+Looking at mAP and TIDE metrics gave us insight to how the YOLOv5 models performed on our custom dataset and we can come to the conclusion that a `YOLOv5m`,
+`YOLOv5l` and `YOLOv5x` models performed far better than the `YOLOv5s`.
 But there is not a big increase in performance in terms of object detection upon choosing the `YOLOv5x` over the `YOLOv5m` or `YOLOv5l` model.
 
 Another important aspect to look into in the future is how much time the models under discussion take to detect the images.
-Depending on the use case and resources at hand, choosing the `YOLOv5x` model which might need much more time to finish the detection might not be suitable and thus taking the `YOLOv5m` or `YOLOv5l` model might be the better choice.
+Depending on the use case and resources at hand,
+choosing the `YOLOv5x` model which might need much more time to finish the detection might not be suitable and thus taking the `YOLOv5m` or `YOLOv5l` model might be the better choice.
 
 What we are also currently working on is to train our own models using the YOLOv5 models as our foundation on a custom dataset.
 Thus it would be interesting to see if there would be a significant increase in performance by using custom trained models.

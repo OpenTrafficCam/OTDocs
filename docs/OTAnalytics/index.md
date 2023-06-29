@@ -17,7 +17,10 @@
 
 <!-- TODO Create content, and add links to content pages, links to the software then on the content pages -->
 
-Most of the code will be developed by the OpenTrafficCam contributors (based on python libraries like [NumPy](https://numpy.org/), [pandas](https://pandas.pydata.org/), [tkinter](https://docs.python.org/3/library/tkinter.html) and [OpenCV](https://opencv.org/)).
+Most of the code will be developed by the OpenTrafficCam contributors (based on python libraries like [NumPy](https://numpy.org/),
+[pandas](https://pandas.pydata.org/),
+[tkinter](https://docs.python.org/3/library/tkinter.html)
+and [OpenCV](https://opencv.org/)).
 
 !!! warning "Early prototype"
 

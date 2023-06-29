@@ -116,11 +116,11 @@ The rows of the above confusion matrix represent the predicted class whereas the
 
 1. A prediction that has been predicted as positive class and that is found to be an actual/real positive class in the ground truth, is counted as a **true positive**.
 
-1. A prediction that has been predicted as negative class and is found to be an actual/real negative class is counted as a **true negative**.
+2. A prediction that has been predicted as negative class and is found to be an actual/real negative class is counted as a **true negative**.
 
-1. A prediction that has been predicted as positive and is found to be **not** an actual/real positive class is counted as a **false positive**.
+3. A prediction that has been predicted as positive and is found to be **not** an actual/real positive class is counted as a **false positive**.
 
-1. A prediction that has been predicted as negative and is found to be **not** an actual/real negative class is counted as a **false negative**.
+4. A prediction that has been predicted as negative and is found to be **not** an actual/real negative class is counted as a **false negative**.
 
 Hence, the confusion matrix gives us a clear visualization of how many of our predictions were classified correctly or incorrectly.
 
