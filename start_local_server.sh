@@ -8,7 +8,6 @@ PIP="$VENV"/bin/pip
 PYTHON="$VENV"/bin/python
 
 python3 -m venv "$VENV" --upgrade-deps
-source "$VENV"/bin/activate
 
 $PIP install -r requirements.txt --upgrade
 
