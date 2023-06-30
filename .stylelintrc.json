@@ -1,4 +1,7 @@
 {
     "extends": "stylelint-config-standard",
-    "selector-class-pattern": null
+    "rules": {
+        "custom-property-pattern": null,
+        "selector-class-pattern": null
+    }
 }
