@@ -143,11 +143,6 @@ Out of the 8 cars that have been predicted:
 - none were incorrectly classified as a `person` and
 - 5 were incorrectly classified as `truck`
 
-## Object Tracking
-
-!!! info "Coming soon"
-    Unfortunately, there is no content here yet. But we are currently working on completing this website.
-
 ## Traffic Measures
 
 To see, how well OpenTrafficCam performs see [OTAnalytics](/OTAnalytics/Accuracy/counts/).
