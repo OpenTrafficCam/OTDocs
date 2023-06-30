@@ -26,4 +26,3 @@ jobs:
           VALIDATE_PYTHON_PYLINT: false
           VALIDATE_GITLEAKS: false
           CSS_FILE_NAME: .stylelintrc.json
-          YAML_CONFIG_FILE: .yaml-lint.yaml
