@@ -3,7 +3,7 @@
 If you´re getting tired of providing all those parameters to the CLI, you can also
 specify them in a configuration `yaml` file and pass it´s path to the CLI instead.
 
-By default, **OTVision** refers to the `user_config.otvision.yaml` in the root
+By default, OTVision refers to the `user_config.otvision.yaml` in the root
 directory.
 
 You can either

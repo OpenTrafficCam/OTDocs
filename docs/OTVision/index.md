@@ -2,12 +2,12 @@
 
 > The **heart** of OpenTrafficCam.
 
-[**OTVision**](https://github.com/OpenTrafficCam/OTVision) is a collection of algorithms
+[OTVision](https://github.com/OpenTrafficCam/OTVision) is a collection of algorithms
 to generate trajectories of road users from traffic videos.
 Most of the algorithms have been developed in previous open source projects.
 We modify them and link them with our own developments into a working pipeline.
 
-The current pipeline consists of three core functionalities of **OTVision**:
+The current pipeline consists of three core functionalities of OTVision:
 *[convert](usage/convert)*, *[detect](usage/detect)* and *[track](usage/track)*.
 
 ```mermaid

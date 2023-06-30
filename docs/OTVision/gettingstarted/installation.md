@@ -1,9 +1,9 @@
 # Installation
 
-In this section, we provide instructions how to install **OTVision** on the most common
+In this section, we provide instructions how to install OTVision on the most common
 Operating Systems.
 
-Before installing **OTVision**, make sure your system meets all
+Before installing OTVision, make sure your system meets all
 [requirements](../requirements/).
 
 ## Install OTVision
@@ -11,9 +11,9 @@ Before installing **OTVision**, make sure your system meets all
 We provide install scripts for the most common operating systems.
 
 Download and unzip the latest version of
-[**OTVision**](https://github.com/OpenTrafficCam/OTVision/releases)
+[OTVision](https://github.com/OpenTrafficCam/OTVision/releases)
 from GitHub or clone the
-[**OTVision** repository](https://github.com/OpenTrafficCam/OTVision).
+[OTVision repository](https://github.com/OpenTrafficCam/OTVision).
 
 === "Windows"
 
@@ -22,7 +22,7 @@ from GitHub or clone the
 
 === "Linux / macOS"
 
-    In a terminal, navigate to the **OTVision** folder and run the installer.
+    In a terminal, navigate to the OTVision folder and run the installer.
 
     ```text 
     ./install.sh
@@ -42,7 +42,7 @@ If you have a
 [Windows or Linux PC with a Nvidia graphics card](../requirements/#hardware-prerequisites)
 and already [installed CUDA](../requirements/#nvidia-cuda-optional),
 you chose the release with the suffix `-cuda`. It contains the requirements to use CUDA.
-If you want to contribute to **OTVision** and use CUDA, you have to perform additional
+If you want to contribute to OTVision and use CUDA, you have to perform additional
 steps in your Terminal/Command Prompt:
 
 ### Check CUDA version
@@ -116,18 +116,18 @@ Maybe you also have to install Microsoft Visual C++ 14.0 or greater from the
 
 In case of further problems please
 [open an issue](https://github.com/OpenTrafficCam/OTVision/issues/new)
-in the **OTVision** repository on GitHub or contact us.
-We are happy to know about you experience.
+in the OTVision repository on GitHub or contact us.
+We are happy to know about your experience.
 
 ## Contribute
 
-We also welcome code contributions (e.g., fixing bugs or adding features) from others
+We welcome code contributions (e.g., fixing bugs or adding features) from others
 by forking the repository and creating a pull request.
 Please check the [contribute section](/contribute/)
 of this documentation first.
 
-If you want to contribute code, additional requirements should to be installed
+If you want to contribute code, additional requirements should be installed
 in the virtual environment.
-Clone the [**OTVision** repository](https://github.com/OpenTrafficCam/OTVision)
-from GitHub. Run the `install_dev.sh` in your **OTVision** folder
+Clone the [OTVision repository](https://github.com/OpenTrafficCam/OTVision)
+from GitHub. Run the `install_dev.sh` in your OTVision folder
 and wait until the installation of the dependencies is complete.

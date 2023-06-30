@@ -13,7 +13,7 @@ the video.
 ## Load and select trajectories
 
 A click on the "Load tracks"-button opens a dialogue window which asks for a
-tracks file from [**OTVision**](https://github.com/OpenTrafficCam/OTVision).
+tracks file from [OTVision](https://github.com/OpenTrafficCam/OTVision).
 Here you have to select a file with `.ottrk` extension,
 which corresponds to the video you loaded earlier.
 This file contains framewise information about road users such as class, position,

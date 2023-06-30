@@ -1,6 +1,6 @@
 # First Use
 
-**OTVision** can be executed on a command-line (e.g., a Terminal on macOS
+OTVision can be executed on a command-line (e.g., a Terminal on macOS
 and Linux or the Command Prompt on Windows).
 
 ## The Command-Line Interface
@@ -80,7 +80,7 @@ Have a look at the basic examples provided below.
 
 ## Convert
 
-In case you have raw `.h264` videos (e.g. from **OTCamera**),
+In case you have raw `.h264` videos (e.g. from OTCamera),
 you need to convert them to a supported video format
 (see [convert.py](../firstuse/#convert)) first.
 Therefore, we provide the `convert.py` script.

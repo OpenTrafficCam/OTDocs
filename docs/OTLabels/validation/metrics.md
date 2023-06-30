@@ -14,11 +14,12 @@ We can tell if a predicted bounding box matches a ground truth bounding box by c
 As Padilla et al. explained in the paper[^1], "a perfect match is considered when the area and location of the predicted and ground-truth boxes are the same".
 Therefore, the IOU is calculated by determining the area of the intersection of the two bounding boxes and dividing it by the area of the union of the two bounding boxes as shown in:
 
+<figure markdown>
 ![IOU Image](assets/iou.svg)
-
-<p align = "center">
-Illustration adapted from the paper <a href="https://doi.org/10.3390/electronics10030279">"Analysis of Object Detection Metrics with a Companion Open-Source Toolkit"</a>
-</p>
+<figcaption markdown>
+Illustration adapted from the paper ["Analysis of Object Detection Metrics with a Companion Open-Source Toolkit"](https://doi.org/10.3390/electronics10030279)
+</figcaption>
+</figure>
 
 Thus, two bounding boxes are considered a perfect match if the **IOU = 1**.
 Meaning the predicted and ground truth bounding boxes share the same location and the same size.
@@ -78,10 +79,11 @@ where C is the total number of classes and $AP_i$ is the average precision of cl
 
 ### TIDE Metrics
 
-Bolya et al. created **[TIDE](https://dbolya.github.io/tide/)** a _General Toolbox for Identifying Object Detection Errors_[^2].
+Bolya et al. created [TIDE](https://dbolya.github.io/tide/) a _General Toolbox for Identifying Object Detection Errors_[^2].
 As Bolya et al. explain in their paper[^2] "mAP succinctly summarizes the performance of a model in one number".
 Thus, the mAP performance metric does not give us any insight on what and how the different error types influence its score, that is the mAP score.
-The aim of TIDE is exactly that, to give us this insight on how the different error types affect the mAP score and as Bolya et al. [^2] stated giving us "a comprehensive analysis of each model's strengths and weaknesses".
+The aim of TIDE is exactly that, to give us this insight on how the different error types affect the mAP score and as Bolya et al.
+[^2] stated giving us "a comprehensive analysis of each model's strengths and weaknesses".
 
 [TIDE](https://dbolya.github.io/tide/) defines six main error types as follows:
 
@@ -106,21 +108,22 @@ The confusion matrix gives us a visual insight on how our object detection model
 
 Let us have a look first at the confusion matrix of a **binary classification problem**:
 
+<figure markdown>
 ![Confusion Matrix Binary](assets/confusion_matrix_binary.svg)
-
-<p align = "center">
-Illustration adapted from the paper <a href="https://arxiv.org/abs/2010.16061">"Evaluation: from precision, recall and F-measure to ROC, informedness, markedness and correlation"</a> by David M. W. Powers[^3]
-</p>
+<figcaption markdown>
+Illustration adapted from the paper [Evaluation: from precision, recall and F-measure to ROC, informedness, markedness and correlation"](https://arxiv.org/abs/2010.16061) by David M. W. Powers
+</figcaption>
+</figure>
 
 The rows of the above confusion matrix represent the predicted class whereas the columns represent the ground truth class. Thus a prediction can be categorized as follows:
 
 1. A prediction that has been predicted as positive class and that is found to be an actual/real positive class in the ground truth, is counted as a **true positive**.
 
-1. A prediction that has been predicted as negative class and is found to be an actual/real negative class is counted as a **true negative**.
+2. A prediction that has been predicted as negative class and is found to be an actual/real negative class is counted as a **true negative**.
 
-1. A prediction that has been predicted as positive and is found to be **not** an actual/real positive class is counted as a **false positive**.
+3. A prediction that has been predicted as positive and is found to be **not** an actual/real positive class is counted as a **false positive**.
 
-1. A prediction that has been predicted as negative and is found to be **not** an actual/real negative class is counted as a **false negative**.
+4. A prediction that has been predicted as negative and is found to be **not** an actual/real negative class is counted as a **false negative**.
 
 Hence, the confusion matrix gives us a clear visualization of how many of our predictions were classified correctly or incorrectly.
 
@@ -140,11 +143,6 @@ Out of the 8 cars that have been predicted:
 - none were incorrectly classified as a `person` and
 - 5 were incorrectly classified as `truck`
 
-## Object Tracking
-
-!!! info "Coming soon"
-    Unfortunately, there is no content here yet. But we are currently working on completing this website.
-
 ## Traffic Measures
 
 To see, how well OpenTrafficCam performs see [OTAnalytics](/OTAnalytics/Accuracy/counts/).
@@ -153,4 +151,3 @@ To see, how well OpenTrafficCam performs see [OTAnalytics](/OTAnalytics/Accuracy
 
 [^1]: Padilla, R., Passos, W. L., Dias, T. L., Netto, S. L., & da Silva, E. A. (2021). A comparative analysis of object detection metrics with a companion open-source toolkit. Electronics, 10(3), 279. [https://doi.org/10.3390/electronics10030279](https://doi.org/10.3390/electronics10030279)
 [^2]: Bolya, D., Foley, S., Hays, J., & Hoffman, J. (2020). Tide: A general toolbox for identifying object detection errors. In Computer Vision–ECCV 2020: 16th European Conference, Glasgow, UK, August 23–28, 2020, Proceedings, Part III 16 (pp. 558-573). Springer International Publishing. [https://dbolya.github.io/tide/paper.pdf](https://dbolya.github.io/tide/paper.pdf)
-[^3]: Powers, D. M. (2020). Evaluation: from precision, recall and F-measure to ROC, informedness, markedness and correlation. arXiv preprint arXiv:2010.16061.
