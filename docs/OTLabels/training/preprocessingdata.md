@@ -43,12 +43,12 @@ This file of filenames can also be referred to by YOLOv5.
 
 The script performs the following steps:
 
-1. Get the category IDs to the corresponding category name.
+1. Fetch the category IDs to the corresponding category name.
 2. Import the label files.
 3. Filter the labels by the provided category names.
 4. Export the labels to the directory *destPath/labels/name_filtered*.
 5. Create a text file with all image files in the directory *path*.
-Please note that **images and label files not including any label after filtering are not exported**.
+Please note that **image and label files not include any label after filtering are not exported**.
 
 ## Get COCO annotation file
 
@@ -66,7 +66,7 @@ Configurations to be made:
 In some cases you might want to get the original COCO dataset that was used to train the original YOLOv5 models.
 Therefore, OTLabels provides the *get_coco_data.py* script to download the data.
 Please note that you could also **use the *get_coco.sh* script from the YOLOv5 repository**.
-Before executing the script, you have to setup the configurations for your needs:
+Before executing the script, you have to set up the configurations for your needs:
 
 - Within the script:
   - Set imageURLs: path of a text file (standard: coco_image_URLs.txt) containing the URLs of the image data sets.

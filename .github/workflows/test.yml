@@ -1,8 +1,8 @@
-
+---
 name: Test Website Build on PR
 on:
   pull_request:
-    branches: 
+    branches:
       - master
       - main
 jobs:
