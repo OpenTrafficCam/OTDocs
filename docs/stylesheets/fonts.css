@@ -290,13 +290,13 @@
 }
 
 .md-header__title {
-  font-family: Amatic SC, sans-serif;
+  font-family: "Amatic SC", sans-serif;
   letter-spacing: 0.03em;
   font-size: 1.6rem;
 }
 
 .md-tabs__link {
-  font-family: Amatic SC, sans-serif;
+  font-family: "Amatic SC", sans-serif;
   font-weight: 700;
   font-size: 1.1rem;
   letter-spacing: 0.03em;
@@ -314,7 +314,7 @@
   padding-left: 0.6rem;
   padding-right: 0.6rem;
   text-align: center;
-  font-family: Amatic SC, sans-serif;
+  font-family: "Amatic SC", sans-serif;
   font-size: 220%;
   font-weight: 700;
   margin-top: 0;
@@ -322,7 +322,7 @@
   letter-spacing: 0.03em;
 }
 
-[dir=ltr] .md-typeset blockquote {
+[dir="ltr"] .md-typeset blockquote {
     border-left: none
 }
 
