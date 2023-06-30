@@ -2036,12 +2036,12 @@ Instead, a text file with all images still containing the filtered labels is cre
 This file of filenames can also be referred to by YOLOv5.</p>
 <p>The script performs the following steps:</p>
 <ol>
-<li>Get the category IDs to the corresponding category name.</li>
+<li>Fetch the category IDs to the corresponding category name.</li>
 <li>Import the label files.</li>
 <li>Filter the labels by the provided category names.</li>
 <li>Export the labels to the directory <em>destPath/labels/name_filtered</em>.</li>
 <li>Create a text file with all image files in the directory <em>path</em>.
-Please note that <strong>images and label files not including any label after filtering are not exported</strong>.</li>
+Please note that <strong>image and label files not include any label after filtering are not exported</strong>.</li>
 </ol>
 <h2 id="get-coco-annotation-file">Get COCO annotation file<a class="headerlink" href="#get-coco-annotation-file" title="Permanent link">&para;</a></h2>
 <p>This file is necessary to ensure your labels match the labels of the pretrained YOLOv5 models.
@@ -2057,7 +2057,7 @@ Configurations to be made:</p>
 <p>In some cases you might want to get the original COCO dataset that was used to train the original YOLOv5 models.
 Therefore, OTLabels provides the <em>get_coco_data.py</em> script to download the data.
 Please note that you could also <strong>use the <em>get_coco.sh</em> script from the YOLOv5 repository</strong>.
-Before executing the script, you have to setup the configurations for your needs:</p>
+Before executing the script, you have to set up the configurations for your needs:</p>
 <ul>
 <li>Within the script:</li>
 <li>Set imageURLs: path of a text file (standard: coco_image_URLs.txt) containing the URLs of the image data sets.</li>
@@ -2071,7 +2071,7 @@ Before executing the script, you have to setup the configurations for your needs
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 9, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 26, 2023</span>
       
     
   </small>

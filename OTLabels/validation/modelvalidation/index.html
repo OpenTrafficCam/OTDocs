@@ -2037,7 +2037,7 @@ OpenTrafficCam is a project that is currently under development. The content on 
 
 
 <h1 id="model-validation">Model Validation<a class="headerlink" href="#model-validation" title="Permanent link">&para;</a></h1>
-<p>In this section we will compare the different YOLO models on how good they fare in the object detection task.
+<p>In this section you will find a comparison of the different YOLO models on how well they perform in the object detection.
 The YOLO models to be evaluated are YOLOv5s, YOLOv5m, YOLOv5l and YOLOv5x.
 The models are evaluated on a custom dataset consisting of custom video recordings.
 Thus, we want to investigate which of the four YOLO models might be best suited in the detection of traffic objects.</p>
@@ -2045,7 +2045,7 @@ Thus, we want to investigate which of the four YOLO models might be best suited 
 <p>As mentioned above, the dataset consists of different video recordings capturing different traffic scenes.
 Thus, the video recordings are turned into datasets that will be used to evaluate the object detection models.
 It is important to note that not every single frame is selected, but only every <span class="arithmatex">\(n\)</span>-th frame where <span class="arithmatex">\(n \in \mathbb{N}\)</span> and <span class="arithmatex">\(n\)</span> is arbitrarily chosen by the user.</p>
-<p>Here is how the scenes are looking like:</p>
+<p>Here is how the scenes look like:</p>
 <table>
 <thead>
 <tr>
@@ -2091,14 +2091,14 @@ Afterwards, the prediction results and ground truth data are used to calculate t
 In our case, we will use the mAP and the <a href="https://github.com/dbolya/tide">TIDE metrics</a>.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>OTValidate takes a list of class labels as a parameter.
+<p>OTValidate uses a list of class labels as a parameter.
 All predictions and ground truth data are then filtered according to that list of class labels.
 Meaning, all predictions or ground truth data, whose predicted or labeled class are not contained in the list, are discarded and therefore not regarded in the evaluation process.
 This is especially useful if the ground truth data contains class labels that the model can't predict. </p>
 </div>
 <h2 id="evaluation">Evaluation<a class="headerlink" href="#evaluation" title="Permanent link">&para;</a></h2>
-<p>In this section we will discuss the evaluation results of each model and put them under comparison.
-Specifically, we will evaluate the models on each dataset depicted by the scenes as shown above in the table and on all the ground truth data.
+<p>In this section you will find the evaluation results of each model as well as the comparison.
+Specifically, the models are evaluated based on each dataset depicted by the scenes as shown above in the table and on all the ground truth data.
 The models confidence and IOU threshold are set to 0.25 and 0.5 respectively.
 Meaning, all detections that have an IOU lower than 0.5 are not regarded as possible detections and all detections with a confidence lower than 0.25 are discarded.</p>
 <h3 id="evaluation-on-all-data">Evaluation on all data<a class="headerlink" href="#evaluation-on-all-data" title="Permanent link">&para;</a></h3>
@@ -2121,7 +2121,7 @@ Meaning, by only looking at the mAP metric the YOLOv5s, YOLOv5m, and the YOLOv5x
 </tr>
 </tbody>
 </table>
-<p>What immediately stands out are the <a href="/OTLabels/validation/metrics/#tide-metrics"><strong>Missed Ground Truth Error</strong>(Miss)</a> and the <a href="/OTLabels/validation/metrics/#tide-metrics"><strong>Classification Error</strong>(Cls)</a>.
+<p>What immediately stands out are the <a href="/OTLabels/validation/metrics/#tide-metrics">Missed Ground Truth Error (Miss)</a> and the <a href="/OTLabels/validation/metrics/#tide-metrics">Classification Error (Cls)</a>.
 Meaning, the models were not able to detect many ground truth bounding boxes or be able to classify them correctly.
 Thus, the models were able to detect the majority of the bounding boxes, but had problems predicting the correct classes.</p>
 <p>The YOLOv5s model had the highest classification error rate out of the four models.
@@ -2340,10 +2340,12 @@ This is reflected in the missed ground truth error and the localization error.
 Thus the further the objects move to the right area of the image, the better they are detected by the models.</p>
 <h2 id="conclusion-and-future-work">Conclusion and Future Work<a class="headerlink" href="#conclusion-and-future-work" title="Permanent link">&para;</a></h2>
 <p>We have evaluated the <code>YOLOv5s</code>, <code>YOLOv5m</code>, <code>YOLOv5x</code>, and the <code>YOLOv5l</code> object detection models on a custom dataset consisting of videos capturing different scenes of traffic junctions and roads.
-Looking at mAP and TIDE metrics gave us insight to how the YOLOv5 models performed on our custom dataset and we can come to the conclusion that a <code>YOLOv5m</code>, <code>YOLOv5l</code> and <code>YOLOv5x</code> models performed far better than the <code>YOLOv5s</code>.
+Looking at mAP and TIDE metrics gave us insight to how the YOLOv5 models performed on our custom dataset and we can come to the conclusion that a <code>YOLOv5m</code>,
+<code>YOLOv5l</code> and <code>YOLOv5x</code> models performed far better than the <code>YOLOv5s</code>.
 But there is not a big increase in performance in terms of object detection upon choosing the <code>YOLOv5x</code> over the <code>YOLOv5m</code> or <code>YOLOv5l</code> model.</p>
 <p>Another important aspect to look into in the future is how much time the models under discussion take to detect the images.
-Depending on the use case and resources at hand, choosing the <code>YOLOv5x</code> model which might need much more time to finish the detection might not be suitable and thus taking the <code>YOLOv5m</code> or <code>YOLOv5l</code> model might be the better choice.</p>
+Depending on the use case and resources at hand,
+choosing the <code>YOLOv5x</code> model which might need much more time to finish the detection might not be suitable and thus taking the <code>YOLOv5m</code> or <code>YOLOv5l</code> model might be the better choice.</p>
 <p>What we are also currently working on is to train our own models using the YOLOv5 models as our foundation on a custom dataset.
 Thus it would be interesting to see if there would be a significant increase in performance by using custom trained models.
 If there is a significant increase in performance, the next question to ask if it makes sense to invest time in training a custom model.</p>
@@ -2353,7 +2355,7 @@ If there is a significant increase in performance, the next question to ask if i
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 17, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 29, 2023</span>
       
     
   </small>
