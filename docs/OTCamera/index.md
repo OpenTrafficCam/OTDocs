@@ -17,7 +17,7 @@ Just [write us](mailto:team@opentrafficcam.org).
 * Operation with buttons and/or web ui
 * Continuous recording for about one week
 * Privacy compliant recording
-* Under 400 € per camera system
+* Low hardware costs per camera system (DIY)
 
 <!-- ## Content of this documentation
 
