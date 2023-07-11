@@ -124,6 +124,13 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/OpenTrafficCam
       name: OpenTrafficCam on GitHub
+  # alternate:
+  #   - name: English
+  #     link: /
+  #     lang: en
+  #   - name: Deutsch
+  #     link: /de/
+  #     lang: de
 
 copyright: >
   Copyright &copy; 2020 - 2023 OpenTrafficCam Contributors

@@ -2,12 +2,12 @@
 
 You will need some special hardware to build your own OTCamera to record videos.
 
-OTCamera is based on a Raspberry Pi Zero W and the official Rapberry Pi Camera Module V2.
+OTCamera is based on a Raspberry Pi Zero W and the official Rapberry Pi Camera Module V2 (we are considering V3 modules as soon as picamera2 is stable).
 
 A specially designed PCB (printed circuit board) is needed to connect all additional parts to the Raspberry Pi.
 The single parts for the PCB as well as basic soldering skills are required to assemble a OTCamera.
 
-![PCB](pcb3d.jpeg)
+![PCB](otcamera_pcb.webp)
 
 As case a common waterproof explorer case is used in addition to a 3D printed inlay which carries all OTCamera parts.
 
