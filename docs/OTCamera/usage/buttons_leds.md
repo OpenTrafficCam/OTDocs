@@ -18,7 +18,7 @@ By switching it off the power supply to the Raspberry Pi is interrupted.
 Therefore, it is recommended to keep the Reset switch always turned on unless there is a problem with the Raspberry Pi.
 
 !!! warning "Potential Data Loss"
-    When the Reset switch is pressed, the Raspberry Pi turns off immediatley but is not shut down properly. 
+    When the Reset switch is pressed, the Raspberry Pi turns off immediately but is not shut down properly.
     This can potentially affect the file system, and the SD card may become unreadable.
 
 The other three switches are used for normal operation.
@@ -40,15 +40,13 @@ The Wi-Fi switch controls the Wi-Fi module of the Raspberry Pi.
 This includes both the connection to a Wi-Fi network and the Wi-Fi access point of the OTCamera itself.
 
 When the switch is turned off, the Wi-Fi is turned off after a configurable time period (default is 15 minutes).
-This allows the switches to be turned off before mounting it in the field. Accessing the web interface is still possible for a few minutes.
+This allows to turn off the switch before mounting OTCamera in the field.
+Accessing the web interface is still possible for a few minutes.
 This way, the camera can be safely mounted and aligned.
 
-The Wi-Fi LED blinks once per second when the timer is active.
 When the Wi-Fi is permanently enabled, the Wi-Fi LED blinks once every 5 seconds.
+The Wi-Fi LED blinks once per second when the timer is active.
 Once the Wi-Fi is turned off, the Wi-Fi LED stops blinking and turns off completely.
-
-<!-- Nicht so verständlich: If the Wi-Fi switch is turned on again, the timer is canceled or the Wi-Fi is turned back on.
- If the switch is turned off again, the timer starts again from the beginning. -->
 
 If the Wi-Fi switch is already turned off when OTCamera starts up, the Wi-Fi is immediately turned off after the start (without a timer).
 
@@ -95,7 +93,6 @@ Die drei LEDs gehören zu den rechten drei Schaltern.
 
 Der **Reset**-Schalter sichert die konstante Stromversorgung für den Raspberry Pi. 
 Wird der Schalter ausgeschaltet, ist die Stromversorgung des Raspberry Pi unterbrochen.
-
 
 !!! warning "Möglicher Datenverlust"
     Der Raspberry Pi wird bei der Betätigung des Reset-Schalters nicht heruntergefahren, sondern schaltet sich sofort aus.
