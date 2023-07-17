@@ -32,7 +32,7 @@ OTCamera consits of various components:
 
 You may also need the following during mounting:
 
-1. smartphone or tablet to view the preview of OTCamera,
+1. mobile phone or tablet to view the preview of OTCamera,
 2. a ladder to mount the OTCamera sufficiently high,
 3. tools (screwdriver, cordless screwdriver, hexagon socket),
 4. a drop guard, to secure OTCamera and the bracket from falling down,
@@ -83,20 +83,20 @@ Every time the LED blinks a new preview is created.
 
 Everything is working just fine when the green LED blinks twice and the yellow and red LED blink once every five seconds.
 
-You can now connect to the Wi-Fi access point with your smartphone or tablet.
+You can now connect to the Wi-Fi access point with your mobile phone or tablet.
 After connecting to the Wi-Fi, you can call up the IP address of OTCamera in a browser, to see the preview.
 This is usually [10.10.50.1](http://10.10.50.1).
 
-!!! question "My smartphone will not connect"
-    Some smartphones check whether there internet is accessable via Wi-Fi.
-    If this is not the case, the smartphone is connected but you cannot access the preview.
-    It helps to change the smartphone settings that you want to use the connection anyway.
+!!! question "My mobile phone will not connect"
+    Some mobile phones check whether there internet is accessable via Wi-Fi.
+    If this is not the case, the mobile phone is connected but you cannot access the preview.
+    It helps to change the mobile phone settings that you want to use the connection anyway.
     Or you can switch off your mobile data and thus force the use of Wi-Fi.
 
     We therefore use our own tablet without mobile data for our measurements.
 
-You should now see a website with the preview image.
-The website automatically reloads every five seconds.
+You should now see a site with the preview image.
+The site automatically reloads every five seconds.
 Below the preview image is a table with the most important information.
 
 !!! tip
@@ -141,7 +141,7 @@ The mounting plate is clamped to the ball head with a screw so that OTCamera is 
     For this purpose, always use and install a drop protection.
 
 Now you can loosen the big screw on the ball head a bit and align the OTCamera to your needs.
-You can check the alignment with your smartphone.
+You can check the alignment with your mobile phone.
 It is best if two people do this.
 One person aligns the camera and the other checks the preview.
 
