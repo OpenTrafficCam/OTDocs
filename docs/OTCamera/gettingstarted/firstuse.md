@@ -40,9 +40,9 @@ You may also need the following during mounting:
 6. high-visibility clothing for you and your colleagues,
 7. the permit for operating in the field.
 
-!!! note
+!!! warning "Disclaimer"
     For preparing the measurement you may need to think about more things than we listed.
-    This list is just a reminder that you bear everything in mind.
+    This list is just to remind you that you need to think of everything.
 
 ## Preparation
 
