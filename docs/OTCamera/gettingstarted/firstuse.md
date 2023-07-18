@@ -136,8 +136,7 @@ The time until it switches off can be set and is by default 15 minutes.
 Now you can close the outer case. Be careful not to pinch the USB cable.
 You do not need to open the outer case again.
 
-!!! tip
-    We always have extra cables on hand :)
+!!! tip "Always have extra USB cables with you :)"
 
 Now you can mount the OTCamera.
 
