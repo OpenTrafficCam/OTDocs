@@ -141,7 +141,8 @@ You do not need to open the outer case again.
 
 Now you can mount the OTCamera.
 
-!!! tip
+## Mounting
+
     For installing the OTCamera in the field its best to get some help.
     We recommend to do the whole mounting process with two persons.
 
