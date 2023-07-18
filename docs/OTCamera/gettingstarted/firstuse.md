@@ -93,7 +93,7 @@ You can now connect to the Wi-Fi access point with your mobile phone or tablet.
 After connecting to the Wi-Fi, you can call up the IP address of OTCamera in a browser, to see the preview.
 This is usually [10.10.50.1](http://10.10.50.1).
 
-!!! question "My mobile phone will not connect"
+??? question "Why does my mobile phone not connect?"
     Some mobile phones check whether there internet is accessable via Wi-Fi.
     If this is not the case, the mobile phone is connected but you cannot access the preview.
     It helps to change the mobile phone settings that you want to use the connection anyway.
