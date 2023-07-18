@@ -133,7 +133,8 @@ You can now use the right-hand switch "24/7" to set whether OTCamera should reco
 When you switch off the Wi-Fi switch, the yellow LED flashes faster, indicating that the Wi-Fi is about to turn off.
 The time until it switches off can be set and is by default 15 minutes.
 
-Now you can close the outer case. Be careful not to pinch the USB cable.
+Now you can close the outer case.
+Be careful not to pinch the USB cable.
 You do not need to open the outer case again.
 
 !!! tip "Always have extra USB cables with you :)"
