@@ -58,8 +58,8 @@ For example, if you install the OTCamera on monday afternoon, you will have reco
 Before use, also connect the OTCamera to your local Wifi to update the time of the hardware clock.
 This is especially necessary if you did not use the OTCamera for a certain time.
 
-!!! tip
-    We recommend that every person who needs to mount a OTCamera should practice in a save/"dry" environment beforehand.
+!!! tip "Practice!"
+    We recommend that every person who wants to mount a OTCamera should practice in a save/"dry" environment beforehand.
     This help to prevent anything going wrong out in the field.
 
 ### On site
