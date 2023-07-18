@@ -190,7 +190,7 @@ If OTCamera still has power, it will now shut down and indicate this with a rapi
 If the battery has run down in the meantime, OTCamera has already shut down on its own.
 Nevertheless, set all three switches to "0".
 
-!!! note
+??? tip "Turn of all switches!"
     It is sufficient to set the "Boot" switch to "0".
     However, we have made the experience that it is better to make sure that every switch is in the off position.
     Switch on all the switches at the beginning of the measurement and switch them off at the end.
