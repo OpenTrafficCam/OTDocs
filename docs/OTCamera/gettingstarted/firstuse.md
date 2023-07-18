@@ -46,7 +46,10 @@ You may also need the following during mounting:
 
 ## Preparation
 
-Before every Measurement you should take care of a few things.
+### In the office
+
+Before every measurement you should take care of a few things.
+
 Aditionally to the external USB-battery, OTCamera contains an integrated battery.
 Before use, charge the OTCamera and the external USB-battery.
 With an 26800 mAh external USB-battery and the integrated battery OTCamera can record up to 3.5 or 4 days in a row.
@@ -59,9 +62,9 @@ This is especially necessary if you did not use the OTCamera for a certain time.
     We recommend that every person who needs to mount a OTCamera should practice in a save/"dry" environment beforehand.
     This help to prevent anything going wrong out in the field.
 
-## Installation and measurement
+### On site
 
-When everything is set up, you are good to go with the preparing of the actual measurement.
+Once everything is set up, you can start preparing the actual measurement on site.
 
 Open the outer case, connect the external USB-battery with the inner case and put the external USB-battery in one of the brackets on the right side.
 Turn on OTCamera by bringing all the switches in their "on" position.
