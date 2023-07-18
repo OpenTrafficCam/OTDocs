@@ -116,7 +116,15 @@ If the camera does not record, the external power supply is not connected or the
 ??? warning "Check the time!"
     The camera name and the current time are displayed at the top of the preview image.
     Check the date and time each time you use OTCamera.
-    If the time is not correct, the button cell of the real-time clock is probably empty.
+
+    If the time seems incorrect, first check if you are connected to the respective OTCamera and receive the correct preview image.
+    Refresh you browser to check, if this is not the preview of the OTCamera you mounted previously.
+
+    If it is the correct preview and the time is still not correct, there are two possible solutions:
+
+    1. You have not connected the OTCamera to the internet for some time and have to do so in order to update the internal real-time clock
+    2. The button cell of the internal real-time clock is empty and has to be replaced
+    
     In doubt, hold your mobile phone in the camera image so that you can see the time in the video later.
     If you continue recording with wrong time, we recommend recording 24/7 to avoid missing data.
 
