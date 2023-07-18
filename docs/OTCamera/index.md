@@ -2,11 +2,13 @@
 
 > The **eye** of OpenTrafficCam.
 
-[OTCamera](https://github.com/OpenTrafficCam/OTCamera) is a mobile camera system for capturing traffic videos.
+[OTCamera](https://github.com/OpenTrafficCam/OTCamera) is a mobile camera system for
+capturing traffic videos.
 
-It is not (really) for sale, but for DIY.
-You don't want to build the camera yourself and preferably don't want to have anything to do with the measurement?
-Just [write us](mailto:team@opentrafficcam.org).
+It is intended for DIY enthusiasts.
+You don't want to build the camera yourself or are actually looking for someone to
+conduct the entire traffic survey for you?
+Just [drop us a message](mailto:team@opentrafficcam.org).
 
 ![OTCamera](OTCamera.png)
 
