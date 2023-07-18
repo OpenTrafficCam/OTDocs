@@ -166,9 +166,9 @@ Always wait a few seconds before adjusting OTCamera again, as a preview image is
 ??? question "How should I align the camera?"
     We always align OTCamera so that no sky is visible.
     Otherwise, glare can occur and traffic could no longer be seen.
-    In addition, there should be enough space in all directions, so that OTVision can recognize the trajectories of road users sufficiently.
+    In addition, there should be enough space in all directions, so that [OTVision](/OTVision) can recognize the trajectories of road users sufficiently.
 
-    Please be sure to follow these instructions, especially if you want to automatically process the videos with OTVision yourself or have us process them for you.
+    Please be sure to follow these instructions, especially if you want to automatically process the videos with [OTVision](/OTVision) yourself or have us process them for you.
 
 If everything is aligned correctly, you can now lock OTCamera.
 
