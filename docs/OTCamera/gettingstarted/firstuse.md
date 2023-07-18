@@ -105,7 +105,7 @@ You should now see a site with the preview image.
 The site automatically reloads every five seconds.
 Below the preview image is a table with the most important information.
 
-!!! tip
+??? tip "Feature: Circular buffer"
     If you have already taken several measurements and the memory card is full, at some point the oldest video will be deleted so that recording can continue.
 
     However, we would still recommend deleting the videos after each measurement. 
