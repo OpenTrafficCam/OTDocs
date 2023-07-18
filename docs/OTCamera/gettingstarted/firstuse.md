@@ -208,10 +208,10 @@ If you have an OTG USB adapter built into OTCamera, you can also have the videos
 
 Turn off OTCamera completely.
 Plug a flash drive in the USB port of OTCamera and turn on OTCamera using the "Boot" switch.
-While booting OTCamera checks automatically if an flash drive is plugged in.
-If this is not the case, the recording function starts.
+During boot-up, OTCamera automatically checks whether a flash drive is plugged in.
+If this is not the case, the recording function starts (as usual).
 
-OTCamera starts in USB copy mode if a flash drive is connected.
+If a flash drive is plugged in, OTCamera starts in USB copy mode.
 The yellow LED light blinks to indicate that videos are being copied.
 If the LED lights up continuously, copying is complete.
 In addition, the green LED lights up continuously when you can remove the flash drive.
