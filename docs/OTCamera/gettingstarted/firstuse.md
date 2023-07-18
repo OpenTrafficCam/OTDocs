@@ -143,7 +143,8 @@ Now you can mount the OTCamera.
 
 ## Mounting
 
-    For installing the OTCamera in the field its best to get some help.
+!!! tip "Bring a buddy"
+    For mounting the OTCamera in the field its best to get some help.
     We recommend to do the whole mounting process with two persons.
 
 First mount the bracket with the ball head.
