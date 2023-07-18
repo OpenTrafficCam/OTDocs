@@ -113,7 +113,7 @@ Below the preview image is a table with the most important information.
 At the top of the page you will see a green bar, if everything works fine.
 If the camera does not record, the external power supply is not connected or the "24/7" switch is not switched on, a yellow or red bar will appear at the top with a message.
 
-!!! tip
+??? warning "Check the time!"
     The camera name and the current time are displayed at the top of the preview image.
     Check the date and time each time you use OTCamera.
     If the time is not correct, the button cell of the real-time clock is probably empty.
