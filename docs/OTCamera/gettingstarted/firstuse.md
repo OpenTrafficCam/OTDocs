@@ -25,20 +25,20 @@ The recorded videos can be processed further with [OTVision](/OTVision).
 
 OTCamera consits of various components:
 
-1. the inner case with th electronic circuit, the switches and the LEDs,
-2. an external USB-battery with a cable connected to the inner case,
-3. the outer case for weather and theft protection,
-4. the ball head with clamp for mounting the OTCamera on a pole.
+1. The inner case with th electronic circuit, the switches and the LEDs,
+2. An external USB-battery with a cable connected to the inner case,
+3. The outer case for weather and theft protection,
+4. The ball head with clamp for mounting the OTCamera on a pole.
 
 You may also need the following during mounting:
 
-1. mobile phone or tablet to view the preview of OTCamera,
-2. a ladder to mount the OTCamera sufficiently high,
-3. tools (screwdriver, cordless screwdriver, hexagon socket),
-4. a drop guard, to secure OTCamera and the bracket from falling down,
-5. a lock to protect against theft,
+1. Mobile phone or tablet to view the preview of OTCamera,
+2. A ladder to mount the OTCamera sufficiently high,
+3. Tools (screwdriver, cordless screwdriver, hexagon socket),
+4. A drop guard, to secure OTCamera and the bracket from falling down,
+5. A lock to protect against theft,
 6. high-visibility clothing for you and your colleagues,
-7. the permit for operating in the field.
+7. The permit for operating in the field.
 
 !!! warning "Disclaimer"
     For preparing the measurement you may need to think about more things than we listed.
@@ -204,8 +204,8 @@ When the OTCamera is back in the office, charge the external USB-battery and the
 After recharging the battery of the OTCamera you can download the recorded videos.
 You have two options:
 
-1. via Wi-Fi and SSH and
-2. to a USB flash drive
+1. Via Wi-Fi and SSH and
+2. to an USB flash drive
 
 ### Wi-Fi
 

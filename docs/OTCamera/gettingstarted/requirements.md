@@ -18,15 +18,15 @@ All in all you need:
 - Raspberry Pi Zero W
 - Raspbrry Pi Camera Module V2
 - Ribbon cable to connect Camera to Raspberry
-- micro SD card
+- Micro SD card
 - Explorer Cases 2209
 - OTCamera PCB (+ components) (released soon)
 - OTCamera 3D printed parts (released soon)
 - [Adafruit PowerBoost 1000C](https://www.adafruit.com/product/2465)
 - [Adafruit PiRTC - Precise DS3231 Real Time Clock](https://www.adafruit.com/product/4282)
 - 1 cell LiPo battery
-- four switches
-- three LEDs (for example Barthelme 6V DC, 9.5mm)
-- some cables and cable shoes
+- Four switches
+- Three LEDs (for example Barthelme 6V DC, 9.5mm)
+- Some cables and cable shoes
 
 To assemble everything, you will need a drill, a soldering iron and some basics tools as well.
