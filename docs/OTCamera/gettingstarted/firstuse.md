@@ -1,4 +1,4 @@
-# Basic usage
+# Usage
 
 After assembling OTCamera on your own or receiving it from us, you can finally start using it!
 On this page you will find all the information you need for setting up and mounting OTCamera, recording videos and downloading them.
