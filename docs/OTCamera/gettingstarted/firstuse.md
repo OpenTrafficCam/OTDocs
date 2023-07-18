@@ -1,7 +1,7 @@
 # First use
 
 After assembling OTCamera on your own or receiving it from us, you can finally start using it!
-On this page you will find all the information you need for setting up OTCamera, mounting it, recording videos and downloading them.
+On this page you will find all the information you need for setting up and mounting OTCamera, recording videos and downloading them.
 If you follow these instructions, you will be good to got to use OTCamera in the field.
 The recorded videos can be processed further with [OTVision](/OTVision).
 
