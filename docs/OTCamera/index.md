@@ -17,6 +17,6 @@ Just [drop us a message](mailto:team@opentrafficcam.org).
 * Based on Raspberry Pi Zero W
 * Waterproof case
 * Operation with buttons and/or web ui
-* Continuous recording for about one week
+* Autonomous continuous recording for up to one week (depending on the external battery)
 * Privacy compliant recording
 * Low hardware costs per camera system (DIY)
