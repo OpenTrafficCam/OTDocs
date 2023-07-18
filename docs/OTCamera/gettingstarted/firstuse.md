@@ -55,7 +55,7 @@ Before use, charge the OTCamera and the external USB-battery.
 With an 26800 mAh external USB-battery and the integrated battery OTCamera can record up to 3.5 or 4 days in a row.
 For example, if you install the OTCamera on monday afternoon, you will have recordings of Tuesday, Wednesday and Thursday.
 
-Before use, also connect the OTCamera to your local Wifi to update the time of the hardware clock.
+Before use, also connect the OTCamera to your local Wi-Fi to update the time of the hardware clock.
 This is especially necessary if you did not use the OTCamera for a certain time.
 
 !!! tip "Practice!"
