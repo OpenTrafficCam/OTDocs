@@ -48,7 +48,7 @@ nav:
               - OTCamera/gettingstarted/installation/wifi-ap.md
               - OTCamera/gettingstarted/installation/otcamera.md
           - OTCamera/gettingstarted/firstuse.md
-      - Usage:
+      - Advanced Usage:
           - OTCamera/usage/preparation_safety.md
           - OTCamera/usage/mounting.md
           - OTCamera/usage/buttons_leds.md
