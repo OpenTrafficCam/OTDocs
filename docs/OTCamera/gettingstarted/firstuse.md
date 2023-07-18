@@ -112,6 +112,7 @@ If the camera does not record, the external power supply is not connected or the
     Check the date and time each time you use OTCamera.
     If the time is not correct, the button cell of the real-time clock is probably empty.
     In doubt, hold your mobile phone in the camera image so that you can see the time in the video later.
+    If you continue recording with wrong time, we recommend recording 24/7 to avoid missing data.
 
 You can now use the right-hand switch "24/7" to set whether OTCamera should record permanently or only at the configured time of day.
 
