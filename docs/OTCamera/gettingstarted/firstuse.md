@@ -163,12 +163,12 @@ One person aligns the camera and the other checks the preview.
 
 Always wait a few seconds before adjusting OTCamera again, as a preview image is only generated every five seconds.
 
-!!! tip
+??? question "How should I align the camera?"
     We always align OTCamera so that no sky is visible.
     Otherwise, glare can occur and traffic could no longer be seen.
     In addition, there should be enough space in all directions, so that OTVision can recognize the trajectories of road users sufficiently.
 
-    Please always pay attention to these instructions especially if we should do the processing of the videos for you.
+    Please be sure to follow these instructions, especially if you want to automatically process the videos with OTVision yourself or have us process them for you.
 
 If everything is aligned correctly, you can now lock OTCamera.
 
