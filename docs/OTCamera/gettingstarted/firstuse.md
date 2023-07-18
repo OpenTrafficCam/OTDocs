@@ -8,8 +8,8 @@ The recorded videos can be processed further with [OTVision](/OTVision).
 <!-- Further details on the single steps can be found on the following pages. -->
 
 !!! Warning "safety and security"
-    Please be aware that your OTCamera can not fall down.
-    This applies to the place where it is mounted but also during montage.
+    Please be aware that your OTCamera must not fall down.
+    This applies to the place where it is mounted but also during assembly.
 
     Furthermore, check your local data protection regulations to guarantee you are operating according to the law.
     Depending on the position of the camera, it could be possible that you have to adjust the focus or take further measures.
