@@ -37,8 +37,9 @@ You may also need the following during mounting:
 3. Tools (screwdriver, cordless screwdriver, hexagon socket),
 4. A drop guard, to secure OTCamera and the bracket from falling down,
 5. A lock to protect against theft,
-6. high-visibility clothing for you and your colleagues,
-7. The permit for operating in the field.
+6. High-visibility clothing for you and your colleagues,
+7. Traffic cones to warn pedestrians,
+8. The permit for operating in the field.
 
 !!! warning "Disclaimer"
     For preparing the measurement you may need to think about more things than we listed.
