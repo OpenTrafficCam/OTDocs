@@ -122,8 +122,8 @@ If the camera does not record, the external power supply is not connected or the
 
     If it is the correct preview and the time is still not correct, there are two possible solutions:
 
-    1. You have not connected the OTCamera to the internet for some time and have to do so in order to update the internal real-time clock
-    2. The button cell of the internal real-time clock is empty and has to be replaced
+    1. You have not connected the OTCamera to the internet for some time and have to do so in order to update the internal real-time clock.
+    2. The button cell of the internal real-time clock is empty and has to be replaced.
     
     In doubt, hold your mobile phone in the camera image so that you can see the time in the video later.
     If you continue recording with wrong time, we recommend recording 24/7 to avoid missing data.

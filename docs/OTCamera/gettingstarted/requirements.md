@@ -16,10 +16,10 @@ To power everthing up, its best to use an external USB-battery.
 All in all you need:
 
 - Raspberry Pi Zero W
-- Raspbrry Pi Camera Module V2
+- Raspberry Pi Camera Module V2
 - Ribbon cable to connect Camera to Raspberry
 - Micro SD card
-- Explorer Cases 2209
+- Explorer Cases 2209 (or another waterproof case)
 - OTCamera PCB (+ components) (released soon)
 - OTCamera 3D printed parts (released soon)
 - [Adafruit PowerBoost 1000C](https://www.adafruit.com/product/2465)
