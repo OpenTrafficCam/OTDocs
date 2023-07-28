@@ -8,7 +8,7 @@ It is intended for DIY enthusiasts.
 You don't want to build OTCamera yourself or are looking for someone to conduct the entire traffic survey for you?
 Just [drop us a message](mailto:team@opentrafficcam.org).
 
-![OTCamera](OTCamera.png)
+![OTCamera](OTCamera.webp)
 
 ## Key features
 
