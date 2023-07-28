@@ -48,15 +48,14 @@ nav:
               - OTCamera/gettingstarted/installation/wifi-ap.md
               - OTCamera/gettingstarted/installation/otcamera.md
           - OTCamera/gettingstarted/firstuse.md
-      - Recording:
-          - OTCamera/recording/preparation.md
-          - OTCamera/recording/settings.md
-          - OTCamera/recording/mounting.md
-          - OTCamera/recording/record.md
-          - OTCamera/recording/safetywarning.md
-          - OTCamera/recording/getvideos.md
-      - Calibration:
-          - OTCamera/calibration/calibrate.md
+      - Advanced Usage:
+          - OTCamera/usage/preparation_safety.md
+          - OTCamera/usage/mounting.md
+          - OTCamera/usage/buttons_leds.md
+          - OTCamera/usage/getvideos.md
+          # - Advanced Usage:
+          # - OTCamera/advanced_usage/configration.md
+          # - OTCamera/advanced_usage/calibrate.md
   - OTVision:
       - OTVision/index.md
       - Getting Started:
@@ -67,7 +66,7 @@ nav:
           - OTVision/usage/convert.md
           - OTVision/usage/detect.md
           - OTVision/usage/track.md
-      - Advanced usage:
+      - Advanced Usage:
           - OTVision/advanced_usage/configuration.md
 
   - OTAnalytics:
@@ -125,6 +124,13 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/OpenTrafficCam
       name: OpenTrafficCam on GitHub
+      # alternate:
+      #   - name: English
+      #     link: /
+      #     lang: en
+      #   - name: Deutsch
+      #     link: /de/
+      #     lang: de
 
 copyright: >
   Copyright &copy; 2020 - 2023 OpenTrafficCam Contributors
@@ -168,4 +174,4 @@ plugins:
       fallback_to_build_date: true
       type: date
       timezone: Europe/Berlin
-  # - glightbox # to zoom images on click.
+      # - glightbox # to zoom images on click.
