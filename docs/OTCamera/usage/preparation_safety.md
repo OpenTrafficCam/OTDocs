@@ -1,4 +1,4 @@
-# COCO 6-class
+# Preparation & Safety
 
 !!! info "Coming soon"
     Unfortunately, there is no content here yet. But we are currently working on completing this site.
