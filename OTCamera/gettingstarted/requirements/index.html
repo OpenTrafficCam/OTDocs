@@ -19,7 +19,7 @@
         <link rel="next" href="../assembly/">
       
       <link rel="icon" href="../../../assets/OTC_icon.svg">
-      <meta name="generator" content="mkdocs-1.5.0, mkdocs-material-9.1.19">
+      <meta name="generator" content="mkdocs-1.5.1, mkdocs-material-9.1.19">
     
     
       
@@ -79,7 +79,7 @@
           <div class="md-banner__inner md-grid md-typeset">
             
             
-OpenTrafficCam is a project that is currently under development. The content on this website will be created bit by bit.
+OpenTrafficCam is a project that is currently under development. The content on this site will be created bit by bit.
 
           </div>
           
@@ -706,7 +706,7 @@ OpenTrafficCam is a project that is currently under development. The content on 
   
     <li class="md-nav__item">
       <a href="../firstuse/" class="md-nav__link">
-        First Use
+        Usage
       </a>
     </li>
   
@@ -738,14 +738,14 @@ OpenTrafficCam is a project that is currently under development. The content on 
       
       
         <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
-          Recording
+          Advanced Usage
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_2_3">
           <span class="md-nav__icon md-icon"></span>
-          Recording
+          Advanced Usage
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -755,8 +755,8 @@ OpenTrafficCam is a project that is currently under development. The content on 
   
   
     <li class="md-nav__item">
-      <a href="../../recording/preparation/" class="md-nav__link">
-        Preparation
+      <a href="../../usage/preparation_safety/" class="md-nav__link">
+        Preparation & Safety
       </a>
     </li>
   
@@ -769,21 +769,7 @@ OpenTrafficCam is a project that is currently under development. The content on 
   
   
     <li class="md-nav__item">
-      <a href="../../recording/settings/" class="md-nav__link">
-        Settings
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../recording/mounting/" class="md-nav__link">
+      <a href="../../usage/mounting/" class="md-nav__link">
         Mounting
       </a>
     </li>
@@ -797,8 +783,8 @@ OpenTrafficCam is a project that is currently under development. The content on 
   
   
     <li class="md-nav__item">
-      <a href="../../recording/record/" class="md-nav__link">
-        Record
+      <a href="../../usage/buttons_leds/" class="md-nav__link">
+        Buttons and LEDs
       </a>
     </li>
   
@@ -811,72 +797,8 @@ OpenTrafficCam is a project that is currently under development. The content on 
   
   
     <li class="md-nav__item">
-      <a href="../../recording/safetywarning/" class="md-nav__link">
-        Safety Warning
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../recording/getvideos/" class="md-nav__link">
+      <a href="../../usage/getvideos/" class="md-nav__link">
         Get the Videos
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-      
-      
-      
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
-      
-      
-      
-        <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
-          Calibration
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_2_4">
-          <span class="md-nav__icon md-icon"></span>
-          Calibration
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../calibration/calibrate/" class="md-nav__link">
-        How to calibrate OTCamera
       </a>
     </li>
   
@@ -1113,14 +1035,14 @@ OpenTrafficCam is a project that is currently under development. The content on 
       
       
         <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
-          Advanced usage
+          Advanced Usage
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_3_4">
           <span class="md-nav__icon md-icon"></span>
-          Advanced usage
+          Advanced Usage
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -1910,27 +1832,27 @@ OpenTrafficCam is a project that is currently under development. The content on 
 
 <h1 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h1>
 <p>You will need some special hardware to build your own OTCamera to record videos.</p>
-<p>OTCamera is based on a Raspberry Pi Zero W and the official Rapberry Pi Camera Module V2.</p>
+<p>OTCamera is based on a Raspberry Pi Zero W and the official Rapberry Pi Camera Module V2 (we are considering V3 modules as soon as picamera2 is stable).</p>
 <p>A specially designed PCB (printed circuit board) is needed to connect all additional parts to the Raspberry Pi.
 The single parts for the PCB as well as basic soldering skills are required to assemble a OTCamera.</p>
-<p><img alt="PCB" src="../pcb3d.jpeg" /></p>
+<p><img alt="PCB" src="../otcamera_pcb.webp" /></p>
 <p>As case a common waterproof explorer case is used in addition to a 3D printed inlay which carries all OTCamera parts.</p>
 <p>To power everthing up, its best to use an external USB-battery.</p>
 <p>All in all you need:</p>
 <ul>
 <li>Raspberry Pi Zero W</li>
-<li>Raspbrry Pi Camera Module V2</li>
+<li>Raspberry Pi Camera Module V2</li>
 <li>Ribbon cable to connect Camera to Raspberry</li>
-<li>micro SD card</li>
-<li>Explorer Cases 2209</li>
+<li>Micro SD card</li>
+<li>Explorer Cases 2209 (or another waterproof case)</li>
 <li>OTCamera PCB (+ components) (released soon)</li>
 <li>OTCamera 3D printed parts (released soon)</li>
 <li><a href="https://www.adafruit.com/product/2465">Adafruit PowerBoost 1000C</a></li>
 <li><a href="https://www.adafruit.com/product/4282">Adafruit PiRTC - Precise DS3231 Real Time Clock</a></li>
 <li>1 cell LiPo battery</li>
-<li>four switches</li>
-<li>three LEDs (for example Barthelme 6V DC, 9.5mm)</li>
-<li>some cables and cable shoes</li>
+<li>Four switches</li>
+<li>Three LEDs (for example Barthelme 6V DC, 9.5mm)</li>
+<li>Some cables and cable shoes</li>
 </ul>
 <p>To assemble everything, you will need a drill, a soldering iron and some basics tools as well.</p>
 
@@ -1939,7 +1861,7 @@ The single parts for the PCB as well as basic soldering skills are required to a
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 29, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 27, 2023</span>
       
     
   </small>
