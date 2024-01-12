@@ -1,7 +1,5 @@
 ---
 title: Home
+template: index.html
 ---
 
-# OpenTrafficCam
-
-This site will be replaced by a custom html page.
