@@ -62,7 +62,7 @@ Every command consists of three parts:
     You can specify a file or folder path (in quotation marks) after the
     `-p` (or `--paths`) argument.
 
-    For the detect.py script, you must also specify the expected video duration in seconds after the `--expected_duration` argument.
+    The detect.py script expects an additional argument `--expected_duration`, the expected duration of the video(s) in seconds.
 
     ??? info "Some hints about specifying the paths"
 
@@ -116,7 +116,7 @@ python detect.py -p "path/to/your/video files" --expected_duration <video durati
 where
 
 - `path/to/video files` is either the path to a single video file or a folder containing multiple video files and
-- `video duration [sec]` is the duration of the individual videos to detect.
+- `video duration [sec]` is the duration of the individual videos.
 
 !!! info "Naming convention for your video files"
     The filenames must contain the date and time of the start of the video in the

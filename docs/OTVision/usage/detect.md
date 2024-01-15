@@ -49,7 +49,7 @@ It has to be specified either using the CLI or in the
 
 `--expected_duration <video duration [sec]>`
 
-Expected duration of the individual videos in seconds (must be all the same).
+Expected duration of each video in seconds (must be all the same).
 This parameter is required to avoid errors if some images are missing in a video.
 
 This parameter is required to run `detect.py`.
