@@ -3,7 +3,7 @@
 ## Synopsis
 
 ```text
-python  detect.py   [-p paths] [-c config] [-w weights]
+python  detect.py   [-p paths] [--expected_duration] [-c config] [-w weights]
                     [--conf] [--iou] [--chunksize] [--half] [--force]
                     [-o overwrite]
 ```
@@ -40,6 +40,17 @@ or
 `--paths "path/to/video files" "path/to/other video files"`
 
 One or multiple paths to video files or folders containing video files.
+
+This parameter is required to run `detect.py`.
+It has to be specified either using the CLI or in the
+[configuration](../advanced_usage/configuration.md) yaml file.
+
+### expected_duration (required)
+
+`--expected_duration <video duration [sec]>`
+
+Expected duration of each video in seconds (must be all the same).
+This parameter is required to avoid errors if some images are missing in a video.
 
 This parameter is required to run `detect.py`.
 It has to be specified either using the CLI or in the
