@@ -2807,24 +2807,24 @@ the config file.</p>
 or
 <code>--weights &lt;weights&gt;</code></p>
 <p>Name of weights from PyTorch hub or path to weights file.</p>
-<p>This parameter is optional and defaults to <code>YOLOv5s.pt</code>.</p>
+<p>This parameter is optional and defaults to <code>yolov8s.pt</code>.</p>
 <h3 id="conf">conf<a class="headerlink" href="#conf" title="Permanent link">&para;</a></h3>
 <p><code>--conf &lt;float&gt;</code></p>
-<p>The YOLOv5 model confidence threshold.
+<p>The YOLOv8 model confidence threshold.
 Should be a float value between zero and one.</p>
 <p>The confidence threshold is the minimum confidence for a detection to be considered
 a true detection (otherwise this detection will be ignored entirely).</p>
 <p>This parameter is optional and defaults to <code>0.25</code>.</p>
 <h3 id="iou">iou<a class="headerlink" href="#iou" title="Permanent link">&para;</a></h3>
 <p><code>--iou &lt;float&gt;</code></p>
-<p>The YOLOv5 model IOU threshold.
+<p>The YOLOv8 model IOU threshold.
 Should be a float value between zero and one.</p>
 <p>The IOU threshold is the overlap threshold for areas of bounding boxes used in
 non-maximum suppression to avoid duplicate detections.</p>
 <p>This parameter is optional and defaults to <code>0.45</code>.</p>
 <h3 id="chunksize">chunksize<a class="headerlink" href="#chunksize" title="Permanent link">&para;</a></h3>
 <p><code>--chunksize &lt;int&gt;</code></p>
-<p>The number of frames of a video to be detected by YOLOv5 in one iteration.
+<p>The number of frames of a video to be detected by YOLOv8 in one iteration.
 Should be an integer above zero.</p>
 <p>This parameter is optional and defaults to <code>1</code>.</p>
 <h3 id="half">half<a class="headerlink" href="#half" title="Permanent link">&para;</a></h3>
@@ -2835,7 +2835,7 @@ Should be an integer above zero.</p>
 <p class="admonition-title">Half precision only works for running detection on a GPU!</p>
 </div>
 <h3 id="force">force<a class="headerlink" href="#force" title="Permanent link">&para;</a></h3>
-<p><code>--force</code> to force a reload of a YOLOv5 standard model from PyTorch hub instead of
+<p><code>--force</code> to force a reload of a YOLOv8 standard model from PyTorch hub instead of
 using a cached model from previous detection runs.</p>
 <p><code>--no-force</code> to prevent forcing this reload.</p>
 <p>This parameter is optional and defaults to <code>--no-force</code>.</p>
@@ -2863,7 +2863,7 @@ using a cached model from previous detection runs.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 15, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 25, 2024</span>
   </span>
 
     
