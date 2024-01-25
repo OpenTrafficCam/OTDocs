@@ -31,7 +31,7 @@ graph LR
     (using [ffmpeg](https://ffmpeg.org/))
 * [Detection](usage/detect) (joint localization and classification) of road users using
     state-of-the-art AI object detection models in single video frames
-    (currently using [YOLOv5 by Ultralytics](https://github.com/ultralytics/yolov5))
+    (currently using [YOLOv8 by Ultralytics](https://github.com/ultralytics/ultralytics))
 * [Tracking](usage/track) of detected road users over multiple frames
     (currently using the
     [IOU-Tracker by Bochinski et al.](https://github.com/bochinski/iou-tracker))
