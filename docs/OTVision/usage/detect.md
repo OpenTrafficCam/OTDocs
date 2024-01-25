@@ -86,7 +86,7 @@ or
 
 Name of weights from PyTorch hub or path to weights file.
 
-This parameter is optional and defaults to `YOLOv8s.pt`.
+This parameter is optional and defaults to `yolov8s.pt`.
 
 ### conf
 
