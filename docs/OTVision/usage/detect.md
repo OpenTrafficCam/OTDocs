@@ -86,13 +86,13 @@ or
 
 Name of weights from PyTorch hub or path to weights file.
 
-This parameter is optional and defaults to `YOLOv5s.pt`.
+This parameter is optional and defaults to `yolov8s.pt`.
 
 ### conf
 
 `--conf <float>`
 
-The YOLOv5 model confidence threshold.
+The YOLOv8 model confidence threshold.
 Should be a float value between zero and one.
 
 The confidence threshold is the minimum confidence for a detection to be considered
@@ -104,7 +104,7 @@ This parameter is optional and defaults to `0.25`.
 
 `--iou <float>`
 
-The YOLOv5 model IOU threshold.
+The YOLOv8 model IOU threshold.
 Should be a float value between zero and one.
 
 The IOU threshold is the overlap threshold for areas of bounding boxes used in
@@ -116,7 +116,7 @@ This parameter is optional and defaults to `0.45`.
 
 `--chunksize <int>`
 
-The number of frames of a video to be detected by YOLOv5 in one iteration.
+The number of frames of a video to be detected by YOLOv8 in one iteration.
 Should be an integer above zero.
 
 This parameter is optional and defaults to `1`.
@@ -133,7 +133,7 @@ This parameter is optional and defaults to `--no-half`.
 
 ### force
 
-`--force` to force a reload of a YOLOv5 standard model from PyTorch hub instead of
+`--force` to force a reload of a YOLOv8 standard model from PyTorch hub instead of
 using a cached model from previous detection runs.
 
 `--no-force` to prevent forcing this reload.
