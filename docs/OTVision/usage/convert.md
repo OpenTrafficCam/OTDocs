@@ -93,7 +93,7 @@ This parameter is optional and defaults to `20`.
 
 `-o` or `--overwrite` to overwrite existing `.mp4` files.
 
-`-no-o` or `--no-overwrite` to prevent overwriting existing `.mp4` files.
+`--no-o` or `--no-overwrite` to prevent overwriting existing `.mp4` files.
 
 This parameter is optional and defaults to `--overwrite`.
 
