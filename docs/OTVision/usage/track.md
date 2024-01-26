@@ -5,7 +5,7 @@
 ```text
 python  track.py    [-p paths] [-c config]
                     [--sigma_l] [--sigma_h] [--sigma_iou] [--t_min] [--t_miss_max]
-                    [-o overwrite]
+                    [--overwrite]
 ```
 
 ## Description
@@ -101,8 +101,8 @@ This parameter is optional and defaults to `51`.
 
 ### overwrite
 
-`-o` or `--overwrite` to overwrite existing `.ottrk` files.
+`--overwrite` to overwrite existing `.ottrk` files.
 
-`--no-o` or `--no-overwrite` to prevent overwriting existing `.ottrk` files.
+`--no-overwrite` to prevent overwriting existing `.ottrk` files.
 
 This parameter is optional and defaults to `--overwrite`.
