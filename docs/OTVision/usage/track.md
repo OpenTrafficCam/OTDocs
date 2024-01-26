@@ -103,6 +103,6 @@ This parameter is optional and defaults to `51`.
 
 `-o` or `--overwrite` to overwrite existing `.ottrk` files.
 
-`-no-o` or `--no-overwrite` to prevent overwriting existing `.ottrk` files.
+`--no-o` or `--no-overwrite` to prevent overwriting existing `.ottrk` files.
 
 This parameter is optional and defaults to `--overwrite`.
