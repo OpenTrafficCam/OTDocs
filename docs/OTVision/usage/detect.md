@@ -144,6 +144,6 @@ This parameter is optional and defaults to `--no-force`.
 
 `-o` or `--overwrite` to overwrite existing `.otdet` files.
 
-`-no-o` or `--no-overwrite` to prevent overwriting existing `.otdet` files.
+`--no-o` or `--no-overwrite` to prevent overwriting existing `.otdet` files.
 
 This parameter is optional and defaults to `--overwrite`.
