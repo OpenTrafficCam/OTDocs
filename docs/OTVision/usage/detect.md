@@ -5,7 +5,7 @@
 ```text
 python  detect.py   [-p paths] [--expected_duration] [-c config] [-w weights]
                     [--conf] [--iou] [--chunksize] [--half] [--force]
-                    [-o overwrite]
+                    [--overwrite]
 ```
 
 ## Description
@@ -142,8 +142,8 @@ This parameter is optional and defaults to `--no-force`.
 
 ### overwrite
 
-`-o` or `--overwrite` to overwrite existing `.otdet` files.
+`--overwrite` to overwrite existing `.otdet` files.
 
-`--no-o` or `--no-overwrite` to prevent overwriting existing `.otdet` files.
+`--no-overwrite` to prevent overwriting existing `.otdet` files.
 
 This parameter is optional and defaults to `--overwrite`.
