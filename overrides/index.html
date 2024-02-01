@@ -1,33 +1,85 @@
 
+{% extends "base.html" %}
 
-<!DOCTYPE html>
-<html lang="en" class="no-js">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>OpenTrafficCam</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        {% block styles %}
-        <link rel="stylesheet" href="assets/stylesheets/main.45e1311d.min.css">
-        {% endblock %}
-        <link href="stylesheets/bootstrap.css" rel="stylesheet" />
-        <link href="stylesheets/styles.css" rel="stylesheet" />
-        <link href="stylesheets/bootstrap-grid.css" rel="stylesheet" />
-        <link href="stylesheets/bootstrap-utilities.css" rel="stylesheet" />
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    </head>
-    <body id="page-top">
+<!-- Extends the base.html file of material for mkdocs -->
+<!-- https://github.com/squidfunk/mkdocs-material/blob/master/src/templates/base.html -->
+<!-- copied all available blocks from base.html and inherited if needed. -->
 
-        {% import "partials/language.html" as lang with context %}
-        {% include "partials/header.html" %}
-        <header class="masthead">
-            <div class="container">
-                <div class="masthead-subheading">OPENTRAFFICCAM</div>
-                <div class="masthead-heading text-uppercase">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy </div>
-            </div>
-        </header>
+<!-- Meta tags -->
+{% block site_meta %}
+    {{ super() }}
+{% endblock %}
+
+<!-- Site title -->
+{% block htmltitle %}
+    <title>{{ config.site_name }}</title>
+{% endblock %}
+
+<!-- Theme-related style sheets -->
+{% block styles %}
+    {{ super() }}
+    <link href="stylesheets/bootstrap.css" rel="stylesheet" />
+    <link href="stylesheets/styles.css" rel="stylesheet" />
+    <link href="stylesheets/bootstrap-grid.css" rel="stylesheet" />
+    <link href="stylesheets/bootstrap-utilities.css" rel="stylesheet" />
+{% endblock %}
+
+<!-- JavaScript libraries -->
+{% block libs %}
+    {{ super() }}
+{% endblock %}
+
+<!-- Webfonts -->
+{% block fonts %}
+    {{ super() }}
+{% endblock %}
+
+<!-- Analytics -->
+{% block analytics %}
+    <script defer data-domain="opentrafficcam.org" src="https://plausible.platomo.org/js/script.js"></script>
+{% endblock %}
+
+<!-- Custom front matter -->
+{% block extrahead %}
+{% endblock %}
+
+<!--Body starts here-->
+
+<!-- Announcement bar content -->
+{% block announce %}{% endblock %}
+
+<!-- Header -->
+{% block header %}
+    {{ super() }}
+{% endblock %}
+
+<!-- Hero teaser -->
+{% block hero %}
+<header class="masthead">
+    <div class="container">
+        <div class="masthead-subheading">OPENTRAFFICCAM</div>
+        <div class="masthead-heading text-uppercase">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy </div>
+    </div>
+</header>
+{% endblock %}
+
+<!-- Navigation tabs (collapsing) -->
+{% block tabs %}
+    {{ super() }}
+{% endblock %}
+
+<!-- Main area -->
+
+    <!-- Sidebars -->
+    {% block site_nav %}
+    <!-- remove navigation and table of content-->
+    {% endblock %}
+
+    <!-- Page content -->
+    {% block container %}
+        {{ super() }}
+    {% endblock %}
+        {% block content %}
         <section class="page-section" id="otc_information">
             <div class="container">
                 <div class="text-center">
@@ -130,6 +182,20 @@
             </div>
         </section>
 
-        <script src="assets/javascripts/bundle.d7c377c4.min.js"></script>
-    </body>
-</html>
+        {% endblock %}
+
+<!-- Footer -->
+{% block footer %}
+    {{ super() }}
+{% endblock %}
+
+{% block config %}
+    {{ super() }}
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="assets/javascripts/bundle.d7c377c4.min.js"></script>
+{% endblock %}
+
