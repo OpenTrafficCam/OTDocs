@@ -172,6 +172,9 @@ markdown_extensions:
   - md_in_html
   # - meta
 
+watch:
+  - ./overrides
+
 plugins:
   - search
   - git-revision-date-localized:
