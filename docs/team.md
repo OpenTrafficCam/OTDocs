@@ -1,5 +1,6 @@
 ---
 title: Team
+template: no-nav.html
 ---
 
 # Team

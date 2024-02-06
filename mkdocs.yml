@@ -30,6 +30,7 @@ theme:
 nav:
   - index.md
   - pricing.md
+  - use-cases.md
   - Documentation:
     - Overview:
         - overview/index.md

@@ -1,5 +1,6 @@
 ---
 title: Pricing
+template: no-nav.html
 ---
 
 # Pricing

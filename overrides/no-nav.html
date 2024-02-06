@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+<!-- Extends the base.html file of material for mkdocs -->
+<!-- https://github.com/squidfunk/mkdocs-material/blob/master/src/templates/base.html -->
+<!-- copied all available blocks from base.html and inherited if needed. -->
+
+<!-- Meta tags -->
+{% block site_meta %}
+{{ super() }}
+{% endblock %}
+
+<!-- Site title -->
+{% block htmltitle %}
+{{ super() }}
+{% endblock %}
+
+<!-- Theme-related style sheets -->
+{% block styles %}
+{{ super() }}
+{% endblock %}
+
+<!-- JavaScript libraries -->
+{% block libs %}
+{{ super() }}
+{% endblock %}
+
+<!-- Webfonts -->
+{% block fonts %}
+{{ super() }}
+{% endblock %}
+
+<!-- Analytics -->
+{% block analytics %}
+<script defer data-domain="opentrafficcam.org" src="https://plausible.platomo.org/js/script.js"></script>
+{% endblock %}
+
+<!-- Custom front matter -->
+{% block extrahead %}{% endblock %}
+
+<!--Body starts here-->
+
+<!-- Announcement bar content -->
+{% block announce %}{% endblock %}
+
+<!-- Header -->
+{% block header %}
+{{ super() }}
+{% endblock %}
+
+<!-- Hero teaser -->
+{% block hero %}{% endblock %}
+
+<!-- Navigation tabs (collapsing) -->
+{% block tabs %}
+{{ super() }}
+{% endblock %}
+
+<!-- Main area -->
+
+<!-- Sidebars -->
+{% block site_nav %}
+<!-- remove navigation and table of content-->
+{% endblock %}
+
+<!-- Page content -->
+{% block container %}
+{{ super() }}
+{% endblock %}
+{% block content %}
+{{ super() }}
+{% endblock %}
+
+<!-- Footer -->
+{% block footer %}
+{{ super() }}
+{% endblock %}
+
+{% block config %}
+{{ super() }}
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+{% endblock %}
+
