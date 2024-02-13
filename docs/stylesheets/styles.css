@@ -39,6 +39,9 @@ header.hero .hero-subheading {
   }
 }
 
+.introduction p {
+  font-size: 0.8rem;
+}
 
 .hero h1 {
   font-size: 4rem;
