@@ -53,10 +53,14 @@
 
 <!-- Hero teaser -->
 {% block hero %}
-<header class="masthead">
+<header class="hero">
     <div class="container">
-        <div class="masthead-heading">Open Source Verkehrsanalyse</div>
-        <div class="masthead-subheading">Erfasse und analysiere Kfz-, Rad- und Fußverkehr einfach und effizient.</div>
+        <div class="hero-heading">
+            <h1>Open Source Verkehrsanalyse</h1>
+        </div>
+        <div class="hero-subheading">
+            <h2>Erfasse und analysiere Kfz-, Rad- und Fußverkehr einfach und effizient.</h2>
+        </div>
     </div>
 </header>
 {% endblock %}
@@ -78,9 +82,9 @@
 {{ super() }}
 {% endblock %}
 {% block content %}
-<section class="page-section" id="otc_information">
+<section class="page-section introduction" id="otc_information">
     <div class="col-md-9 container text-center">
-        <h2>
+        <p>
             OpenTrafficCam ist das einzige Open Source Gesamtsystem zur automatischen Analyse von Verkehr.
             Entwickelt von Informatikern (ja bisher nur Männer :() und Verkehrsingenieur:innen für
             Verkehrsingenieur:innen. #less-sales-more-truth #lessbullshitbingo
@@ -94,17 +98,17 @@
 
 <!--            OTAnalytics analysiert die Bewegungen der detektierten Verkehrsteilnehmenden und aggregiert-->
 <!--            sie zu verkehrlichen Kenngrößen wie Verkehrsstärken, Zeitlücken, Geschwindigkeiten, …-->
-        </h2>
+        </p>
     </div>
 
 
 </section>
-<section class="page-section" id="services">
+<section class="page-section services" id="services">
     <div class="container">
         <div class="row text-center">
-            <div class="col-md-4 justify-content-end">
+            <div class="col-md-4 service-grid">
 
-                <div class="col">
+                <div>
                     <span class="fa-stack fa-4x">
                     <i class="fas fa-circle fa-stack-2x fas-color"></i>
                     <i class="fas fa-video fa-stack-1x fa-inverse"></i>
@@ -117,33 +121,31 @@
                         Der Datenschutz wird by Design adressiert.
                         Die modulare Bauweise und die offene Hard- und Software ermöglichen individuelle Anpassungen
                         und Integrationen z.B. in Straßenbeleuchtungen.
-                        <br>
-                        <br>
-                        <br>
-                        <br>
 
                     </p>
                 </div>
-                <div class="col">
+                <div class="button-grid">
                     <a class="md-button" href="#services">Tell Me More</a>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 service-grid">
+                <div>
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x fas-color"></i>
                             <i class="fas fa-wand-magic-sparkles fa-stack-1x fa-inverse"></i>
                         </span>
-                <h2 class="my-4">Videoverarbeitung</h2>
-                <p>
-                    Mit KI-basierter Objekterkennung detektiert OTVision Verkehrsteilnehmende in Videos.
-                    Die daraus resultierenden Trajektorien beschreiben alle einzelnen Verkehrsbewegungen
-                    räumlich und zeitlich. Dabei wird zwischen 7 (Open Source) bzw. 18 (Pro) verschiedenen
-                    Verkehrsklassen unterschieden. Die Pro-Modelle verbessern außerdem die Erfassungsgenauigkeit
-                    und -rate. Durch die modulare Architektur können individuelle Klassen trainiert werden.
-                        <br>
-                        <br>
-                </p>
-                <a class="md-button" href="#services">Tell Me More</a>
+                        <h2 class="my-4">Videoverarbeitung</h2>
+                        <p>
+                            Mit KI-basierter Objekterkennung detektiert OTVision Verkehrsteilnehmende in Videos.
+                            Die daraus resultierenden Trajektorien beschreiben alle einzelnen Verkehrsbewegungen
+                            räumlich und zeitlich. Dabei wird zwischen 7 (Open Source) bzw. 18 (Pro) verschiedenen
+                            Verkehrsklassen unterschieden. Die Pro-Modelle verbessern außerdem die Erfassungsgenauigkeit
+                            und -rate. Durch die modulare Architektur können individuelle Klassen trainiert werden.
+                        </p>
+                </div>
+                <div class="button-grid">
+                    <a class="md-button" href="#services">Tell Me More</a>
+                </div>
             </div>
 
             <div class="col-md-4">
@@ -166,14 +168,13 @@
         </div>
     </div>
 </section>
-<section class="page-section bg-light" id="datenschutz">
+<section class="page-section bg-light details" id="datenschutz">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
                 <img src="assets/img/31343C.svg">
             </div>
             <div class="col-md-6">
-
                 <h2>Datenschutz</h2>
                 <p>Durch bewusste Fokussierung auf den Nahbereich und einen
                     typischerweise großen Abstand zu den Verkehrsteilnehmenden (> 3m) werden Verkehrsteilnehmende nur
@@ -187,7 +188,7 @@
         </div>
     </div>
 </section>
-<section class="page-section bg-light" id="use_case">
+<section class="page-section bg-light details" id="use_case">
     <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -211,7 +212,7 @@
             </div>
     </div>
 </section>
-<section class="page-section bg-light" id="open_source">
+<section class="page-section bg-light details" id="open_source">
     <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -233,7 +234,7 @@
     </div>
 </section>
 
-<section class="page-section" id="team">
+<section class="page-section team" id="team">
     <div class="container">
         <div class="text-center">
             <div class="row justify-content-md-center">
