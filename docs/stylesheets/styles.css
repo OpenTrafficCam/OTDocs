@@ -116,7 +116,13 @@ header.hero .hero-subheading {
   text-align: center !important;
 }
 
-
+.service-icon svg {
+  width: 80%;
+  max-width: 160px;
+}
+.service-icon svg path {
+  fill: var(--md-primary-fg-color);
+}
 
 p {
   line-height: 1.75;

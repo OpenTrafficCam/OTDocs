@@ -109,9 +109,9 @@
             <div class="col-md-4 service-grid">
 
                 <div>
-                    <span class="fa-stack fa-4x">
-                    <i class="fas fa-circle fa-stack-2x fas-color"></i>
-                    <i class="fas fa-video fa-stack-1x fa-inverse"></i>
+                    <span class="service-icon">
+                        {% set icon = "material/video-box" %}
+                        {% include ".icons/" ~ icon ~ ".svg" %}
                     </span>
                     <h2 class="my-4">Videoerfassung</h2>
                     <p>
@@ -130,9 +130,9 @@
             </div>
             <div class="col-md-4 service-grid">
                 <div>
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x fas-color"></i>
-                            <i class="fas fa-wand-magic-sparkles fa-stack-1x fa-inverse"></i>
+                        <span class="service-icon">
+                            {% set icon = "material/cog-box" %}
+                            {% include ".icons/" ~ icon ~ ".svg" %}
                         </span>
                         <h2 class="my-4">Videoverarbeitung</h2>
                         <p>
@@ -149,9 +149,9 @@
             </div>
 
             <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x fas-color"></i>
-                            <i class="fas fa-chart-line fa-stack-1x fa-inverse"></i>
+                        <span class="service-icon">
+                            {% set icon = "material/chart-box" %}
+                            {% include ".icons/" ~ icon ~ ".svg" %}
                         </span>
                 <h2 class="my-4">Verkehrsanalyse</h2>
                 <p>
