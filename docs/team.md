@@ -1,6 +1,8 @@
 ---
 title: Team
-template: no-nav.html
+hide:
+  - navigation
+  - toc
 ---
 
 # Team
