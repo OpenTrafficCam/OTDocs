@@ -1,6 +1,8 @@
 ---
 title: Pricing
-template: no-nav.html
+hide:
+  - navigation
+  - toc
 ---
 
 # Pricing
