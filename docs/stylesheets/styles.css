@@ -1,3 +1,17 @@
+.hero h1 {
+  font-size: 4rem;
+}
+.hero h2 {
+  font-size: 2rem;
+}
+@media (max-width: 740px) {
+  .hero h1 {
+  font-size: 2rem;
+}
+.hero h2 {
+  font-size: 1rem;
+}
+}
 header.hero {
   padding-top: 10.5rem !important;
   padding-bottom: 6rem !important;
@@ -42,15 +56,19 @@ header.hero .hero-subheading {
 .introduction p {
   font-size: 0.8rem;
 }
+@media (max-width: 740px) {
+  .use_case_text {
+    order: 2;
+  }
+}
 
-.hero h1 {
-  font-size: 4rem;
-}
-.hero h2 {
-  font-size: 2rem;
-}
 .service-grid {
   display: grid;
+}
+@media (max-width: 740px) {
+  .service-grid {
+    padding: 1rem;
+  }
 }
 .service-grid .button-grid {
   display: flex;
@@ -66,6 +84,8 @@ header.hero .hero-subheading {
   --bs-text-opacity: 1;
   color: var(--md-primary-fg-color) !important;
 }
+
+
 @media (min-width: 576px) {
   .container-sm, .container {
     max-width: 540px;
