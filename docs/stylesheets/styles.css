@@ -4,7 +4,7 @@
 .hero h2 {
   font-size: 2rem;
 }
-@media (max-width: 740px) {
+@media (max-width: 768px) {
   .hero h1 {
   font-size: 2rem;
 }
@@ -56,7 +56,7 @@ header.hero .hero-subheading {
 .introduction p {
   font-size: 0.8rem;
 }
-@media (max-width: 740px) {
+@media (max-width: 768px) {
   .use_case_text {
     order: 2;
   }
@@ -65,7 +65,7 @@ header.hero .hero-subheading {
 .service-grid {
   display: grid;
 }
-@media (max-width: 740px) {
+@media (max-width: 768px) {
   .service-grid {
     padding: 1rem;
   }
