@@ -31,7 +31,7 @@ you are ready to start the detection of the road users in each video frame.
     **other camera systems**,
     please make sure that the filename of these files contain the start date and time
     in the following format:
-    `YYYY-MM-TT_hh-mm-ss`
+    `YYYY-MM-DD_hh-mm-ss`
 
 `-p "path/to/video files" "path/to/other video files"`
 
@@ -50,7 +50,7 @@ It has to be specified either using the CLI or in the
 `--expected_duration <video duration [sec]>`
 
 Expected duration of each video in seconds (must be all the same).
-This parameter is required to avoid errors if some images are missing in a video.
+This parameter helps to avoid errors if some images are missing in a video.
 
 This parameter is required to run `detect.py`.
 It has to be specified either using the CLI or in the
