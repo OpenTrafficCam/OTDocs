@@ -3,8 +3,8 @@
 ## Synopsis
 
 ```text
-python  detect.py   [-p paths] [--expected_duration] [-c config] [-w weights]
-                    [--conf] [--iou] [--chunksize] [--half] [--force]
+python  detect.py   [-p paths] [--expected_duration] [-c config]
+                    [-w weights] [--conf] [--iou] [--half] [--force]
                     [--overwrite]
 ```
 
@@ -31,7 +31,7 @@ you are ready to start the detection of the road users in each video frame.
     **other camera systems**,
     please make sure that the filename of these files contain the start date and time
     in the following format:
-    `YYYY-MM-TT_hh-mm-ss`
+    `YYYY-MM-DD_hh-mm-ss`
 
 `-p "path/to/video files" "path/to/other video files"`
 
@@ -50,7 +50,7 @@ It has to be specified either using the CLI or in the
 `--expected_duration <video duration [sec]>`
 
 Expected duration of each video in seconds (must be all the same).
-This parameter is required to avoid errors if some images are missing in a video.
+This parameter helps to avoid errors if some images are missing in a video.
 
 This parameter is required to run `detect.py`.
 It has to be specified either using the CLI or in the
@@ -111,15 +111,6 @@ The IOU threshold is the overlap threshold for areas of bounding boxes used in
 non-maximum suppression to avoid duplicate detections.
 
 This parameter is optional and defaults to `0.45`.
-
-### chunksize
-
-`--chunksize <int>`
-
-The number of frames of a video to be detected by YOLOv8 in one iteration.
-Should be an integer above zero.
-
-This parameter is optional and defaults to `1`.
 
 ### half
 
