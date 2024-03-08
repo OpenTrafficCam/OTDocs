@@ -1,0 +1,174 @@
+{% extends "base.html" %}
+
+<!-- Extends the base.html file of material for mkdocs -->
+<!-- https://github.com/squidfunk/mkdocs-material/blob/master/src/templates/base.html -->
+<!-- copied all available blocks from base.html and inherited if needed. -->
+
+<!-- Meta tags -->
+{% block site_meta %}
+{{ super() }}
+{% endblock %}
+
+<!-- Site title -->
+{% block htmltitle %}
+<title>{{ config.site_name }}</title>
+{% endblock %}
+
+<!-- Theme-related style sheets -->
+{% block styles %}
+{{ super() }}
+<link href="../stylesheets/styles.css" rel="stylesheet"/>
+<link href="../stylesheets/bootstrap-grid.css" rel="stylesheet"/>
+<link href="../stylesheets/bootstrap-utilities.css" rel="stylesheet"/>
+{% endblock %}
+
+<!-- JavaScript libraries -->
+{% block libs %}
+{{ super() }}
+ <link href="../js/pricing_page.js"></link>
+{% endblock %}
+
+
+<!-- Analytics -->
+{% block analytics %}
+<script defer data-domain="opentrafficcam.org" src="https://plausible.platomo.org/js/script.js"></script>
+{% endblock %}
+
+<!-- Custom front matter -->
+{% block extrahead %}
+{% endblock %}
+
+<!--Body starts here-->
+
+<!-- Announcement bar content -->
+{% block announce %}{% endblock %}
+
+<!-- Header -->
+{% block header %}
+{{ super() }}
+{% endblock %}
+
+<!-- Navigation tabs (collapsing) -->
+{% block tabs %}
+{{ super() }}
+{% endblock %}
+
+<!-- Page content -->
+{% block container %}
+{{ super() }}
+{% endblock %}
+{% block content %}
+<section class="page-section introduction" id="otc_information">
+    <div class="col-md-9 container text-center">
+        <h1>Wähle deine Art der Verkehrsanalyse</h1>
+        <p>
+           Hier finden Sie maßgeschneiderte Lösungen für Ihre Bedürfnisse im Bereich der Verkehrsanalyse und Datenvisualisierung. Unabhängig davon, ob Sie sich für unsere Self-Hosting-Option entscheiden oder sich dafür entscheiden, uns Videos oder PDFs zu übermitteln oder ob Sie uns die Arbeit überlassen möchten, bieten wir Ihnen flexible Möglichkeiten, die auf Ihre Bedürfnisse zugeschnitten sind.
+        </p>
+    </div>
+</section>
+<section class="pricing">
+    <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="pricing-box">
+          <h3>Verkehrszählung</h3>
+          <ul>
+            <li>Differenzierung nach 17 <a data-tooltip="PKW, LKW" >Klassen</a> </li>
+
+            <li>Sonder Spezifikationen</li>
+            <li>10% Rabatt ab der 1001 Stunde</li>
+            <li>auf Wunsch Individuelle Ausgabeformate</li>
+            <li>Preis pro Knotenpunkt/Querschnitt + pro Video Stunde</li>
+            <li>Preisliste PDF Verlinkung</li>
+          </ul>
+                        <div class="pricing-button"><a class="md-button" href="#services">Kontakt</a></div>
+
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="pricing-box">
+          <h3>Straßenverkehrszählung</h3>
+          <ul>
+            <li>Verkehrszählung +</li>
+            <li>teilautomatisierte Videoauswertung</li>
+            <li>liefert Daten zum effektiven Planen von Verkehrswegen</li>
+            <li>bietet Grundlage für Infrastrukturen</li>
+            <li>hilft zur Optimierung des Nahverkehrs</li>
+            <li>Klassifizierung nach TLS/ SVZ</li>
+          </ul>
+                        <div class="pricing-button"><a class="md-button" href="#services">Kontakt</a></div>
+
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="pricing-box">
+            <div><h3>Sonderauswertung</h3>
+            <ul>
+                <li>Verkehrszählung +</li>
+                <li>Geschwindigkeitsmessungen</li>
+                <li>Zeitlückenverteilungen</li>
+                <li>Zeitbedarfswerte LSA / Sättigungsverkehrsstärke</li>
+                <li>Eingangsdaten Verkehrsflusssimulation</li>
+                <li>Heatmaps</li>
+            </ul></div>
+            <div class="pricing-button"><a class="md-button" href="#services">Kontakt</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="page-section bg-light details" id="open_source">
+    <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="../assets/img/31343C.svg">
+                </div>
+                <div class="col-md-6">
+                    <h2>OTCamera</h2>
+                    <p>
+                        Unser Produkt basiert auf und ist Open Source, denn wir glauben an Offenheit, Zusammenarbeit und
+                        Innovation. Durch die Verwendung von Open Source-Technologien ermöglichen wir nicht nur eine
+                        transparente Entwicklung, sondern fördern auch die Teilnahme der Gemeinschaft. Dies schafft
+                        Vertrauen, Sicherheit und ermöglicht individuelle Anpassungen. Mit Open Source gestalten wir
+                        eine kollaborative und zukunftsorientierte Lösung für unsere Nutzenden.
+                    </p>
+                    <a href="#services">-> Tell Me More</a>
+                </div>
+
+        </div>
+    </div>
+</section>
+<section class="page-section team" id="team">
+    <div class="container">
+        <div class="text-center">
+            <div class="row justify-content-md-center">
+                <h2>Kontakt</h2>
+                <div class="col-md-6">
+                    <p>Die platomo GmbH besteht aus einem hochmotivierten Team,
+                        das sich leidenschaftlich für die Entwicklung von OpenTrafficCam engagiert. Unsere Expertise und
+                        Innovationsfreude treiben uns an, eine offene, effiziente Verkehrsüberwachung Lösung zu
+                        schaffen. Unterstützt werden wir dabei von Forschern der TU Dresden.
+                    </p>
+                </div>
+                </div>
+            <a  class="md-button" href="#services">Kontakt</a>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}
+
+<!-- Footer -->
+{% block footer %}
+{{ super() }}
+{% endblock %}
+
+{% block config %}
+{{ super() }}
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+{% endblock %}
+

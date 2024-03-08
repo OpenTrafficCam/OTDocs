@@ -1,10 +1,7 @@
 ---
 title: Pricing
+template: pricing.html
 hide:
   - navigation
   - toc
 ---
-
-# Pricing
-
-Here will follow some information about our pricing.

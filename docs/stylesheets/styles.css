@@ -138,3 +138,55 @@ p {
   margin-top: 0;
 }
 
+.pricing{
+  margin-bottom: 2rem;
+}
+.pricing-box {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 20px;
+      text-align: left;
+    }
+    .pricing-box h3 {
+      font-size: 1rem;
+      color: #333;
+    }
+    .pricing-box ul {
+      list-style: none;
+      padding: 0;
+    }
+    .pricing-box ul li {
+      margin-bottom: 10px;
+    }
+    .pricing-button {
+        display: flex;
+        justify-content: center;
+    }
+
+
+[data-tooltip]::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    opacity: 0;
+
+    /* customizable */
+    max-width: 4rem;
+    transition: all 0.15s ease;
+    padding: 10px;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px silver;
+}
+
+[data-tooltip]:hover::before {
+    opacity: 1;
+
+    /* customizable */
+    background: lightgray;
+    margin-top: -50px;
+    margin-left: 20px;
+}
+
+[data-tooltip]:not([data-tooltip-persistent])::before {
+    pointer-events: none;
+}
