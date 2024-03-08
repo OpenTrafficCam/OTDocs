@@ -5,7 +5,7 @@
 ```bash
 python  convert.py  [-p paths] [-c config]
                     [--fps_from_filename] [--input_fps]
-                    [--delete_input] [-o overwrite]
+                    [--delete_input] [--overwrite]
 ```
 
 ## Description
@@ -91,9 +91,9 @@ This parameter is optional and defaults to `20`.
 
 ### overwrite
 
-`-o` or `--overwrite` to overwrite existing `.mp4` files.
+`--overwrite` to overwrite existing `.mp4` files.
 
-`-no-o` or `--no-overwrite` to prevent overwriting existing `.mp4` files.
+`--no-overwrite` to prevent overwriting existing `.mp4` files.
 
 This parameter is optional and defaults to `--overwrite`.
 

@@ -1,5 +1,8 @@
 ---
 title: Team
+hide:
+  - navigation
+  - toc
 ---
 
 # Team

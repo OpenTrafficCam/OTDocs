@@ -3,9 +3,9 @@
 ## Synopsis
 
 ```text
-python  detect.py   [-p paths] [-c config] [-w weights]
-                    [--conf] [--iou] [--chunksize] [--half] [--force]
-                    [-o overwrite]
+python  detect.py   [-p paths] [--expected_duration] [-c config]
+                    [-w weights] [--conf] [--iou] [--half] [--force]
+                    [--overwrite]
 ```
 
 ## Description
@@ -31,7 +31,7 @@ you are ready to start the detection of the road users in each video frame.
     **other camera systems**,
     please make sure that the filename of these files contain the start date and time
     in the following format:
-    `YYYY-MM-TT_hh-mm-ss`
+    `YYYY-MM-DD_hh-mm-ss`
 
 `-p "path/to/video files" "path/to/other video files"`
 
@@ -40,6 +40,17 @@ or
 `--paths "path/to/video files" "path/to/other video files"`
 
 One or multiple paths to video files or folders containing video files.
+
+This parameter is required to run `detect.py`.
+It has to be specified either using the CLI or in the
+[configuration](../advanced_usage/configuration.md) yaml file.
+
+### expected_duration (required)
+
+`--expected_duration <video duration [sec]>`
+
+Expected duration of each video in seconds (must be all the same).
+This parameter helps to avoid errors if some images are missing in a video.
 
 This parameter is required to run `detect.py`.
 It has to be specified either using the CLI or in the
@@ -75,13 +86,13 @@ or
 
 Name of weights from PyTorch hub or path to weights file.
 
-This parameter is optional and defaults to `YOLOv5s.pt`.
+This parameter is optional and defaults to `yolov8s.pt`.
 
 ### conf
 
 `--conf <float>`
 
-The YOLOv5 model confidence threshold.
+The YOLOv8 model confidence threshold.
 Should be a float value between zero and one.
 
 The confidence threshold is the minimum confidence for a detection to be considered
@@ -93,22 +104,13 @@ This parameter is optional and defaults to `0.25`.
 
 `--iou <float>`
 
-The YOLOv5 model IOU threshold.
+The YOLOv8 model IOU threshold.
 Should be a float value between zero and one.
 
 The IOU threshold is the overlap threshold for areas of bounding boxes used in
 non-maximum suppression to avoid duplicate detections.
 
 This parameter is optional and defaults to `0.45`.
-
-### chunksize
-
-`--chunksize <int>`
-
-The number of frames of a video to be detected by YOLOv5 in one iteration.
-Should be an integer above zero.
-
-This parameter is optional and defaults to `1`.
 
 ### half
 
@@ -122,7 +124,7 @@ This parameter is optional and defaults to `--no-half`.
 
 ### force
 
-`--force` to force a reload of a YOLOv5 standard model from PyTorch hub instead of
+`--force` to force a reload of a YOLOv8 standard model from PyTorch hub instead of
 using a cached model from previous detection runs.
 
 `--no-force` to prevent forcing this reload.
@@ -131,8 +133,8 @@ This parameter is optional and defaults to `--no-force`.
 
 ### overwrite
 
-`-o` or `--overwrite` to overwrite existing `.otdet` files.
+`--overwrite` to overwrite existing `.otdet` files.
 
-`-no-o` or `--no-overwrite` to prevent overwriting existing `.otdet` files.
+`--no-overwrite` to prevent overwriting existing `.otdet` files.
 
 This parameter is optional and defaults to `--overwrite`.

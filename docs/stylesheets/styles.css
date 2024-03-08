@@ -1,0 +1,140 @@
+.hero h1 {
+  font-size: 4rem;
+}
+.hero h2 {
+  font-size: 2rem;
+}
+@media (max-width: 768px) {
+  .hero h1 {
+  font-size: 2rem;
+}
+.hero h2 {
+  font-size: 1rem;
+}
+}
+header.hero {
+  padding-top: 10.5rem !important;
+  padding-bottom: 6rem !important;
+  text-align: center !important;
+  color: #fff;
+  background-image: url("../assets/img/header.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+header.hero .hero-heading {
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+  margin-bottom: 2rem;
+}
+header.hero .hero-subheading {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  margin-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+  header.hero {
+    padding-top: 17rem;
+    padding-bottom: 12.5rem;
+  }
+  header.hero .hero-heading {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    margin-bottom: 4rem;
+  }
+  header.hero .hero-subheading {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.introduction p {
+  font-size: 0.8rem;
+}
+@media (max-width: 768px) {
+  .use_case_text {
+    order: 2;
+  }
+}
+
+.service-grid {
+  display: grid;
+}
+@media (max-width: 768px) {
+  .service-grid {
+    padding: 1rem;
+  }
+}
+.service-grid .button-grid {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.bg-light {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.fas-color {
+  --bs-text-opacity: 1;
+  color: var(--md-primary-fg-color) !important;
+}
+
+
+@media (min-width: 576px) {
+  .container-sm, .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container-md, .container-sm, .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container-lg, .container-md, .container-sm, .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1320px;
+  }
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.service-icon svg {
+  width: 80%;
+  max-width: 160px;
+}
+.service-icon svg path {
+  fill: var(--md-primary-fg-color);
+}
+
+p {
+  line-height: 1.75;
+}
+
+.page-section {
+  padding: 3rem 0;
+}
+.team {
+  margin-top: -3rem;
+}
+.details h2{
+  margin-top: 0;
+}
+

@@ -1,5 +1,8 @@
 ---
 title: Pricing
+hide:
+  - navigation
+  - toc
 ---
 
 # Pricing
