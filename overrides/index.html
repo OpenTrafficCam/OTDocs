@@ -55,11 +55,13 @@
 {% block hero %}
 <header class="hero">
     <div class="container">
+            <img alt="OpenTrafficCam logo" src="../assets/img/OpenTrafficCam_Fullscreen_no_text.svg">
+
         <div class="hero-heading">
-            <h1>Transparente Verkehrsdatenerfassung</h1>
+            <h1>OpenTrafficCam</h1>
         </div>
         <div class="hero-subheading">
-            <h2>Dein Schlüssel zu präzisen Einblicken in die Mobilität von heute.</h2>
+            <h2>... die transparente Verkehrsdatenserfassung</h2>
         </div>
     </div>
 </header>
@@ -82,64 +84,66 @@
 {{ super() }}
 {% endblock %}
 {% block content %}
+
+
 <section class="page-section introduction" id="otc_information">
     <div class="col-md-9 container text-center">
         <h1>Überblick</h1>
-        <p><p>
-    OpenTrafficCam (OTC) bietet flexible Videoerfassung, KI-basierte Videoverarbeitung und
-    umfassende Verkehrsanalyse. Kostengünstige Kurzzeitzählungen, Datenschutz by Design und
-    individuelle Anpassungen machen OTC einzigartig. Die KI-Modelle von OTVision erkennen
-    präzise Verkehrsteilnehmende, speziell für Europa angepasst. Mit OTAnalytics erhalten
-    Sie aggregierte Verkehrsdaten für effiziente Verkehrsplanung.
-</p>
-<p>
-    OpenTrafficCam ist Open Source. Wir bieten auch die Möglichkeit, Videoverarbeitung und
-    Messungen durch das erfahrene Team von <a href="https://platomo.de/">platomo</a> durchführen zu lassen. So profitieren
-    Sie von einer kollaborativen, offenen Lösung und gleichzeitig von professionellen Services.
-</p>
-
+        <p>
+            OpenTrafficCam (OTC) bietet flexible Videoerfassung, KI-basierte Videoverarbeitung und
+            umfassende Verkehrsanalyse. Kostengünstige Kurzzeitzählungen, Datenschutz by Design und
+            individuelle Anpassungen machen OTC einzigartig. Die KI-Modelle von OTVision erkennen
+            präzise Verkehrsteilnehmende, speziell für Europa angepasst. Mit OTAnalytics erhalten
+            Sie aggregierte Verkehrsdaten für effiziente Verkehrsplanung.
+        </p>
+        <p>
+            OpenTrafficCam ist Open Source. Wir bieten auch die Möglichkeit, Videoverarbeitung und
+            Messungen durch das erfahrene Team von <a href="https://platomo.de/">platomo</a> durchführen zu lassen. So profitieren
+            Sie von einer kollaborativen, offenen Lösung und gleichzeitig von professionellen Services.
+        </p>
     </div>
-
-
 </section>
+
+
+
+
 <section class="page-section services" id="services">
     <div class="container">
         <div class="row text-center">
             <div class="col-md-4 service-grid">
-
                 <div>
                     <span class="service-icon">
-                        {% set icon = "material/video-box" %}
+                        {% set icon = "material/file-video-outline" %}
                         {% include ".icons/" ~ icon ~ ".svg" %}
                     </span>
-                        <h2 class="my-4">Videoerfassung</h2>
-                        <p>
-                            OTCamera wird für Kurzzeitzählungen an vorhandener Infrastruktur montiert und zeichnet
-                            autark bis zu einer Woche Verkehrsvideos auf. Niedrige Kosten, einfache Bedienbarkeit
-                            und Datenschutz by Design ermöglichen vielseitige Einsätze. OTCamera kann vollständig
-                            selbst gebaut, als Bausatz oder vorgefertigt erworben werden.
-                        </p>
+                    <h2 class="my-4">Videoerfassung</h2>
+                    <p>
+                        OTCamera wird für Kurzzeitzählungen an vorhandener Infrastruktur montiert und zeichnet
+                        autark bis zu einer Woche Verkehrsvideos auf. Niedrige Kosten, einfache Bedienbarkeit
+                        und Datenschutz by Design ermöglichen vielseitige Einsätze. OTCamera kann vollständig
+                        selbst gebaut, als Bausatz oder vorgefertigt erworben werden.
+                    </p>
                 </div>
                 <div class="button-grid">
                     <a class="md-button" href="/OTCamera/">mehr dazu</a>
                 </div>
             </div>
+
             <div class="col-md-4 service-grid">
                 <div>
-                        <span class="service-icon">
-                            {% set icon = "material/cog-box" %}
-                            {% include ".icons/" ~ icon ~ ".svg" %}
-                        </span>
-                        <h2 class="my-4">Videoverarbeitung</h2>
-                        <p>
-                            OTVision detektiert Verkehrsteilnehmende mit KI-basierter Objekterkennung. Trajektorien
-                            beschreiben räumlich und zeitlich alle Verkehrsbewegungen. Es werden 7 (Open Source) bzw.
-                            18 (Pro) verschiedene Verkehrsklassen unterschieden. Die Pro-Modelle verbessern die
-                            Erfassungsgenauigkeit und -rate. Durch die modulare Architektur können individuelle
-                            Klassen definiert werden.
-                        </p>
+                    <span class="service-icon">
+                        {% set icon = "material/cloud-cog-outline" %}
+                        {% include ".icons/" ~ icon ~ ".svg" %}
+                    </span>
+                    <h2 class="my-4">Videoverarbeitung</h2>
+                    <p>
+                        OTVision detektiert Verkehrsteilnehmende mit KI-basierter Objekterkennung. Trajektorien
+                        beschreiben räumlich und zeitlich alle Verkehrsbewegungen. Es werden 7 (Open Source) bzw.
+                        18 (Pro) verschiedene Verkehrsklassen unterschieden. Die Pro-Modelle verbessern die
+                        Erfassungsgenauigkeit und -rate. Durch die modulare Architektur können individuelle
+                        Klassen definiert werden.
+                    </p>
                 </div>
-
                 <div class="button-grid">
                     <a class="md-button" href="/OTVision/">mehr dazu</a>
                 </div>
@@ -147,24 +151,25 @@
 
             <div class="col-md-4 service-grid">
                 <div>
-                        <span class="service-icon">
-                            {% set icon = "material/chart-box" %}
-                            {% include ".icons/" ~ icon ~ ".svg" %}
-                        </span>
-                        <h2 class="my-4">Verkehrsanalyse</h2>
-                        <p>
-                            OTAnalytics erzeugt aggregierte Verkehrs- und Einzelfahrzeugdaten aus Trajektorien. Die
-                            Daten unterstützen operative und strategische Verkehrsplanung. Verkehrsklassen nach TLS 2012
-                            oder RLS-19 werden berücksichtigt, inklusive Fuß- und Radverkehr.
-                            Der Export in CSV und Excel-Datensätzen spart wertvolle Planungszeit.
-                        </p>
+                    <span class="service-icon">
+                        {% set icon = "material/chart-line" %}
+                        {% include ".icons/" ~ icon ~ ".svg" %}
+                    </span>
+                    <h2 class="my-4">Verkehrsanalyse</h2>
+                    <p>
+                        OTAnalytics erzeugt aggregierte Verkehrs- und Einzelfahrzeugdaten aus Trajektorien. Die
+                        Daten unterstützen operative und strategische Verkehrsplanung. Verkehrsklassen nach TLS 2012
+                        oder RLS-19 werden berücksichtigt, inklusive Fuß- und Radverkehr.
+                        Der Export in CSV und Excel-Datensätzen spart wertvolle Planungszeit.
+                    </p>
                 </div>
-            <div class="button-grid">
-                <a class="md-button" href="/OTAnalytics/">mehr dazu</a>
+                <div class="button-grid">
+                    <a class="md-button" href="/OTAnalytics/">mehr dazu</a>
+                </div>
             </div>
-
         </div>
     </div>
+
 </section>
 <section class="page-section bg-light details" id="traffic_counts">
     <div class="container">
@@ -187,8 +192,7 @@
                         eine präzisere Unterscheidung von Verkehrsklassen, höhere Genauigkeit und geringeren Aufwand
                         ermöglichen.
                     </p>
-
-                <a href="/pricing">→ Unsere Services</a>
+                    <a href="/pricing">→ Unsere Services</a>
             </div>
             <div class="col-md-6">
                 <img src="assets/img/31343C.svg">
@@ -198,37 +202,36 @@
 </section>
 <section class="page-section bg-light details" id="research">
     <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="assets/img/31343C.svg">
-                </div>
-                <div class="col-md-6">
-                    <h2>Forschungspartner</h2>
-                        <p>
-                            OpenTrafficCam ermöglicht die Erhebung detaillierter und individueller Verkehrsdaten.
-                            Von klassischen Zähldaten und Geschwindigkeitsmessungen über Zeitlücken und
-                            Zeitbedarfswerten bis hin zu jeglichen Informationen, die aus den Trajektorien der
-                            Verkehrsteilnehmenden ableitbar sind.
-                        </p>
-                        <p>
-                            Bereits in verschiedenen Forschungsprojekten angewendet, liefert OpenTrafficCam umfassende
-                            Einblicke in den Verkehrsfluss von Kfz, Fahrradfahrenden und zu Fuß Gehenden. Diese Erkenntnisse fließen in
-                            die Entwicklung deutschlandweiter Richtlinien und Empfehlungen ein.
-                        </p>
-                        <p>
-                            Mit unserer langjährigen wissenschaftlichen Erfahrung stehen wir Ihnen als Dienstleister
-                            oder Projektpartner zur Seite und begleiten Ihre Forschungsprojekte mit Expertise.
-                        </p>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="assets/img/31343C.svg">
+            </div>
+            <div class="col-md-6">
+                <h2>Forschungspartner</h2>
+                    <p>
+                        OpenTrafficCam ermöglicht die Erhebung detaillierter und individueller Verkehrsdaten.
+                        Von klassischen Zähldaten und Geschwindigkeitsmessungen über Zeitlücken und
+                        Zeitbedarfswerten bis hin zu jeglichen Informationen, die aus den Trajektorien der
+                        Verkehrsteilnehmenden ableitbar sind.
+                    </p>
+                    <p>
+                        Bereits in verschiedenen Forschungsprojekten angewendet, liefert OpenTrafficCam umfassende
+                        Einblicke in den Verkehrsfluss von Kfz, Fahrradfahrenden und zu Fuß Gehenden. Diese Erkenntnisse
+                        fließen in die Entwicklung deutschlandweiter Richtlinien und Empfehlungen ein.
+                    </p>
+                    <p>
+                        Mit unserer langjährigen wissenschaftlichen Erfahrung stehen wir Ihnen als Dienstleister
+                        oder Projektpartner zur Seite und begleiten Ihre Forschungsprojekte mit Expertise.
+                    </p>
                     <a href="mailto:info@platomo.de?subject=Forschungsanfrage">→ Kontaktieren Sie uns</a>
-                </div>
-
+            </div>
         </div>
     </div>
 </section>
 <section class="page-section bg-light details" id="data-privacy">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 use_case_text">
                 <h2>Datenschutz</h2>
                     <p>
                         Durch gezielte Fokussierung auf den Nahbereich und einen in der Regel großzügigen Abstand zu den
@@ -244,8 +247,7 @@
                         Wir stehen Ihnen gerne zur Verfügung, um sich im Hinblick auf den spezifischen Anwendungsfall
                         von OpenTrafficCam über Datenschutzaspekte auszutauschen.
                     </p>
-
-                <a href="mailto:team@opentrafficcam.org?subject=Datenschutz">→ Kontaktieren Sie uns</a>
+                    <a href="mailto:team@opentrafficcam.org?subject=Datenschutz">→ Kontaktieren Sie uns</a>
             </div>
             <div class="col-md-6">
                 <img src="assets/img/31343C.svg">
@@ -255,32 +257,30 @@
 </section>
 <section class="page-section bg-light details" id="open-source">
     <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="assets/img/31343C.svg">
-                </div>
-                <div class="col-md-6">
-                    <h2>Open Source</h2>
-                        <p>
-                            OpenTrafficCam ist Open Source und basiert auf Open-Source-Technologien. Unsere
-                            Prinzipien sind Transparenz, Zusammenarbeit und Unabhängigkeit. Diese Werte
-                            schaffen Vertrauen, Sicherheit und ermöglichen individuelle Anpassungen.
-                        </p>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="assets/img/31343C.svg">
+            </div>
+            <div class="col-md-6">
+                <h2>Open Source</h2>
+                    <p>
+                        OpenTrafficCam ist Open Source und basiert auf Open-Source-Technologien. Unsere
+                        Prinzipien sind Transparenz, Zusammenarbeit und Unabhängigkeit. Diese Werte
+                        schaffen Vertrauen, Sicherheit und ermöglichen individuelle Anpassungen.
+                    </p>
 
-                        <p>
-                            Durch die Offenlegung unseres Quellcodes fördern wir nicht nur eine transparente
-                            Entwicklung, sondern auch die aktive Beteiligung der Gemeinschaft. Dies hilft
-                            unseren Kunden, unabhängig von einem einzelnen Hersteller zu agieren.
-                        </p>
+                    <p>
+                        Durch die Offenlegung unseres Quellcodes fördern wir nicht nur eine transparente
+                        Entwicklung, sondern auch die aktive Beteiligung der Gemeinschaft. Dies hilft
+                        unseren Kunden, unabhängig von einem einzelnen Hersteller zu agieren.
+                    </p>
 
-                        <p>
-                            Mit Open Source gestalten wir gemeinsam eine kollaborative und zukunftsorientierte
-                            Lösung für unsere Nutzerinnen und Nutzer.
-                        </p>
-
-                    <a href="https://github.com/OpenTrafficCam">-> Quellcode auf GitHub</a>
-                </div>
-
+                    <p>
+                        Mit Open Source gestalten wir gemeinsam eine kollaborative und zukunftsorientierte
+                        Lösung für unsere Nutzerinnen und Nutzer.
+                    </p>
+                    <a href="https://github.com/OpenTrafficCam" target="_blank" rel="noopener noreferrer">-> Quellcode auf GitHub</a>
+            </div>
         </div>
     </div>
 </section>
@@ -289,8 +289,8 @@
     <div class="container">
         <div class="text-center">
             <div class="row justify-content-md-center">
-                <h2>Team</h2>
                 <div class="col-md-6">
+                    <h2>Team</h2>
                     <p>
                         Bei platomo sind wir eine vielseitige Mischung aus Softwareentwicklern und
                         Verkehrsingenieuren mit wissenschaftlichem Hintergrund. Unser hochmotiviertes
@@ -299,9 +299,8 @@
                         Diese Bestrebungen werden durch die Zusammenarbeit mit Forschenden der TU Dresden
                         maßgeblich unterstützt.
                     </p>
-
                 </div>
-                </div>
+            </div>
             <div class="row my-3 justify-content-md-center">
                 <div class="col-md-3">
                     <img src="assets/img/31343C.svg">
@@ -310,7 +309,7 @@
                     <img src="assets/img/31343C.svg">
                 </div>
             </div>
-            <a  class="md-button" href="#services">Kontakt</a>
+            <a  class="md-button" href="/team">Mehr zu uns</a>
         </div>
     </div>
 </section>
@@ -328,6 +327,5 @@
 
 {% block scripts %}
 {{ super() }}
-<script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 {% endblock %}
 
