@@ -144,9 +144,7 @@ p {
 .pricing-box {
     /* CSS Styles for the pricing tile */
 .pricing-tile {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    /* add radius Bootsrap*/
     padding: 20px;
     text-align: center;
 }
@@ -190,7 +188,8 @@ p {
     opacity: 0;
 
     /* customizable */
-    max-width: 4rem;
+    font-size: 0.5rem;
+    max-width: 6rem;
     transition: all 0.15s ease;
     padding: 10px;
     color: #333;
