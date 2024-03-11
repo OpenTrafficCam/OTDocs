@@ -142,27 +142,47 @@ p {
   margin-bottom: 2rem;
 }
 .pricing-box {
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      padding: 20px;
-      text-align: left;
-    }
-    .pricing-box h3 {
-      font-size: 1rem;
-      color: #333;
-    }
-    .pricing-box ul {
-      list-style: none;
-      padding: 0;
-    }
-    .pricing-box ul li {
-      margin-bottom: 10px;
-    }
-    .pricing-button {
-        display: flex;
-        justify-content: center;
-    }
+    /* CSS Styles for the pricing tile */
+.pricing-tile {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
 
+.service-title {
+    color: #4b3744;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.service-features {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.service-features li {
+    margin-bottom: 10px;
+}
+
+.service-features a {
+    color: #4b3744;
+}
+
+
+.pricing-button .md-button:hover {
+    background-color: #0056b3;
+}
+}
+
+
+.intro-text-kachel {
+    padding-top: 0.3rem;
+    border-bottom: 0.3rem solid #4d6856;
+}
 
 [data-tooltip]::before {
     content: attr(data-tooltip);
@@ -190,3 +210,12 @@ p {
 [data-tooltip]:not([data-tooltip-persistent])::before {
     pointer-events: none;
 }
+
+@media (max-width: 768px) {
+  .pricing-box {
+    margin-bottom: 2rem;
+}
+}
+
+
+
