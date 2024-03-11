@@ -1,57 +1,51 @@
 .hero h1 {
-  font-size: 4rem;
-}
-.hero h2 {
-  font-size: 2rem;
-}
-@media (max-width: 768px) {
-  .hero h1 {
-  font-size: 2rem;
-}
-.hero h2 {
-  font-size: 1rem;
-}
-}
-header.hero {
-  padding-top: 10.5rem !important;
-  padding-bottom: 6rem !important;
-  text-align: center !important;
-  color: #fff;
-  background-image: url("../assets/img/header.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  background-size: cover;
-}
-header.hero .hero-heading {
-  font-size: 3.25rem;
-  font-weight: 700;
-  line-height: 3.25rem;
-  margin-bottom: 2rem;
-}
-header.hero .hero-subheading {
-  font-size: 1.5rem;
-  line-height: 1.5rem;
-  margin-bottom: 25px;
+  font-family: "Amatic SC", sans-serif;
+  font-size: 5rem;
+  line-height: 0;
 }
 
-@media (min-width: 768px) {
+.hero h2 {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 2.2rem;
+
+}
+
+header.hero {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  text-align: right;
+  color: #ffffff;
+  background-color: var(--md-primary-fg-color);
+}
+
+header.hero .hero-heading {
+  padding-top: 3rem;
+}
+
+
+@media (max-width: 768px) {
   header.hero {
-    padding-top: 17rem;
-    padding-bottom: 12.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
   }
-  header.hero .hero-heading {
-    font-size: 3.5rem;
-    font-weight: 700;
-    line-height: 4.5rem;
-    margin-bottom: 4rem;
+  .hero h1 {
+    font-size: 4rem;
   }
-  header.hero .hero-subheading {
-    font-size: 2rem;
-    line-height: 2rem;
-    margin-bottom: 2rem;
+  .hero h2 {
+    font-size: 1.5rem;
   }
 }
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+}
+
 
 .introduction p {
   font-size: 0.8rem;
@@ -67,61 +61,25 @@ header.hero .hero-subheading {
 }
 @media (max-width: 768px) {
   .service-grid {
-    padding: 1rem;
+    padding-bottom: 3rem;
   }
+
 }
+
 .service-grid .button-grid {
   display: flex;
   justify-content: center;
   align-items: end;
-}
-.bg-light {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
-}
-
-.fas-color {
-  --bs-text-opacity: 1;
-  color: var(--md-primary-fg-color) !important;
-}
-
-
-@media (min-width: 576px) {
-  .container-sm, .container {
-    max-width: 540px;
-  }
-}
-@media (min-width: 768px) {
-  .container-md, .container-sm, .container {
-    max-width: 720px;
-  }
-}
-@media (min-width: 992px) {
-  .container-lg, .container-md, .container-sm, .container {
-    max-width: 960px;
-  }
-}
-@media (min-width: 1200px) {
-  .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1140px;
-  }
-}
-@media (min-width: 1400px) {
-  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1320px;
-  }
-}
-
-.text-center {
-  text-align: center !important;
+  padding-top: 0.5rem;
 }
 
 .service-icon svg {
-  width: 80%;
-  max-width: 160px;
+  width: 70%;
+  max-height: 140px;
 }
+
 .service-icon svg path {
-  fill: var(--md-primary-fg-color);
+  fill: #4d6856;
 }
 
 p {
@@ -131,89 +89,88 @@ p {
 .page-section {
   padding: 3rem 0;
 }
+
 .team {
   margin-top: -3rem;
 }
-.details h2{
-  margin-top: 0;
+
+@media (min-width: 768px) {
+
+  .details h2 {
+    margin-top: 0;
+  }
 }
 
 .pricing{
   margin-bottom: 2rem;
 }
+
+
 .pricing-box {
-    /* CSS Styles for the pricing tile */
-.pricing-tile {
+
+  .pricing-tile {
     /* add radius Bootsrap*/
     padding: 20px;
     text-align: center;
-}
+  }
 
-.service-title {
-    color: #4b3744;
+  .service-title {
     font-size: 24px;
     margin-bottom: 15px;
-}
+  }
 
-.service-features {
+  .service-features {
     list-style: none;
     padding: 0;
     text-align: left;
     margin-bottom: 20px;
-}
+  }
 
-.service-features li {
+  .service-features li {
     margin-bottom: 10px;
+  }
 }
 
-.service-features a {
-    color: #4b3744;
+@media (max-width: 768px) {
+  .pricing-box {
+    margin-bottom: 2rem;
+  }
 }
-
-
-.pricing-button .md-button:hover {
-    background-color: #0056b3;
-}
-}
-
 
 .intro-text-kachel {
     padding-top: 0.3rem;
     border-bottom: 0.3rem solid #4d6856;
 }
 
-[data-tooltip]::before {
-    content: attr(data-tooltip);
-    position: absolute;
-    opacity: 0;
-
-    /* customizable */
-    font-size: 0.5rem;
-    max-width: 6rem;
-    transition: all 0.15s ease;
-    padding: 10px;
-    color: #333;
-    border-radius: 10px;
-    box-shadow: 2px 2px 1px silver;
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
 }
 
-[data-tooltip]:hover::before {
-    opacity: 1;
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 10rem;
+  color: #fff;
+  text-align: left;
 
-    /* customizable */
-    background: lightgray;
-    margin-top: -50px;
-    margin-left: 20px;
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: -1000%;
+  margin-left: 0.5rem;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
-[data-tooltip]:not([data-tooltip-persistent])::before {
-    pointer-events: none;
-}
-
-@media (max-width: 768px) {
-  .pricing-box {
-    margin-bottom: 2rem;
-}
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
 
 
