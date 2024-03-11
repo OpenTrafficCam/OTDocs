@@ -138,7 +138,7 @@ extra:
       #     lang: de
 
 copyright: >
-  Copyright &copy; 2020 - 2023 OpenTrafficCam Contributors
+  Copyright &copy; 2020 - 2024 OpenTrafficCam Contributors
   <a href="https://platomo.de/impressum/">Impressum / Legal Notice</a>
 repo_url: https://github.com/OpenTrafficCam/
 repo_name: OpenTrafficCam
