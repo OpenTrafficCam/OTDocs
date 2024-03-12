@@ -30,47 +30,39 @@ theme:
 nav:
   - index.md
   - pricing.md
-  - use-cases.md
+#  - use-cases.md
   - Documentation:
     - Overview:
         - overview/index.md
         - overview/dataprivacy.md
-        - Use Cases:
-            - overview/usecases/trafficcounts.md
-            - overview/usecases/vehiclespeeds.md
-            - overview/usecases/trafficsafety.md
+#        - Use Cases:
+#            - overview/usecases/trafficcounts.md
+#            - overview/usecases/vehiclespeeds.md
+#            - overview/usecases/trafficsafety.md
     - OTCamera:
         - OTCamera/index.md
-        - Getting Started:
-            - OTCamera/gettingstarted/requirements.md
-            - OTCamera/gettingstarted/assembly.md
-            - Installation:
-                - OTCamera/gettingstarted/installation.md
-                - OTCamera/gettingstarted/installation/prepare-sd-card.md
-                - OTCamera/gettingstarted/installation/raspberry.md
-                - OTCamera/gettingstarted/installation/hwclock.md
-                - OTCamera/gettingstarted/installation/wifi-ap.md
-                - OTCamera/gettingstarted/installation/otcamera.md
-            - OTCamera/gettingstarted/firstuse.md
-        - Advanced Usage:
-            - OTCamera/usage/preparation_safety.md
-            - OTCamera/usage/mounting.md
-            - OTCamera/usage/buttons_leds.md
-            - OTCamera/usage/getvideos.md
+        - OTCamera/gettingstarted/requirements.md
+        - Installation:
+            - OTCamera/gettingstarted/installation.md
+            - OTCamera/gettingstarted/installation/prepare-sd-card.md
+            - OTCamera/gettingstarted/installation/raspberry.md
+            - OTCamera/gettingstarted/installation/hwclock.md
+            - OTCamera/gettingstarted/installation/wifi-ap.md
+            - OTCamera/gettingstarted/installation/otcamera.md
+        - OTCamera/gettingstarted/firstuse.md
+        - OTCamera/usage/buttons_leds.md
             # - Advanced Usage:
             # - OTCamera/advanced_usage/configration.md
             # - OTCamera/advanced_usage/calibrate.md
     - OTVision:
         - OTVision/index.md
-        - Getting Started:
-            - OTVision/gettingstarted/requirements.md
-            - OTVision/gettingstarted/installation.md
-            - OTVision/gettingstarted/firstuse.md
+        - OTVision/gettingstarted/requirements.md
+        - OTVision/gettingstarted/installation.md
+        - OTVision/gettingstarted/firstuse.md
         - Usage:
             - OTVision/usage/convert.md
             - OTVision/usage/detect.md
             - OTVision/usage/track.md
-        - Advanced Usage:
             - OTVision/advanced_usage/configuration.md
 
     - OTAnalytics:
@@ -106,10 +98,10 @@ nav:
         - contribute/index.md
         - contribute/github.md
         - contribute/coding.md
-        - contribute/gui.md
+#        - contribute/gui.md
         - contribute/vscode.md
         - contribute/documentation.md
-        - contribute/otcamera.md
+#         - contribute/otcamera.md
   - Team:
       - team.md
 extra_css:
