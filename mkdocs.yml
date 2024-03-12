@@ -175,3 +175,4 @@ plugins:
       type: date
       timezone: Europe/Berlin
       # - glightbox # to zoom images on click.
+  - privacy
