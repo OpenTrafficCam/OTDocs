@@ -19,12 +19,10 @@ OpenTrafficCam kann zur Kurzzeitzählung an Knotenpunkten und Querschnitten eing
 
 [Tell Me More](#services)
 
-![](assets/img/31343C.svg)
 
 Geschwindigkeitsmessung
 --------
 
-![](assets/img/31343C.svg)
 
 Unser Produkt basiert auf und ist Open Source, denn wir glauben an Offenheit, Zusammenarbeit und Innovation. Durch die Verwendung von Open Source-Technologien ermöglichen wir nicht nur eine transparente Entwicklung, sondern fördern auch die Teilnahme der Gemeinschaft. Dies schafft Vertrauen, Sicherheit und ermöglicht individuelle Anpassungen. Mit Open Source gestalten wir eine kollaborative und zukunftsorientierte Lösung für unsere Nutzenden.
 
