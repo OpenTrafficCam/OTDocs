@@ -8,10 +8,10 @@ title: Documentation
 
 > You are looking for a tool that makes analyzing traffic easier, faster and more efficient?
 
-Welcome to **OpenTrafficCam** - the only fully integrated open source workflow for video-based recording
+Welcome to the documentation of **OpenTrafficCam** - the only fully integrated open source workflow for video-based recording
 and automated analysis of road traffic.
 
-On this site you will find all the information about the process steps to set up OpenTrafficCam.
+On this site you will find all the information to set up OpenTrafficCam.
 
 You want to know more? Check out our [GitHub page](https://github.com/OpenTrafficCam) for downloads and codes.
 
@@ -21,11 +21,11 @@ Thanks to the rapid development of computer hardware and machine learning in the
 automatic object detection is state of the art in many business sectors.
 However, most of the time road traffic is still surveyed manually to a great expense.
 There are tools that optimize some of the processing steps,
-but they can hardly be used without programming skills or they cause significant costs.
+but they can hardly be used without programming skills, or they cause significant costs.
 This is why research and planning still have to be conducted with minimal or sometimes without any data at all.
 This lack of data primarily affects sustainable modes of transportation such as walking and cycling.
 
-OpenTrafficCam aims to address this gap for a stronger data base
+OpenTrafficCam aims to address this gap for a stronger data-base
 for transportation planning, policy and research.
 In doing so, we ourselves benefit substantially from other open source projects.
 Consequently, we publish large parts of OpenTrafficCam as open source hardware and software
@@ -47,22 +47,23 @@ So all transport professionals and anyone else interested are very welcome to tr
         [OTLabels](https://github.com/OpenTrafficCam/OTLabels).
     - Researchers and developers can support by [contributing code](https://opentrafficcam.org/contribute/)
         or [contacting us](mailto:team@opentrafficcam.org) for scientific collaboration.
-    - Users, such as municipalities or engineering companies, can contact us to fund specific enhancements to meet their use case and thus help all other users.
+    - Users, such as municipalities or engineering companies, can contact us to fund specific enhancements to
+        meet their use case and thus help all other users.
 
 ## How it works
 
 OpenTrafficCam consists of multiple modules. The core is composed of three:
 
-1. The [OTCamera](https://opentrafficcam.org/OTCamera/) hardware itself to record videos,
-1. [OTVision](https://opentrafficcam.org/OTVision/), a collection of algorithms to generate trajectories
+1. The [OTCamera](/OTCamera/) hardware to record videos,
+2. [OTVision](/OTVision/), a collection of algorithms to generate trajectories
 of objects (road users) based on the videos and
-1. [OTAnalytics](https://opentrafficcam.org/OTAnalytics/) to gather traffic measures based on these trajectories.
+3. [OTAnalytics](/OTAnalytics/) to gather traffic measures based on these trajectories.
 
 Each of the three modules comes with (easy) installation, a basic user interface and a documentation.
 The Open Source version covers the most common use cases of video-based traffic surveying,
-such as traffic counts and speed measurements.
+such as traffic counts.
 
-In addition to the three main modules, with [OTLabels](https://opentrafficcam.org/OTLabels/)
+In addition to the three main modules, with [OTLabels](/OTLabels/)
 we will provide a set of labelled images of German road users and vehicles along with algorithms
 to train object detection models on custom data sets.
 
@@ -92,7 +93,4 @@ using OTLabels, you will need a powerful machine with a strong graphics card.
 
     [:octicons-mail-16: Contact us for more information](mailto:team@opentrafficcam.org){ .md-button }
 
-<!-- TODO #49 Short description about Usecases -->
-
-## Who we are
 
