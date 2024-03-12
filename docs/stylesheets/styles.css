@@ -159,9 +159,6 @@ p {
   .service-title {
     font-size: 0.7rem;
   }
-  p {
-    font-size: 0.5rem;
-  }
 }
 @media (max-width: 998px) {
   .mobile-margin {
