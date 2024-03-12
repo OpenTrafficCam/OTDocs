@@ -104,7 +104,7 @@ p {
 .pricing{
   margin-bottom: 2rem;
 }
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
     .mobile-margin {
       width: 100% !important;
     }
@@ -121,7 +121,7 @@ p {
     flex-wrap: wrap;
     align-content: space-between;
   }
-  @media (max-width: 998px){
+  @media (max-width: 1200px){
     .pricing-tile {
       display: flex;
       align-items: center;
@@ -139,7 +139,7 @@ p {
       font-size: 0.7rem;
     }
   }
-  @media (max-width: 998px) {
+  @media (max-width: 1200px) {
     .service-title {
       font-size: 1rem;
     }
@@ -157,10 +157,9 @@ p {
 }
 @media (max-width: 1200px) {
   .service-title {
-    font-size: 0.7rem;
   }
 }
-@media (max-width: 998px) {
+@media (max-width: 1200px) {
   .mobile-margin {
     margin-bottom: 4rem;
   }
