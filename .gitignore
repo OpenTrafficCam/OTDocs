@@ -139,3 +139,7 @@ cython_debug/
 
 # macOS
 .DS_Store
+
+.idea/
+
+/html
