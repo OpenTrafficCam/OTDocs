@@ -104,21 +104,46 @@ p {
 .pricing{
   margin-bottom: 2rem;
 }
+@media (max-width: 992px) {
+    .mobile-margin {
+      width: 100% !important;
+    }
 
 
+  }
 .pricing-box {
 
   .pricing-tile {
-    /* add radius Bootsrap*/
     padding: 20px;
     text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+  @media (max-width: 998px){
+    .pricing-tile {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      align-content: center;
+    }
   }
 
   .service-title {
-    font-size: 24px;
+    font-size: 1rem;
     margin-bottom: 15px;
   }
-
+  @media (max-width: 1200px) {
+    .service-title {
+      font-size: 0.7rem;
+    }
+  }
+  @media (max-width: 998px) {
+    .service-title {
+      font-size: 1rem;
+    }
+  }
   .service-features {
     list-style: none;
     padding: 0;
@@ -130,10 +155,17 @@ p {
     margin-bottom: 10px;
   }
 }
-
-@media (max-width: 768px) {
-  .pricing-box {
-    margin-bottom: 2rem;
+@media (max-width: 1200px) {
+  .service-title {
+    font-size: 0.7rem;
+  }
+  p {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 998px) {
+  .mobile-margin {
+    margin-bottom: 4rem;
   }
 }
 
@@ -172,6 +204,3 @@ p {
   visibility: visible;
   opacity: 1;
 }
-
-
-
