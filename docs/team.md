@@ -14,7 +14,7 @@ Die Grundidee zu OpenTrafficCam entstand 2017 während der freiberuflichen Täti
 der platomo Gründer.
 Der Markt der Verkehrserfassungsgeräte war geprägt von eher geschlossenen
 und teuren Lösungen, die den Anforderungen der wissenschaftlichen und 
-planerischen Projekten nicht genügte.
+planerischen Projekte nicht genügte.
 
 Mit dem Raspberry Pi war schon länger eine offene und gut dokumentierte
 Hardwareplattform verfügbar, auf der wir unsere ersten Kameraprototypen
@@ -57,7 +57,7 @@ insgesamt 973.140 Euro durch das Bundesministerium für Digitales und Verkehr ge
 Im Rahmen der Innovationsinitiative mFUND fördert das BMDV seit 2016 datenbasierte Forschungs-
 und Entwicklungsprojekte für die digitale und vernetzte Mobilität der Zukunft.
 Die Projektförderung wird ergänzt durch eine aktive fachliche Vernetzung zwischen Akteuren
-aus Politik, Wirtschaft, Verwaltung und Forschung und durchdie Bereitstellung von offenen Daten
+aus Politik, Wirtschaft, Verwaltung und Forschung und durch die Bereitstellung von offenen Daten
 auf der Mobilithek. Weitere Informationen finden Sie unter [www.mfund.de](https://www.mfund.de)
 
 
