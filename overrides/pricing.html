@@ -1,0 +1,239 @@
+{% extends "base.html" %}
+
+<!-- Extends the base.html file of material for mkdocs -->
+<!-- https://github.com/squidfunk/mkdocs-material/blob/master/src/templates/base.html -->
+<!-- copied all available blocks from base.html and inherited if needed. -->
+
+<!-- Meta tags -->
+{% block site_meta %}
+{{ super() }}
+{% endblock %}
+
+<!-- Site title -->
+{% block htmltitle %}
+<title>{{ config.site_name }}</title>
+{% endblock %}
+
+<!-- Theme-related style sheets -->
+{% block styles %}
+{{ super() }}
+<link href="../stylesheets/styles.css" rel="stylesheet"/>
+<link href="../stylesheets/bootstrap-grid.css" rel="stylesheet"/>
+<link href="../stylesheets/bootstrap-utilities.css" rel="stylesheet"/>
+{% endblock %}
+
+<!-- JavaScript libraries -->
+{% block libs %}
+{{ super() }}
+{% endblock %}
+
+
+<!-- Analytics -->
+{% block analytics %}
+<script defer data-domain="opentrafficcam.org" src="https://plausible.platomo.org/js/script.js"></script>
+{% endblock %}
+
+<!-- Custom front matter -->
+{% block extrahead %}
+{% endblock %}
+
+<!--Body starts here-->
+
+<!-- Announcement bar content -->
+{% block announce %}{% endblock %}
+
+<!-- Header -->
+{% block header %}
+{{ super() }}
+{% endblock %}
+
+<!-- Navigation tabs (collapsing) -->
+{% block tabs %}
+{{ super() }}
+{% endblock %}
+
+<!-- Page content -->
+{% block container %}
+{{ super() }}
+{% endblock %}
+{% block content %}
+<section class="page-section introduction" id="otc_information">
+    <div class="col-md-9 container text-center">
+        <h1>Verkehrsanalysen mit OpenTrafficCam - so individuell wie Ihr Projekt!</h1>
+        <p>
+            Hier finden Sie maßgeschneiderte Lösungen für Ihre Bedürfnisse im Bereich der Verkehrsanalyse und Datenvisualisierung.
+            Unabhängig davon, ob Sie selbst erheben oder uns die Arbeit überlassen möchten, ob Sie Standardauswertungen oder
+            komplexe Trajektorienanalysen benötigen, ob Sie OTCamera oder andere Kamerahardware verwenden,
+            wir bieten Ihnen maßgeschneiderte Analysen und Visualisierungen.
+        </p>
+    </div>
+</section>
+<section class="pricing ">
+    <div class="container mt-5 ">
+    <div class="row justify-content-center mobile-row">
+      <div class="col-md-3 mobile-margin">
+        <div class="pricing-box bg-light rounded border h-100">
+          <div class="pricing-tile h-100">
+              <div>
+              <div>
+                  <h3 class="service-title">Videoauswertung</h3>
+              </div>
+              <p class="intro-text-kachel">Der kundenorientierte Prozess für Ihre Standardauswertungen</p>
+            <ul class="service-features">
+
+                <li>Individuelle Differenzierung nach bis zu <a class="tooltip">18 Klassen
+                    <span class="tooltiptext rounded border bg-dark p-2">
+                            Pkw<br>
+                            Pkw mit Anhänger<br>
+                            Motorrad<br>
+                            zu Fuß Gehende<br>
+                            Lkw<br>
+                            Lkw mit Anhänger<br>
+                            Lkz<br>
+                            Fahrrad<br>
+                            Fahrrad mit Anhänger<br>
+                            Lastenfahrrad<br>
+                            eScooter<br>
+                            Transporter<br>
+                            Transporter mit Anhänger<br>
+                            Van<br>
+                            Van mit Anhänger<br>
+                            Zug/Tram<br>
+                            Bus<br>
+                            Andere<br>
+                    </span>
+                </a>
+                </li>
+                <li>Querschnittszählungen</li>
+                <li>Knotenstromzählung</li>
+                <li>Individuelle Ausgabeformate auf Wunsch</li>
+                <li><a href="/assets/OpenTrafficCam_Preisliste.pdf" target="_blank">Transparente Preisgestaltung</a></li>
+                <li>10% Rabatt ab der 1001. Stunde</li>
+            </ul></div>
+            <div class="pricing-button">
+                <a class="md-button" href="mailto:info@platomo.de?subject=Videoauswertung">Kontakt</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mobile-margin">
+<div class="pricing-box bg-light rounded border h-100">
+          <div class="pricing-tile h-100">
+              <div><div>
+                  <h3 class="service-title">Straßenverkehrszählung</h3>
+              </div>
+              <p class="intro-text-kachel">Die teilautomatisierte Auswertung für die SVZ</p>
+            <ul class="service-features">
+                <li>Teilautomatisierte Auswertung der videogestützten manuellen Zählung</li>
+                <li>Integrierte Qualitätsmetriken</li>
+                <li>Klassifizierung und Ausgabeformate gemäß Richtlinien für die SVZ 2025</li>
+                <li>Individuelle Preisgestaltung nach Zählstellen-Gruppe</li>
+
+            </ul></div>
+            <div class="pricing-button">
+                <a class="md-button" href="mailto:info@platomo.de?subject=Straßenverkehrszählung">Kontakt</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mobile-margin">
+        <div class="pricing-box bg-light rounded border h-100">
+          <div class="pricing-tile h-100">
+              <div><div>
+                  <h3 class="service-title">Sonderauswertungen</h3>
+              </div>
+              <p class="intro-text-kachel">Detaillierte Einblicke für Ihre Forschungs- und Praxisprojekte</p>
+
+            <ul class="service-features">
+                <li>Auswertungen spezieller Klassen (z.B. Lastenräder)</li>
+                <li>Geschwindigkeiten</li>
+                <li>Zeitbedarfswerte LSA / Sättigungsverkehrsstärke</li>
+                <li>Eingangsdaten Verkehrsflusssimulation</li>
+                <li>Aufenthaltsdauern / Heatmaps</li>
+
+            </ul></div>
+            <div class="pricing-button">
+                <a class="md-button" href="mailto:info@platomo.de?subject=Sonderauswertung">Kontakt</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="page-section bg-light details" id="messung">
+    <div class="container">
+            <div class="row">
+                <div class="col-md-6 use_case_text">
+                    <h2>Messungen</h2>
+                    <p>
+                        Neben der reinen Videoanalyse bieten wir auch die Durchführung
+                        <strong>kompletter Messkampagnen</strong> mit OpenTrafficCam an.
+                        Optimierte Abläufe und bewährte Maßnahmen zur Qualitätssicherung sorgen für eine zuverlässige 
+                        Durchführung von kleinen und großen Messkampagnen.
+                        Von der <strong>Messstellenauswahl</strong> bis zur <strong>fertigen Datenlieferung</strong>
+                        bekommen Sie alles aus einer Hand.
+                    </p>
+                    <p>
+                        Hierfür bauen wir auf unsere Erfahrung von <strong>über 200</strong> durchgeführten Erhebungen
+                        auf.
+                        Ob im <strong>Forschungskontext</strong> oder im Rahmen eines <strong>Praxisprojekts</strong>,
+                        wir sind Ihr zuverlässiger Partner für die Erhebung von Verkehrsdaten.
+                    </p>
+                    <a href="mailto:info@platomo.de?subject=Messkampagne">→ Kontaktieren Sie uns</a>
+                </div>
+                <div class="col-md-6">
+                    <img alt="Picture of Measurement" src="../assets/img/measurement.jpg">
+                </div>
+
+        </div>
+    </div>
+</section>
+<section class="page-section bg-light details" id="otcamera">
+    <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img alt="Picture of OTCamera" src="/OTCamera/OTCamera.webp">
+                </div>
+                <div class="col-md-6">
+                    <h2>OTCamera</h2>
+                    <p>
+                        Unsere <strong>Hardwarelösung</strong> zur Aufzeichnung von Videos im Verkehrsraum setzen wir
+                        selbst in vielen Projekten ein. Möchten Sie auch OTCamera nutzen, aber die Hardware
+                        <strong>nicht selbst zusammenbauen</strong>?
+                    </p>
+                    <p>
+                        <strong>Wir bauen</strong> in kleinen Stückzahlen OTCameras für Sie zusammen und
+                        stellen Ihnen die <strong>fertige Hardware</strong> bereit. So können Sie in Zukunft unabhängig
+                        selbst Verkehrsvideos aufzeichnen.
+                        Ob Sie die Videos danach selbst prozessieren oder uns damit beauftragen bleibt Ihnen überlassen.
+                        Aktuell entwickeln wir OpenTrafficCam weiter, sodass ein
+                        <strong>kontinuierliches Monitoring</strong> möglich wird.
+                    </p>
+                    <p>
+                        Haben Sie Interesse an OTCamera? Dann kontaktieren Sie uns gerne für weitere Informationen.
+                    </p>
+                    <a href="mailto:info@platomo.de?subject=OTCamera">→ Kontaktieren Sie uns</a>
+                </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+{% endblock %}
+
+<!-- Footer -->
+{% block footer %}
+{{ super() }}
+{% endblock %}
+
+{% block config %}
+{{ super() }}
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+{% endblock %}
+

@@ -1,5 +1,5 @@
 ---
-site_name: OpenTrafficCam Documentation
+site_name: OpenTrafficCam
 site_url: https://opentrafficcam.org/
 site_author: OpenTrafficCam Contributors
 
@@ -19,8 +19,8 @@ theme:
     - navigation.tabs.sticky
     - navigation.sections
     # - navigation.expand
-    # - navigation.indexes
-    - navigation.top
+    - navigation.indexes
+    # - navigation.top
     - search.suggest
     - search.highlight
     - content.tabs.link
@@ -28,18 +28,20 @@ theme:
     repo: fontawesome/brands/github
 
 nav:
-  - Overview:
-      - Welcome: index.md
-      - overview/dataprivacy.md
-      - Use Cases:
-          - overview/usecases/trafficcounts.md
-          - overview/usecases/vehiclespeeds.md
-          - overview/usecases/trafficsafety.md
-  - OTCamera:
-      - OTCamera/index.md
-      - Getting Started:
+  - index.md
+  - pricing.md
+  # - use-cases.md
+  - Documentation:
+      - Overview:
+          - overview/index.md
+          - overview/dataprivacy.md
+          # - Use Cases:
+          #    - overview/usecases/trafficcounts.md
+          #    - overview/usecases/vehiclespeeds.md
+          #    - overview/usecases/trafficsafety.md
+      - OTCamera:
+          - OTCamera/index.md
           - OTCamera/gettingstarted/requirements.md
-          - OTCamera/gettingstarted/assembly.md
           - Installation:
               - OTCamera/gettingstarted/installation.md
               - OTCamera/gettingstarted/installation/prepare-sd-card.md
@@ -48,65 +50,60 @@ nav:
               - OTCamera/gettingstarted/installation/wifi-ap.md
               - OTCamera/gettingstarted/installation/otcamera.md
           - OTCamera/gettingstarted/firstuse.md
-      - Advanced Usage:
-          - OTCamera/usage/preparation_safety.md
-          - OTCamera/usage/mounting.md
           - OTCamera/usage/buttons_leds.md
-          - OTCamera/usage/getvideos.md
           # - Advanced Usage:
           # - OTCamera/advanced_usage/configration.md
           # - OTCamera/advanced_usage/calibrate.md
-  - OTVision:
-      - OTVision/index.md
-      - Getting Started:
+      - OTVision:
+          - OTVision/index.md
           - OTVision/gettingstarted/requirements.md
           - OTVision/gettingstarted/installation.md
           - OTVision/gettingstarted/firstuse.md
-      - Usage:
-          - OTVision/usage/convert.md
-          - OTVision/usage/detect.md
-          - OTVision/usage/track.md
-      - Advanced Usage:
-          - OTVision/advanced_usage/configuration.md
+          - Usage:
+              - OTVision/usage/convert.md
+              - OTVision/usage/detect.md
+              - OTVision/usage/track.md
+              - OTVision/advanced_usage/configuration.md
 
-  - OTAnalytics:
-      - OTAnalytics/index.md
-      - Getting Started:
-          - OTAnalytics/gettingstarted/requirements.md
-          - OTAnalytics/gettingstarted/installation.md
-          - OTAnalytics/gettingstarted/firstuse.md
-      - Usage:
-          - OTAnalytics/usage/sections.md
-          - OTAnalytics/usage/events.md
-      - Accuracy:
-          - OTAnalytics/Accuracy/counts.md
+      - OTAnalytics:
+          - OTAnalytics/index.md
+          - Getting Started:
+              - OTAnalytics/gettingstarted/requirements.md
+              - OTAnalytics/gettingstarted/installation.md
+              - OTAnalytics/gettingstarted/firstuse.md
+          - Usage:
+              - OTAnalytics/usage/sections.md
+              - OTAnalytics/usage/events.md
+          - Accuracy:
+              - OTAnalytics/Accuracy/counts.md
 
-  - OTLabels:
-      - OTLabels/index.md
-      - Getting Started:
-          - OTLabels/gettingstarted/requirements.md
-          - OTLabels/gettingstarted/installation.md
-          - OTLabels/gettingstarted/data.md
-      - Training:
-          - OTLabels/training/cvat.md
-          - OTLabels/training/preprocessingdata.md
-          - OTLabels/training/retrainmodel.md
-      - Validation:
-          - OTLabels/validation/overview.md
-          - OTLabels/validation/gettingstarted.md
-          - OTLabels/validation/metrics.md
-          - OTLabels/validation/modelvalidation.md
-      - Trainend Models:
-          - OTLabels/models/coco6.md
-  - Contribute:
-      - contribute/index.md
-      - contribute/github.md
-      - contribute/coding.md
-      - contribute/gui.md
-      - contribute/vscode.md
-      - contribute/documentation.md
-      - contribute/otcamera.md
-
+      - OTLabels:
+          - OTLabels/index.md
+          - Getting Started:
+              - OTLabels/gettingstarted/requirements.md
+              - OTLabels/gettingstarted/installation.md
+              - OTLabels/gettingstarted/data.md
+          - Training:
+              - OTLabels/training/cvat.md
+              - OTLabels/training/preprocessingdata.md
+              - OTLabels/training/retrainmodel.md
+          - Validation:
+              - OTLabels/validation/overview.md
+              - OTLabels/validation/gettingstarted.md
+              - OTLabels/validation/metrics.md
+              - OTLabels/validation/modelvalidation.md
+          - Trainend Models:
+              - OTLabels/models/coco6.md
+      - Contribute:
+          - contribute/index.md
+          - contribute/github.md
+          - contribute/coding.md
+          # - contribute/gui.md
+          - contribute/vscode.md
+          - contribute/documentation.md
+          # - contribute/otcamera.md
+  - Team:
+      - team.md
 extra_css:
   - stylesheets/color.css
   - stylesheets/fonts.css
@@ -133,10 +130,10 @@ extra:
       #     lang: de
 
 copyright: >
-  Copyright &copy; 2020 - 2023 OpenTrafficCam Contributors
+  Copyright &copy; 2020 - 2024 OpenTrafficCam Contributors
   <a href="https://platomo.de/impressum/">Impressum / Legal Notice</a>
-repo_url: https://github.com/OpenTrafficCam/OTDocs
-repo_name: OpenTrafficCam/OTDocs
+repo_url: https://github.com/OpenTrafficCam/
+repo_name: OpenTrafficCam
 edit_uri: edit/master/docs/
 
 markdown_extensions:
@@ -145,8 +142,8 @@ markdown_extensions:
       toc_depth: 3
   - admonition
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.details
   - pymdownx.highlight
   - pymdownx.superfences:
@@ -168,6 +165,9 @@ markdown_extensions:
   - md_in_html
   # - meta
 
+watch:
+  - ./overrides
+
 plugins:
   - search
   - git-revision-date-localized:
@@ -175,3 +175,4 @@ plugins:
       type: date
       timezone: Europe/Berlin
       # - glightbox # to zoom images on click.
+  - privacy

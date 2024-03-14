@@ -1,0 +1,202 @@
+{% extends "base.html" %}
+
+<!-- Extends the base.html file of material for mkdocs -->
+<!-- https://github.com/squidfunk/mkdocs-material/blob/master/src/templates/base.html -->
+<!-- copied all available blocks from base.html and inherited if needed. -->
+
+<!-- Meta tags -->
+{% block site_meta %}
+{{ super() }}
+{% endblock %}
+
+<!-- Site title -->
+{% block htmltitle %}
+<title>{{ config.site_name }}</title>
+{% endblock %}
+
+<!-- Theme-related style sheets -->
+{% block styles %}
+{{ super() }}
+<link href="stylesheets/styles.css" rel="stylesheet"/>
+<link href="stylesheets/bootstrap-grid.css" rel="stylesheet"/>
+<link href="stylesheets/bootstrap-utilities.css" rel="stylesheet"/>
+{% endblock %}
+
+<!-- JavaScript libraries -->
+{% block libs %}
+{{ super() }}
+{% endblock %}
+
+<!-- Webfonts -->
+{% block fonts %}
+{{ super() }}
+{% endblock %}
+
+<!-- Analytics -->
+{% block analytics %}
+<script defer data-domain="opentrafficcam.org" src="https://plausible.platomo.org/js/script.js"></script>
+{% endblock %}
+
+<!-- Custom front matter -->
+{% block extrahead %}
+{% endblock %}
+
+<!--Body starts here-->
+
+<!-- Announcement bar content -->
+{% block announce %}{% endblock %}
+
+<!-- Header -->
+{% block header %}
+{{ super() }}
+{% endblock %}
+
+<!-- Hero teaser -->
+{% block hero %}{% endblock %}
+
+<!-- Navigation tabs (collapsing) -->
+{% block tabs %}
+{{ super() }}
+{% endblock %}
+
+<!-- Main area -->
+
+<!-- Sidebars -->
+{% block site_nav %}
+<!-- remove navigation and table of content-->
+{% endblock %}
+
+<!-- Page content -->
+{% block container %}
+{{ super() }}
+{% endblock %}
+{% block content %}
+<section class="page-section" id="otc_information">
+    <div class="container text-center">
+        <p>
+            OpenTrafficCam ist das einzige Open Source Gesamtsystem zur automatischen Analyse von Verkehr.
+            Entwickelt von Informatikern (ja bisher nur Männer :() und Verkehrsingenieur:innen für
+            Verkehrsingenieur:innen. #less-sales-more-truth #lessbullshitbingo
+
+            Die Verkehrsanalyse mit OpenTrafficCam ist in drei aufeinander abgestimmte Module unterteilt.
+            Die Module können auch einzeln eingesetzt werden.
+
+            Das mobile Kamerasystem OTCamera zeichnet datenschutzkonform Verkehrsvideos auf.
+
+            Die Software OTVision detektiert Verkehrsteilnehmende in Videos von vielen gängigen
+            Verkehrskameras - nicht nur von OTCamera.
+
+            OTAnalytics analysiert die Bewegungen der detektierten Verkehrsteilnehmenden und aggregiert
+            sie zu verkehrlichen Kenngrößen wie Verkehrsstärken, Zeitlücken, Geschwindigkeiten, …
+        </p>
+    </div>
+
+
+</section>
+
+<section class="page-section" id="datenschutz">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">DATENSCHUTZ</h2>
+            <h3 class="section-subheading text-muted">Durch bewusste Fokussierung auf den Nahbereich und einen
+                typischerweise großen Abstand zu den Verkehrsteilnehmenden (> 3m) werden Verkehrsteilnehmende nur
+                unscharf aufgezeichnet. In Kombination mit einer geringen Auflösung werden typische Datenschutzprobleme,
+                wie erkennbare Gesichert oder Kennzeichen, gelöst. Die eingesetzten Modelle zur Detektion der
+                Verkehrsteilnehmenden berücksichtigen dies ohne wesentliche Einbußen bei der Erfassungsgenauigkeit.
+                Zusätzlich kann das Sichtfeld individuell an den aufzuzeichnenden Ort angepasst werden, um nur relevante
+                Bereiche aufzuzeichnen.</h3>
+            <a class="md-button" href="#services">Tell Me More</a>
+        </div>
+    </div>
+</section>
+<section class="page-section bg-light" id="use_case">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Kurzzeitzählung</h2>
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <h3 class="section-subheading text-muted">
+                        OpenTrafficCam kann zur Kurzzeitzählung an Knotenpunkten
+                        und Querschnitten eingesetzt werden. Die Kameras werden an vorhandener Infrastruktur montiert
+                        und anschließend Knotenstromzählungen und Querschnittszählungen durchgeführt. Der automatisierte
+                        Prozess ersetzt oder ergänzt geschultes Zählpersonal. Die Zähldaten werden in gut strukturierten
+                        und übersichtlichen CSV- und Excel-Datensätzen exportiert. Dabei lässt sich die zeitliche
+                        Aggregierung frei einstellen (z.B. 5 oder 15 Minuten). Das ermöglicht eine einfache
+                        Visualisierung der Daten und eine effiziente Integration in bestehende Prozesse der
+                        Ingenieurbüros und Kommunen. Mit den offenen Modellen lassen sich Fuß-, Rad-, Leicht- und
+                        Schwerverkehr unterscheiden. Mit den Pro-Modellen von platomo wird die Erkennungsgenauigkeit-
+                        und rate deutlich verbessert und es werden insgesamt 18 verschiedene Klassen erkannt. Diese
+                        lassen sich z.B. zu Klassen nach RLS-19 oder TLS-2012 8+1 Klassen (inkl. Fuß- und Radverkehr)
+                        zusammenfassen. OpenTrafficCam kann auch für Videos verwendet werden, die nicht mit OTCamera
+                        aufgezeichnet wurden.
+                    </h3>
+                    <a class="md-button" href="#services">Tell Me More</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/img/31343C.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="page-section" id="open_source">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">USE-CASE</h2>
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <img src="assets/img/31343C.svg">
+                </div>
+                <div class="col-md-6">
+                    <h3 class="section-subheading text-muted">
+                        Unser Produkt basiert auf und ist Open Source, denn wir glauben an Offenheit, Zusammenarbeit und
+                        Innovation. Durch die Verwendung von Open Source-Technologien ermöglichen wir nicht nur eine
+                        transparente Entwicklung, sondern fördern auch die Teilnahme der Gemeinschaft. Dies schafft
+                        Vertrauen, Sicherheit und ermöglicht individuelle Anpassungen. Mit Open Source gestalten wir
+                        eine kollaborative und zukunftsorientierte Lösung für unsere Nutzenden.
+                    </h3>
+                    <a class="md-button" href="#services">Tell Me More</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="page-section bg-light" id="team">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">TEAM</h2>
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <h3 class="section-subheading text-muted">Die platomo GmbH besteht aus einem hochmotivierten Team,
+                        das sich leidenschaftlich für die Entwicklung von OpenTrafficCam engagiert. Unsere Expertise und
+                        Innovationsfreude treiben uns an, eine offene, effiziente Verkehrsüberwachung Lösung zu
+                        schaffen. Unterstützt werden wir dabei von Forschern der TU Dresden.</h3>
+                    <a class="md-button" href="#services">Tell Me More</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/img/31343C.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+<!-- Footer -->
+{% block footer %}
+{{ super() }}
+{% endblock %}
+
+{% block config %}
+{{ super() }}
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+<script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+<script src="assets/javascripts/bundle.d7c377c4.min.js"></script>
+{% endblock %}
+
