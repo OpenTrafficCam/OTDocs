@@ -1,6 +1,6 @@
 # Model Validation
 
-In this section we will compare the different YOLO models on how good they fare in the object detection task.
+In this section you will find a comparison of the different YOLO models on how well they perform in the object detection.
 The YOLO models to be evaluated are YOLOv5s, YOLOv5m, YOLOv5l and YOLOv5x.
 The models are evaluated on a custom dataset consisting of custom video recordings.
 Thus, we want to investigate which of the four YOLO models might be best suited in the detection of traffic objects.
@@ -11,7 +11,7 @@ As mentioned above, the dataset consists of different video recordings capturing
 Thus, the video recordings are turned into datasets that will be used to evaluate the object detection models.
 It is important to note that not every single frame is selected, but only every $n$-th frame where $n \in \mathbb{N}$ and $n$ is arbitrarily chosen by the user.
 
-Here is how the scenes are looking like:
+Here is how the scenes look like:
 
 | Scenes                                |                                       |                                                   |                                                   |
 | ------------------------------------- | ------------------------------------- | ------------------------------------------------- | ------------------------------------------------- |
@@ -43,15 +43,15 @@ In our case, we will use the mAP and the [TIDE metrics](https://github.com/dboly
 
 !!! info
 
-    OTValidate takes a list of class labels as a parameter.
+    OTValidate uses a list of class labels as a parameter.
     All predictions and ground truth data are then filtered according to that list of class labels.
     Meaning, all predictions or ground truth data, whose predicted or labeled class are not contained in the list, are discarded and therefore not regarded in the evaluation process.
     This is especially useful if the ground truth data contains class labels that the model can't predict. 
 
 ## Evaluation
 
-In this section we will discuss the evaluation results of each model and put them under comparison.
-Specifically, we will evaluate the models on each dataset depicted by the scenes as shown above in the table and on all the ground truth data.
+In this section you will find the evaluation results of each model as well as the comparison.
+Specifically, the models are evaluated based on each dataset depicted by the scenes as shown above in the table and on all the ground truth data.
 The models confidence and IOU threshold are set to 0.25 and 0.5 respectively.
 Meaning, all detections that have an IOU lower than 0.5 are not regarded as possible detections and all detections with a confidence lower than 0.25 are discarded.
 
@@ -70,7 +70,7 @@ Nevertheless, let us also have a look at the TIDE metrics to get an insight on t
 | --------------------------------------------------------- | ------------------------------------------------------------------ |
 | ![All TIDE](assets/plots/all/tide_errors_diagram_all.png) | ![All TIDE Stacked](assets/plots/all/tide_stacked_diagram_all.png) |
 
-What immediately stands out are the [**Missed Ground Truth Error**(Miss)](/OTLabels/validation/metrics/#tide-metrics) and the [**Classification Error**(Cls)](/OTLabels/validation/metrics/#tide-metrics).
+What immediately stands out are the [Missed Ground Truth Error (Miss)](/OTLabels/validation/metrics/#tide-metrics) and the [Classification Error (Cls)](/OTLabels/validation/metrics/#tide-metrics).
 Meaning, the models were not able to detect many ground truth bounding boxes or be able to classify them correctly.
 Thus, the models were able to detect the majority of the bounding boxes, but had problems predicting the correct classes.
 
@@ -216,11 +216,13 @@ Thus the further the objects move to the right area of the image, the better the
 ## Conclusion and Future Work
 
 We have evaluated the `YOLOv5s`, `YOLOv5m`, `YOLOv5x`, and the `YOLOv5l` object detection models on a custom dataset consisting of videos capturing different scenes of traffic junctions and roads.
-Looking at mAP and TIDE metrics gave us insight to how the YOLOv5 models performed on our custom dataset and we can come to the conclusion that a `YOLOv5m`, `YOLOv5l` and `YOLOv5x` models performed far better than the `YOLOv5s`.
+Looking at mAP and TIDE metrics gave us insight to how the YOLOv5 models performed on our custom dataset and we can come to the conclusion that a `YOLOv5m`,
+`YOLOv5l` and `YOLOv5x` models performed far better than the `YOLOv5s`.
 But there is not a big increase in performance in terms of object detection upon choosing the `YOLOv5x` over the `YOLOv5m` or `YOLOv5l` model.
 
 Another important aspect to look into in the future is how much time the models under discussion take to detect the images.
-Depending on the use case and resources at hand, choosing the `YOLOv5x` model which might need much more time to finish the detection might not be suitable and thus taking the `YOLOv5m` or `YOLOv5l` model might be the better choice.
+Depending on the use case and resources at hand,
+choosing the `YOLOv5x` model which might need much more time to finish the detection might not be suitable and thus taking the `YOLOv5m` or `YOLOv5l` model might be the better choice.
 
 What we are also currently working on is to train our own models using the YOLOv5 models as our foundation on a custom dataset.
 Thus it would be interesting to see if there would be a significant increase in performance by using custom trained models.

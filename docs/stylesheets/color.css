@@ -1,5 +1,6 @@
-:root {
+:root > * {
   --md-primary-fg-color: #37483e;
+  --md-primary-fg-color--dark: #37483e;
   --md-accent-fg-color: #71947f;
   --md-typeset-a-color: var(--md-primary-fg-color);
 }

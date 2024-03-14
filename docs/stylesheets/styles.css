@@ -1,0 +1,202 @@
+.hero h1 {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 5rem;
+  line-height: 0;
+}
+
+.hero h2 {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 2.2rem;
+
+}
+
+header.hero {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  text-align: right;
+  color: #ffffff;
+  background-color: var(--md-primary-fg-color);
+}
+
+header.hero .hero-heading {
+  padding-top: 3rem;
+}
+
+
+@media (max-width: 768px) {
+  header.hero {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 4rem;
+  }
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+}
+
+
+.introduction p {
+  font-size: 0.8rem;
+}
+@media (max-width: 768px) {
+  .use_case_text {
+    order: 2;
+  }
+}
+
+.service-grid {
+  display: grid;
+}
+@media (max-width: 768px) {
+  .service-grid {
+    padding-bottom: 3rem;
+  }
+
+}
+
+.service-grid .button-grid {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding-top: 0.5rem;
+}
+
+.service-icon svg {
+  width: 70%;
+  max-height: 140px;
+}
+
+.service-icon svg path {
+  fill: #4d6856;
+}
+
+p {
+  line-height: 1.75;
+}
+
+.page-section {
+  padding: 3rem 0;
+}
+
+.team {
+  margin-top: -3rem;
+}
+
+@media (min-width: 768px) {
+
+  .details h2 {
+    margin-top: 0;
+  }
+}
+
+.pricing{
+  margin-bottom: 2rem;
+}
+@media (max-width: 1200px) {
+    .mobile-margin {
+      width: 100% !important;
+    }
+
+
+  }
+.pricing-box {
+
+  .pricing-tile {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+  @media (max-width: 1200px){
+    .pricing-tile {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      align-content: center;
+    }
+  }
+
+  .service-title {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  @media (max-width: 1200px) {
+    .service-title {
+      font-size: 0.7rem;
+    }
+  }
+  @media (max-width: 1200px) {
+    .service-title {
+      font-size: 1rem;
+    }
+  }
+  .service-features {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .service-features li {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 1200px) {
+  .service-title {
+  }
+}
+@media (max-width: 1200px) {
+  .mobile-margin {
+    margin-bottom: 4rem;
+  }
+}
+
+.intro-text-kachel {
+    padding-top: 0.3rem;
+    border-bottom: 0.3rem solid #4d6856;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 10rem;
+  color: #fff;
+  text-align: left;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: -1000%;
+  margin-left: 0.5rem;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

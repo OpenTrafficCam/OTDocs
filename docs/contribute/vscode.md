@@ -7,6 +7,7 @@ We are developing OpenTrafficCam using [Visual Studio Code](https://code.visuals
 * [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance)
 * [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 * [Python Docstring Generator](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring)
+* [yaml Language Support](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
 
 ## Pylance Settings
 
@@ -60,3 +61,10 @@ Add the following snippet to `vscodedata/user/snippets/python.json`
 ```
 
 Add a short description and use tab to jump to the end of the snippet.
+
+## MKDocs Configuration Support
+
+> In order to minimize friction and maximize productivity, Material for MkDocs provides its own schema.json1 for mkdocs.yml.
+> If your editor supports YAML schema validation, it's definitely recommended to set it up.
+
+[Source](https://twitter.com/squidfunk/status/1487746003692400642)

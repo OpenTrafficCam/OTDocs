@@ -17,21 +17,23 @@ Connect to the Pi using the Remote-SSH extension (rightclick on the ne host - "C
 
 Open the extension manager in the new windows an install all necessary extensions.
 
-Install the linter and autoformatter.
+Install a virtual environment and all requirements.
 
 ```bash
-pip install black flake8
+sudo apt install python3-venv -y
+python -m venv venv --upgrade-deps
+pip install -r requirements.txt -r requirements-dev.txt -U
 ```
 
 ## Setup Git and GitHub
 
-Install git using apt.
+If not already done install git using apt.
 
 ```bash
 sudo apt install git -y
 ```
 
-To setup your git commit name and email, login to your github account and copy your [private commit email](https://docs.github.com/en/free-pro-team@latest/github/setting-up-and-managing-your-github-user-account/setting-your-commit-email-address).
+To setup your git commit name and email, login to your GitHub account and copy your [private commit email](https://docs.github.com/en/free-pro-team@latest/github/setting-up-and-managing-your-github-user-account/setting-your-commit-email-address).
 
 On the pi run
 

@@ -290,14 +290,16 @@
 }
 
 .md-header__title {
-  font-family: Amatic SC, sans-serif;
+  font-family: "Amatic SC", sans-serif;
+  letter-spacing: 0.03em;
   font-size: 1.6rem;
 }
 
 .md-tabs__link {
-  font-family: Amatic SC, sans-serif;
+  font-family: "Amatic SC", sans-serif;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.03em;
 }
 
 .md-announce {
@@ -312,16 +314,25 @@
   padding-left: 0.6rem;
   padding-right: 0.6rem;
   text-align: center;
-  font-family: Amatic SC, sans-serif;
-  border-left: none;
-  font-size: 180%;
+  font-family: "Amatic SC", sans-serif;
+  font-size: 220%;
+  font-weight: 700;
   margin-top: 0;
   margin-bottom: 0;
+  letter-spacing: 0.03em;
+}
+
+[dir="ltr"] .md-typeset blockquote {
+    border-left: none
 }
 
 p {
   margin-block-start: 0.75em;
   margin-block-end: 0.75em;
+}
+
+.md-typeset a {
+  border-bottom: .01rem solid var(--md-default-fg-color--lighter);
 }
 
 /* Download additional fonts:
