@@ -49,7 +49,7 @@ und der [TU Dresden](https://tu-dresden.de/bu/verkehr/ivs/msp) entwickelt.
 
 </div>
 
-Das Projekt OpenTrafficCam_live wird im Rahmen der Innovationsinitiative mFUND mit
+Das Projekt OpenTrafficCam_live wird in der Förderlinie mFUND mit
 insgesamt 973.140 Euro durch das Bundesministerium für Digitales und Verkehr gefördert.
 
 Über den mFUND des BMDV:
