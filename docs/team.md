@@ -5,8 +5,6 @@ hide:
 #  - toc
 ---
 
-# Das Team rund um OpenTrafficCam
-
 ## Entwicklung
 
 Das Team rund um OpenTrafficCam besteht aus Softwareentwicklern und Ingenieur:innen
