@@ -13,7 +13,7 @@ aus den Bereichen Verkehr und Fotogrammetrie.
 Die Grundidee zu OpenTrafficCam entstand 2017 während der freiberuflichen Tätigkeiten
 der platomo Gründer.
 Der Markt der Verkehrserfassungsgeräte war geprägt von eher geschlossenen
-und teuren Lösungen, die den Anforderungen der wissenschaftlichen und 
+und teuren Lösungen, die den Anforderungen der wissenschaftlichen und
 planerischen Projekte nicht genügte.
 
 Mit dem Raspberry Pi war schon länger eine offene und gut dokumentierte
