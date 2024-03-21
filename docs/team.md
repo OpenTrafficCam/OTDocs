@@ -45,9 +45,9 @@ und der [TU Dresden](https://tu-dresden.de/bu/verkehr/ivs/msp) entwickelt.
 
 <div class="grid cards" markdown>
 
-- ![platomo](assets/img/platomo_logo.png)
+- ![platomo](assets/img/platomo_logo.png){style="display: block; margin: 0 auto" }
 
-- ![TU Dresden](assets/img/tud_logo.png)
+- ![TU Dresden](assets/img/tud_logo.png){style="display: block; margin: 0 auto" }
 
 </div>
 
@@ -64,11 +64,23 @@ Die Projektförderung wird ergänzt durch eine aktive fachliche Vernetzung zwisc
 aus Politik, Wirtschaft, Verwaltung und Forschung und durch die Bereitstellung von offenen Daten
 auf der Mobilithek. Weitere Informationen finden Sie unter [www.mfund.de](https://www.mfund.de)
 
+<div class="grid cards" markdown>
+
+- ![German Federal Ministry for Digital and Transport](assets/img/bmdv_logo.svg){style="display: block; margin: 0 auto" }
+
+- ![mFUND](assets/img/mfund_logo.png){style="display: block; margin: 0 auto" }
+
+</div>
+
+Zudem werden Teile der Weiterentwicklung von OpenTrafficCam von der [Deutschen Forschungsgemeinschaft (DFG)](https://www.dfg.de/) gefördert.
+Konkret erfolgt im Rahmen des Projekts [NFDI4ing](https://nfdi4ing.de/) die Entwicklung von [OTGroundTruther](https://github.com/OpenTrafficCam/OTGroundTruther),
+ einem Tool zur manuellen Erzeugung von Referenzdatensätzen.
+Mit diesen Referenzdatensätzen können die mit OpenTrafficCam automatisiert abgeleiteten Verkehrskennwerte validiert werden.
 
 <div class="grid cards" markdown>
 
-- ![German Federal Ministry for Digital and Transport](assets/img/bmdv_logo.svg)
+- ![DFG](assets/img/DFG-logo-international.jpg){style="display: block; margin: 0 auto" }
 
-- ![mFUND](assets/img/mfund_logo.png)
+- ![NFDI4ing](assets/img/NFDI4Ing.png){height="50" style="display: block; margin: 0 auto" }
 
 </div>
