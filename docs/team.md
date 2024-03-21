@@ -42,7 +42,6 @@ im Laufe der Entwicklung aus unterschiedlichen Sichtweisen beleuchten und lösen
 OpenTrafficCam wird von der [platomo GmbH](https://platomo.de/) aus Karlsruhe
 und der [TU Dresden](https://tu-dresden.de/bu/verkehr/ivs/msp) entwickelt.
 
-
 <div class="grid cards" markdown>
 
 - ![platomo](assets/img/platomo_logo.png){style="display: block; margin: 0 auto" }
