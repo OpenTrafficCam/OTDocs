@@ -7,6 +7,8 @@ hide:
 
 # Das Team rund um OpenTrafficCam
 
+## Entwicklung
+
 Das Team rund um OpenTrafficCam besteht aus Softwareentwicklern und Ingenieur:innen
 aus den Bereichen Verkehr und Fotogrammetrie.
 
@@ -48,6 +50,8 @@ und der [TU Dresden](https://tu-dresden.de/bu/verkehr/ivs/msp) entwickelt.
 - ![TU Dresden](assets/img/tud_logo.png)
 
 </div>
+
+## Förderung
 
 Das Projekt OpenTrafficCam_live wird in der Förderlinie mFUND mit
 insgesamt 973.140 Euro durch das Bundesministerium für Digitales und Verkehr gefördert.
