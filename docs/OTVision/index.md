@@ -14,14 +14,25 @@ The current pipeline consists of three core functionalities of OTVision:
 graph LR
     subgraph OTVision["OTVision:"]
         direction LR
-        conv(<b>convert</b>\n\n...raw video\nfiles to mp4)
-        det(<b>detect</b>\n\n...road users\nin single\nframes)
-        tr(<b>track</b>\n\n...detected road\nusers over\nmultiple frames)
+        conv(<b>convert</b>
+        ...raw video
+        files to mp4)
+        det(<b>detect</b>
+        ...road users
+        in single
+        frames)
+        tr(<b>track</b>
+        ...detected road
+        users over
+        multiple frames)
         conv --> det --> tr
     end
-    tr .-> traj[/.ottrk\nTrajectories/]
-    vf[/.mp4\nVideo Files/] .-> det
-    rvf[/.h264\nVideo Files/] .-> conv
+    tr .-> traj[/.ottrk
+    Trajectories/]
+    vf[/.mp4
+    Video Files/] .-> det
+    rvf[/.h264
+    Video Files/] .-> conv
 ```
 
 ## Key features
