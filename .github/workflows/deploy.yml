@@ -5,6 +5,12 @@ on:
     branches:
       - master
       - main
+
+permissions:
+  contents: read
+  deployments: write
+  pages: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
