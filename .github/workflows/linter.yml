@@ -1,22 +1,24 @@
 ---
-name: Lint Code Base
+name: super-linter
 #
 # Documentation:
 # https://help.github.com/en/articles/workflow-syntax-for-github-actions
 #
 
-on:
-  pull_request:
-    branches: [master]
+on: pull_request
+
+permissions: read-all
 
 jobs:
-  build:
-    name: Lint Code Base
+  lint:
+    name: Lint many languages with super-linter
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
+          # super-linter needs the full git history to get the
+          # list of files that changed across commits
           fetch-depth: 0
       - name: Lint Code Base
         uses: github/super-linter/slim@v7
@@ -24,8 +26,10 @@ jobs:
           VALIDATE_ALL_CODEBASE: false
           DEFAULT_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VALIDATE_GO_RELEASER: false
           VALIDATE_PYTHON_PYLINT: false
-          VALIDATE_GITLEAKS: false
-          CSS_FILE_NAME: .stylelintrc.json
+          VALIDATE_PYTHON_MYPY: false
+          VALIDATE_JSCPD: false
+          VALIDATE_PYTHON_BLACK: false
           VALIDATE_JAVASCRIPT_ES: false
           VALIDATE_JAVASCRIPT_STANDARD: false
