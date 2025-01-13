@@ -1,145 +1,145 @@
 # Usage UI
 
-## Einleitung
+## Introduction
 
-OTConfig ist ein Programm zur Konfiguration von videobasierten Verkehrsanalysen (z. B. Zählungen, Geschwindigkeitsmessungen) mit der OpenTrafficCam-Pipeline (OTVision und OTAnalytics). Die Konfiguration umfasst dabei drei Schritte:
+OTConfig is a program for configuring video-based traffic analyses (e.g. counts, speed measurements) with the OpenTrafficCam pipeline (OTVision and OTAnalytics). The configuration consists of three steps:
 
-1. Projektsetup
-1. Definition der zu analysierenden Verkehrsströme (Flows)
-1. Export der Konfigurationsdatei
+1. Project setup
+1. Definition of the traffic flows to be analyzed
+1. Export of the configuration file
 
-Die Ergebnisse der OpenTrafficCam-Pipeline sind Rohdaten zu den einzelnen Verkehrsbewegungen sowie Zählwerte für die einzelnen Verkehrsströme. Weitere Auswertungen, wie z. B. Geschwindigkeits- oder Zeitbedarfsanalysen, werden in nachgelagerten Prozessen auf Kundenwunsch durchgeführt. Die dafür relevanten Angaben werden individuell übermittelt sowie eventuell gewünschte Aggregationen von Fahrzeugklassen individuell vereinbart und von uns im Nachgang umgesetzt.
+The results of the OpenTrafficCam pipeline are raw data on the individual traffic movements as well as count values for the individual traffic flows. Further evaluations, such as speed or time requirement analyses, are carried out in downstream processes upon customer request. The relevant information is transmitted individually and any desired aggregations of vehicle classes are agreed individually and subsequently implemented by us.
 
-Die Definition der Verkehrsströme (Flows) erfolgt mittels Detektoren (Sections). Jeder Flow besteht aus genau einer Start- und einer Endsection (Von-Nach-Beziehung). Es können sowohl Sections in Form von Linien mit beliebig vielen Stützpunkten als auch Flächen definiert werden.
-
-!!! info
-    Für jede Kameraansicht muss eine eigene Konfiguration angelegt werden. Aufgrund der unterschiedlichen Lagen der Sections und Flows können keine Videos mit unterschiedlichen Ansichten gleichzeitig konfigurieren werden.
-
-## Warum OTConfig?
-
-Soll die Konfiguration und die Ausführung der OpenTrafficCam-Pipeline (Prozessierung bzw. die Auswertung) nicht im selben Schritt oder derselben Institution durchgeführt werden, muss sichergestellt werden, dass die konfigurierte Pipeline später auch wie gewünscht ausgeführt wird. Hierfür haben wir für unsere Kunden das Tool OTConfig entwickelt, um die Fremdprozessierung von Videos durch unsere Infrastruktur so effizient und reibungslos wie möglich zu gestalten.
-
-Mit OTConfig kann der Kunde alle für die Ausführung benötigten Informationen angeben und die OpenTrafficCam-Pipeline entsprechend vorkonfigurieren. Diese Informationen werden abschließend in einer otconfig-Datei gespeichert. Es wird so sichergestellt, dass alle relevanten Informationen strukturiert an uns übergeben und in der OpenTrafficCam-Pipeline korrekt angewendet werden.
+Traffic flows are defined by using detectors (sections). Each flow consists of exactly one start and one end section (from-to relationship). Sections can be defined in the form of lines with any number of support points as well as areas.
 
 !!! info
-    Die übermittelten Informationen werden vor jeder Ausführung der Pipeline nochmals durch geschultes Personal validiert und ggfs. plausibilisiert. Insbesondere die Lage der Sections wird optimiert, um das bestmögliche Ergebnis sicherzustellen.
+    A separate configuration must be created for each camera view. Due to the different positions of the sections and flows, videos with different views cannot be configured at the same time.
 
-## Benutzeroberfläche
+## Why OTConfig?
 
-Die Benutzeroberfläche gliedert sich in zwei Bereiche. In der Konfigurationsleiste können Angaben zum Projekt/zur SVZ gemacht sowie die Sections und Flows definiert werden. Im Arbeitsbereich werden Beispielansichten aus dem jeweils ausgewählten Video gezeigt. In diese werden die entsprechenden Elemente zur Definition der Verkehrsströme eingezeichnet.
+If the configuration and execution of the OpenTrafficCam pipeline (processing or analysis) are not to be carried out in the same step or in the same institution, it must be ensured that the configured pipeline is also executed later as desired. For this purpose, we have developed the OTConfig tool for our customers to make the external processing of videos through our infrastructure as efficient and smooth as possible.
 
-Die Konfigurationsleiste ist in drei Abschnitte unterteilt. Im obersten Abschnitt Project/SVZ werden die Metadaten das Projekt und für die Messstelle der SVZ angegeben sowie otconfig-Dateien gespeichert oder geladen. Im Abschnitt Video werden Videodateien geladen und entfernt sowie eine Übersicht der geladenen Videodateien angezeigt. Im Abschnitt Sections/Flows werden Sections und Flows erstellt bzw. bearbeitet.
+With OTConfig, the customer can specify all the information required for execution and preconfigure the OpenTrafficCam pipeline accordingly. This information is then saved in an otconfig file. This ensures that all relevant information is transferred to us in a structured manner and applied correctly in the OpenTrafficCam pipeline.
+
+!!! info
+    The transmitted information is validated again by trained personnel before each execution of the pipeline and, if necessary, checked for plausibility. In particular, the position of the sections is optimized to ensure the best possible result.
+
+## User Interface
+
+The user interface is divided into two areas. In the configuration bar, information on the project can be entered and the sections and flows can be defined. Example views from the selected video are shown in the workspace. The corresponding elements for defining the traffic flows are drawn into these.
+
+The configuration bar is divided into three sections. In the top section Project, the metadata for the project are specified and otconfig files are saved or loaded. In the Video section, video files are loaded and removed and an overview of the loaded video files is displayed. Sections and flows are created or edited in the Sections/Flows section.
  
-![Benutzeroberfläche von OTConfig](usage-ui/user-interface.png)
+![User Interface of OTConfig](usage-ui/user-interface.png)
 
 !!! info
-    Sind in einem Abschnitt mehrere Teilabschnitte (z. B. Sections, Flows) vorhanden, kann zwischen diesen (wie bei Tabs) durch Anklicken hin- und hergewechselt werden. Der aktive Teilabschnitt ist entsprechend grün hinterlegt.
+    If there are several tabs (e.g. Sections, Flows) in a section, you can switch between them by clicking on them. The active tab is highlighted in green.
 
-Im Arbeitsbereich wird das erste Bild des gerade aktiven (bzw. markierten) Videos dargestellt. In dieses können die Sections gezeichnet werden. 
+The first image of the currently active (or selected) video is displayed in the workspace. The sections can be drawn in this image.
 
-# Projektsetup
+# Project Setup
 
-Zunächst muss das Projekt benannt werden. Der Projektname wird in das zugehörige Feld Name eingegeben. Anschließend muss die Startzeit (Datum und Uhrzeit) des ersten Videos in die entsprechenden Felder Start date eingegeben werden. Es ist die Eingabe im ISO 8601-Format (YYYY-MM-DD) oder deutschem Datumsformat (DD.MM.YYYY) möglich.
+The project must first be named. The project name is entered in the corresponding Name field. The start time (date and time) of the first video must then be entered in the corresponding Start date fields. It is possible to enter in ISO 8601 format (YYYY-MM-DD) or German date format (DD.MM.YYYY).
 
 !!! info
-    OTConfig setzt voraus, dass alle ausgewählten Videos zeitlich aneinandergrenzen. Sollten die zu prozessierenden Videos eine zeitliche Lücke aufweisen (z. B. Videos von drei Tagen jeweils von 6:00 – 22:00 Uhr), müssen mehrere Projekte mit zeitlich zusammenhängenden Videos angelegt werden.
+    OTConfig assumes that all selected videos are contiguous in time. If the videos to be processed have a time gap (e.g. videos from three days from 6:00 a.m. to 10:00 p.m.), several projects with chronologically contiguous videos must be created.
     
-    Es wird empfohlen, einen eindeutigen Namen (z. B. Bezeichnung der Messstelle, Kameranummer; oder Kombination aus mehreren eindeutigen Angaben) zu wählen. 
+    It is recommended to choose a unique name (e.g. name of the measuring point, camera number; or a combination of several unique details).
 
-Anschließend müssen die zu prozessierenden Videos ausgewählt und in OTConfig geladen werden. Über den Button Add können die jeweiligen Videos hinzugefügt werden. Nach dem Anklicken öffnet sich der Dateibrowser und die Videos können ausgewählt werden. Es können auch mehrere Videos gleichzeitig ausgewählt werden. Über den Button Remove wird das selektierte Video gelöscht.
+The videos to be processed must then be selected and loaded into OTConfig. The respective videos can be added using the Add button. After clicking, the file browser opens and the videos can be selected. Several videos can be selected at the same time. The selected video is removed from the configuration using the Remove button.
 
 !!! info
-    Hinzugefügte Videos werden in alphabetischer Reihenfolge im Übersichtsfenster „Videos“ angezeigt und später in dieser Reihenfolge prozessiert. Die Videos sollten also so benannt sein, dass die zeitliche Reihenfolge mit der alphabetischen Reihenfolge übereinstimmt. 
+    Added videos are displayed in alphabetical order in the “Videos” overview panel and are later processed in this order. The videos should therefore be named in such a way that the chronological order matches the alphabetical order.
 
-Wenn ein Video in der Übersicht in der Konfigurationsleiste angeklickt wird, wird das erste Bild des Videos als Hintergrundbild angezeigt. So kann abschließend kontrolliert werden, ob alle Videos korrekt ausgewählt wurden.
+When a video is clicked in the overview in the configuration bar, the first image of the video is displayed as the background image. This allows you to check whether all videos have been selected correctly.
 
-# Definition der zu analysierenden Verkehrsströme
+# Definition of the traffic flows to be analyzed
 
-Ein Verkehrsstrom (Flow) bildet die richtungsbezogene Fahrtbeziehung zwischen zwei Bereichen im Videobild ab. Die Bereiche werden mit sogenannten Sections definiert. Ein Flow besteht immer aus zwei Sections (einer Start- und einer Endsection). Um Flows definieren zu können, müssen somit zunächst die Sections angelegt oder bearbeitet werden. Anschließend können die Flows den angelegten oder bearbeiteten Sections zugeordnet werden.
+A traffic flow depicts the directional travel relationship between two areas in the video image. The areas are defined with so-called sections. A flow always consists of two sections (a start section and an end section). In order to define flows, the sections must first be created. The flows can then be assigned to the created or edited sections.
 
 ## Sections
 
-Sections können aus beliebig vielen Stützpunkten (als Kreis dargestellt) bestehen. Sie werden in OTConfig direkt in das Hintergrundbild gezeichnet. Dafür muss im Abschnitt Sections/Flows zunächst der Tab Sections ausgewählt werden.
+Sections can consist of any number of support points (shown as a circle). They are drawn directly in the background image in OTConfig. To do this, the Sections tab must first be selected in the Sections/Flows section.
 
 !!! info
-    Es können in OTConfig Liniensections (line section) und Flächensections (area section) angelegt werden. Sofern keine Belegungsdauern (z. B. von Parkflächen), sondern lediglich Überfahrten detektiert werden, sollten stets Liniensections gewählt werden. 
+    Line sections and area sections can be created in OTConfig. If no occupancy durations (e.g. of parking areas) are detected, but only crossings, line sections should always be selected. 
     
-    Das weitere Beispiel beschränkt sich auf Liniensections. Das beschriebene Vorgehen lässt sich jedoch ebenso auf Flächensections übertragen. Einziger Unterschied ist, dass beim Beenden des Hinzufügen-Modus das Polygon automatisch geschlossen wird.
+    The following example is limited to line sections. However, the procedure described can also be applied to area sections. The only difference is that the polygon is automatically closed when the add mode is exited.
 
-### Hinzufügen von Sections
+### Add Sections
 
-Das Hinzufügen einer neuen Liniensection erfolgt in folgenden Schritten:
+A new line section is added in the following steps:
 
-1. Linksklick auf den Button Add line, der den Hinzufügen-Modus startet. 
-1. Setzen des ersten Punktes durch Linksklick an der richtigen Stelle im Videobild. Der Punkt ist nun fixiert. Durch Bewegen der Maus und weitere Linksklicks können weitere Punkte der Section angelegt werden. Eine Section muss mindestens aus zwei Punkten bestehen.
-1. Ist die gewünschte Länge und Form einer Section erreicht, wird durch einen Rechtsklick oder Drücken der Enter-Taste der Hinzufügen-Modus beendet.
-1. Ein Druck auf die Escape-Taste bricht den Hinzufügen-Modus ohne Speichern der bisher erstellten Section ab.
-1. Es öffnet sich ein Pop-up Fenster. In dieses den Namen für die Section eintragen und bestätigen. Der Name wird in der Auswertung wiederverwendet. 
+1. Left-click on the Add line button, which starts the add mode. 
+1. Set the first point by left-clicking at the correct position in the video image. The point is now fixed. Further points can be added to the section by moving the mouse and left-clicking again. A section must consist of at least two points.
+1. Once the desired length and shape of a section has been reached, right-click or press the Enter key to exit Add mode.
+1. Pressing the Escape key cancels Add mode without saving the previously created section.
+1. A pop-up window opens. Enter the name for the section in this window and confirm. The name is reused in the analysis.
 
 %TODO%: Infobox innerhalb der Aufzählung?
-!!! info
-   Ein Name kann nur einmal vergeben werden, Namensduplikate mehrerer Sections sind nicht möglich. Wir empfehlen, als Name der Section die ungefähre Himmelsrichtung der geografischen Lage (z. B. Nord, Nordost) zu verwenden.
+!!! failure
+    A name can only be assigned once, duplicate names of several sections are not possible. We recommend using the approximate compass direction of the geographical location (e.g. north, north-east) as the name of the section.
 
-1. Die erstellte Section erscheint mit dem vergebenen Namen im Teilabschnitt Sections.
-1. Um weitere Sections hinzuzufügen, den Vorgang wiederholen.
+1. The created section appears with the assigned name in the Sections subsection.
+1. Repeat the process to add further sections.
  
-![Hinzufügen einer Section im Arbeitsbereich](usage-ui/add-section.png)
+![Add Sections](usage-ui/add-section.png)
 
-### Ändern der Section Geometrie
+### Change the geometry of a section
 
-Die Geometrie bereits erstellter Sections kann mit dem folgenden Vorgehen geändert werden:
+The geometry of sections that have already been created can be changed using the following procedure:
 
-1. Zunächst wird die zu ändernde Section in der Liste ausgewählt. 
-1. Anschließend wird der Änderungs-Modus durch Linksklick auf den Button Edit gestartet. Es werden nun die Stützpunkte sichtbar. 
-1. Durch Linksklick können Stützpunkte nun ausgewählt und wie im Hinzufügen-Modus neu gesetzt werden. Mit der +-Taste kann ein weiterer Stützpunkt hinzugefügt werden.
+1. First select the section to be changed in the list. 
+1. Then start the change mode by left-clicking on the Edit button. The breakpoints are now visible. 
+1. Support points can now be selected by left-clicking and reset as in add mode. The + button can be used to add another support point.
 
-Der ausgewählte Punkt „klebt“ am Mauszeiger, bis die linke Maustaste gedrückt wird. Die alte Geometrie wird dabei als Referenz gestrichelt dargestellt.
+The selected point “sticks” to the mouse pointer until the left mouse button is pressed. The old geometry is displayed as a dashed reference.
 
-1. Durch einen Rechtsklick wird der Änderungs-Modus beendet und die Änderungen gespeichert.
-1. Ein Druck auf die Escape-Taste beendet den Änderungs-Modus, ohne die Änderungen der Geometrie zu speichern. 
+1. Right-click to exit change mode and save the changes.
+1. Pressing the Escape button exits the change mode without saving the changes to the geometry. 
 
-### Ändern des Section-Namens
+### Change the name of a section
 
-Durch Klicken auf den Button Properties kann der Name einer Section geändert werden. Dafür muss die gewünschte Section vorher aus der Liste ausgewählt werden.
+The name of a section can be changed by clicking on the Properties button. To do this, the desired section must first be selected from the list.
 
-### Section löschen
+### Remove a section
 
-Eine Section kann durch Klicken auf den Button Remove gelöscht werden. Dafür muss die gewünschte Section vorher in der Liste ausgewählt werden und darf keinem Flow zugeordnet sein.
+A section can be removed by clicking on the Remove button. To do this, the desired section must first be selected in the list and must not be assigned to a flow.
 
 ## Flows
 
-Ein Flow besteht immer aus genau zwei Sections: einer Start- und einer Endsection. Zur Bearbeitung von Flows muss im Abschnitt Sections/Flows zunächst der Tab Flows ausgewählt werden.
+A flow always consists of exactly two sections: a start section and an end section. To edit flows, the Flows tab must first be selected in the Sections/Flows section.
 
-### Hinzufügen von Flows
+### Add Flows
 
-Das Hinzufügen eines neuen Flows erfolgt in folgenden Schritten:
+A new flow is added in the following steps:
 
-1. Linksklick auf Button Add. Es öffnet sich ein Pop-Up Fenster. In diesem können per Drop-Down-Menü die passenden Sections ausgewählt werden. 
-1. Als First section wird der Anfangspunkt des Flows festgelegt.
-1. Als Second section wird der Endpunkt des Flows festgelegt.
-1. Im Feld Name wird der Name nach Auswahl der beiden Sections automatisch gesetzt. Dieser kann nach eigenen Vorstellungen geändert werden. Der Name wird in der Auswertung wiederverwendet.
-
-!!! info
-    Ein Name kann nur einmal vergeben werden, Namensduplikate mehrerer Flows sind nicht möglich.
-
-    Alternativ können Flows auch automatisch über den Button Generate erzeugt werden. Es werden dann für alle möglichen Kombinationen aus Start- und Endsection Flows erzeugt. Die Namensgebung erfolgt standardmäßig in der Konvention Name_Startsection --> Name_Endsection.
-
-![Hinzufügen eines Flows](usage-ui/add-flow.png)
-
-### Bearbeiten von Flows
-
-Um einen Flow zu bearbeiten, muss dieser zunächst in der Liste ausgewählt werden. Anschließend öffnet sich mit einem Linksklick auf den Button Properties das gleiche Pop-up-Fenster wie beim Erstellen eines Flows. Es können nun die gewünschten Änderungen vorgenommen werden. 
-
-### Entfernen von Flows
-
-Um einen Flow zu entfernen, muss dieser zunächst in der Liste ausgewählt werden. Ein Linksklick auf den Button Remove entfernt nun den ausgewählten Flow.
-
-## Speichern der Konfigurationsdatei 
-
-Sind alle benötigten Videos hinzugefügt und alle Flows angelegt, wird das Projekt gespeichert.
-
-1. Im Abschnitt Project der Konfigurationsleiste auf den Button Save as… klicken.
-1. Im Dateibrowser einen passenden Dateinamen wählen und im gleichen Ordner wie die Videos speichern. 
+1. Left-click on the Add button. A pop-up window opens. The appropriate sections can be selected from the drop-down menu. 
+1. The start point of the flow is defined as the First section.
+1. The end point of the flow is defined as the second section.
+1. The name is automatically set in the Name field after selecting the two sections. This can be changed as required. The name is reused in the analysis.
 
 !!! info
-    Wir empfehlen, den Fortschritt des Projekts auch schon bereits während der Bearbeitung regelmäßig zu speichern. So kann möglichen Datenverlusten vorgebeugt werden. Der Save Button speichert die Datei automatisch am zuletzt gewählten Speicherort. Ist dieser orange gefärbt, sind Änderungen vorhanden.
+    A name can only be assigned once, duplicate names of several flows are not possible.
+
+    Alternatively, flows can also be generated automatically using the Generate button. Flows are then generated for all possible combinations of start and end sections. The standard naming convention is Name_Startsection --> Name_Endsection.
+
+![Add Flows](usage-ui/add-flow.png)
+
+### Edit Flows
+
+To edit a flow, it must first be selected in the list. Then left-click on the Properties button to open the same pop-up window as when creating a flow. The desired changes can now be made. 
+
+### Remove Flows
+
+To remove a flow, it must first be selected in the list. Left-click on the Remove button to remove the selected flow.
+
+## Save to configuration file (otconfig file) 
+
+Once all the required videos have been added and all the flows have been created, the project is saved.
+
+1. Click on the Save as... button in the Project section of the configuration bar.
+1. Select a suitable file name in the file browser and save it in the same folder as the videos. 
+
+!!! info
+    We recommend regularly saving the progress of the project while it is still being processed. This prevents possible loss of data. The Save button automatically saves the file to the last selected location. If it is colored orange, changes have been made.
