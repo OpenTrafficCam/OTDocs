@@ -37,7 +37,7 @@ The configuration bar is divided into three sections. In the top section Project
 
 The first image of the currently active (or selected) video is displayed in the workspace. The sections can be drawn in this image.
 
-# Project Setup
+## Project Setup
 
 The project must first be named. The project name is entered in the corresponding Name field. The start time (date and time) of the first video must then be entered in the corresponding Start date fields. It is possible to enter in ISO 8601 format (YYYY-MM-DD) or German date format (DD.MM.YYYY).
 
@@ -53,11 +53,21 @@ The videos to be processed must then be selected and loaded into OTConfig. The r
 
 When a video is clicked in the overview in the configuration bar, the first image of the video is displayed as the background image. This allows you to check whether all videos have been selected correctly.
 
-# Definition of the traffic flows to be analyzed
+### Save to configuration file (otconfig file) 
+
+Once all the required videos have been added and all the flows have been created, the project is saved.
+
+1. Click on the Save as... button in the Project section of the configuration bar.
+1. Select a suitable file name in the file browser and save it in the same folder as the videos. 
+
+!!! info
+    We recommend regularly saving the progress of the project while it is still being processed. This prevents possible loss of data. The Save button automatically saves the file to the last selected location. If it is colored orange, changes have been made.
+
+## Definition of the traffic flows to be analyzed
 
 A traffic flow depicts the directional travel relationship between two areas in the video image. The areas are defined with so-called sections. A flow always consists of two sections (a start section and an end section). In order to define flows, the sections must first be created. The flows can then be assigned to the created or edited sections.
 
-## Sections
+### Sections
 
 Sections can consist of any number of support points (shown as a circle). They are drawn directly in the background image in OTConfig. To do this, the Sections tab must first be selected in the Sections/Flows section.
 
@@ -66,7 +76,7 @@ Sections can consist of any number of support points (shown as a circle). They a
     
     The following example is limited to line sections. However, the procedure described can also be applied to area sections. The only difference is that the polygon is automatically closed when the add mode is exited.
 
-### Add Sections
+#### Add Sections
 
 A new line section is added in the following steps:
 
@@ -85,7 +95,7 @@ A new line section is added in the following steps:
  
 ![Add Sections](usage-ui/add-section.png)
 
-### Change the geometry of a section
+#### Change the geometry of a section
 
 The geometry of sections that have already been created can be changed using the following procedure:
 
@@ -98,19 +108,19 @@ The selected point “sticks” to the mouse pointer until the left mouse button
 1. Right-click to exit change mode and save the changes.
 1. Pressing the Escape button exits the change mode without saving the changes to the geometry. 
 
-### Change the name of a section
+#### Change the name of a section
 
 The name of a section can be changed by clicking on the Properties button. To do this, the desired section must first be selected from the list.
 
-### Remove a section
+#### Remove a section
 
 A section can be removed by clicking on the Remove button. To do this, the desired section must first be selected in the list and must not be assigned to a flow.
 
-## Flows
+### Flows
 
 A flow always consists of exactly two sections: a start section and an end section. To edit flows, the Flows tab must first be selected in the Sections/Flows section.
 
-### Add Flows
+#### Add Flows
 
 A new flow is added in the following steps:
 
@@ -126,20 +136,36 @@ A new flow is added in the following steps:
 
 ![Add Flows](usage-ui/add-flow.png)
 
-### Edit Flows
+#### Edit Flows
 
 To edit a flow, it must first be selected in the list. Then left-click on the Properties button to open the same pop-up window as when creating a flow. The desired changes can now be made. 
 
-### Remove Flows
+#### Remove Flows
 
 To remove a flow, it must first be selected in the list. Left-click on the Remove button to remove the selected flow.
 
 ## Save to configuration file (otconfig file) 
 
-Once all the required videos have been added and all the flows have been created, the project is saved.
+: Show the points of all detections used to build up the trajectory. The point used can be configured using the offset attribute of sections.
 
-1. Click on the Save as... button in the Project section of the configuration bar.
-1. Select a suitable file name in the file browser and save it in the same folder as the videos. 
+### Show events
 
-!!! info
-    We recommend regularly saving the progress of the project while it is still being processed. This prevents possible loss of data. The Save button automatically saves the file to the last selected location. If it is colored orange, changes have been made.
+`Current filter`
+
+`Current frame`
+
+## Filter
+
+### Filter by Time
+
+- Filtersteuerung über vorwärts- und rückwärtsspringen
+
+### Filter by Classification
+
+## Analysis / Export
+
+### Export Eventlist
+
+### Traffic Volume
+
+### Track Statistik
