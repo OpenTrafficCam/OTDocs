@@ -71,6 +71,7 @@ nav:
               - OTAnalytics/gettingstarted/requirements.md
               - OTAnalytics/gettingstarted/installation.md
               - OTAnalytics/gettingstarted/firstuse.md
+          - OTAnalytics/usage-ui.md
           - Usage:
               - OTAnalytics/usage/sections.md
               - OTAnalytics/usage/events.md
