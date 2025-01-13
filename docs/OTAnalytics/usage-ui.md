@@ -144,7 +144,58 @@ To edit a flow, it must first be selected in the list. Then left-click on the Pr
 
 To remove a flow, it must first be selected in the list. Left-click on the Remove button to remove the selected flow.
 
-## Save to configuration file (otconfig file) 
+## Visualization layers
+- Welche Tracks werden angezeigt
+- Welche Informationen der Tracks werden angezeigt
+
+Visualization layers are used to fine-tune the traffic analysis.
+Each layer provides a defined view on the data.
+The visualization layers are combined in groups.
+
+### Background 
+
+This layer shows a frame of the video as a background image.
+The currently shown frame can be configured using the filter.
+If a filter is set, the frame at the end date is shown.
+Otherwise, the first frame of the selected video is shown.
+
+### Show tracks
+
+In this group the trajectory of tracks can be shown. The tracks to be shown can vary in different flavours.
+
+`All`
+
+: All tracks are shown
+
+`Intersecting sections`
+
+: Tracks intersection at least one section are show.
+
+`Not intersecting sections`
+
+: Tracks intersecting no section are show.
+
+`Assigned to flows`
+
+: Tracks assigned to a flow are show.
+
+`Not assigned to flows`
+
+: Tracks not assigend to a flow are show.
+
+### Show start and end points
+
+In this group the start and end points of tracks can be shown. The tracks to be shown can vary in different flavors as in [Show tracks](#show-tracks).
+
+### Show detections of current frame
+
+In this group the detections of a single frame can be visualized in different flavors.
+
+`Bounding Box`
+
+: Show the bounding boxes of all detections. A Bounding box is the surrounding rectangle around a detected vehicle or pedestrian.
+
+`Track point of current frame`
 
 : Show the points of all detections used to build up the trajectory. The point used can be configured using the offset attribute of sections.
 
