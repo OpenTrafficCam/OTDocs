@@ -146,9 +146,13 @@ To remove a flow, it must first be selected in the list. Left-click on the Remov
 
 ## Terminology
 
-Vehicles and pedestrians are detected in the individual frames of the video. Each detected object is represented in a frame by a **Bounding Box**, which is the rectangular area surrounding the detected vehicle or pedestrian.
+Vehicles and pedestrians are detected in the individual frames of the video. Each detected object (**Detection**) is represented in a frame by a **Bounding Box**, which is the rectangular area surrounding the detected vehicle or pedestrian together with its classification (e.g., car, bike, pedestrian).
 
-To create a trajectory, a single representative point is selected from the bounding box. This point is referred to as the **Track Point**. The track points of a track, collected over successive frames, are combined to form the track's trajectory.
+The [tracker in OTVision](...) links consecutive detections, or bounding boxes, to form a **Track**. A track is therefore composed of a series of detections, each with its own classification. Ideally, all detections within a track share the same classification. However, in practical scenarios, a track may include detections with varying classifications (e.g., truck and truck_with_trailer). This typically occurs when only a portion of the vehicle is visible in one frame, while in subsequent frames more of the vehicle or the entire vehicle appears within the frame.
+
+OTAnalytics assigns a single **Track Classification** to each track, as a vehicle can have only one classification in the real world (e.g., a vehicle is either a car or a bus).
+
+A track's trajectory is created by selecting a single representative point from each bounding box associated with the track. This point is called the **Track Point**. The trajectory is formed by connecting the track points collected across successive frames.
 
 The position of the track point within the bounding box can be configured using the **Offset** attribute of sections. This offset is defined separately for the x- and y-axes, with values ranging from 0 to 1. These values determine the relative position of the track point within the bounding box, providing flexibility in track point placement.
 
@@ -162,9 +166,7 @@ As explained in [Flows](#flows), a flow is defined by two sections: a starting s
 
 ## Visualization layers
 
-Visualization layers are used to fine-tune the traffic analysis.
-Each layer provides a defined view on the data.
-The visualization layers are combined in groups.
+Visualization layers are used to refine traffic analysis by offering specific views of the data. Tracks are consistently displayed in the same color, which is determined by the track classification. The visualization layers are organized into groups.
 
 ### Background 
 
@@ -201,11 +203,21 @@ This group visualizes the detections of a single frame in different flavors.
 
 ## Filter
 
+As the number of hours analyzed increases, distinguishing individual tracks in the visualization becomes increasingly difficult. Filters enable you to limit the number of displayed tracks, making the visualization more manageable and focused.
+
+!!! info
+    Filters are applied exclusively to the visualization in the workspace and to the calculation of the track statistics displayed below the visualization. The analysis and data export always include all loaded tracks, regardless of any applied filters.
+
 ### Filter by Time
 
-- Filtersteuerung über vorwärts- und rückwärtsspringen
+Filter tracks based on time and date. All tracks with a start time on or after the start date and an end time on or before the end date will remain in the dataset.
+The **<** and **>** buttons located to the right of the filter button allow you to shift the filter forward or backward by the same duration. For more precise adjustments, the **<** and **>** buttons within the Date Filter Control panel enable finer control over the filter's position.
+
+![%TODO% Filter setzen und Verschieben des Filters](...)
 
 ### Filter by Classification
+
+Filter tracks based on the track classification.
 
 ## Analysis / Export
 
