@@ -257,7 +257,7 @@ The export includes the following values for each event:
 
 ### Export Traffic Volume
 
-Traffic volume can be exported as a CSV file, which can be easily imported into your preferred program. You can specify the start and end date and time, as well as the interval for grouping road users. The CSV file includes the following values:
+Traffic volume is based on the assignment of tracks to flows. It can be exported as a CSV file, which can be easily imported into your preferred program. You can specify the start and end date and time, as well as the interval for grouping road users. The CSV file includes the following values:
 
 | Value                 | Datatype | Description                                                           | Example             |
 |-----------------------|----------|-----------------------------------------------------------------------|---------------------|
@@ -272,6 +272,12 @@ Traffic volume can be exported as a CSV file, which can be easily imported into 
 | from section          | string   | Name of the section where the traffic originated                      | south               |
 | to section            | string   | Name of the section where the traffic was directed                    | east                |
 | count                 | int      | Number of road users recorded during the interval                     | 1                   |
+
+### Export Road User Assignments
+
+In case no aggregation of tracks to traffic volumes is required, but the assignment strategy of OTAnalytics should be used. All tracks assigned to flows can be exported using the Export Road User Assignments Button. The tracks assigned to flows are exported into a CSV file with the following format:
+
+
 
 ### Track Statistics
 
