@@ -46,9 +46,11 @@ As explained in [Flows](#flows), a flow is defined by two sections: a starting s
 
 ## User Interface
 
-The user interface is divided into two areas. In the configuration bar, information on the project can be entered and the sections and flows can be defined. Example views from the selected video are shown in the workspace. The corresponding elements for defining the traffic flows are drawn into these.
+The user interface is divided into four areas, the configuration bar, the workspace, the visualization layers and the filter area. 
 
-The configuration bar is divided into three sections. In the top section Project, the metadata for the project are specified and otconfig files are saved or loaded. In the Video section, video files are loaded and removed and an overview of the loaded video files is displayed. Sections and flows are created or edited in the Sections/Flows section.
+The configuration bar is divided into three sections. In the top section - Project - the metadata for the project are specified and otconfig files are saved or loaded. In the Tracks/Video section input files can be added. Track files can only be added while video files can be added and removed. An overview of the loaded video files is displayed. Sections and flows are created, edited and removed in the Sections/Flows section. The export of the analysed data is started in the Analysis section.
+
+The tracks and frames of the video can be visualized in the workspace. This is also the area in which the geometry of sections can be created or edited. A few statistics about the visualized tracks are shown right below the visualization in the Track Statistics area. The visualized tracks can be customized using different visualization layers. The amount of tracks to be shown can be configured using the filter settings below the workspace. 
  
 ![User Interface of OTConfig](usage-ui/user-interface.png)
 
