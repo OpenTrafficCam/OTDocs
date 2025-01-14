@@ -221,7 +221,37 @@ Filter tracks based on the track classification.
 
 ## Analysis / Export
 
+!!! info
+    We recommend using the various layers described in [Visualization layers](#visualization-layers) to gain detailed insights into the data before exporting it.
+
 ### Export Eventlist
+
+Events can be exported into a single file in one of the following formats: CSV, Excel, or otevents.
+
+- **CSV**: Contains the event data in a format that can be read by many software products.
+- **Excel**: Includes the event data along with additional information about the sections used to generate the events.
+- **otevents**: A bzip2-compressed JSON file that contains the event data, additional metadata collected during processing, and details about the sections used to generate the events.
+
+The export includes the following values for each event:
+
+| Value           | Datatype  | Description                                          | Example                                       |
+|-----------------|-----------|------------------------------------------------------|-----------------------------------------------|
+| road_user_id    | string    | Unique identifier for the road user                  | 5f8cd584-f490-4fec-afd0-b55ebf39ab4e#0#102341 |
+| road_user_type  | string    | Type of road user (e.g., car, pedestrian)            | car                                           |
+| hostname        | string    | Name of the camera or device capturing the data      | OTCamera19                                    |
+| occurrence      | string    | Timestamp of the event in date and time format       | 2023-05-24 11:45:00.000000                    |
+| frame_number    | int       | Frame number of the video corresponding to the event | 1                                             |
+| section_id      | string    | Identifier for the section                           | 1                                             |
+| event_type      | string    | Type of event (e.g., enter-scene, leave-scene)       | enter-scene, leave-scene, enter-section       |
+| video_name      | string    | Name of the video file where the event was recorded  | OTCamera19_FR20_2023-05-24_11-45-00.mp4       |
+| occurrence_sec  | timestamp | Time of the event in seconds since the epoch         | 1684928700.0                                  |
+| coordinate_px_x | float     | X-coordinate of the road user in pixels              | 142.60128784179688                            |
+| coordinate_px_y | float     | Y-coordinate of the road user in pixels              | 199.48948669433594                            |
+| vector_px_x     | float     | X-component of the road user's movement vector       | -0.2536773681640625                           |
+| vector_px_y     | float     | Y-component of the road user's movement vector       | 0.075958251953125                             |
+| section_name    | string    | Name of the section where the event occurred         | north                                         |
+| occurrence_day  | string    | Day of the event in date format                      | 2023-05-24                                    |
+| occurrence_time | string    | Time of the event in time format                     | 11:45:00.000000                               |
 
 ### Traffic Volume
 
