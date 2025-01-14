@@ -46,18 +46,23 @@ As explained in [Flows](#flows), a flow is defined by two sections: a starting s
 
 ## User Interface
 
-The user interface is divided into four areas, the configuration bar, the workspace, the visualization layers and the filter area. 
+The user interface is divided into four main areas: the configuration bar, workspace, visualization layers, and filter area.
 
-The configuration bar is divided into three sections. In the top section - Project - the metadata for the project are specified and otconfig files are saved or loaded. In the Tracks/Video section input files can be added. Track files can only be added while video files can be added and removed. An overview of the loaded video files is displayed. Sections and flows are created, edited and removed in the Sections/Flows section. The export of the analysed data is started in the Analysis section.
+The **configuration bar** consists of four sections:
 
-The tracks and frames of the video can be visualized in the workspace. This is also the area in which the geometry of sections can be created or edited. A few statistics about the visualized tracks are shown right below the visualization in the Track Statistics area. The visualized tracks can be customized using different visualization layers. The amount of tracks to be shown can be configured using the filter settings below the workspace. 
+1. **Project**: Manage project metadata and save or load `.otconfig` files.
+2. **Tracks/Video**: Add input files, where only track files can be added, while video files can be both added and removed. An overview of loaded video files is also displayed.
+3. **Sections/Flows**: Create, edit, and delete sections and flows.
+4. **Analysis**: Start the export of analyzed data.
+
+The **workspace** displays the tracks and video frames. It is also where the geometry of sections can be created or edited. Below the workspace, the **Track Statistics** section provides key statistics about the displayed tracks.
+
+Tracks can be customized using different **visualization layers**, while the number of displayed tracks can be adjusted through the **filter settings** located below the workspace.
  
 ![User Interface of OTConfig](usage-ui/user-interface.png)
 
 !!! info
     If there are several tabs (e.g. Sections, Flows) in a section, you can switch between them by clicking on them. The active tab is highlighted in green.
-
-The first image of the currently active (or selected) video is displayed in the workspace. The sections can be drawn in this image.
 
 ## Project Setup
 
