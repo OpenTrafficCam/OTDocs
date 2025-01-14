@@ -144,9 +144,19 @@ To edit a flow, it must first be selected in the list. Then left-click on the Pr
 
 To remove a flow, it must first be selected in the list. Left-click on the Remove button to remove the selected flow.
 
+## Terminology
+
+Vehicles and pedestrians are detected in the individual frames of the video. Each detected object is represented in a frame by a **Bounding Box**, which is the rectangular area surrounding the detected vehicle or pedestrian.
+
+To create a trajectory, a single representative point is selected from the bounding box. This point is referred to as the **Track Point**. The track points of an object, collected over successive frames, are combined to form the object's trajectory.
+
+The position of the track point within the bounding box can be configured using the **Offset** attribute of sections. This offset is defined separately for the x- and y-axes, with values ranging from 0 to 1. These values determine the relative position of the track point within the bounding box, providing flexibility in track point placement.
+
+Since the offset can be individually configured for each section, tracks intersecting different sections can be finely tuned. This allows precise customization of the trajectory data based on the requirements of each section.
+
+![%TODO% Beispieldarstellung der Offsetauswahl, der Bounding box und der track point Auswahl](...)
+
 ## Visualization layers
-- Welche Tracks werden angezeigt
-- Welche Informationen der Tracks werden angezeigt
 
 Visualization layers are used to fine-tune the traffic analysis.
 Each layer provides a defined view on the data.
@@ -193,17 +203,17 @@ In this group the detections of a single frame can be visualized in different fl
 
 `Bounding Box`
 
-: Show the bounding boxes of all detections. A Bounding box is the surrounding rectangle around a detected vehicle or pedestrian.
+: Show the bounding boxes of all detections. 
 
 `Track point of current frame`
 
-: Show the track points of all detections used to build up the trajectory. The track point used can be configured using the offset attribute of sections.
+: Show the track points of all detections in the current frame.
 
 ### Show events
 
 `Current filter`
 
-: Show track points of all events within the filter range. The track point is the point of the bounding box used to build up the trajectory of a track.
+: Show track points of all events within the filter range.
 
 `Current frame`
 
@@ -224,4 +234,4 @@ In this group the detections of a single frame can be visualized in different fl
 ### Track Statistik
 
 ## Begriffe erklären:
-- Track Point
+- Track Points
