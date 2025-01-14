@@ -24,6 +24,26 @@ With OTConfig, the customer can specify all the information required for executi
 !!! info
     The transmitted information is validated again by trained personnel before each execution of the pipeline and, if necessary, checked for plausibility. In particular, the position of the sections is optimized to ensure the best possible result.
 
+## Terminology
+
+Vehicles and pedestrians are detected in the individual frames of the video using [detect in OTVision](...). Each detected object (**Detection**) is represented in a frame by a **Bounding Box**, which is the rectangular area surrounding the detected vehicle or pedestrian together with its classification (e.g., car, bike, pedestrian).
+
+The [tracker in OTVision](...) links consecutive detections, or bounding boxes, to form a **Track**. A track is therefore composed of a series of detections, each with its own classification. Ideally, all detections within a track share the same classification. However, in practical scenarios, a track may include detections with varying classifications (e.g., truck and truck_with_trailer). This typically occurs when only a portion of the vehicle is visible in one frame, while in subsequent frames more of the vehicle or the entire vehicle appears within the frame.
+
+OTAnalytics assigns a single **Track Classification** to each track, as a vehicle can have only one classification in the real world (e.g., a vehicle is either a car or a bus).
+
+A track's trajectory is created by selecting a single representative point from each bounding box associated with the track. This point is called the **Track Point**. The trajectory is formed by connecting the track points collected across successive frames.
+
+The position of the track point within the bounding box can be configured using the **Offset** attribute of sections. This offset is defined separately for the x- and y-axes, with values ranging from 0 to 1. These values determine the relative position of the track point within the bounding box, providing flexibility in track point placement.
+
+Since the offset can be individually configured for each section, tracks intersecting different sections can be finely tuned. This allows precise customization of the trajectory data based on the requirements of each section.
+
+![%TODO% Beispieldarstellung der Offsetauswahl, der Bounding box und der track point Auswahl](...)
+
+An **Event** is generated whenever a track intersects a section. Each event contains detailed information, including the track's identifier, its position in the frame, and the timestamp of the intersection.
+
+As explained in [Flows](#flows), a flow is defined by two sections: a starting section and an ending section. Tracks that intersect both sections of a flow can be assigned to that flow. To achieve this, the events belonging to a track are sorted chronologically based on their time of occurrence. The pair of events with the longest time interval between them is used to assign the track to the flow corresponding to the sections of both events. The assignment of a track to a flow is called **Track Assignment**.
+
 ## User Interface
 
 The user interface is divided into two areas. In the configuration bar, information on the project can be entered and the sections and flows can be defined. Example views from the selected video are shown in the workspace. The corresponding elements for defining the traffic flows are drawn into these.
@@ -62,27 +82,6 @@ Once all the required videos have been added and all the flows have been created
 
 !!! info
     We recommend regularly saving the progress of the project while it is still being processed. This prevents possible loss of data. The Save button automatically saves the file to the last selected location. If it is colored orange, changes have been made.
-
-## Terminology
-
-Vehicles and pedestrians are detected in the individual frames of the video. Each detected object (**Detection**) is represented in a frame by a **Bounding Box**, which is the rectangular area surrounding the detected vehicle or pedestrian together with its classification (e.g., car, bike, pedestrian).
-
-The [tracker in OTVision](...) links consecutive detections, or bounding boxes, to form a **Track**. A track is therefore composed of a series of detections, each with its own classification. Ideally, all detections within a track share the same classification. However, in practical scenarios, a track may include detections with varying classifications (e.g., truck and truck_with_trailer). This typically occurs when only a portion of the vehicle is visible in one frame, while in subsequent frames more of the vehicle or the entire vehicle appears within the frame.
-
-OTAnalytics assigns a single **Track Classification** to each track, as a vehicle can have only one classification in the real world (e.g., a vehicle is either a car or a bus).
-
-A track's trajectory is created by selecting a single representative point from each bounding box associated with the track. This point is called the **Track Point**. The trajectory is formed by connecting the track points collected across successive frames.
-
-The position of the track point within the bounding box can be configured using the **Offset** attribute of sections. This offset is defined separately for the x- and y-axes, with values ranging from 0 to 1. These values determine the relative position of the track point within the bounding box, providing flexibility in track point placement.
-
-Since the offset can be individually configured for each section, tracks intersecting different sections can be finely tuned. This allows precise customization of the trajectory data based on the requirements of each section.
-
-![%TODO% Beispieldarstellung der Offsetauswahl, der Bounding box und der track point Auswahl](...)
-
-An **Event** is generated whenever a track intersects a section. Each event contains detailed information, including the track's identifier, its position in the frame, and the timestamp of the intersection.
-
-As explained in [Flows](#flows), a flow is defined by two sections: a starting section and an ending section. Tracks that intersect both sections of a flow can be assigned to that flow. To achieve this, the events belonging to a track are sorted chronologically based on their time of occurrence. The pair of events with the longest time interval between them is used to assign the track to the flow corresponding to the sections of both events. The assignment of a track to a flow is called **Track Assignment**.
-
 
 ## Definition of the traffic flows to be analyzed
 
