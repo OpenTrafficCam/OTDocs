@@ -148,7 +148,7 @@ To remove a flow, it must first be selected in the list. Left-click on the Remov
 
 Vehicles and pedestrians are detected in the individual frames of the video. Each detected object is represented in a frame by a **Bounding Box**, which is the rectangular area surrounding the detected vehicle or pedestrian.
 
-To create a trajectory, a single representative point is selected from the bounding box. This point is referred to as the **Track Point**. The track points of an object, collected over successive frames, are combined to form the object's trajectory.
+To create a trajectory, a single representative point is selected from the bounding box. This point is referred to as the **Track Point**. The track points of a track, collected over successive frames, are combined to form the track's trajectory.
 
 The position of the track point within the bounding box can be configured using the **Offset** attribute of sections. This offset is defined separately for the x- and y-axes, with values ranging from 0 to 1. These values determine the relative position of the track point within the bounding box, providing flexibility in track point placement.
 
@@ -175,51 +175,29 @@ Otherwise, the first frame of the selected video is shown.
 
 ### Show tracks
 
-In this group the trajectory of tracks can be shown. The tracks to be shown can vary in different flavours.
+This group shows the trajectory of tracks. The tracks to be shown can vary in different flavours.
 
-`All`
-
-: All tracks are shown.
-
-`Intersecting sections`
-
-: Tracks intersection at least one section are shown.
-
-`Not intersecting sections`
-
-: Tracks intersecting no section are shown.
-
-`Assigned to flows`
-
-: Tracks assigned to a flow are shown.
-
-`Not assigned to flows`
-
-: Tracks not assigend to a flow are shown.
+- **All** All tracks are shown.
+- **Intersecting sections** Tracks intersection at least one of the selected sections are shown.
+- **Not intersecting sections** Tracks intersecting none of the selected sections are shown.
+- **Assigned to flows** Tracks assigned to at least one selected flow are shown.
+- **Not assigned to flows** Tracks not assigned to one of the selected flows are shown.
 
 ### Show start and end points
 
-In this group the start and end points of tracks can be shown. The tracks to be shown can vary in different flavors as in [Show tracks](#show-tracks).
+This group shows the start and end points of tracks. The tracks to be shown can vary in the same flavors as described in [Show tracks](#show-tracks).
 
 ### Show detections of current frame
 
-In this group the detections of a single frame can be visualized in different flavors.
+This group visualizes the detections of a single frame in different flavors.
 
-`Bounding Box`
-
-: Show the bounding boxes of all detections. 
-
-`Track point of current frame`
-
-: Show the track points of all detections in the current frame.
+- **Bounding Box** Show the bounding boxes of all detections in the currently visible frame. 
+- **Track point of current frame** Show the track points of all detections in the currently visible frame.
 
 ### Show events
 
-`Current filter`
-
-: Show track points of all events within the filter range.
-
-`Current frame`
+- **Current filter** Show track points of all events within the filter range.
+- **Current frame** Show all events within the range of the current filter.
 
 ## Filter
 
