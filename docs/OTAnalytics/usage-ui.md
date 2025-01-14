@@ -197,11 +197,13 @@ In this group the detections of a single frame can be visualized in different fl
 
 `Track point of current frame`
 
-: Show the points of all detections used to build up the trajectory. The point used can be configured using the offset attribute of sections.
+: Show the track points of all detections used to build up the trajectory. The track point used can be configured using the offset attribute of sections.
 
 ### Show events
 
 `Current filter`
+
+: Show track points of all events within the filter range. The track point is the point of the bounding box used to build up the trajectory of a track.
 
 `Current frame`
 
@@ -220,3 +222,6 @@ In this group the detections of a single frame can be visualized in different fl
 ### Traffic Volume
 
 ### Track Statistik
+
+## Begriffe erklären:
+- Track Point
