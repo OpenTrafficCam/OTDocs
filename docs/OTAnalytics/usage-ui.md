@@ -156,6 +156,10 @@ Since the offset can be individually configured for each section, tracks interse
 
 ![%TODO% Beispieldarstellung der Offsetauswahl, der Bounding box und der track point Auswahl](...)
 
+An **Event** is generated whenever a track intersects a section. Each event contains detailed information, including the track's identifier, its position in the frame, and the timestamp of the intersection.
+
+As explained in [Flows](#flows), a flow is defined by two sections: a starting section and an ending section. Tracks that intersect both sections of a flow can be assigned to that flow. To achieve this, the events belonging to a track are sorted chronologically based on their time of occurrence. The pair of events with the longest time interval between them is used to assign the track to the flow corresponding to the sections of both events. The assignment of a track to a flow is called **Track Assignment**.
+
 ## Visualization layers
 
 Visualization layers are used to fine-tune the traffic analysis.
@@ -175,23 +179,23 @@ In this group the trajectory of tracks can be shown. The tracks to be shown can 
 
 `All`
 
-: All tracks are shown
+: All tracks are shown.
 
 `Intersecting sections`
 
-: Tracks intersection at least one section are show.
+: Tracks intersection at least one section are shown.
 
 `Not intersecting sections`
 
-: Tracks intersecting no section are show.
+: Tracks intersecting no section are shown.
 
 `Assigned to flows`
 
-: Tracks assigned to a flow are show.
+: Tracks assigned to a flow are shown.
 
 `Not assigned to flows`
 
-: Tracks not assigend to a flow are show.
+: Tracks not assigend to a flow are shown.
 
 ### Show start and end points
 
