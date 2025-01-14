@@ -271,7 +271,6 @@ Traffic volume can be exported as a CSV file, which can be easily imported into 
 | to section            | string   | Name of the section where the traffic was directed                    | east                |
 | count                 | int      | Number of road users recorded during the interval                     | 1                   |
 
-### Track Statistik
+### Track Statistics
 
-## Begriffe erklären:
-- Track Points
+This is a CSV export of the track statistics show below the workspace.
