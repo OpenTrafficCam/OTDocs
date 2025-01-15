@@ -52,14 +52,14 @@ Tracks can be customized using different **Visualization Layers**, while the num
 
 The project must first be named. The project name is entered in the corresponding Name field. The start time (date and time) of the first video must then be entered in the corresponding Start date fields. It is possible to enter in ISO 8601 format (YYYY-MM-DD) or German date format (DD.MM.YYYY).
 
-!!! info
-    OTConfig assumes that all selected videos are contiguous in time. If the videos to be processed have a time gap (e.g. videos from three days from 6:00 a.m. to 10:00 p.m.), several projects with chronologically contiguous videos must be created.
+!!! tip
+    OTAnalytics assumes that all selected videos are contiguous in time. If the videos to be processed have a time gap (e.g. videos from three days from 6:00 a.m. to 10:00 p.m.), several projects with chronologically contiguous videos must be created.
     
     It is recommended to choose a unique name (e.g. name of the measuring point, camera number; or a combination of several unique details).
 
 The videos to be processed must then be selected and loaded into OTConfig. The respective videos can be added using the Add button. After clicking, the file browser opens and the videos can be selected. Several videos can be selected at the same time. The selected video is removed from the configuration using the Remove button.
 
-!!! info
+!!! tip
     Added videos are displayed in alphabetical order in the “Videos” overview panel and are later processed in this order. The videos should therefore be named in such a way that the chronological order matches the alphabetical order.
 
 When a video is clicked in the overview in the configuration bar, the first image of the video is displayed as the background image. This allows you to check whether all videos have been selected correctly.
@@ -71,7 +71,7 @@ Once all the required videos have been added and all the flows have been created
 1. Click on the Save as... button in the Project section of the configuration bar.
 1. Select a suitable file name in the file browser and save it in the same folder as the videos. 
 
-!!! info
+!!! tip
     We recommend regularly saving the progress of the project while it is still being processed. This prevents possible loss of data. The Save button automatically saves the file to the last selected location. If it is colored orange, changes have been made.
 
 ## Definition of the traffic flows to be analyzed
@@ -82,8 +82,8 @@ A traffic flow depicts the directional travel relationship between two areas in 
 
 Sections can consist of any number of support points (shown as a circle). They are drawn directly in the background image in OTConfig. To do this, the Sections tab must first be selected in the Sections/Flows section.
 
-!!! info
-    Line sections and area sections can be created in OTConfig. If no occupancy durations (e.g. of parking areas) are detected, but only crossings, line sections should always be selected. 
+!!! tip
+    Line sections and area sections can be created. If no occupancy durations (e.g. of parking areas) are detected, but only crossings, line sections should always be selected. 
     
     The following example is limited to line sections. However, the procedure described can also be applied to area sections. The only difference is that the polygon is automatically closed when the add mode is exited.
 
@@ -268,7 +268,7 @@ Filter tracks based on the track classification.
 
 ## Analysis / Export
 
-!!! info
+!!! tip
     We recommend using the various layers described in [Visualization layers](#visualization-layers) to gain detailed insights into the data before exporting it.
 
 ### Export Eventlist
@@ -302,7 +302,11 @@ The export includes the following values for each event:
 
 ### Export Traffic Count
 
-Traffic count is based on the assignment of tracks to flows. It can be exported as a CSV file, which can be easily imported into your preferred program. You can specify the start and end date and time, as well as the interval for grouping road users. The CSV file includes the following values:
+Traffic count is based on the assignment of tracks to flows. It can be exported as a CSV file, which can be easily imported into your preferred program. You can specify the start and end date and time, as well as the interval for grouping road users.
+
+![Configure export](usage-ui/configure-export-counts.png)
+
+The CSV file includes the following values:
 
 | Value                 | Datatype | Description                                                           | Example             |
 |-----------------------|----------|-----------------------------------------------------------------------|---------------------|
