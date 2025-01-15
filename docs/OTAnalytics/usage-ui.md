@@ -1,5 +1,6 @@
 # Usage UI
 
+After processing videos with [OTVision track](../OTVision/usage/track), you can use OTAnalytics for data analysis. The OTAnalytics interface enables you to configure analyses, extract valuable insights from your data, and export the results efficiently.
 
 ## Terminology
 
