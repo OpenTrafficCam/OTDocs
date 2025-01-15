@@ -221,7 +221,7 @@ The export includes the following values for each event:
 
 | Value           | Datatype  | Description                                                   | Example                                       |
 |-----------------|-----------|---------------------------------------------------------------|-----------------------------------------------|
-| road_user_id    | string    | Unique identifier for the road user                           | 5f8cd584-f490-4fec-afd0-b55ebf39ab4e#0#102341 |
+| road_user_id    | string    | Unique identifier for the track / road user                   | 5f8cd584-f490-4fec-afd0-b55ebf39ab4e#0#102341 |
 | road_user_type  | string    | Track classification of the road user (e.g., car, pedestrian) | car                                           |
 | hostname        | string    | Name of the camera or device capturing the data               | OTCamera19                                    |
 | occurrence      | string    | Timestamp of the event in date and time format                | 2023-05-24 11:45:00.000000                    |
@@ -260,7 +260,35 @@ Traffic volume is based on the assignment of tracks to flows. It can be exported
 
 In case no aggregation of tracks to traffic volumes is required, but the assignment strategy of OTAnalytics should be used. All tracks assigned to flows can be exported using the Export Road User Assignments Button. The tracks assigned to flows are exported into a CSV file with the following format:
 
-
+| Value                 | Datatype  | Description                                                              | Example                                       |
+|-----------------------|-----------|--------------------------------------------------------------------------|-----------------------------------------------|
+| flow_id               | int       | Unique identifier for the flow                                           | 16                                            |
+| flow_name             | string    | Name of the flow                                                         | north --> east                                |
+| road_user_id          | string    | Unique identifier for the track / road user                              | 5f8cd584-f490-4fec-afd0-b55ebf39ab4e#0#102708 |
+| max_confidence        | float     | Maximum confidence score for the road user's track classification        | 0.9151925444602966                            |
+| start_occurrence      | timestamp | Timestamp indicating the starting time of the track                      | 2023-05-24 11:45:07.600000                    |
+| start_occurrence_day  | string    | Date indicating the start of the track                                   | 2023-05-24                                    |
+| start_occurrence_time | string    | Time indicating the start of the track                                   | 11:45:07.600000                               |
+| end_occurrence        | timestamp | Timestamp indicating the ending time of the track                        | 2023-05-24 11:45:09.600000                    |
+| end_occurrence_day    | string    | Date indicating the end of the track                                     | 2023-05-24                                    |
+| end_occurrence_time   | string    | Time indicating the end of the track                                     | 11:45:09.600000                               |
+| start_frame_number    | int       | Frame number corresponding to the start of the track                     | 153                                           |
+| end_frame_number      | int       | Frame number corresponding to the end of the track                       | 193                                           |
+| start_video_name      | string    | Name of the video file where the start of the track was recorded         | OTCamera19_FR20_2023-05-24_11-45-00.mp4       |
+| end_video_name        | string    | Name of the video file where the end of the track was recorded           | OTCamera19_FR20_2023-05-24_11-45-00.mp4       |
+| start_section_id      | int       | Identifier for the section where the track originated                    | 3                                             |
+| end_section_id        | int       | Identifier for the section where the track ended                         | 2                                             |
+| start_section_name    | string    | Name of the section where the track started                              | north                                         |
+| end_section_name      | string    | Name of the section where the track ended                                | east                                          |
+| start_coordinate_px_x | float     | X-coordinate of the road user at the start of the track, in pixels       | 718.1949096679688                             |
+| start_coordinate_px_y | float     | Y-coordinate of the road user at the start of the track, in pixels       | 301.2111328125                                |
+| end_coordinate_px_x   | float     | X-coordinate of the road user at the end of the track, in pixels         | 775.1578369140625                             |
+| end_coordinate_px_y   | float     | Y-coordinate of the road user at the end of the track, in pixels         | 326.5100158691406                             |
+| start_vector_px_x     | float     | X-component of the road user's movement vector at the start of the track | -0.54376220703125                             |
+| start_vector_px_y     | float     | Y-component of the road user's movement vector at the start of the track | 1.6538543701171875                            |
+| end_vector_px_x       | float     | X-component of the road user's movement vector at the end of the track   | 0.179168701171875                             |
+| end_vector_px_y       | float     | Y-component of the road user's movement vector at the end of the track   | 2.1141113281249773                            |
+| hostname              | string    | Name of the camera or device capturing the road user                     | OTCamera19                                    |
 
 ### Track Statistics
 
