@@ -168,64 +168,85 @@ Otherwise, the first frame of the selected video is shown.
 
 This group shows the trajectory of tracks. The tracks to be shown can vary in different flavours.
 
-#### All
+=== "All"
+    All tracks are shown.
 
-All tracks are shown.
+    ![Show all tracks](usage-ui/show-tracks-all.png)
 
-![Show all tracks](usage-ui/show-tracks-all.png)
+=== "Intersecting sections"
+    Tracks intersection at least one of the selected sections are shown.
 
-#### Intersecting sections
+    ![Show tracks intersecting the selected sections](usage-ui/show-tracks-intersecting-sections.png)
 
-Tracks intersection at least one of the selected sections are shown.
+=== "Not intersecting sections"
+    Tracks intersecting none of the selected sections are shown.
 
-![Show tracks intersecting the selected sections](usage-ui/show-tracks-intersection-sections.png)
+    ![Show tracks not intersection the selected sections](usage-ui/show-tracks-not-intersecting-sections.png)
 
-#### Not intersecting sections
+=== "Assigned to flows"
+    Tracks assigned to at least one selected flow are shown.
 
-Tracks intersecting none of the selected sections are shown.
+    ![Show tracks assigned to flows](usage-ui/show-tracks-assigned-to-flows.png)
 
-![Show tracks not intersection the selected sections](usage-ui/show-tracks-not-intersecting-sections.png)
+=== "Not assigned to flows"
+    Tracks not assigned to one of the selected flows are shown.
 
-#### Assigned to flows
-
-Tracks assigned to at least one selected flow are shown.
-
-![Show tracks assigned to flows](usage-ui/show-tracks-assigned-to-flows.png)
-
-#### Not assigned to flows
-
-Tracks not assigned to one of the selected flows are shown.
-
-![Show tracks not assigned to flows](usage-ui/show-tracks-not-assigned-to-flows.png)
+    ![Show tracks not assigned to flows](usage-ui/show-tracks-not-assigned-to-flows.png)
 
 ### Show start and end points
 
 This group shows the start and end points of tracks. The tracks to be shown can vary in the same flavors as described in [Show tracks](#show-tracks).
 
-![Show all start and end points](usage-ui/show-start-end-points-all.png)
+=== "All"
+    Start and end points of all tracks are shown.
+
+    ![Show start and end points of all tracks](usage-ui/show-start-end-points-all.png)
+
+=== "Intersecting sections"
+    Start and end points of tracks intersection at least one of the selected sections are shown.
+
+    ![Show start and end points of tracks intersecting the selected sections](usage-ui/show-start-end-points-intersecting-sections.png)
+
+=== "Not intersecting sections"
+    Start and end points of tracks intersecting none of the selected sections are shown.
+
+    ![Show start and end points of tracks not intersection the selected sections](usage-ui/show-start-end-points-not-intersecting-sections.png)
+
+=== "Assigned to flows"
+    Start and end points of tracks assigned to at least one selected flow are shown.
+
+    ![Show start and end points of tracks assigned to flows](usage-ui/show-start-end-points-assigned-to-flows.png)
+
+=== "Not assigned to flows"
+    Start and end points of tracks not assigned to one of the selected flows are shown.
+
+    ![Show start and end points of tracks not assigned to flows](usage-ui/show-start-end-points-not-assigned-to-flows.png)
 
 ### Show detections of current frame
 
 This group visualizes the detections of a single frame in different flavors.
 
-#### Bounding Box
+=== "Bounding Box"
+    Show the bounding boxes of all detections in the currently visible frame.
 
-Show the bounding boxes of all detections in the currently visible frame.
+    ![Show bounding box of detections in the current frame](usage-ui/show-detections-bounding-boxes.png)
 
-![Show bounding box of detections in the current frame](usage-ui/show-detections-bounding-boxes.png)
+=== "Track point of current frame"
+    Show the track points of all detections in the currently visible frame.
 
-#### Track point of current frame
-
-Show the track points of all detections in the currently visible frame.
-
-![Show track points of detections in the current frame](usage-ui/show-detections-track-point.png)
+    ![Show track points of detections in the current frame](usage-ui/show-detections-track-point.png)
 
 ### Show events
 
-- **Current filter** Show track points of all events within the filter range.
-- **Current frame** Show all events within the range of the current filter.
+=== "Current filter"
+    Show track points of all events within the filter range.
+    
+    ![Show events in the current filter](usage-ui/show-events-current-filter.png)
 
-![Show events in the current filter](usage-ui/show-events-current-filter.png)
+=== "Current frame"
+    Show all events within the range of the current frame.
+
+    ![Show events in the current filter](usage-ui/show-events-current-frame.png)
 
 ## Filter
 
@@ -239,7 +260,7 @@ As the number of hours analyzed increases, distinguishing individual tracks in t
 Filter tracks based on time and date. All tracks with a start time on or after the start date and an end time on or before the end date will remain in the dataset.
 The **<** and **>** buttons located to the right of the filter button allow you to shift the filter forward or backward by the same duration. For more precise adjustments, the **<** and **>** buttons within the Date Filter Control panel enable finer control over the filter's position.
 
-![%TODO% Filter setzen und Verschieben des Filters](...)
+![Configure filter](usage-ui/add-filter.png)
 
 ### Filter by Classification
 
@@ -279,9 +300,9 @@ The export includes the following values for each event:
 | occurrence_day  | string    | Day of the event in date format                               | 2023-05-24                                    |
 | occurrence_time | string    | Time of the event in time format                              | 11:45:00.000000                               |
 
-### Export Traffic Volume
+### Export Traffic Count
 
-Traffic volume is based on the assignment of tracks to flows. It can be exported as a CSV file, which can be easily imported into your preferred program. You can specify the start and end date and time, as well as the interval for grouping road users. The CSV file includes the following values:
+Traffic count is based on the assignment of tracks to flows. It can be exported as a CSV file, which can be easily imported into your preferred program. You can specify the start and end date and time, as well as the interval for grouping road users. The CSV file includes the following values:
 
 | Value                 | Datatype | Description                                                           | Example             |
 |-----------------------|----------|-----------------------------------------------------------------------|---------------------|
