@@ -16,7 +16,13 @@ The position of the track point within the bounding box can be configured using 
 
 Since the offset can be individually configured for each section, tracks intersecting different sections can be finely tuned. This allows precise customization of the trajectory data based on the requirements of each section.
 
-![%TODO% Beispieldarstellung der Offsetauswahl, der Bounding box und der track point Auswahl](...)
+
+!!! failure   
+    ![Offset x=0.1, y=0.1](usage-ui/offset-x-0-1-y-0-1.png)
+    ![Offset x=0.9, y=0.9](usage-ui/offset-x-0-9-y-0-9.png)
+    ![Offset x=0.8, y=0.3](usage-ui/offset-x-0-8-y-0-3.png)
+
+    %TODO% images in a row with caption: Track Point of a Bounding Box with the Offsets x=0.1 y=0.1 (left), x=0.9 y=0.9 (center) and x=0.8 y=0.3 (right)
 
 An **Event** is generated whenever a track intersects a section. Each event contains detailed information, including the track's identifier, its position in the frame, and the timestamp of the intersection.
 
@@ -26,16 +32,16 @@ As explained in [Flows](#flows), a flow is defined by two sections: a starting s
 
 The user interface is divided into four main areas: the configuration bar, workspace, visualization layers, and filter area.
 
-The **configuration bar** consists of four sections:
+The **Configuration Bar** consists of four sections:
 
 1. **Project**: Manage project metadata and save or load `.otconfig` files.
 2. **Tracks/Video**: Add input files, where only track files can be added, while video files can be both added and removed. An overview of loaded video files is also displayed.
 3. **Sections/Flows**: Create, edit, and delete sections and flows.
 4. **Analysis**: Start the export of analyzed data.
 
-The **workspace** displays the tracks and video frames. It is also where the geometry of sections can be created or edited. Below the workspace, the **Track Statistics** section provides key statistics about the displayed tracks.
+The **Workspace** displays the tracks and video frames. It is also where the geometry of sections can be created or edited. Below the workspace, the **Track Statistics** section provides key statistics about the displayed tracks.
 
-Tracks can be customized using different **visualization layers**, while the number of displayed tracks can be adjusted through the **filter settings** located below the workspace.
+Tracks can be customized using different **Visualization Layers**, while the number of displayed tracks can be adjusted through the **Visualization Filters** located below the workspace.
  
 ![User Interface of OTConfig](usage-ui/user-interface.png)
 
@@ -90,14 +96,12 @@ A new line section is added in the following steps:
 1. Once the desired length and shape of a section has been reached, right-click or press the Enter key to exit Add mode.
 1. Pressing the Escape key cancels Add mode without saving the previously created section.
 1. A pop-up window opens. Enter the name for the section in this window and confirm. The name is reused in the analysis.
-
-%TODO%: Infobox innerhalb der Aufzählung?
-!!! failure
-    A name can only be assigned once, duplicate names of several sections are not possible. We recommend using the approximate compass direction of the geographical location (e.g. north, north-east) as the name of the section.
-
 1. The created section appears with the assigned name in the Sections subsection.
 1. Repeat the process to add further sections.
- 
+
+!!! warning
+    A name can only be assigned once, duplicate names of several sections are not possible. We recommend using the approximate compass direction of the geographical location (e.g. north, north-east) as the name of the section. 
+
 ![Add Sections](usage-ui/add-section.png)
 
 #### Change the geometry of a section
@@ -134,7 +138,7 @@ A new flow is added in the following steps:
 1. The end point of the flow is defined as the second section.
 1. The name is automatically set in the Name field after selecting the two sections. This can be changed as required. The name is reused in the analysis.
 
-!!! info
+!!! tip
     A name can only be assigned once, duplicate names of several flows are not possible.
 
     Alternatively, flows can also be generated automatically using the Generate button. Flows are then generated for all possible combinations of start and end sections. The standard naming convention is Name_Startsection --> Name_Endsection.
@@ -164,27 +168,64 @@ Otherwise, the first frame of the selected video is shown.
 
 This group shows the trajectory of tracks. The tracks to be shown can vary in different flavours.
 
-- **All** All tracks are shown.
-- **Intersecting sections** Tracks intersection at least one of the selected sections are shown.
-- **Not intersecting sections** Tracks intersecting none of the selected sections are shown.
-- **Assigned to flows** Tracks assigned to at least one selected flow are shown.
-- **Not assigned to flows** Tracks not assigned to one of the selected flows are shown.
+#### All
+
+All tracks are shown.
+
+![Show all tracks](usage-ui/show-tracks-all.png)
+
+#### Intersecting sections
+
+Tracks intersection at least one of the selected sections are shown.
+
+![Show tracks intersecting the selected sections](usage-ui/show-tracks-intersection-sections.png)
+
+#### Not intersecting sections
+
+Tracks intersecting none of the selected sections are shown.
+
+![Show tracks not intersection the selected sections](usage-ui/show-tracks-not-intersecting-sections.png)
+
+#### Assigned to flows
+
+Tracks assigned to at least one selected flow are shown.
+
+![Show tracks assigned to flows](usage-ui/show-tracks-assigned-to-flows.png)
+
+#### Not assigned to flows
+
+Tracks not assigned to one of the selected flows are shown.
+
+![Show tracks not assigned to flows](usage-ui/show-tracks-not-assigned-to-flows.png)
 
 ### Show start and end points
 
 This group shows the start and end points of tracks. The tracks to be shown can vary in the same flavors as described in [Show tracks](#show-tracks).
 
+![Show all start and end points](usage-ui/show-start-end-points-all.png)
+
 ### Show detections of current frame
 
 This group visualizes the detections of a single frame in different flavors.
 
-- **Bounding Box** Show the bounding boxes of all detections in the currently visible frame. 
-- **Track point of current frame** Show the track points of all detections in the currently visible frame.
+#### Bounding Box
+
+Show the bounding boxes of all detections in the currently visible frame.
+
+![Show bounding box of detections in the current frame](usage-ui/show-detections-bounding-boxes.png)
+
+#### Track point of current frame
+
+Show the track points of all detections in the currently visible frame.
+
+![Show track points of detections in the current frame](usage-ui/show-detections-track-point.png)
 
 ### Show events
 
 - **Current filter** Show track points of all events within the filter range.
 - **Current frame** Show all events within the range of the current filter.
+
+![Show events in the current filter](usage-ui/show-events-current-filter.png)
 
 ## Filter
 
