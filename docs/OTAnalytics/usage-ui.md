@@ -292,4 +292,4 @@ In case no aggregation of tracks to traffic volumes is required, but the assignm
 
 ### Track Statistics
 
-This is a CSV export of the track statistics show below the workspace.
+This is a CSV export of the track statistics show in the workspace below the camera image.
