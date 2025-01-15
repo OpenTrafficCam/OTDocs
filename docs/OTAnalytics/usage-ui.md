@@ -16,13 +16,15 @@ The position of the track point within the bounding box can be configured using 
 
 Since the offset can be individually configured for each section, tracks intersecting different sections can be finely tuned. This allows precise customization of the trajectory data based on the requirements of each section.
 
-
-!!! failure   
-    ![Offset x=0.1, y=0.1](usage-ui/offset-x-0-1-y-0-1.png)
-    ![Offset x=0.9, y=0.9](usage-ui/offset-x-0-9-y-0-9.png)
-    ![Offset x=0.8, y=0.3](usage-ui/offset-x-0-8-y-0-3.png)
-
-    %TODO% images in a row with caption: Track Point of a Bounding Box with the Offsets x=0.1 y=0.1 (left), x=0.9 y=0.9 (center) and x=0.8 y=0.3 (right)
+!!! tip "Track Point of a Bounding Box with offset"
+    === "x=0.1 y=0.1"
+        ![Offset x=0.1, y=0.1](usage-ui/offset-x-0-1-y-0-1.png){ align=left }
+    
+    === "x=0.9 y=0.9"
+        ![Offset x=0.9, y=0.9](usage-ui/offset-x-0-9-y-0-9.png){ align=left }
+    
+    === "x=0.8 y=0.3"
+        ![Offset x=0.8, y=0.3](usage-ui/offset-x-0-8-y-0-3.png){ align=left }
 
 An **Event** is generated whenever a track intersects a section. Each event contains detailed information, including the track's identifier, its position in the frame, and the timestamp of the intersection.
 
