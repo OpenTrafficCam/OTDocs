@@ -72,6 +72,7 @@ nav:
               - OTAnalytics/gettingstarted/installation.md
               - OTAnalytics/gettingstarted/firstuse.md
           - OTAnalytics/usage-ui.md
+          - OTAnalytics/otconfig.md
           - Usage:
               - OTAnalytics/usage/sections.md
               - OTAnalytics/usage/events.md
