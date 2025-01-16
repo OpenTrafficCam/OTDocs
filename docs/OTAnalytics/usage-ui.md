@@ -61,7 +61,7 @@ It is also where the geometry of sections can be created or edited.
 Below the workspace, the **Track Statistics** section provides key statistics about the displayed tracks.
 
 Tracks can be customized using different **Visualization Layers**, while the number of displayed tracks can be adjusted through the **Visualization Filters** located below the workspace.
- 
+
 ![User Interface of OTAnalytics](usage-ui/user-interface.png)
 
 ## Project Setup
@@ -73,7 +73,7 @@ It is possible to enter in ISO 8601 format (YYYY-MM-DD) or German date format (D
 
 !!! info
     OTAnalytics assumes that all selected videos are contiguous in time.
-If the videos to be processed have a time gap (e.g., videos from three days from 6:00 a.m. to 10:00 p.m.), several projects with chronologically contiguous videos must be created.
+    If the videos to be processed have a time gap (e.g., videos from three days from 6:00 a.m. to 10:00 p.m.), several projects with chronologically contiguous videos must be created.
     
     It is recommended to choose a unique name (e.g. name of the measuring point, camera number; or a combination of several unique details).
 
@@ -89,8 +89,8 @@ To add videos, use the *Add...* button, and to remove them from the configuratio
 
 !!! tip
     Added videos are displayed in alphabetical order in the “Videos” overview panel and are later processed in this order.
-The videos should therefore be named in such a way that the chronological order matches the alphabetical order.
-Additional zero-padding (e.g., `01`, `02`) is helpful if you want to ensure correct alphabetical sorting.
+    The videos should therefore be named in such a way that the chronological order matches the alphabetical order.
+    Additional zero-padding (e.g., `01`, `02`) is helpful if you want to ensure correct alphabetical sorting.
 
 When you click a video in the configuration bar, the first image of the video is displayed as the background image.
 This allows you to check whether all videos have been selected correctly.
@@ -104,9 +104,9 @@ Once all the required videos have been added and all the flows have been created
 
 !!! tip
     We recommend regularly saving the progress of the project while it is still being processed.
-This prevents possible loss of data.
-The *Save* button automatically saves the file to the last selected location.
-If it is colored in orange, changes have been made.
+    This prevents possible loss of data.
+    The *Save* button automatically saves the file to the last selected location.
+    If it is colored in orange, changes have been made.
 
     We also recomment to store all project related files (videos, otdet, ottrk and otconfig) in the same folder.
 
@@ -313,7 +313,7 @@ Filters enable you to limit the number of displayed tracks, making the visualiza
 
 !!! info
     Filters are applied exclusively to the visualization in the workspace and to the calculation of the track statistics displayed below the visualization.
-The analysis and data export always include all loaded tracks, regardless of any applied filters.
+    The analysis and data export always include all loaded tracks, regardless of any applied filters.
 
 ### Filter by Time
 
