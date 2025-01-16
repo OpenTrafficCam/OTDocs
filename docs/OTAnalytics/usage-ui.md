@@ -1,34 +1,31 @@
 # Usage UI
 
-After processing videos with [OTVision track](../OTVision/usage/track), you can use OTAnalytics for data analysis. The OTAnalytics interface enables you to configure analyses, extract valuable insights from your data, and export the results efficiently.
+After processing videos with [OTVision track](../../OTVision/usage/track), you can use OTAnalytics for data analysis. The OTAnalytics interface enables you to configure analyses, extract valuable insights from your data, and export the results efficiently.
 
 ## Terminology
 
-Vehicles and pedestrians are detected in the individual frames of the video using [detect in OTVision](../OTVision/usage/detect). Each detected object (**Detection**) is represented in a frame by a **Bounding Box**, which is the rectangular area surrounding the detected vehicle or pedestrian together with its classification (e.g., car, bike, pedestrian).
+Vehicles and pedestrians are detected in the individual frames of the video using [detect in OTVision](../../OTVision/usage/detect). Each detected object (**Detection**) is represented in a frame by a **Bounding Box**, which is the rectangular area surrounding the detected vehicle or pedestrian together with its classification (e.g., car, bike, pedestrian).
 
-The [tracker in OTVision](../OTVision/usage/track) links consecutive detections, or bounding boxes, to form a **Track**. A track is therefore composed of a series of detections, each with its own classification. Ideally, all detections within a track share the same classification. However, in practical scenarios, a track may include detections with varying classifications (e.g., truck and truck_with_trailer). This typically occurs when only a portion of the vehicle is visible in one frame, while in subsequent frames more of the vehicle or the entire vehicle appears within the frame.
+The [tracker in OTVision](../../OTVision/usage/track) links consecutive detections, or bounding boxes, to form a **Track** or **Road User**. A track is therefore composed of a series of detections, each with its own classification. Ideally, all detections within a track share the same classification. However, in practice, a track may include detections with varying classifications (e.g., truck and truck_with_trailer). This typically occurs when only a portion of the road user is visible in one frame, while in subsequent frames more of the road user or the entire road user appears within the frame.
 
-OTAnalytics assigns a single **Track Classification** to each track, as a vehicle can have only one classification in the real world (e.g., a vehicle is either a car or a bus).
+OTAnalytics assigns a single **Track Classification** to each track, as a road user can have only one classification in the real world (e.g., a vehicle is either a car or a bus).
+
+To analyze the tracks, OTAnalytics provides sections and flows. **Sections** are detectors. Each time a track's trajectory intersects a section, an **Event** is generated. Each event contains detailed information, including the track's identifier, its position in the frame, and the timestamp of the intersection. 
 
 A track's trajectory is created by selecting a single representative point from each bounding box associated with the track. This point is called the **Track Point**. The trajectory is formed by connecting the track points collected across successive frames.
+
+!!! info inline end "Track Point examples"
+    === "0.1, 0.1"
+        ![Offset x=0.1, y=0.1](usage-ui/offset-x-0-1-y-0-1.png){ align=left }
+    
+    === "0.8, 0.3"
+        ![Offset x=0.8, y=0.3](usage-ui/offset-x-0-8-y-0-3.png){ align=left }
 
 The position of the track point within the bounding box can be configured using the **Offset** attribute of sections. This offset is defined separately for the x- and y-axes, with values ranging from 0 to 1. These values determine the relative position of the track point within the bounding box, providing flexibility in track point placement.
 
 Since the offset can be individually configured for each section, tracks intersecting different sections can be finely tuned. This allows precise customization of the trajectory data based on the requirements of each section.
 
-!!! tip "Track Point of a Bounding Box with offset"
-    === "x=0.1 y=0.1"
-        ![Offset x=0.1, y=0.1](usage-ui/offset-x-0-1-y-0-1.png){ align=left }
-    
-    === "x=0.9 y=0.9"
-        ![Offset x=0.9, y=0.9](usage-ui/offset-x-0-9-y-0-9.png){ align=left }
-    
-    === "x=0.8 y=0.3"
-        ![Offset x=0.8, y=0.3](usage-ui/offset-x-0-8-y-0-3.png){ align=left }
-
-An **Event** is generated whenever a track intersects a section. Each event contains detailed information, including the track's identifier, its position in the frame, and the timestamp of the intersection.
-
-As explained in [Flows](#flows), a flow is defined by two sections: a starting section and an ending section. Tracks that intersect both sections of a flow can be assigned to that flow. To achieve this, the events belonging to a track are sorted chronologically based on their time of occurrence. The pair of events with the longest time interval between them is used to assign the track to the flow corresponding to the sections of both events. The assignment of a track to a flow is called **Track Assignment**.
+**Flows** define traffic flows to be analyzed. As explained in [Flows](#flows), a flow is defined by two sections: a starting section and an ending section. Tracks that intersect both sections of a flow can be assigned to that flow. To achieve this, the events belonging to a track are sorted chronologically based on their time of occurrence. The pair of events with the longest time interval between them is used to assign the track to the flow corresponding to the sections of both events. The assignment of a track to a flow is called **Track Assignment**.
 
 ## User Interface
 
@@ -45,21 +42,20 @@ The **Workspace** displays the tracks and video frames. It is also where the geo
 
 Tracks can be customized using different **Visualization Layers**, while the number of displayed tracks can be adjusted through the **Visualization Filters** located below the workspace.
  
-![User Interface of OTConfig](usage-ui/user-interface.png)
-
-!!! info
-    If there are several tabs (e.g. Sections, Flows) in a section, you can switch between them by clicking on them. The active tab is highlighted in green.
+![User Interface of OTAnalytics](usage-ui/user-interface.png)
 
 ## Project Setup
 
 The project must first be named. The project name is entered in the corresponding Name field. The start time (date and time) of the first video must then be entered in the corresponding Start date fields. It is possible to enter in ISO 8601 format (YYYY-MM-DD) or German date format (DD.MM.YYYY).
 
-!!! tip
+!!! info
     OTAnalytics assumes that all selected videos are contiguous in time. If the videos to be processed have a time gap (e.g. videos from three days from 6:00 a.m. to 10:00 p.m.), several projects with chronologically contiguous videos must be created.
     
     It is recommended to choose a unique name (e.g. name of the measuring point, camera number; or a combination of several unique details).
 
-The videos to be processed must then be selected and loaded into OTConfig. The respective videos can be added using the Add button. After clicking, the file browser opens and the videos can be selected. Several videos can be selected at the same time. The selected video is removed from the configuration using the Remove button.
+The tracks to be analyzed must be loaded into OTAnalytics. The track files (.ottrk) can be added using the Add tracks button. After clicking, the file browser opens and the track files can be selected. Several track files can be selected at the same time. OTAnalytics automatically loads the associated video file if it exists. Otherwise, the track file can not be loaded.
+
+It is also possible to only add the videos to OTAnalytics. This is useful to configure an analysis which is done by the team from platomo. The videos to be processed must then be selected and loaded into OTAnalytics. The respective videos can be added using the Add button. The selected video is removed from the configuration using the Remove button.
 
 !!! tip
     Added videos are displayed in alphabetical order in the “Videos” overview panel and are later processed in this order. The videos should therefore be named in such a way that the chronological order matches the alphabetical order.
@@ -76,13 +72,15 @@ Once all the required videos have been added and all the flows have been created
 !!! tip
     We recommend regularly saving the progress of the project while it is still being processed. This prevents possible loss of data. The Save button automatically saves the file to the last selected location. If it is colored orange, changes have been made.
 
+    We also recomment to store all project related files (videos, otdet, ottrk and otconfig) in the same folder.
+
 ## Definition of the traffic flows to be analyzed
 
 A traffic flow depicts the directional travel relationship between two areas in the video image. The areas are defined with so-called sections. A flow always consists of two sections (a start section and an end section). In order to define flows, the sections must first be created. The flows can then be assigned to the created or edited sections.
 
 ### Sections
 
-Sections can consist of any number of support points (shown as a circle). They are drawn directly in the background image in OTConfig. To do this, the Sections tab must first be selected in the Sections/Flows section.
+Sections can consist of any number of support points (shown as a circle). They are drawn directly in the background image in OTAnalytics. To do this, the Sections tab must first be selected in the Sections/Flows section.
 
 !!! tip
     Line sections and area sections can be created. If no occupancy durations (e.g. of parking areas) are detected, but only crossings, line sections should always be selected. 
