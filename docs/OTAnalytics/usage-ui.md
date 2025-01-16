@@ -8,7 +8,11 @@ The OTAnalytics interface enables you to configure analyses, extract valuable in
 Vehicles and pedestrians are detected in the individual frames of the video using [detect in OTVision](../../OTVision/usage/detect).
 Each detected object (**Detection**) is represented in a frame by a **Bounding Box**, which is the rectangular area surrounding the detected vehicle or pedestrian together with its classification (e.g., car, bike, pedestrian).
 
-The [tracker in OTVision](../../OTVision/usage/track) links consecutive detections, or bounding boxes, to form a **Track** or **Road User**. A track is therefore composed of a series of detections, each with its own classification. Ideally, all detections within a track share the same classification. However, in practice, a track may include detections with varying classifications (e.g., truck and truck_with_trailer). This typically occurs when only a portion of the road user is visible in one frame, while in subsequent frames more of the road user or the entire road user appears within the frame.
+The [tracker in OTVision](../../OTVision/usage/track) links consecutive detections, or bounding boxes, to form a **Track** or **Road User**.
+A track is therefore composed of a series of detections, each with its own classification.
+Ideally, all detections within a track share the same classification.
+However, in practice, a track may include detections with varying classifications (e.g., truck and truck_with_trailer).
+This typically occurs when only a portion of the road user is visible in one frame, while in subsequent frames more of the road user or the entire road user appears within the frame.
 
 OTAnalytics assigns a single **Track Classification** to each track, as a road user can have only one classification in the real world (e.g., a vehicle is either a car or a bus).
 
