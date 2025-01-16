@@ -100,7 +100,7 @@ This allows you to check whether all videos have been selected correctly.
 Once all the required videos have been added and all the flows have been created, the project is saved.
 
 1. Click on the *Save as...* button in the Project section of the configuration bar.
-1. Select a suitable file name in the file browser and save it in the same folder as the videos.
+1. Select a suitable filename in the file browser and save it in the same folder as the videos.
 
 !!! tip
     We recommend regularly saving the progress of the project while it is still being processed.
@@ -184,7 +184,7 @@ A new flow is added in the following steps:
 
 1. Left-click on the *Add* button. A pop-up window opens. The appropriate sections can be selected from the drop-down menu.
 1. The start point of the flow is defined as the first section.
-1. The end point of the flow is defined as the second section.
+1. The endpoint of the flow is defined as the second section.
 1. The name is automatically set in the *Name* field after selecting the two sections. This can be changed as required. The name is reused in the analysis.
 
 !!! warning
@@ -250,35 +250,35 @@ The tracks to be shown can vary in different flavors.
 
     ![Show tracks not assigned to flows](usage-ui/show-tracks-not-assigned-to-flows.png)
 
-### Show start and end points
+### Show start- and endpoints
 
-This group shows the start and end points of tracks.
+This group shows the start- and endpoints of tracks.
 The tracks to be shown can vary in the same flavors as described in [Show tracks](#show-tracks).
 
 === "All"
-    Start and end points of all tracks are shown.
+    Start- and endpoints of all tracks are shown.
 
-    ![Show start and end points of all tracks](usage-ui/show-start-end-points-all.png)
+    ![Show start- and endpoints of all tracks](usage-ui/show-start-end-points-all.png)
 
 === "Intersecting sections"
-    Start and end points of tracks intersecting at least one of the selected sections are shown.
+    Start- and endpoints of tracks intersecting at least one of the selected sections are shown.
 
-    ![Show start and end points of tracks intersecting the selected sections](usage-ui/show-start-end-points-intersecting-sections.png)
+    ![Show start- and endpoints of tracks intersecting the selected sections](usage-ui/show-start-end-points-intersecting-sections.png)
 
 === "Not intersecting sections"
-    Start and end points of tracks intersecting none of the selected sections are shown.
+    Start- and endpoints of tracks intersecting none of the selected sections are shown.
 
-    ![Show start and end points of tracks not intersection the selected sections](usage-ui/show-start-end-points-not-intersecting-sections.png)
+    ![Show start- and endpoints of tracks not intersection the selected sections](usage-ui/show-start-end-points-not-intersecting-sections.png)
 
 === "Assigned to flows"
-    Start and end points of tracks assigned to at least one selected flow are shown.
+    Start- and endpoints of tracks assigned to at least one selected flow are shown.
 
-    ![Show start and end points of tracks assigned to flows](usage-ui/show-start-end-points-assigned-to-flows.png)
+    ![Show start- and endpoints of tracks assigned to flows](usage-ui/show-start-end-points-assigned-to-flows.png)
 
 === "Not assigned to flows"
-    Start and end points of tracks not assigned to one of the selected flows are shown.
+    Start- and endpoints of tracks not assigned to one of the selected flows are shown.
 
-    ![Show start and end points of tracks not assigned to flows](usage-ui/show-start-end-points-not-assigned-to-flows.png)
+    ![Show start- and endpoints of tracks not assigned to flows](usage-ui/show-start-end-points-not-assigned-to-flows.png)
 
 ### Show detections of current frame
 
