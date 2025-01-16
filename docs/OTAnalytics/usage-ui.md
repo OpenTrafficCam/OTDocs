@@ -233,7 +233,7 @@ This group visualizes the detections of a single frame in different flavors.
 
     ![Show bounding box of detections in the current frame](usage-ui/show-detections-bounding-boxes.png)
 
-=== "Track point of current frame"
+=== "Track point"
     Show the track points of all detections in the currently visible frame.
 
     ![Show track points of detections in the current frame](usage-ui/show-detections-track-point.png)
