@@ -1,18 +1,28 @@
 # Usage UI
 
-After processing videos with OTVisionÄS tracking module ([OTVision track](../../OTVision/usage/track)), you can use OTAnalytics for data analysis. The OTAnalytics interface enables you to configure analyses, extract valuable insights from your data, and export the results efficiently.
+After processing videos with OTVisionÄS tracking module ([OTVision track](../../OTVision/usage/track)), you can use OTAnalytics for data analysis.
+The OTAnalytics interface enables you to configure analyses, extract valuable insights from your data, and export the results efficiently.
 
 ## Terminology
 
-Vehicles and pedestrians are detected in the individual frames of the video using [detect in OTVision](../../OTVision/usage/detect). Each detected object (**Detection**) is represented in a frame by a **Bounding Box**, which is the rectangular area surrounding the detected vehicle or pedestrian together with its classification (e.g., car, bike, pedestrian).
+Vehicles and pedestrians are detected in the individual frames of the video using [detect in OTVision](../../OTVision/usage/detect).
+Each detected object (**Detection**) is represented in a frame by a **Bounding Box**, which is the rectangular area surrounding the detected vehicle or pedestrian together with its classification (e.g., car, bike, pedestrian).
 
-The [tracker in OTVision](../../OTVision/usage/track) links consecutive detections, or bounding boxes, to form a **Track** or **Road User**. A track is therefore composed of a series of detections, each with its own classification. Ideally, all detections within a track share the same classification. However, in practice, a track may include detections with varying classifications (e.g., truck and truck_with_trailer). This typically occurs when only a portion of the road user is visible in one frame, while in subsequent frames more of the road user or the entire road user appears within the frame.
+The [tracker in OTVision](../../OTVision/usage/track) links consecutive detections, or bounding boxes, to form a **Track** or **Road User**. 
+A track is therefore composed of a series of detections, each with its own classification. 
+Ideally, all detections within a track share the same classification. 
+However, in practice, a track may include detections with varying classifications (e.g., truck and truck_with_trailer). 
+This typically occurs when only a portion of the road user is visible in one frame, while in subsequent frames more of the road user or the entire road user appears within the frame.
 
 OTAnalytics assigns a single **Track Classification** to each track, as a road user can have only one classification in the real world (e.g., a vehicle is either a car or a bus).
 
-To analyze the tracks, OTAnalytics provides sections and flows. **Sections** are detectors. Each time a track's trajectory intersects a section, an **Event** is generated. Each event contains detailed information, including the track's identifier, its position in the frame, and the timestamp of the intersection. 
+To analyze the tracks, OTAnalytics provides sections and flows. **Sections** are detectors.
+Each time a track's trajectory intersects a section, an **Event** is generated.
+Each event contains detailed information, including the track's identifier, its position in the frame, and the timestamp of the intersection. 
 
-A track's trajectory is created by selecting a single representative point from each bounding box associated with the track. This point is called the **Track Point**. The trajectory is formed by connecting the track points collected across successive frames.
+A track's trajectory is created by selecting a single representative point from each bounding box associated with the track.
+This point is called the **Track Point**.
+The trajectory is formed by connecting the track points collected across successive frames.
 
 !!! info inline end "Track Point examples"
     === "0.1, 0.1"
@@ -21,11 +31,19 @@ A track's trajectory is created by selecting a single representative point from 
     === "0.8, 0.3"
         ![Offset x=0.8, y=0.3](usage-ui/offset-x-0-8-y-0-3.png){ align=left }
 
-The position of the track point within the bounding box can be configured using the **Offset** attribute of sections. This offset is defined separately for the x- and y-axes, with values ranging from 0 to 1. These values determine the relative position of the track point within the bounding box, providing flexibility in track point placement.
+The position of the track point within the bounding box can be configured using the **Offset** attribute of sections.
+This offset is defined separately for the x- and y-axes, with values ranging from `0` to `1`.
+These values determine the relative position of the track point within the bounding box, providing flexibility in track point placement.
 
-Since the offset can be individually configured for each section, tracks intersecting different sections can be finely tuned. This allows precise customization of the trajectory data based on the requirements of each section.
+Since the offset can be individually configured for each section, tracks intersecting different sections can be finely tuned.
+This allows precise customization of the trajectory data based on the requirements of each section.
 
-**Flows** define traffic flows to be analyzed. As explained in [Flows](#flows), a flow is defined by two sections: a starting section and an ending section. Tracks that intersect both sections of a flow can be assigned to that flow. To achieve this, the events belonging to a track are sorted chronologically based on their time of occurrence. The pair of events with the longest time interval between them is used to assign the track to the flow corresponding to the sections of both events. The assignment of a track to a flow is called **Track Assignment**.
+**Flows** define traffic flows to be analyzed.
+As explained in [Flows](#flows), a flow is defined by two sections: a starting section and an ending section.
+Tracks that intersect both sections of a flow can be assigned to that flow.
+To achieve this, the events belonging to a track are sorted chronologically based on their time of occurrence.
+The pair of events with the longest time interval between them is used to assign the track to the flow corresponding to the sections of both events.
+The assignment of a track to a flow is called **Track Assignment**.
 
 ## User Interface
 
@@ -38,7 +56,9 @@ The **Configuration Bar** consists of four sections:
 3. **Sections/Flows**: Create, edit, and delete sections and flows. The flow names are shown with numbers indicating the number of assigned tracks per flow.
 4. **Analysis**: Start the export of analyzed data.
 
-The **Workspace** displays the tracks and video frames. It is also where the geometry of sections can be created or edited. Below the workspace, the **Track Statistics** section provides key statistics about the displayed tracks.
+The **Workspace** displays the tracks and video frames.
+It is also where the geometry of sections can be created or edited.
+Below the workspace, the **Track Statistics** section provides key statistics about the displayed tracks.
 
 Tracks can be customized using different **Visualization Layers**, while the number of displayed tracks can be adjusted through the **Visualization Filters** located below the workspace.
  
@@ -46,21 +66,34 @@ Tracks can be customized using different **Visualization Layers**, while the num
 
 ## Project Setup
 
-The project must first be named. The project name is entered in the corresponding Name field. The start time (date and time) of the first video must then be entered in the corresponding Start date fields. It is possible to enter in ISO 8601 format (YYYY-MM-DD) or German date format (DD.MM.YYYY).
+The project must first be named.
+The project name is entered in the corresponding Name field.
+The start time (date and time) of the first video must then be entered in the corresponding Start date fields.
+It is possible to enter in ISO 8601 format (YYYY-MM-DD) or German date format (DD.MM.YYYY).
 
 !!! info
-    OTAnalytics assumes that all selected videos are contiguous in time. If the videos to be processed have a time gap (e.g. videos from three days from 6:00 a.m. to 10:00 p.m.), several projects with chronologically contiguous videos must be created.
+    OTAnalytics assumes that all selected videos are contiguous in time.
+If the videos to be processed have a time gap (e.g., videos from three days from 6:00 a.m. to 10:00 p.m.), several projects with chronologically contiguous videos must be created.
     
     It is recommended to choose a unique name (e.g. name of the measuring point, camera number; or a combination of several unique details).
 
-To analyze tracks in OTAnalytics, you must load the track files (.ottrk). This can be done using the *Add tracks...* button, which opens a file browser to select the respective files. Multiple track files can be added at once. If a corresponding video file exists, OTAnalytics will automatically load it alongside the track file. If no associated video is found, the track file cannot be loaded.
+To analyze tracks in OTAnalytics, you must load the track files (.ottrk).
+This can be done using the *Add tracks...* button, which opens a file browser to select the respective files.
+Multiple track files can be added at once.
+If a corresponding video file exists, OTAnalytics will automatically load it alongside the track file.
+If no associated video is found, the track file cannot be loaded.
 
-Alternatively, you can add videos only. This is particularly useful for configuring an analysis handled by the platomo team. To add videos, use the *Add...* button, and to remove them from the configuration, use the *Remove* button.
+Alternatively, you can add videos only.
+This is particularly useful for configuring an analysis handled by the platomo team.
+To add videos, use the *Add...* button, and to remove them from the configuration, use the *Remove* button.
 
 !!! tip
-    Added videos are displayed in alphabetical order in the “Videos” overview panel and are later processed in this order. The videos should therefore be named in such a way that the chronological order matches the alphabetical order. Additional zero-padding (e.g., `01`, `02`) is helpful if you want to ensure correct alphabetical sorting.
+    Added videos are displayed in alphabetical order in the “Videos” overview panel and are later processed in this order.
+The videos should therefore be named in such a way that the chronological order matches the alphabetical order.
+Additional zero-padding (e.g., `01`, `02`) is helpful if you want to ensure correct alphabetical sorting.
 
-When you click a video in the configuration bar, the first image of the video is displayed as the background image. This allows you to check whether all videos have been selected correctly.
+When you click a video in the configuration bar, the first image of the video is displayed as the background image.
+This allows you to check whether all videos have been selected correctly.
 
 ### Save to configuration file (otconfig file) 
 
@@ -70,22 +103,33 @@ Once all the required videos have been added and all the flows have been created
 1. Select a suitable file name in the file browser and save it in the same folder as the videos. 
 
 !!! tip
-    We recommend regularly saving the progress of the project while it is still being processed. This prevents possible loss of data. The *Save* button automatically saves the file to the last selected location. If it is colored in orange, changes have been made.
+    We recommend regularly saving the progress of the project while it is still being processed.
+This prevents possible loss of data.
+The *Save* button automatically saves the file to the last selected location.
+If it is colored in orange, changes have been made.
 
     We also recomment to store all project related files (videos, otdet, ottrk and otconfig) in the same folder.
 
 ## Definition of the traffic flows to be analyzed
 
-A traffic flow depicts the directional travel relationship between two sections. A flow always consists of two sections (a start section and an end section). In order to define flows, the sections must first be created. The flows can then be assigned to the created or edited sections.
+A traffic flow depicts the directional travel relationship between two sections.
+A flow always consists of two sections (a start section and an end section).
+In order to define flows, the sections must first be created.
+The flows can then be assigned to the created or edited sections.
 
 ### Sections
 
-Sections can consist of any number of support points (shown as a circle). They are drawn directly in the background image in OTAnalytics. To do this, the *Sections* tab must first be selected in the Sections/Flows section.
+Sections can consist of any number of support points (shown as a circle).
+They are drawn directly in the background image in OTAnalytics.
+To do this, the *Sections* tab must first be selected in the Sections/Flows section.
 
 !!! tip
-    Line sections and area sections can be created. If no occupancy durations (e.g., of parking areas) are analyzed, but only crossings, line sections should always be used. 
+    Line sections and area sections can be created.
+    If no occupancy durations (e.g., of parking areas) are analyzed, but only crossings, line sections should always be used. 
     
-    The following example is limited to line sections. However, the procedure described can also be applied to area sections. The only difference is that the polygon is automatically closed when the add mode is exited.
+    The following example is limited to line sections.
+    However, the procedure described can also be applied to area sections.
+    The only difference is that the polygon is automatically closed when the add mode is exited.
 
 #### Add Sections
 
@@ -100,7 +144,8 @@ A new line section is added in the following steps:
 1. Repeat the process to add further sections.
 
 !!! warning
-    A name can only be assigned once, duplicate names of several sections are not possible. We recommend using the approximate compass direction of the geographical location (e.g. north, north-east) as the name of the section. 
+    A name can only be assigned once, duplicate names of several sections are not possible.
+    We recommend using the approximate compass direction of the geographical location (e.g. north, north-east) as the name of the section. 
 
 ![Add Sections](usage-ui/add-section.png)
 
@@ -112,22 +157,26 @@ The geometry of sections that have already been created can be changed using the
 1. Then start the change mode by left-clicking on the *Edit* button. The supporting points are now visible. 
 1. Support points can now be selected by left-clicking and reset as in add mode. The + button can be used to add another support point.
 
-The selected point “sticks” to the mouse pointer until the left mouse button is pressed. The old geometry is displayed as a dashed reference.
+The selected point “sticks” to the mouse pointer until the left mouse button is pressed.
+The old geometry is displayed as a dashed reference.
 
 1. Right-click to exit change mode and save the changes.
 1. Pressing the Escape button exits the change mode without saving the changes to the geometry. 
 
 #### Change attributes of a section
 
-The attributes (name and offset) of a section can be changed by clicking on the *Properties* button. To do this, the desired section must first be selected from the list.
+The attributes (name and offset) of a section can be changed by clicking on the *Properties* button.
+To do this, the desired section must first be selected from the list.
 
 #### Remove a section
 
-A section can be removed by clicking on the *Remove* button. To do this, the desired section must first be selected in the list and must not be assigned to a flow.
+A section can be removed by clicking on the *Remove* button.
+To do this, the desired section must first be selected in the list and must not be assigned to a flow.
 
 ### Flows
 
-A flow always consists of exactly two sections: a start section and an end section. To edit flows, the *Flows* tab must first be selected in the Sections/Flows section.
+A flow always consists of exactly two sections: a start section and an end section.
+To edit flows, the *Flows* tab must first be selected in the Sections/Flows section.
 
 #### Add Flows
 
@@ -141,21 +190,28 @@ A new flow is added in the following steps:
 !!! warning
     A name can only be assigned once, duplicate names of several flows are not possible.
 
-    Alternatively, flows can also be generated automatically using the *Generate* button. Flows are then generated for all possible combinations of start and end sections. The standard naming convention is Name_Startsection --> Name_Endsection.
+    Alternatively, flows can also be generated automatically using the *Generate* button.
+    Flows are then generated for all possible combinations of start and end sections.
+    The standard naming convention is `Name_Startsection --> Name_Endsection`.
 
 ![Add Flows](usage-ui/add-flow.png)
 
 #### Edit Flows
 
-To edit a flow, it must first be selected in the list. Then left-click on the *Properties* button to open the same pop-up window as when creating a flow. The desired changes can now be made. 
+To edit a flow, it must first be selected in the list.
+Then left-click on the *Properties* button to open the same pop-up window as when creating a flow.
+The desired changes can now be made. 
 
 #### Remove Flows
 
-To remove a flow, it must first be selected in the list. Left-click on the *Remove* button to remove the selected flow.
+To remove a flow, it must first be selected in the list.
+Left-click on the *Remove* button to remove the selected flow.
 
 ## Visualization layers
 
-Visualization layers are used to refine traffic analysis by offering specific views of the data. Tracks are consistently displayed in the same color, which is determined by the track classification. The visualization layers are organized into groups.
+Visualization layers are used to refine traffic analysis by offering specific views of the data.
+Tracks are consistently displayed in the same color, which is determined by the track classification.
+The visualization layers are organized into groups.
 
 ### Background 
 
@@ -166,7 +222,8 @@ Otherwise, the first frame of the selected video is shown.
 
 ### Show tracks
 
-This group shows the trajectory of tracks. The tracks to be shown can vary in different flavors.
+This group shows the trajectory of tracks.
+The tracks to be shown can vary in different flavors.
 
 === "All"
     All tracks are shown.
@@ -195,7 +252,8 @@ This group shows the trajectory of tracks. The tracks to be shown can vary in di
 
 ### Show start and end points
 
-This group shows the start and end points of tracks. The tracks to be shown can vary in the same flavors as described in [Show tracks](#show-tracks).
+This group shows the start and end points of tracks.
+The tracks to be shown can vary in the same flavors as described in [Show tracks](#show-tracks).
 
 === "All"
     Start and end points of all tracks are shown.
@@ -250,15 +308,19 @@ This group visualizes the detections of a single frame in different flavors.
 
 ## Filter
 
-As the number of hours analyzed increases, distinguishing individual tracks in the visualization becomes increasingly difficult. Filters enable you to limit the number of displayed tracks, making the visualization more manageable and focused.
+As the number of hours analyzed increases, distinguishing individual tracks in the visualization becomes increasingly difficult.
+Filters enable you to limit the number of displayed tracks, making the visualization more manageable and focused.
 
 !!! info
-    Filters are applied exclusively to the visualization in the workspace and to the calculation of the track statistics displayed below the visualization. The analysis and data export always include all loaded tracks, regardless of any applied filters.
+    Filters are applied exclusively to the visualization in the workspace and to the calculation of the track statistics displayed below the visualization.
+The analysis and data export always include all loaded tracks, regardless of any applied filters.
 
 ### Filter by Time
 
-Filter tracks based on time and date. All tracks with a start time on or after the start date and an end time on or before the end date will remain in the dataset.
-The *<* and *>* buttons located to the right of the filter button allow you to shift the filter forward or backward by the filter's duration. For more precise adjustments, the *<* and *>* buttons below enable finer control over the filter's position.
+Filter tracks based on time and date.
+All tracks with a start time on or after the start date and an end time on or before the end date will remain in the dataset.
+The *<* and *>* buttons located to the right of the filter button allow you to shift the filter forward or backward by the filter's duration.
+For more precise adjustments, the *<* and *>* buttons below enable finer control over the filter's position.
 
 ![Configure filter](usage-ui/add-filter.png)
 
@@ -304,7 +366,9 @@ The export includes the following values for each event:
 
 ### Export Traffic Count
 
-Traffic count is based on the assignment of tracks to flows. It can be exported as a CSV file, which can be easily imported into your preferred program. You can specify the start and end date and time, as well as the interval for grouping road users.
+Traffic count is based on the assignment of tracks to flows.
+It can be exported as a CSV file, which can be easily imported into your preferred program.
+You can specify the start and end date and time, as well as the interval for grouping road users.
 
 ![Configure export](usage-ui/configure-export-counts.png)
 
@@ -326,7 +390,9 @@ The CSV file includes the following values:
 
 ### Export Road User Assignments
 
-In case no aggregation of tracks to traffic volumes is required, but the assignment strategy of OTAnalytics should be used. All tracks assigned to flows can be exported using the *Export road user assignments...* Button. The tracks assigned to flows are exported into a CSV file with the following format:
+In case no aggregation of tracks to traffic volumes is required, but the assignment strategy of OTAnalytics should be used.
+All tracks assigned to flows can be exported using the *Export road user assignments...* Button.
+The tracks assigned to flows are exported into a CSV file with the following format:
 
 | Value                 | Datatype  | Description                                                              | Example                                       |
 |-----------------------|-----------|--------------------------------------------------------------------------|-----------------------------------------------|
