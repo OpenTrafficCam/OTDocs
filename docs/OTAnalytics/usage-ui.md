@@ -38,7 +38,7 @@ The **Configuration Bar** consists of four sections:
 
 1. **Project**: Manage project metadata and save or load `.otconfig` files.
 2. **Tracks/Video**: Add input files, where only track files can be added, while video files can be both added and removed. An overview of loaded video files is also displayed.
-3. **Sections/Flows**: Create, edit, and delete sections and flows.
+3. **Sections/Flows**: Create, edit, and delete sections and flows. The flow names are shown with numbers indicating the number of assigned tracks per flow.
 4. **Analysis**: Start the export of analyzed data.
 
 The **Workspace** displays the tracks and video frames. It is also where the geometry of sections can be created or edited. Below the workspace, the **Track Statistics** section provides key statistics about the displayed tracks.
