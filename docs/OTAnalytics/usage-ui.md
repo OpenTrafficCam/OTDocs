@@ -8,17 +8,17 @@ The OTAnalytics interface enables you to configure analyses, extract valuable in
 Vehicles and pedestrians are detected in the individual frames of the video using [detect in OTVision](../../OTVision/usage/detect).
 Each detected object (**Detection**) is represented in a frame by a **Bounding Box**, which is the rectangular area surrounding the detected vehicle or pedestrian together with its classification (e.g., car, bike, pedestrian).
 
-The [tracker in OTVision](../../OTVision/usage/track) links consecutive detections, or bounding boxes, to form a **Track** or **Road User**. 
-A track is therefore composed of a series of detections, each with its own classification. 
-Ideally, all detections within a track share the same classification. 
-However, in practice, a track may include detections with varying classifications (e.g., truck and truck_with_trailer). 
+The [tracker in OTVision](../../OTVision/usage/track) links consecutive detections, or bounding boxes, to form a **Track** or **Road User**.
+A track is therefore composed of a series of detections, each with its own classification.
+Ideally, all detections within a track share the same classification.
+However, in practice, a track may include detections with varying classifications (e.g., truck and truck_with_trailer).
 This typically occurs when only a portion of the road user is visible in one frame, while in subsequent frames more of the road user or the entire road user appears within the frame.
 
 OTAnalytics assigns a single **Track Classification** to each track, as a road user can have only one classification in the real world (e.g., a vehicle is either a car or a bus).
 
 To analyze the tracks, OTAnalytics provides sections and flows. **Sections** are detectors.
 Each time a track's trajectory intersects a section, an **Event** is generated.
-Each event contains detailed information, including the track's identifier, its position in the frame, and the timestamp of the intersection. 
+Each event contains detailed information, including the track's identifier, its position in the frame, and the timestamp of the intersection.
 
 A track's trajectory is created by selecting a single representative point from each bounding box associated with the track.
 This point is called the **Track Point**.
@@ -95,12 +95,12 @@ Additional zero-padding (e.g., `01`, `02`) is helpful if you want to ensure corr
 When you click a video in the configuration bar, the first image of the video is displayed as the background image.
 This allows you to check whether all videos have been selected correctly.
 
-### Save to configuration file (otconfig file) 
+### Save to configuration file (otconfig file)
 
 Once all the required videos have been added and all the flows have been created, the project is saved.
 
 1. Click on the *Save as...* button in the Project section of the configuration bar.
-1. Select a suitable file name in the file browser and save it in the same folder as the videos. 
+1. Select a suitable file name in the file browser and save it in the same folder as the videos.
 
 !!! tip
     We recommend regularly saving the progress of the project while it is still being processed.
@@ -125,7 +125,7 @@ To do this, the *Sections* tab must first be selected in the Sections/Flows sect
 
 !!! tip
     Line sections and area sections can be created.
-    If no occupancy durations (e.g., of parking areas) are analyzed, but only crossings, line sections should always be used. 
+    If no occupancy durations (e.g., of parking areas) are analyzed, but only crossings, line sections should always be used.
     
     The following example is limited to line sections.
     However, the procedure described can also be applied to area sections.
@@ -135,7 +135,7 @@ To do this, the *Sections* tab must first be selected in the Sections/Flows sect
 
 A new line section is added in the following steps:
 
-1. Left-click on the *Add line* button, which starts the add mode. 
+1. Left-click on the *Add line* button, which starts the add mode.
 1. Set the first point by left-clicking at the correct position in the video image. The point is now fixed. Further points can be added to the section by moving the mouse and left-clicking again. A section must consist of at least two points.
 1. Once the desired length and shape of a section has been reached, right-click or press the *Enter* key to exit Add mode.
 1. Pressing the *Escape* key cancels add mode without saving the previously created section.
@@ -145,7 +145,7 @@ A new line section is added in the following steps:
 
 !!! warning
     A name can only be assigned once, duplicate names of several sections are not possible.
-    We recommend using the approximate compass direction of the geographical location (e.g. north, north-east) as the name of the section. 
+    We recommend using the approximate compass direction of the geographical location (e.g. north, north-east) as the name of the section.
 
 ![Add Sections](usage-ui/add-section.png)
 
@@ -153,15 +153,15 @@ A new line section is added in the following steps:
 
 The geometry of sections that have already been created can be changed using the following procedure:
 
-1. First select the section to be changed in the list. 
-1. Then start the change mode by left-clicking on the *Edit* button. The supporting points are now visible. 
+1. First select the section to be changed in the list.
+1. Then start the change mode by left-clicking on the *Edit* button. The supporting points are now visible.
 1. Support points can now be selected by left-clicking and reset as in add mode. The + button can be used to add another support point.
 
 The selected point “sticks” to the mouse pointer until the left mouse button is pressed.
 The old geometry is displayed as a dashed reference.
 
 1. Right-click to exit change mode and save the changes.
-1. Pressing the Escape button exits the change mode without saving the changes to the geometry. 
+1. Pressing the Escape button exits the change mode without saving the changes to the geometry.
 
 #### Change attributes of a section
 
@@ -182,7 +182,7 @@ To edit flows, the *Flows* tab must first be selected in the Sections/Flows sect
 
 A new flow is added in the following steps:
 
-1. Left-click on the *Add* button. A pop-up window opens. The appropriate sections can be selected from the drop-down menu. 
+1. Left-click on the *Add* button. A pop-up window opens. The appropriate sections can be selected from the drop-down menu.
 1. The start point of the flow is defined as the first section.
 1. The end point of the flow is defined as the second section.
 1. The name is automatically set in the *Name* field after selecting the two sections. This can be changed as required. The name is reused in the analysis.
@@ -200,7 +200,7 @@ A new flow is added in the following steps:
 
 To edit a flow, it must first be selected in the list.
 Then left-click on the *Properties* button to open the same pop-up window as when creating a flow.
-The desired changes can now be made. 
+The desired changes can now be made.
 
 #### Remove Flows
 
@@ -213,7 +213,7 @@ Visualization layers are used to refine traffic analysis by offering specific vi
 Tracks are consistently displayed in the same color, which is determined by the track classification.
 The visualization layers are organized into groups.
 
-### Background 
+### Background
 
 This layer shows a frame of the video as a background image.
 The currently shown frame can be configured using the filter.
