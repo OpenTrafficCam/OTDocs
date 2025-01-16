@@ -53,9 +53,9 @@ The project must first be named. The project name is entered in the correspondin
     
     It is recommended to choose a unique name (e.g. name of the measuring point, camera number; or a combination of several unique details).
 
-The tracks to be analyzed must be loaded into OTAnalytics. The track files (.ottrk) can be added using the Add tracks button. After clicking, the file browser opens and the track files can be selected. Several track files can be selected at the same time. OTAnalytics automatically loads the associated video file if it exists. Otherwise, the track file can not be loaded.
+To analyze tracks in OTAnalytics, you must load the track files (.ottrk). This can be done using the *Add tracks...* button, which opens a file browser to select the respective files. Multiple track files can be added at once. If a corresponding video file exists, OTAnalytics will automatically load it alongside the track file. If no associated video is found, the track file cannot be loaded.
 
-It is also possible to only add the videos to OTAnalytics. This is useful to configure an analysis which is done by the team from platomo. The videos to be processed must then be selected and loaded into OTAnalytics. The respective videos can be added using the Add button. The selected video is removed from the configuration using the Remove button.
+Alternatively, you can add videos only. This is particularly useful for configuring an analysis handled by the platomo team. To add videos, use the *Add...* button, and to remove them from the configuration, use the *Remove* button.
 
 !!! tip
     Added videos are displayed in alphabetical order in the “Videos” overview panel and are later processed in this order. The videos should therefore be named in such a way that the chronological order matches the alphabetical order.
@@ -66,24 +66,24 @@ When a video is clicked in the overview in the configuration bar, the first imag
 
 Once all the required videos have been added and all the flows have been created, the project is saved.
 
-1. Click on the Save as... button in the Project section of the configuration bar.
+1. Click on the *Save as...* button in the Project section of the configuration bar.
 1. Select a suitable file name in the file browser and save it in the same folder as the videos. 
 
 !!! tip
-    We recommend regularly saving the progress of the project while it is still being processed. This prevents possible loss of data. The Save button automatically saves the file to the last selected location. If it is colored orange, changes have been made.
+    We recommend regularly saving the progress of the project while it is still being processed. This prevents possible loss of data. The *Save* button automatically saves the file to the last selected location. If it is colored in orange, changes have been made.
 
     We also recomment to store all project related files (videos, otdet, ottrk and otconfig) in the same folder.
 
 ## Definition of the traffic flows to be analyzed
 
-A traffic flow depicts the directional travel relationship between two areas in the video image. The areas are defined with so-called sections. A flow always consists of two sections (a start section and an end section). In order to define flows, the sections must first be created. The flows can then be assigned to the created or edited sections.
+A traffic flow depicts the directional travel relationship between two sections. A flow always consists of two sections (a start section and an end section). In order to define flows, the sections must first be created. The flows can then be assigned to the created or edited sections.
 
 ### Sections
 
-Sections can consist of any number of support points (shown as a circle). They are drawn directly in the background image in OTAnalytics. To do this, the Sections tab must first be selected in the Sections/Flows section.
+Sections can consist of any number of support points (shown as a circle). They are drawn directly in the background image in OTAnalytics. To do this, the *Sections* tab must first be selected in the Sections/Flows section.
 
 !!! tip
-    Line sections and area sections can be created. If no occupancy durations (e.g. of parking areas) are detected, but only crossings, line sections should always be selected. 
+    Line sections and area sections can be created. If no occupancy durations (e.g., of parking areas) are analyzed, but only crossings, line sections should always be used. 
     
     The following example is limited to line sections. However, the procedure described can also be applied to area sections. The only difference is that the polygon is automatically closed when the add mode is exited.
 
@@ -91,12 +91,12 @@ Sections can consist of any number of support points (shown as a circle). They a
 
 A new line section is added in the following steps:
 
-1. Left-click on the Add line button, which starts the add mode. 
+1. Left-click on the *Add line* button, which starts the add mode. 
 1. Set the first point by left-clicking at the correct position in the video image. The point is now fixed. Further points can be added to the section by moving the mouse and left-clicking again. A section must consist of at least two points.
-1. Once the desired length and shape of a section has been reached, right-click or press the Enter key to exit Add mode.
-1. Pressing the Escape key cancels Add mode without saving the previously created section.
+1. Once the desired length and shape of a section has been reached, right-click or press the *Enter* key to exit Add mode.
+1. Pressing the *Escape* key cancels add mode without saving the previously created section.
 1. A pop-up window opens. Enter the name for the section in this window and confirm. The name is reused in the analysis.
-1. The created section appears with the assigned name in the Sections subsection.
+1. The created section appears with the assigned name in the sections subsection.
 1. Repeat the process to add further sections.
 
 !!! warning
@@ -109,7 +109,7 @@ A new line section is added in the following steps:
 The geometry of sections that have already been created can be changed using the following procedure:
 
 1. First select the section to be changed in the list. 
-1. Then start the change mode by left-clicking on the Edit button. The breakpoints are now visible. 
+1. Then start the change mode by left-clicking on the *Edit* button. The supporting points are now visible. 
 1. Support points can now be selected by left-clicking and reset as in add mode. The + button can be used to add another support point.
 
 The selected point “sticks” to the mouse pointer until the left mouse button is pressed. The old geometry is displayed as a dashed reference.
@@ -117,41 +117,41 @@ The selected point “sticks” to the mouse pointer until the left mouse button
 1. Right-click to exit change mode and save the changes.
 1. Pressing the Escape button exits the change mode without saving the changes to the geometry. 
 
-#### Change the name of a section
+#### Change attributes of a section
 
-The name of a section can be changed by clicking on the Properties button. To do this, the desired section must first be selected from the list.
+The attributes (name and offset) of a section can be changed by clicking on the *Properties* button. To do this, the desired section must first be selected from the list.
 
 #### Remove a section
 
-A section can be removed by clicking on the Remove button. To do this, the desired section must first be selected in the list and must not be assigned to a flow.
+A section can be removed by clicking on the *Remove* button. To do this, the desired section must first be selected in the list and must not be assigned to a flow.
 
 ### Flows
 
-A flow always consists of exactly two sections: a start section and an end section. To edit flows, the Flows tab must first be selected in the Sections/Flows section.
+A flow always consists of exactly two sections: a start section and an end section. To edit flows, the *Flows* tab must first be selected in the Sections/Flows section.
 
 #### Add Flows
 
 A new flow is added in the following steps:
 
-1. Left-click on the Add button. A pop-up window opens. The appropriate sections can be selected from the drop-down menu. 
-1. The start point of the flow is defined as the First section.
+1. Left-click on the *Add* button. A pop-up window opens. The appropriate sections can be selected from the drop-down menu. 
+1. The start point of the flow is defined as the first section.
 1. The end point of the flow is defined as the second section.
-1. The name is automatically set in the Name field after selecting the two sections. This can be changed as required. The name is reused in the analysis.
+1. The name is automatically set in the *Name* field after selecting the two sections. This can be changed as required. The name is reused in the analysis.
 
-!!! tip
+!!! warning
     A name can only be assigned once, duplicate names of several flows are not possible.
 
-    Alternatively, flows can also be generated automatically using the Generate button. Flows are then generated for all possible combinations of start and end sections. The standard naming convention is Name_Startsection --> Name_Endsection.
+    Alternatively, flows can also be generated automatically using the *Generate* button. Flows are then generated for all possible combinations of start and end sections. The standard naming convention is Name_Startsection --> Name_Endsection.
 
 ![Add Flows](usage-ui/add-flow.png)
 
 #### Edit Flows
 
-To edit a flow, it must first be selected in the list. Then left-click on the Properties button to open the same pop-up window as when creating a flow. The desired changes can now be made. 
+To edit a flow, it must first be selected in the list. Then left-click on the *Properties* button to open the same pop-up window as when creating a flow. The desired changes can now be made. 
 
 #### Remove Flows
 
-To remove a flow, it must first be selected in the list. Left-click on the Remove button to remove the selected flow.
+To remove a flow, it must first be selected in the list. Left-click on the *Remove* button to remove the selected flow.
 
 ## Visualization layers
 
@@ -161,12 +161,12 @@ Visualization layers are used to refine traffic analysis by offering specific vi
 
 This layer shows a frame of the video as a background image.
 The currently shown frame can be configured using the filter.
-If a filter is set, the frame at the end date is shown.
+If a filter is set, the frame at the end of the filter is shown.
 Otherwise, the first frame of the selected video is shown.
 
 ### Show tracks
 
-This group shows the trajectory of tracks. The tracks to be shown can vary in different flavours.
+This group shows the trajectory of tracks. The tracks to be shown can vary in different flavors.
 
 === "All"
     All tracks are shown.
@@ -174,7 +174,7 @@ This group shows the trajectory of tracks. The tracks to be shown can vary in di
     ![Show all tracks](usage-ui/show-tracks-all.png)
 
 === "Intersecting sections"
-    Tracks intersection at least one of the selected sections are shown.
+    Tracks intersecting at least one of the selected sections are shown.
 
     ![Show tracks intersecting the selected sections](usage-ui/show-tracks-intersecting-sections.png)
 
@@ -203,7 +203,7 @@ This group shows the start and end points of tracks. The tracks to be shown can 
     ![Show start and end points of all tracks](usage-ui/show-start-end-points-all.png)
 
 === "Intersecting sections"
-    Start and end points of tracks intersection at least one of the selected sections are shown.
+    Start and end points of tracks intersecting at least one of the selected sections are shown.
 
     ![Show start and end points of tracks intersecting the selected sections](usage-ui/show-start-end-points-intersecting-sections.png)
 
@@ -227,24 +227,24 @@ This group shows the start and end points of tracks. The tracks to be shown can 
 This group visualizes the detections of a single frame in different flavors.
 
 === "Bounding Box"
-    Show the bounding boxes of all detections in the currently visible frame.
+    The bounding boxes of all detections in the currently visible frame are shown.
 
     ![Show bounding box of detections in the current frame](usage-ui/show-detections-bounding-boxes.png)
 
 === "Track point"
-    Show the track points of all detections in the currently visible frame.
+    The track points of all detections in the currently visible frame are shown.
 
     ![Show track points of detections in the current frame](usage-ui/show-detections-track-point.png)
 
 ### Show events
 
 === "Current filter"
-    Show track points of all events within the filter range.
+    The track points of all events within the filter range are shown.
     
     ![Show events in the current filter](usage-ui/show-events-current-filter.png)
 
 === "Current frame"
-    Show all events within the range of the current frame.
+    All events within the range of the current frame are shown.
 
     ![Show events in the current filter](usage-ui/show-events-current-frame.png)
 
@@ -258,7 +258,7 @@ As the number of hours analyzed increases, distinguishing individual tracks in t
 ### Filter by Time
 
 Filter tracks based on time and date. All tracks with a start time on or after the start date and an end time on or before the end date will remain in the dataset.
-The **<** and **>** buttons located to the right of the filter button allow you to shift the filter forward or backward by the same duration. For more precise adjustments, the **<** and **>** buttons within the Date Filter Control panel enable finer control over the filter's position.
+The *<* and *>* buttons located to the right of the filter button allow you to shift the filter forward or backward by the filter's duration. For more precise adjustments, the *<* and *>* buttons below enable finer control over the filter's position.
 
 ![Configure filter](usage-ui/add-filter.png)
 
@@ -266,7 +266,9 @@ The **<** and **>** buttons located to the right of the filter button allow you 
 
 Filter tracks based on the track classification.
 
-## Analysis / Export
+## Analysis and Export
+
+After all sections and flows have been configured, the analysis can be exported.
 
 !!! tip
     We recommend using the various layers described in [Visualization layers](#visualization-layers) to gain detailed insights into the data before exporting it.
@@ -277,28 +279,28 @@ Events can be exported into a single file in one of the following formats: CSV, 
 
 - **CSV**: Contains the event data in a format that can be read by many software products.
 - **Excel**: Includes the event data along with additional information about the sections used to generate the events.
-- **otevents**: A bzip2-compressed JSON file that contains the event data, additional metadata collected during processing, and details about the sections used to generate the events.
+- **otevents**: A bzip2-compressed JSON file that contains the event data, additional information about the sections used to generate the events, and metadata collected during processing.
 
 The export includes the following values for each event:
 
-| Value           | Datatype  | Description                                                   | Example                                       |
-|-----------------|-----------|---------------------------------------------------------------|-----------------------------------------------|
-| road_user_id    | string    | Unique identifier for the track / road user                   | 5f8cd584-f490-4fec-afd0-b55ebf39ab4e#0#102341 |
-| road_user_type  | string    | Track classification of the road user (e.g., car, pedestrian) | car                                           |
-| hostname        | string    | Name of the camera or device capturing the data               | OTCamera19                                    |
-| occurrence      | string    | Timestamp of the event in date and time format                | 2023-05-24 11:45:00.000000                    |
-| frame_number    | int       | Frame number of the video corresponding to the event          | 1                                             |
-| section_id      | string    | Identifier for the section                                    | 1                                             |
-| event_type      | string    | Type of event (e.g., enter-scene, leave-scene)                | enter-scene, leave-scene, enter-section       |
-| video_name      | string    | Name of the video file where the event was recorded           | OTCamera19_FR20_2023-05-24_11-45-00.mp4       |
-| occurrence_sec  | timestamp | Time of the event in seconds since the epoch                  | 1684928700.0                                  |
-| coordinate_px_x | float     | X-coordinate of the road user in pixels                       | 142.60128784179688                            |
-| coordinate_px_y | float     | Y-coordinate of the road user in pixels                       | 199.48948669433594                            |
-| vector_px_x     | float     | X-component of the road user's movement vector                | -0.2536773681640625                           |
-| vector_px_y     | float     | Y-component of the road user's movement vector                | 0.075958251953125                             |
-| section_name    | string    | Name of the section where the event occurred                  | north                                         |
-| occurrence_day  | string    | Day of the event in date format                               | 2023-05-24                                    |
-| occurrence_time | string    | Time of the event in time format                              | 11:45:00.000000                               |
+| Value           | Datatype          | Description                                                                                                 | Example                                       |
+|-----------------|-------------------|-------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
+| road_user_id    | string            | Unique identifier for the track / road user                                                                 | 5f8cd584-f490-4fec-afd0-b55ebf39ab4e#0#102341 |
+| road_user_type  | string            | Track classification of the road user (e.g., car, pedestrian)                                               | car                                           |
+| hostname        | string            | Name of the camera or device capturing the data                                                             | OTCamera19                                    |
+| occurrence      | string            | Timestamp of the event in date and time format                                                              | 2023-05-24 11:45:00.000000                    |
+| frame_number    | int               | Frame number of the video corresponding to the event                                                        | 1                                             |
+| section_id      | string (optional) | Identifier for the section. Not available for the event types enter-scene and leave-scene                   | 1                                             |
+| event_type      | string            | Type of event (enter-scene, leave-scene, enter-section, leave-section)                                      | enter-section                                 |
+| video_name      | string            | Name of the video file where the event was recorded                                                         | OTCamera19_FR20_2023-05-24_11-45-00.mp4       |
+| occurrence_sec  | timestamp         | Time of the event in seconds since the epoch                                                                | 1684928700.0                                  |
+| coordinate_px_x | float             | X-coordinate of the road user in pixels                                                                     | 142.60128784179688                            |
+| coordinate_px_y | float             | Y-coordinate of the road user in pixels                                                                     | 199.48948669433594                            |
+| vector_px_x     | float             | X-component of the road user's movement vector                                                              | -0.2536773681640625                           |
+| vector_px_y     | float             | Y-component of the road user's movement vector                                                              | 0.075958251953125                             |
+| section_name    | string (optional) | Name of the section where the event occurred. Not available for the event types enter-scene and leave-scene | north                                         |
+| occurrence_day  | string            | Day of the event in date format                                                                             | 2023-05-24                                    |
+| occurrence_time | string            | Time of the event in time format                                                                            | 11:45:00.000000                               |
 
 ### Export Traffic Count
 
@@ -308,23 +310,23 @@ Traffic count is based on the assignment of tracks to flows. It can be exported 
 
 The CSV file includes the following values:
 
-| Value                 | Datatype | Description                                                           | Example             |
-|-----------------------|----------|-----------------------------------------------------------------------|---------------------|
-| start time            | string   | Timestamp indicating the start of the interval                        | 2023-05-24 11:45:00 |
-| start occurrence date | string   | Date at the start of the interval                                     | 2023-05-24          |
-| start occurrence time | string   | Time at the start of the interval                                     | 11:45:00            |
-| end time              | string   | Timestamp indicating the end of the interval                          | 2023-05-24 12:00:00 |
-| end occurrence date   | string   | Date at the end of the interval                                       | 2023-05-24          |
-| end occurrence time   | string   | Time at the end of the interval                                       | 12:00:00            |
-| classification        | string   | The track classification of the road user (e.g., car, bicyclist)      | bicyclist           |
-| flow                  | string   | Direction of traffic flow, specifying origin and destination sections | south --> east      |
-| from section          | string   | Name of the section where the traffic originated                      | south               |
-| to section            | string   | Name of the section where the traffic was directed                    | east                |
-| count                 | int      | Number of road users recorded during the interval                     | 1                   |
+| Value                 | Datatype | Description                                                              | Example             |
+|-----------------------|----------|--------------------------------------------------------------------------|---------------------|
+| start time            | string   | Timestamp indicating the start of the interval                           | 2023-05-24 11:45:00 |
+| start occurrence date | string   | Date at the start of the interval                                        | 2023-05-24          |
+| start occurrence time | string   | Time at the start of the interval                                        | 11:45:00            |
+| end time              | string   | Timestamp indicating the end of the interval                             | 2023-05-24 12:00:00 |
+| end occurrence date   | string   | Date at the end of the interval                                          | 2023-05-24          |
+| end occurrence time   | string   | Time at the end of the interval                                          | 12:00:00            |
+| classification        | string   | The track classification of the track / road user (e.g., car, bicyclist) | bicyclist           |
+| flow                  | string   | Direction of traffic flow, specifying origin and destination sections    | south --> east      |
+| from section          | string   | Name of the section where the traffic originated                         | south               |
+| to section            | string   | Name of the section where the traffic was directed                       | east                |
+| count                 | int      | Number of tracks / road users recorded during the interval               | 1                   |
 
 ### Export Road User Assignments
 
-In case no aggregation of tracks to traffic volumes is required, but the assignment strategy of OTAnalytics should be used. All tracks assigned to flows can be exported using the Export Road User Assignments Button. The tracks assigned to flows are exported into a CSV file with the following format:
+In case no aggregation of tracks to traffic volumes is required, but the assignment strategy of OTAnalytics should be used. All tracks assigned to flows can be exported using the *Export road user assignments...* Button. The tracks assigned to flows are exported into a CSV file with the following format:
 
 | Value                 | Datatype  | Description                                                              | Example                                       |
 |-----------------------|-----------|--------------------------------------------------------------------------|-----------------------------------------------|
@@ -358,4 +360,4 @@ In case no aggregation of tracks to traffic volumes is required, but the assignm
 
 ### Track Statistics
 
-This is a CSV export of the track statistics show in the workspace below the camera image.
+This is a CSV export of the track statistics shown in the workspace below the camera image.
