@@ -27,7 +27,7 @@ The trajectory is formed by connecting the track points collected across success
 !!! info inline end "Track Point examples"
     === "0.1, 0.1"
         ![Offset x=0.1, y=0.1](usage-ui/offset-x-0-1-y-0-1.png){ align=left }
-    
+
     === "0.8, 0.3"
         ![Offset x=0.8, y=0.3](usage-ui/offset-x-0-8-y-0-3.png){ align=left }
 
@@ -74,7 +74,7 @@ It is possible to enter in ISO 8601 format (YYYY-MM-DD) or German date format (D
 !!! info
     OTAnalytics assumes that all selected videos are contiguous in time.
     If the videos to be processed have a time gap (e.g., videos from three days from 6:00 a.m. to 10:00 p.m.), several projects with chronologically contiguous videos must be created.
-    
+
     It is recommended to choose a unique name (e.g. name of the measuring point, camera number; or a combination of several unique details).
 
 To analyze tracks in OTAnalytics, you must load the track files (.ottrk).
@@ -126,7 +126,7 @@ To do this, the *Sections* tab must first be selected in the Sections/Flows sect
 !!! tip
     Line sections and area sections can be created.
     If no occupancy durations (e.g., of parking areas) are analyzed, but only crossings, line sections should always be used.
-    
+
     The following example is limited to line sections.
     However, the procedure described can also be applied to area sections.
     The only difference is that the polygon is automatically closed when the add mode is exited.
@@ -298,7 +298,7 @@ This group visualizes the detections of a single frame in different flavors.
 
 === "Current filter"
     The track points of all events within the filter range are shown.
-    
+
     ![Show events in the current filter](usage-ui/show-events-current-filter.png)
 
 === "Current frame"
