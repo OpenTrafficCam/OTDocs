@@ -70,14 +70,14 @@ nav:
           #- Getting Started:
           - OTAnalytics/gettingstarted/requirements.md
           - OTAnalytics/gettingstarted/installation.md
-              #- OTAnalytics/gettingstarted/firstuse.md
+            #- OTAnalytics/gettingstarted/firstuse.md
           - OTAnalytics/usage-ui.md
-#          - OTAnalytics/otconfig.md
-#          - Usage:
-#              - OTAnalytics/usage/sections.md
-#              - OTAnalytics/usage/events.md
-#          - Accuracy:
-#              - OTAnalytics/Accuracy/counts.md
+      #          - OTAnalytics/otconfig.md
+      #          - Usage:
+      #              - OTAnalytics/usage/sections.md
+      #              - OTAnalytics/usage/events.md
+      #          - Accuracy:
+      #              - OTAnalytics/Accuracy/counts.md
 
       - OTLabels:
           - OTLabels/index.md
