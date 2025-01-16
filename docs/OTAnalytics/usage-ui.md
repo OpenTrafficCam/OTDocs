@@ -1,6 +1,6 @@
 # Usage UI
 
-After processing videos with [OTVision track](../../OTVision/usage/track), you can use OTAnalytics for data analysis. The OTAnalytics interface enables you to configure analyses, extract valuable insights from your data, and export the results efficiently.
+After processing videos with OTVisionÄS tracking module ([OTVision track](../../OTVision/usage/track)), you can use OTAnalytics for data analysis. The OTAnalytics interface enables you to configure analyses, extract valuable insights from your data, and export the results efficiently.
 
 ## Terminology
 
@@ -58,9 +58,9 @@ To analyze tracks in OTAnalytics, you must load the track files (.ottrk). This c
 Alternatively, you can add videos only. This is particularly useful for configuring an analysis handled by the platomo team. To add videos, use the *Add...* button, and to remove them from the configuration, use the *Remove* button.
 
 !!! tip
-    Added videos are displayed in alphabetical order in the “Videos” overview panel and are later processed in this order. The videos should therefore be named in such a way that the chronological order matches the alphabetical order.
+    Added videos are displayed in alphabetical order in the “Videos” overview panel and are later processed in this order. The videos should therefore be named in such a way that the chronological order matches the alphabetical order. Additional zero-padding (e.g., `01`, `02`) is helpful if you want to ensure correct alphabetical sorting.
 
-When a video is clicked in the overview in the configuration bar, the first image of the video is displayed as the background image. This allows you to check whether all videos have been selected correctly.
+When you click a video in the configuration bar, the first image of the video is displayed as the background image. This allows you to check whether all videos have been selected correctly.
 
 ### Save to configuration file (otconfig file) 
 
