@@ -100,7 +100,7 @@ This allows you to check whether all videos have been selected correctly.
 Once all the required videos have been added and all the flows have been created, the project is saved.
 
 1. Click on the *Save as...* button in the Project section of the configuration bar.
-1. Select a suitable filename in the file browser and save it in the same folder as the videos.
+1. Select a suitable filename in the file browser and save it in the same folder as the videos. 
 
 !!! tip
     We recommend regularly saving the progress of the project while it is still being processed.
@@ -109,6 +109,11 @@ Once all the required videos have been added and all the flows have been created
     If it is colored in orange, changes have been made.
 
     We also recomment to store all project related files (videos, otdet, ottrk and otconfig) in the same folder.
+
+!!! info
+    An otconfig files stores all information necessary to reload the project in OTAnalytics. 
+    An otflow file stores only information about the sections and flows. 
+    Hence, it can be reused / imported into other project with different videos of the same measurement site.
 
 ## Definition of the traffic flows to be analyzed
 
