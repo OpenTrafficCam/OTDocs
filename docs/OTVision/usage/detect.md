@@ -141,8 +141,8 @@ This parameter is optional and defaults to `--overwrite`.
 
 ### detect_start
 
-`--detect_start` to specify the start time of the detection in seconds. 
-Frames occurring before the specified start time will be excluded from the detection 
+`--detect_start` to specify the start time of the detection in seconds.
+Frames occurring before the specified start time will be excluded from the detection
 process.
 
 This parameter is optional and defaults to `None`.
@@ -150,7 +150,7 @@ This parameter is optional and defaults to `None`.
 ### detect_end
 
 `--detect_end` to specify the end time of the detection in seconds.
-Frames occurring after the specified end time will be excluded from the detection 
+Frames occurring after the specified end time will be excluded from the detection
 process.
 
 This parameter is optional and defaults to `None`.
