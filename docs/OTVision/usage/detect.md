@@ -43,7 +43,7 @@ One or multiple paths to video files or folders containing video files.
 
 This parameter is required to run `detect.py`.
 It has to be specified either using the CLI or in the
-[configuration](../advanced_usage/configuration.md) yaml file.
+[configuration](../advanced_usage/configuration.md) YAML file.
 
 ### expected_duration (required)
 
@@ -54,7 +54,7 @@ This parameter helps to avoid errors if some images are missing in a video.
 
 This parameter is required to run `detect.py`.
 It has to be specified either using the CLI or in the
-[configuration](../advanced_usage/configuration.md) yaml file.
+[configuration](../advanced_usage/configuration.md) YAML file.
 
 ### config
 
@@ -64,7 +64,7 @@ or
 
 `--config "path/to/config file"`
 
-Path to a custom user [configuration](../advanced_usage/configuration.md) yaml file.
+Path to a custom user [configuration](../advanced_usage/configuration.md) YAML file.
 Other parameters (including `paths`) are parsed from this configuration file.
 
 This parameter is optional.
