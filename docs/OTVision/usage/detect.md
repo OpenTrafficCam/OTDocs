@@ -150,7 +150,7 @@ This parameter is optional and defaults to `None`.
 ### detect_end
 
 `--detect_end` to specify the end time of the detection in seconds.
-Frames occurring after the specified end time will be excluded from the detection
+Frames occurring at or after the specified end time will be excluded from the detection
 process.
 
 This parameter is optional and defaults to `None`.
