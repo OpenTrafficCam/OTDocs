@@ -19,13 +19,13 @@ you are ready to start the detection of the road users in each video frame.
 ### paths (required)
 
 !!! info "Filename convention"
-  
+
     To prevent to set the start date and time in the config file for each individual
     video file, the current version of OTVision reads the start date and time from
     the video filenames.
 
     Video files recorded by OTCamera already contain the start date and time in the
-    filename. 
+    filename.
 
     In case you use OTVision to process video files recorded by
     **other camera systems**,
@@ -75,8 +75,8 @@ configuration file is specified, the default values of the parameters as
 described below are used.
 
 !!! warning
-    Any parameter passed to the CLI will overwrite the respective parameter from
-    the config file.
+Any parameter passed to the CLI will overwrite the respective parameter from
+the config file.
 
 ### weights
 
@@ -154,4 +154,3 @@ Frames occurring after the specified end time will be excluded from the detectio
 process.
 
 This parameter is optional and defaults to `None`.
-
