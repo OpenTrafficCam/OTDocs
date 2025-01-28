@@ -67,7 +67,7 @@ nav:
 
       - OTAnalytics:
           - OTAnalytics/index.md
-          - OTAnalytics/gettingstarted/installation.md
+          - OTAnalytics/installation.md
           - OTAnalytics/usage-ui.md
       #          - OTAnalytics/otconfig.md
       #          - Accuracy:
