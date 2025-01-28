@@ -48,7 +48,7 @@ Visit [OTAnalytic´s latest releases on Github][1], scroll down to the list of a
 
 Unzip the file to a location of your choice (preferably local).
 
-Open a terminal window (or command prompt) and navigate to the unzipped folder and run the install script as follows:
+Open a terminal window (or command prompt), navigate to the unzipped folder and run the install script as follows:
 
 === "Windows"
 
@@ -83,7 +83,7 @@ Run the start script as follows:
 
 ## What else?
 
-If youe encounter problems, have questions or like to express feature requests, please [open an issue](https://github.com/OpenTrafficCam/OTAnalytics/issues/new) on GitHub.
+If you encounter problems, have questions or like to request features, please [open an issue](https://github.com/OpenTrafficCam/OTAnalytics/issues/new) on GitHub.
 
 We welcome code contributions (e.g. fixing bugs or adding features) by the community.
 
