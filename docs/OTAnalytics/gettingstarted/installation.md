@@ -53,7 +53,7 @@ Make sure you at least add the following boxes:
 
 ## Download and install OTAnalytics
 
-Visit [OTAnalytic´s latest releases on Github][1], scroll down to the list of assets and download the correct "otanalytics" zip file for your platform.
+Visit [OTAnalytics latest releases on GitHub][1], scroll down to the list of assets and download the correct "otanalytics" `.zip` file for your platform.
 
 Unzip the file to a location of your choice (preferably local).
 
