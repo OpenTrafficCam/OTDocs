@@ -21,6 +21,15 @@
     Neither the authors nor contributors assume any responsibility for damages resulting from the use of this software.
     For more details, refer to Sections 15 and 16 of the GNU GPL-3.0.
 
+## Hardware requirements
+
+OTAnalytics runs on most modern desktops and laptops (e.g. with an i5 processor and 8 GB of RAM).
+
+Please note:
+
+- More RAM allows you to load more tracks of road users simultaneously.
+- A faster processor will improve the runtime of the analyses and make the user interface more responsive.
+
 ## Download and install Python 3.11
 
 If not done yet, visit [www.python.org/downloads/](https://www.python.org/downloads/) and install Python 3.11.x for your platform.
