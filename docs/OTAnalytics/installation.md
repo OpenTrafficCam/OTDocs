@@ -30,7 +30,7 @@ Please note:
 - More RAM allows you to load more tracks of road users simultaneously.
 - A faster processor will improve the runtime of the analyses and make the user interface more responsive.
 
-## Download and install Python 3.11
+## Install Python 3.11
 
 If not done yet, visit [www.python.org/downloads/](https://www.python.org/downloads/) and install Python 3.11.x for your platform.
 
@@ -51,7 +51,7 @@ Make sure you at least add the following boxes:
     - Shell profile updater
     - Install or upgrade pip
 
-## Download and install OTAnalytics
+## Install OTAnalytics
 
 Visit [OTAnalytics latest releases on GitHub][1], scroll down to the list of assets and download the correct "otanalytics" `.zip` file for your platform.
 
