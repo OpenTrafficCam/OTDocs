@@ -71,8 +71,8 @@ With the **Visualization Filters** located below the workspace, one can adjust *
 
 ## Setup the project
 
-To make the handling and reproducibility of analyses easier, all related data is organized within a project. 
-Setting up a project ensures that all necessary information, such as videos, tracks, and configurations, is stored in one centralized place. 
+To make the handling and reproducibility of analyses easier, all related data is organized within a project.
+Setting up a project ensures that all necessary information, such as videos, tracks, and configurations, is stored in one centralized place.
 This simplifies workflows and maintains consistency across analyses.
 
 ### Enter project information
@@ -182,7 +182,7 @@ To select a specific section, click on its name in the list of sections.
 The selected section is now highlighted both in the list and on the canvas.
 
 You can also select multiple sections with *left-click* + *ctrl* on Windows or *cmd* on macOS.
-Deselect a single with *right-click* + *ctrl* on Windows or *cmd* on macOS or deselect all sections with *right-click* into a empty place in the list. 
+Deselect a single with *right-click* + *ctrl* on Windows or *cmd* on macOS or deselect all sections with *right-click* into a empty place in the list.
 
 #### Change the geometry of a section
 
@@ -248,7 +248,7 @@ To select a specific flow, click on its name in the list of flows.
 The selected flow is now highlighted both in the list and on the canvas (by an arrow indicating its direction).
 
 You can also select multiple flows with *left-click* + *ctrl* on Windows or *cmd* on macOS.
-Deselect a single with *right-click* + *ctrl* on Windows or *cmd* on macOS or deselect all sections with *right-click* into a empty place in the list. 
+Deselect a single with *right-click* + *ctrl* on Windows or *cmd* on macOS or deselect all sections with *right-click* into a empty place in the list.
 
 #### Edit a flow
 
@@ -272,7 +272,7 @@ The visualization layers are organized into groups.
     Some visualization layers are not updated automatically, when you change the configuration of the project or the sections/flows.
 
     If the visualization is **outdated**, just hit the *Update flow highlighting* button - calculations will be run and visulalization will be updated.
-    
+
 ### Background
 
 This layer shows a frame of the video as a background image.
