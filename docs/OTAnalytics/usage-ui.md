@@ -1,4 +1,4 @@
-# Usage
+# Usage UI
 
 After processing videos with OTVision´s tracking module ([OTVision track](../../OTVision/usage/track)), you can use OTAnalytics for analysing traffic data.
 The OTAnalytics interface enables you to configure analyses, extract valuable insights from your data, and export the results efficiently.
