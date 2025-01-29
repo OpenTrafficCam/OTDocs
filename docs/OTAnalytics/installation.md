@@ -53,7 +53,8 @@ Please make sure to include at least the following boxes:
 
 ## Install OTAnalytics
 
-Visit [OTAnalytics latest releases on GitHub][1], scroll down to the list of assets and download the correct "otanalytics" `.zip` file for your platform.
+Visit [OTAnalytics latest releases on GitHub](https://github.com/OpenTrafficCam/OTAnalytics/releases/latest),
+ scroll down to the list of assets and download the correct "otanalytics" `.zip` file for your platform.
 
 Unzip the file to a location of your choice (preferably local).
 
@@ -98,5 +99,3 @@ We welcome code contributions (e.g. fixing bugs or adding features) by the commu
 If you consider contributing, please check the [contribute section](https://opentrafficcam.org/contribute/) of this documentation first.
 
 If you like to receive professional support, please have a look at our [services](https://opentrafficcam.org/pricing/) or [contact us](mailto:team@opentrafficcam.org) for more information.
-
-[1]: https://github.com/OpenTrafficCam/OTAnalytics/releases/latest
