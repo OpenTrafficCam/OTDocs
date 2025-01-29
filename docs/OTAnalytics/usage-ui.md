@@ -34,7 +34,7 @@ Origin `(0, 0)` is the top left-hand corner of the bounding box.
 These values determine the relative position of the track point within the bounding box, providing flexibility in track point placement.
 
 To analyze the tracks, OTAnalytics provides **Sections** and **Flows**.
-Imagine sections as the digital equivalent of physical detectors used for traffic measurement (not to be confused with the detection of bounding boxes in OTVision).
+Imagine sections as the digital equivalent of physical detectors used for traffic measurement, sometimes, also called virtual inductive loops (not to be confused with the detection of bounding boxes in OTVision).
 Each time a track's trajectory intersects a section, an **Event** is generated.
 Each event contains detailed information, including the track's identifier, its position in the frame, and the timestamp of the intersection.
 
@@ -51,12 +51,12 @@ The assignment of a track to a flow is called **Track Assignment**.
 
 The user interface is divided into four main areas: the **Configuration Bar**, **Workspace**, **Visualization Layers**, and **Visualization Filters**.
 
-The **Configuration Bar** consists of four sections:
+The **Configuration Bar** consists of four parts:
 
-1. **Project**: Manage project metadata and save or load `.otflow` or `.otconfig` files.
+1. **Project**: Manage project metadata and save or load `.otconfig` or `.otflow` files.
 2. **Tracks/Video**: Add input files, where only track files can be added, while video files can be both added and removed. An overview of loaded video files is also displayed.
 3. **Sections/Flows**: Create, edit, and delete sections and flows. The flow names are shown with numbers indicating the number of assigned tracks per flow.
-4. **Analysis**: Start the export of analyzed data.
+4. **Analysis**: Export of analyzed traffic data.
 
 The **Workspace** consists of the **Canvas** and the **Track Statistics**.
 The canvas displays the tracks and video frames.
@@ -70,6 +70,10 @@ With the **Visualization Filters** located below the workspace, one can adjust *
 ![User Interface of OTAnalytics](usage-ui/user-interface.png)
 
 ## Setup the project
+
+To make the handling and reproducibility of analyses easier, all related data is organized within a project. 
+Setting up a project ensures that all necessary information, such as videos, tracks, and configurations, is stored in one centralized place. 
+This simplifies workflows and maintains consistency across analyses.
 
 ### Enter project information
 
@@ -133,7 +137,7 @@ When you return later, you can reopen the project using the *Open ...* button.
 
 ## Configure traffic analysis
 
-To perform traffic analyses with OTAnalytics, sections and, in many cases, flows are needed.
+To perform traffic analyses with OTAnalytics, sections and flows are needed.
 A traffic flow depicts the directional travel relationship between two sections.
 Each flow always consists of two sections: A start section and an end section.
 Before defining flows, you must create the sections.
@@ -163,7 +167,7 @@ A new line section is added in the following steps:
 1. Once the desired length and shape of a section has been reached, right-click or press the *Enter* key to exit Add mode.
    (Pressing the *Escape* key cancels add mode without saving the previously created section.)
 1. A pop-up window opens. Enter the name for the section in this window and confirm. The name is reused in the analysis.
-1. The created section appears with the assigned name in the sections subsection.
+1. The created section appears with the assigned name in the sections part in the configuration bar.
 1. Repeat the process to add further sections.
 
 !!! warning
@@ -178,7 +182,7 @@ To select a specific section, click on its name in the list of sections.
 The selected section is now highlighted both in the list and on the canvas.
 
 You can also select multiple sections with *left-click* + *ctrl* on Windows or *cmd* on macOS.
-Deselect with *right-click* + *ctrl* on Windows or *cmd* on macOS.
+Deselect a single with *right-click* + *ctrl* on Windows or *cmd* on macOS or deselect all sections with *right-click* into a empty place in the list. 
 
 #### Change the geometry of a section
 
@@ -194,9 +198,6 @@ The old geometry is displayed as a dashed reference.
 
 1. Right-click to exit change mode and save the changes.
 1. Pressing the Escape button exits the change mode without saving the changes to the geometry.
-
-<!-- !!! tip -->
-<!--    If a support point is selected, you can change its position in the order using the left or right arrow keys.-->
 
 #### Change attributes of a section
 
@@ -247,7 +248,7 @@ To select a specific flow, click on its name in the list of flows.
 The selected flow is now highlighted both in the list and on the canvas (by an arrow indicating its direction).
 
 You can also select multiple flows with *left-click* + *ctrl* on Windows or *cmd* on macOS.
-Deselect with *right-click* + *ctrl* on Windows or *cmd* on macOS.
+Deselect a single with *right-click* + *ctrl* on Windows or *cmd* on macOS or deselect all sections with *right-click* into a empty place in the list. 
 
 #### Edit a flow
 
@@ -259,7 +260,7 @@ The desired changes can now be made.
 
 To remove a flow, it must first be selected in the list.
 Left-click on the *Remove* button to remove the selected flow.
-You can use multiselect to remove multiple sections at once.
+You can use multiselect to remove multiple flows at once.
 
 ## Visualization layers
 
@@ -270,12 +271,8 @@ The visualization layers are organized into groups.
 !!! warning
     Some visualization layers are not updated automatically, when you change the configuration of the project or the sections/flows.
 
-    If the visualization is **outdated**, this is indicated by the button *Update flow highlighting* **colored in orange**.
+    If the visualization is **outdated**, just hit the *Update flow highlighting* button - calculations will be run and visulalization will be updated.
     
-    To fix this, just hit that button - calculations will be run and visulalization will be updated.
-    
-    If the button is colored in green, everything is fine :)
-
 ### Background
 
 This layer shows a frame of the video as a background image.
@@ -394,8 +391,8 @@ Additionally, the event locations themselves can serve as an interesting focus f
 
 ## Visualization filters
 
-As the number if analyzed video hours grows, distinguishing individual tracks in the visualization becomes increasingly difficult.
-Filters enable you to reduce the number of displayed tracks, making the visualization more focused and easier to manage.
+As the number of analyzed video hours grows, distinguishing individual tracks in the visualization becomes increasingly difficult.
+Filters enable you to reduce the number of displayed track and the part of the track which is shown, making the visualization more focused and easier to manage.
 
 !!! info
     Filters are applied only to the visualization in the workspace and to the calculation of track statistics displayed below.
@@ -404,13 +401,13 @@ Filters enable you to reduce the number of displayed tracks, making the visualiz
 ### Filter by Time
 
 Filter tracks based on time and date.
-Only tracks that are entirely within the date/time range will be displayed.
+Only track points that are within the date/time range will be displayed.
 
 You can toggle the filter by checking/unchecking the box left to the *Filter by date* button.
 By clicking the *Filter by date* button, a popup appears where you can enter a custom date/time range.
 
 The *<* and *>* buttons to the right of the *Filter by date* button allow you to shift the filter forward or backward by its current duration.
-For more precise adjustments, use the *<* and *>* buttons below to fine tune the filter's position (Seconds, Frames, Events).
+For more precise adjustments, use the *<* and *>* buttons below to fine-tune the filter's position (Seconds, Frames, Events).
 
 ![Configure filter](usage-ui/add-filter.png)
 
@@ -440,7 +437,7 @@ You can specify the start and end date and time, as well as the interval for agg
 
 ![Configure export](usage-ui/configure-export-counts.png)
 
-The CSV file includes the following values:
+The `.csv` file includes the following values:
 
 | Value                 | Datatype | Description                                                           | Example             |
 | --------------------- | -------- | --------------------------------------------------------------------- | ------------------- |

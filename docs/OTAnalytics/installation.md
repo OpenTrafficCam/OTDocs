@@ -6,7 +6,7 @@
 
     This software is licensed under the GNU General Public License Version 3 (GNU GPL-3.0).
 
-    A full copy of the license is included with code repository as LICENSE file and can also be viewed online: [LICENSE file on Github](https://github.com/OpenTrafficCam/OTAnalytics/blob/main/LICENSE).
+    A full copy of the license is included in the code repository as LICENSE file and can also be viewed online: [LICENSE file on Github](https://github.com/OpenTrafficCam/OTAnalytics/blob/main/LICENSE).
     
     Please respect this license!
 
@@ -23,7 +23,7 @@
 
 ## Hardware requirements
 
-OTAnalytics runs on most modern desktops and laptops (e.g. with an i5 processor and 8 GB of RAM).
+OTAnalytics runs on most modern desktop pcs and laptops (e.g. with an i5 processor and 8 GB of RAM).
 
 Please note:
 
@@ -34,7 +34,7 @@ Please note:
 
 If not done yet, visit [www.python.org/downloads/](https://www.python.org/downloads/) and install Python 3.11.x for your platform.
 
-Make sure you at least add the following boxes:
+Please make sure to include at least the following boxes:
 
 === "Windows"
 
