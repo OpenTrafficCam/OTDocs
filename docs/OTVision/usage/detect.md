@@ -5,7 +5,7 @@
 ```text
 python  detect.py   [-p paths] [--expected_duration] [-c config]
                     [-w weights] [--conf] [--iou] [--half] [--force]
-                    [--overwrite]
+                    [--overwrite] [--detect_start] [--detect_end]
 ```
 
 ## Description
