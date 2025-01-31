@@ -7,9 +7,7 @@ on:
       - main
 
 permissions:
-  contents: read
-  deployments: write
-  pages: write
+  contents: write
 
 jobs:
   deploy:
