@@ -1,0 +1,3428 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="OpenTrafficCam Contributors">
+      
+      
+        <link rel="canonical" href="https://opentrafficcam.org/OTAnalytics/usage-ui/">
+      
+      
+        <link rel="prev" href="../installation/">
+      
+      
+        <link rel="next" href="../../OTLabels/">
+      
+      
+      <link rel="icon" href="../../assets/OTC_icon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.50">
+    
+    
+      
+        <title>Usage GUI - OpenTrafficCam</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.a40c8224.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/color.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/fonts.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/katex.min.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+<script defer data-domain="opentrafficcam.org" src="https://plausible.platomo.org/js/script.js"></script>
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#usage-gui" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="OpenTrafficCam" class="md-header__button md-logo" aria-label="OpenTrafficCam" data-md-component="logo">
+      
+  <img src="../../assets/OTC_icon_white.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            OpenTrafficCam
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Usage GUI
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/OpenTrafficCam/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    OpenTrafficCam
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../pricing/" class="md-tabs__link">
+        
+  
+    
+  
+  Pricing
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../overview/" class="md-tabs__link">
+          
+  
+    
+  
+  Documentation
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../team/" class="md-tabs__link">
+          
+  
+    
+  
+  Team
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="OpenTrafficCam" class="md-nav__button md-logo" aria-label="OpenTrafficCam" data-md-component="logo">
+      
+  <img src="../../assets/OTC_icon_white.svg" alt="logo">
+
+    </a>
+    OpenTrafficCam
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/OpenTrafficCam/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    OpenTrafficCam
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pricing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Documentation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Documentation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../overview/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_1" id="__nav_3_1_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../overview/dataprivacy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Privacy (Germany)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../OTCamera/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    OTCamera
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_2" id="__nav_3_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            OTCamera
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OTCamera/gettingstarted/requirements/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Requirements
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_3" id="__nav_3_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Installation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OTCamera/gettingstarted/installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OTCamera/gettingstarted/installation/prepare-sd-card/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Prepare the SD Card
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OTCamera/gettingstarted/installation/raspberry/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setup the Raspberry
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OTCamera/gettingstarted/installation/hwclock/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hardware Clock
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OTCamera/gettingstarted/installation/wifi-ap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Wi-Fi Accesspoint
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OTCamera/gettingstarted/installation/otcamera/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Install OTCamera
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OTCamera/gettingstarted/firstuse/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Usage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OTCamera/usage/buttons_leds/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Buttons and LEDs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../OTVision/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    OTVision
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_3" id="__nav_3_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            OTVision
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OTVision/gettingstarted/requirements/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Requirements
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OTVision/gettingstarted/installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OTVision/gettingstarted/firstuse/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    First Use
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3_5" id="__nav_3_3_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Usage
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Usage
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OTVision/usage/convert/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Convert
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OTVision/usage/detect/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Detect
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OTVision/usage/track/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Track
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OTVision/advanced_usage/configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configuration File
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    OTAnalytics
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_4" id="__nav_3_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            OTAnalytics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Usage GUI
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Usage GUI
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#terminology" class="md-nav__link">
+    <span class="md-ellipsis">
+      Terminology
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      User Interface
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup-the-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setup the project
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Setup the project">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enter-project-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enter project information
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#load-track-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Load track files
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#save-and-open-the-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      Save and open the project
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-traffic-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure traffic analysis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configure traffic analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sections" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sections
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flows
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visualization-layers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visualization layers
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Visualization layers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#background" class="md-nav__link">
+    <span class="md-ellipsis">
+      Background
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#show-tracks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Show tracks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#show-start-and-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Show start- and endpoints
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#show-detections-of-current-frame" class="md-nav__link">
+    <span class="md-ellipsis">
+      Show detections of current frame
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#show-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      Show events
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visualization-filters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visualization filters
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Visualization filters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filter-by-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      Filter by Time
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter-by-classification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Filter by Classification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analysis-exports" class="md-nav__link">
+    <span class="md-ellipsis">
+      Analysis exports
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Analysis exports">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#traffic-counts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Traffic counts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#event-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event list
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#road-user-assignments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Road User Assignments
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#track-statistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Track Statistics
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-else" class="md-nav__link">
+    <span class="md-ellipsis">
+      What else?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../OTLabels/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    OTLabels
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_5" id="__nav_3_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            OTLabels
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5_2" id="__nav_3_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OTLabels/gettingstarted/requirements/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Requirements
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OTLabels/gettingstarted/installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OTLabels/gettingstarted/data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5_3" id="__nav_3_5_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Training
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            Training
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OTLabels/training/cvat/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CVAT
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OTLabels/training/preprocessingdata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Preprocessing Data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OTLabels/training/retrainmodel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Retraining a Model
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5_4" id="__nav_3_5_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Validation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_5_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            Validation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OTLabels/validation/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OTLabels/validation/gettingstarted/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OTLabels/validation/metrics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Performance Metrics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OTLabels/validation/modelvalidation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Model Validation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5_5" id="__nav_3_5_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Trainend Models
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_5_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5_5">
+            <span class="md-nav__icon md-icon"></span>
+            Trainend Models
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OTLabels/models/coco6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    COCO 6-class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../contribute/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Contribute
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_6" id="__nav_3_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Contribute
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribute/github/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GitHub
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribute/coding/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Coding (Python)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribute/vscode/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VS Code
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribute/documentation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Team
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Team
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../team/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Team
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#terminology" class="md-nav__link">
+    <span class="md-ellipsis">
+      Terminology
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      User Interface
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup-the-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setup the project
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Setup the project">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enter-project-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enter project information
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#load-track-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Load track files
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#save-and-open-the-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      Save and open the project
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-traffic-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure traffic analysis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configure traffic analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sections" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sections
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flows
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visualization-layers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visualization layers
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Visualization layers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#background" class="md-nav__link">
+    <span class="md-ellipsis">
+      Background
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#show-tracks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Show tracks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#show-start-and-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Show start- and endpoints
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#show-detections-of-current-frame" class="md-nav__link">
+    <span class="md-ellipsis">
+      Show detections of current frame
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#show-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      Show events
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visualization-filters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visualization filters
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Visualization filters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filter-by-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      Filter by Time
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter-by-classification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Filter by Classification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analysis-exports" class="md-nav__link">
+    <span class="md-ellipsis">
+      Analysis exports
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Analysis exports">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#traffic-counts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Traffic counts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#event-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event list
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#road-user-assignments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Road User Assignments
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#track-statistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Track Statistics
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-else" class="md-nav__link">
+    <span class="md-ellipsis">
+      What else?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="usage-gui">Usage GUI<a class="headerlink" href="#usage-gui" title="Permanent link">&para;</a></h1>
+<p>After processing videos with OTVision´s tracking module (<a href="../../OTVision/usage/track">OTVision track</a>), you can use OTAnalytics for analysing traffic data.
+The OTAnalytics <strong>Graphical User Interface (GUI)</strong> enables you to configure analyses, extract valuable insights from your data, and export the results efficiently.</p>
+<h2 id="terminology">Terminology<a class="headerlink" href="#terminology" title="Permanent link">&para;</a></h2>
+<p>Vehicles and pedestrians are detected in the individual frames of the video using <a href="../../OTVision/usage/detect">detect in OTVision</a>.
+In a single frame of a video, each detected object (<strong>Detection</strong>) is represented by a <strong>Bounding Box</strong>,
+ which is the rectangular area surrounding the detected vehicle or pedestrian together with its classification (e.g., car, bike, pedestrian).</p>
+<p>The <a href="../../OTVision/usage/track">tracker in OTVision</a> links consecutive detections, or bounding boxes, to form the <strong>Track</strong> of a <strong>Road User</strong>.</p>
+<p>A track is therefore composed of a series of detections, each with its own bounding box and classification.
+Ideally, all detections within a track share the same classification.
+However, in practice, a track may include detections with varying classifications (e.g., truck and truck_with_trailer).
+This typically occurs when a road user is poorly visible in some of the frames (far away, partially obscured).
+OTAnalytics assigns a single <strong>Track Classification</strong> to each track, as a road user can have only one classification in the real world (e.g., a vehicle is either a car or a bus).</p>
+<p>A track's trajectory is represented by a representative point from each bounding box associated with the track.
+This point is called the <strong>Track Point</strong>.
+The trajectory is formed by connecting the track points collected across successive frames.</p>
+<div class="admonition info inline end">
+<p class="admonition-title">Offset examples</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">0.1, 0.1</label><label for="__tabbed_1_2">0.8, 0.3</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><img align="left" alt="Offset x=0.1, y=0.1" src="offset-x-0-1-y-0-1.png" /></p>
+</div>
+<div class="tabbed-block">
+<p><img align="left" alt="Offset x=0.8, y=0.3" src="offset-x-0-8-y-0-3.png" /></p>
+</div>
+</div>
+</div>
+</div>
+<p>The position of the track point within the bounding box can be configured using the <strong>Offset</strong> attribute.
+This offset is defined separately for the x- and y-axes, with values ranging from <code>0</code> to <code>1</code>.
+Origin <code>(0, 0)</code> is the top left-hand corner of the bounding box.
+These values determine the relative position of the track point within the bounding box, providing flexibility in track point placement.</p>
+<p>To analyze the tracks, OTAnalytics provides <strong>Sections</strong> and <strong>Flows</strong>.
+Imagine sections as the digital equivalent of physical detectors used for traffic measurement, sometimes, also called virtual inductive loops (not to be confused with the detection of bounding boxes in OTVision).
+Each time a track's trajectory intersects a section, an <strong>Event</strong> is generated.
+Each event contains detailed information, including the track's identifier, its position in the frame, and the timestamp of the intersection.</p>
+<p><strong>Flows</strong> define traffic flows to be analyzed.
+As explained in <a href="#flows">Flows</a>, a flow is defined by two sections: a starting section and an ending section.
+Tracks that intersect both sections of a flow in the defined order can be assigned to that flow.
+To achieve this, the events belonging to a track are sorted chronologically based on their time of occurrence.
+The assignment of a track to a flow is called <strong>Track Assignment</strong>.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>The pair of events with the longest time interval between them is used to assign the track to the flow corresponding to the sections of both events.</p>
+</div>
+<h2 id="user-interface">User Interface<a class="headerlink" href="#user-interface" title="Permanent link">&para;</a></h2>
+<p>The user interface is divided into four main areas: the <strong>Configuration Bar</strong>, <strong>Workspace</strong>, <strong>Visualization Layers</strong>, and <strong>Visualization Filters</strong>.</p>
+<p>The <strong>Configuration Bar</strong> consists of four parts:</p>
+<ol>
+<li><strong>Project</strong>: Manage project metadata and save or load <code>.otconfig</code> or <code>.otflow</code> files.</li>
+<li><strong>Tracks/Video</strong>: Add input files, where only track files can be added, while video files can be both added and removed. An overview of loaded video files is also displayed.</li>
+<li><strong>Sections/Flows</strong>: Create, edit, and delete sections and flows. The flow names are shown with numbers indicating the number of assigned tracks per flow.</li>
+<li><strong>Analysis</strong>: Export of analyzed traffic data.</li>
+</ol>
+<p>The <strong>Workspace</strong> consists of the <strong>Canvas</strong> and the <strong>Track Statistics</strong>.
+The canvas displays the tracks and video frames.
+It is also where the geometry of sections can be created or edited.
+Below the workspace, the <strong>Track Statistics</strong> provides key statistics about the displayed tracks.</p>
+<p>By choosing the <strong>Visualization Layers</strong>, that are located right to the workspace, one can customize <em>how</em> tracks are displayed.</p>
+<p>With the <strong>Visualization Filters</strong> located below the workspace, one can adjust <em>which</em> tracks are displayed.</p>
+<p><img alt="User Interface of OTAnalytics" src="user-interface.png" /></p>
+<h2 id="setup-the-project">Setup the project<a class="headerlink" href="#setup-the-project" title="Permanent link">&para;</a></h2>
+<p>To make the handling and reproducibility of analyses easier, all related data is organized within a project.
+Setting up a project ensures that all necessary information, such as videos, tracks, and configurations, is stored in one centralized place.
+This simplifies workflows and maintains consistency across analyses.</p>
+<h3 id="enter-project-information">Enter project information<a class="headerlink" href="#enter-project-information" title="Permanent link">&para;</a></h3>
+<p>The project must first be named.
+The project name is entered in the corresponding Name field.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>It is recommended to choose a unique name (e.g. name of the measuring point, camera number; or a combination of several unique details).</p>
+</div>
+<p>The start time (date and time) of the first video must then be entered in the corresponding Start date fields.
+It is possible to enter in ISO 8601 format (YYYY-MM-DD) or German date format (DD.MM.YYYY).</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>OTAnalytics assumes that all selected videos are contiguous in time.
+If the videos to be processed have a time gap (e.g., videos from three days from 6:00 a.m. to 10:00 p.m.), several projects with chronologically contiguous videos must be created.</p>
+</div>
+<h3 id="load-track-files">Load track files<a class="headerlink" href="#load-track-files" title="Permanent link">&para;</a></h3>
+<p>To analyze tracks in OTAnalytics, you must load the track files (.ottrk).
+This can be done using the <em>Add tracks...</em> button, which opens a file browser to select the respective files.
+Multiple track files can be added at once.
+If a corresponding video file exists, OTAnalytics will automatically load it alongside the track file.
+If no associated video is found, the track file cannot be loaded.</p>
+<p>Alternatively, you can add videos only.
+This is particularly useful for configuring an analysis handled by the platomo team.
+To add videos, use the <em>Add...</em> button, and to remove them from the configuration, use the <em>Remove</em> button.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Added videos are displayed in alphabetical order in the “Videos” overview panel and are later processed in this order.
+The videos should therefore be named in such a way that the chronological order matches the alphabetical order.
+Additional zero-padding (e.g., <code>01</code>, <code>02</code>) is helpful if you want to ensure correct alphabetical sorting.</p>
+</div>
+<p>When you click a video in the configuration bar, the first image of the video is displayed as the background image.
+This allows you to check whether all videos have been selected correctly.</p>
+<h3 id="save-and-open-the-project">Save and open the project<a class="headerlink" href="#save-and-open-the-project" title="Permanent link">&para;</a></h3>
+<p>Once you added all required tracks and videos and created all sections and flows, the project can be saved.</p>
+<ol>
+<li>Click on the <em>Save as...</em> button in the Project section of the configuration bar.</li>
+<li>Select a suitable filename in the file browser and save it in the same folder as the videos.</li>
+</ol>
+<p>You can save the project in two ways:</p>
+<p>An <code>.otconfig</code> file stores all information necessary to reload the project in OTAnalytics.
+This is the default option.</p>
+<p>An <code>.otflow</code> file stores only information about sections and flows.
+Hence, it can be reused / imported into another project with different videos of the same measurement site.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>We recommend regularly saving the progress of the project while it is still being processed.
+This prevents possible loss of data.
+The <em>Save</em> button automatically saves the file to the last selected location.
+If it is colored in orange, changes have been made.</p>
+<p>We also recomment to store all project related files (videos, <code>.otdet</code>, <code>.ottrk</code> and <code>.otconfig</code>) in the same folder.</p>
+</div>
+<p>When you return later, you can reopen the project using the <em>Open ...</em> button.</p>
+<h2 id="configure-traffic-analysis">Configure traffic analysis<a class="headerlink" href="#configure-traffic-analysis" title="Permanent link">&para;</a></h2>
+<p>To perform traffic analyses with OTAnalytics, sections and flows are needed.
+A traffic flow depicts the directional travel relationship between two sections.
+Each flow always consists of two sections: A start section and an end section.
+Before defining flows, you must create the sections.
+The flows can then be assigned to the sections.</p>
+<h3 id="sections">Sections<a class="headerlink" href="#sections" title="Permanent link">&para;</a></h3>
+<p>Sections can consist of two or more support points (shown as a circle).
+They are drawn directly on the background image in OTAnalytics.
+To do this, the <em>Sections</em> tab must first be selected in the Sections/Flows section.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Both line sections and area sections can be created.
+If no occupancy durations (e.g., of parking areas) are analyzed, we recommend using line sections.</p>
+<p>The following example is limited to line sections.
+However, the procedure described can also be applied to area sections.
+The only difference is that the polygon is automatically closed when the add mode is exited.</p>
+</div>
+<h4 id="add-sections">Add sections<a class="headerlink" href="#add-sections" title="Permanent link">&para;</a></h4>
+<p>A new line section is added in the following steps:</p>
+<ol>
+<li>Left-click on the <em>Add line</em> button, which starts the add mode.</li>
+<li>Set the first point by left-clicking at the correct position in the video image. The point is now fixed. Further points can be added to the section by moving the mouse and left-clicking again.
+   A section must consist of at least two points.</li>
+<li>Once the desired length and shape of a section has been reached, right-click or press the <em>Enter</em> key to exit Add mode.
+   (Pressing the <em>Escape</em> key cancels add mode without saving the previously created section.)</li>
+<li>A pop-up window opens. Enter the name for the section in this window and confirm. The name is reused in the analysis.</li>
+<li>The created section appears with the assigned name in the sections part in the configuration bar.</li>
+<li>Repeat the process to add further sections.</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>A name can only be assigned once, duplicate names of several sections are not possible.
+We recommend including the approximate compass direction of the geographical location (e.g. north, north-east) in the name of the section.</p>
+</div>
+<p><img alt="Add Sections" src="add-section.png" /></p>
+<h4 id="select-sections">Select sections<a class="headerlink" href="#select-sections" title="Permanent link">&para;</a></h4>
+<p>To select a specific section, click on its name in the list of sections.
+The selected section is now highlighted both in the list and on the canvas.</p>
+<p>You can also select multiple sections with <em>left-click</em> + <em>ctrl</em> on Windows or <em>cmd</em> on macOS.
+Deselect a single with <em>right-click</em> + <em>ctrl</em> on Windows or <em>cmd</em> on macOS or deselect all sections with <em>right-click</em> into a empty place in the list.</p>
+<h4 id="change-the-geometry-of-a-section">Change the geometry of a section<a class="headerlink" href="#change-the-geometry-of-a-section" title="Permanent link">&para;</a></h4>
+<p>The geometry of sections that have already been created can be changed using the following procedure:</p>
+<ol>
+<li>First select the section to be changed in the list.</li>
+<li>Then start the change mode by left-clicking on the <em>Edit</em> button. The supporting points are now visible.</li>
+<li>Support points can now be selected by left-clicking and reset as in add mode.</li>
+<li>The + button can be used to add another support point.</li>
+</ol>
+<p>The selected point “sticks” to the mouse pointer until the left mouse button is pressed.
+The old geometry is displayed as a dashed reference.</p>
+<ol>
+<li>Right-click to exit change mode and save the changes.</li>
+<li>Pressing the Escape button exits the change mode without saving the changes to the geometry.</li>
+</ol>
+<h4 id="change-attributes-of-a-section">Change attributes of a section<a class="headerlink" href="#change-attributes-of-a-section" title="Permanent link">&para;</a></h4>
+<p>The attributes (name and offset) of a section can be changed by clicking on the <em>Properties</em> button.
+To do this, the desired section must first be selected from the list.</p>
+<p>The bounding box offset defines, which reference point of the bounding boxes of the track is used to trigger an event.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Since the bounding box offset can be individually configured for each section, tracks intersecting different sections can be finely tuned.
+This helps to increase the recording accuracy of the section or to fulfil special use cases (e.g. if the front of a road user is to be recorded).</p>
+</div>
+<h4 id="remove-sections">Remove sections<a class="headerlink" href="#remove-sections" title="Permanent link">&para;</a></h4>
+<p>A section can be removed by clicking on the <em>Remove</em> button.
+To do this, the desired section <strong>must be removed from any flows</strong> and it must be selected in the list.
+You can use multiselect to remove multiple sections at once.</p>
+<h3 id="flows">Flows<a class="headerlink" href="#flows" title="Permanent link">&para;</a></h3>
+<p>A flow always consists of exactly two sections: a start section and an end section.
+To edit flows, the <em>Flows</em> tab must first be selected in the Sections/Flows section.</p>
+<h4 id="add-flows">Add flows<a class="headerlink" href="#add-flows" title="Permanent link">&para;</a></h4>
+<p>A new flow is added in the following steps:</p>
+<ol>
+<li>Left-click on the <em>Add</em> button. A pop-up window opens. The appropriate sections can be selected from the drop-down menu.</li>
+<li>The start point of the flow is defined as the first section.</li>
+<li>The endpoint of the flow is defined as the second section.</li>
+<li>The name is automatically set in the <em>Name</em> field after selecting the two sections. This can be changed as required. The name is reused in the analysis.</li>
+<li>If you plan to perform speed measurements, you can enter the distance between the sections (which must be measured independently of OTAnalytics)</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>A name can only be assigned once, duplicate names of several flows are not possible.</p>
+</div>
+<p><img alt="Add Flows" src="add-flow.png" /></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Entering flows for many sections can be tedious.
+Fortunately, OTAnalytics can <strong>automatically generate flows</strong> for all possible combinations of start and end sections.
+Just hit the <em>Generate</em> button.
+The naming convention for the flows is <code>{Name of start section} --&gt; {Name of end section}</code>.</p>
+</div>
+<h4 id="select-flows">Select flows<a class="headerlink" href="#select-flows" title="Permanent link">&para;</a></h4>
+<p>To select a specific flow, click on its name in the list of flows.
+The selected flow is now highlighted both in the list and on the canvas (by an arrow indicating its direction).</p>
+<p>You can also select multiple flows with <em>left-click</em> + <em>ctrl</em> on Windows or <em>cmd</em> on macOS.
+Deselect a single with <em>right-click</em> + <em>ctrl</em> on Windows or <em>cmd</em> on macOS or deselect all sections with <em>right-click</em> into a empty place in the list.</p>
+<h4 id="edit-a-flow">Edit a flow<a class="headerlink" href="#edit-a-flow" title="Permanent link">&para;</a></h4>
+<p>To edit a flow, it must first be selected in the list.
+Then left-click on the <em>Properties</em> button to open the same pop-up window as when creating a flow.
+The desired changes can now be made.</p>
+<h4 id="remove-flows">Remove flows<a class="headerlink" href="#remove-flows" title="Permanent link">&para;</a></h4>
+<p>To remove a flow, it must first be selected in the list.
+Left-click on the <em>Remove</em> button to remove the selected flow.
+You can use multiselect to remove multiple flows at once.</p>
+<h2 id="visualization-layers">Visualization layers<a class="headerlink" href="#visualization-layers" title="Permanent link">&para;</a></h2>
+<p>Utilizing the different visualization layers helps you to explore the tracks and to refine traffic analysis by offering specific views of the data.
+Tracks are consistently displayed in the same colors, which are determined by their classification.
+The visualization layers are organized into groups.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Some visualization layers are not updated automatically, when you change the configuration of the project or the sections/flows.</p>
+<p>If the visualization is <strong>outdated</strong>, just hit the <em>Update flow highlighting</em> button - calculations will be run and visulalization will be updated.</p>
+</div>
+<h3 id="background">Background<a class="headerlink" href="#background" title="Permanent link">&para;</a></h3>
+<p>This layer shows a frame of the video as a background image.
+The currently shown frame can be configured using the filter.
+If a date/time filter is set, the frame at the end of the range is shown.
+Otherwise, the first frame of the selected video is shown.</p>
+<h3 id="show-tracks">Show tracks<a class="headerlink" href="#show-tracks" title="Permanent link">&para;</a></h3>
+<p>This group of layers offers options to control which tracks are displayed based on their intersection with sections or their assignment to flows.</p>
+<p>They enable you to check the position of the sections and the definition of the flows and to optimise them iteratively.
+Checking, if the sections "catch" the correct tracks is a crucial step to ensure a good quality of each traffic analysis.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:5"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><input id="__tabbed_2_5" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">All</label><label for="__tabbed_2_2">Intersecting sections</label><label for="__tabbed_2_3">Not intersecting sections</label><label for="__tabbed_2_4">Assigned to flows</label><label for="__tabbed_2_5">Not assigned to flows</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>All tracks are shown.</p>
+<p><img alt="Show all tracks" src="show-tracks-all.png" /></p>
+</div>
+<div class="tabbed-block">
+<p>Tracks intersecting at least one of the selected sections are shown.</p>
+<p><img alt="Show tracks intersecting the selected sections" src="show-tracks-intersecting-sections.png" /></p>
+</div>
+<div class="tabbed-block">
+<p>Tracks intersecting <strong>none</strong> of the selected sections are shown.</p>
+<p><img alt="Show tracks not intersection the selected sections" src="show-tracks-not-intersecting-sections.png" /></p>
+</div>
+<div class="tabbed-block">
+<p>Tracks assigned to at least one selected flow are shown.</p>
+<p><img alt="Show tracks assigned to flows" src="show-tracks-assigned-to-flows.png" /></p>
+</div>
+<div class="tabbed-block">
+<p>Tracks assigned to <strong>none</strong> of the selected flows are shown.</p>
+<p><img alt="Show tracks not assigned to flows" src="show-tracks-not-assigned-to-flows.png" /></p>
+</div>
+</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>When checking and optimising sections and flows, also have a look at the track statistics shown below the canvas.</p>
+</div>
+<h3 id="show-start-and-endpoints">Show start- and endpoints<a class="headerlink" href="#show-start-and-endpoints" title="Permanent link">&para;</a></h3>
+<p>In this group of layers, you can decide if the start- and endpoints of tracks are highlighted.
+Like in <a href="#show-tracks">Show tracks</a>, you can display the start- and endpoints based on their intersection with sections or their assignment to flows.</p>
+<p>They enable you, for example, to check whether some tracks are interrupted and where this may be clustered.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:5"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><input id="__tabbed_3_5" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">All</label><label for="__tabbed_3_2">Intersecting sections</label><label for="__tabbed_3_3">Not intersecting sections</label><label for="__tabbed_3_4">Assigned to flows</label><label for="__tabbed_3_5">Not assigned to flows</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Start- and endpoints of all tracks are highlighted.</p>
+<p><img alt="Show start- and endpoints of all tracks" src="show-start-end-points-all.png" /></p>
+</div>
+<div class="tabbed-block">
+<p>Start- and endpoints of tracks intersecting at least one of the selected sections are highlighted.</p>
+<p><img alt="Show start- and endpoints of tracks intersecting the selected sections" src="show-start-end-points-intersecting-sections.png" /></p>
+</div>
+<div class="tabbed-block">
+<p>Start- and endpoints of tracks intersecting <strong>none</strong> of the selected sections are highlighted.</p>
+<p><img alt="Show start- and endpoints of tracks not intersection the selected sections" src="show-start-end-points-not-intersecting-sections.png" /></p>
+</div>
+<div class="tabbed-block">
+<p>Start- and endpoints of tracks assigned to at least one selected flow are highlighted.</p>
+<p><img alt="Show start- and endpoints of tracks assigned to flows" src="show-start-end-points-assigned-to-flows.png" /></p>
+</div>
+<div class="tabbed-block">
+<p>Start- and endpoints of tracks assigned to <strong>none</strong> of the selected flows are highlighted.</p>
+<p><img alt="Show start- and endpoints of tracks not assigned to flows" src="show-start-end-points-not-assigned-to-flows.png" /></p>
+</div>
+</div>
+</div>
+<h3 id="show-detections-of-current-frame">Show detections of current frame<a class="headerlink" href="#show-detections-of-current-frame" title="Permanent link">&para;</a></h3>
+<p>These layers visualize all detections of a single frame either using a bounding box or using the track point (with the current offset).</p>
+<p>It can be helpful for an in-depth assessment of the quality of samples of detections and tracks.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Bounding box</label><label for="__tabbed_4_2">Track point</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>The bounding boxes of all detections in the currently visible frame are shown.</p>
+<p><img alt="Show bounding box of detections in the current frame" src="show-detections-bounding-boxes.png" /></p>
+</div>
+<div class="tabbed-block">
+<p>The track points of all detections in the currently visible frame are shown.</p>
+<p><img alt="Show track points of detections in the current frame" src="show-detections-track-point.png" /></p>
+</div>
+</div>
+</div>
+<h3 id="show-events">Show events<a class="headerlink" href="#show-events" title="Permanent link">&para;</a></h3>
+<p>This group of layers highlights the locations of events triggered by the intersection of tracks with sections in a given period or at a given moment.</p>
+<p>Like the other layers, they provide in-depth data validation.
+Additionally, the event locations themselves can serve as an interesting focus for traffic analysis.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>The locations of the events are determined based on the bounding box offset <a href="#change-attributes-of-a-section">configured locally for each individual section</a>.</p>
+<p>In contrast, a global offset can be set for visualising the tracks.</p>
+<p>As a result, the event locations may not align with the corresponding tracks.</p>
+<p>To align the tracks, select a specific section and hit the <em>Update with section offset</em> button.</p>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">Current filter</label><label for="__tabbed_5_2">Current frame</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>The locations of all events within the date/time filter range are shown.</p>
+<p><img alt="Show events in the current filter" src="show-events-current-filter.png" /></p>
+</div>
+<div class="tabbed-block">
+<p>All events present at the moment of the current frame are shown.</p>
+<p><img alt="Show events in the current filter" src="show-events-current-frame.png" /></p>
+</div>
+</div>
+</div>
+<h2 id="visualization-filters">Visualization filters<a class="headerlink" href="#visualization-filters" title="Permanent link">&para;</a></h2>
+<p>As the number of analyzed video hours grows, distinguishing individual tracks in the visualization becomes increasingly difficult.
+Filters enable you to reduce the number of displayed track and the part of the track which is shown, making the visualization more focused and easier to manage.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Filters are applied only to the visualization in the workspace and to the calculation of track statistics displayed below.
+Analyses and data exports always include all loaded tracks, regardless of any applied filters.</p>
+</div>
+<h3 id="filter-by-time">Filter by Time<a class="headerlink" href="#filter-by-time" title="Permanent link">&para;</a></h3>
+<p>Filter tracks based on time and date.
+Only track points that are within the date/time range will be displayed.</p>
+<p>You can toggle the filter by checking/unchecking the box left to the <em>Filter by date</em> button.
+By clicking the <em>Filter by date</em> button, a popup appears where you can enter a custom date/time range.</p>
+<p>The <em>&lt;</em> and <em>&gt;</em> buttons to the right of the <em>Filter by date</em> button allow you to shift the filter forward or backward by its current duration.
+For more precise adjustments, use the <em>&lt;</em> and <em>&gt;</em> buttons below to fine-tune the filter's position (Seconds, Frames, Events).</p>
+<p><img alt="Configure filter" src="add-filter.png" /></p>
+<h3 id="filter-by-classification">Filter by Classification<a class="headerlink" href="#filter-by-classification" title="Permanent link">&para;</a></h3>
+<p>Filter tracks based on their classification (e.g., car, bicyclist).</p>
+<p>You can toggle the filter by checking/unchecking the box left to the <em>Filter by classification</em> button.
+By clicking the <em>Filter by classification</em> button, a popup appears where you can select the track classes to be displayed.</p>
+<h2 id="analysis-exports">Analysis exports<a class="headerlink" href="#analysis-exports" title="Permanent link">&para;</a></h2>
+<p>After all sections and flows have been configured, you can choose an analysis for export.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>We highly recommend using the different <a href="#visualization-layers">visualization layers</a> and the track statisics below the canvas before exporting analyses.
+This is how you gain detailed insights into the data and can optimize the configuration.
+It is important to ensure a good quality of your exports.</p>
+</div>
+<h3 id="traffic-counts">Traffic counts<a class="headerlink" href="#traffic-counts" title="Permanent link">&para;</a></h3>
+<p>This is the most commonly used metric for analysing traffic, supporting various use cases such as planning, simulation, and safety analysis.</p>
+<p>The traffic counts are derived from the assignment of tracks to flows.
+They can be exported as a <code>.csv</code> file, which can be easily imported into your preferred software.
+You can specify the start and end date and time, as well as the interval for aggregating traffic counts.</p>
+<p><img alt="Configure export" src="configure-export-counts.png" /></p>
+<p>The <code>.csv</code> file includes the following values:</p>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Datatype</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>start time</td>
+<td>string</td>
+<td>Timestamp indicating the start of the interval</td>
+<td>2023-05-24 11:45:00</td>
+</tr>
+<tr>
+<td>start occurrence date</td>
+<td>string</td>
+<td>Date at the start of the interval</td>
+<td>2023-05-24</td>
+</tr>
+<tr>
+<td>start occurrence time</td>
+<td>string</td>
+<td>Time at the start of the interval</td>
+<td>11:45:00</td>
+</tr>
+<tr>
+<td>end time</td>
+<td>string</td>
+<td>Timestamp indicating the end of the interval</td>
+<td>2023-05-24 12:00:00</td>
+</tr>
+<tr>
+<td>end occurrence date</td>
+<td>string</td>
+<td>Date at the end of the interval</td>
+<td>2023-05-24</td>
+</tr>
+<tr>
+<td>end occurrence time</td>
+<td>string</td>
+<td>Time at the end of the interval</td>
+<td>12:00:00</td>
+</tr>
+<tr>
+<td>classification</td>
+<td>string</td>
+<td>The classification of the track / road user (e.g., car, bicyclist)</td>
+<td>bicyclist</td>
+</tr>
+<tr>
+<td>flow</td>
+<td>string</td>
+<td>Direction of traffic flow, specifying origin and destination sections</td>
+<td>south --&gt; east</td>
+</tr>
+<tr>
+<td>from section</td>
+<td>string</td>
+<td>Name of the section where the track originated</td>
+<td>south</td>
+</tr>
+<tr>
+<td>to section</td>
+<td>string</td>
+<td>Name of the section where the track was directed</td>
+<td>east</td>
+</tr>
+<tr>
+<td>count</td>
+<td>int</td>
+<td>Number of tracks / road users recorded during the interval</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="event-list">Event list<a class="headerlink" href="#event-list" title="Permanent link">&para;</a></h3>
+<p>Traffic events provide a more granular data source for in-depth use cases, such as speed measurements, occupancy durations, or time gap analysis.</p>
+<p>The events (tracks intersecting sections) can be exported into a single file in one of the following formats:</p>
+<ul>
+<li><strong><code>.csv</code></strong> contains the event data in a format that can be read by many software products.</li>
+<li><strong><code>.xslx</code></strong> includes the event data along with additional information about the sections used to generate the events for further analysis in MS Excel.</li>
+<li><strong><code>.otevents</code></strong> is a bzip2-compressed JSON file that contains the event data, additional information about the sections used to generate the events, and metadata collected during processing.</li>
+</ul>
+<p>The export includes the following values for each event:</p>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Datatype</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>road_user_id</td>
+<td>string</td>
+<td>Unique identifier for the track / road user</td>
+<td>5f8cd584-f490-4fec-afd0-b55ebf39ab4e#0#102341</td>
+</tr>
+<tr>
+<td>road_user_type</td>
+<td>string</td>
+<td>Track classification of the road user (e.g., car, pedestrian)</td>
+<td>car</td>
+</tr>
+<tr>
+<td>hostname</td>
+<td>string</td>
+<td>Name of the camera or device capturing the data</td>
+<td>OTCamera19</td>
+</tr>
+<tr>
+<td>occurrence</td>
+<td>string</td>
+<td>Timestamp of the event in date and time format</td>
+<td>2023-05-24 11:45:00.000000</td>
+</tr>
+<tr>
+<td>frame_number</td>
+<td>int</td>
+<td>Frame number of the video corresponding to the event</td>
+<td>1</td>
+</tr>
+<tr>
+<td>section_id</td>
+<td>string (optional)</td>
+<td>Identifier for the section. Not available for the event types enter-scene and leave-scene</td>
+<td>1</td>
+</tr>
+<tr>
+<td>event_type</td>
+<td>string</td>
+<td>Type of event (enter-scene, leave-scene, enter-section, leave-section)</td>
+<td>enter-section</td>
+</tr>
+<tr>
+<td>video_name</td>
+<td>string</td>
+<td>Name of the video file where the event was recorded</td>
+<td>OTCamera19_FR20_2023-05-24_11-45-00.mp4</td>
+</tr>
+<tr>
+<td>occurrence_sec</td>
+<td>timestamp</td>
+<td>Time of the event in seconds since the epoch</td>
+<td>1684928700.0</td>
+</tr>
+<tr>
+<td>coordinate_px_x</td>
+<td>float</td>
+<td>X-coordinate of the road user in pixels</td>
+<td>142.60128784179688</td>
+</tr>
+<tr>
+<td>coordinate_px_y</td>
+<td>float</td>
+<td>Y-coordinate of the road user in pixels</td>
+<td>199.48948669433594</td>
+</tr>
+<tr>
+<td>vector_px_x</td>
+<td>float</td>
+<td>X-component of the road user's movement vector</td>
+<td>-0.2536773681640625</td>
+</tr>
+<tr>
+<td>vector_px_y</td>
+<td>float</td>
+<td>Y-component of the road user's movement vector</td>
+<td>0.075958251953125</td>
+</tr>
+<tr>
+<td>section_name</td>
+<td>string (optional)</td>
+<td>Name of the section where the event occurred. Not available for the event types enter-scene and leave-scene</td>
+<td>north</td>
+</tr>
+<tr>
+<td>occurrence_day</td>
+<td>string</td>
+<td>Day of the event in date format</td>
+<td>2023-05-24</td>
+</tr>
+<tr>
+<td>occurrence_time</td>
+<td>string</td>
+<td>Time of the event in time format</td>
+<td>11:45:00.000000</td>
+</tr>
+</tbody>
+</table>
+<h3 id="road-user-assignments">Road User Assignments<a class="headerlink" href="#road-user-assignments" title="Permanent link">&para;</a></h3>
+<p>Use this export in case no aggregation of tracks to traffic counts is wanted, but the assignment strategy of OTAnalytics should be used.</p>
+<p>All tracks assigned to flows can be exported using the <em>Export road user assignments...</em> Button.
+The tracks assigned to flows are exported into a <code>.csv</code> file with the following format:</p>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Datatype</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>flow_id</td>
+<td>int</td>
+<td>Unique identifier for the flow</td>
+<td>16</td>
+</tr>
+<tr>
+<td>flow_name</td>
+<td>string</td>
+<td>Name of the flow</td>
+<td>north --&gt; east</td>
+</tr>
+<tr>
+<td>road_user_id</td>
+<td>string</td>
+<td>Unique identifier for the track / road user</td>
+<td>5f8cd584-f490-4fec-afd0-b55ebf39ab4e#0#102708</td>
+</tr>
+<tr>
+<td>max_confidence</td>
+<td>float</td>
+<td>Maximum confidence score for the road user's track classification</td>
+<td>0.9151925444602966</td>
+</tr>
+<tr>
+<td>start_occurrence</td>
+<td>timestamp</td>
+<td>Timestamp indicating the starting time of the track</td>
+<td>2023-05-24 11:45:07.600000</td>
+</tr>
+<tr>
+<td>start_occurrence_day</td>
+<td>string</td>
+<td>Date indicating the start of the track</td>
+<td>2023-05-24</td>
+</tr>
+<tr>
+<td>start_occurrence_time</td>
+<td>string</td>
+<td>Time indicating the start of the track</td>
+<td>11:45:07.600000</td>
+</tr>
+<tr>
+<td>end_occurrence</td>
+<td>timestamp</td>
+<td>Timestamp indicating the ending time of the track</td>
+<td>2023-05-24 11:45:09.600000</td>
+</tr>
+<tr>
+<td>end_occurrence_day</td>
+<td>string</td>
+<td>Date indicating the end of the track</td>
+<td>2023-05-24</td>
+</tr>
+<tr>
+<td>end_occurrence_time</td>
+<td>string</td>
+<td>Time indicating the end of the track</td>
+<td>11:45:09.600000</td>
+</tr>
+<tr>
+<td>start_frame_number</td>
+<td>int</td>
+<td>Frame number corresponding to the start of the track</td>
+<td>153</td>
+</tr>
+<tr>
+<td>end_frame_number</td>
+<td>int</td>
+<td>Frame number corresponding to the end of the track</td>
+<td>193</td>
+</tr>
+<tr>
+<td>start_video_name</td>
+<td>string</td>
+<td>Name of the video file where the start of the track was recorded</td>
+<td>OTCamera19_FR20_2023-05-24_11-45-00.mp4</td>
+</tr>
+<tr>
+<td>end_video_name</td>
+<td>string</td>
+<td>Name of the video file where the end of the track was recorded</td>
+<td>OTCamera19_FR20_2023-05-24_11-45-00.mp4</td>
+</tr>
+<tr>
+<td>start_section_id</td>
+<td>int</td>
+<td>Identifier for the section where the track originated</td>
+<td>3</td>
+</tr>
+<tr>
+<td>end_section_id</td>
+<td>int</td>
+<td>Identifier for the section where the track ended</td>
+<td>2</td>
+</tr>
+<tr>
+<td>start_section_name</td>
+<td>string</td>
+<td>Name of the section where the track started</td>
+<td>north</td>
+</tr>
+<tr>
+<td>end_section_name</td>
+<td>string</td>
+<td>Name of the section where the track ended</td>
+<td>east</td>
+</tr>
+<tr>
+<td>start_coordinate_px_x</td>
+<td>float</td>
+<td>X-coordinate of the road user at the start of the track, in pixels</td>
+<td>718.1949096679688</td>
+</tr>
+<tr>
+<td>start_coordinate_px_y</td>
+<td>float</td>
+<td>Y-coordinate of the road user at the start of the track, in pixels</td>
+<td>301.2111328125</td>
+</tr>
+<tr>
+<td>end_coordinate_px_x</td>
+<td>float</td>
+<td>X-coordinate of the road user at the end of the track, in pixels</td>
+<td>775.1578369140625</td>
+</tr>
+<tr>
+<td>end_coordinate_px_y</td>
+<td>float</td>
+<td>Y-coordinate of the road user at the end of the track, in pixels</td>
+<td>326.5100158691406</td>
+</tr>
+<tr>
+<td>start_vector_px_x</td>
+<td>float</td>
+<td>X-component of the road user's movement vector at the start of the track</td>
+<td>-0.54376220703125</td>
+</tr>
+<tr>
+<td>start_vector_px_y</td>
+<td>float</td>
+<td>Y-component of the road user's movement vector at the start of the track</td>
+<td>1.6538543701171875</td>
+</tr>
+<tr>
+<td>end_vector_px_x</td>
+<td>float</td>
+<td>X-component of the road user's movement vector at the end of the track</td>
+<td>0.179168701171875</td>
+</tr>
+<tr>
+<td>end_vector_px_y</td>
+<td>float</td>
+<td>Y-component of the road user's movement vector at the end of the track</td>
+<td>2.1141113281249773</td>
+</tr>
+<tr>
+<td>hostname</td>
+<td>string</td>
+<td>Name of the camera or device capturing the road user</td>
+<td>OTCamera19</td>
+</tr>
+</tbody>
+</table>
+<h3 id="track-statistics">Track Statistics<a class="headerlink" href="#track-statistics" title="Permanent link">&para;</a></h3>
+<p>This is a CSV export of the track statistics shown in the workspace below the camera image.</p>
+<h2 id="what-else">What else?<a class="headerlink" href="#what-else" title="Permanent link">&para;</a></h2>
+<p>If you encounter problems, have questions or like to request features, please <a href="https://github.com/OpenTrafficCam/OTAnalytics/issues/new">open an issue</a> on GitHub.</p>
+<p>We welcome code contributions (e.g. fixing bugs or adding features) by the community.
+If you consider contributing, please check the <a href="https://opentrafficcam.org/contribute/">contribute section</a> of this documentation first.</p>
+<p>If you like to receive professional support, please have a look at our <a href="https://opentrafficcam.org/pricing/">services</a> or <a href="mailto:team@opentrafficcam.org">contact us</a> for more information.</p>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 29, 2025</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2020 - 2024 OpenTrafficCam Contributors <a href="https://platomo.de/impressum/">Impressum / Legal Notice</a>
+
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://www.linkedin.com/company/opentrafficcam" target="_blank" rel="noopener" title="OpenTrafficCam on LinkedIn" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://github.com/OpenTrafficCam" target="_blank" rel="noopener" title="OpenTrafficCam on GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "search.suggest", "search.highlight", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.60a45f97.min.js"></script>
+      
+        <script src="../../assets/js/katex_mkdocs.js"></script>
+      
+        <script src="../../assets/js/katex.min.js"></script>
+      
+        <script src="../../assets/js/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>
