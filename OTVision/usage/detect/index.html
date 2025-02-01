@@ -1198,6 +1198,24 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#detect_start" class="md-nav__link">
+    <span class="md-ellipsis">
+      detect_start
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detect_end" class="md-nav__link">
+    <span class="md-ellipsis">
+      detect_end
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2284,6 +2302,24 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#detect_start" class="md-nav__link">
+    <span class="md-ellipsis">
+      detect_start
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detect_end" class="md-nav__link">
+    <span class="md-ellipsis">
+      detect_end
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2311,7 +2347,7 @@
 <h2 id="synopsis">Synopsis<a class="headerlink" href="#synopsis" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>python  detect.py   [-p paths] [--expected_duration] [-c config]
                     [-w weights] [--conf] [--iou] [--half] [--force]
-                    [--overwrite]
+                    [--overwrite] [--detect_start] [--detect_end]
 </code></pre></div>
 <h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
 <p>If you have <a href="../convert/">converted</a> your video files to one of the supported
@@ -2325,7 +2361,7 @@ you are ready to start the detection of the road users in each video frame.</p>
 video file, the current version of OTVision reads the start date and time from
 the video filenames.</p>
 <p>Video files recorded by OTCamera already contain the start date and time in the
-filename. </p>
+filename.</p>
 <p>In case you use OTVision to process video files recorded by
 <strong>other camera systems</strong>,
 please make sure that the filename of these files contain the start date and time
@@ -2338,19 +2374,19 @@ in the following format:
 <p>One or multiple paths to video files or folders containing video files.</p>
 <p>This parameter is required to run <code>detect.py</code>.
 It has to be specified either using the CLI or in the
-<a href="../../advanced_usage/configuration/">configuration</a> yaml file.</p>
+<a href="../../advanced_usage/configuration/">configuration</a> YAML file.</p>
 <h3 id="expected_duration-required">expected_duration (required)<a class="headerlink" href="#expected_duration-required" title="Permanent link">&para;</a></h3>
 <p><code>--expected_duration &lt;video duration [sec]&gt;</code></p>
 <p>Expected duration of each video in seconds (must be all the same).
 This parameter helps to avoid errors if some images are missing in a video.</p>
 <p>This parameter is required to run <code>detect.py</code>.
 It has to be specified either using the CLI or in the
-<a href="../../advanced_usage/configuration/">configuration</a> yaml file.</p>
+<a href="../../advanced_usage/configuration/">configuration</a> YAML file.</p>
 <h3 id="config">config<a class="headerlink" href="#config" title="Permanent link">&para;</a></h3>
 <p><code>-c "path/to/config file"</code></p>
 <p>or</p>
 <p><code>--config "path/to/config file"</code></p>
-<p>Path to a custom user <a href="../../advanced_usage/configuration/">configuration</a> yaml file.
+<p>Path to a custom user <a href="../../advanced_usage/configuration/">configuration</a> YAML file.
 Other parameters (including <code>paths</code>) are parsed from this configuration file.</p>
 <p>This parameter is optional.
 By default, the <code>user_config.otvision.yaml</code> in the root directory is read.
@@ -2399,6 +2435,16 @@ using a cached model from previous detection runs.</p>
 <p><code>--overwrite</code> to overwrite existing <code>.otdet</code> files.</p>
 <p><code>--no-overwrite</code> to prevent overwriting existing <code>.otdet</code> files.</p>
 <p>This parameter is optional and defaults to <code>--overwrite</code>.</p>
+<h3 id="detect_start">detect_start<a class="headerlink" href="#detect_start" title="Permanent link">&para;</a></h3>
+<p><code>--detect_start</code> to specify the start time of the detection in seconds.
+Frames occurring before the specified start time will be excluded from the detection
+process.</p>
+<p>This parameter is optional and defaults to <code>None</code>.</p>
+<h3 id="detect_end">detect_end<a class="headerlink" href="#detect_end" title="Permanent link">&para;</a></h3>
+<p><code>--detect_end</code> to specify the end time of the detection in seconds.
+Frames occurring at or after the specified end time will be excluded from the detection
+process.</p>
+<p>This parameter is optional and defaults to <code>None</code>.</p>
 
 
 
@@ -2419,7 +2465,7 @@ using a cached model from previous detection runs.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 23, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 30, 2025</span>
   </span>
 
     
