@@ -127,34 +127,6 @@ This is optional.
 
 ---
 
-### Debugging and Logging
-
-#### debug
-
-`--debug`
-
-Set log level to `DEBUG` mode for detailed information about the process.
-
----
-
-#### logfile
-
-`--logfile <path/to/file>`
-
-Specify the directory or file location where logs should be saved.
-
----
-
-#### logfile_overwrite
-
-`--logfile_overwrite`
-
-Overwrite the log file if it already exists. If omitted, logs will be appended to the existing file.
-
----
-
-### Export Options
-
 #### event-formats
 
 `--event-formats <formats>`
@@ -219,6 +191,32 @@ Whitelist filter to include tracks with given classes. Classes specified in `--i
 `--exclude-classes <list of classes>`
 
 Blacklist filter to exclude tracks with given classes.
+
+---
+
+### Debugging and Logging
+
+#### debug
+
+`--debug`
+
+Set log level to `DEBUG` mode for detailed information about the process.
+
+---
+
+#### logfile
+
+`--logfile <path/to/file>`
+
+Specify the directory or file location where logs should be saved.
+
+---
+
+#### logfile_overwrite
+
+`--logfile_overwrite`
+
+Overwrite the log file if it already exists. If omitted, logs will be appended to the existing file.
 
 ---
 
