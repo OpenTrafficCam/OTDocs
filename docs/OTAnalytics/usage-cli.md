@@ -1,4 +1,4 @@
-# OTAnalytics CLI
+# Usage CLI
 
 ## Synopsis
 
