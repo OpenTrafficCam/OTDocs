@@ -5,7 +5,7 @@
 ```text
 python  detect.py   [-p paths] [--expected_duration] [-c config]
                     [-w weights] [--conf] [--iou] [--half] [--force]
-                    [--overwrite]
+                    [--overwrite] [--detect_start] [--detect_end]
 ```
 
 ## Description
@@ -19,13 +19,13 @@ you are ready to start the detection of the road users in each video frame.
 ### paths (required)
 
 !!! info "Filename convention"
-  
+
     To prevent to set the start date and time in the config file for each individual
     video file, the current version of OTVision reads the start date and time from
     the video filenames.
 
     Video files recorded by OTCamera already contain the start date and time in the
-    filename. 
+    filename.
 
     In case you use OTVision to process video files recorded by
     **other camera systems**,
@@ -43,7 +43,7 @@ One or multiple paths to video files or folders containing video files.
 
 This parameter is required to run `detect.py`.
 It has to be specified either using the CLI or in the
-[configuration](../advanced_usage/configuration.md) yaml file.
+[configuration](../advanced_usage/configuration.md) YAML file.
 
 ### expected_duration (required)
 
@@ -54,7 +54,7 @@ This parameter helps to avoid errors if some images are missing in a video.
 
 This parameter is required to run `detect.py`.
 It has to be specified either using the CLI or in the
-[configuration](../advanced_usage/configuration.md) yaml file.
+[configuration](../advanced_usage/configuration.md) YAML file.
 
 ### config
 
@@ -64,7 +64,7 @@ or
 
 `--config "path/to/config file"`
 
-Path to a custom user [configuration](../advanced_usage/configuration.md) yaml file.
+Path to a custom user [configuration](../advanced_usage/configuration.md) YAML file.
 Other parameters (including `paths`) are parsed from this configuration file.
 
 This parameter is optional.
@@ -75,6 +75,7 @@ configuration file is specified, the default values of the parameters as
 described below are used.
 
 !!! warning
+
     Any parameter passed to the CLI will overwrite the respective parameter from
     the config file.
 
@@ -138,3 +139,19 @@ This parameter is optional and defaults to `--no-force`.
 `--no-overwrite` to prevent overwriting existing `.otdet` files.
 
 This parameter is optional and defaults to `--overwrite`.
+
+### detect_start
+
+`--detect_start` to specify the start time of the detection in seconds.
+Frames occurring before the specified start time will be excluded from the detection
+process.
+
+This parameter is optional and defaults to `None`.
+
+### detect_end
+
+`--detect_end` to specify the end time of the detection in seconds.
+Frames occurring at or after the specified end time will be excluded from the detection
+process.
+
+This parameter is optional and defaults to `None`.
