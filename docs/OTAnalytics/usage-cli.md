@@ -121,7 +121,7 @@ Specify the base name of the output file (e.g., event data). A proper suffix or 
 
 `--save-suffix <suffix>`
 
-Append a custom suffix to the file names of all output files. For example, if the `save-name` is `results` and the suffix is `_test`, the resulting file may be `results_test.csv`.
+Append a custom suffix to the filenames of all output files. For example, if the `save-name` is `results` and the suffix is `_test`, the resulting file may be `results_test.csv`.
 
 This is optional.
 
