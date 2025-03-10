@@ -20,7 +20,9 @@ python -m OTAnalytics [-h] [--cli] [--cli-mode {bulk,stream}]
 
 ## Description
 
-If you have run ([OTVision track](../../OTVision/usage/track)) to extract movements of road users, you are ready to analyze the movements in each file.
+If you have run [OTVision track](../../OTVision/usage/track)
+to extract movements of road users,
+you are ready to analyze the movements in each file.
 
 ## Parameters
 
@@ -113,7 +115,8 @@ Specify the directory where output files will be saved.
 
 `--save-name <filename>`
 
-Specify the base name of the output file (e.g., event data). A proper suffix or file type will be appended automatically.
+Specify the base name of the output file (e.g., event data).
+A proper suffix or file type will be appended automatically.
 
 ---
 
@@ -121,7 +124,9 @@ Specify the base name of the output file (e.g., event data). A proper suffix or 
 
 `--save-suffix <suffix>`
 
-Append a custom suffix to the filenames of all output files. For example, if the `save-name` is `results` and the suffix is `_test`, the resulting file may be `results_test.csv`.
+Append a custom suffix to the filenames of all output files.
+For example, if the `save-name` is `results` and the suffix is `_test`,
+the resulting file may be `results_test.csv`.
 
 This is optional.
 
@@ -147,7 +152,8 @@ This parameter is optional and defaults to `otevents`.
 
 Specify the time interval(s) in minutes for event counting.
 
-Example: `--count-intervals 5 10 15` will export event counts for 5-minute, 10-minute, and 15-minute intervals.
+Example: `--count-intervals 5 10 15` will export event counts for 5-minute, 10-minute,
+and 15-minute intervals.
 
 ---
 
@@ -173,7 +179,8 @@ Disable the export of track statistics as `.csv`.
 
 `--num-processes <integer>`
 
-Specify the number of processes to be used for multi-processing. The CLI will divide the workload among these many processes to improve performance.
+Specify the number of processes to be used for multiprocessing.
+The CLI will divide the workload among these many processes to improve performance.
 
 ---
 
@@ -181,8 +188,8 @@ Specify the number of processes to be used for multi-processing. The CLI will di
 
 `--include-classes <list of classes>`
 
-Whitelist filter to include tracks with given classes. Classes specified in `--include-classes` are always kept even if they appear in `--exclude-
-                        classes`.
+Whitelist filter to include tracks with given classes. Classes specified in
+`--include-classes` are always kept even if they appear in `--exclude-classes`.
 
 ---
 
@@ -216,11 +223,12 @@ Specify the directory or file location where logs should be saved.
 
 `--logfile_overwrite`
 
-Overwrite the log file if it already exists. If omitted, logs will be appended to the existing file.
+Overwrite the log file if it already exists.
+If omitted, logs will be appended to the existing file.
 
 ---
 
 ## Notes
 
-- Any parameters specified via the CLI will override those specified in the configuration file.
-- Ensure all file paths are provided in the correct format and are accessible.
+- Parameters specified via the CLI will override configuration file parameters
+- Ensure all file paths are provided in the correct format and are accessible
