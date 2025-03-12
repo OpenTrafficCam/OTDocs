@@ -39,9 +39,7 @@ The CLI allows you to process a configured analysis on a high performance workst
 
 ## Parameters
 
-### General Options
-
-#### help
+### help
 
 `-h`, `--help`
 
@@ -49,7 +47,7 @@ Show the help message and exit.
 
 ---
 
-#### cli
+### cli
 
 `--cli`
 
@@ -57,30 +55,30 @@ Start OTAnalytics in CLI mode. If omitted, OTAnalytics will run in GUI mode.
 
 ---
 
-#### cli-mode
+### cli-mode
 
 `--cli-mode {bulk,stream}`
 
 Specify the execution mode for the CLI. Possible values are:
 
-- `bulk`: Process data in batches.
-- `stream`: Process data in streams.
+- `bulk`: Read all tracks into memory and process all in one.
+- `stream`: Read data in chunks. Thus, reading `cli-chunk-size` tracks into memory and process them. Afterwards, read the next ones
 
 This parameter is optional. Defaults to `bulk`.
 
 ---
 
-#### cli-chunk-size
+### cli-chunk-size
 
 `--cli-chunk-size <integer>`
 
-Specify the chunk size for streaming OTAnalytics CLI.
+Specify the chunk size for streaming OTAnalytics CLI. The chunk size configures the number of tracks to be read in streaming mode. Thus, the chunk size controls the necessary memory to process all track files.
 
 This parameter is optional.
 
 ---
 
-#### show-svz
+### show-svz
 
 `--show-svz`
 
@@ -88,52 +86,55 @@ Show SVZ-Tab in OTAnalytics GUI. If omitted the tab will be hidden.
 
 ---
 
-### Configuration and Input Files
 
-#### config
+### config
 
 `--config <path/to/config file>`
 
-Path to otconfig file.
+Path to otconfig file. The otconfig file contains the configuration of the analysis. How to create an otconfig file, see [Usage GUI](../OTAnalytics/usage-ui.md#save-and-open-the-project)
 
 ---
 
-#### ottrks
+### ottrks
 
 `--ottrks <paths to .ottrk files>`
 
-Specify one or more paths to `.ottrk` files containing track data to be processed.
+Specify one or more paths directories or to `.ottrk` files containing track data to be processed.
 
 ---
 
-#### otflow
+### otflow
 
 `--otflow <path/to/file>`
 
-Path to an `.otflow` file containing section information needed for analysis.
+Path to an `.otflow` file containing section information needed for analysis. How to create an otflow file, see [Usage GUI](../OTAnalytics/usage-ui.md#save-and-open-the-project)
 
 ---
 
-### Output Options
 
-#### save-dir
+### save-dir
 
 `--save-dir <path/to/directory>`
 
 Specify the directory where output files will be saved.
 
+
+This parameter is optional. It defaults to the directory where the otconfig or ottrk files are stored.
+
 ---
 
-#### save-name
+### save-name
 
 `--save-name <filename>`
 
 Specify the base name of the output file (e.g., event data).
 A proper suffix or file type will be appended automatically.
 
+This parameter is optional. It defaults to the filename of the ottrk or otconfig files.
+
 ---
 
-#### save-suffix
+### save-suffix
 
 `--save-suffix <suffix>`
 
@@ -145,7 +146,7 @@ This is optional.
 
 ---
 
-#### event-formats
+### event-formats
 
 `--event-formats <formats>`
 
@@ -159,7 +160,7 @@ This parameter is optional and defaults to `otevents`.
 
 ---
 
-#### count-intervals
+### count-intervals
 
 `--count-intervals <intervals in minutes>`
 
@@ -170,7 +171,7 @@ and 15-minute intervals.
 
 ---
 
-#### no-track-export
+### no-track-export
 
 `--no-track-export`
 
@@ -178,7 +179,7 @@ Disable the export of track data as `.csv`.
 
 ---
 
-#### no-track-statistics-export
+### no-track-statistics-export
 
 `--no-track-statistics-export`
 
@@ -186,9 +187,8 @@ Disable the export of track statistics as `.csv`.
 
 ---
 
-### Processing Options
 
-#### num-processes
+### num-processes
 
 `--num-processes <integer>`
 
@@ -197,7 +197,7 @@ The CLI will divide the workload among these many processes to improve performan
 
 ---
 
-#### include-classes
+### include-classes
 
 `--include-classes <list of classes>`
 
@@ -206,7 +206,7 @@ Whitelist filter to include tracks with given classes. Classes specified in
 
 ---
 
-#### exclude-classes
+### exclude-classes
 
 `--exclude-classes <list of classes>`
 
@@ -214,9 +214,8 @@ Blacklist filter to exclude tracks with given classes.
 
 ---
 
-### Debugging and Logging
 
-#### debug
+### debug
 
 `--debug`
 
@@ -224,7 +223,7 @@ Set log level to `DEBUG` mode for detailed information about the process.
 
 ---
 
-#### logfile
+### logfile
 
 `--logfile <path/to/file>`
 
@@ -232,7 +231,7 @@ Specify the directory or file location where logs should be saved.
 
 ---
 
-#### logfile_overwrite
+### logfile_overwrite
 
 `--logfile_overwrite`
 
