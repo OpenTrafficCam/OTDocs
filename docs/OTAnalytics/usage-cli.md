@@ -119,7 +119,7 @@ Path to an `.otflow` file containing section information needed for analysis. Ho
 Specify the directory where output files will be saved.
 
 
-This parameter is optional. It defaults to the directory where the otconfig or ottrk files are stored.
+This parameter is optional. It defaults to the directory where the otconfig or otflow file is stored.
 
 ---
 
