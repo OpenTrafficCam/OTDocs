@@ -1,18 +1,29 @@
 # Usage CLI
 
+After processing videos with OTVision´s tracking module ([OTVision track](../OTVision/usage/track.md)), you can use OTAnalytics for analysing traffic data.
+The analysis must be configured in the [OTAnalytics **Graphical User Interface (GUI)**](../OTAnalytics/usage-ui.md). Afterwards, the analysis can be processed using the GUI or CLI interface.
+
 ## Synopsis
 
 ```text
-python -m OTAnalytics [-h] [--cli] [--cli-mode {bulk,stream}]
-                [--cli-chunk-size CLI_CHUNK_SIZE] [--show-svz]
-                [--config CONFIG] [--ottrks OTTRKS [OTTRKS ...]]
-                [--otflow OTFLOW] [--save-dir SAVE_DIR]
-                [--save-name SAVE_NAME] [--save-suffix SAVE_SUFFIX]
+python -m OTAnalytics [-h] 
+                [--cli] 
+                [--cli-mode {bulk,stream}]
+                [--cli-chunk-size CLI_CHUNK_SIZE] 
+                [--show-svz]
+                [--config CONFIG] 
+                [--ottrks OTTRKS [OTTRKS ...]]
+                [--otflow OTFLOW] 
+                [--save-dir SAVE_DIR]
+                [--save-name SAVE_NAME] 
+                [--save-suffix SAVE_SUFFIX]
                 [--debug]
                 [--event-formats EVENT_FORMATS [EVENT_FORMATS ...]]
                 [--count-intervals COUNT_INTERVALS [COUNT_INTERVALS ...]]
-                [--no-track-export] [--no-track-statistics-export]
-                [--num-processes NUM_PROCESSES] [--logfile LOGFILE]
+                [--no-track-export] 
+                [--no-track-statistics-export]
+                [--num-processes NUM_PROCESSES] 
+                [--logfile LOGFILE]
                 [--logfile_overwrite]
                 [--include-classes INCLUDE_CLASSES [INCLUDE_CLASSES ...]]
                 [--exclude-classes EXCLUDE_CLASSES [EXCLUDE_CLASSES ...]]
