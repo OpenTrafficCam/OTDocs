@@ -130,7 +130,7 @@ This parameter is optional. It defaults to the directory where the otconfig or o
 Specify the base name of the output file (e.g., event data).
 A proper suffix or file type will be appended automatically.
 
-This parameter is optional. It defaults to the filename of the ottrk or otconfig files.
+This parameter is optional. Default is an empty string.
 
 ---
 
@@ -142,7 +142,7 @@ Append a custom suffix to the filenames of all output files.
 For example, if the `save-name` is `results` and the suffix is `_test`,
 the resulting file may be `results_test.csv`.
 
-This is optional.
+This is optional. Default is an empty string.
 
 ---
 
