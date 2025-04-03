@@ -140,17 +140,24 @@ This parameter is optional and defaults to `--no-force`.
 
 This parameter is optional and defaults to `--overwrite`.
 
-### detect_start
+### start-time
 
-`--detect_start` to specify the start time of the detection in seconds.
+`--start-time` to specify the start time of the detection in `%Y-%m-%d_%H-%M-%S format.
+If this parameter is not set, the start time will be parsed from the filename in the given format. The start time needs to be in the filename or given via this parameter.
+
+This parameter is optional and defaults to `None`.
+
+### detect-start
+
+`--detect-start` to specify the start time of the detection in seconds.
 Frames occurring before the specified start time will be excluded from the detection
 process.
 
 This parameter is optional and defaults to `None`.
 
-### detect_end
+### detect-end
 
-`--detect_end` to specify the end time of the detection in seconds.
+`--detect-end` to specify the end time of the detection in seconds.
 Frames occurring at or after the specified end time will be excluded from the detection
 process.
 
