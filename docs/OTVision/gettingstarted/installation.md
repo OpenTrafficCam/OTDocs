@@ -79,13 +79,13 @@ by running the [installation scripts](../installation).
     Open a Command Prompt an run:
 
     ```cmd 
-    venv\Scripts\activate
+    .venv\Scripts\activate
     ``` 
 
 === "Linux / macOS terminal"
 
     ```bash
-    source venv/bin/activate
+    source .venv/bin/activate
     ```
 
 The virtual environment should be activated, indicated by the `(venv)`
