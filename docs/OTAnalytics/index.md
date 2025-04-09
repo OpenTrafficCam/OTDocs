@@ -2,36 +2,50 @@
 
 > The **brain** of OpenTrafficCam.
 
-[OTAnalytics](https://github.com/OpenTrafficCam/OTAnalytics) is a set of self developed algorithms to gather traffic measures based on trajectories of road users.
+[OTAnalytics](https://github.com/OpenTrafficCam/OTAnalytics) is a set of self-developed algorithms to gather traffic measures based on trajectories of road users. It provides a user-friendly graphical interface for configuring analyses, extracting valuable insights from your data, and exporting the results efficiently.
 
 ## Key features
 
-* Generation of traffic flow matrices and node flow diagrams
-* Measurement of time gaps, speeds and accelerations
-* Long-term: Analysis of near-accidents (e.g. TTC, PET)
-* Visualization of traffic data
-* Import of trajectories from other systems (e.g. DataFromSky)
-* Runs on any Windows laptop
+* Configuration of traffic analyses using sections and flows
+* Generation of traffic counts and flow matrices
+* Export of event lists for detailed analysis
+* Visualization of tracks, events, and traffic data
+* Various visualization layers and filters
+* Runs on Windows, macOS, and Linux
+
+## Domain Elements
+
+OTAnalytics works with the following key concepts:
+
+* **Tracks**: Trajectories of road users, composed of a series of detections
+* **Track Points**: Representative points from each bounding box, forming the trajectory
+* **Sections**: Digital equivalents of physical detectors for traffic measurement
+* **Events**: Generated when a track's trajectory intersects a section
+* **Flows**: Traffic flows defined by a starting section and an ending section
+* **Track Assignments**: Assignment of tracks to flows based on events
+
+## Hardware Requirements
+
+OTAnalytics runs on most modern desktop PCs and laptops (e.g., with an i5 processor and 8 GB of RAM).
+
+* More RAM allows you to load more tracks of road users simultaneously
+* A faster processor improves the runtime of analyses and makes the user interface more responsive
 
 ## Content of documentation
 
-<!-- TODO Create content, and add links to content pages, links to the software then on the content pages -->
+* [Installation](installation.md): How to install OTAnalytics on different operating systems
+* [Usage UI](usage-ui.md): Detailed guide on how to use the graphical user interface
 
-Most of the code will be developed by the OpenTrafficCam contributors (based on python libraries like [NumPy](https://numpy.org/),
+Most of the code is developed by the OpenTrafficCam contributors 
+(based on Python libraries like [NumPy](https://numpy.org/),
 [pandas](https://pandas.pydata.org/),
 [tkinter](https://docs.python.org/3/library/tkinter.html)
-and [OpenCV](https://opencv.org/)).
+and [PyAV](https://github.com/PyAV-Org/PyAV)).
 
-!!! warning "Early prototype"
+!!! info "Current status"
 
-    The currently available version of OTAnalytics described in this
-    documentation is in early prototype stage.
-    This version works and offers an impression of the functionality.  
+    OTAnalytics is actively maintained and developed. The latest version offers a comprehensive set of features for traffic analysis.
 
-    It is partially tested on Windows 10.
+    It is tested on Windows, macOS, and Linux.
 
-    We are currently working on a complete re-implementation
-    for a stable release.
-    It will also be tested on Mac and Linux.
-    
-    Stay tuned :)
+    For the latest updates and releases, visit the [GitHub repository](https://github.com/OpenTrafficCam/OTAnalytics/releases/latest).

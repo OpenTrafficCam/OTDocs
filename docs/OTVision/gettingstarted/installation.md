@@ -96,17 +96,17 @@ in braces in front of your current working directory in the terminal.
 If you downloaded a `-cuda` release, you are good to go, if the CUDA version
 in the `requirements.txt` matches your system.
 
-To install another version you can do so follwing the PyTorch documentation:
+To install another version you can do so following the PyTorch documentation:
 
 Depending on your operating system (Windows or Linux) and your CUDA version
 you can select, copy and run the install command from the
 [PyTorch site](https://pytorch.org/) under "INSTALL PYTORCH"
 (choose Build="Stable", Package="pip" and Language="Python").
 
-E.g., for CUDA 11.6 and the latest stable PyTorch Build, the command is:
+E.g., for CUDA 12.6 and the latest stable PyTorch Build, the command is:
 
 ```bash
-pip3 install torch torchvision --extra-index-url https://download.pytorch.org/whl/cu116
+pip3 install torch torchvision --extra-index-url https://download.pytorch.org/whl/cu126
 ```
 
 ## If you encounter problems
