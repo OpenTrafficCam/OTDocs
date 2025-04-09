@@ -1,25 +1,7 @@
 # Installation
 
-!!! warning "READ THIS BEFORE YOU INSTALL AND USE THE SOFTWARE"
-
-    **License**
-
-    This software is licensed under the GNU General Public License Version 3 (GNU GPL-3.0).
-
-    A full copy of the license is included in the code repository as LICENSE file and can also be viewed online: [LICENSE file on Github](https://github.com/OpenTrafficCam/OTAnalytics/blob/main/LICENSE).
-
-    Please respect this license!
-
-    **Disclaimer**
-
-    Although OTAnalytics has been widely used in many transportation-related projects, it is still under active development.
-    Features and functionality may change at any time.
-    Particularly the user interface and the data formats should not be considered stable.
-
-    This software is provided "as is," without any express or implied warranties or liabilities.
-    Use is at your own risk.
-    Neither the authors nor contributors assume any responsibility for damages resulting from the use of this software.
-    For more details, refer to Sections 15 and 16 of the GNU GPL-3.0.
+In this section, we provide instructions how to install OTAnalytics on the most common
+Operating Systems.
 
 ## Hardware requirements
 
