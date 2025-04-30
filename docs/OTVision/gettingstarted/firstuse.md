@@ -62,7 +62,7 @@ Every command consists of three parts:
     You can specify a file or folder path (in quotation marks) after the
     `-p` (or `--paths`) argument.
 
-    The detect.py script expects an additional argument `--expected_duration`, the expected duration of the video(s) in seconds.
+    The detect.py script expects an additional argument `--expected-duration`, the expected duration of the video(s) in seconds.
 
     ??? info "Some hints about specifying the paths"
 
@@ -110,7 +110,7 @@ Therefore, we provide the `detect.py` script.
 To detect video files, run the following command after activating your venv:
 
 ``` text
-python detect.py -p "path/to/your/video files" --expected_duration <video duration [sec]>
+python detect.py -p "path/to/your/video files" --expected-duration <video duration [sec]>
 ```
 
 where

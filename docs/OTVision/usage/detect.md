@@ -3,7 +3,7 @@
 ## Synopsis
 
 ```text
-python  detect.py   [-p paths] [--expected_duration] [-c config]
+python  detect.py   [-p paths] [--expected-duration] [-c config]
                     [-w weights] [--conf] [--iou] [--half] [--force]
                     [--overwrite] [--detect_start] [--detect_end]
 ```
@@ -45,9 +45,9 @@ This parameter is required to run `detect.py`.
 It has to be specified either using the CLI or in the
 [configuration](../advanced_usage/configuration.md) YAML file.
 
-### expected_duration (required)
+### expected-duration (required)
 
-`--expected_duration <video duration [sec]>`
+`--expected-duration <video duration [sec]>`
 
 Expected duration of each video in seconds (must be all the same).
 This parameter helps to avoid errors if some images are missing in a video.
