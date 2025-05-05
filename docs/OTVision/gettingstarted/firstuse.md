@@ -37,13 +37,13 @@ by running the [installation scripts](../installation):
     Open a Command Prompt an run:
 
     ```cmd 
-    venv\Scripts\activate
+    .venv\Scripts\activate
     ``` 
 
 === "Linux / macOS terminal"
 
     ```bash
-    source venv/bin/activate
+    source .venv/bin/activate
     ```
 
 The virtual environment should be activated, indicated by the `(venv)`
@@ -61,8 +61,6 @@ Every command consists of three parts:
     The path(s) to the data you want to process.
     You can specify a file or folder path (in quotation marks) after the
     `-p` (or `--paths`) argument.
-
-    The detect.py script expects an additional argument `--expected_duration`, the expected duration of the video(s) in seconds.
 
     ??? info "Some hints about specifying the paths"
 
@@ -110,7 +108,7 @@ Therefore, we provide the `detect.py` script.
 To detect video files, run the following command after activating your venv:
 
 ``` text
-python detect.py -p "path/to/your/video files" --expected_duration <video duration [sec]>
+python detect.py -p "path/to/your/video files" --expected-duration <video duration [sec]>
 ```
 
 where
