@@ -62,8 +62,6 @@ Every command consists of three parts:
     You can specify a file or folder path (in quotation marks) after the
     `-p` (or `--paths`) argument.
 
-    The detect.py script expects an additional argument `--expected-duration`, the expected duration of the video(s) in seconds.
-
     ??? info "Some hints about specifying the paths"
 
         You can just drag a file or folder and drop them into the terminal.

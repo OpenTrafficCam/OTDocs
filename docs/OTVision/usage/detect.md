@@ -45,16 +45,15 @@ This parameter is required to run `detect.py`.
 It has to be specified either using the CLI or in the
 [configuration](../advanced_usage/configuration.md) YAML file.
 
-### expected-duration (required)
+### expected-duration
 
 `--expected-duration <video duration [sec]>`
 
 Expected duration of each video in seconds (must be all the same).
 This parameter helps to avoid errors if some images are missing in a video.
 
-This parameter is required to run `detect.py`.
-It has to be specified either using the CLI or in the
-[configuration](../advanced_usage/configuration.md) YAML file.
+This parameter is optional.
+By default, the length of the video is read from the video file.
 
 ### config
 
