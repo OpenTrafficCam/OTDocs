@@ -33,8 +33,8 @@ python -m OTAnalytics [-h]
 
 If you have run [OTVision track](../../OTVision/usage/track)
 to extract movements of road users, you are ready to analyze the movements in each file.
-To do so, you first need to configure the analysis within the [OTAnalytics GUI](../OTAnalytics/usage-ui.md). 
-Afterwards, you can analyze the data using the GUI or CLI. 
+To do so, you first need to configure the analysis within the [OTAnalytics GUI](../OTAnalytics/usage-ui.md).
+Afterwards, you can analyze the data using the GUI or CLI.
 The CLI allows you to process a configured analysis on a high performance workstation.
 
 ## Parameters
