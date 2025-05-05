@@ -36,7 +36,7 @@ OTAnalytics runs on most modern desktop PCs and laptops (e.g., with an i5 proces
 * [Installation](installation.md): How to install OTAnalytics on different operating systems
 * [Usage UI](usage-ui.md): Detailed guide on how to use the graphical user interface
 
-Most of the code is developed by the OpenTrafficCam contributors 
+Most of the code is developed by the OpenTrafficCam contributors
 (based on Python libraries like [NumPy](https://numpy.org/),
 [pandas](https://pandas.pydata.org/),
 [tkinter](https://docs.python.org/3/library/tkinter.html)
