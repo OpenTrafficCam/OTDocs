@@ -148,6 +148,14 @@
             .traffic-class-icon {
                 margin-top: 5px;
                 margin-bottom: 5px;
+                display: inline-block;
+                transition: transform 0.3s cubic-bezier(.4,2,.6,1), z-index 0.2s;
+                position: relative;
+                z-index: 1;
+            }
+            .traffic-class-icon:hover {
+                transform: scale(1.75);
+                z-index: 10;
             }
             </style>
             <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
