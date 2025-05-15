@@ -21,6 +21,18 @@
 <link href="stylesheets/bootstrap-grid.css" rel="stylesheet"/>
 <link href="stylesheets/bootstrap-utilities.css" rel="stylesheet"/>
 <link href="stylesheets/color.css" rel="stylesheet"/>
+<style>
+.highlighted-btn {
+    background-color: var(--md-accent-fg-color) !important;
+    color: var(--md-accent-bg-color) !important;
+    border-color: var(--md-accent-fg-color) !important;
+}
+.highlighted-btn:hover, .highlighted-btn:focus {
+    background-color: var(--md-primary-fg-color) !important;
+    color: var(--md-primary-bg-color) !important;
+    border-color: var(--md-primary-fg-color) !important;
+}
+</style>
 {% endblock %}
 
 <!-- JavaScript libraries -->
@@ -331,20 +343,7 @@
 <section class="page-section" id="contact-button">
     <div class="container">
         <div class="text-center mb-2">
-            <a class="md-button contact-btn" href="mailto:team@opentrafficcam.org?subject=Anfrage%20zu%20OpenTrafficCam">Kontaktieren Sie uns</a>
-            <style>
-            .contact-btn {
-                background-color: var(--md-accent-fg-color) !important;
-                color: var(--md-accent-bg-color) !important;
-                border-color: var(--md-accent-fg-color) !important;
-                font-size: 1rem !important;
-            }
-            .contact-btn:hover, .contact-btn:focus {
-                background-color: var(--md-primary-fg-color) !important;
-                color: var(--md-primary-bg-color) !important;
-                border-color: var(--md-primary-fg-color) !important;
-            }
-            </style>
+            <a class="md-button highlighted-btn fs-6" href="mailto:team@opentrafficcam.org?subject=Anfrage%20zu%20OpenTrafficCam">Kontaktieren Sie uns</a>
         </div>
     </div>  
 </section>
@@ -370,7 +369,7 @@
                         eine präzisere Unterscheidung von Verkehrsklassen, höhere Genauigkeit und geringeren Aufwand
                         ermöglichen.
                     </p>
-                    <a href="/pricing">→ Unsere Services</a>
+                    <a class="md-button highlighted-btn" href="/pricing">Unsere Services</a>
             </div>
             <div class="col-md-6">
                 <img loading="lazy" width="100%" height="100%" alt="Vektor image of two engineers." src="assets/img/planning.webp">
@@ -378,6 +377,7 @@
         </div>
     </div>
 </section>
+
 <section class="page-section bg-light details" id="research">
     <div class="container">
         <div class="row">
@@ -402,7 +402,7 @@
                         Mit unserer langjährigen wissenschaftlichen Erfahrung stehen wir Ihnen als Dienstleister
                         oder Projektpartner zur Seite und begleiten Ihre Forschungsprojekte mit Expertise.
                     </p>
-                    <a href="mailto:info@platomo.de?subject=Forschungsanfrage">→ Kontaktieren Sie uns</a>
+                    <a class="md-button highlighted-btn" href="mailto:team@opentrafficcam.org?subject=Forschungsanfrage%20zu%20OpenTrafficCam">Kontaktieren Sie uns</a>
             </div>
         </div>
     </div>
@@ -426,7 +426,7 @@
                         Wir stehen Ihnen gerne zur Verfügung für einen Austausch über Datenschutzaspekte zum spezifischen
                         Anwendungsfall von OpenTrafficCam.
                     </p>
-                    <a href="mailto:team@opentrafficcam.org?subject=Datenschutz">→ Kontaktieren Sie uns</a>
+                    <a class="md-button highlighted-btn" href="mailto:team@opentrafficcam.org?subject=Anfrage%20zu%20OpenTrafficCam: Datenschutz">Kontaktieren Sie uns</a>
             </div>
             <div class="col-md-6">
                 <img loading="lazy" width="100%" height="100%" alt="Vektor image of a lawyer and an engineer." src="assets/img/data-privacy.webp">
@@ -458,7 +458,7 @@
                         Mit Open Source gestalten wir gemeinsam eine kollaborative und zukunftsorientierte
                         Lösung für unsere Nutzerinnen und Nutzer.
                     </p>
-                    <a href="https://github.com/OpenTrafficCam" target="_blank" rel="noopener noreferrer">→ Quellcode auf GitHub</a>
+                    <a class="md-button" href="https://github.com/OpenTrafficCam" target="_blank" rel="noopener noreferrer">Quellcode auf GitHub</a>
             </div>
         </div>
     </div>
@@ -488,7 +488,7 @@
                     <img alt="Logo of TU Dresden" src="assets/img/tud_logo.png">
                 </div>
             </div>
-            <a  class="md-button" href="/team">Mehr zu uns</a>
+            <a class="md-button" href="/team">Mehr zu uns</a>
         </div>
     </div>
 </section>
