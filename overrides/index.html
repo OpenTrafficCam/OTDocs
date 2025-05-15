@@ -124,38 +124,146 @@
     </div>
   </section>
 
-<!--
-<section class="page-section introduction" id="otc_information">
-    <div class="col-md-9 container text-center">
-        <h1>Überblick</h1>
-        <p>
-            Entwickelt von erfahrenen Partnern aus Wissenschaft und Praxis, ist die <strong>OpenTrafficCam</strong>
-            das Werkzeug zur transparenten und automatisierten Verkehrsdatenerfassung für
-            <strong>Forschung und Praxis.</strong>
-        </p>
-        <p>
-            Die OpenTrafficCam vereint zahlreiche einzigartige Merkmale und bietet dadurch maximale
-            <strong>Flexibilität</strong> bei bestmöglicher <strong>Qualität</strong>.
-            Von <strong>Datenschutz by Design</strong> über die Detektion
-            von <strong>18 verschiedenen Klassen</strong> (u.a. TLS 8+1, Lastenräder, eScooter) bis hin zu integrierten
-            <strong>Qualitätsmetriken</strong> (z. B. für SVZ 2025) bietet die <strong>OpenTrafficCam</strong> alles
-            Notwendige aus einer Hand für Ihre <strong>Forschungs- und Praxisprojekte</strong>.
-        </p>
-        <p>
-            OpenTrafficCam ist <strong>Open Source</strong>. Sie haben auch die Möglichkeit,
-            <strong>Videoverarbeitung</strong> und <strong>Messungen</strong> durch das erfahrene Team von
-            <strong><a href="https://platomo.de/">platomo</a></strong> durchführen zu lassen.
-            So profitieren Sie von den Vorteilen einer kollaborativen, offenen Lösung sowie von
-            <strong><a href="/pricing">professionellen Services</a></strong>.
-        </p>
+<section class="page-section bg-light details" id="traffic-classes" style="padding-top: 1.5rem; padding-bottom: 1.5rem;">
+    <div class="container">
+        <div class="text-center mb-2">
+            <h2 style="margin-top: 0rem; margin-bottom: 2rem;">18 verkehrliche Klassen*</h2>
+        </div>
+        <div class="row justify-content-center g-4 text-center">
+            <style>
+            .traffic-class-icon img {
+                height: 30px !important;
+                width: auto;
+                max-width: 100%;
+                display: block;
+                margin: 0 auto;
+                transition: transform 0.5s cubic-bezier(.4,2,.6,1), z-index 0.2s;
+                pointer-events: none;
+            }
+            .traffic-class-icon:hover img {
+                transform: scale(1.75);
+                z-index: 2;
+                position: relative;
+            }
+            .traffic-class-icon {
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+            </style>
+            <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+                <div class="traffic-class-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Zu Fuss Gehende">
+                    <img src="assets/icons/01_Zufussgehende.svg" alt="Zu Fuss Gehende">
+                </div>
+            </div>
+            <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+                <div class="traffic-class-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Scooterfahrende">
+                    <img src="assets/icons/02_Scooterfahrende.svg" alt="Scooterfahrende">
+                </div>
+            </div>
+            <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+                <div class="traffic-class-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Radfahrende">
+                    <img src="assets/icons/03_Radfahrende.svg" alt="Radfahrende">
+                </div>
+            </div>
+            <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+                <div class="traffic-class-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Radfahrende mit Anhänger">
+                    <img src="assets/icons/04_Radfahrende_mit_Anhaenger.svg" alt="Radfahrende mit Anhänger">
+                </div>
+            </div>
+            <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+                <div class="traffic-class-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Lastenradfahrende">
+                    <img src="assets/icons/05_Lastenradfahrende.svg" alt="Lastenradfahrende">
+                </div>
+            </div>
+            <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+                <div class="traffic-class-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Kraftradfahrende">
+                    <img src="assets/icons/06_Kraftradfahrende.svg" alt="Kraftradfahrende">
+                </div>
+            </div>
+            <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+                <div class="traffic-class-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Pkw">
+                    <img src="assets/icons/07_Pkw.svg" alt="Pkw">
+                </div>
+            </div>
+            <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+                <div class="traffic-class-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Pkw mit Anhänger">
+                    <img src="assets/icons/08_Pkw_mit_Anhaenger.svg" alt="Pkw mit Anhänger">
+                </div>
+            </div>
+            <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+                <div class="traffic-class-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Privater Kleinbus">
+                    <img src="assets/icons/09_Privater_Kleinbus.svg" alt="Privater Kleinbus">
+                </div>
+            </div>
+            <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+                <div class="traffic-class-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Privater Kleinbus mit Anhänger">
+                    <img src="assets/icons/10_Privater_Kleinbus_mit_Anhaenger.svg" alt="Privater Kleinbus mit Anhänger">
+                </div>
+            </div>
+            <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+                <div class="traffic-class-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Gewerblicher Kleinbus">
+                    <img src="assets/icons/11_Gewerblicher_Kleinbus.svg" alt="11_Gewerblicher_Kleinbus">
+                </div>
+            </div>
+            <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+                <div class="traffic-class-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Gewerblicher Kleinbus mit Anhänger">
+                    <img src="assets/icons/12_Gewerblicher_Kleinbus_mit_Anhaenger.svg" alt="Gewerblicher Kleinbus mit Anhänger">
+                </div>
+            </div>
+            <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+                <div class="traffic-class-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Lkw">
+                    <img src="assets/icons/13_Lkw.svg" alt="Lkw">
+                </div>
+            </div>
+            <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+                <div class="traffic-class-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Lkw mit Anhänger">
+                    <img src="assets/icons/14_Lkw_mit_Anhaenger.svg" alt="Lkw mit Anhänger">
+                </div>
+            </div>
+            <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+                <div class="traffic-class-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Lastzug">
+                    <img src="assets/icons/15_Lastzug.svg" alt="Lastzug">
+                </div>
+            </div>
+            <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+                <div class="traffic-class-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Bus">
+                    <img src="assets/icons/16_Bus.svg" alt="Bus">
+                </div>
+            </div>
+            <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+                <div class="traffic-class-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Bahn">
+                    <img src="assets/icons/17_Bahn.svg" alt="Bahn">
+                </div>
+            </div>
+            <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+                <div class="traffic-class-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Sonstige Klasse">
+                    <img src="assets/icons/18_Sonstige_Klasse.svg" alt="Sonstige Klasse">
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col text-center">
+                <h3 class="fw-light" style="margin-bottom: 0rem; margin-top: 2rem;">
+                    Aggregierbar zu <strong>TLS 8+1</strong>, <strong>RLS-19</strong> und nach eigenen Wünschen
+                </h3>
+                <h3 class="fw-light" style="margin-bottom: 0rem; margin-top: 2rem;">
+                    <em>*Open Source-Version: 7 Klassen</em>
+                </h3>
+            </div>
+        </div>
     </div>
 </section>
--->
+<script>
+    // Bootstrap Tooltip initialisieren (einfachere Methode für Bootstrap 5)
+    document.addEventListener('DOMContentLoaded', function () {
+        var tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+        tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+            new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+    });
+</script>
 
-
-
-
-<section class="page-section services" id="services">
+<section class="page-section services" style="padding-top: 1.5rem; padding-bottom: 0rem;" id="services">
     <div class="container">
         <div class="row text-center">
             <div class="col-md-4 service-grid">
