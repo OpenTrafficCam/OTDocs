@@ -205,3 +205,15 @@ p {
 .md-copyright__highlight {
   color: white;
 }
+
+/* Highlighted button */
+.highlighted-btn {
+    background-color: var(--md-accent-fg-color) !important;
+    color: var(--md-accent-bg-color) !important;
+    border-color: var(--md-accent-fg-color) !important;
+}
+.highlighted-btn:hover, .highlighted-btn:focus {
+    background-color: var(--md-primary-fg-color) !important;
+    color: var(--md-primary-bg-color) !important;
+    border-color: var(--md-primary-fg-color) !important;
+}
