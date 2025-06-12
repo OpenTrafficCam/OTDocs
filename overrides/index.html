@@ -21,6 +21,7 @@
 <link href="stylesheets/bootstrap-grid.css" rel="stylesheet"/>
 <link href="stylesheets/bootstrap-utilities.css" rel="stylesheet"/>
 <link href="stylesheets/color.css" rel="stylesheet"/>
+<link href="stylesheets/bootstrap.min.css" rel="stylesheet">
 {% endblock %}
 
 <!-- JavaScript libraries -->
@@ -90,6 +91,100 @@
 {{ super() }}
 {% endblock %}
 {% block content %}
+
+<div id="videoCarousel" class="carousel slide w-75 mx-auto" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <!-- Carousel items will be inserted here by JavaScript -->
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const videoUrls = [
+    "assets/video/index_carousel/OTCamera05_FR20_2023-07-17_16-30-00_cargo_cyclist4_overlayed_all.mp4",
+    "assets/video/index_carousel/OTCamera07_FR20_2023-07-13_18-00-00_cyclists_pedestrians_far_overlayed.mp4",
+    "assets/video/index_carousel/OTCamera09_FR20_2023-09-03_17-45-00_many_many_pedestrians_2_overlayed.mp4",
+    "assets/video/index_carousel/OTCamera10_FR20_2022-11-04_06-30-00_dark_rainy_cyclist_overlayed_cutted.mp4",
+    "assets/video/index_carousel/OTCamera10_FR20_2023-05-07_22-00-00_night_three_cars_overlayed.mp4",
+  ];
+
+  const carouselInner = document.querySelector('.carousel-inner');
+
+  videoUrls.forEach((url, index) => {
+    const item = document.createElement('div');
+    item.className = 'carousel-item' + (index === 0 ? ' active' : '');
+    item.dataset.video = url;
+
+    const video = document.createElement('video');
+    video.muted = true;
+    video.playsInline = true;
+    video.controls = false;
+
+    item.appendChild(video);
+    carouselInner.appendChild(item);
+  });
+
+  const carousel = document.getElementById('videoCarousel');
+  const items = Array.from(carousel.querySelectorAll('.carousel-item'));
+
+  function setVideoSrc(item) {
+    const video = item.querySelector('video');
+    const src = item.dataset.video;
+    if (!video.src) {
+      video.src = src;
+      video.load();
+    }
+  }
+
+  function removeVideoSrc(item) {
+    const video = item.querySelector('video');
+    video.pause();
+    video.removeAttribute('src');
+    video.load();
+  }
+
+  function manageVideoStates(activeIndex) {
+    items.forEach((item, i) => {
+      const distance = Math.abs(i - activeIndex);
+      if (distance <= 1) {
+        setVideoSrc(item);
+      } else {
+        removeVideoSrc(item);
+      }
+    });
+  }
+
+  function playActiveVideo(index) {
+    const video = items[index].querySelector('video');
+    video.play().catch(() => {});
+    video.onended = () => {
+      const carouselInstance = bootstrap.Carousel.getInstance(carousel);
+      carouselInstance.next();
+    };
+  }
+
+  function getActiveIndex() {
+    return items.findIndex(item => item.classList.contains('active'));
+  }
+
+  carousel.addEventListener('slid.bs.carousel', () => {
+    const activeIndex = getActiveIndex();
+    manageVideoStates(activeIndex);
+    playActiveVideo(activeIndex);
+  });
+
+  window.addEventListener('load', () => {
+    const activeIndex = getActiveIndex();
+    manageVideoStates(activeIndex);
+    playActiveVideo(activeIndex);
+  });
+</script>
 
 <section class="page-section" id="features">
     <div class="container col-md-9 text-center">
