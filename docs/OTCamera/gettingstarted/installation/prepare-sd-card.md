@@ -35,7 +35,9 @@ Then select the SD card on which the operating system will be installed.
 
 !!! warning
 
-    It is possible to select not only the SD card, but also the hard drive or SSD where your operating system or other PC data is stored. Make sure that you really select the right SD card. Most of the time, you can tell by the size.
+    It is possible to select not only the SD card, but also the hard drive or SSD where your operating system or other PC data is stored.
+    Make sure that you really select the right SD card.
+    Most of the time, you can tell by the size.
 
 Press the Write button and wait until the Raspberry Pi Imager has completely written and verified your SD card.
 
