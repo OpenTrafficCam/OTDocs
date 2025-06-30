@@ -70,7 +70,8 @@ Der Untersuchungsbereich "Neustadt West" umfasst folgende Messstellen:
 
 Im **April 2025** begann das Projekt zur Weiterentwicklung von OpenTrafficCam zu einem Live-System.
 
-Im **Juni 2026** fand eine temporäre Testmessung im Untersuchungsbereich "Hoyerswerda Neustadt Ost" mit 21 Kamerasystemen statt.
+Im **Juni 2026** fanden das Kickoff mit der Stadt und eine temporäre Testmessung im Untersuchungsbereich "Hoyerswerda Neustadt Ost" mit 21 Kamerasystemen statt.
+Auch die [Presse berichtete](https://www.radiolausitz.de/beitrag/titel-10-870898/).
 
 <div class="grid cards" markdown>
 
@@ -85,3 +86,14 @@ Im **Juni 2026** fand eine temporäre Testmessung im Untersuchungsbereich "Hoyer
     </figure>
 
 </div>
+
+## Ausblick
+
+Die Entwicklung von OpenTrafficCam LIVE soll bis Ende 2026 abgeschlossen sein.
+
+Dann wird das Reallabor Hoyerswerda in Betrieb genommen und für Forschungsprojekte an der TU Dresden und weiteren Hochschulungen zur Verfügung stehen.
+Die erfassten Daten und Kennwerte werden außerdem für die Verkehrsplanung in der Stadt Hoyerswerda verwendet.
+
+OpenTrafficCam kann darüber hinaus als Live-System für verschiedene Anwendungsfälle in weiteren Kommunen oder Bundesländern eingesetzt werden.
+
+[Kontaktieren Sie uns](#){ .md-button .md-button--primary }
