@@ -88,31 +88,41 @@ Das Reallabor umfasst zwei Untersuchungsbereiche in der Neustadt Hoyerswerdas mi
 
 <div class="grid cards" markdown>
 
--   __Fördergeber__
+- **Fördergeber:**
+
+    [**Bundesministerium für Wirtschaft und Energie**](https://www.bundeswirtschaftsministerium.de/Navigation/DE/Home/home.html)
+
+    [**Land Sachsen**](https://www.sachsen.de/)
 
     ---
 
-    ![Logo Bundesministerium für Wirtschaft](assets/img/reallabor_hoy/logo_gefoerdert_durch_BMWE.png)
+    ![Logos Bundesministerium für Wirtschaft und Land Sachsen](assets/img/reallabor_hoy/Logos_BMWE_Sachsen.svg){ width="300" }
 
-    ![Logo Land Sachsen](assets/img/reallabor_hoy/Logo_Sachsen_modern.png)
+- **Fördernehmer und Auftraggeber:**
 
--   __Fördernehmer und Auftraggeber__
+    [**TU Dresden**](https://tu-dresden.de)
 
-    ---
-
-    ![Logo TU Dresden](assets/img/tud_logo.png)
-
--   __Auftragnehmer__
+    [**Professur für Mobilitätssystemplanung**](https://tu-dresden.de/bu/verkehr/ivs/msp)
 
     ---
 
-    ![Logo platomo GmbH](assets/img/platomo_logo.png)
+    ![Logo TU Dresden](assets/img/reallabor_hoy/Logos_TUD_und_MSP.svg){ width="300" }
 
--   __Kommunaler Partner__
+- **Auftragnehmer:**
+
+    [**platomo GmbH**](https://platomo.de/)
 
     ---
 
-    ![Logo Hoyerswerda](assets/img/reallabor_hoy/hoyerswerda_logo.png)
+    ![Logo platomo GmbH](assets/img/platomo_logo_black.svg){ width="200" }
+
+- **Kommunaler Partner:**
+
+    [**Stadt Hoyerswerda**](https://www.hoyerswerda.de/)
+
+    ---
+
+    ![Logo Hoyerswerda](assets/img/reallabor_hoy/hoyerswerda_logo.png){ width="200" }
 
 </div>
 
@@ -165,7 +175,7 @@ Das Reallabor umfasst zwei Untersuchungsbereiche in der Neustadt Hoyerswerdas mi
         <iframe
             src="https://www.youtube.com/embed/sOBw3qL1ojY"
             title="YouTube video player" frameborder="0"
-            style="width: 50%; aspect-ratio: 16 / 9; border: none;"
+            style="width: 100%; aspect-ratio: 16 / 9; border: none;"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen>
         </iframe>
