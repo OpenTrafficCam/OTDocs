@@ -21,18 +21,18 @@ Der Untersuchungsbereich "Neustadt Ost" umfasst folgende Messstellen:
 - Bushaltestelle "Klinikum"
 - Fugßgänger-Lichtsignalanlage zwischen "Lausitzer Seenland Klinikum" und Einkaufscenter "Treff 8"
 
-![Untersuchungsbereich Hoyerswerda Neustadt Ost](assets/img/Hoyerswerda_Untersuchungsbereiche_1.png){ width="500"}
+![Untersuchungsbereich Hoyerswerda Neustadt Ost](assets/img/reallabor_hoy/Hoyerswerda_Untersuchungsbereiche_1.png){ width="500"}
 
 Der Untersuchungsbereich "Neustadt West" umfasst folgende Messstellen:
 
 - Lichtsignalanlage Knotenpunkt B97 Elsterstraße / Albert-Einstein-Straße / Alte Berliner Straße
 - Bushaltestelle "Albert-Einstein-Straße" inklusive Verkehrsinsel
 
-![Untersuchungsbereiche Hoyerswerda Neustadt West](assets/img/Hoyerswerda_Untersuchungsbereiche_2.png){ width="500"}
+![Untersuchungsbereiche Hoyerswerda Neustadt West](assets/img/reallabor_hoy/Hoyerswerda_Untersuchungsbereiche_2.png){ width="500"}
 
 ## Technische Umsetzung
 
-![Technische Implementierung](assets/img/Hoyerswerda_technische_Implementierung.png)
+![Technische Implementierung](assets/img/reallabor_hoy/Hoyerswerda_technische_Implementierung.png)
 
 ## Beteiligte
 
@@ -62,36 +62,69 @@ Der Untersuchungsbereich "Neustadt West" umfasst folgende Messstellen:
 
     ---
 
-    ![Logo Hoyerswerda](assets/img/hoyerswerda_logo.png)
+    ![Logo Hoyerswerda](assets/img/reallabor_hoy/hoyerswerda_logo.png)
 
 </div>
 
 ## Meilensteine
 
-Im **April 2025** begann das Projekt zur Weiterentwicklung von OpenTrafficCam zu einem Live-System.
+??? success "April 2025: Projektstart"
 
-Im **Juni 2026** fanden das Kickoff mit der Stadt und eine temporäre Testmessung im Untersuchungsbereich "Hoyerswerda Neustadt Ost" mit 21 Kamerasystemen statt.
-Auch die [Presse berichtete](https://www.radiolausitz.de/beitrag/titel-10-870898/).
+    Im **April 2025** begann das Projekt zur Weiterentwicklung von OpenTrafficCam zu einem Live-System.
 
-<div class="grid cards" markdown>
+???+ success "Juni 2025: Kickoff und Testmessung"
 
--   <figure markdown="span">
-    ![Image title](assets/img/testmessung_hoyerswerda_install_cams.png){ width="300" }
-    <figcaption>Anbringung OTCamera-Systeme</figcaption>
-    </figure>
+    Im **Juni 2026** fanden das Kickoff mit der Stadt Hoyerswerda und eine temporäre Testmessung im Untersuchungsbereich "Hoyerswerda Neustadt Ost" mit 21 Kamerasystemen statt.
 
--   <figure markdown="span">
-    ![Image title](assets/img/testmessung_hoyerswerda_cams.png){ width="300" }
-    <figcaption>Montierte OTCamera-Systeme</figcaption>
-    </figure>
+    !!! impressions "Impressionen"
 
-</div>
+        <div class="grid cards" markdown>
+
+        -   <figure markdown="span">
+            ![Image title](assets/img/testmessung_hoyerswerda_install_cams.png){ width="400" }
+            <figcaption>Anbringung OTCameras</figcaption>
+            </figure>
+
+        -   <figure markdown="span">
+            ![Image title](assets/img/testmessung_hoyerswerda_cams.png){ width="400" }
+            <figcaption>Montierte OTCameras</figcaption>
+            </figure>
+
+        -   <figure markdown="span">
+            ![Image title](assets/img/reallabor_hoy/SZ_Pressebild_Kickoff_Regine_Michael.avif){ width="400" }
+            <figcaption>Kickoff 1/2 (Quelle: Wochenkurer/Peter Aswendt)</figcaption>
+            </figure>
+
+        -   <figure markdown="span">
+            ![Image title](assets/img/reallabor_hoy/SZ_Pressebild_Kickoff_Armin_Michael_Martin.avif){ width="400" }
+            <figcaption>Kickoff 2/2 (Quelle: SZ/Juliane Mietzsch)</figcaption>
+            </figure>
+
+        </div>
+
+    !!! news "Presseberichte"
+
+        [Radio Lausitz: "Hoyerswerda wird zum Labor für Verkehrsforscher"](https://www.radiolausitz.de/beitrag/titel-10-870898/)
+
+        [Wochenkurier: "Smarter Verkehr in Hoyerswerda"](https://www.wochenkurier.info/landkreis-bautzen/artikel/smarter-verkehr-in-hoyerswerda)
+
+        [Sächsische Zeitung: "Verkehrsforscher überwachen die Klinikums-Kreuzung in Hoyerswerda"](https://www.saechsische.de/lokales/bautzen-lk/hoyerswerda/mit-kameras-an-laternen-verkehrsforscher-ueberwachen-klinikums-kreuzung-in-hoyerswerda-SSTDLWW2PVG5LAD6PSPVZL3EWY.html)
+
+        [Lausitzwelle: "Kameras beobachten Verkehrslage"](https://lausitzwelle.de/hoyerswerda-kameras-beobachten-verkehrslage/)
+
+        <iframe
+            src="https://www.youtube.com/embed/sOBw3qL1ojY"
+            title="YouTube video player" frameborder="0"
+            style="width: 50%; aspect-ratio: 16 / 9; border: none;"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
 
 ## Ausblick
 
 Die Entwicklung von OpenTrafficCam LIVE soll bis Ende 2026 abgeschlossen sein.
 
-Dann wird das Reallabor Hoyerswerda in Betrieb genommen und für Forschungsprojekte an der TU Dresden und weiteren Hochschulungen zur Verfügung stehen.
+Dann wird das Reallabor Hoyerswerda in Betrieb genommen und für Forschungsprojekte an der TU Dresden und weiteren Hochschulen zur Verfügung stehen.
 Die erfassten Daten und Kennwerte werden außerdem für die Verkehrsplanung in der Stadt Hoyerswerda verwendet.
 
 OpenTrafficCam kann darüber hinaus als Live-System für verschiedene Anwendungsfälle in weiteren Kommunen oder Bundesländern eingesetzt werden.
