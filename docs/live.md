@@ -39,7 +39,7 @@ Gleichzeitig soll das System wertvolle Informationen für die Verkehrsplanung un
 
 Auch für andere Städte und Verwaltungen wird OpenTrafficCam LIVE Als Open Source-Alternative zu proprietären Anbietern verfügbar sein.
 
-OpenTrafficCam LIVE soll als offenes System Transparenz schaffen, digitale Souveränität stärken und für Forschung und Praxis gleicharmaßen nutzbar sein.
+OpenTrafficCam LIVE soll als offenes System Transparenz schaffen, digitale Souveränität stärken und für Forschung und Praxis gleichermaßen nutzbar sein.
 
 ## Umsetzung
 
