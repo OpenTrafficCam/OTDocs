@@ -5,6 +5,7 @@ hide:
 #  - toc
 ---
 
+<!-- markdownlint-disable-next-line MD025 -->
 # OpenTrafficCam LIVE Hoyerswerda
 
 ![OpenTrafficCam Live Hoyerswerda](assets/img/reallabor_hoy/OpenTrafficCam_LIVE_Hoy_Fullscreen.svg)
@@ -37,7 +38,8 @@ Durch den Einsatz von OpenTrafficCam und begleitender Infrastruktur entsteht ein
 Gleichzeitig liefert das System wertvolle Informationen für die Verkehrsplanung und -lenkung in Hoyerswerda und dient Blaupause für andere Städte mit ähnlichen Herausforderungen.
 
 Ein zentrales Merkmal von OpenTrafficCam LIVE ist der konsequente Einsatz von Open-Source-Technologien:
-Damit wird Transparenz geschaffen, die Nachvollziehbarkeit von Entscheidungen gestärkt und eine Abhängigkeit von proprietären Anbietern vermieden – zugunsten einer flexiblen, offenen und langfristig nachhaltigen Systemarchitektur.
+Damit wird Transparenz geschaffen, die Nachvollziehbarkeit von Entscheidungen gestärkt und eine Abhängigkeit von proprietären Anbietern vermieden –
+zugunsten einer flexiblen, offenen und langfristig nachhaltigen Systemarchitektur.
 
 ## Umsetzung
 
@@ -153,6 +155,7 @@ OpenTrafficCam kann darüber hinaus als Live-System für verschiedene Anwendungs
 
 ## Beteiligte
 
+<!-- markdownlint-disable-next-line MD033 -->
 <div class="grid cards" markdown>
 
 - **Fördergeber:**
