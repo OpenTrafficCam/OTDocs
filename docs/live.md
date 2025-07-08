@@ -25,9 +25,9 @@ Mit OpenTrafficCam LIVE Hoyerswerda entwickeln wir ein Reallabor für den Straß
 Damit sollen Verkehrsbewegungen automatisiert, permanent und in Echtzeit erfasst und analysiert werden.
 Dabei steht nicht nur die reine Zählung Verkehrteilnehmender im Fokus – sondern ein tiefes Verständnis für Verhalten, Nutzungsmuster und Sicherheitsaspekte im Straßenverkehr.
 
-Durch den Einsatz von OpenTrafficCam und begleitender Infrastruktur entsteht eine datengetriebene Grundlage für Forschung und Entwicklung – etwa in den Bereichen:
+So soll OpenTrafficCam LIVE Hoyerswerda Forschung und Entwicklung in folgenden Bereichen ermöglichen:
 
-- automatisierte Verkehrserfassung,
+- Automatisierte Verkehrserfassung,
 
 - Verhaltens- und Sicherheitsanalysen im Straßenraum,
 
@@ -35,11 +35,11 @@ Durch den Einsatz von OpenTrafficCam und begleitender Infrastruktur entsteht ein
 
 - automatisiertes und vernetztes Fahren.
 
-Gleichzeitig liefert das System wertvolle Informationen für die Verkehrsplanung und -lenkung in Hoyerswerda und dient Blaupause für andere Städte mit ähnlichen Herausforderungen.
+Gleichzeitig soll das System wertvolle Informationen für die Verkehrsplanung und -lenkung in Hoyerswerda liefern, unter anderem in den Bereichen Verkehrsmodellierung und Verkehrssicherheit.
 
-Ein zentrales Merkmal von OpenTrafficCam LIVE ist der konsequente Einsatz von Open-Source-Technologien:
-Damit wird Transparenz geschaffen, die Nachvollziehbarkeit von Entscheidungen gestärkt und eine Abhängigkeit von proprietären Anbietern vermieden –
-zugunsten einer flexiblen, offenen und langfristig nachhaltigen Systemarchitektur.
+Auch für andere Städte und Verwaltungen wird OpenTrafficCam LIVE Als Open Source-Alternative zu proprietären Anbietern verfügbar sein.
+
+OpenTrafficCam LIVE soll als offenes System Transparenz schaffen, digitale Souveränität stärken und für Forschung und Praxis gleicharmaßen nutzbar sein.
 
 ## Umsetzung
 
