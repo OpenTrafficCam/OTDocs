@@ -16,6 +16,8 @@ Im Rahmen dieses Projekts erfolgt nun ein entscheidender nächster Schritt: die 
 
 Dadurch wird es möglich, Verkehrsdaten nicht nur retrospektiv auszuwerten, sondern live zu interpretieren und unmittelbar für Verkehrsmanagement, Bürgerinformation oder vernetzte Systeme nutzbar zu machen.
 
+[Kontaktieren Sie uns](#){ .md-button .md-button--primary }
+
 ## Ziele
 
 Mit OpenTrafficCam LIVE Hoyerswerda entwickeln wir ein Reallabor für den Straßenverkehr.
@@ -84,55 +86,13 @@ Das Reallabor umfasst zwei Untersuchungsbereiche in der Neustadt Hoyerswerdas mi
         - **🚌 Bushaltestelle** "Albert-Einstein-Straße"
         - **🚶 Verkehrsinsel** "Albert-Einstein-Straße"
 
-## Beteiligte
+## Projektfortschritt
 
-<div class="grid cards" markdown>
-
-- **Fördergeber:**
-
-    [**Bundesministerium für Wirtschaft und Energie**](https://www.bundeswirtschaftsministerium.de/Navigation/DE/Home/home.html)
-
-    [**Land Sachsen**](https://www.sachsen.de/)
-
-    ---
-
-    ![Logos Bundesministerium für Wirtschaft und Land Sachsen](assets/img/reallabor_hoy/Logos_BMWE_Sachsen.svg){ width="300" }
-
-- **Fördernehmer und Auftraggeber:**
-
-    [**TU Dresden**](https://tu-dresden.de)
-
-    [**Professur für Mobilitätssystemplanung**](https://tu-dresden.de/bu/verkehr/ivs/msp)
-
-    ---
-
-    ![Logo TU Dresden](assets/img/reallabor_hoy/Logos_TUD_und_MSP.svg){ width="300" }
-
-- **Auftragnehmer:**
-
-    [**platomo GmbH**](https://platomo.de/)
-
-    ---
-
-    ![Logo platomo GmbH](assets/img/platomo_logo_black.svg){ width="200" }
-
-- **Kommunaler Partner:**
-
-    [**Stadt Hoyerswerda**](https://www.hoyerswerda.de/)
-
-    ---
-
-    ![Logo Hoyerswerda](assets/img/reallabor_hoy/hoyerswerda_logo.png){ width="200" }
-
-</div>
-
-## Meilensteine
-
-??? success "April 2025: Projektstart"
+??? success "04/2025: Projektstart"
 
     Im **April 2025** begann das Projekt zur Weiterentwicklung von OpenTrafficCam zu einem Live-System.
 
-???+ success "Juni 2025: Kickoff und Testmessung"
+??? success "06/2025: Kickoff und Testmessung"
 
     Im **Juni 2026** fanden das Kickoff mit der Stadt Hoyerswerda und eine temporäre Testmessung im Untersuchungsbereich "Hoyerswerda Neustadt Ost" mit 21 Kamerasystemen statt.
 
@@ -179,6 +139,8 @@ Das Reallabor umfasst zwei Untersuchungsbereiche in der Neustadt Hoyerswerdas mi
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen>
         </iframe>
+    
+!!! goal "09/2026: Go-Live"
 
 ## Ausblick
 
@@ -189,4 +151,44 @@ Die erfassten Daten und Kennwerte werden außerdem für die Verkehrsplanung in d
 
 OpenTrafficCam kann darüber hinaus als Live-System für verschiedene Anwendungsfälle in weiteren Kommunen oder Bundesländern eingesetzt werden.
 
-[Kontaktieren Sie uns](#){ .md-button .md-button--primary }
+## Beteiligte
+
+<div class="grid cards" markdown>
+
+- **Fördergeber:**
+
+    [**Bundesministerium für Wirtschaft und Energie**](https://www.bundeswirtschaftsministerium.de/Navigation/DE/Home/home.html)
+
+    [**Land Sachsen**](https://www.sachsen.de/)
+
+    ---
+
+    ![Logos Bundesministerium für Wirtschaft und Land Sachsen](assets/img/reallabor_hoy/Logos_BMWE_Sachsen.svg){ width="300" }
+
+- **Fördernehmer und Auftraggeber:**
+
+    [**TU Dresden**](https://tu-dresden.de)
+
+    [**Professur für Mobilitätssystemplanung**](https://tu-dresden.de/bu/verkehr/ivs/msp)
+
+    ---
+
+    ![Logo TU Dresden](assets/img/reallabor_hoy/Logos_TUD_und_MSP.svg){ width="300" }
+
+- **Auftragnehmer:**
+
+    [**platomo GmbH**](https://platomo.de/)
+
+    ---
+
+    ![Logo platomo GmbH](assets/img/platomo_logo_black.svg){ width="200" }
+
+- **Kommunaler Partner:**
+
+    [**Stadt Hoyerswerda**](https://www.hoyerswerda.de/)
+
+    ---
+
+    ![Logo Hoyerswerda](assets/img/reallabor_hoy/hoyerswerda_logo.png){ width="200" }
+
+</div>
