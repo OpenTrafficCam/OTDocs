@@ -10,7 +10,7 @@ hide:
 
 ![OpenTrafficCam Live Hoyerswerda](assets/img/reallabor_hoy/OpenTrafficCam_LIVE_Hoy_Fullscreen.svg)
 
-Das System **OpenTrafficCam** wird in zahlreichen Projekten in **in Forschung und Praxis erfolgreich eingesetzt**.
+**OpenTrafficCam** wird in zahlreichen Projekten **in Forschung und Praxis erfolgreich eingesetzt**.
 Dabei wird der Straßenverkehr **temporär erfasst** und anschließend **automatisiert analysiert**.
 
 Im Rahmen dieses Projekts erfolgt nun ein entscheidender nächster Schritt: die Weiterentwicklung zu **OpenTrafficCam LIVE** mit **permanenter Verkehrserfassung** und **Echtzeit-Verkehrsanalyse**.
