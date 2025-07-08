@@ -7,10 +7,17 @@ hide:
 
 # OpenTrafficCam LIVE Hoyerswerda
 
-## Hintergrund
+Das System **OpenTrafficCam** wird in zahlreichen Projekten in **in Forschung und Praxis erfolgreich eingesetzt**.
+Dabei wird der Straßenverkehr **temporär erfasst** und anschließend **automatisiert analysiert**.
 
-OpenTrafficCam LIVE Hoyerswerda ist ein Reallabor für den Straßenverkehr.
-In diesem Reallabor sollen Verkehrsbewegungen automatisiert, permanent und in Echtzeit erfasst und analysiert werden.
+Im Rahmen dieses Projekts erfolgt nun ein entscheidender nächster Schritt: die Weiterentwicklung zu **OpenTrafficCam LIVE** mit **permanenter Verkehrserfassung** und **Echtzeit-Verkehrsanalyse**.
+
+Dadurch wird es möglich, Verkehrsdaten nicht nur retrospektiv auszuwerten, sondern live zu interpretieren und unmittelbar für Verkehrsmanagement, Bürgerinformation oder vernetzte Systeme nutzbar zu machen.
+
+## Ziele
+
+Mit OpenTrafficCam LIVE Hoyerswerda entwickeln wir ein Reallabor für den Straßenverkehr.
+Damit sollen Verkehrsbewegungen automatisiert, permanent und in Echtzeit erfasst und analysiert werden.
 Dabei steht nicht nur die reine Zählung Verkehrteilnehmender im Fokus – sondern ein tiefes Verständnis für Verhalten, Nutzungsmuster und Sicherheitsaspekte im Straßenverkehr.
 
 Durch den Einsatz von OpenTrafficCam und begleitender Infrastruktur entsteht eine datengetriebene Grundlage für Forschung und Entwicklung – etwa in den Bereichen:
@@ -23,40 +30,17 @@ Durch den Einsatz von OpenTrafficCam und begleitender Infrastruktur entsteht ein
 
 - automatisiertes und vernetztes Fahren.
 
-Gleichzeitig liefert das System wertvolle Informationen für die Verkehrsplanung und -lenkung in Hoyerswerda und dient als übertragbares Modell für andere Städte mit ähnlichen Herausforderungen.
+Gleichzeitig liefert das System wertvolle Informationen für die Verkehrsplanung und -lenkung in Hoyerswerda und dient Blaupause für andere Städte mit ähnlichen Herausforderungen.
 
 Ein zentrales Merkmal von OpenTrafficCam LIVE ist der konsequente Einsatz von Open-Source-Technologien:
 Damit wird Transparenz geschaffen, die Nachvollziehbarkeit von Entscheidungen gestärkt und eine Abhängigkeit von proprietären Anbietern vermieden – zugunsten einer flexiblen, offenen und langfristig nachhaltigen Systemarchitektur.
 
-OpenTrafficCam LIVE vereint Forschung, Praxis und digitale Transformation – und zeigt, wie datenbasierte, gemeinwohlorientierte Digitalisierung im Mobilitätsbereich konkret aussehen kann.
+## Umsetzung
 
-## Untersuchungsbereiche
-
-Das Reallabor umfasst zwei Untersuchungsbereiche in der Neustadt Hoyerswerdas.
-
-<iframe width="100%" height="500px" frameborder="0" allowfullscreen allow="geolocation" src="//umap.openstreetmap.de/de/map/reallabor-hoyerswerda_43891?scaleControl=false&miniMap=true&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=false&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=null&onLoadPanel=none&captionBar=false&captionMenus=false&datalayers=566666d4-31ed-4285-8191-6cb2ddf2ec61&captionControl=null#15/51.4438/14.2641"></iframe>
-
-Der Untersuchungsbereich "Neustadt Ost" umfasst folgende Messstellen:
-
-- Lichtsignalanlage Knotenpunkt Claus-vonStauffenberg-Straße / Maria-Grollmuß-Straße / Erich-Weinert-Straße / Käthe-Niederkirchner-Straße
-- Zufahrt zu dieser Lichtisgnalanlage aus Richtung Osten (Maria-Grollmuß-Straße)
-- Ein-/Ausfahrt des Parkplatzes zum Einkaufscenter "Treff 8"
-- Bushaltestelle "Klinikum"
-- Fugßgänger-Lichtsignalanlage zwischen "Lausitzer Seenland Klinikum" und Einkaufscenter "Treff 8"
-
-![Untersuchungsbereich Hoyerswerda Neustadt Ost](assets/img/reallabor_hoy/Hoyerswerda_Untersuchungsbereiche_1.png){ width="500"}
-
-Der Untersuchungsbereich "Neustadt West" umfasst folgende Messstellen:
-
-- Lichtsignalanlage Knotenpunkt B97 Elsterstraße / Albert-Einstein-Straße / Alte Berliner Straße
-- Bushaltestelle "Albert-Einstein-Straße" inklusive Verkehrsinsel
-
-![Untersuchungsbereiche Hoyerswerda Neustadt West](assets/img/reallabor_hoy/Hoyerswerda_Untersuchungsbereiche_2.png){ width="500"}
-
-## Technische Umsetzung
+### Technische Umsetzung
 
 Der Straßenverkehr wird mit **[OTCamera](../OTCamera)** aufgezeichnet und die Videostreams werden per **Mobilfunk (LTE/5G)** an das Rechenzentrum der **TU Dresden** übertragen.
-Dort erfolgen in Echtzeit mit **[OTVision](../OTVision)** KI-Detektion und Tracking sowie mit **[OTAnalytics](../OTAnalytics)** die Bestimmung von Verkehrskennwerten.
+Dort erfolgen in Echtzeit mit **[OTVision](../OTVision)** KI-basierte Detektion und Tracking sowie mit **[OTAnalytics](../OTAnalytics)** die Bestimmung von Verkehrskennwerten.
 Die ermittelten Informationen werden per **Web-Dashboard** visualisiert und stehen für **Forschung, Entwicklung und lokale Verkehrsplanung** zur Verfügung.
 
 **Perspektivisch** sollen die Live-Informationen für Forschung und Entwicklung im Bereich **intelligentes Verkehrsmanagement** verwendet werden (zum Beispiel dynamische LSA-Steuerung).
@@ -64,6 +48,39 @@ Die ermittelten Informationen werden per **Web-Dashboard** visualisiert und steh
 !!! info "Das System im Überblick"
 
     ![Technische Implementierung](assets/img/reallabor_hoy/Hoyerswerda_technische_Implementierung.png)
+
+### Untersuchungsbereiche
+
+Das Reallabor umfasst zwei Untersuchungsbereiche in der Neustadt Hoyerswerdas mit 8 Messstellen und 19 Kamerasystemen.
+
+!!! location "Untersuchungsbereiche und Messstellen"
+
+    === "Untersuchungsbereiche"
+
+        <iframe width="100%" height="500px" frameborder="0" allowfullscreen allow="geolocation" src="//umap.openstreetmap.de/de/map/reallabor-hoyerswerda_43891?scaleControl=false&miniMap=true&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=false&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=null&onLoadPanel=none&captionBar=false&captionMenus=false&datalayers=566666d4-31ed-4285-8191-6cb2ddf2ec61&captionControl=null#15/51.4438/14.2641"></iframe>
+
+    === "Messstellen Neustadt Ost"
+
+        ![Untersuchungsbereich Hoyerswerda Neustadt Ost](assets/img/reallabor_hoy/Hoyerswerda_Untersuchungsbereiche_1.png){ width="500"}
+
+        Messstellen:
+
+        - **🚦 Lichtsignalanlage** Knotenpunkt Claus-vonStauffenberg-Straße / Maria-Grollmuß-Straße / Erich-Weinert-Straße / Käthe-Niederkirchner-Straße
+        - **🛣️ Zufahrt** zu dieser Lichtisgnalanlage aus Richtung Osten (Maria-Grollmuß-Straße)
+        - **🅿️ Ein-/Ausfahrt** des Parkplatzes zum Einkaufscenter "Treff 8"
+        - **🚌 Bushaltestelle** "Klinikum"
+        - **🚶 Fugßgänger-Lichtsignalanlage** zwischen "Lausitzer Seenland Klinikum" und Einkaufscenter "Treff 8"
+
+
+    === "Messstellen Neustadt West"
+
+        ![Untersuchungsbereiche Hoyerswerda Neustadt West](assets/img/reallabor_hoy/Hoyerswerda_Untersuchungsbereiche_2.png){ width="500"}
+
+        Messstellen:
+
+        - **🚦 Lichtsignalanlage** Knotenpunkt B97 Elsterstraße / Albert-Einstein-Straße / Alte Berliner Straße
+        - **🚌 Bushaltestelle** "Albert-Einstein-Straße"
+        - **🚶 Verkehrsinsel** "Albert-Einstein-Straße"
 
 ## Beteiligte
 

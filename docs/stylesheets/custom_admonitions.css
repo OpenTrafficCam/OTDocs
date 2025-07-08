@@ -33,3 +33,21 @@
     -webkit-mask-image: var(--md-admonition-icon--news);
                     mask-image: var(--md-admonition-icon--news);
 }
+
+:root {
+    --md-admonition-icon--location: url('../assets/icons/location_on_24dp_37483E_FILL0_wght400_GRAD0_opsz24.svg');
+}
+.md-typeset .admonition.location,
+.md-typeset details.location {
+    border-color: rgb(128, 128, 128);
+}
+.md-typeset .location > .admonition-title,
+.md-typeset .location > summary {
+    background-color: rgba(137, 137, 137, 0);
+}
+.md-typeset .location > .admonition-title::before,
+.md-typeset .location > summary::before {
+    background-color: rgb(128, 128, 128);
+    -webkit-mask-image: var(--md-admonition-icon--location);
+                    mask-image: var(--md-admonition-icon--location);
+}
