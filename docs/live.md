@@ -7,6 +7,29 @@ hide:
 
 # OpenTrafficCam LIVE Hoyerswerda
 
+## Hintergrund
+
+OpenTrafficCam LIVE Hoyerswerda ist ein Reallabor für den Straßenverkehr.
+In diesem Reallabor sollen Verkehrsbewegungen automatisiert, permanent und in Echtzeit erfasst und analysiert werden.
+Dabei steht nicht nur die reine Zählung Verkehrteilnehmender im Fokus – sondern ein tiefes Verständnis für Verhalten, Nutzungsmuster und Sicherheitsaspekte im Straßenverkehr.
+
+Durch den Einsatz von OpenTrafficCam und begleitender Infrastruktur entsteht eine datengetriebene Grundlage für Forschung und Entwicklung – etwa in den Bereichen:
+
+- automatisierte Verkehrserfassung,
+
+- Verhaltens- und Sicherheitsanalysen im Straßenraum,
+
+- smartes, situationsabhängiges Verkehrsmanagement sowie,
+
+- automatisiertes und vernetztes Fahren.
+
+Gleichzeitig liefert das System wertvolle Informationen für die Verkehrsplanung und -lenkung in Hoyerswerda und dient als übertragbares Modell für andere Städte mit ähnlichen Herausforderungen.
+
+Ein zentrales Merkmal von OpenTrafficCam LIVE ist der konsequente Einsatz von Open-Source-Technologien:
+Damit wird Transparenz geschaffen, die Nachvollziehbarkeit von Entscheidungen gestärkt und eine Abhängigkeit von proprietären Anbietern vermieden – zugunsten einer flexiblen, offenen und langfristig nachhaltigen Systemarchitektur.
+
+OpenTrafficCam LIVE vereint Forschung, Praxis und digitale Transformation – und zeigt, wie datenbasierte, gemeinwohlorientierte Digitalisierung im Mobilitätsbereich konkret aussehen kann.
+
 ## Untersuchungsbereiche
 
 Das Reallabor umfasst zwei Untersuchungsbereiche in der Neustadt Hoyerswerdas.
