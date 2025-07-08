@@ -92,9 +92,9 @@ Das Reallabor umfasst zwei Untersuchungsbereiche in der Neustadt Hoyerswerdas mi
 
     ---
 
-    ![Logo Bundesministerium für Wirtschaft](assets/img/logo_gefoerdert_durch_BMWE.png)
+    ![Logo Bundesministerium für Wirtschaft](assets/img/reallabor_hoy/logo_gefoerdert_durch_BMWE.png)
 
-    ![Logo Land Sachsen](assets/img/Logo_Sachsen_modern.png)
+    ![Logo Land Sachsen](assets/img/reallabor_hoy/Logo_Sachsen_modern.png)
 
 -   __Fördernehmer und Auftraggeber__
 
@@ -131,12 +131,12 @@ Das Reallabor umfasst zwei Untersuchungsbereiche in der Neustadt Hoyerswerdas mi
         <div class="grid cards" markdown>
 
         -   <figure markdown="span">
-            ![Image title](assets/img/testmessung_hoyerswerda_install_cams.png){ width="400" }
+            ![Image title](assets/img/reallabor_hoy/testmessung_hoyerswerda_install_cams.png){ width="400" }
             <figcaption>Anbringung OTCameras</figcaption>
             </figure>
 
         -   <figure markdown="span">
-            ![Image title](assets/img/testmessung_hoyerswerda_cams.png){ width="400" }
+            ![Image title](assets/img/reallabor_hoy/testmessung_hoyerswerda_cams.png){ width="400" }
             <figcaption>Montierte OTCameras</figcaption>
             </figure>
 
