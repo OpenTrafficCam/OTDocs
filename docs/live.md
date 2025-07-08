@@ -16,7 +16,7 @@ Im Rahmen dieses Projekts erfolgt nun ein entscheidender nächster Schritt: die 
 
 Dadurch wird es möglich, Verkehrsdaten nicht nur retrospektiv auszuwerten, sondern live zu interpretieren und unmittelbar für Verkehrsmanagement, Bürgerinformation oder vernetzte Systeme nutzbar zu machen.
 
-[Kontaktieren Sie uns](#){ .md-button .md-button--primary }
+[Kontaktieren Sie uns](mailto:team@opentrafficcam.org?subject=Anfrage%20zu%20OpenTrafficCam%20LIVE%20Hoyerswerda){ .md-button .md-button--primary }
 
 ## Ziele
 
