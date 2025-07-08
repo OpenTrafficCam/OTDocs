@@ -32,22 +32,13 @@ Der Untersuchungsbereich "Neustadt West" umfasst folgende Messstellen:
 
 ## Technische Umsetzung
 
-Der Straßenverkehr wird mit **OTCamera** aufgezeichnet und die Videostreams werden per **Mobilfunk (LTE/5G)** an das Rechenzentrum der **TU Dresden** übertragen.
-Dort erfolgen in Echtzeit mit **OTVision** KI-Detektion und Tracking sowie mit **OTAnalytics** die Bestimmung von Verkehrskennwerten.
+Der Straßenverkehr wird mit **[OTCamera](../OTCamera)** aufgezeichnet und die Videostreams werden per **Mobilfunk (LTE/5G)** an das Rechenzentrum der **TU Dresden** übertragen.
+Dort erfolgen in Echtzeit mit **[OTVision](../OTVision)** KI-Detektion und Tracking sowie mit **[OTAnalytics](../OTAnalytics)** die Bestimmung von Verkehrskennwerten.
 Die ermittelten Informationen werden per **Web-Dashboard** visualisiert und stehen für **Forschung, Entwicklung und lokale Verkehrsplanung** zur Verfügung.
 
 **Perspektivisch** sollen die Live-Informationen für Forschung und Entwicklung im Bereich **intelligentes Verkehrsmanagement** verwendet werden (zum Beispiel dynamische LSA-Steuerung).
 
-**Das System im Überblick:**
-
-- 🎥 **Erfassung** permanent und DSGVO-konform mit **OTCamera**
-- 📡 **Datenübertragung** via LTE/5G in Echtzeit  
-- ⚙️ **Prozessierung** zentral am Rechenzentrum der TU Dresden mit **OTVision** und **OTAnalytics**
-- 📊 **Visualisierung** via Web-Dashboard mit aktueller Verkehrslage
-- 💾 **Speicherung** für Forschung und Verkehrsplanung  
-- 🔜 **Perspektivisch** Forschung und Entwicklung im Bereich Echtzeit-Verkehrsmanagement
-
-!!! info "Übersicht der technischen Implementierung"
+!!! info "Das System im Überblick"
 
     ![Technische Implementierung](assets/img/reallabor_hoy/Hoyerswerda_technische_Implementierung.png)
 
