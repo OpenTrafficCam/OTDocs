@@ -19,6 +19,7 @@
 .md-typeset .impressions>summary::before {
     background-color: rgb(50% 50% 50%);
     mask-image: var(--md-admonition-icon--impressions);
+    /* stylelint-disable-next-line property-no-vendor-prefix */
     -webkit-mask-image: var(--md-admonition-icon--impressions);
 }
 
@@ -37,6 +38,7 @@
 .md-typeset .news>summary::before {
     background-color: rgb(50% 50% 50%);
     mask-image: var(--md-admonition-icon--news);
+    /* stylelint-disable-next-line property-no-vendor-prefix */
     -webkit-mask-image: var(--md-admonition-icon--news);
 }
 
@@ -54,6 +56,7 @@
 .md-typeset .location>summary::before {
     background-color: rgb(50% 50% 50%);
     mask-image: var(--md-admonition-icon--location);
+    /* stylelint-disable-next-line property-no-vendor-prefix */
     -webkit-mask-image: var(--md-admonition-icon--location);
 }
 
@@ -71,5 +74,6 @@
 .md-typeset .goal>summary::before {
     background-color: rgb(50% 50% 50%);
     mask-image: var(--md-admonition-icon--goal);
+    /* stylelint-disable-next-line property-no-vendor-prefix */
     -webkit-mask-image: var(--md-admonition-icon--goal);
 }
