@@ -1,5 +1,8 @@
 {
     "yaml.schemas": {
         "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml"
-    }
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
 }
