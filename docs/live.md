@@ -27,7 +27,7 @@ Dadurch wird es möglich, Verkehrsdaten nicht nur retrospektiv auszuwerten, sond
 
 Mit OpenTrafficCam LIVE Hoyerswerda entwickeln wir ein Reallabor für den Straßenverkehr.
 Damit sollen Verkehrsbewegungen automatisiert, permanent und in Echtzeit erfasst und analysiert werden.
-Dabei steht nicht nur die reine Zählung Verkehrteilnehmender im Fokus – sondern ein tiefes Verständnis für Verhalten, Nutzungsmuster und Sicherheitsaspekte im Straßenverkehr.
+Dabei steht nicht nur die reine Zählung Verkehrsteilnehmender im Fokus – sondern ein tiefes Verständnis für Verhalten, Nutzungsmuster und Sicherheitsaspekte im Straßenverkehr.
 
 So soll OpenTrafficCam LIVE Hoyerswerda Forschung und Entwicklung in folgenden Bereichen ermöglichen:
 
@@ -76,10 +76,10 @@ Das Reallabor umfasst zwei Untersuchungsbereiche in der Neustadt Hoyerswerdas mi
         Messstellen:
 
         - **🚦 Lichtsignalanlage** Knotenpunkt Claus-vonStauffenberg-Straße / Maria-Grollmuß-Straße / Erich-Weinert-Straße / Käthe-Niederkirchner-Straße
-        - **🛣️ Zufahrt** zu dieser Lichtisgnalanlage aus Richtung Osten (Maria-Grollmuß-Straße)
+        - **🛣️ Zufahrt** zu dieser Lichtsignalanlage aus Richtung Osten (Maria-Grollmuß-Straße)
         - **🅿️ Ein-/Ausfahrt** des Parkplatzes zum Einkaufscenter "Treff 8"
         - **🚌 Bushaltestelle** "Klinikum"
-        - **🚶 Fugßgänger-Lichtsignalanlage** zwischen "Lausitzer Seenland Klinikum" und Einkaufscenter "Treff 8"
+        - **🚶 Fußgänger-Lichtsignalanlage** zwischen "Lausitzer Seenland Klinikum" und Einkaufscenter "Treff 8"
 
 
     === "Messstellen Neustadt West"
