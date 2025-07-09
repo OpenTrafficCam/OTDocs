@@ -148,15 +148,6 @@ Das Reallabor umfasst zwei Untersuchungsbereiche in der Neustadt Hoyerswerdas mi
     
 !!! goal "09/2026: Go-Live"
 
-## Ausblick
-
-Die Entwicklung von OpenTrafficCam LIVE soll bis Ende 2026 abgeschlossen sein.
-
-Dann wird das Reallabor Hoyerswerda in Betrieb genommen und für Forschungsprojekte an der TU Dresden und weiteren Hochschulen zur Verfügung stehen.
-Die erfassten Daten und Kennwerte werden außerdem für die Verkehrsplanung in der Stadt Hoyerswerda verwendet.
-
-OpenTrafficCam kann darüber hinaus als Live-System für verschiedene Anwendungsfälle in weiteren Kommunen oder Bundesländern eingesetzt werden.
-
 ## Beteiligte
 
 <!-- markdownlint-disable-next-line MD033 -->
