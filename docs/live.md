@@ -114,7 +114,7 @@ Das Reallabor umfasst zwei Untersuchungsbereiche in der Neustadt Hoyerswerdas mi
 
         -   <figure markdown="span">
             ![Image title](assets/img/reallabor_hoy/SZ_Pressebild_Kickoff_Regine_Michael.avif){ width="400" }
-            <figcaption>Kickoff 1/2 (Quelle: Wochenkurer/Peter Aswendt)</figcaption>
+            <figcaption>Kickoff 1/2 (Quelle: Wochenkurier/Peter Aswendt)</figcaption>
             </figure>
 
         -   <figure markdown="span">
