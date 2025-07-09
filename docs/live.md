@@ -41,7 +41,7 @@ So soll OpenTrafficCam LIVE Hoyerswerda Forschung und Entwicklung in folgenden B
 
 Gleichzeitig soll das System wertvolle Informationen für die Verkehrsplanung und -lenkung in Hoyerswerda liefern, unter anderem in den Bereichen Verkehrsmodellierung und Verkehrssicherheit.
 
-Auch für andere Städte und Verwaltungen wird OpenTrafficCam LIVE Als Open Source-Alternative zu proprietären Anbietern verfügbar sein.
+Auch für andere Städte und Verwaltungen wird OpenTrafficCam LIVE als Open Source-Alternative zu proprietären Anbietern verfügbar sein.
 
 OpenTrafficCam LIVE soll als offenes System Transparenz schaffen, digitale Souveränität stärken und für Forschung und Praxis gleichermaßen nutzbar sein.
 
