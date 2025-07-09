@@ -45,11 +45,6 @@
     border-color: rgb(50% 50% 50%);
 }
 
-.md-typeset .admonition.location,
-.md-typeset details.location {
-    border-color: rgb(50% 50% 50%);
-}
-
 .md-typeset .location>.admonition-title,
 .md-typeset .location>summary {
     background-color: rgb(54% 54% 54% / 10%);
