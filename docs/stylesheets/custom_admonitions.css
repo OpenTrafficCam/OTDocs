@@ -19,27 +19,30 @@
 .md-typeset .impressions>summary::before {
     background-color: rgb(50% 50% 50%);
     mask-image: var(--md-admonition-icon--impressions);
+    -webkit-mask-image: var(--md-admonition-icon--impressions);
+}
 
-    :root {
-        --md-admonition-icon--news: url('../assets/icons/newsmode_24dp_37483E_FILL0_wght400_GRAD0_opsz24.svg');
-    }
+.md-typeset .admonition.news,
+.md-typeset .admonition.news,
+.md-typeset details.news {
+    border-color: rgb(50% 50% 50%);
+}
 
-    .md-typeset .admonition.news,
-    .md-typeset details.news {
-        border-color: rgb(50% 50% 50%);
-    }
+.md-typeset .news>.admonition-title,
+.md-typeset .news>summary {
+    background-color: rgb(54% 54% 54% / 10%);
+}
 
-    .md-typeset .news>.admonition-title,
-    .md-typeset .news>summary {
-        background-color: rgb(54% 54% 54% / 10%);
-    }
+.md-typeset .news>.admonition-title::before,
+.md-typeset .news>summary::before {
+    background-color: rgb(50% 50% 50%);
+    mask-image: var(--md-admonition-icon--news);
+    -webkit-mask-image: var(--md-admonition-icon--news);
+}
 
-    .md-typeset .news>.admonition-title::before,
-    .md-typeset .news>summary::before {
-        background-color: rgb(50% 50% 50%);
-        mask-image: var(--md-admonition-icon--news);
-        -webkit-mask-image: var(--md-admonition-icon--news);
-    }
+.md-typeset .admonition.location,
+.md-typeset details.location {
+    border-color: rgb(50% 50% 50%);
 }
 
 .md-typeset .admonition.location,
@@ -59,21 +62,14 @@
     -webkit-mask-image: var(--md-admonition-icon--location);
 }
 
-:root {
+.md-typeset .goal>.admonition-title,
+.md-typeset .goal>summary {
+    background-color: rgb(54% 54% 54% / 10%);
+}
 
-    .md-typeset .admonition.goal,
-    .md-typeset details.goal {
-        border-color: rgb(50% 50% 50%);
-    }
-
-    .md-typeset .goal>.admonition-title,
-    .md-typeset .goal>summary {
-        background-color: rgb(54% 54% 54% / 10%);
-    }
-
-    .md-typeset .goal>.admonition-title::before,
-    .md-typeset .goal>summary::before {
-        background-color: rgb(50% 50% 50%);
-        mask-image: var(--md-admonition-icon--goal);
-        -webkit-mask-image: var(--md-admonition-icon--goal);
-    }
+.md-typeset .goal>.admonition-title::before,
+.md-typeset .goal>summary::before {
+    background-color: rgb(50% 50% 50%);
+    mask-image: var(--md-admonition-icon--goal);
+    -webkit-mask-image: var(--md-admonition-icon--goal);
+}
