@@ -7,7 +7,7 @@
 }
 .md-typeset .impressions > .admonition-title,
 .md-typeset .impressions > summary {
-    background-color: rgba(171, 171, 171, 0);
+    background-color: rgba(171, 171, 171, 0.1);
 }
 .md-typeset .impressions > .admonition-title::before,
 .md-typeset .impressions > summary::before {
@@ -25,7 +25,7 @@
 }
 .md-typeset .news > .admonition-title,
 .md-typeset .news > summary {
-    background-color: rgba(137, 137, 137, 0);
+    background-color: rgba(137, 137, 137, 0.1);
 }
 .md-typeset .news > .admonition-title::before,
 .md-typeset .news > summary::before {
@@ -43,7 +43,7 @@
 }
 .md-typeset .location > .admonition-title,
 .md-typeset .location > summary {
-    background-color: rgba(137, 137, 137, 0);
+    background-color: rgba(137, 137, 137, 0.1);
 }
 .md-typeset .location > .admonition-title::before,
 .md-typeset .location > summary::before {
