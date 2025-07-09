@@ -13,9 +13,13 @@ hide:
 **OpenTrafficCam** wird in zahlreichen Projekten **in Forschung und Praxis erfolgreich eingesetzt**.
 Dabei wird der Straßenverkehr **temporär erfasst** und anschließend **automatisiert analysiert**.
 
-Im Rahmen dieses Projekts erfolgt nun ein entscheidender nächster Schritt: die Weiterentwicklung zu **OpenTrafficCam LIVE** mit **permanenter Verkehrserfassung** und **Echtzeit-Verkehrsanalyse**.
+Im Rahmen einer mFund-Förderung wurde die Basis für die Live-Prozessierung der erfassten Verkehrsvideos gelegt.
+Aufbauend auf diesen Arbeiten erfolgt nun eine Implementierung vor Ort in Hoyerswerda.
+OpenTrafficCam LIVE wird dabei um die spezifischen Anforderungen der TU Dresden und der Stadt Hoyerswerda erweitert.
+Diese umfassen sowohl technischen Anforderungen im Hintergrund als auch neue Auswertungen und Darstellungen der Verkehrsdaten.
 
-Dadurch wird es möglich, Verkehrsdaten nicht nur retrospektiv auszuwerten, sondern live zu interpretieren und unmittelbar für Verkehrsmanagement, Bürgerinformation oder vernetzte Systeme nutzbar zu machen.
+Im Ergebnis werden mit **OpenTrafficCam LIVE** der Straßenverkehr in Hoyerswerda **permanent erfasst** und die **Videostreams in Echtzeit verkehrlich analysiert**.
+Dadurch wird es möglich, Verkehrsdaten nicht nur retrospektiv auszuwerten, sondern unmittelbar für Verkehrsmanagement, Öffentlichkeitsinformation oder vernetzte Systeme nutzbar zu machen.
 
 [Kontaktieren Sie uns](mailto:team@opentrafficcam.org?subject=Anfrage%20zu%20OpenTrafficCam%20LIVE%20Hoyerswerda){ .md-button .md-button--primary }
 
@@ -158,37 +162,45 @@ OpenTrafficCam kann darüber hinaus als Live-System für verschiedene Anwendungs
 <!-- markdownlint-disable-next-line MD033 -->
 <div class="grid cards" markdown>
 
-- **Fördergeber:**
+- **Fördergeber**
 
-    [**Bundesministerium für Wirtschaft und Energie**](https://www.bundeswirtschaftsministerium.de/Navigation/DE/Home/home.html)
+    ---
 
-    [**Land Sachsen**](https://www.sachsen.de/)
+    [Bundesministerium für Wirtschaft und Energie](https://www.bundeswirtschaftsministerium.de/Navigation/DE/Home/home.html)
+
+    [Land Sachsen](https://www.sachsen.de/)
 
     ---
 
     ![Logos Bundesministerium für Wirtschaft und Land Sachsen](assets/img/reallabor_hoy/Logos_BMWE_Sachsen.svg){ width="300" }
 
-- **Fördernehmer und Auftraggeber:**
+- **Fördernehmer und Auftraggeber**
 
-    [**TU Dresden**](https://tu-dresden.de)
+    ---
 
-    [**Professur für Mobilitätssystemplanung**](https://tu-dresden.de/bu/verkehr/ivs/msp)
+    [TU Dresden](https://tu-dresden.de)
+
+    [Professur für Mobilitätssystemplanung](https://tu-dresden.de/bu/verkehr/ivs/msp)
 
     ---
 
     ![Logo TU Dresden](assets/img/reallabor_hoy/Logos_TUD_und_MSP.svg){ width="300" }
 
-- **Auftragnehmer:**
+- **Auftragnehmer**
 
-    [**platomo GmbH**](https://platomo.de/)
+    ---
+
+    [platomo GmbH](https://platomo.de/)
 
     ---
 
     ![Logo platomo GmbH](assets/img/platomo_logo_black.svg){ width="200" }
 
-- **Kommunaler Partner:**
+- **Kommunaler Partner**
 
-    [**Stadt Hoyerswerda**](https://www.hoyerswerda.de/)
+    ---
+
+    [Stadt Hoyerswerda](https://www.hoyerswerda.de/)
 
     ---
 
