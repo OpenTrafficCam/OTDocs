@@ -29,6 +29,7 @@ theme:
 
 nav:
   - index.md
+  - live.md
   - pricing.md
   # - use-cases.md
   - Documentation:
@@ -104,6 +105,7 @@ extra_css:
   - stylesheets/color.css
   - stylesheets/fonts.css
   - stylesheets/katex.min.css
+  - stylesheets/custom_admonitions.css
 extra_javascript:
   - assets/js/katex_mkdocs.js
   - assets/js/katex.min.js
