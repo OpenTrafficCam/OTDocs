@@ -7,7 +7,7 @@
     This software is licensed under the GNU General Public License Version 3 (GNU GPL-3.0).
 
     A full copy of the license is included in the code repository as LICENSE file and can also be viewed online: [LICENSE file on Github](https://github.com/OpenTrafficCam/OTAnalytics/blob/main/LICENSE).
-    
+
     Please respect this license!
 
     **Disclaimer**
@@ -30,9 +30,9 @@ Please note:
 - More RAM allows you to load more tracks of road users simultaneously.
 - A faster processor will improve the runtime of the analyses and make the user interface more responsive.
 
-## Install Python 3.11
+## Install Python 3.12
 
-If not done yet, visit [www.python.org/downloads/](https://www.python.org/downloads/) and install Python 3.11.x for your platform.
+If not done yet, visit [www.python.org/downloads/](https://www.python.org/downloads/) and install Python 3.12.x for your platform.
 
 Please make sure to include at least the following boxes:
 
