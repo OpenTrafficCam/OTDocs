@@ -90,6 +90,12 @@ p {
   padding: 3rem 0;
 }
 
+.page-section-colored {
+  padding: 3rem 0;
+  border-radius: 1rem;
+  background-color: #EAF2EF;
+}
+
 .team {
   margin-top: -3rem;
 }
