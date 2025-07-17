@@ -7,14 +7,13 @@
 .hero h2 {
   font-family: "Amatic SC", sans-serif;
   font-size: 2.2rem;
-
 }
 
 header.hero {
   padding-top: 3rem;
   padding-bottom: 2rem;
   text-align: right;
-  color: #ffffff;
+  color: #fff;
   background-color: var(--md-primary-fg-color);
 }
 
@@ -22,8 +21,7 @@ header.hero .hero-heading {
   padding-top: 3rem;
 }
 
-
-@media (max-width: 768px) {
+@media (width <= 768px) {
   header.hero {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -39,7 +37,7 @@ header.hero .hero-heading {
   }
 }
 
-@media (max-width: 480px) {
+@media (width <= 480px) {
   .hero h1 {
     font-size: 3rem;
   }
@@ -49,12 +47,11 @@ header.hero .hero-heading {
   }
 }
 
-
 .introduction p {
   font-size: 0.8rem;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .use_case_text {
     order: 2;
   }
@@ -64,11 +61,10 @@ header.hero .hero-heading {
   display: grid;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .service-grid {
     padding-bottom: 3rem;
   }
-
 }
 
 .service-grid .button-grid {
@@ -100,15 +96,14 @@ p {
   padding: 2rem 0;
   margin: 2rem 0;
   border-radius: 1rem;
-  background-color: #EAF2EF;
+  background-color: #eaf2ef;
 }
 
 .team {
   margin-top: -3rem;
 }
 
-@media (min-width: 768px) {
-
+@media (width >= 768px) {
   .details h2 {
     margin-top: 0;
   }
@@ -118,16 +113,13 @@ p {
   margin-bottom: 2rem;
 }
 
-@media (max-width: 1200px) {
+@media (width <= 1200px) {
   .mobile-margin {
     width: 100% !important;
   }
-
-
 }
 
 .pricing-box {
-
   .pricing-tile {
     padding: 20px;
     text-align: center;
@@ -137,7 +129,7 @@ p {
     align-content: space-between;
   }
 
-  @media (max-width: 1200px) {
+  @media (width <= 1200px) {
     .pricing-tile {
       display: flex;
       align-items: center;
@@ -151,13 +143,13 @@ p {
     margin-bottom: 15px;
   }
 
-  @media (max-width: 1200px) {
+  @media (width <= 1200px) {
     .service-title {
       font-size: 0.7rem;
     }
   }
 
-  @media (max-width: 1200px) {
+  @media (width <= 1200px) {
     .service-title {
       font-size: 1rem;
     }
@@ -175,11 +167,12 @@ p {
   }
 }
 
-@media (max-width: 1200px) {
-  .service-title {}
+@media (width <= 1200px) {
+  .service-title {
+  }
 }
 
-@media (max-width: 1200px) {
+@media (width <= 1200px) {
   .mobile-margin {
     margin-bottom: 4rem;
   }
@@ -222,7 +215,6 @@ p {
   opacity: 1;
 }
 
-
 .md-copyright__highlight {
   color: white;
 }
@@ -242,13 +234,13 @@ p {
 }
 
 .highlighted-text-new {
-  background-color: #c0eac0;     /* z. B. hellgelb */
-  padding: 0.2em 0.4em;          /* etwas Innenabstand */
-  border-radius: 0.4em;          /* abgerundete Ecken */
+  background-color: #c0eac0; /* z. B. hellgelb */
+  padding: 0.2em 0.4em; /* etwas Innenabstand */
+  border-radius: 0.4em; /* abgerundete Ecken */
 }
 
 .highlighted-text-soon {
-  background-color: #ddeeff;     /* z. B. hellgelb */
-  padding: 0.2em 0.4em;          /* etwas Innenabstand */
-  border-radius: 0.4em;          /* abgerundete Ecken */
+  background-color: #ddeeff; /* z. B. hellgelb */
+  padding: 0.2em 0.4em; /* etwas Innenabstand */
+  border-radius: 0.4em; /* abgerundete Ecken */
 }
