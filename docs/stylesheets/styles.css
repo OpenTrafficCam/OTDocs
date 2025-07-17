@@ -93,10 +93,12 @@ p {
 
 .page-section {
   padding: 2rem 0;
+  margin: 1rem 0;
 }
 
 .page-section-colored {
   padding: 2rem 0;
+  margin: 2rem 0;
   border-radius: 1rem;
   background-color: #EAF2EF;
 }
