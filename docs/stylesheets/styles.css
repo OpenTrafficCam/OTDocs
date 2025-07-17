@@ -29,9 +29,11 @@ header.hero .hero-heading {
     padding-bottom: 2rem;
     text-align: center;
   }
+
   .hero h1 {
     font-size: 4rem;
   }
+
   .hero h2 {
     font-size: 1.5rem;
   }
@@ -41,6 +43,7 @@ header.hero .hero-heading {
   .hero h1 {
     font-size: 3rem;
   }
+
   .hero h2 {
     font-size: 1.5rem;
   }
@@ -50,6 +53,7 @@ header.hero .hero-heading {
 .introduction p {
   font-size: 0.8rem;
 }
+
 @media (max-width: 768px) {
   .use_case_text {
     order: 2;
@@ -59,6 +63,7 @@ header.hero .hero-heading {
 .service-grid {
   display: grid;
 }
+
 @media (max-width: 768px) {
   .service-grid {
     padding-bottom: 3rem;
@@ -87,11 +92,11 @@ p {
 }
 
 .page-section {
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 
 .page-section-colored {
-  padding: 3rem 0;
+  padding: 2rem 0;
   border-radius: 1rem;
   background-color: #EAF2EF;
 }
@@ -107,16 +112,18 @@ p {
   }
 }
 
-.pricing{
+.pricing {
   margin-bottom: 2rem;
 }
+
 @media (max-width: 1200px) {
-    .mobile-margin {
-      width: 100% !important;
-    }
-
-
+  .mobile-margin {
+    width: 100% !important;
   }
+
+
+}
+
 .pricing-box {
 
   .pricing-tile {
@@ -127,7 +134,8 @@ p {
     flex-wrap: wrap;
     align-content: space-between;
   }
-  @media (max-width: 1200px){
+
+  @media (max-width: 1200px) {
     .pricing-tile {
       display: flex;
       align-items: center;
@@ -140,16 +148,19 @@ p {
     font-size: 1rem;
     margin-bottom: 15px;
   }
+
   @media (max-width: 1200px) {
     .service-title {
       font-size: 0.7rem;
     }
   }
+
   @media (max-width: 1200px) {
     .service-title {
       font-size: 1rem;
     }
   }
+
   .service-features {
     list-style: none;
     padding: 0;
@@ -161,10 +172,11 @@ p {
     margin-bottom: 10px;
   }
 }
+
 @media (max-width: 1200px) {
-  .service-title {
-  }
+  .service-title {}
 }
+
 @media (max-width: 1200px) {
   .mobile-margin {
     margin-bottom: 4rem;
@@ -172,15 +184,16 @@ p {
 }
 
 .intro-text-kachel {
-    padding-top: 0.3rem;
-    border-bottom: 0.3rem solid #4d6856;
+  padding-top: 0.3rem;
+  border-bottom: 0.3rem solid #4d6856;
 }
 
 /* Tooltip container */
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  border-bottom: 1px dotted black;
+  /* If you want dots under the hoverable text */
 }
 
 /* Tooltip text */
@@ -214,12 +227,26 @@ p {
 
 /* Highlighted button */
 .highlighted-btn {
-    background-color: var(--md-accent-fg-color) !important;
-    color: var(--md-accent-bg-color) !important;
-    border-color: var(--md-accent-fg-color) !important;
+  background-color: var(--md-accent-fg-color) !important;
+  color: var(--md-accent-bg-color) !important;
+  border-color: var(--md-accent-fg-color) !important;
 }
-.highlighted-btn:hover, .highlighted-btn:focus {
-    background-color: var(--md-primary-fg-color) !important;
-    color: var(--md-primary-bg-color) !important;
-    border-color: var(--md-primary-fg-color) !important;
+
+.highlighted-btn:hover,
+.highlighted-btn:focus {
+  background-color: var(--md-primary-fg-color) !important;
+  color: var(--md-primary-bg-color) !important;
+  border-color: var(--md-primary-fg-color) !important;
+}
+
+.highlighted-text-new {
+  background-color: #c0eac0;     /* z. B. hellgelb */
+  padding: 0.2em 0.4em;          /* etwas Innenabstand */
+  border-radius: 0.4em;          /* abgerundete Ecken */
+}
+
+.highlighted-text-soon {
+  background-color: #ddeeff;     /* z. B. hellgelb */
+  padding: 0.2em 0.4em;          /* etwas Innenabstand */
+  border-radius: 0.4em;          /* abgerundete Ecken */
 }
