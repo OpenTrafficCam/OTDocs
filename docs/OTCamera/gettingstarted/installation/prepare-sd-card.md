@@ -30,11 +30,14 @@ For example: instead of connecting to `ssh pi@hostname` you'll need `ssh usernam
 
 ![Raspberry Pi Imager advanced settings](rpi_imager_2.png)
 
-Now insert the SD card into your PC. Select Raspberry Pi OS Lite (32-bit) as operating system under "Raspberry Pi (Other)". Then select the SD card on which the operating system will be installed.
+Now insert the SD card into your PC. Select Raspberry Pi OS Lite (Legacy, 32-bit) as operating system under "Raspberry Pi (Other)".
+Then select the SD card on which the operating system will be installed.
 
 !!! warning
 
-    It is possible to select not only the SD card, but also the hard drive or SSD where your operating system or other PC data is stored. Make sure that you really select the right SD card. Most of the time, you can tell by the size.
+    It is possible to select not only the SD card, but also the hard drive or SSD where your operating system or other PC data is stored.
+    Make sure that you really select the right SD card.
+    Most of the time, you can tell by the size.
 
 Press the Write button and wait until the Raspberry Pi Imager has completely written and verified your SD card.
 
