@@ -47,6 +47,10 @@ header.hero .hero-heading {
   }
 }
 
+p {
+  line-height: 1.75;
+}
+
 .introduction p {
   font-size: 0.8rem;
 }
@@ -81,10 +85,6 @@ header.hero .hero-heading {
 
 .service-icon svg path {
   fill: #4d6856;
-}
-
-p {
-  line-height: 1.75;
 }
 
 .page-section {
