@@ -233,14 +233,15 @@ p {
   border-color: var(--md-primary-fg-color) !important;
 }
 
+/* Highlighted text */
 .highlighted-text-new {
-  background-color: #c0eac0; /* z. B. hellgelb */
-  padding: 0.2em 0.4em; /* etwas Innenabstand */
-  border-radius: 0.4em; /* abgerundete Ecken */
+  background-color: #c0eac0;
+  padding: 0.2em 0.4em;
+  border-radius: 0.4em;
 }
 
 .highlighted-text-soon {
-  background-color: #ddeeff; /* z. B. hellgelb */
-  padding: 0.2em 0.4em; /* etwas Innenabstand */
-  border-radius: 0.4em; /* abgerundete Ecken */
+  background-color: #ddeeff;
+  padding: 0.2em 0.4em;
+  border-radius: 0.4em;
 }
