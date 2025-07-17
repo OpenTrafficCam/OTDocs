@@ -1,0 +1,78 @@
+:root {
+  --md-admonition-icon--impressions: url("../assets/icons/image_24dp_37483E_FILL0_wght400_GRAD0_opsz24.svg");
+  --md-admonition-icon--news: url("../assets/icons/newsmode_24dp_37483E_FILL0_wght400_GRAD0_opsz24.svg");
+  --md-admonition-icon--location: url("../assets/icons/location_on_24dp_37483E_FILL0_wght400_GRAD0_opsz24.svg");
+  --md-admonition-icon--goal: url("../assets/icons/target_24dp_37483E_FILL0_wght400_GRAD0_opsz24.svg");
+}
+
+.md-typeset .admonition.impressions,
+.md-typeset details.impressions {
+  border-color: rgb(50% 50% 50%);
+}
+
+.md-typeset .impressions > .admonition-title,
+.md-typeset .impressions > summary {
+  background-color: rgb(54% 54% 54% / 10%);
+}
+
+.md-typeset .impressions > .admonition-title::before,
+.md-typeset .impressions > summary::before {
+  background-color: rgb(50% 50% 50%);
+  mask-image: var(--md-admonition-icon--impressions);
+  /* stylelint-disable-next-line property-no-vendor-prefix */
+  -webkit-mask-image: var(--md-admonition-icon--impressions);
+}
+
+.md-typeset .admonition.news,
+.md-typeset details.news {
+  border-color: rgb(50% 50% 50%);
+}
+
+.md-typeset .news > .admonition-title,
+.md-typeset .news > summary {
+  background-color: rgb(54% 54% 54% / 10%);
+}
+
+.md-typeset .news > .admonition-title::before,
+.md-typeset .news > summary::before {
+  background-color: rgb(50% 50% 50%);
+  mask-image: var(--md-admonition-icon--news);
+  /* stylelint-disable-next-line property-no-vendor-prefix */
+  -webkit-mask-image: var(--md-admonition-icon--news);
+}
+
+.md-typeset .admonition.location,
+.md-typeset details.location {
+  border-color: rgb(50% 50% 50%);
+}
+
+.md-typeset .location > .admonition-title,
+.md-typeset .location > summary {
+  background-color: rgb(54% 54% 54% / 10%);
+}
+
+.md-typeset .location > .admonition-title::before,
+.md-typeset .location > summary::before {
+  background-color: rgb(50% 50% 50%);
+  mask-image: var(--md-admonition-icon--location);
+  /* stylelint-disable-next-line property-no-vendor-prefix */
+  -webkit-mask-image: var(--md-admonition-icon--location);
+}
+
+.md-typeset .admonition.goal,
+.md-typeset details.goal {
+  border-color: rgb(50% 50% 50%);
+}
+
+.md-typeset .goal > .admonition-title,
+.md-typeset .goal > summary {
+  background-color: rgb(54% 54% 54% / 10%);
+}
+
+.md-typeset .goal > .admonition-title::before,
+.md-typeset .goal > summary::before {
+  background-color: rgb(50% 50% 50%);
+  mask-image: var(--md-admonition-icon--goal);
+  /* stylelint-disable-next-line property-no-vendor-prefix */
+  -webkit-mask-image: var(--md-admonition-icon--goal);
+}
