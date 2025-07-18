@@ -182,7 +182,6 @@ p {
   position: relative;
   display: inline-block;
   border-bottom: 1px dotted black;
-  /* If you want dots under the hoverable text */
 }
 
 /* Tooltip text */
@@ -235,7 +234,7 @@ p {
 }
 
 .highlighted-text-soon {
-  background-color: #ddeeff;
+  background-color: #def;
   padding: 0.2em 0.4em;
   border-radius: 0.4em;
 }
