@@ -5,9 +5,7 @@
 <!-- copied all available blocks from base.html and inherited if needed. -->
 
 <!-- Meta tags -->
-{% block site_meta %}
-{{ super() }}
-{% endblock %}
+{% block site_meta %} {{ super() }} {% endblock %}
 
 <!-- Site title -->
 {% block htmltitle %}
@@ -15,36 +13,38 @@
 {% endblock %}
 
 <!-- Theme-related style sheets -->
-{% block styles %}
-{{ super() }}
-<link href="stylesheets/styles.css" rel="stylesheet"/>
-<link href="stylesheets/bootstrap-grid.css" rel="stylesheet"/>
-<link href="stylesheets/bootstrap-utilities.css" rel="stylesheet"/>
-<link href="stylesheets/color.css" rel="stylesheet"/>
+{% block styles %} {{ super() }}
+<link href="stylesheets/styles.css" rel="stylesheet" />
+<link href="stylesheets/bootstrap-grid.css" rel="stylesheet" />
+<link href="stylesheets/bootstrap-utilities.css" rel="stylesheet" />
+<link href="stylesheets/color.css" rel="stylesheet" />
 {% endblock %}
 
 <!-- JavaScript libraries -->
-{% block libs %}
-{{ super() }}
-{% endblock %}
+{% block libs %} {{ super() }} {% endblock %}
 
 <!-- Webfonts -->
-{% block fonts %}
-{{ super() }}
-{% endblock %}
+{% block fonts %} {{ super() }} {% endblock %}
 
 <!-- Analytics -->
 {% block analytics %}
-<script defer data-domain="opentrafficcam.org" src="https://plausible.platomo.org/js/script.js"></script>
+<script
+  defer
+  data-domain="opentrafficcam.org"
+  src="https://plausible.platomo.org/js/script.js"
+></script>
 {% endblock %}
 
 <!-- Custom front matter -->
 {% block extrahead %}
-    <meta name="description" content="OpenTrafficCam provides innovative, open-source
+<meta
+  name="description"
+  content="OpenTrafficCam provides innovative, open-source
     tools for transparent and automated traffic data collection and analysis. Ideal for
     research and practical applications, it supports various traffic classes and
     integrates easily with existing workflows. Explore our advanced AI-based video
-    processing and traffic analytics solutions.">
+    processing and traffic analytics solutions."
+/>
 {% endblock %}
 
 <!--Body starts here-->
@@ -53,505 +53,789 @@
 {% block announce %}{% endblock %}
 
 <!-- Header -->
-{% block header %}
-{{ super() }}
-{% endblock %}
+{% block header %} {{ super() }} {% endblock %}
 
 <!-- Hero teaser -->
 {% block hero %}
 <header class="hero">
-    <div class="container">
-            <img alt="OpenTrafficCam logo" src="assets/img/header.svg">
+  <div class="container">
+    <img alt="OpenTrafficCam logo" src="assets/img/header.svg" />
 
-        <div class="hero-heading">
-            <h1>OpenTrafficCam</h1>
-        </div>
-        <div class="hero-subheading">
-            <h2>... die transparente Verkehrsdatenerfassung</h2>
-        </div>
+    <div class="hero-heading">
+      <h1>OpenTrafficCam</h1>
     </div>
+    <div class="hero-subheading">
+      <h2>... die transparente Verkehrsdatenerfassung</h2>
+    </div>
+  </div>
 </header>
 {% endblock %}
 
 <!-- Navigation tabs (collapsing) -->
-{% block tabs %}
-{{ super() }}
-{% endblock %}
+{% block tabs %} {{ super() }} {% endblock %}
 
 <!-- Main area -->
 
 <!-- Sidebars -->
-{% block site_nav %}
-{{ super() }}
-{% endblock %}
+{% block site_nav %} {{ super() }} {% endblock %}
 
 <!-- Page content -->
-{% block container %}
-{{ super() }}
-{% endblock %}
-{% block content %}
+{% block container %} {{ super() }} {% endblock %} {% block content %}
 
-<section class="page-section" id="features" style="margin-top: -1rem; margin-bottom: -1rem;">
-    <div class="container col-md-9 text-center">
-    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center g-4">
-    <div class="col">
-        <h2 class="fw-normal" style="color:var(--md-primary-fg-color);"><b>Komplettlösung</b></h2>
-        <h3 class="fw-light">Automatisierung von der Erfassung bis zur Analyse</h3>
-    </div>
-    <div class="col">
-        <h2 class="fw-normal" style="color:var(--md-primary-fg-color);"><b>Open Source</b></h2>
-        <h3 class="fw-light">Souverän einsetzbar ohne Anbieterzwang</h3>
-    </div>
-    <div class="col">
-        <h2 class="fw-normal" style="color:var(--md-primary-fg-color);"><b>Open Data</b></h2>
-        <h3 class="fw-light">Kompatibel mit anderen Kameras, Tools und Skripten</h3>
-    </div>
-    <div class="col">
-        <h2 class="fw-normal" style="color:var(--md-primary-fg-color);"><b>DSGVO-konform</b></h2>
-        <h3 class="fw-light">Geprüft von Anwälten und Datenschutzbeauftragten</h3>
-    </div>
-    <div class="col">
-        <h2 class="fw-normal" style="color:var(--md-primary-fg-color);"><b>professionell</b></h2>
+<section
+  class="page-section"
+  id="features"
+  style="margin-top: -1rem; margin-bottom: -1rem"
+>
+  <div class="container col-md-9 text-center">
+    <div
+      class="row row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center g-4"
+    >
+      <div class="col">
+        <h2 class="fw-normal" style="color: var(--md-primary-fg-color)">
+          <b>Komplettlösung</b>
+        </h2>
         <h3 class="fw-light">
-            Entwickelt von Informatikern und Verkehrsfachleuten
+          Automatisierung von der Erfassung bis zur Analyse
         </h3>
-    </div>
-    <div class="col">
-        <h2 class="fw-normal" style="color:var(--md-primary-fg-color);"><b>praxiserprobt</b></h2>
+      </div>
+      <div class="col">
+        <h2 class="fw-normal" style="color: var(--md-primary-fg-color)">
+          <b>Open Source</b>
+        </h2>
+        <h3 class="fw-light">Souverän einsetzbar ohne Anbieterzwang</h3>
+      </div>
+      <div class="col">
+        <h2 class="fw-normal" style="color: var(--md-primary-fg-color)">
+          <b>Open Data</b>
+        </h2>
+        <h3 class="fw-light">
+          Kompatibel mit anderen Kameras, Tools und Skripten
+        </h3>
+      </div>
+      <div class="col">
+        <h2 class="fw-normal" style="color: var(--md-primary-fg-color)">
+          <b>DSGVO-konform</b>
+        </h2>
+        <h3 class="fw-light">
+          Geprüft von Anwälten und Datenschutzbeauftragten
+        </h3>
+      </div>
+      <div class="col">
+        <h2 class="fw-normal" style="color: var(--md-primary-fg-color)">
+          <b>professionell</b>
+        </h2>
+        <h3 class="fw-light">
+          Entwickelt von Informatikern und Verkehrsfachleuten
+        </h3>
+      </div>
+      <div class="col">
+        <h2 class="fw-normal" style="color: var(--md-primary-fg-color)">
+          <b>praxiserprobt</b>
+        </h2>
         <h3 class="fw-light">Eingesetzt in Forschung, Beratung und SVZ 2025</h3>
-    </div>
       </div>
     </div>
+  </div>
 </section>
 
 <section class="page-section" id="contact-button">
-    <div class="container">
-        <div class="text-center mb-2">
-            <a class="md-button highlighted-btn fs-6" href="mailto:team@opentrafficcam.org?subject=Anfrage%20zu%20OpenTrafficCam">
-                Kontaktieren Sie uns
-            </a>
-        </div>
-    </div>  
+  <div class="container">
+    <div class="text-center mb-2">
+      <a
+        class="md-button highlighted-btn fs-6"
+        href="mailto:team@opentrafficcam.org?subject=Anfrage%20zu%20OpenTrafficCam"
+      >
+        Kontaktieren Sie uns
+      </a>
+    </div>
+  </div>
 </section>
 
 <section class="page-section services" id="pipeline">
-    <div class="container">
-        <div class="text-center mb-2">
-            <h1 style="margin-top: 0rem; margin-bottom: 2rem;"><b>Ein System. Alle Funktionen. Modular nutzbar.</b></h1>
-        </div>
-        <div class="row text-center">
-            <div class="col-md-4 service-grid">
-                <div>
-                    <h2 class="my-4">Videoerfassung</h2>
-                    <video oncontextmenu="return false;" autoplay loop muted playsinline poster="assets/video/videoerfassung.webp">
-                        <source src="assets/video/videoerfassung.webm" type="video/webm" />
-                        <source src="assets/video/videoerfassung.mp4" type="video/mp4" />
-                    </video>
-                    <div style="font-size: 0.8rem">
-                        <p>Einfache Montage und Bedienung</p>
-                        <p>Autark Aufnahme bis zu 7 Tagen</p>
-                        <p>Datenschutz by Design</p>
-                        <p>Vielseitig einsetzbar</p>
-                        <p>Vorgefertigt oder als Bausatz erhältlich</p>
-                    </div>
-                </div>
-                <div class="button-grid">
-                    <a class="md-button" href="/OTCamera/">OTCamera Dokumentation</a>
-                </div>
-            </div>
-
-            <div class="col-md-4 service-grid">
-                <div>
-                    <h2 class="my-4">Videoverarbeitung</h2>
-                    <video oncontextmenu="return false;" autoplay loop muted playsinline poster="assets/video/videoverarbeitung.webp">
-                        <source src="assets/video/videoverarbeitung.webm" type="video/webm" />
-                        <source src="assets/video/videoverarbeitung.mp4" type="video/mp4" />
-                    </video>
-                    <div style="font-size: 0.8rem">
-                        <p>KI-basierte Detektion</p>
-                        <p>Tracking aller Verkehrsbewegungen</p>
-                        <p>Auch für Kameras anderer Hersteller</p>
-                        <p>Open Source: 7 Klassen</p>
-                        <p>Pro: 18 Klassen</p>
-                    </div>
-                </div>
-                <div class="button-grid">
-                    <a class="md-button" href="/OTVision/">OTVision Dokumentation</a>
-                </div>
-            </div>
-
-            <div class="col-md-4 service-grid">
-                <div>
-                    <h2 class="my-4">Verkehrsanalyse</h2>
-                    <video oncontextmenu="return false;" autoplay loop muted playsinline poster="assets/video/verkehrsanalyse.webp">
-                        <source src="assets/video/verkehrsanalyse.webm" type="video/webm" />
-                        <source src="assets/video/verkehrsanalyse.mp4" type="video/mp4" />
-                    </video>
-                    <div style="font-size: 0.8rem">
-                        <p>Einfach bedienbare Oberfläche</p>
-                        <p>Bewegungen → Verkehrskennwerte</p>
-                        <p>Verkehrsstärken, Geschwindigkeiten</p>
-                        <p>Einzelfahrzeugdaten und mehr</p>
-                        <p>Export als CSV- und Excel</p>
-                    </div>
-                </div>
-                <div class="button-grid">
-                    <a class="md-button" href="/OTAnalytics/">OTAnalytics Dokumentation</a>
-                </div>
-            </div>
-        </div>
+  <div class="container">
+    <div class="text-center mb-2">
+      <h1 style="margin-top: 0rem; margin-bottom: 2rem">
+        <b>Ein System. Alle Funktionen. Modular nutzbar.</b>
+      </h1>
     </div>
+    <div class="row text-center">
+      <div class="col-md-4 service-grid">
+        <div>
+          <h2 class="my-4">Videoerfassung</h2>
+          <video
+            oncontextmenu="return false;"
+            autoplay
+            loop
+            muted
+            playsinline
+            poster="assets/video/videoerfassung.webp"
+          >
+            <source src="assets/video/videoerfassung.webm" type="video/webm" />
+            <source src="assets/video/videoerfassung.mp4" type="video/mp4" />
+          </video>
+          <div style="font-size: 0.8rem">
+            <p>Einfache Montage und Bedienung</p>
+            <p>Autark Aufnahme bis zu 7 Tagen</p>
+            <p>Datenschutz by Design</p>
+            <p>Vielseitig einsetzbar</p>
+            <p>Vorgefertigt oder als Bausatz erhältlich</p>
+          </div>
+        </div>
+        <div class="button-grid">
+          <a class="md-button" href="/OTCamera/">OTCamera Dokumentation</a>
+        </div>
+      </div>
+
+      <div class="col-md-4 service-grid">
+        <div>
+          <h2 class="my-4">Videoverarbeitung</h2>
+          <video
+            oncontextmenu="return false;"
+            autoplay
+            loop
+            muted
+            playsinline
+            poster="assets/video/videoverarbeitung.webp"
+          >
+            <source
+              src="assets/video/videoverarbeitung.webm"
+              type="video/webm"
+            />
+            <source src="assets/video/videoverarbeitung.mp4" type="video/mp4" />
+          </video>
+          <div style="font-size: 0.8rem">
+            <p>KI-basierte Detektion</p>
+            <p>Tracking aller Verkehrsbewegungen</p>
+            <p>Auch für Kameras anderer Hersteller</p>
+            <p>Open Source: 7 Klassen</p>
+            <p>Pro: 18 Klassen</p>
+          </div>
+        </div>
+        <div class="button-grid">
+          <a class="md-button" href="/OTVision/">OTVision Dokumentation</a>
+        </div>
+      </div>
+
+      <div class="col-md-4 service-grid">
+        <div>
+          <h2 class="my-4">Verkehrsanalyse</h2>
+          <video
+            oncontextmenu="return false;"
+            autoplay
+            loop
+            muted
+            playsinline
+            poster="assets/video/verkehrsanalyse.webp"
+          >
+            <source src="assets/video/verkehrsanalyse.webm" type="video/webm" />
+            <source src="assets/video/verkehrsanalyse.mp4" type="video/mp4" />
+          </video>
+          <div style="font-size: 0.8rem">
+            <p>Einfach bedienbare Oberfläche</p>
+            <p>Bewegungen → Verkehrskennwerte</p>
+            <p>Verkehrsstärken, Geschwindigkeiten</p>
+            <p>Einzelfahrzeugdaten und mehr</p>
+            <p>Export als CSV- und Excel</p>
+          </div>
+        </div>
+        <div class="button-grid">
+          <a class="md-button" href="/OTAnalytics/"
+            >OTAnalytics Dokumentation</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="page-section-colored details" id="traffic-classes">
-    <div class="container">
-        <div class="text-center mb-2">
-            <h1 style="margin-top: 0rem; margin-bottom: 2rem;"><b>Differenzierung von 18 Klassen*</b></h1>
-        </div>
-        <div class="row justify-content-center g-4 text-center">
-            <style>
-            .traffic-class-icon img {
-                height: 30px !important;
-                width: auto;
-                max-width: 100%;
-                display: block;
-                margin: 0 auto;
-                pointer-events: none;
-            }
-            .traffic-class-icon {
-                margin-top: 5px;
-                margin-bottom: 5px;
-                display: inline-block;
-                transition: transform 0.3s cubic-bezier(.4,2,.6,1), z-index 0.2s;
-                position: relative;
-                z-index: 1;
-            }
-            .traffic-class-icon:hover {
-                transform: scale(1.75);
-                z-index: 10;
-            }
-            </style>
-            <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
-                <div class="traffic-class-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Zu Fuss Gehende">
-                    <img src="assets/icons/01_Zufussgehende.svg" alt="Zu Fuss Gehende">
-                </div>
-            </div>
-            <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
-                <div class="traffic-class-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Scooterfahrende">
-                    <img src="assets/icons/02_Scooterfahrende.svg" alt="Scooterfahrende">
-                </div>
-            </div>
-            <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
-                <div class="traffic-class-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Radfahrende">
-                    <img src="assets/icons/03_Radfahrende.svg" alt="Radfahrende">
-                </div>
-            </div>
-            <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
-                <div class="traffic-class-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Radfahrende mit Anhänger">
-                    <img src="assets/icons/04_Radfahrende_mit_Anhaenger.svg" alt="Radfahrende mit Anhänger">
-                </div>
-            </div>
-            <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
-                <div class="traffic-class-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Lastenradfahrende">
-                    <img src="assets/icons/05_Lastenradfahrende.svg" alt="Lastenradfahrende">
-                </div>
-            </div>
-            <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
-                <div class="traffic-class-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Kraftradfahrende">
-                    <img src="assets/icons/06_Kraftradfahrende.svg" alt="Kraftradfahrende">
-                </div>
-            </div>
-            <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
-                <div class="traffic-class-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Pkw">
-                    <img src="assets/icons/07_Pkw.svg" alt="Pkw">
-                </div>
-            </div>
-            <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
-                <div class="traffic-class-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Pkw mit Anhänger">
-                    <img src="assets/icons/08_Pkw_mit_Anhaenger.svg" alt="Pkw mit Anhänger">
-                </div>
-            </div>
-            <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
-                <div class="traffic-class-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Privater Kleinbus">
-                    <img src="assets/icons/09_Privater_Kleinbus.svg" alt="Privater Kleinbus">
-                </div>
-            </div>
-            <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
-                <div class="traffic-class-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Privater Kleinbus mit Anhänger">
-                    <img src="assets/icons/10_Privater_Kleinbus_mit_Anhaenger.svg" alt="Privater Kleinbus mit Anhänger">
-                </div>
-            </div>
-            <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
-                <div class="traffic-class-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Gewerblicher Kleinbus">
-                    <img src="assets/icons/11_Gewerblicher_Kleinbus.svg" alt="11_Gewerblicher_Kleinbus">
-                </div>
-            </div>
-            <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
-                <div class="traffic-class-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Gewerblicher Kleinbus mit Anhänger">
-                    <img src="assets/icons/12_Gewerblicher_Kleinbus_mit_Anhaenger.svg" alt="Gewerblicher Kleinbus mit Anhänger">
-                </div>
-            </div>
-            <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
-                <div class="traffic-class-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Lkw">
-                    <img src="assets/icons/13_Lkw.svg" alt="Lkw">
-                </div>
-            </div>
-            <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
-                <div class="traffic-class-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Lkw mit Anhänger">
-                    <img src="assets/icons/14_Lkw_mit_Anhaenger.svg" alt="Lkw mit Anhänger">
-                </div>
-            </div>
-            <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
-                <div class="traffic-class-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Lastzug">
-                    <img src="assets/icons/15_Lastzug.svg" alt="Lastzug">
-                </div>
-            </div>
-            <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
-                <div class="traffic-class-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Bus">
-                    <img src="assets/icons/16_Bus.svg" alt="Bus">
-                </div>
-            </div>
-            <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
-                <div class="traffic-class-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Bahn">
-                    <img src="assets/icons/17_Bahn.svg" alt="Bahn">
-                </div>
-            </div>
-            <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
-                <div class="traffic-class-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Sonstige Klasse">
-                    <img src="assets/icons/18_Sonstige_Klasse.svg" alt="Sonstige Klasse">
-                </div>
-            </div>
-        </div>
-        <div class="row mt-2">
-            <div class="col text-center">
-                <h3 class="fw-light" style="margin-bottom: 0rem; margin-top: 2rem;">
-                    KI-Modelle trainiert mit tausenden Bildern deutscher Verkehrsanlagen
-                </h3>
-                <h3 class="fw-light" style="margin-bottom: 0rem; margin-top: 1rem;">
-                    Aggregierbar zu <strong>TLS 8+1</strong>, <strong>RLS-19</strong> und nach eigenen Wünschen
-                </h3>
-                <p class="fw-light" style="margin-bottom: 0rem; margin-top: 1rem;">
-                    <em>*Open Source-Version: 7 Klassen</em>
-                </p>
-            </div>
-        </div>
+  <div class="container">
+    <div class="text-center mb-2">
+      <h1 style="margin-top: 0rem; margin-bottom: 2rem">
+        <b>Differenzierung von 18 Klassen*</b>
+      </h1>
     </div>
+    <div class="row justify-content-center g-4 text-center">
+      <style>
+        .traffic-class-icon img {
+          height: 30px !important;
+          width: auto;
+          max-width: 100%;
+          display: block;
+          margin: 0 auto;
+          pointer-events: none;
+        }
+        .traffic-class-icon {
+          margin-top: 5px;
+          margin-bottom: 5px;
+          display: inline-block;
+          transition: transform 0.3s cubic-bezier(0.4, 2, 0.6, 1), z-index 0.2s;
+          position: relative;
+          z-index: 1;
+        }
+        .traffic-class-icon:hover {
+          transform: scale(1.75);
+          z-index: 10;
+        }
+      </style>
+      <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+        <div
+          class="traffic-class-icon"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Zu Fuss Gehende"
+        >
+          <img src="assets/icons/01_Zufussgehende.svg" alt="Zu Fuss Gehende" />
+        </div>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+        <div
+          class="traffic-class-icon"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Scooterfahrende"
+        >
+          <img
+            src="assets/icons/02_Scooterfahrende.svg"
+            alt="Scooterfahrende"
+          />
+        </div>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+        <div
+          class="traffic-class-icon"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Radfahrende"
+        >
+          <img src="assets/icons/03_Radfahrende.svg" alt="Radfahrende" />
+        </div>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+        <div
+          class="traffic-class-icon"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Radfahrende mit Anhänger"
+        >
+          <img
+            src="assets/icons/04_Radfahrende_mit_Anhaenger.svg"
+            alt="Radfahrende mit Anhänger"
+          />
+        </div>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+        <div
+          class="traffic-class-icon"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Lastenradfahrende"
+        >
+          <img
+            src="assets/icons/05_Lastenradfahrende.svg"
+            alt="Lastenradfahrende"
+          />
+        </div>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+        <div
+          class="traffic-class-icon"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Kraftradfahrende"
+        >
+          <img
+            src="assets/icons/06_Kraftradfahrende.svg"
+            alt="Kraftradfahrende"
+          />
+        </div>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+        <div
+          class="traffic-class-icon"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Pkw"
+        >
+          <img src="assets/icons/07_Pkw.svg" alt="Pkw" />
+        </div>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+        <div
+          class="traffic-class-icon"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Pkw mit Anhänger"
+        >
+          <img
+            src="assets/icons/08_Pkw_mit_Anhaenger.svg"
+            alt="Pkw mit Anhänger"
+          />
+        </div>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+        <div
+          class="traffic-class-icon"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Privater Kleinbus"
+        >
+          <img
+            src="assets/icons/09_Privater_Kleinbus.svg"
+            alt="Privater Kleinbus"
+          />
+        </div>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+        <div
+          class="traffic-class-icon"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Privater Kleinbus mit Anhänger"
+        >
+          <img
+            src="assets/icons/10_Privater_Kleinbus_mit_Anhaenger.svg"
+            alt="Privater Kleinbus mit Anhänger"
+          />
+        </div>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+        <div
+          class="traffic-class-icon"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Gewerblicher Kleinbus"
+        >
+          <img
+            src="assets/icons/11_Gewerblicher_Kleinbus.svg"
+            alt="11_Gewerblicher_Kleinbus"
+          />
+        </div>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+        <div
+          class="traffic-class-icon"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Gewerblicher Kleinbus mit Anhänger"
+        >
+          <img
+            src="assets/icons/12_Gewerblicher_Kleinbus_mit_Anhaenger.svg"
+            alt="Gewerblicher Kleinbus mit Anhänger"
+          />
+        </div>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+        <div
+          class="traffic-class-icon"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Lkw"
+        >
+          <img src="assets/icons/13_Lkw.svg" alt="Lkw" />
+        </div>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+        <div
+          class="traffic-class-icon"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Lkw mit Anhänger"
+        >
+          <img
+            src="assets/icons/14_Lkw_mit_Anhaenger.svg"
+            alt="Lkw mit Anhänger"
+          />
+        </div>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+        <div
+          class="traffic-class-icon"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Lastzug"
+        >
+          <img src="assets/icons/15_Lastzug.svg" alt="Lastzug" />
+        </div>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+        <div
+          class="traffic-class-icon"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Bus"
+        >
+          <img src="assets/icons/16_Bus.svg" alt="Bus" />
+        </div>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+        <div
+          class="traffic-class-icon"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Bahn"
+        >
+          <img src="assets/icons/17_Bahn.svg" alt="Bahn" />
+        </div>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+        <div
+          class="traffic-class-icon"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Sonstige Klasse"
+        >
+          <img
+            src="assets/icons/18_Sonstige_Klasse.svg"
+            alt="Sonstige Klasse"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col text-center">
+        <h3 class="fw-light" style="margin-bottom: 0rem; margin-top: 2rem">
+          KI-Modelle trainiert mit tausenden Bildern deutscher Verkehrsanlagen
+        </h3>
+        <h3 class="fw-light" style="margin-bottom: 0rem; margin-top: 1rem">
+          Aggregierbar zu <strong>TLS 8+1</strong>, <strong>RLS-19</strong> und
+          nach eigenen Wünschen
+        </h3>
+        <p class="fw-light" style="margin-bottom: 0rem; margin-top: 1rem">
+          <em>*Open Source-Version: 7 Klassen</em>
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
 <script>
-    // Bootstrap Tooltip initialisieren (einfachere Methode für Bootstrap 5)
-    document.addEventListener('DOMContentLoaded', function () {
-        var tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-        tooltipTriggerList.forEach(function (tooltipTriggerEl) {
-            new bootstrap.Tooltip(tooltipTriggerEl);
-        });
+  // Bootstrap Tooltip initialisieren (einfachere Methode für Bootstrap 5)
+  document.addEventListener("DOMContentLoaded", function () {
+    var tooltipTriggerList = document.querySelectorAll(
+      '[data-bs-toggle="tooltip"]'
+    );
+    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+      new bootstrap.Tooltip(tooltipTriggerEl);
     });
+  });
 </script>
 
 <section class="page-section details" id="use-cases">
+  <div class="text-center">
+    <h1><b>Einsatzbereiche</b></h1>
+  </div>
 
-    <div class="text-center">
-        <h1><b>Einsatzbereiche</b></h1>
+  <section class="page-section details" id="transport-planning">
+    <div class="row">
+      <div class="col-md-6 use-case-text">
+        <h2>Verkehrsplanung &amp; -technik</h2>
+        <ul style="padding-left: 0; text-align: left; font-size: 1.1em">
+          <li>Verkehrserhebungen an Knotenpunkten und Querschnitten</li>
+          <li>Verkehrsstärken, Geschwindigkeiten, Aufenthaltsdauern u.v.m.</li>
+          <li>
+            Export als CSV oder Excel, im SVZ-Format oder nach Ihren Wünschen
+          </li>
+          <li>Mit OpenTrafficCam haben Sie die Wahl:</li>
+          <ul style="padding-left: 0; margin-left: 2em; text-align: left">
+            <li>
+              Sie nutzen das System selbst - bei Bedarf unterstützen wir Sie
+            </li>
+            <li>Wir liefern Ihnen die Ergebnisse zu Ihren Videos</li>
+            <li>Sie beauftragen uns für die komplette Erhebung</li>
+          </ul>
+          <li>
+            Nur bei uns: Spezialisierte KI-Modelle für höhere Genauigkeit und
+            weniger Aufwand
+          </li>
+        </ul>
+        <a class="md-button highlighted-btn" href="/pricing">Unsere Services</a>
+      </div>
+      <div class="col-md-6">
+        <img
+          loading="lazy"
+          width="100%"
+          height="100%"
+          alt="Vektor image of two engineers."
+          src="assets/img/planning.webp"
+        />
+      </div>
     </div>
+  </section>
 
-    <section class="page-section details" id="transport-planning">
-        <div class="row">
-            <div class="col-md-6 use-case-text">
-                <h2>Verkehrsplanung &amp; -technik</h2>
-                <ul style="padding-left: 0; text-align: left; font-size: 1.1em;">
-                    <li>Verkehrserhebungen an Knotenpunkten und Querschnitten</li>
-                    <li>Verkehrsstärken, Geschwindigkeiten, Aufenthaltsdauern u.v.m.</li>
-                    <li>Export als CSV oder Excel, im SVZ-Format oder nach Ihren Wünschen</li>
-                    <li>Mit OpenTrafficCam haben Sie die Wahl:</li>
-                    <ul style="padding-left: 0; margin-left: 2em; text-align: left">
-                        <li>Sie nutzen das System selbst - bei Bedarf unterstützen wir Sie</li>
-                        <li>Wir liefern Ihnen die Ergebnisse zu Ihren Videos</li>
-                        <li>Sie beauftragen uns für die komplette Erhebung</li>
-                    </ul>
-                    <li>Nur bei uns: Spezialisierte KI-Modelle für höhere Genauigkeit und weniger Aufwand</li>
-                </ul>
-                <a class="md-button highlighted-btn" href="/pricing">Unsere Services</a>
-            </div>
-            <div class="col-md-6">
-                <img loading="lazy" width="100%" height="100%" alt="Vektor image of two engineers." src="assets/img/planning.webp">
-            </div>
-        </div>
-    </section>
-    
-    <section class="page-section details" id="traffic-research">
-        <div class="row">
-            <div class="col-md-6">
-                <img loading="lazy" width="100%" height="100%" alt="Vektor image of two researchers." src="assets/img/researchers.webp">
-                
-            </div>
-            <div class="col-md-6 use-case-text">
-                <h2>Verkehrsforschung</h2>
-                <ul style="padding-left: 0; text-align: left; font-size: 1.1em;">
-                    <li>Detaillierte und individuelle Verkehrsdaten</li>
-                    <li>Jegliche Informationen, die aus Trajektorien Verkehrsteilnehmender ableitbar sind</li>
-                    <li>Ermöglicht Forschung zu Verhalten, Qualität und Sicherheit</li>
-                    <li>Bewährt in deutschen und internationalen Kooperationen</li>
-                    <li><span class="highlighted-text-new">Neu</span> <a href="/live">Reallabor für Live-Erfassung und Echtzeit-Interventionen</a></li>
-                    <li>Wir sind Ihr fortschrittlicherPartner für Forschungsprojekte</li>
-                </ul>
-                <a class="md-button highlighted-btn" href="mailto:team@opentrafficcam.org?subject=Forschungsanfrage%20zu%20OpenTrafficCam">Kontaktieren Sie uns</a>
-            </div>
-        </div>
-    </section>
-    
-    <section class="page-section details" id="traffic-management">
-        <div class="row">
-            <div class="col-md-6 use-case-text">
-                <h2><span class="highlighted-text-soon">Bald verfügbar</span> Verkehrsmanagement</h2>
-                <ul style="padding-left: 0; text-align: left; font-size: 1.1em;">
-                    <li>Permanente Erfassung mit OTCamera oder eigenen Kameras</li>
-                    <li>Verarbeitung der Video-Streams auf Ihren Servern oder in der Cloud</li>
-                    <li>Live-Analyse des fahrenden und ruhenden Verkehrs</li>
-                    <li>Web-Dashboard für interne oder öffentliche Einblicke</li>
-                    <li>Bereitstellung der Daten über offene Schnittstellen</li>
-                    <li>Gern passen wir das System auf Ihre Anforderungen an</li>
-                </ul>
-                <a class="md-button highlighted-btn" href="mailto:team@opentrafficcam.org?subject=Anfrage%20zu%20OpenTrafficCam:%20Live-System">Beratungstermin vereinbaren</a>
-            </div>
-            <div class="col-md-6">
-                <img loading="lazy" width="100%" height="100%" src="assets/img/OpenTrafficCam_LIVE_Dashboard_Browser.webp" alt="Vektor image of a laptop showing OpenTrafficCam LIVE and a dashboard with a map and camera positions, camera live streams, as well as bar, line and box plots." >
-            </div>
-        </div>
-    </section>
+  <section class="page-section details" id="traffic-research">
+    <div class="row">
+      <div class="col-md-6">
+        <img
+          loading="lazy"
+          width="100%"
+          height="100%"
+          alt="Vektor image of two researchers."
+          src="assets/img/researchers.webp"
+        />
+      </div>
+      <div class="col-md-6 use-case-text">
+        <h2>Verkehrsforschung</h2>
+        <ul style="padding-left: 0; text-align: left; font-size: 1.1em">
+          <li>Detaillierte und individuelle Verkehrsdaten</li>
+          <li>
+            Jegliche Informationen, die aus Trajektorien Verkehrsteilnehmender
+            ableitbar sind
+          </li>
+          <li>Ermöglicht Forschung zu Verhalten, Qualität und Sicherheit</li>
+          <li>Bewährt in deutschen und internationalen Kooperationen</li>
+          <li>
+            <span class="highlighted-text-new">Neu</span>
+            <a href="/live"
+              >Reallabor für Live-Erfassung und Echtzeit-Interventionen</a
+            >
+          </li>
+          <li>Wir sind Ihr fortschrittlicherPartner für Forschungsprojekte</li>
+        </ul>
+        <a
+          class="md-button highlighted-btn"
+          href="mailto:team@opentrafficcam.org?subject=Forschungsanfrage%20zu%20OpenTrafficCam"
+          >Kontaktieren Sie uns</a
+        >
+      </div>
+    </div>
+  </section>
 
+  <section class="page-section details" id="traffic-management">
+    <div class="row">
+      <div class="col-md-6 use-case-text">
+        <h2>
+          <span class="highlighted-text-soon">Bald verfügbar</span>
+          Verkehrsmanagement
+        </h2>
+        <ul style="padding-left: 0; text-align: left; font-size: 1.1em">
+          <li>Permanente Erfassung mit OTCamera oder eigenen Kameras</li>
+          <li>
+            Verarbeitung der Video-Streams auf Ihren Servern oder in der Cloud
+          </li>
+          <li>Live-Analyse des fahrenden und ruhenden Verkehrs</li>
+          <li>Web-Dashboard für interne oder öffentliche Einblicke</li>
+          <li>Bereitstellung der Daten über offene Schnittstellen</li>
+          <li>Gern passen wir das System auf Ihre Anforderungen an</li>
+        </ul>
+        <a
+          class="md-button highlighted-btn"
+          href="mailto:team@opentrafficcam.org?subject=Anfrage%20zu%20OpenTrafficCam:%20Live-System"
+          >Beratungstermin vereinbaren</a
+        >
+      </div>
+      <div class="col-md-6">
+        <img
+          loading="lazy"
+          width="100%"
+          height="100%"
+          src="assets/img/OpenTrafficCam_LIVE_Dashboard_Browser.webp"
+          alt="Vektor image of a laptop showing OpenTrafficCam LIVE and a dashboard with a map and camera positions, camera live streams, as well as bar, line and box plots."
+        />
+      </div>
+    </div>
+  </section>
 </section>
-    
+
 <section class="page-section-colored details" id="principles">
+  <div class="text-center">
+    <h1><b>Unsere Grundsätze</b></h1>
+  </div>
 
-    <div class="text-center">
-        <h1><b>Unsere Grundsätze</b></h1>
+  <section class="page-section details" id="quality-and-transparency">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img
+            loading="lazy"
+            width="100%"
+            height="100%"
+            alt="A screenshot from a video of a traffic scene at an urban intersection, viewed from an elevated perspective. The video is slightly blurred, no faces or license plates can be identified. But road users are still detected by OpenTrafficCam."
+            src="assets/img/quality-and-transparency.webp"
+          />
+        </div>
+        <div class="col-md-6 use-case-text">
+          <h2>Qualität und Transparenz</h2>
+          <p style="font-size: 0.8rem">
+            Wir nutzen OpenTrafficCam selbst in Beratungs- und
+            Forschungsprojekten. Deshalb wissen wir, wie wertvoll eine fundierte
+            Datenbasis ist - und welche Auswirkungen fehlerhafte Daten haben
+            könnten. Qualität und Transparenz stehen bei uns an erster Stelle:
+          </p>
+          <ul style="padding-left: 0; text-align: left; font-size: 1.1em">
+            <li>Jede Funktion von Verkehrsfachleuten durchdacht</li>
+            <li>
+              KI trainiert mit zehntausenden Bildern deutscher Verkehrsanlagen
+            </li>
+            <li>Eingebaute Metriken zeigen Zuverlässigkeit der Erfassung</li>
+            <li>Erfasste Bewegungen und Kennwerte sind im Video prüfbar</li>
+            <li>Wir sagen Ihnen offen, was in welcher Qualität machbar ist</li>
+          </ul>
+          <a
+            class="md-button highlighted-btn"
+            href="mailto:team@opentrafficcam.org?subject=Anfrage%20zu%20OpenTrafficCam:%20Datenqualität%20und%20Transparenz"
+            >Kontaktieren Sie uns</a
+          >
+        </div>
+      </div>
     </div>
+  </section>
 
-    <section class="page-section details" id="quality-and-transparency">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <img loading="lazy" width="100%" height="100%" alt="A screenshot from a video of a traffic scene at an urban intersection, viewed from an elevated perspective. The video is slightly blurred, no faces or license plates can be identified. But road users are still detected by OpenTrafficCam." src="assets/img/quality-and-transparency.webp">
-                </div>
-                <div class="col-md-6 use-case-text">
-                    <h2>Qualität und Transparenz</h2>
-                    <p style="font-size: 0.8rem;">
-                        Wir nutzen OpenTrafficCam selbst in Beratungs- und Forschungsprojekten.
-                        Deshalb wissen wir, wie wertvoll eine fundierte Datenbasis ist - und welche Auswirkungen fehlerhafte Daten haben könnten.
-                        Qualität und Transparenz stehen bei uns an erster Stelle: 
-                    </p>
-                    <ul style="padding-left: 0; text-align: left; font-size: 1.1em;">
-                        <li>Jede Funktion von Verkehrsfachleuten durchdacht</li>
-                        <li>KI trainiert mit zehntausenden Bildern deutscher Verkehrsanlagen</li>
-                        <li>Eingebaute Metriken zeigen Zuverlässigkeit der Erfassung</li>
-                        <li>Erfasste Bewegungen und Kennwerte sind im Video prüfbar</li>
-                        <li>Wir sagen Ihnen offen, was in welcher Qualität machbar ist</li>
-                    </ul>
-                    <a class="md-button highlighted-btn" href="mailto:team@opentrafficcam.org?subject=Anfrage%20zu%20OpenTrafficCam:%20Datenqualität%20und%20Transparenz">Kontaktieren Sie uns</a>
-                </div>
-            </div>
+  <section class="page-section details" id="data-privacy">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 use-case-text">
+          <h2>Datenschutz</h2>
+          <p style="font-size: 0.8rem">
+            Wir respektieren Privatsphäre. Daher haben wir OpenTrafficCam so
+            entwickelt, dass es <b>DSGVO-konform nutzbar</b> ist. Wir haben uns
+            dabei von Anwältinnen, Anwälten und Datenschutzbeauftragten beraten
+            lassen. So vermeiden wir die Erfassung von Gesichtern oder
+            Kennzeichen:
+          </p>
+          <ul style="padding-left: 0; text-align: left; font-size: 1.1em">
+            <li>Geringe Auflösung und absichtliche Defokussierung</li>
+            <li>Abstand zu den Verkehrsteilnehmenden (&gt; 3m)</li>
+            <li>Ausblendung irrelevanter Bildbereiche</li>
+            <li>
+              Unser KI-Modelle erkennen und klassifizieren unscharfe Objekte
+            </li>
+            <li>
+              Weitere Informationen finden Sie in unseren
+              <a href="/overview/dataprivacy">FAQ zum Datenschutz</a>
+            </li>
+          </ul>
+          <a
+            class="md-button highlighted-btn"
+            href="mailto:team@opentrafficcam.org?subject=Anfrage%20zu%20OpenTrafficCam:%20Datenschutz"
+            >Kontaktieren Sie uns</a
+          >
         </div>
-    </section>
-
-    <section class="page-section details" id="data-privacy">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 use-case-text">
-                    <h2>Datenschutz</h2>
-                    <p style="font-size: 0.8rem;">
-                        Wir respektieren Privatsphäre.
-                        Daher haben wir OpenTrafficCam so entwickelt, dass es <b>DSGVO-konform nutzbar</b> ist.
-                        Wir haben uns dabei von Anwältinnen, Anwälten und Datenschutzbeauftragten beraten lassen.
-                        So vermeiden wir die Erfassung von Gesichtern oder Kennzeichen:
-                    </p>
-                    <ul style="padding-left: 0; text-align: left; font-size: 1.1em;">
-                        <li>Geringe Auflösung und absichtliche Defokussierung</li>
-                        <li>Abstand zu den Verkehrsteilnehmenden (&gt; 3m)</li>
-                        <li>Ausblendung irrelevanter Bildbereiche</li>
-                        <li>Unser KI-Modelle erkennen und klassifizieren unscharfe Objekte</li>
-                        <li>Weitere Informationen finden Sie in unseren <a href="/overview/dataprivacy">FAQ zum Datenschutz</a></li>
-                    </ul>
-                    <a class="md-button highlighted-btn" href="mailto:team@opentrafficcam.org?subject=Anfrage%20zu%20OpenTrafficCam:%20Datenschutz">Kontaktieren Sie uns</a>
-                </div>
-                <div class="col-md-6">
-                    <img loading="lazy" width="100%" height="100%" alt="A screenshot from a video of a traffic scene at an urban intersection, viewed from an elevated perspective. The video is slightly blurred, no faces or license plates can be identified. But road users are still detected by OpenTrafficCam." src="assets/img/data-privacy.webp">
-                </div>
-            </div>
+        <div class="col-md-6">
+          <img
+            loading="lazy"
+            width="100%"
+            height="100%"
+            alt="A screenshot from a video of a traffic scene at an urban intersection, viewed from an elevated perspective. The video is slightly blurred, no faces or license plates can be identified. But road users are still detected by OpenTrafficCam."
+            src="assets/img/data-privacy.webp"
+          />
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section class="page-section details" id="open-source">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <img loading="lazy" width="100%" height="100%" alt="Vektor image of multiple persons in front of computers." src="assets/img/community.webp">
-                </div>
-                <div class="col-md-6 use-case-text">
-                    <h2>Open Source und Open Data</h2>
-                    <p style="font-size: 0.8rem;">
-                        Wie jede Software profitieren auch wir von Open Source Code.
-                        Außerdem werden Teile der Entwicklung mit Steuergeldern gefördert.
-                        Daher ist für uns klar: <b>OpenTrafficCam ist und bleibt Open Source</b>
-                    </p>
-                    <ul style="padding-left: 0; text-align: left; font-size: 1.1em;">
-                        <li>Offener Code ermöglicht Zusammenarbeit, Anpassbarkeit und Kontrolle</li>
-                        <li>Jeder kann Funktionen beisteuern und Sicherheitslücken erkennen </li>
-                        <li>Offene Formate und Schnittstellen erlauben Freiheit und Kompatibilität</li>
-                        <li>Souveräne Nutzung unabhängig von einzelnen Herstellern</li>
-                        <li>Bitte respektieren Sie unsere <a href="https://www.gnu.org/licenses/quick-guide-gplv3">GNU GPLv3 Lizenz</a></li>
-                    </ul>
-                    <a class="md-button" href="https://github.com/OpenTrafficCam" target="_blank" rel="noopener noreferrer">Quellcode auf GitHub</a>
-                </div>
-            </div>
+  <section class="page-section details" id="open-source">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img
+            loading="lazy"
+            width="100%"
+            height="100%"
+            alt="Vektor image of multiple persons in front of computers."
+            src="assets/img/community.webp"
+          />
         </div>
-    </section>
-
+        <div class="col-md-6 use-case-text">
+          <h2>Open Source und Open Data</h2>
+          <p style="font-size: 0.8rem">
+            Wie jede Software profitieren auch wir von Open Source Code.
+            Außerdem werden Teile der Entwicklung mit Steuergeldern gefördert.
+            Daher ist für uns klar:
+            <b>OpenTrafficCam ist und bleibt Open Source</b>
+          </p>
+          <ul style="padding-left: 0; text-align: left; font-size: 1.1em">
+            <li>
+              Offener Code ermöglicht Zusammenarbeit, Anpassbarkeit und
+              Kontrolle
+            </li>
+            <li>
+              Jeder kann Funktionen beisteuern und Sicherheitslücken erkennen
+            </li>
+            <li>
+              Offene Formate und Schnittstellen erlauben Freiheit und
+              Kompatibilität
+            </li>
+            <li>Souveräne Nutzung unabhängig von einzelnen Herstellern</li>
+            <li>
+              Bitte respektieren Sie unsere
+              <a href="https://www.gnu.org/licenses/quick-guide-gplv3"
+                >GNU GPLv3 Lizenz</a
+              >
+            </li>
+          </ul>
+          <a
+            class="md-button"
+            href="https://github.com/OpenTrafficCam"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Quellcode auf GitHub</a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
 </section>
 
 <section class="page-section" id="team">
-    <div class="container">
-        <div class="text-center">
-            <div class="row justify-content-md-center">
-                <div class="col-md-8">
-                    <h1><b>Team</b></h1>
-                    <p style="font-size: 1.1em;">
-                        Die Entwicklung von OpenTrafficCam erfolgt maßgeblich durch <a href="https://www.platomo.de">platomo</a>, einem vielseitigen Team aus Softwareentwicklern und Verkehrsfachleuten mit wissenschaftlichem Hintergrund.
-                        Unser motiviertes Team engagiert sich leidenschaftlich für die Entwicklung von OpenTrafficCam.
-                        So entstehen innovative und offene Lösungen für effiziente Verkehrserfassung und -analyse.
-                        Die Entwicklung wird durch die Zusammenarbeit mit Forschenden der <a href="https://tu-dresden.de">TU Dresden</a> maßgeblich unterstützt.
-                    </p>
-                </div>
-            </div>
-            <div class="row my-3 justify-content-center align-items-center">
-                <div class="col-12 col-md-3 my-3 text-center d-flex justify-content-center">
-                    <img alt="Logo of platomo"
-                        src="assets/img/platomo_logo_black.svg"
-                        style="max-height: 50px; width: auto; min-height: 30px; cursor: pointer;"
-                        onclick="window.open('https://www.platomo.de','_blank','noopener,noreferrer')">
-                </div>
-                <div class="col-12 col-md-3 my-3 text-center d-flex justify-content-center">
-                    <img alt="Logo of TU Dresden"
-                        src="assets/img/Logo_TU_Dresden.svg"
-                        style="max-height: 50px; width: auto; min-height: 30px; cursor: pointer;"
-                        onclick="window.open('https://tu-dresden.de/bu/verkehr/ivs/msp','_blank','noopener,noreferrer')">
-                </div>
-            </div>
-            <a class="md-button" href="/team">Mehr zu uns</a>
+  <div class="container">
+    <div class="text-center">
+      <div class="row justify-content-md-center">
+        <div class="col-md-8">
+          <h1><b>Team</b></h1>
+          <p style="font-size: 1.1em">
+            Die Entwicklung von OpenTrafficCam erfolgt maßgeblich durch
+            <a href="https://www.platomo.de">platomo</a>, einem vielseitigen
+            Team aus Softwareentwicklern und Verkehrsfachleuten mit
+            wissenschaftlichem Hintergrund. Unser motiviertes Team engagiert
+            sich leidenschaftlich für die Entwicklung von OpenTrafficCam. So
+            entstehen innovative und offene Lösungen für effiziente
+            Verkehrserfassung und -analyse. Die Entwicklung wird durch die
+            Zusammenarbeit mit Forschenden der
+            <a href="https://tu-dresden.de">TU Dresden</a> maßgeblich
+            unterstützt.
+          </p>
         </div>
+      </div>
+      <div class="row my-3 justify-content-center align-items-center">
+        <div
+          class="col-12 col-md-3 my-3 text-center d-flex justify-content-center"
+        >
+          <img
+            alt="Logo of platomo"
+            src="assets/img/platomo_logo_black.svg"
+            style="
+              max-height: 50px;
+              width: auto;
+              min-height: 30px;
+              cursor: pointer;
+            "
+            onclick="window.open('https://www.platomo.de','_blank','noopener,noreferrer')"
+          />
+        </div>
+        <div
+          class="col-12 col-md-3 my-3 text-center d-flex justify-content-center"
+        >
+          <img
+            alt="Logo of TU Dresden"
+            src="assets/img/Logo_TU_Dresden.svg"
+            style="
+              max-height: 50px;
+              width: auto;
+              min-height: 30px;
+              cursor: pointer;
+            "
+            onclick="window.open('https://tu-dresden.de/bu/verkehr/ivs/msp','_blank','noopener,noreferrer')"
+          />
+        </div>
+      </div>
+      <a class="md-button" href="/team">Mehr zu uns</a>
     </div>
+  </div>
 </section>
 
 {% endblock %}
 
 <!-- Footer -->
-{% block footer %}
-{{ super() }}
-{% endblock %}
-
-{% block config %}
-{{ super() }}
-{% endblock %}
-
-{% block scripts %}
-{{ super() }}
-{% endblock %}
-
+{% block footer %} {{ super() }} {% endblock %} {% block config %} {{ super() }}
+{% endblock %} {% block scripts %} {{ super() }} {% endblock %}
