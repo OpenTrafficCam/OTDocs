@@ -8,11 +8,11 @@ The documentation is fully written in [Markdown](https://python-markdown.github.
 
 ## Contribute
 
-You can update or correct the content of this documentation by editing existing or creating new Markdown files in ```/docs``` (e.g. directly on GitHub or using an IDE like VS Code).
+You can update or correct the content of this documentation by editing existing or creating new Markdown files in ```/docs``` (e.g. directly on GitHub or using an IDE like Visual Studio Code).
 A new page needs to be added to the navigation structure in ```mkdocs.yml```.
 It includes also all settings for the theme.
 
-If you are using VS Code you should consider using the extension [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) to write proper Markdown code.
+If you are using Visual Studio Code you should consider using the extension [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) to write proper Markdown code.
 The [YAML] extension is useful to lint and autoformat the ```mkdocs.yml``` .
 [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) could be helpful to write Markdown.
 
@@ -26,7 +26,7 @@ A ton of additional Markdown features are documented in the material theme [refe
 
 MkDocs converts all Markdown files using the settings and navigation defined in ```mkdocs.yml``` into a static HTML site.
 The [documentation](https://opentrafficcam.org) is hosted on GitHub Pages and will be deployed automatically.
-After creating, reviewing and merging a pull request to the master branch, a GitHub action will deploy the changes.
+After creating, reviewing and merging a pull request to the master branch, a GitHub Action will deploy the changes.
 
 ## Local Development Server
 
@@ -34,8 +34,10 @@ If you want to preview your changes before creating a pull request, here is what
 
 ### Installation
 
+Make sure you have Python and Node.js installed on your system.
+
 Clone the repository (if not done already).
-Create a virtual environment and install dependencies.
+
 We provide an install script.
 Open a terminal and start the install script.
 
@@ -43,21 +45,28 @@ Open a terminal and start the install script.
 sh ./install_dev.sh
 ```
 
+The install script creates a virtual environment and installs the dependencies (Python and Node packages).
+
 The script deletes previous installs, so you can use it to update your local environment.
 
 ### Run
-
-You can run a local server with autoload.
-You should always upgrade your venv.
 
 ```bash
 sh ./start_local_server.sh
 ```
 
-MkDocs builds the site and starts a local webserver which monitors for changes.
+This script updates your venv, builds the site and starts a local webserver which monitors for changes.
 
 Open [http://127.0.0.1:8000](http://127.0.0.1:8000) in your browser to access this site.
+
+To stop the web server, press "Ctrl + C" or by closing the terminal.
+
+### Develop
+
 If you change any file inside ```/docs``` MkDocs regenerates that site and instantly reloads your browser.
 This even works great if you change a branch while running ```mkdocs serve``` .
 
-To stop the web server, press "Ctrl + C" or by closing the terminal.
+If you committed your changes and the GitHub Super-Linter fails due to style issues in your `.html`, `.css` or `.js` files, run `update_prettier_to_meet_super-linter.sh` to upgrade your prettier node package.
+This updates the `package.json` and `package-lock.json`.
+Format your `.html`, `.css` or `.js` files and commit them again.
+If this resolves the Super-Linter´s `.html`, `.css` and `.js` style issues, please commit the changed `package.json` and `package-lock.json` with your PR.
