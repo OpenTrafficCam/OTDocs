@@ -56,7 +56,7 @@ p {
 }
 
 @media (width <= 768px) {
-  .use_case_text {
+  .use-case-text {
     order: 2;
   }
 }
