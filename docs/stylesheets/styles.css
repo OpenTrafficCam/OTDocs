@@ -124,9 +124,8 @@ p {
     padding: 20px;
     text-align: center;
     display: flex;
-    justify-content: space-around;
+    place-content: space-between space-around;
     flex-wrap: wrap;
-    align-content: space-between;
   }
 
   @media (width <= 1200px) {
