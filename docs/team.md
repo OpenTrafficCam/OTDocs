@@ -42,9 +42,9 @@ und der [TU Dresden](https://tu-dresden.de/bu/verkehr/ivs/msp) entwickelt.
 
 <div class="grid cards" markdown>
 
-- ![platomo](assets/img/platomo_logo.png){style="display: block; margin: 0 auto" }
+- ![platomo](assets/img/platomo_logo_black.svg){style="display: block; margin: 0 auto; max-height: 50px; width: auto; min-height: 30px;" }
 
-- ![TU Dresden](assets/img/tud_logo.png){style="display: block; margin: 0 auto" }
+- ![TU Dresden](assets/img/Logo_TU_Dresden.svg){style="display: block; margin: 0 auto; max-height: 50px; width: auto; min-height: 30px;" }
 
 </div>
 
