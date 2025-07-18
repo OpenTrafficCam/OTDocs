@@ -168,11 +168,6 @@ p {
 }
 
 @media (width <= 1200px) {
-  .service-title {
-  }
-}
-
-@media (width <= 1200px) {
   .mobile-margin {
     margin-bottom: 4rem;
   }
