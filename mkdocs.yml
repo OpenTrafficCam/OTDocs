@@ -9,7 +9,7 @@ theme:
   palette:
     scheme: default
   font: false
-  language: en
+  language: de
   logo: assets/OTC_icon_white.svg
   favicon: assets/OTC_icon.svg
   features:
