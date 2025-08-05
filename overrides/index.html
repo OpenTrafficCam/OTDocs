@@ -23,6 +23,9 @@
 <!-- JavaScript libraries -->
 {% block libs %} {{ super() }} {% endblock %}
 
+<!-- Custom JavaScript -->
+<script src="javascripts/main.js" defer></script>
+
 <!-- Webfonts -->
 {% block fonts %} {{ super() }} {% endblock %}
 
@@ -39,12 +42,26 @@
 {% block extrahead %}
 <meta
   name="description"
-  content="OpenTrafficCam provides innovative, open-source
-    tools for transparent and automated traffic data collection and analysis. Ideal for
-    research and practical applications, it supports various traffic classes and
-    integrates easily with existing workflows. Explore our advanced AI-based video
-    processing and traffic analytics solutions."
+  content="OpenTrafficCam provides innovative, open-source tools for transparent and automated traffic data collection and analysis. Ideal for research and practical applications, it supports various traffic classes and integrates easily with existing workflows. Explore our advanced AI-based video processing and traffic analytics solutions."
 />
+<meta
+  name="keywords"
+  content="OpenTrafficCam, traffic analysis, open source, AI video processing, traffic data collection, GDPR compliant, verkehrserfassung, verkehrsanalyse"
+/>
+<meta name="author" content="OpenTrafficCam Team" />
+<meta
+  property="og:title"
+  content="OpenTrafficCam - Transparente Verkehrsdatenerfassung"
+/>
+<meta
+  property="og:description"
+  content="Innovative, open-source tools for transparent and automated traffic data collection and analysis."
+/>
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://opentrafficcam.org" />
+<meta property="og:image" content="assets/img/header.svg" />
+<link rel="preconnect" href="https://plausible.platomo.org" />
+<link rel="dns-prefetch" href="https://plausible.platomo.org" />
 {% endblock %}
 
 <!--Body starts here-->
@@ -57,9 +74,13 @@
 
 <!-- Hero teaser -->
 {% block hero %}
-<header class="hero">
+<header class="hero" role="banner">
   <div class="container">
-    <img alt="OpenTrafficCam logo" src="assets/img/header.svg" />
+    <img
+      alt="OpenTrafficCam Logo - Innovative Verkehrsdatenerfassung"
+      src="assets/img/header.svg"
+      loading="eager"
+    />
 
     <div class="hero-heading">
       <h1>OpenTrafficCam</h1>
@@ -82,17 +103,16 @@
 <!-- Page content -->
 {% block container %} {{ super() }} {% endblock %} {% block content %}
 
-<section
-  class="page-section"
-  id="features"
-  style="margin-top: -1rem; margin-bottom: -1rem"
->
+<section class="page-section" id="features" aria-labelledby="features-heading">
   <div class="container col-md-9 text-center">
+    <h2 id="features-heading" class="sr-only">
+      Hauptmerkmale von OpenTrafficCam
+    </h2>
     <div
       class="row row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center g-4"
     >
       <div class="col">
-        <h2 class="fw-normal" style="color: var(--md-primary-fg-color)">
+        <h2 class="fw-normal features-heading">
           <b>Komplettlösung</b>
         </h2>
         <h3 class="fw-light">
@@ -100,13 +120,13 @@
         </h3>
       </div>
       <div class="col">
-        <h2 class="fw-normal" style="color: var(--md-primary-fg-color)">
+        <h2 class="fw-normal features-heading">
           <b>Open Source</b>
         </h2>
         <h3 class="fw-light">Souverän einsetzbar ohne Anbieterzwang</h3>
       </div>
       <div class="col">
-        <h2 class="fw-normal" style="color: var(--md-primary-fg-color)">
+        <h2 class="fw-normal features-heading">
           <b>Open Data</b>
         </h2>
         <h3 class="fw-light">
@@ -114,7 +134,7 @@
         </h3>
       </div>
       <div class="col">
-        <h2 class="fw-normal" style="color: var(--md-primary-fg-color)">
+        <h2 class="fw-normal features-heading">
           <b>DSGVO-konform</b>
         </h2>
         <h3 class="fw-light">
@@ -122,7 +142,7 @@
         </h3>
       </div>
       <div class="col">
-        <h2 class="fw-normal" style="color: var(--md-primary-fg-color)">
+        <h2 class="fw-normal features-heading">
           <b>professionell</b>
         </h2>
         <h3 class="fw-light">
@@ -130,7 +150,7 @@
         </h3>
       </div>
       <div class="col">
-        <h2 class="fw-normal" style="color: var(--md-primary-fg-color)">
+        <h2 class="fw-normal features-heading">
           <b>praxiserprobt</b>
         </h2>
         <h3 class="fw-light">Eingesetzt in Forschung, Beratung und SVZ 2025</h3>
@@ -155,7 +175,7 @@
 <section class="page-section services" id="pipeline">
   <div class="container">
     <div class="text-center mb-2">
-      <h1 style="margin-top: 0rem; margin-bottom: 2rem">
+      <h1 class="pipeline-heading">
         <b>Ein System. Alle Funktionen. Modular nutzbar.</b>
       </h1>
     </div>
@@ -170,11 +190,17 @@
             muted
             playsinline
             poster="assets/video/videoerfassung.webp"
+            aria-label="Demonstration der Videoerfassung mit OpenTrafficCam"
+            title="Videoerfassung - Einfache Montage und autarke Aufnahme"
           >
             <source src="assets/video/videoerfassung.webm" type="video/webm" />
             <source src="assets/video/videoerfassung.mp4" type="video/mp4" />
+            <p>
+              Ihr Browser unterstützt das Video-Element nicht. Das Video zeigt
+              die Videoerfassung mit OpenTrafficCam.
+            </p>
           </video>
-          <div style="font-size: 0.8rem">
+          <div class="service-description">
             <p>Einfache Montage und Bedienung</p>
             <p>Autark Aufnahme bis zu 7 Tagen</p>
             <p>Datenschutz by Design</p>
@@ -197,14 +223,20 @@
             muted
             playsinline
             poster="assets/video/videoverarbeitung.webp"
+            aria-label="Demonstration der KI-basierten Videoverarbeitung mit OpenTrafficCam"
+            title="Videoverarbeitung - KI-basierte Detektion und Tracking"
           >
             <source
               src="assets/video/videoverarbeitung.webm"
               type="video/webm"
             />
             <source src="assets/video/videoverarbeitung.mp4" type="video/mp4" />
+            <p>
+              Ihr Browser unterstützt das Video-Element nicht. Das Video zeigt
+              die KI-basierte Videoverarbeitung mit OpenTrafficCam.
+            </p>
           </video>
-          <div style="font-size: 0.8rem">
+          <div class="service-description">
             <p>KI-basierte Detektion</p>
             <p>Tracking aller Verkehrsbewegungen</p>
             <p>Auch für Kameras anderer Hersteller</p>
@@ -227,11 +259,17 @@
             muted
             playsinline
             poster="assets/video/verkehrsanalyse.webp"
+            aria-label="Demonstration der Verkehrsanalyse mit OpenTrafficCam"
+            title="Verkehrsanalyse - Einfach bedienbare Oberfläche für Verkehrskennwerte"
           >
             <source src="assets/video/verkehrsanalyse.webm" type="video/webm" />
             <source src="assets/video/verkehrsanalyse.mp4" type="video/mp4" />
+            <p>
+              Ihr Browser unterstützt das Video-Element nicht. Das Video zeigt
+              die Verkehrsanalyse mit OpenTrafficCam.
+            </p>
           </video>
-          <div style="font-size: 0.8rem">
+          <div class="service-description">
             <p>Einfach bedienbare Oberfläche</p>
             <p>Bewegungen → Verkehrskennwerte</p>
             <p>Verkehrsstärken, Geschwindigkeiten</p>
@@ -497,31 +535,20 @@
     </div>
     <div class="row mt-2">
       <div class="col text-center">
-        <h3 class="fw-light" style="margin-bottom: 0rem; margin-top: 2rem">
+        <h3 class="fw-light traffic-classes-heading-main">
           KI-Modelle trainiert mit tausenden Bildern deutscher Verkehrsanlagen
         </h3>
-        <h3 class="fw-light" style="margin-bottom: 0rem; margin-top: 1rem">
+        <h3 class="fw-light traffic-classes-heading">
           Aggregierbar zu <strong>TLS 8+1</strong>, <strong>RLS-19</strong> und
           nach eigenen Wünschen
         </h3>
-        <p class="fw-light" style="margin-bottom: 0rem; margin-top: 1rem">
+        <p class="fw-light traffic-classes-note">
           <em>*Open Source-Version: 7 Klassen</em>
         </p>
       </div>
     </div>
   </div>
 </section>
-<script>
-  // Bootstrap Tooltip initialisieren (einfachere Methode für Bootstrap 5)
-  document.addEventListener("DOMContentLoaded", function () {
-    var tooltipTriggerList = document.querySelectorAll(
-      '[data-bs-toggle="tooltip"]',
-    );
-    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
-      new bootstrap.Tooltip(tooltipTriggerEl);
-    });
-  });
-</script>
 
 <section class="page-section details" id="use-cases">
   <div class="text-center">
@@ -532,14 +559,14 @@
     <div class="row">
       <div class="col-md-6 use-case-text">
         <h2>Verkehrsplanung &amp; -technik</h2>
-        <ul style="padding-left: 0; text-align: left; font-size: 1.1em">
+        <ul class="use-case-list">
           <li>Verkehrserhebungen an Knotenpunkten und Querschnitten</li>
           <li>Verkehrsstärken, Geschwindigkeiten, Aufenthaltsdauern u.v.m.</li>
           <li>
             Export als CSV oder Excel, im SVZ-Format oder nach Ihren Wünschen
           </li>
           <li>Mit OpenTrafficCam haben Sie die Wahl:</li>
-          <ul style="padding-left: 0; margin-left: 2em; text-align: left">
+          <ul class="use-case-sublist">
             <li>
               Sie nutzen das System selbst - bei Bedarf unterstützen wir Sie
             </li>
@@ -558,7 +585,7 @@
           loading="lazy"
           width="100%"
           height="100%"
-          alt="Vektor image of two engineers."
+          alt="Illustration von zwei Ingenieuren bei der Verkehrsplanung mit Laptop und Dokumenten"
           src="assets/img/planning.webp"
         />
       </div>
@@ -578,7 +605,7 @@
       </div>
       <div class="col-md-6 use-case-text">
         <h2>Verkehrsforschung</h2>
-        <ul style="padding-left: 0; text-align: left; font-size: 1.1em">
+        <ul class="use-case-list">
           <li>Detaillierte und individuelle Verkehrsdaten</li>
           <li>
             Jegliche Informationen, die aus Trajektorien Verkehrsteilnehmender
@@ -609,7 +636,7 @@
           <span class="highlighted-text-soon">In Entwicklung</span>
           Verkehrsmanagement
         </h2>
-        <ul style="padding-left: 0; text-align: left; font-size: 1.1em">
+        <ul class="use-case-list">
           <li>Permanente Erfassung mit OTCamera oder eigenen Kameras</li>
           <li>
             Verarbeitung der Video-Streams auf Ihren Servern oder in der Cloud
@@ -752,7 +779,7 @@
               Kontrolle
             </li>
             <li>
-              Jeder kann Funktionen beisteuern und Sicherheitslücken erkennen
+              Alle können Funktionen beisteuern und Sicherheitslücken erkennen
             </li>
             <li>
               Offene Formate und Schnittstellen erlauben Freiheit und

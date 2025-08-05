@@ -105,6 +105,67 @@ p {
   margin-top: -3rem;
 }
 
+/* Features section styles */
+#features {
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+}
+
+.features-heading {
+  color: var(--md-primary-fg-color);
+}
+
+.pipeline-heading {
+  margin-top: 0rem;
+  margin-bottom: 2rem;
+}
+
+.service-description {
+  font-size: 0.8rem;
+}
+
+/* Traffic classes section styles */
+.traffic-classes-heading {
+  margin-bottom: 0rem;
+  margin-top: 1rem;
+}
+
+.traffic-classes-heading-main {
+  margin-bottom: 0rem;
+  margin-top: 2rem;
+}
+
+.traffic-classes-note {
+  margin-bottom: 0rem;
+  margin-top: 1rem;
+}
+
+/* Use cases list styles */
+.use-case-list {
+  padding-left: 0;
+  text-align: left;
+  font-size: 1.1em;
+}
+
+.use-case-sublist {
+  padding-left: 0;
+  margin-left: 2em;
+  text-align: left;
+}
+
+/* Accessibility utilities */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 @media (width >= 768px) {
   .details h2 {
     margin-top: 0;
