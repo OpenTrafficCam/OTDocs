@@ -29,6 +29,7 @@ theme:
 
 nav:
   - index.md
+  - live.md
   - pricing.md
   # - use-cases.md
   - Documentation:
@@ -69,6 +70,7 @@ nav:
           - OTAnalytics/index.md
           - OTAnalytics/installation.md
           - OTAnalytics/usage-ui.md
+          - OTAnalytics/usage-cli.md
       #          - OTAnalytics/otconfig.md
       #          - Accuracy:
       #              - OTAnalytics/Accuracy/counts.md
@@ -104,6 +106,7 @@ extra_css:
   - stylesheets/color.css
   - stylesheets/fonts.css
   - stylesheets/katex.min.css
+  - stylesheets/custom_admonitions.css
 extra_javascript:
   - assets/js/katex_mkdocs.js
   - assets/js/katex.min.js
@@ -126,7 +129,7 @@ extra:
       #     lang: de
 
 copyright: >
-  Copyright &copy; 2020 - 2024 OpenTrafficCam Contributors
+  Copyright &copy; 2020 - 2025 OpenTrafficCam Contributors
   <a href="https://platomo.de/impressum/">Impressum / Legal Notice</a>
 repo_url: https://github.com/OpenTrafficCam/
 repo_name: OpenTrafficCam
