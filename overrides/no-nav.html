@@ -5,33 +5,27 @@
 <!-- copied all available blocks from base.html and inherited if needed. -->
 
 <!-- Meta tags -->
-{% block site_meta %}
-{{ super() }}
-{% endblock %}
+{% block site_meta %} {{ super() }} {% endblock %}
 
 <!-- Site title -->
-{% block htmltitle %}
-{{ super() }}
-{% endblock %}
+{% block htmltitle %} {{ super() }} {% endblock %}
 
 <!-- Theme-related style sheets -->
-{% block styles %}
-{{ super() }}
-{% endblock %}
+{% block styles %} {{ super() }} {% endblock %}
 
 <!-- JavaScript libraries -->
-{% block libs %}
-{{ super() }}
-{% endblock %}
+{% block libs %} {{ super() }} {% endblock %}
 
 <!-- Webfonts -->
-{% block fonts %}
-{{ super() }}
-{% endblock %}
+{% block fonts %} {{ super() }} {% endblock %}
 
 <!-- Analytics -->
 {% block analytics %}
-<script defer data-domain="opentrafficcam.org" src="https://plausible.platomo.org/js/script.js"></script>
+<script
+  defer
+  data-domain="opentrafficcam.org"
+  src="https://plausible.platomo.org/js/script.js"
+></script>
 {% endblock %}
 
 <!-- Custom front matter -->
@@ -43,17 +37,13 @@
 {% block announce %}{% endblock %}
 
 <!-- Header -->
-{% block header %}
-{{ super() }}
-{% endblock %}
+{% block header %} {{ super() }} {% endblock %}
 
 <!-- Hero teaser -->
 {% block hero %}{% endblock %}
 
 <!-- Navigation tabs (collapsing) -->
-{% block tabs %}
-{{ super() }}
-{% endblock %}
+{% block tabs %} {{ super() }} {% endblock %}
 
 <!-- Main area -->
 
@@ -63,23 +53,9 @@
 {% endblock %}
 
 <!-- Page content -->
-{% block container %}
-{{ super() }}
-{% endblock %}
-{% block content %}
-{{ super() }}
-{% endblock %}
+{% block container %} {{ super() }} {% endblock %} {% block content %} {{
+super() }} {% endblock %}
 
 <!-- Footer -->
-{% block footer %}
-{{ super() }}
-{% endblock %}
-
-{% block config %}
-{{ super() }}
-{% endblock %}
-
-{% block scripts %}
-{{ super() }}
-{% endblock %}
-
+{% block footer %} {{ super() }} {% endblock %} {% block config %} {{ super() }}
+{% endblock %} {% block scripts %} {{ super() }} {% endblock %}

@@ -5,9 +5,7 @@
 <!-- copied all available blocks from base.html and inherited if needed. -->
 
 <!-- Meta tags -->
-{% block site_meta %}
-{{ super() }}
-{% endblock %}
+{% block site_meta %} {{ super() }} {% endblock %}
 
 <!-- Site title -->
 {% block htmltitle %}
@@ -15,35 +13,55 @@
 {% endblock %}
 
 <!-- Theme-related style sheets -->
-{% block styles %}
-{{ super() }}
-<link href="stylesheets/styles.css" rel="stylesheet"/>
-<link href="stylesheets/bootstrap-grid.css" rel="stylesheet"/>
-<link href="stylesheets/bootstrap-utilities.css" rel="stylesheet"/>
+{% block styles %} {{ super() }}
+<link href="stylesheets/styles.css" rel="stylesheet" />
+<link href="stylesheets/bootstrap-grid.css" rel="stylesheet" />
+<link href="stylesheets/bootstrap-utilities.css" rel="stylesheet" />
+<link href="stylesheets/color.css" rel="stylesheet" />
 {% endblock %}
 
 <!-- JavaScript libraries -->
-{% block libs %}
-{{ super() }}
-{% endblock %}
+{% block libs %} {{ super() }} {% endblock %}
+
+<!-- Custom JavaScript -->
+<script src="javascripts/main.js" defer></script>
 
 <!-- Webfonts -->
-{% block fonts %}
-{{ super() }}
-{% endblock %}
+{% block fonts %} {{ super() }} {% endblock %}
 
 <!-- Analytics -->
 {% block analytics %}
-<script defer data-domain="opentrafficcam.org" src="https://plausible.platomo.org/js/script.js"></script>
+<script
+  defer
+  data-domain="opentrafficcam.org"
+  src="https://plausible.platomo.org/js/script.js"
+></script>
 {% endblock %}
 
 <!-- Custom front matter -->
 {% block extrahead %}
-    <meta name="description" content="OpenTrafficCam provides innovative, open-source
-    tools for transparent and automated traffic data collection and analysis. Ideal for
-    research and practical applications, it supports various traffic classes and
-    integrates easily with existing workflows. Explore our advanced AI-based video
-    processing and traffic analytics solutions.">
+<meta
+  name="description"
+  content="OpenTrafficCam bietet innovative, quelloffene Werkzeuge für transparente und automatisierte Verkehrsdatenerfassung und -analyse. Ideal für Forschung und praktische Anwendungen, unterstützt es verschiedene Verkehrsklassen und lässt sich einfach in bestehende Arbeitsabläufe integrieren. Entdecken Sie unsere fortschrittlichen KI-basierten Videoverarbeitungs- und Verkehrsanalysenlösungen."
+/>
+<meta
+  name="keywords"
+  content="OpenTrafficCam, traffic analysis, open source, AI video processing, traffic data collection, GDPR compliant, verkehrserfassung, verkehrsanalyse"
+/>
+<meta name="author" content="OpenTrafficCam Team" />
+<meta
+  property="og:title"
+  content="OpenTrafficCam - Transparente Verkehrsdatenerfassung"
+/>
+<meta
+  property="og:description"
+  content="Innovative, quelloffene Werkzeuge für transparente und automatisierte Verkehrsdatenerfassung und -analyse."
+/>
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://opentrafficcam.org" />
+<meta property="og:image" content="assets/img/header.svg" />
+<link rel="preconnect" href="https://plausible.platomo.org" />
+<link rel="dns-prefetch" href="https://plausible.platomo.org" />
 {% endblock %}
 
 <!--Body starts here-->
@@ -52,293 +70,788 @@
 {% block announce %}{% endblock %}
 
 <!-- Header -->
-{% block header %}
-{{ super() }}
-{% endblock %}
+{% block header %} {{ super() }} {% endblock %}
 
 <!-- Hero teaser -->
 {% block hero %}
-<header class="hero">
-    <div class="container">
-            <img alt="OpenTrafficCam logo" src="assets/img/header.svg">
+<header class="hero" role="banner">
+  <div class="container">
+    <img
+      alt="OpenTrafficCam Logo - Innovative Verkehrsdatenerfassung"
+      src="assets/img/header.svg"
+      loading="eager"
+    />
 
-        <div class="hero-heading">
-            <h1>OpenTrafficCam</h1>
-        </div>
-        <div class="hero-subheading">
-            <h2>... die transparente Verkehrsdatenerfassung</h2>
-        </div>
+    <div class="hero-heading">
+      <h1>OpenTrafficCam</h1>
     </div>
+    <div class="hero-subheading">
+      <h2>Die transparente Verkehrsdatenerfassung</h2>
+    </div>
+  </div>
 </header>
 {% endblock %}
 
 <!-- Navigation tabs (collapsing) -->
-{% block tabs %}
-{{ super() }}
-{% endblock %}
+{% block tabs %} {{ super() }} {% endblock %}
 
 <!-- Main area -->
 
 <!-- Sidebars -->
-{% block site_nav %}
-{{ super() }}
-{% endblock %}
+{% block site_nav %} {{ super() }} {% endblock %}
 
 <!-- Page content -->
-{% block container %}
-{{ super() }}
-{% endblock %}
-{% block content %}
+{% block container %} {{ super() }} {% endblock %} {% block content %}
 
+<section class="page-section" id="features" aria-labelledby="features-heading">
+  <div class="container col-md-9 text-center">
+    <h2 id="features-heading" class="sr-only">
+      Hauptmerkmale von OpenTrafficCam
+    </h2>
+    <div
+      class="row row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center g-4"
+    >
+      <div class="col">
+        <h2 class="fw-normal features-heading">
+          <b>Komplettlösung</b>
+        </h2>
+        <h3 class="fw-light">
+          Automatisierung von der Erfassung bis zur Analyse
+        </h3>
+      </div>
+      <div class="col">
+        <h2 class="fw-normal features-heading">
+          <b>Open Source</b>
+        </h2>
+        <h3 class="fw-light">Souverän einsetzbar ohne Anbieterzwang</h3>
+      </div>
+      <div class="col">
+        <h2 class="fw-normal features-heading">
+          <b>Offene Schnittstellen</b>
+        </h2>
+        <h3 class="fw-light">
+          Kompatibel mit anderen Kameras, Tools und Skripten
+        </h3>
+      </div>
+      <div class="col">
+        <h2 class="fw-normal features-heading">
+          <b>DSGVO-konform</b>
+        </h2>
+        <h3 class="fw-light">
+          Geprüft von Anwälten und Datenschutzbeauftragten
+        </h3>
+      </div>
+      <div class="col">
+        <h2 class="fw-normal features-heading">
+          <b>Professionell</b>
+        </h2>
+        <h3 class="fw-light">
+          Entwickelt von Informatikern und Verkehrsfachleuten
+        </h3>
+      </div>
+      <div class="col">
+        <h2 class="fw-normal features-heading">
+          <b>Praxiserprobt</b>
+        </h2>
+        <h3 class="fw-light">Eingesetzt in Forschung, Beratung und SVZ 2025</h3>
+      </div>
+    </div>
+  </div>
+</section>
 
-<section class="page-section introduction" id="otc_information">
-    <div class="col-md-9 container text-center">
-        <h1>Überblick</h1>
-        <p>
-            Entwickelt von erfahrenen Partnern aus Wissenschaft und Praxis, ist die <strong>OpenTrafficCam</strong>
-            das Werkzeug zur transparenten und automatisierten Verkehrsdatenerfassung für
-            <strong>Forschung und Praxis.</strong>
+<section class="page-section" id="contact-button">
+  <div class="container">
+    <div class="text-center mb-2">
+      <a
+        class="md-button highlighted-btn fs-6"
+        href="mailto:team@opentrafficcam.org?subject=Anfrage%20zu%20OpenTrafficCam"
+      >
+        Kontaktieren Sie uns
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="page-section services" id="pipeline">
+  <div class="container">
+    <div class="text-center mb-2">
+      <h1 class="pipeline-heading">
+        <b>Ein System. Alle Funktionen. Modular nutzbar.</b>
+      </h1>
+    </div>
+    <div class="row text-center">
+      <div class="col-md-4 service-grid">
+        <div>
+          <h2 class="my-4">Videoerfassung</h2>
+          <video
+            oncontextmenu="return false;"
+            autoplay
+            loop
+            muted
+            playsinline
+            poster="assets/video/videoerfassung.webp"
+            aria-label="Demonstration der Videoerfassung mit OpenTrafficCam"
+            title="Videoerfassung - Einfache Montage und autarke Aufnahme"
+          >
+            <source src="assets/video/videoerfassung.webm" type="video/webm" />
+            <source src="assets/video/videoerfassung.mp4" type="video/mp4" />
+            <p>
+              Ihr Browser unterstützt das Video-Element nicht. Das Video zeigt
+              die Videoerfassung mit OpenTrafficCam.
+            </p>
+          </video>
+          <div class="service-description">
+            <p>Kamera zur Verkehrserfassung</p>
+            <p>Einfache Montage und Bedienung</p>
+            <p>Autarke Aufnahme bis 7+ Tage</p>
+            <p>Datenschutz by Design</p>
+            <p>Als Fertigsystem bestellbar</p>
+          </div>
+        </div>
+        <div class="button-grid">
+          <a class="md-button" href="/OTCamera/">OTCamera Dokumentation</a>
+        </div>
+      </div>
+
+      <div class="col-md-4 service-grid">
+        <div>
+          <h2 class="my-4">Videoverarbeitung</h2>
+          <video
+            oncontextmenu="return false;"
+            autoplay
+            loop
+            muted
+            playsinline
+            poster="assets/video/videoverarbeitung.webp"
+            aria-label="Demonstration der KI-basierten Videoverarbeitung mit OpenTrafficCam"
+            title="Videoverarbeitung - KI-basierte Detektion und Tracking"
+          >
+            <source
+              src="assets/video/videoverarbeitung.webm"
+              type="video/webm"
+            />
+            <source src="assets/video/videoverarbeitung.mp4" type="video/mp4" />
+            <p>
+              Ihr Browser unterstützt das Video-Element nicht. Das Video zeigt
+              die KI-basierte Videoverarbeitung mit OpenTrafficCam.
+            </p>
+          </video>
+          <div class="service-description">
+            <p>KI-basierte Detektion</p>
+            <p>Tracking aller Verkehrsbewegungen</p>
+            <p>Auch mit Kameras anderer Hersteller</p>
+            <p>Open Source-Version: 7 Klassen</p>
+            <p>Pro-Version: 18 Klassen</p>
+          </div>
+        </div>
+        <div class="button-grid">
+          <a class="md-button" href="/OTVision/">OTVision Dokumentation</a>
+        </div>
+      </div>
+
+      <div class="col-md-4 service-grid">
+        <div>
+          <h2 class="my-4">Verkehrsanalyse</h2>
+          <video
+            oncontextmenu="return false;"
+            autoplay
+            loop
+            muted
+            playsinline
+            poster="assets/video/verkehrsanalyse.webp"
+            aria-label="Demonstration der Verkehrsanalyse mit OpenTrafficCam"
+            title="Verkehrsanalyse - Einfach bedienbare Oberfläche für Verkehrskennwerte"
+          >
+            <source src="assets/video/verkehrsanalyse.webm" type="video/webm" />
+            <source src="assets/video/verkehrsanalyse.mp4" type="video/mp4" />
+            <p>
+              Ihr Browser unterstützt das Video-Element nicht. Das Video zeigt
+              die Verkehrsanalyse mit OpenTrafficCam.
+            </p>
+          </video>
+          <div class="service-description">
+            <p>Einfach bedienbare Oberfläche</p>
+            <p>Ableitung von Verkehrskennwerten</p>
+            <p>Verkehrsstärken, Geschwindigkeiten</p>
+            <p>Einzelfahrzeugdaten und mehr</p>
+            <p>Export als CSV- und Excel-Dateien</p>
+          </div>
+        </div>
+        <div class="button-grid">
+          <a class="md-button" href="/OTAnalytics/"
+            >OTAnalytics Dokumentation</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-section-colored details" id="traffic-classes">
+  <div class="container">
+    <div class="text-center mb-2">
+      <h1 style="margin-top: 0rem; margin-bottom: 2rem">
+        <b>Differenzierung von 18 Klassen*</b>
+      </h1>
+    </div>
+    <div class="row justify-content-center g-4 text-center">
+      <style>
+        .traffic-class-icon img {
+          height: 30px !important;
+          width: auto;
+          max-width: 100%;
+          display: block;
+          margin: 0 auto;
+          pointer-events: none;
+        }
+        .traffic-class-icon {
+          margin-top: 5px;
+          margin-bottom: 5px;
+          display: inline-block;
+          transition:
+            transform 0.3s cubic-bezier(0.4, 2, 0.6, 1),
+            z-index 0.2s;
+          position: relative;
+          z-index: 1;
+        }
+        .traffic-class-icon:hover {
+          transform: scale(1.75);
+          z-index: 10;
+        }
+      </style>
+      <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+        <div
+          class="traffic-class-icon"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Zu Fuß Gehende"
+        >
+          <img src="assets/icons/01_pedestrians.svg" alt="Zu Fuß Gehende" />
+        </div>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+        <div
+          class="traffic-class-icon"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Scooterfahrende"
+        >
+          <img src="assets/icons/02_scooters.svg" alt="Scooterfahrende" />
+        </div>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+        <div
+          class="traffic-class-icon"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Radfahrende"
+        >
+          <img src="assets/icons/03_bicycles.svg" alt="Radfahrende" />
+        </div>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+        <div
+          class="traffic-class-icon"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Radfahrende mit Anhänger"
+        >
+          <img
+            src="assets/icons/04_bicycles_with_trailer.svg"
+            alt="Radfahrende mit Anhänger"
+          />
+        </div>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+        <div
+          class="traffic-class-icon"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Lastenradfahrende"
+        >
+          <img src="assets/icons/05_cargo_bikes.svg" alt="Lastenradfahrende" />
+        </div>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+        <div
+          class="traffic-class-icon"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Kraftradfahrende"
+        >
+          <img src="assets/icons/06_motorcycles.svg" alt="Kraftradfahrende" />
+        </div>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+        <div
+          class="traffic-class-icon"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Pkw"
+        >
+          <img src="assets/icons/07_cars.svg" alt="Pkw" />
+        </div>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+        <div
+          class="traffic-class-icon"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Pkw mit Anhänger"
+        >
+          <img
+            src="assets/icons/08_cars_with_trailer.svg"
+            alt="Pkw mit Anhänger"
+          />
+        </div>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+        <div
+          class="traffic-class-icon"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Privater Kleinbus"
+        >
+          <img
+            src="assets/icons/09_private_minibus.svg"
+            alt="Privater Kleinbus"
+          />
+        </div>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+        <div
+          class="traffic-class-icon"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Privater Kleinbus mit Anhänger"
+        >
+          <img
+            src="assets/icons/10_private_minibus_with_trailer.svg"
+            alt="Privater Kleinbus mit Anhänger"
+          />
+        </div>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+        <div
+          class="traffic-class-icon"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Gewerblicher Kleinbus"
+        >
+          <img
+            src="assets/icons/11_commercial_minibus.svg"
+            alt="Gewerblicher Kleinbus"
+          />
+        </div>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+        <div
+          class="traffic-class-icon"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Gewerblicher Kleinbus mit Anhänger"
+        >
+          <img
+            src="assets/icons/12_commercial_minibus_with_trailer.svg"
+            alt="Gewerblicher Kleinbus mit Anhänger"
+          />
+        </div>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+        <div
+          class="traffic-class-icon"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Lkw"
+        >
+          <img src="assets/icons/13_trucks.svg" alt="Lkw" />
+        </div>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+        <div
+          class="traffic-class-icon"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Lkw mit Anhänger"
+        >
+          <img
+            src="assets/icons/14_trucks_with_trailer.svg"
+            alt="Lkw mit Anhänger"
+          />
+        </div>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+        <div
+          class="traffic-class-icon"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Lastzug"
+        >
+          <img src="assets/icons/15_truck_trailers.svg" alt="Lastzug" />
+        </div>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+        <div
+          class="traffic-class-icon"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Bus"
+        >
+          <img src="assets/icons/16_buses.svg" alt="Bus" />
+        </div>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+        <div
+          class="traffic-class-icon"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Bahn"
+        >
+          <img src="assets/icons/17_trains.svg" alt="Bahn" />
+        </div>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 d-flex justify-content-center">
+        <div
+          class="traffic-class-icon"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Sonstige Klasse"
+        >
+          <img src="assets/icons/18_other_class.svg" alt="Sonstige Klasse" />
+        </div>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col text-center">
+        <h3 class="fw-light traffic-classes-heading-main">
+          KI-Modelle trainiert mit tausenden Bildern deutscher Verkehrsanlagen
+        </h3>
+        <h3 class="fw-light traffic-classes-heading">
+          Aggregierbar zu <strong>TLS 8+1</strong>, <strong>RLS-19</strong> und
+          nach eigenen Wünschen
+        </h3>
+        <p class="fw-light traffic-classes-note">
+          <em>*Open Source-Version: 7 Klassen</em>
         </p>
-        <p>
-            Die OpenTrafficCam vereint zahlreiche einzigartige Merkmale und bietet dadurch maximale
-            <strong>Flexibilität</strong> bei bestmöglicher <strong>Qualität</strong>.
-            Von <strong>Datenschutz by Design</strong> über die Detektion
-            von <strong>18 verschiedenen Klassen</strong> (u.a. TLS 8+1, Lastenräder, eScooter) bis hin zu integrierten
-            <strong>Qualitätsmetriken</strong> (z. B. für SVZ 2025) bietet die <strong>OpenTrafficCam</strong> alles
-            Notwendige aus einer Hand für Ihre <strong>Forschungs- und Praxisprojekte</strong>.
-        </p>
-        <p>
-            OpenTrafficCam ist <strong>Open Source</strong>. Sie haben auch die Möglichkeit,
-            <strong>Videoverarbeitung</strong> und <strong>Messungen</strong> durch das erfahrene Team von
-            <strong><a href="https://platomo.de/">platomo</a></strong> durchführen zu lassen.
-            So profitieren Sie von den Vorteilen einer kollaborativen, offenen Lösung sowie von
-            <strong><a href="/pricing">professionellen Services</a></strong>.
-        </p>
+      </div>
     </div>
+  </div>
 </section>
 
+<section class="page-section details" id="use-cases">
+  <div class="text-center">
+    <h1><b>Einsatzbereiche</b></h1>
+  </div>
 
-
-
-<section class="page-section services" id="services">
-    <div class="container">
-        <div class="row text-center">
-            <div class="col-md-4 service-grid">
-                <div>
-                    <h2 class="my-4">Videoerfassung</h2>
-                    <video oncontextmenu="return false;" autoplay loop muted playsinline poster="assets/video/videoerfassung.webp">
-                        <source src="assets/video/videoerfassung.webm" type="video/webm" />
-                        <source src="assets/video/videoerfassung.mp4" type="video/mp4" />
-                    </video>
-                    <p>
-                        <strong>OTCamera</strong> wird für Kurzzeitzählungen an vorhandener Infrastruktur montiert und
-                        zeichnet autark bis zu einer Woche Verkehrsvideos auf. Niedrige Kosten, einfache Bedienbarkeit
-                        und Datenschutz by Design ermöglichen vielseitige Einsätze. OTCamera kann vollständig
-                        selbst gebaut, als Bausatz oder vorgefertigt erworben werden.
-                    </p>
-                </div>
-                <div class="button-grid">
-                    <a class="md-button" href="/OTCamera/">mehr dazu</a>
-                </div>
-            </div>
-
-            <div class="col-md-4 service-grid">
-                <div>
-                    <h2 class="my-4">Videoverarbeitung</h2>
-                    <video oncontextmenu="return false;" autoplay loop muted playsinline poster="assets/video/videoverarbeitung.webp">
-                        <source src="assets/video/videoverarbeitung.webm" type="video/webm" />
-                        <source src="assets/video/videoverarbeitung.mp4" type="video/mp4" />
-                    </video>
-                    <p>
-                        <strong>OTVision</strong> detektiert Verkehrsteilnehmende in Videos mit KI-basierter
-                        Objekterkennung - auch in Videos von Kameras anderer Hersteller (z. B. mioVision) - und trackt
-                        alle Verkehrsbewegungen. Es werden 7 (Open Source) bzw. 18 (Pro) verschiedene Verkehrsklassen
-                        unterschieden. Die Pro-Modelle verbessern die Erfassungsgenauigkeit und -rate.
-                    </p>
-                </div>
-                <div class="button-grid">
-                    <a class="md-button" href="/OTVision/">mehr dazu</a>
-                </div>
-            </div>
-
-            <div class="col-md-4 service-grid">
-                <div>
-                    <h2 class="my-4">Verkehrsanalyse</h2>
-                    <video oncontextmenu="return false;" autoplay loop muted playsinline poster="assets/video/verkehrsanalyse.webp">
-                        <source src="assets/video/verkehrsanalyse.webm" type="video/webm" />
-                        <source src="assets/video/verkehrsanalyse.mp4" type="video/mp4" />
-                    </video>
-                    <p>
-                        <strong>OTAnalytics</strong> erzeugt aggregierte Verkehrs- und Einzelfahrzeugdaten aus
-                        Trajektorien. Die Daten unterstützen operative und strategische Verkehrsplanung.
-                        Verkehrsklassen nach TLS 2012 oder RLS-19 werden berücksichtigt, inklusive Fuß- und Radverkehr.
-                        Der Export als CSV- und Excel-Datensätze spart wertvolle Planungszeit.
-                    </p>
-                </div>
-                <div class="button-grid">
-                    <a class="md-button" href="/OTAnalytics/">mehr dazu</a>
-                </div>
-            </div>
-        </div>
+  <section class="page-section details" id="transport-planning">
+    <div class="row">
+      <div class="col-md-6 use-case-text">
+        <h2>Verkehrsplanung &amp; -technik</h2>
+        <ul class="use-case-list">
+          <li>Verkehrserhebungen an Knotenpunkten und Querschnitten</li>
+          <li>Verkehrsstärken, Geschwindigkeiten, Aufenthaltsdauern u.v.m.</li>
+          <li>
+            Export als CSV oder Excel, im SVZ-Format oder nach Ihren Wünschen
+          </li>
+          <li>Mit OpenTrafficCam haben Sie die Wahl:</li>
+          <ul class="use-case-sublist">
+            <li>
+              Sie nutzen das System selbst - bei Bedarf unterstützen wir Sie
+            </li>
+            <li>Wir liefern Ihnen die Ergebnisse zu Ihren Videos</li>
+            <li>Sie beauftragen uns für die komplette Erhebung</li>
+          </ul>
+          <li>
+            Spezialisierte KI-Modelle für höhere Genauigkeit und weniger Aufwand
+          </li>
+        </ul>
+        <a class="md-button highlighted-btn" href="/pricing">Unsere Services</a>
+      </div>
+      <div class="col-md-6">
+        <img
+          loading="lazy"
+          width="100%"
+          height="100%"
+          alt="Illustration von zwei Ingenieuren bei der Verkehrsplanung mit Laptop und Dokumenten"
+          src="assets/img/planning.webp"
+        />
+      </div>
     </div>
+  </section>
 
-</section>
-<section class="page-section bg-light details" id="traffic_counts">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 use_case_text">
-                <h2>Verkehrsplanung</h2>
-                    <p>
-                        OpenTrafficCam eignet sich ideal für Kurzzeitzählungen an Knotenpunkten und Querschnitten.
-                        Die flexible Anpassung ermöglicht die Nutzung der gesamten Pipeline von der Kamera bis zur
-                        Datenvisualisierung oder die Auswahl einzelner Module. Nutzen Sie OpenTrafficCam, um Videos von
-                        Kameras unterschiedlicher Hersteller auszuwerten.
-                    </p>
-                    <p>
-                        Die Zähldaten werden in übersichtlichen CSV- und Excel-Datensätzen exportiert, um nahtlos in
-                        Ihren Workflow integriert zu werden. Wir unterstützen auch das Datenformat für die
-                        Straßenverkehrszählung 2024/2025.
-                    </p>
-                    <p>
-                        Wenn Sie uns mit der Videoauswertung beauftragen, kommen spezielle KI-Modelle zum Einsatz, die
-                        eine präzisere Unterscheidung von Verkehrsklassen, höhere Genauigkeit und geringeren Aufwand
-                        ermöglichen.
-                    </p>
-                    <a href="/pricing">→ Unsere Services</a>
-            </div>
-            <div class="col-md-6">
-                <img loading="lazy" width="100%" height="100%" alt="Vektor image of two engineers." src="assets/img/planning.webp">
-            </div>
-        </div>
+  <section class="page-section details" id="traffic-research">
+    <div class="row">
+      <div class="col-md-6">
+        <img
+          loading="lazy"
+          width="100%"
+          height="100%"
+          alt="Vektorgrafik von zwei Forschenden"
+          src="assets/img/researchers.webp"
+        />
+      </div>
+      <div class="col-md-6 use-case-text">
+        <h2>Verkehrsforschung</h2>
+        <ul class="use-case-list">
+          <li>Detaillierte und individuelle Verkehrsdaten</li>
+          <li>
+            Jegliche Informationen, die aus Trajektorien Verkehrsteilnehmender
+            ableitbar sind
+          </li>
+          <li>Ermöglicht Forschung zu Verhalten, Qualität und Sicherheit</li>
+          <li>Bewährt in deutschen und internationalen Kooperationen</li>
+          <li>
+            <a href="/live"
+              >Reallabor für Live-Erfassung und Echtzeit-Interventionen</a
+            >
+          </li>
+          <li>Wir sind Ihr fortschrittlicher Partner für Forschungsprojekte</li>
+        </ul>
+        <a
+          class="md-button highlighted-btn"
+          href="mailto:team@opentrafficcam.org?subject=Forschungsanfrage%20zu%20OpenTrafficCam"
+          >Kontaktieren Sie uns</a
+        >
+      </div>
     </div>
-</section>
-<section class="page-section bg-light details" id="research">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <img loading="lazy" width="100%" height="100%" alt="Vektor image of two researchers." src="assets/img/researchers.webp">
+  </section>
 
-            </div>
-            <div class="col-md-6">
-                <h2>Forschungspartner</h2>
-                    <p>
-                        OpenTrafficCam ermöglicht die Erhebung detaillierter und individueller Verkehrsdaten.
-                        Von klassischen Zähldaten und Geschwindigkeitsmessungen über Zeitlücken und
-                        Zeitbedarfswerten bis hin zu jeglichen Informationen, die aus den Trajektorien der
-                        Verkehrsteilnehmenden ableitbar sind.
-                    </p>
-                    <p>
-                        Bereits in verschiedenen Forschungsprojekten angewendet, liefert OpenTrafficCam umfassende
-                        Einblicke in den Verkehrsfluss von Kfz, Fahrradfahrenden und zu Fuß Gehenden. Diese Erkenntnisse
-                        fließen in die Entwicklung deutschlandweiter Richtlinien und Empfehlungen ein.
-                    </p>
-                    <p>
-                        Mit unserer langjährigen wissenschaftlichen Erfahrung stehen wir Ihnen als Dienstleister
-                        oder Projektpartner zur Seite und begleiten Ihre Forschungsprojekte mit Expertise.
-                    </p>
-                    <a href="mailto:info@platomo.de?subject=Forschungsanfrage">→ Kontaktieren Sie uns</a>
-            </div>
-        </div>
+  <section class="page-section details" id="traffic-management">
+    <div class="row">
+      <div class="col-md-6 use-case-text">
+        <h2>
+          <span class="highlighted-text-soon">In Entwicklung</span>
+          Verkehrsmanagement
+        </h2>
+        <ul class="use-case-list">
+          <li>Permanente Erfassung mit OTCamera oder eigenen Kameras</li>
+          <li>
+            Verarbeitung der Video-Streams auf Ihren Servern oder in der Cloud
+          </li>
+          <li>Live-Analyse des fahrenden und ruhenden Verkehrs</li>
+          <li>Web-Dashboard für interne oder öffentliche Einblicke</li>
+          <li>Bereitstellung der Daten über offene Schnittstellen</li>
+          <li>Gern passen wir das System auf Ihre Anforderungen an</li>
+        </ul>
+        <a
+          class="md-button highlighted-btn"
+          href="mailto:team@opentrafficcam.org?subject=Anfrage%20zu%20OpenTrafficCam:%20Live-System"
+          >Interesse bekunden</a
+        >
+      </div>
+      <div class="col-md-6">
+        <img
+          loading="lazy"
+          width="100%"
+          height="100%"
+          src="assets/img/OpenTrafficCam_LIVE_Dashboard_Browser.webp"
+          alt="Vektorgrafik eines Laptops mit OpenTrafficCam LIVE Dashboard, das eine Karte mit Kamerapositionen, Live-Streams sowie Balken-, Linien- und Boxplots zeigt"
+        />
+      </div>
     </div>
-</section>
-<section class="page-section bg-light details" id="data-privacy">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 use_case_text">
-                <h2>Datenschutz</h2>
-                    <p>
-                        Durch gezielte Fokussierung auf den Nahbereich und einen in der Regel großzügigen Abstand zu den
-                        Verkehrsteilnehmenden (> 3m) werden diese lediglich unscharf erfasst. Die Kombination aus dieser
-                        Vorgehensweise und einer niedrigen Auflösung löst typische Datenschutzprobleme wie erkennbare
-                        Gesichter oder Kennzeichen.
-                    </p>
-                    <p>
-                        Die verwendeten Modelle zur Erkennung von Verkehrsteilnehmenden berücksichtigen dies, ohne dabei
-                        wesentliche Abstriche bei der Genauigkeit der Erfassung und Klassifizierung zu machen.
-                    </p>
-                    <p>
-                        Wir stehen Ihnen gerne zur Verfügung, um sich im Hinblick auf den spezifischen Anwendungsfall
-                        von OpenTrafficCam über Datenschutzaspekte auszutauschen.
-                    </p>
-                    <a href="mailto:team@opentrafficcam.org?subject=Datenschutz">→ Kontaktieren Sie uns</a>
-            </div>
-            <div class="col-md-6">
-                <img loading="lazy" width="100%" height="100%" alt="Vektor image of a lawyer and an engineer." src="assets/img/data-privacy.webp">
-            </div>
-        </div>
-    </div>
-</section>
-<section class="page-section bg-light details" id="open-source">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <img loading="lazy" width="100%" height="100%" alt="Vektor image of multiple persons in front of computers." src="assets/img/community.webp">
-            </div>
-            <div class="col-md-6">
-                <h2>Open Source</h2>
-                    <p>
-                        OpenTrafficCam ist Open Source und basiert auf Open-Source-Technologien. Unsere
-                        Prinzipien sind Transparenz, Zusammenarbeit und Unabhängigkeit. Diese Werte
-                        schaffen Vertrauen, Sicherheit und ermöglichen individuelle Anpassungen.
-                    </p>
-
-                    <p>
-                        Durch die Offenlegung unseres Quellcodes fördern wir nicht nur eine transparente
-                        Entwicklung, sondern auch die aktive Beteiligung der Gemeinschaft. Dies hilft
-                        unseren Kunden, unabhängig von einem einzelnen Hersteller zu agieren.
-                    </p>
-
-                    <p>
-                        Mit Open Source gestalten wir gemeinsam eine kollaborative und zukunftsorientierte
-                        Lösung für unsere Nutzerinnen und Nutzer.
-                    </p>
-                    <a href="https://github.com/OpenTrafficCam" target="_blank" rel="noopener noreferrer">→ Quellcode auf GitHub</a>
-            </div>
-        </div>
-    </div>
+  </section>
 </section>
 
-<section class="page-section team" id="team">
+<section class="page-section-colored details" id="principles">
+  <div class="text-center">
+    <h1><b>Unsere Grundsätze</b></h1>
+  </div>
+
+  <section class="page-section details" id="quality-and-transparency">
     <div class="container">
-        <div class="text-center">
-            <div class="row justify-content-md-center">
-                <div class="col-md-6">
-                    <h2>Team</h2>
-                    <p>
-                        Bei platomo sind wir eine vielseitige Mischung aus Softwareentwicklern und
-                        Verkehrsingenieuren mit wissenschaftlichem Hintergrund. Unser hoch motiviertes
-                        Team engagiert sich leidenschaftlich für die Entwicklung von OpenTrafficCam, um
-                        innovative und offene Lösungen für effiziente Verkehrserhebungen zu schaffen.
-                        Diese Bestrebungen werden durch die Zusammenarbeit mit Forschenden der TU Dresden
-                        maßgeblich unterstützt.
-                    </p>
-                </div>
-            </div>
-            <div class="row my-3 justify-content-md-center">
-                <div class="col-md-3">
-                    <img alt="Logo of platomo" src="assets/img/platomo_logo.png">
-                </div>
-                <div class="col-md-3">
-                    <img alt="Logo of TU Dresden" src="assets/img/tud_logo.png">
-                </div>
-            </div>
-            <a  class="md-button" href="/team">Mehr zu uns</a>
+      <div class="row">
+        <div class="col-md-6">
+          <img
+            loading="lazy"
+            width="100%"
+            height="100%"
+            alt="A screenshot from a video of a traffic scene at an urban intersection, viewed from an elevated perspective. The video is slightly blurred, no faces or license plates can be identified. But road users are still detected by OpenTrafficCam."
+            src="assets/img/quality-and-transparency.webp"
+          />
         </div>
+        <div class="col-md-6 use-case-text">
+          <h2>Qualität und Transparenz</h2>
+          <p style="font-size: 0.8rem">
+            Wir nutzen OpenTrafficCam selbst in Beratungs- und
+            Forschungsprojekten. Deshalb wissen wir, wie wertvoll eine
+            <b>fundierte Datenbasis</b> ist - und welche Auswirkungen
+            fehlerhafte Daten haben könnten. Qualität und Transparenz stehen bei
+            uns an erster Stelle:
+          </p>
+          <ul style="padding-left: 0; text-align: left; font-size: 1.1em">
+            <li>Jede Funktion von Verkehrsfachleuten durchdacht</li>
+            <li>
+              KI trainiert mit Zehntausenden Bildern deutscher Verkehrsanlagen
+            </li>
+            <li>Eingebaute Metriken zeigen Zuverlässigkeit der Erfassung</li>
+            <li>Erfasste Bewegungen und Kennwerte sind im Video prüfbar</li>
+            <li>Wir sagen Ihnen offen, was in welcher Qualität machbar ist</li>
+          </ul>
+          <a
+            class="md-button highlighted-btn"
+            href="mailto:team@opentrafficcam.org?subject=Anfrage%20zu%20OpenTrafficCam:%20Datenqualität%20und%20Transparenz"
+            >Kontaktieren Sie uns</a
+          >
+        </div>
+      </div>
     </div>
+  </section>
+
+  <section class="page-section details" id="data-privacy">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 use-case-text">
+          <h2>Datenschutz</h2>
+          <p style="font-size: 0.8rem">
+            Wir respektieren Privatsphäre. Daher haben wir OpenTrafficCam so
+            entwickelt, dass es <b>DSGVO-konform nutzbar</b> ist. Wir haben uns
+            dabei von Anwältinnen, Anwälten und Datenschutzbeauftragten beraten
+            lassen. So vermeiden wir die Erfassung von Gesichtern oder
+            Kennzeichen:
+          </p>
+          <ul style="padding-left: 0; text-align: left; font-size: 1.1em">
+            <li>Geringe Auflösung und absichtliche Defokussierung</li>
+            <li>Abstand zu den Verkehrsteilnehmenden (mehr als 3m)</li>
+            <li>Ausblendung irrelevanter Bildbereiche</li>
+            <li>
+              Unsere KI-Modelle erkennen und klassifizieren unscharfe Objekte
+            </li>
+            <li>
+              Weitere Informationen finden Sie in unseren
+              <a href="/overview/dataprivacy">FAQ zum Datenschutz</a>
+            </li>
+          </ul>
+          <a
+            class="md-button highlighted-btn"
+            href="mailto:team@opentrafficcam.org?subject=Anfrage%20zu%20OpenTrafficCam:%20Datenschutz"
+            >Kontaktieren Sie uns</a
+          >
+        </div>
+        <div class="col-md-6">
+          <img
+            loading="lazy"
+            width="100%"
+            height="100%"
+            alt="Screenshot aus einem Video einer Verkehrsszene an einer städtischen Kreuzung, aufgenommen aus erhöhter Perspektive. Das Video ist leicht unscharf, Gesichter oder Kennzeichen sind nicht erkennbar. Verkehrsteilnehmende werden dennoch von OpenTrafficCam erkannt."
+            src="assets/img/data-privacy.webp"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section details" id="open-source">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img
+            loading="lazy"
+            width="100%"
+            height="100%"
+            alt="Vektorgrafik von mehreren Personen vor Computern"
+            src="assets/img/community.webp"
+          />
+        </div>
+        <div class="col-md-6 use-case-text">
+          <h2>Open Source</h2>
+          <p style="font-size: 0.8rem">
+            Wie jede Software profitieren auch wir von Open Source Code.
+            Außerdem werden Teile der Entwicklung mit Steuergeldern gefördert.
+            Daher ist für uns klar:
+            <b>OpenTrafficCam ist und bleibt Open Source</b>
+          </p>
+          <ul style="padding-left: 0; text-align: left; font-size: 1.1em">
+            <li>
+              Offener Code ermöglicht Zusammenarbeit, Anpassbarkeit und
+              Kontrolle
+            </li>
+            <li>
+              Alle können Funktionen beisteuern und Sicherheitslücken erkennen
+            </li>
+            <li>
+              Offene Formate und Schnittstellen erlauben Freiheit und
+              Kompatibilität
+            </li>
+            <li>Souveräne Nutzung unabhängig von einzelnen Herstellern</li>
+            <li>
+              Bitte respektieren Sie unsere
+              <a href="https://www.gnu.org/licenses/quick-guide-gplv3"
+                >GNU GPLv3 Lizenz</a
+              >
+            </li>
+          </ul>
+          <a
+            class="md-button"
+            href="https://github.com/OpenTrafficCam"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Quellcode auf GitHub</a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<section class="page-section" id="team">
+  <div class="container">
+    <div class="text-center">
+      <div class="row justify-content-md-center">
+        <div class="col-md-8">
+          <h1><b>Team</b></h1>
+          <p style="font-size: 1.1em">
+            Die Entwicklung von OpenTrafficCam erfolgt maßgeblich durch
+            <a href="https://www.platomo.de">platomo</a>, einem vielseitigen
+            Team aus Softwareentwicklern und Verkehrsfachleuten mit
+            wissenschaftlichem Hintergrund. Unser motiviertes Team engagiert
+            sich leidenschaftlich für die Entwicklung von OpenTrafficCam. So
+            entstehen innovative und offene Lösungen für effiziente
+            Verkehrserfassung und -analyse. Die Entwicklung wird durch die
+            Zusammenarbeit mit Forschenden der
+            <a href="https://tu-dresden.de">TU Dresden</a> maßgeblich
+            unterstützt.
+          </p>
+        </div>
+      </div>
+      <div class="row my-3 justify-content-center align-items-center">
+        <div
+          class="col-12 col-md-3 my-3 text-center d-flex justify-content-center"
+        >
+          <img
+            alt="Logo of platomo"
+            src="assets/img/platomo_logo_black.svg"
+            style="
+              max-height: 50px;
+              width: auto;
+              min-height: 30px;
+              cursor: pointer;
+            "
+            onclick="window.open('https://www.platomo.de','_blank','noopener,noreferrer')"
+          />
+        </div>
+        <div
+          class="col-12 col-md-3 my-3 text-center d-flex justify-content-center"
+        >
+          <img
+            alt="Logo of TU Dresden"
+            src="assets/img/Logo_TU_Dresden.svg"
+            style="
+              max-height: 50px;
+              width: auto;
+              min-height: 30px;
+              cursor: pointer;
+            "
+            onclick="window.open('https://tu-dresden.de/bu/verkehr/ivs/msp','_blank','noopener,noreferrer')"
+          />
+        </div>
+      </div>
+      <a class="md-button" href="/team">Mehr zu uns</a>
+    </div>
+  </div>
 </section>
 
 {% endblock %}
 
 <!-- Footer -->
-{% block footer %}
-{{ super() }}
-{% endblock %}
-
-{% block config %}
-{{ super() }}
-{% endblock %}
-
-{% block scripts %}
-{{ super() }}
-{% endblock %}
-
+{% block footer %} {{ super() }} {% endblock %} {% block config %} {{ super() }}
+{% endblock %} {% block scripts %} {{ super() }} {% endblock %}
