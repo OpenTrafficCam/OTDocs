@@ -7,14 +7,13 @@
 .hero h2 {
   font-family: "Amatic SC", sans-serif;
   font-size: 2.2rem;
-
 }
 
 header.hero {
   padding-top: 3rem;
   padding-bottom: 2rem;
   text-align: right;
-  color: #ffffff;
+  color: #fff;
   background-color: var(--md-primary-fg-color);
 }
 
@@ -22,36 +21,42 @@ header.hero .hero-heading {
   padding-top: 3rem;
 }
 
-
-@media (max-width: 768px) {
+@media (width <= 768px) {
   header.hero {
     padding-top: 2rem;
     padding-bottom: 2rem;
     text-align: center;
   }
+
   .hero h1 {
     font-size: 4rem;
   }
+
   .hero h2 {
     font-size: 1.5rem;
   }
 }
 
-@media (max-width: 480px) {
+@media (width <= 480px) {
   .hero h1 {
     font-size: 3rem;
   }
+
   .hero h2 {
     font-size: 1.5rem;
   }
 }
 
+p {
+  line-height: 1.75;
+}
 
 .introduction p {
   font-size: 0.8rem;
 }
-@media (max-width: 768px) {
-  .use_case_text {
+
+@media (width <= 768px) {
+  .use-case-text {
     order: 2;
   }
 }
@@ -59,11 +64,11 @@ header.hero .hero-heading {
 .service-grid {
   display: grid;
 }
-@media (max-width: 768px) {
+
+@media (width <= 768px) {
   .service-grid {
     padding-bottom: 3rem;
   }
-
 }
 
 .service-grid .button-grid {
@@ -82,46 +87,111 @@ header.hero .hero-heading {
   fill: #4d6856;
 }
 
-p {
-  line-height: 1.75;
+.page-section {
+  padding: 2rem 0;
+  margin: 1rem 0;
 }
 
-.page-section {
-  padding: 3rem 0;
+.page-section-colored {
+  padding: 2rem 0;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin: 2rem 0;
+  border-radius: 1rem;
+  background-color: #eaf2ef;
 }
 
 .team {
   margin-top: -3rem;
 }
 
-@media (min-width: 768px) {
+/* Features section styles */
+#features {
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+}
 
+.features-heading {
+  color: var(--md-primary-fg-color);
+}
+
+.pipeline-heading {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.service-description {
+  font-size: 0.8rem;
+}
+
+/* Traffic classes section styles */
+.traffic-classes-heading {
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+
+.traffic-classes-heading-main {
+  margin-bottom: 0;
+  margin-top: 2rem;
+}
+
+.traffic-classes-note {
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+
+/* Use cases list styles */
+.use-case-list {
+  padding-left: 0;
+  text-align: left;
+  font-size: 1.1em;
+}
+
+.use-case-sublist {
+  padding-left: 0;
+  margin-left: 2em;
+  text-align: left;
+}
+
+/* Accessibility utilities */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (width >= 768px) {
   .details h2 {
     margin-top: 0;
   }
 }
 
-.pricing{
+.pricing {
   margin-bottom: 2rem;
 }
-@media (max-width: 1200px) {
-    .mobile-margin {
-      width: 100% !important;
-    }
 
-
+@media (width <= 1200px) {
+  .mobile-margin {
+    width: 100% !important;
   }
-.pricing-box {
+}
 
+.pricing-box {
   .pricing-tile {
     padding: 20px;
     text-align: center;
     display: flex;
-    justify-content: space-around;
+    place-content: space-between space-around;
     flex-wrap: wrap;
-    align-content: space-between;
   }
-  @media (max-width: 1200px){
+
+  @media (width <= 1200px) {
     .pricing-tile {
       display: flex;
       align-items: center;
@@ -134,16 +204,19 @@ p {
     font-size: 1rem;
     margin-bottom: 15px;
   }
-  @media (max-width: 1200px) {
+
+  @media (width <= 1200px) {
     .service-title {
       font-size: 0.7rem;
     }
   }
-  @media (max-width: 1200px) {
+
+  @media (width <= 1200px) {
     .service-title {
       font-size: 1rem;
     }
   }
+
   .service-features {
     list-style: none;
     padding: 0;
@@ -155,26 +228,23 @@ p {
     margin-bottom: 10px;
   }
 }
-@media (max-width: 1200px) {
-  .service-title {
-  }
-}
-@media (max-width: 1200px) {
+
+@media (width <= 1200px) {
   .mobile-margin {
     margin-bottom: 4rem;
   }
 }
 
 .intro-text-kachel {
-    padding-top: 0.3rem;
-    border-bottom: 0.3rem solid #4d6856;
+  padding-top: 0.3rem;
+  border-bottom: 0.3rem solid #4d6856;
 }
 
 /* Tooltip container */
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  border-bottom: 1px dotted black;
 }
 
 /* Tooltip text */
@@ -201,7 +271,33 @@ p {
   opacity: 1;
 }
 
-
 .md-copyright__highlight {
   color: white;
+}
+
+/* Highlighted button */
+.highlighted-btn {
+  background-color: var(--md-accent-fg-color) !important;
+  color: var(--md-accent-bg-color) !important;
+  border-color: var(--md-accent-fg-color) !important;
+}
+
+.highlighted-btn:hover,
+.highlighted-btn:focus {
+  background-color: var(--md-primary-fg-color) !important;
+  color: var(--md-primary-bg-color) !important;
+  border-color: var(--md-primary-fg-color) !important;
+}
+
+/* Highlighted text */
+.highlighted-text-new {
+  background-color: #c0eac0;
+  padding: 0.2em 0.4em;
+  border-radius: 0.4em;
+}
+
+.highlighted-text-soon {
+  background-color: #def;
+  padding: 0.2em 0.4em;
+  border-radius: 0.4em;
 }
