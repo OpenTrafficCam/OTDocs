@@ -71,6 +71,7 @@ nav:
           - OTAnalytics/installation.md
           - OTAnalytics/usage-ui.md
           - OTAnalytics/usage-cli.md
+          - OTAnalytics/developer-guidelines.md
       #          - OTAnalytics/otconfig.md
       #          - Accuracy:
       #              - OTAnalytics/Accuracy/counts.md
