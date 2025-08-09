@@ -9,7 +9,7 @@ and reproducible environments.
 ### Prerequisites
 
 - Python 3.12
-- uv package manager (install from https://docs.astral.sh/uv/)
+- [uv package manager](https://docs.astral.sh/uv/)
 
 ### Quick Setup
 
@@ -20,7 +20,7 @@ and reproducible environments.
    cd OTAnalytics
    ```
 
-2. Set up development environment:
+2. Set up a development environment:
 
    **Linux/macOS:**
 
@@ -101,9 +101,9 @@ uv run otanalytics  # Run the application
 
 ### Troubleshooting
 
-**uv not found:** Install uv from https://docs.astral.sh/uv/
+**uv not found:** [Install uv](https://docs.astral.sh/uv/)
 
-**Lock file issues:** Regenerate with `uv lock --upgrade`
+**Lockfile issues:** Regenerate with `uv lock --upgrade`
 
 **Dependency conflicts:** Use `uv tree` to inspect dependency graph
 
