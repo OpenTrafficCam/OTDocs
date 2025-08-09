@@ -27,7 +27,6 @@ jobs:
           DEFAULT_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VALIDATE_GO_RELEASER: false
-          VALIDATE_MARKDOWN_PRETTIER: true
           VALIDATE_PYTHON_PYLINT: false
           VALIDATE_PYTHON_MYPY: false
           VALIDATE_JSCPD: false
