@@ -1,41 +1,46 @@
-# Developer Guidelines
+# OTAnalytics
 
 ## Development Environment Setup
 
-OTAnalytics uses UV package manager for dependency management. This provides faster installs, better dependency resolution, and reproducible environments.
+OTAnalytics uses uv package manager for dependency management.
+This provides faster installs, better dependency resolution,
+and reproducible environments.
 
 ### Prerequisites
 
 - Python 3.12
-- UV package manager (install from https://docs.astral.sh/uv/)
+- uv package manager (install from https://docs.astral.sh/uv/)
 
 ### Quick Setup
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/OpenTrafficCam/OTAnalytics.git
    cd OTAnalytics
    ```
 
 2. Set up development environment:
-   
+
    **Linux/macOS:**
+
    ```bash
    ./install_dev.sh
    ```
-   
+
    **Windows:**
+
    ```cmd
    install_dev.cmd
    ```
 
 This will:
 
-- Install the project and all dependencies using UV
+- Install the project and all dependencies using uv
 - Set up development dependencies (testing, linting, formatting tools)
 - Install pre-commit hooks
 
-### UV Workflow
+### uv Workflow
 
 #### Installing Dependencies
 
@@ -56,7 +61,8 @@ Dependencies are defined in `pyproject.toml`:
 - Main dependencies in `[project.dependencies]`
 - Development dependencies in `[project.optional-dependencies.dev]`
 
-The `uv.lock` file ensures reproducible builds and should be committed to the repository.
+The `uv.lock` file ensures reproducible builds and should be committed to the
+repository.
 
 ### Development Tools
 
@@ -83,18 +89,19 @@ If you're migrating from the old pip-based setup:
 
 1. Remove old virtual environment: `rm -rf venv` or `rmdir /s venv`
 2. Run the new installation scripts as described above
-3. UV will create a new `.venv` directory and `uv.lock` file
+3. uv will create a new `.venv` directory and `uv.lock` file
 
 ### CLI Commands
 
 The project provides a `otanalytics` CLI command when installed:
+
 ```bash
 uv run otanalytics  # Run the application
 ```
 
 ### Troubleshooting
 
-**UV not found:** Install UV from https://docs.astral.sh/uv/
+**uv not found:** Install uv from https://docs.astral.sh/uv/
 
 **Lock file issues:** Regenerate with `uv lock --upgrade`
 
