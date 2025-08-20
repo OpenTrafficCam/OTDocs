@@ -24,9 +24,9 @@ from GitHub or clone the
 
     In a terminal, navigate to the OTVision folder and run the installer.
 
-    ```text 
+    ```text
     ./install.sh
-    ``` 
+    ```
 
     The installation of the dependencies could take a moment.
 
@@ -68,7 +68,6 @@ cd "path/to/OTVision"
 
     Inside the OTVision root directory, there is another directory called `OTVision`
     (this child directory is the wrong directory).
-
 
 ### Install torch and torchvision for CUDA
 
