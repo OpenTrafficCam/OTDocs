@@ -3,7 +3,7 @@
 ## Synopsis
 
 ```bash
-python  convert.py  [-p paths] [-c config]
+uv run convert.py  [-p paths] [-c config]
                     [--fps_from_filename] [--input_fps]
                     [--delete_input] [--overwrite]
 ```

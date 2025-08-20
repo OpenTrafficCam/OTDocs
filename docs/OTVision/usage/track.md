@@ -3,7 +3,7 @@
 ## Synopsis
 
 ```text
-python  track.py    [-p paths] [-c config]
+uv run track.py    [-p paths] [-c config]
                     [--sigma_l] [--sigma_h] [--sigma_iou] [--t_min] [--t_miss_max]
                     [--overwrite]
 ```

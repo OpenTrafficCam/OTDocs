@@ -32,8 +32,8 @@ from GitHub or clone the
 
 ??? question "What is installed here?"
 
-    The `install` script will create and activate a virtual environment (venv)
-    and install the Python packages specified in the requirements.txt via pip
+    The `install` script will create a virtual environment (.venv)
+    and install the Python packages specified in the pyproject.toml via uv
     from the [Python Package Index](https://pypi.org/).
 
 ## Nvidia CUDA (optional)
@@ -94,19 +94,19 @@ in braces in front of your current working directory in the terminal.
 ### Install torch and torchvision for CUDA
 
 If you downloaded a `-cuda` release, you are good to go, if the CUDA version
-in the `requirements.txt` matches your system.
+in the `pyproject.toml` matches your system.
 
 To install another version you can do so following the PyTorch documentation:
 
 Depending on your operating system (Windows or Linux) and your CUDA version
 you can select, copy and run the install command from the
 [PyTorch site](https://pytorch.org/) under "INSTALL PYTORCH"
-(choose Build="Stable", Package="pip" and Language="Python").
+(choose Build="Stable", Package="pip" and Language="Python"), then adapt the command to use uv.
 
 E.g., for CUDA 12.8 and the latest stable PyTorch Build, the command is:
 
 ```bash
-pip3 install torch torchvision --extra-index-url https://download.pytorch.org/whl/cu128
+uv pip install torch torchvision --extra-index-url https://download.pytorch.org/whl/cu128
 ```
 
 ## If you encounter problems

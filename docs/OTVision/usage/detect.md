@@ -3,7 +3,7 @@
 ## Synopsis
 
 ```text
-python  detect.py   [-p paths] [--expected-duration] [-c config]
+uv run detect.py   [-p paths] [--expected-duration] [-c config]
                     [-w weights] [--conf] [--iou] [--half] [--force]
                     [--overwrite] [--detect_start] [--detect_end]
 ```

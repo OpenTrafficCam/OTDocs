@@ -126,6 +126,16 @@ An instruction on how to do that on a Windows system can be found below.
     python3.12 --version
     ```
 
+### uv
+
+OTVision uses `uv` as a fast Python package installer and resolver to manage dependencies.
+The installation scripts automatically use `uv` to install Python packages from the
+[Python Package Index](https://pypi.org/).
+
+Please refer to the [uv documentation](https://docs.astral.sh/uv/) for further
+information on how to install `uv` on your system.
+
+
 ### ffmpeg
 
 If you want to use videos recorded by [OTCamera](/OTCamera) with OTVision,
