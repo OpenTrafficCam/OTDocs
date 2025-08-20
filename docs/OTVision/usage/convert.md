@@ -32,7 +32,7 @@ One or multiple paths to `.h264` files or folders containing `.h264` video files
 
 This parameter is required to run the `convert.py` script.
 It has to be specified either using the CLI or in the
-[configuration](../advanced_usage/configuration.md) yaml file.
+[configuration](../advanced_usage/configuration.md) YAML file.
 
 ### config
 
@@ -42,7 +42,7 @@ or
 
 `--config "path/to/config file"`
 
-Path to a custom user [configuration](../advanced_usage/configuration.md) yaml file.
+Path to a custom user [configuration](../advanced_usage/configuration.md) YAML file.
 Other parameters (including `paths`) are parsed from this configuration file.
 
 This parameter is optional.
