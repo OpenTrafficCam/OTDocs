@@ -69,27 +69,6 @@ cd "path/to/OTVision"
     Inside the OTVision root directory, there is another directory called `OTVision`
     (this child directory is the wrong directory).
 
-### Activate virtual environment
-
-Activate the virtual environment that was created
-by running the [installation scripts](../installation).
-
-=== "Windows command prompt"
-
-    Open a Command Prompt an run:
-
-    ```cmd 
-    .venv\Scripts\activate
-    ``` 
-
-=== "Linux / macOS terminal"
-
-    ```bash
-    source .venv/bin/activate
-    ```
-
-The virtual environment should be activated, indicated by the `(venv)`
-in braces in front of your current working directory in the terminal.
 
 ### Install torch and torchvision for CUDA
 
