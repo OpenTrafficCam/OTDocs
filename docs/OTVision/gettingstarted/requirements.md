@@ -18,8 +18,9 @@ are installed and up-to-date to get the best performance.
 
 !!! info "Apple Neural Engine"
 
-    Accelerated detection using the Apple Neural Engine is not yet supported.
-    Detection on Apple silicon chips is currently performed using CPU only.
+    Accelerated detection using the Apple Neural Engine is now supported.
+    Detection on Apple silicon chips can utilize the Neural Engine for improved
+    performance.
 
 ## Software prerequisites
 
