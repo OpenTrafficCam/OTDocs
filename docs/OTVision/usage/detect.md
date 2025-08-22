@@ -141,7 +141,7 @@ This parameter is optional and defaults to `--overwrite`.
 
 ### start-time
 
-`--start-time` to specify the start time of the detection in `%Y-%m-%d_%H-%M-%S format.
+`--start-time` to specify the start time of the detection in `%Y-%m-%d_%H-%M-%S` format.
 If this parameter is not set, the start time will be parsed from the filename in the given format. The start time needs to be in the filename or given via this parameter.
 
 This parameter is optional and defaults to `None`.
