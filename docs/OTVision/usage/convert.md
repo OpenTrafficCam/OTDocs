@@ -3,7 +3,7 @@
 ## Synopsis
 
 ```bash
-python  convert.py  [-p paths] [-c config]
+uv run convert.py  [-p paths] [-c config]
                     [--fps_from_filename] [--input_fps]
                     [--delete_input] [--overwrite]
 ```
@@ -32,7 +32,7 @@ One or multiple paths to `.h264` files or folders containing `.h264` video files
 
 This parameter is required to run the `convert.py` script.
 It has to be specified either using the CLI or in the
-[configuration](../advanced_usage/configuration.md) yaml file.
+[configuration](../advanced_usage/configuration.md) YAML file.
 
 ### config
 
@@ -42,7 +42,7 @@ or
 
 `--config "path/to/config file"`
 
-Path to a custom user [configuration](../advanced_usage/configuration.md) yaml file.
+Path to a custom user [configuration](../advanced_usage/configuration.md) YAML file.
 Other parameters (including `paths`) are parsed from this configuration file.
 
 This parameter is optional.
@@ -53,6 +53,7 @@ configuration file is specified, the default values of the parameters as
 described below are used.
 
 !!! warning
+
     Any parameter passed to the CLI will overwrite the respective parameter from
     the config file.
 
@@ -61,9 +62,9 @@ described below are used.
 `--fps_from_filename` to parse the video frame rates from the input `.h264` filenames.
 
 - In this case the frame rate of each input `.h264` file has to be specified in
-the filename using the following pattern: `_FR<fps>_` (where `fps` is the frame rate)
+  the filename using the following pattern: `_FR<fps>_` (where `fps` is the frame rate)
 - An example would be `_FR20_` in the following filename:
-    `OTCamera01_FR20_2023-01-01_12-15-00.h264`
+  `OTCamera01_FR20_2023-01-01_12-15-00.h264`
 - In this case, [`input_fps`](#input_fps) will be ignored.
 
 This parameter is used by default if `--no-fps_from_filename` and
@@ -82,8 +83,8 @@ input `.h264` filenames.
 
 - `input_fps` should be an integer value above zero.
 - E.g. if the input `.h264` have been recorded at 20 frames per second, specify this
-parameter as follows:
-`--input_fps 20`
+  parameter as follows:
+  `--input_fps 20`
 
 If `--fps_from_filename` is used, `input_fps` will be ignored.
 

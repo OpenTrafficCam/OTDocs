@@ -27,33 +27,11 @@ cd "path/to/OTVision"
     Inside the OTVision root directory, there is another directory called `OTVision`
     (this child directory is the wrong directory).
 
-### Activate virtual environment
-
-Before using OTVision, you have to activate the virtual environment that was created
-by running the [installation scripts](../installation):
-
-=== "Windows command prompt"
-
-    Open a Command Prompt an run:
-
-    ```cmd 
-    .venv\Scripts\activate
-    ``` 
-
-=== "Linux / macOS terminal"
-
-    ```bash
-    source .venv/bin/activate
-    ```
-
-The virtual environment should be activated, indicated by the `(venv)`
-in braces in front of your current working directory in the terminal.
-
 ### Build your command
 
 Every command consists of three parts:
 
-1. Invoke the Python interpreter with `python`.
+1. Call `uv run` to run a Python script.
 2. Specify the pipeline step you want to run (`convert.py`, `detect.py` or `track.py`).
 3. Specify parameters for your script:
 
@@ -65,10 +43,10 @@ Every command consists of three parts:
     ??? info "Some hints about specifying the paths"
 
         You can just drag a file or folder and drop them into the terminal.
-        
+
         If you provide a path to a folder, every file within the folder will be
         processed.
-        
+
         You can also provide multiple paths straight after one another
         (each in quotation marks).
 
@@ -80,15 +58,15 @@ Have a look at the basic examples provided below.
 
 ## Convert
 
-In case you have raw `.h264` videos (e.g. from OTCamera),
+In case you have raw `.h264` videos (e.g., from OTCamera),
 you need to convert them to a supported video format
 (see [convert.py](../firstuse/#convert)) first.
 Therefore, we provide the `convert.py` script.
 
 To convert `.h264` videos, run the following command after activating the venv:
 
-``` text
-python convert.py -p "path/to/your/h264 files"
+```text
+uv run convert.py -p "path/to/your/h264 files"
 ```
 
 where `path/to/h264 files` is either the path to a single h264 video file
@@ -107,8 +85,8 @@ Therefore, we provide the `detect.py` script.
 
 To detect video files, run the following command after activating your venv:
 
-``` text
-python detect.py -p "path/to/your/video files" --expected-duration <video duration [sec]>
+```text
+uv run detect.py -p "path/to/your/video files" --expected-duration <video duration [sec]>
 ```
 
 where
@@ -117,6 +95,7 @@ where
 - `video duration [sec]` is the duration of the individual videos.
 
 !!! info "Naming convention for your video files"
+
     The filenames must contain the date and time of the start of the video in the
     following pattern:
 
@@ -144,8 +123,8 @@ Therefore, we provide the `track.py` script.
 
 To track `.otdet` files, run the following command after activating your venv:
 
-``` text
-python track.py -p "path/to/your/otdet files"
+```text
+uv run track.py -p "path/to/your/otdet files"
 ```
 
 where `path/to/otdet files` is either the path to a single `.otdet` file
