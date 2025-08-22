@@ -2495,7 +2495,7 @@
 
 <h1 id="convert">Convert<a class="headerlink" href="#convert" title="Permanent link">&para;</a></h1>
 <h2 id="synopsis">Synopsis<a class="headerlink" href="#synopsis" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>python<span class="w">  </span>convert.py<span class="w">  </span><span class="o">[</span>-p<span class="w"> </span>paths<span class="o">]</span><span class="w"> </span><span class="o">[</span>-c<span class="w"> </span>config<span class="o">]</span>
+<div class="highlight"><pre><span></span><code>uv<span class="w"> </span>run<span class="w"> </span>convert.py<span class="w">  </span><span class="o">[</span>-p<span class="w"> </span>paths<span class="o">]</span><span class="w"> </span><span class="o">[</span>-c<span class="w"> </span>config<span class="o">]</span>
 <span class="w">                    </span><span class="o">[</span>--fps_from_filename<span class="o">]</span><span class="w"> </span><span class="o">[</span>--input_fps<span class="o">]</span>
 <span class="w">                    </span><span class="o">[</span>--delete_input<span class="o">]</span><span class="w"> </span><span class="o">[</span>--overwrite<span class="o">]</span>
 </code></pre></div>
@@ -2513,12 +2513,12 @@ either read from the filename or specified by the user.</p>
 <p>One or multiple paths to <code>.h264</code> files or folders containing <code>.h264</code> video files.</p>
 <p>This parameter is required to run the <code>convert.py</code> script.
 It has to be specified either using the CLI or in the
-<a href="../../advanced_usage/configuration/">configuration</a> yaml file.</p>
+<a href="../../advanced_usage/configuration/">configuration</a> YAML file.</p>
 <h3 id="config">config<a class="headerlink" href="#config" title="Permanent link">&para;</a></h3>
 <p><code>-c "path/to/config file"</code></p>
 <p>or</p>
 <p><code>--config "path/to/config file"</code></p>
-<p>Path to a custom user <a href="../../advanced_usage/configuration/">configuration</a> yaml file.
+<p>Path to a custom user <a href="../../advanced_usage/configuration/">configuration</a> YAML file.
 Other parameters (including <code>paths</code>) are parsed from this configuration file.</p>
 <p>This parameter is optional.
 By default, the <code>user_config.otvision.yaml</code> in the root directory is read.
@@ -2535,9 +2535,9 @@ the config file.</p>
 <p><code>--fps_from_filename</code> to parse the video frame rates from the input <code>.h264</code> filenames.</p>
 <ul>
 <li>In this case the frame rate of each input <code>.h264</code> file has to be specified in
-the filename using the following pattern: <code>_FR&lt;fps&gt;_</code> (where <code>fps</code> is the frame rate)</li>
+  the filename using the following pattern: <code>_FR&lt;fps&gt;_</code> (where <code>fps</code> is the frame rate)</li>
 <li>An example would be <code>_FR20_</code> in the following filename:
-    <code>OTCamera01_FR20_2023-01-01_12-15-00.h264</code></li>
+  <code>OTCamera01_FR20_2023-01-01_12-15-00.h264</code></li>
 <li>In this case, <a href="#input_fps"><code>input_fps</code></a> will be ignored.</li>
 </ul>
 <p>This parameter is used by default if <code>--no-fps_from_filename</code> and
@@ -2553,8 +2553,8 @@ input <code>.h264</code> filenames.</p>
 <ul>
 <li><code>input_fps</code> should be an integer value above zero.</li>
 <li>E.g. if the input <code>.h264</code> have been recorded at 20 frames per second, specify this
-parameter as follows:
-<code>--input_fps 20</code></li>
+  parameter as follows:
+  <code>--input_fps 20</code></li>
 </ul>
 <p>If <code>--fps_from_filename</code> is used, <code>input_fps</code> will be ignored.</p>
 <p>This parameter is optional and defaults to <code>20</code>.</p>
@@ -2587,7 +2587,7 @@ to save disk space.</p>
     <span class="md-icon" title="Letztes Update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="26. Januar 2024 14:42:30 CET">26. Januar 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="22. August 2025 16:04:48 CEST">22. August 2025</span>
   </span>
 
     

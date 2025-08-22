@@ -2513,7 +2513,7 @@
 
 <h1 id="track">Track<a class="headerlink" href="#track" title="Permanent link">&para;</a></h1>
 <h2 id="synopsis">Synopsis<a class="headerlink" href="#synopsis" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>python  track.py    [-p paths] [-c config]
+<div class="highlight"><pre><span></span><code>uv run track.py    [-p paths] [-c config]
                     [--sigma_l] [--sigma_h] [--sigma_iou] [--t_min] [--t_miss_max]
                     [--overwrite]
 </code></pre></div>
@@ -2528,12 +2528,12 @@ tracking road users over consecutive frames and even consecutive videos.</p>
 <p>One or multiple paths to <code>.otdet</code> files or folders containing <code>.otdet</code> files.</p>
 <p>This parameter is required to run the <code>track.py</code> script.
 It has to be specified either using the CLI or in the
-<a href="../../advanced_usage/configuration/">configuration</a> yaml file.</p>
+<a href="../../advanced_usage/configuration/">configuration</a> YAML file.</p>
 <h3 id="config">config<a class="headerlink" href="#config" title="Permanent link">&para;</a></h3>
 <p><code>-c "path/to/config file"</code></p>
 <p>or</p>
 <p><code>--config "path/to/config file"</code></p>
-<p>Path to a custom user <a href="../../advanced_usage/configuration/">configuration</a> yaml file.
+<p>Path to a custom user <a href="../../advanced_usage/configuration/">configuration</a> YAML file.
 Other parameters (including <code>paths</code>) are parsed from this configuration file.</p>
 <p>This parameter is optional.
 By default, the <code>user_config.otvision.yaml</code> in the root directory is read.
@@ -2543,9 +2543,9 @@ configuration file is specified, the default values of the parameters as
 described below are used.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
+</div>
 <p>Any parameter passed to the CLI will overwrite the respective parameter from
 the config file.</p>
-</div>
 <h3 id="sigma_l">sigma_l<a class="headerlink" href="#sigma_l" title="Permanent link">&para;</a></h3>
 <p><code>--sigma_l &lt;float&gt;</code></p>
 <p>The lower confidence threshold for the IOU tracker.
@@ -2598,7 +2598,7 @@ If more detections are missing, the track will not be continued.</p>
     <span class="md-icon" title="Letztes Update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="26. Januar 2024 14:42:30 CET">26. Januar 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="20. August 2025 21:28:47 CEST">20. August 2025</span>
   </span>
 
     

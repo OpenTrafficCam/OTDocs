@@ -1072,9 +1072,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#python-312" class="md-nav__link">
+  <a href="#uv" class="md-nav__link">
     <span class="md-ellipsis">
-      Python 3.12
+      uv
     </span>
   </a>
   
@@ -2351,9 +2351,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#python-312" class="md-nav__link">
+  <a href="#uv" class="md-nav__link">
     <span class="md-ellipsis">
-      Python 3.12
+      uv
     </span>
   </a>
   
@@ -2416,100 +2416,33 @@ Make sure that the Nvidia drivers as well as the
 are installed and up-to-date to get the best performance.</p>
 <div class="admonition info">
 <p class="admonition-title">Apple Neural Engine</p>
-<p>Accelerated detection using the Apple Neural Engine is not yet supported.
-Detection on Apple silicon chips is currently performed using CPU only.</p>
+<p>Accelerated detection using the Apple Neural Engine is now supported.
+Detection on Apple silicon chips can utilize the Neural Engine for improved
+performance.</p>
 </div>
 <h2 id="software-prerequisites">Software prerequisites<a class="headerlink" href="#software-prerequisites" title="Permanent link">&para;</a></h2>
-<h3 id="python-312">Python 3.12<a class="headerlink" href="#python-312" title="Permanent link">&para;</a></h3>
-<p>OTVision is based on Open Source Python packages.
-Thus, it runs on Windows, macOS and Linux systems after setting up the environment
-correctly.
-Consequently, Python needs to be installed on your system.
-Currently OTVision runs best on Python 3.12.
-An instruction on how to do that on a Windows system can be found below.</p>
-<details class="help">
-<summary>What if I want to use another Python version?</summary>
-<p>Python 3.12 is the version we are currently testing against and providing
-installation scripts for.
-Other Python versions might work as well, but are not currently tested.
-In any case, you will have to install the requirements manually or adapt the
-installation scripts accordingly.</p>
-</details>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Windows</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">macOS</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p>If not done yet, install the latest 64-bit version of Python 3.12 via Windows
-installer (<a href="https://www.python.org/downloads/">www.python.org/downloads</a>).</p>
-<p>Please make sure to check the following boxes during installation:</p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Add Python to PATH</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Install pip</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> All advanced options</li>
-</ul>
-<details class="help">
-<summary>What if I already have another Python version installed?</summary>
-<p>In addition, also install Python 3.12. On most operating systems you can choose
-the python version to use by using <code>python-3.12</code>oder <code>python3.12</code> styled commands.</p>
-<p>On Windows, it is also possible to change the default Python interpreter by
-changing the order of the system-wide environment variables (move Python312 and
-Python312\Scripts to the top, see animation below).</p>
-<p>This is necessary e.g. if you have already installed Python 3.12, but another
-Python version is your default because you installed it (e.g. 3.11).</p>
-<p><img alt="Change default Python" src="../installation/change_default_python_version_win10.gif" /></p>
-</details>
-<p>To check your Python installation, run the the follwing commands in a command terminal:</p>
-<div class="highlight"><pre><span></span><code>python --version
-</code></pre></div>
-<p>If <code>Python 3.12.x</code> is returned, you are good to go!</p>
-</div>
-<div class="tabbed-block">
-<p>Depending on the Linux distribution you are using,
-Python 3.12 might not be the pre-installed version.
-You can check if (and which sub-version of) Python 3.12 is installed by running the
-following command in the terminal:</p>
-<div class="highlight"><pre><span></span><code>python3.12 --version
-</code></pre></div>
-<p>If necessary, install Python 3.12 manually using additional sources. 
-Since the sources might differ depending on the Linux distribution you are using,
-we kindly ask you to use a search engine for a detailed instruction on how to
-install Python 3.12 manually for your distribution. </p>
-<p>In any case, please make sure that you also have the python virtual environment
-package <code>python3.12-venv</code> installed.</p>
-</div>
-<div class="tabbed-block">
-<p>Depending on the macOS version you are using,
-Python 3.12 might not be the pre-installed version.
-You can check if (and which sub-version of) Python 3.12 is installed by running the
-following command in the terminal:</p>
-<div class="highlight"><pre><span></span><code>python3.12 --version
-</code></pre></div>
-<p>If necessary, install Python 3.12 as described below.</p>
-<h4 id="homebrew">Homebrew<a class="headerlink" href="#homebrew" title="Permanent link">&para;</a></h4>
-<p>We recommend installing Python using <a href="https://brew.sh/">Homebrew</a>: </p>
-<div class="highlight"><pre><span></span><code>brew install python@3.12
-</code></pre></div>
-<h4 id="manual-installation">Manual installation<a class="headerlink" href="#manual-installation" title="Permanent link">&para;</a></h4>
-<p>Alternatively, you can download a macOS installer for python 3.12 from
-<a href="https://www.python.org/downloads">python.org</a>.</p>
-<h4 id="check-installation">Check installation<a class="headerlink" href="#check-installation" title="Permanent link">&para;</a></h4>
-<p>Again, run this command in the terminal:</p>
-<div class="highlight"><pre><span></span><code>python3.12 --version
-</code></pre></div>
-</div>
-</div>
-</div>
+<h3 id="uv">uv<a class="headerlink" href="#uv" title="Permanent link">&para;</a></h3>
+<p>OTVision uses <code>uv</code> as a fast Python package installer and resolver to manage dependencies.
+The installation scripts automatically use <code>uv</code> to install Python packages from the
+<a href="https://pypi.org/">Python Package Index</a>.</p>
+<p>Additionally, <code>uv</code> can manage Python interpreters itself (download, install, and select specific versions),
+so pre-installing Python is not required.
+<code>uv</code> will get and use an appropriate Python interpreter automatically through the
+required version defined in the <code>pyproject.toml</code> file.</p>
+<p>Please refer to the <a href="https://docs.astral.sh/uv/">uv documentation</a> for further
+information on how to install <code>uv</code> on your system.</p>
 <h3 id="ffmpeg">ffmpeg<a class="headerlink" href="#ffmpeg" title="Permanent link">&para;</a></h3>
 <p>If you want to use videos recorded by <a href="/OTCamera">OTCamera</a> with OTVision,
 you need to convert the videos to .mp4 files first.
 For the conversion, we use the Open Source software ffmpeg.</p>
 <p>Before using the <code>convert.py</code> script, make sure that ffmpeg is installed and available on the whole system:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Windows</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">macOS</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Windows</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">macOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>To install <em>ffmpeg</em> on your Windows system, please perform the following steps:</p>
 <ol>
 <li>Download the file <code>ffmpeg-git-full.7z</code> from
-    <a href="https://www.gyan.dev/ffmpeg/builds/">gyan.dev</a>.  </li>
+    <a href="https://www.gyan.dev/ffmpeg/builds/">gyan.dev</a>.</li>
 <li>Unzip this file by using any file archiver such as 7zip in a folder of
     your choice (e.g., <code>C:\ffmpeg</code>).</li>
 <li>
@@ -2518,12 +2451,12 @@ For the conversion, we use the Open Source software ffmpeg.</p>
 </code></pre></div>
 <p>where <code>path_to_your_ffmpeg_folder</code> represents the folder that you have <em>ffmpeg</em>
     unzipped in.</p>
-<p>If you unzipped to <code>C:\ffmpeg</code>, for example: </p>
+<p>If you unzipped to <code>C:\ffmpeg</code>, for example:</p>
 <div class="highlight"><pre><span></span><code>setx /m PATH <span class="s2">&quot;C:\ffmpeg\bin;</span><span class="nv">%PATH%</span><span class="s2">&quot;</span>
 </code></pre></div>
 </li>
 <li>
-<p>Restart your computer and verify the installation by running </p>
+<p>Restart your computer and verify the installation by running</p>
 <div class="highlight"><pre><span></span><code>ffmpeg -version
 </code></pre></div>
 </li>
@@ -2534,13 +2467,13 @@ For the conversion, we use the Open Source software ffmpeg.</p>
 <p>If you use Ubuntu, you can install ffmpeg using the official Ubuntu repositories.</p>
 <div class="highlight"><pre><span></span><code>sudo apt install ffmpeg
 </code></pre></div>
-<h4 id="manual-installation_1">Manual installation<a class="headerlink" href="#manual-installation_1" title="Permanent link">&para;</a></h4>
-<p>For the manual installation of ffmpeg on Linux or if you use another 
+<h4 id="manual-installation">Manual installation<a class="headerlink" href="#manual-installation" title="Permanent link">&para;</a></h4>
+<p>For the manual installation of ffmpeg on Linux or if you use another
 distribution, please refer to the instructions on the
 <a href="https://ffmpeg.org/download.html">developers website</a>.</p>
 </div>
 <div class="tabbed-block">
-<h4 id="homebrew_1">Homebrew<a class="headerlink" href="#homebrew_1" title="Permanent link">&para;</a></h4>
+<h4 id="homebrew">Homebrew<a class="headerlink" href="#homebrew" title="Permanent link">&para;</a></h4>
 <p>For the installation using Homebrew, use the following command in the terminal:</p>
 <div class="highlight"><pre><span></span><code>brew install ffmpeg
 </code></pre></div>
@@ -2552,7 +2485,7 @@ on the <a href="https://ffmpeg.org/download.html">developers website</a>.</p>
 </div>
 <h3 id="nvidia-cuda-optional">Nvidia CUDA (optional)<a class="headerlink" href="#nvidia-cuda-optional" title="Permanent link">&para;</a></h3>
 <p>If you intend to use OTVision on a Windows or Linux PC with a modern
-Nvidia graphics card, download and install version <strong>12.6</strong> of the
+Nvidia graphics card, download and install version <strong>12.8</strong> of the
 <a href="https://developer.nvidia.com/cuda-toolkit-archive">NVIDIA Cuda Toolkit</a>.</p>
 
 
@@ -2574,7 +2507,7 @@ Nvidia graphics card, download and install version <strong>12.6</strong> of the
     <span class="md-icon" title="Letztes Update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="9. April 2025 08:15:44 CEST">9. April 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="20. August 2025 21:27:06 CEST">20. August 2025</span>
   </span>
 
     
