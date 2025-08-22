@@ -7,7 +7,6 @@ Before installing OTVision, make sure your system meets all
 [requirements](../requirements/).
 Essentially, you need uv to be installed.
 
-
 ## Install OTVision
 
 We provide install scripts for the most common operating systems.

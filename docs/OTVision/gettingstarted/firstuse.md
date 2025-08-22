@@ -31,9 +31,9 @@ cd "path/to/OTVision"
 
 Every command consists of three parts:
 
-1.  Call `uv run` to run a Python script.
-2.  Specify the pipeline step you want to run (`convert.py`, `detect.py` or `track.py`).
-3.  Specify parameters for your script:
+1. Call `uv run` to run a Python script.
+2. Specify the pipeline step you want to run (`convert.py`, `detect.py` or `track.py`).
+3. Specify parameters for your script:
 
     For basic use, you only have to specify one parameter:
     The path(s) to the data you want to process.
@@ -95,6 +95,7 @@ where
 - `video duration [sec]` is the duration of the individual videos.
 
 !!! info "Naming convention for your video files"
+
     The filenames must contain the date and time of the start of the video in the
     following pattern:
 
