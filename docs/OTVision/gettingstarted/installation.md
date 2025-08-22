@@ -1,10 +1,12 @@
 # Installation
 
-In this section, we provide instructions how to install OTVision on the most common
+In this section, we provide instructions on how to install OTVision on the most common
 Operating Systems.
 
 Before installing OTVision, make sure your system meets all
 [requirements](../requirements/).
+Essentially, you need uv to be installed.
+
 
 ## Install OTVision
 

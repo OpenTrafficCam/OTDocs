@@ -53,8 +53,8 @@ configuration file is specified, the default values of the parameters as
 described below are used.
 
 !!! warning
-Any parameter passed to the CLI will overwrite the respective parameter from
-the config file.
+    Any parameter passed to the CLI will overwrite the respective parameter from
+    the config file.
 
 ### fps_from_filename
 
