@@ -8,17 +8,17 @@ The recorded videos can be processed further with [OTVision](/OTVision).
 <!-- Further details on the single steps can be found on the following pages. -->
 
 !!! Warning "Safety and security"
-    Please be aware that your OTCamera must not fall down.
-    This applies to the place where it is mounted but also during assembly.
+Please be aware that your OTCamera must not fall down.
+This applies to the place where it is mounted but also during assembly.
 
     Furthermore, check your local data protection regulations to guarantee you are operating according to the law.
     Depending on the position of the camera, it could be possible that you have to adjust the focus or take further measures.
 
     Usually you are not allowed to just install an OTCamera in public space and record videos.
-    Please make sure you contact the responsible authority and verify whether you need a permission. 
+    Please make sure you contact the responsible authority and verify whether you need a permission.
 
     OTCamera contains a Li-Ion cell and runs with an USB-battery.
-    The maximum operating temperature is around 60 degrees Celsius. 
+    The maximum operating temperature is around 60 degrees Celsius.
     In warmer regions or on very hot days the ambient temperature in the case may become hotter, especially in direct sunlight.
 
 ## Required parts
@@ -42,8 +42,8 @@ You may also need the following during mounting:
 8. The permit for operating in the field.
 
 !!! warning "Disclaimer"
-    For preparing the measurement you may need to think about more things than we listed.
-    This list is just to remind you that you need to think of everything.
+For preparing the measurement you may need to think about more things than we listed.
+This list is just to remind you that you need to think of everything.
 
 ## Preparation
 
@@ -60,8 +60,8 @@ Before use, also connect the OTCamera to your local Wi-Fi to update the time of 
 This is especially necessary if you did not use the OTCamera for a certain time.
 
 !!! tip "Practice!"
-    We recommend that every person who wants to mount a OTCamera should practice in a save/"dry" environment beforehand.
-    This help to prevent anything going wrong out in the field.
+We recommend that every person who wants to mount a OTCamera should practice in a save/"dry" environment beforehand.
+This help to prevent anything going wrong out in the field.
 
 ### On site
 
@@ -95,10 +95,10 @@ After connecting to the Wi-Fi, you can call up the IP address of OTCamera in a b
 This is usually [10.10.50.1](http://10.10.50.1).
 
 ??? question "Why does my mobile phone not connect?"
-    Some mobile phones check whether there internet is accessable via Wi-Fi.
-    If this is not the case, the mobile phone is connected but you cannot access the preview.
-    It helps to change the mobile phone settings that you want to use the connection anyway.
-    Or you can switch off your mobile data and thus force the use of Wi-Fi.
+Some mobile phones check whether there internet is accessable via Wi-Fi.
+If this is not the case, the mobile phone is connected but you cannot access the preview.
+It helps to change the mobile phone settings that you want to use the connection anyway.
+Or you can switch off your mobile data and thus force the use of Wi-Fi.
 
     We therefore use our own tablet without mobile data for our measurements.
 
@@ -107,16 +107,16 @@ The site automatically reloads every five seconds.
 Below the preview image is a table with the most important information.
 
 ??? tip "Feature: Circular buffer"
-    If you have already taken several measurements and the memory card is full, at some point the oldest video will be deleted so that recording can continue.
+If you have already taken several measurements and the memory card is full, at some point the oldest video will be deleted so that recording can continue.
 
-    However, we would still recommend deleting the videos after each measurement. 
+    However, we would still recommend deleting the videos after each measurement.
 
 At the top of the page you will see a green bar, if everything works fine.
 If the camera does not record, the external power supply is not connected or the "24/7" switch is not switched on, a yellow or red bar will appear at the top with a message.
 
 ??? warning "Check the time!"
-    The camera name and the current time are displayed at the top of the preview image.
-    Check the date and time each time you use OTCamera.
+The camera name and the current time are displayed at the top of the preview image.
+Check the date and time each time you use OTCamera.
 
     If the time seems incorrect, first check if you are connected to the respective OTCamera and receive the correct preview image.
     Refresh you browser to check, if this is not the preview of the OTCamera you mounted previously.
@@ -125,7 +125,7 @@ If the camera does not record, the external power supply is not connected or the
 
     1. You have not connected the OTCamera to the internet for some time and have to do so in order to update the internal real-time clock.
     2. The button cell of the internal real-time clock is empty and has to be replaced.
-    
+
     In doubt, hold your mobile phone in the camera image so that you can see the time in the video later.
     If you continue recording with wrong time, we recommend recording 24/7 to avoid missing data.
 
@@ -145,8 +145,8 @@ Now you can mount the OTCamera.
 ## Mounting
 
 !!! tip "Bring a buddy"
-    For mounting the OTCamera in the field its best to get some help.
-    We recommend to do the whole mounting process with two persons.
+For mounting the OTCamera in the field its best to get some help.
+We recommend to do the whole mounting process with two persons.
 
 First mount the bracket with the ball head.
 Check that the ball head is firmly in place.
@@ -155,8 +155,8 @@ On the back of the outer case you can find a mounting plate that you can slide o
 The mounting plate is clamped to the ball head with a screw so that OTCamera is firmly attached to it.
 
 !!! danger
-    Make sure that nothing falls down, nobody gets hurt and nothing gets damaged.
-    For this purpose, always use and install a drop protection.
+Make sure that nothing falls down, nobody gets hurt and nothing gets damaged.
+For this purpose, always use and install a drop protection.
 
 Now you can loosen the big screw on the ball head a bit and align the OTCamera to your needs.
 You can check the alignment with your mobile phone.
@@ -166,9 +166,9 @@ One person aligns the camera and the other checks the preview.
 Always wait a few seconds before adjusting OTCamera again, as a preview image is only generated every five seconds.
 
 ??? question "How should I align the camera?"
-    We always align OTCamera so that no sky is visible.
-    Otherwise, glare can occur and traffic could no longer be seen.
-    In addition, there should be enough space in all directions, so that [OTVision](/OTVision) can recognize the trajectories of road users sufficiently.
+We always align OTCamera so that no sky is visible.
+Otherwise, glare can occur and traffic could no longer be seen.
+In addition, there should be enough space in all directions, so that [OTVision](/OTVision) can recognize the trajectories of road users sufficiently.
 
     Please be sure to follow these instructions, especially if you want to automatically process the videos with [OTVision](/OTVision) yourself or have us process them for you.
 
@@ -193,10 +193,10 @@ If the battery has run down in the meantime, OTCamera has already shut down on i
 Nevertheless, set all three switches to "0".
 
 ??? tip "Turn of all switches!"
-    It is sufficient to set the "Boot" switch to "0".
-    However, we have made the experience that it is better to make sure that every switch is in the off position.
-    Switch on all the switches at the beginning of the measurement and switch them off at the end.
-    Then everything is back in the starting position for the next measurement.
+It is sufficient to set the "Boot" switch to "0".
+However, we have made the experience that it is better to make sure that every switch is in the off position.
+Switch on all the switches at the beginning of the measurement and switch them off at the end.
+Then everything is back in the starting position for the next measurement.
 
 When the OTCamera is back in the office, charge the external USB-battery and the OTCamera itself.
 

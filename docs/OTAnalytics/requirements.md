@@ -19,7 +19,7 @@ Before installing OTAnalytics, please make sure your system meets the following 
 ## Software
 
 - Python 3.12.x
-  - Download from https://www.python.org/downloads/
+  - Download from [python.org/downloads](https://www.python.org/downloads/)
   - Make sure to include pip and Tk/GUI components during installation
 
 ## Input data
@@ -40,5 +40,4 @@ OTAnalytics itself does not require a GPU. A GPU can speed up OTVision processin
 - Optional network access for checking updates or collaborating via shared storage
 - File system access to read .ottrk/.mp4 and write results (CSV/Excel)
 
-If you have questions or issues, feel free to open an issue on GitHub:
-https://github.com/OpenTrafficCam/OTAnalytics/issues/new
+If you have questions or issues, feel free to open an issue on GitHub: [OpenTrafficCam/OTAnalytics — new issue](https://github.com/OpenTrafficCam/OTAnalytics/issues/new)

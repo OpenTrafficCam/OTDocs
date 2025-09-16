@@ -8,14 +8,14 @@ If you haven’t installed OTAnalytics yet, start with the Installation page.
 Open a terminal/command prompt, navigate to the unzipped OTAnalytics folder and launch the GUI:
 
 === "Windows"
-    ```cmd
+`cmd
     .\start_gui.cmd
-    ```
+    `
 
 === "macOS / Linux"
-    ```sh
+`sh
     sh ./start_gui.sh
-    ```
+    `
 
 The application window should open.
 
