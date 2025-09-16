@@ -113,6 +113,7 @@ extra_css:
   - stylesheets/fonts.css
   - stylesheets/katex.min.css
   - stylesheets/custom_admonitions.css
+  - stylesheets/styles.css
 extra_javascript:
   - assets/js/katex_mkdocs.js
   - assets/js/katex.min.js

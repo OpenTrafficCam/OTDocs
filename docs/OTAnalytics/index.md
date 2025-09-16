@@ -24,12 +24,6 @@ OTAnalytics works with the following key concepts:
 * **Flows**: Traffic flows defined by a starting section and an ending section
 * **Track Assignments**: Assignment of tracks to flows based on events
 
-## Hardware Requirements
-
-OTAnalytics runs on most modern desktop PCs and laptops (e.g., with an i5 processor and 8 GB of RAM).
-
-* More RAM allows you to load more tracks of road users simultaneously
-* A faster processor improves the runtime of analyses and makes the user interface more responsive
 
 ## Content of documentation
 
