@@ -51,7 +51,9 @@ nav:
               - OTCamera/gettingstarted/installation/wifi-ap.md
               - OTCamera/gettingstarted/installation/otcamera.md
           - OTCamera/gettingstarted/firstuse.md
-          - OTCamera/usage/buttons_leds.md
+          - Usage:
+              - OTCamera/usage/usage.md
+              - OTCamera/usage/buttons_leds.md
           # - Advanced Usage:
           # - OTCamera/advanced_usage/configration.md
           # - OTCamera/advanced_usage/calibrate.md
@@ -68,9 +70,12 @@ nav:
 
       - OTAnalytics:
           - OTAnalytics/index.md
+          - OTAnalytics/requirements.md
           - OTAnalytics/installation.md
-          - OTAnalytics/usage-ui.md
-          - OTAnalytics/usage-cli.md
+          - OTAnalytics/firstuse.md
+          - Usage:
+              - OTAnalytics/usage-ui.md
+              - OTAnalytics/usage-cli.md
       #          - OTAnalytics/otconfig.md
       #          - Accuracy:
       #              - OTAnalytics/Accuracy/counts.md
