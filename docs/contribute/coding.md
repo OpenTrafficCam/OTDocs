@@ -20,7 +20,7 @@ The following table from [RealPython.com](https://realpython.com/python-pep8/#na
 | -------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
 | Function | Use a lowercase word or words. Separate words by underscores to improve readability.                            | `function`, `my_function`                     |
 | Variable | Use a lowercase single letter, word, or words. Separate words with underscores to improve readability.          | `x`, `var`, `my_variable`                     |
-| Class    | Start each word with a capital letter. Do not separate words with underscores. This style is called camel case. | `Model`, `MyClass`                            |
+| Class    | Start each word with a capital letter. Do not separate words with underscores. This style is called camelCase. | `Model`, `MyClass`                            |
 | Method   | Use a lowercase word or words. Separate words with underscores to improve readability.                          | `class_method`, `method`                      |
 | Constant | Use an uppercase single letter, word, or words. Separate words with underscores to improve readability.         | `CONSTANT`, `MY_CONSTANT`, `MY_LONG_CONSTANT` |
 | Module   | Use a short, lowercase word or words. Separate words with underscores to improve readability.                   | `module.py`, `my_module.py`                   |
@@ -94,7 +94,7 @@ def hello_world(message: str = "Hello World", author: str = "Santa Claus"):
 ```
 
 !!! note
-If you are using VS Code, you may want to use the [Python Docstring Generator](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring) extension.
+If you are using Visual Studio Code, you may want to use the [Python Docstring Generator](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring) extension.
 
 ### Comments
 
