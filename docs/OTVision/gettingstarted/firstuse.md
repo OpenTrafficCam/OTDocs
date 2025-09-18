@@ -60,7 +60,7 @@ Have a look at the basic examples provided below.
 
 In case you have raw `.h264` videos (e.g., from OTCamera),
 you need to convert them to a supported video format
-(see [convert.py](../firstuse/#convert)) first.
+(see [convert.py](#convert)) first.
 Therefore, we provide the `convert.py` script.
 
 To convert `.h264` videos, run the following command after activating the venv:

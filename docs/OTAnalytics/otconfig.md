@@ -4,9 +4,9 @@ OTConfig is a program for configuring video-based traffic analysis (e.g. traffic
 It has a subset of the functionality OTAnalytics has.
 The configuration consists of three steps:
 
-1. [Project setup](../usage-ui/#project-setup)
-1. [Definition of the traffic flows to be analyzed](../usage-ui/#definition-of-the-traffic-flows-to-be-analyzed)
-1. [Export of the configuration file](../usage-ui/#save-to-configuration-file-otconfig-file)
+1. [Project setup](usage-ui.md#setup-the-project)
+1. [Definition of the traffic flows to be analyzed](usage-ui.md#flows)
+1. [Export of the configuration file](usage-ui.md#save-and-open-the-project)
 
 The results of the OpenTrafficCam pipeline are raw data on the individual traffic movements as well as count values for the individual traffic flows.
 Further evaluations, such as speed or time requirement analyses, are carried out in downstream processes upon customer request.

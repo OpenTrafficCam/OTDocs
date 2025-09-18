@@ -64,4 +64,4 @@ Press the Write button and wait until the Raspberry Pi Imager has completely wri
 ## Next steps
 
 You're now ready to boot your Raspberry Pi to install OTCamera.
-You can either do it by using our [Quick Installer](../#quick-installer) or follwing all steps on the next sites.
+You can either do it by using our [Quick Installer](../installation.md#quick-installer) or follwing all steps on the next sites.

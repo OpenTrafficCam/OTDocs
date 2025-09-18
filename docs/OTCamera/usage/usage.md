@@ -3,7 +3,7 @@
 After assembling OTCamera on your own or receiving it from us, you can finally start using it!
 On this page you will find all the information you need for setting up and mounting OTCamera, recording videos and downloading them.
 If you follow these instructions, you will be good to got to use OTCamera in the field.
-The recorded videos can be processed further with [OTVision](/OTVision).
+The recorded videos can be processed further with [OTVision](../../OTVision/index.md).
 
 <!-- Further details on the single steps can be found on the following pages. -->
 
@@ -168,9 +168,9 @@ Always wait a few seconds before adjusting OTCamera again, as a preview image is
 ??? question "How should I align the camera?"
 We always align OTCamera so that no sky is visible.
 Otherwise, glare can occur and traffic could no longer be seen.
-In addition, there should be enough space in all directions, so that [OTVision](/OTVision) can recognize the trajectories of road users sufficiently.
+In addition, there should be enough space in all directions, so that [OTVision](../../OTVision/index.md) can recognize the trajectories of road users sufficiently.
 
-    Please be sure to follow these instructions, especially if you want to automatically process the videos with [OTVision](/OTVision) yourself or have us process them for you.
+    Please be sure to follow these instructions, especially if you want to automatically process the videos with [OTVision](../../OTVision/index.md) yourself or have us process them for you.
 
 If everything is aligned correctly, you can now lock OTCamera.
 
@@ -246,4 +246,4 @@ When you save the file and plug the flash drive back into OTCamera,the marked vi
 ## Next steps
 
 Now you should have all the videos.
-In the next step you can process them with [OTVision](/OTVision).
+In the next step you can process them with [OTVision](../../OTVision/index.md).

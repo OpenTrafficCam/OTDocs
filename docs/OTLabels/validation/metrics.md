@@ -145,7 +145,7 @@ Out of the 8 cars that have been predicted:
 
 ## Traffic Measures
 
-To see, how well OpenTrafficCam performs see [OTAnalytics](/OTAnalytics/Accuracy/counts/).
+To see, how well OpenTrafficCam performs see [OTAnalytics](../../OTAnalytics/Accuracy/counts.md).
 
 ## References
 

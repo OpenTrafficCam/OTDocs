@@ -1,15 +1,15 @@
 # Usage GUI
 
-After processing videos with OTVision´s tracking module ([OTVision track](../../OTVision/usage/track)), you can use OTAnalytics for analysing traffic data.
+After processing videos with OTVision´s tracking module ([OTVision track](../OTVision/usage/track.md)), you can use OTAnalytics for analysing traffic data.
 The OTAnalytics **Graphical User Interface (GUI)** enables you to configure analyses, extract valuable insights from your data, and export the results efficiently.
 
 ## Terminology
 
-Vehicles and pedestrians are detected in the individual frames of the video using [detect in OTVision](../../OTVision/usage/detect).
+Vehicles and pedestrians are detected in the individual frames of the video using [detect in OTVision](../OTVision/usage/detect.md).
 In a single frame of a video, each detected object (**Detection**) is represented by a **Bounding Box**,
  which is the rectangular area surrounding the detected vehicle or pedestrian together with its classification (e.g., car, bike, pedestrian).
 
-The [tracker in OTVision](../../OTVision/usage/track) links consecutive detections, or bounding boxes, to form the **Track** of a **Road User**.
+The [tracker in OTVision](../OTVision/usage/track.md) links consecutive detections, or bounding boxes, to form the **Track** of a **Road User**.
 
 A track is therefore composed of a series of detections, each with its own bounding box and classification.
 Ideally, all detections within a track share the same classification.

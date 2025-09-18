@@ -29,7 +29,7 @@ If you are using a different or no RTC module you should adjust the quick instal
 
 ### Prepare the SD-Card
 
-To use the quick installer you'll need to [prepare a SD-Card](prepare-sd-card/) first.
+To use the quick installer you'll need to [prepare a SD-Card](installation/prepare-sd-card.md) first.
 If done correctly you should now be able to connect to your Raspberry Pi via SSH.
 
 ### Update and Upgrade the System

@@ -70,7 +70,7 @@ Nevertheless, let us also have a look at the TIDE metrics to get an insight on t
 | --------------------------------------------------------- | ------------------------------------------------------------------ |
 | ![All TIDE](assets/plots/all/tide_errors_diagram_all.png) | ![All TIDE Stacked](assets/plots/all/tide_stacked_diagram_all.png) |
 
-What immediately stands out are the [Missed Ground Truth Error (Miss)](/OTLabels/validation/metrics/#tide-metrics) and the [Classification Error (Cls)](/OTLabels/validation/metrics/#tide-metrics).
+What immediately stands out are the [Missed Ground Truth Error (Miss)](metrics.md#tide-metrics) and the [Classification Error (Cls)](metrics.md#tide-metrics).
 Meaning, the models were not able to detect many ground truth bounding boxes or be able to classify them correctly.
 Thus, the models were able to detect the majority of the bounding boxes, but had problems predicting the correct classes.
 

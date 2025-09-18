@@ -53,7 +53,7 @@ Each module, function, class or method should be described in a docstring ([Goog
 
 ### Docstrings for Modules
 
-Each file should start with the [license snippet](/contribute/vs-code-settings#snippets) followed by a docstring describing the contents and usage of the module:
+Each file should start with the [license snippet](vscode.md#snippets) followed by a docstring describing the contents and usage of the module:
 
 ```py
 """A one line summary of the module or program, terminated by a period.

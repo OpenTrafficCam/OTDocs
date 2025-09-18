@@ -4,7 +4,7 @@ In this section, we provide instructions on how to install OTVision on the most 
 Operating Systems.
 
 Before installing OTVision, make sure your system meets all
-[requirements](../requirements/).
+[requirements](requirements.md).
 Essentially, you need uv to be installed.
 
 ## Install OTVision
@@ -40,8 +40,8 @@ from GitHub or clone the
 ## Nvidia CUDA (optional)
 
 If you have a
-[Windows or Linux PC with a Nvidia graphics card](../requirements/#hardware-prerequisites)
-and already [installed CUDA](../requirements/#nvidia-cuda-optional),
+[Windows or Linux PC with a Nvidia graphics card](requirements.md#hardware-prerequisites)
+and already [installed CUDA](requirements.md#nvidia-cuda-optional),
 you chose the release with the suffix `-cuda`. It contains the requirements to use CUDA.
 If you want to contribute to OTVision and use CUDA, you have to perform additional
 steps in your Terminal/Command Prompt:
@@ -102,7 +102,7 @@ We are happy to know about your experience.
 
 We welcome code contributions (e.g., fixing bugs or adding features) from others
 by forking the repository and creating a pull request.
-Please check the [contribute section](/contribute/)
+Please check the [contribute section](../../contribute/index.md)
 of this documentation first.
 
 If you want to contribute code, additional requirements should be installed

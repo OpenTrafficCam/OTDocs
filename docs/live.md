@@ -49,8 +49,8 @@ OpenTrafficCam LIVE soll als offenes System Transparenz schaffen, digitale Souve
 
 ### Technische Umsetzung
 
-Der Straßenverkehr wird mit **[OTCamera](../OTCamera)** aufgezeichnet und die Videostreams werden per **Mobilfunk (LTE/5G)** an das Rechenzentrum der **TU Dresden** übertragen.
-Dort erfolgen in Echtzeit mit **[OTVision](../OTVision)** KI-basierte Detektion und Tracking sowie mit **[OTAnalytics](../OTAnalytics)** die Bestimmung von Verkehrskennwerten.
+Der Straßenverkehr wird mit **[OTCamera](OTCamera/index.md)** aufgezeichnet und die Videostreams werden per **Mobilfunk (LTE/5G)** an das Rechenzentrum der **TU Dresden** übertragen.
+Dort erfolgen in Echtzeit mit **[OTVision](OTVision/index.md)** KI-basierte Detektion und Tracking sowie mit **[OTAnalytics](OTAnalytics/index.md)** die Bestimmung von Verkehrskennwerten.
 Die ermittelten Informationen werden per **Web-Dashboard** visualisiert und stehen für **Forschung, Entwicklung und lokale Verkehrsplanung** zur Verfügung.
 
 **Perspektivisch** sollen die Live-Informationen für Forschung und Entwicklung im Bereich **intelligentes Verkehrsmanagement** verwendet werden (zum Beispiel dynamische LSA-Steuerung).

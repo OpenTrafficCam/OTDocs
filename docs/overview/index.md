@@ -54,16 +54,16 @@ So all transport professionals and anyone else interested are very welcome to tr
 
 OpenTrafficCam consists of multiple modules. The core is composed of three:
 
-1. The [OTCamera](/OTCamera/) hardware to record videos,
-2. [OTVision](/OTVision/), a collection of algorithms to generate trajectories
+1. The [OTCamera](../OTCamera/index.md) hardware to record videos,
+2. [OTVision](../OTVision/index.md), a collection of algorithms to generate trajectories
 of objects (road users) based on the videos and
-3. [OTAnalytics](/OTAnalytics/) to gather traffic measures based on these trajectories.
+3. [OTAnalytics](../OTAnalytics/index.md) to gather traffic measures based on these trajectories.
 
 Each of the three modules comes with (easy) installation, a basic user interface and a documentation.
 The Open Source version covers the most common use cases of video-based traffic surveying,
 such as traffic counts.
 
-In addition to the three main modules, with [OTLabels](/OTLabels/)
+In addition to the three main modules, with [OTLabels](../OTLabels/index.md)
 we will provide a set of labelled images of German road users and vehicles along with algorithms
 to train object detection models on custom data sets.
 
