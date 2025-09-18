@@ -17,8 +17,8 @@ Each flow consists of exactly one start and one end section (from-to relationshi
 Sections can be defined in the form of lines with any number of support points as well as areas.
 
 !!! info
-    A separate configuration must be created for each camera view.
-    Due to the different positions of the sections and flows, videos with different views cannot be configured at the same time.
+A separate configuration must be created for each camera view.
+Due to the different positions of the sections and flows, videos with different views cannot be configured at the same time.
 
 ## Why OTConfig?
 
@@ -30,5 +30,5 @@ This information is then saved in an otconfig file.
 This ensures that all relevant information is transferred to us in a structured manner and applied correctly in the OpenTrafficCam pipeline.
 
 !!! info
-    The transmitted information is validated again by trained personnel before each execution of the pipeline and, if necessary, checked for plausibility.
-    In particular, the position of the sections is optimized to ensure the best possible result.
+The transmitted information is validated again by trained personnel before each execution of the pipeline and, if necessary, checked for plausibility.
+In particular, the position of the sections is optimized to ensure the best possible result.

@@ -4,11 +4,11 @@ No matter which version you want to install, you will always use a Raspberry Pi 
 
 You will need:
 
-* Raspberry Pi 2B / 3B(+) / 4 / Zero W / Zero 2W and power supply
-* We recommend a Zero W or Zero 2W because they draw substantially less power.
-* Micro SD card (a High Endurance version is recommended)
-* SD Card Reader
-* [Raspberry Pi Imager](https://www.raspberrypi.org/software/).
+- Raspberry Pi 2B / 3B(+) / 4 / Zero W / Zero 2W and power supply
+- We recommend a Zero W or Zero 2W because they draw substantially less power.
+- Micro SD card (a High Endurance version is recommended)
+- SD Card Reader
+- [Raspberry Pi Imager](https://www.raspberrypi.org/software/).
 
 !!! warning
 
@@ -24,8 +24,8 @@ We're assuming that you'll use an DS3132 RTC module.
 If you are using a different or no RTC module you should adjust the quick installer.
 
 !!! info
-    If you like, you can also setup the Raspberry Pi and install OTCamera manually.
-    The necessary steps are described on the following pages.
+If you like, you can also setup the Raspberry Pi and install OTCamera manually.
+The necessary steps are described on the following pages.
 
 ### Prepare the SD-Card
 
@@ -58,6 +58,6 @@ After the installer complete, simply reboot the Raspberry Pi and the OTCamera so
 If not, please report your issues using the [GitHub issue tracker](https://github.com/OpenTrafficCam/OTCamera/issues).
 
 !!! note
-    We are planning to offer a ready-to-use image for the Raspberry Pi, which can be easily installed.
-    The setup will then be even easier.
-    Stay tuned :)
+We are planning to offer a ready-to-use image for the Raspberry Pi, which can be easily installed.
+The setup will then be even easier.
+Stay tuned :)

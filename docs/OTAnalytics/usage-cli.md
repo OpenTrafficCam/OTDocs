@@ -6,23 +6,23 @@ The analysis must be configured in the [OTAnalytics **Graphical User Interface (
 ## Synopsis
 
 ```text
-python -m OTAnalytics [-h] 
-                [--cli] 
+python -m OTAnalytics [-h]
+                [--cli]
                 [--cli-mode {bulk,stream}]
-                [--cli-chunk-size CLI_CHUNK_SIZE] 
+                [--cli-chunk-size CLI_CHUNK_SIZE]
                 [--show-svz]
-                [--config CONFIG] 
+                [--config CONFIG]
                 [--ottrks OTTRKS [OTTRKS ...]]
-                [--otflow OTFLOW] 
+                [--otflow OTFLOW]
                 [--save-dir SAVE_DIR]
-                [--save-name SAVE_NAME] 
+                [--save-name SAVE_NAME]
                 [--save-suffix SAVE_SUFFIX]
                 [--debug]
                 [--event-formats EVENT_FORMATS [EVENT_FORMATS ...]]
                 [--count-intervals COUNT_INTERVALS [COUNT_INTERVALS ...]]
-                [--no-track-export] 
+                [--no-track-export]
                 [--no-track-statistics-export]
-                [--num-processes NUM_PROCESSES] 
+                [--num-processes NUM_PROCESSES]
                 [--logfile LOGFILE]
                 [--logfile_overwrite]
                 [--include-classes INCLUDE_CLASSES [INCLUDE_CLASSES ...]]
@@ -86,7 +86,6 @@ Show SVZ-Tab in OTAnalytics GUI. If omitted the tab will be hidden.
 
 ---
 
-
 ### config
 
 `--config <path/to/config file>`
@@ -111,13 +110,11 @@ Path to an `.otflow` file containing section information needed for analysis. Ho
 
 ---
 
-
 ### save-dir
 
 `--save-dir <path/to/directory>`
 
 Specify the directory where output files will be saved.
-
 
 This parameter is optional. It defaults to the directory where the otconfig or otflow file is stored.
 
@@ -187,7 +184,6 @@ Disable the export of track statistics as `.csv`.
 
 ---
 
-
 ### num-processes
 
 `--num-processes <integer>`
@@ -213,7 +209,6 @@ Whitelist filter to include tracks with given classes. Classes specified in
 Blacklist filter to exclude tracks with given classes.
 
 ---
-
 
 ### debug
 

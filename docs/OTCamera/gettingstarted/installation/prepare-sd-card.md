@@ -25,7 +25,7 @@ For example: instead of connecting to `ssh pi@hostname` you'll need `ssh usernam
 
     to generate a public private key combination. Add the private key to your ssh-agent
     (you may need to [update OpenSSH on Windows](https://superuser.com/questions/1395962/is-it-possible-to-update-the-built-in-openssh-client-in-windows-10/1555453#1555453)).
-    
+
     <!-- TODO #26 add information where to put the ssh private key -->
 
 ![Raspberry Pi Imager advanced settings](rpi_imager_2.png)
@@ -42,7 +42,7 @@ Then select the SD card on which the operating system will be installed.
 Press the Write button and wait until the Raspberry Pi Imager has completely written and verified your SD card.
 
 !!! tip
-    Sometimes the verification may fail. Try another USB port on your PC or another card reader. If this does not help, maybe the SD card is broken.
+Sometimes the verification may fail. Try another USB port on your PC or another card reader. If this does not help, maybe the SD card is broken.
 
 ??? help "Setup without Raspberry Pi Imager"
 

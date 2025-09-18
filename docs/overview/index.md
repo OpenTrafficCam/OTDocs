@@ -2,7 +2,7 @@
 title: Documentation
 ---
 
-# Welcome to OpenTrafficCam
+## Welcome to OpenTrafficCam
 
 ![OpenTrafficCam Overview](../OpenTrafficCam_1200.svg)
 
@@ -56,7 +56,7 @@ OpenTrafficCam consists of multiple modules. The core is composed of three:
 
 1. The [OTCamera](../OTCamera/index.md) hardware to record videos,
 2. [OTVision](../OTVision/index.md), a collection of algorithms to generate trajectories
-of objects (road users) based on the videos and
+   of objects (road users) based on the videos and
 3. [OTAnalytics](../OTAnalytics/index.md) to gather traffic measures based on these trajectories.
 
 Each of the three modules comes with (easy) installation, a basic user interface and a documentation.
@@ -75,7 +75,7 @@ And in order to regularly extract trajectories from videos using OTVision or tra
 using OTLabels, you will need a powerful machine with a strong graphics card.
 
 !!! check "Don´t want to deal with it? We got your back!"
-    We offer various services related to OpenTrafficCam:
+We offer various services related to OpenTrafficCam:
 
     :material-video-wireless: Selling and renting OTCameras
 
@@ -86,11 +86,9 @@ using OTLabels, you will need a powerful machine with a strong graphics card.
     :material-monitor-screenshot: Onboarding and support to get the most out of OpenTrafficCam
 
     :material-video-marker: Conducting whole traffic surveys for you
-    
+
     :material-cloud-braces: Developing features beyond the current open source version
 
     :material-account-supervisor: Consulting on traffic analysis, modeling and optimization
 
     [:octicons-mail-16: Contact us for more information](mailto:team@opentrafficcam.org){ .md-button }
-
-

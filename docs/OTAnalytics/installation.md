@@ -36,7 +36,7 @@ Please make sure to include at least the following boxes:
 ## Install OTAnalytics
 
 Visit [OTAnalytics latest releases on GitHub](https://github.com/OpenTrafficCam/OTAnalytics/releases/latest),
- scroll down to the list of assets and download the correct "otanalytics" `.zip` file for your platform.
+scroll down to the list of assets and download the correct "otanalytics" `.zip` file for your platform.
 
 Unzip the file to a location of your choice (preferably local).
 
@@ -50,7 +50,7 @@ Open a terminal window (or command prompt), navigate to the unzipped folder and 
 
 === "macOS / Linux"
 
-    ```sh 
+    ```sh
     sh ./install.sh
     ```
 
@@ -69,7 +69,7 @@ Run the start script as follows:
 
 === "macOS / Linux"
 
-    ```sh 
+    ```sh
     sh ./start_gui.sh
     ```
 
