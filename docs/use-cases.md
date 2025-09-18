@@ -7,7 +7,7 @@ hide:
 
 OpenTrafficCam ist das einzige Open Source Gesamtsystem zur automatischen Analyse von Verkehr.
 Entwickelt von Informatikern (ja bisher nur Männer :() und Verkehrsingenieur:innen für Verkehrsingenieur:innen.
-#less-sales-more-truth #lessbullshitbingo
+\#less-sales-more-truth \#lessbullshitbingo
 Die Verkehrsanalyse mit OpenTrafficCam ist in drei aufeinander abgestimmte Module unterteilt.
 Die Module können auch einzeln eingesetzt werden.
 Das mobile Kamerasystem OTCamera zeichnet datenschutzkonform Verkehrsvideos auf.

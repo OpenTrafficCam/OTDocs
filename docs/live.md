@@ -7,7 +7,7 @@ hide:
 
 <!-- markdownlint-disable-next-line MD025 -->
 
-# OpenTrafficCam LIVE Hoyerswerda
+## OpenTrafficCam LIVE Hoyerswerda
 
 ![OpenTrafficCam Live Hoyerswerda](assets/img/reallabor_hoy/OpenTrafficCam_LIVE_Hoy_Fullscreen.svg)
 
