@@ -41,11 +41,11 @@ The following table from [RealPython.com](https://realpython.com/python-pep8/#na
 
 Files get an extension according to their content.
 
-| Extension     | Description                                                     |
-| ------------- | --------------------------------------------------------------- |
-| \.otdet       | detections as bounding boxes                                    |
-| \.ottrk       | trajectories in pixel (and UTM) coordinates                     |
-| \.otrfpts     | reference points to convert pixel to UTM coordinates            |
+| Extension | Description                                          |
+| --------- | ---------------------------------------------------- |
+| \.otdet   | detections as bounding boxes                         |
+| \.ottrk   | trajectories in pixel (and UTM) coordinates          |
+| \.otrfpts | reference points to convert pixel to UTM coordinates |
 
 ## Code documentation
 
@@ -94,7 +94,7 @@ def hello_world(message: str = "Hello World", author: str = "Santa Claus"):
 ```
 
 !!! note
-    If you are using VS Code, you may want to use the [Python Docstring Generator](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring) extension.
+If you are using VS Code, you may want to use the [Python Docstring Generator](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring) extension.
 
 ### Comments
 
@@ -103,7 +103,7 @@ If it is necessary to explain your code in between, use single line or block com
 ```py
 # This is an example for a single line comment
 
-# This is an 
+# This is an
 # example for a
 # block comment
 ```
@@ -117,16 +117,16 @@ For basic functionality we prefer packages that come with the Python standard di
 However, OpenTrafficCam would not be possible without code from third party libraries, especially when it comes to videos, images, data analysis, neural networks or web development.
 These are the libraries we intend to use for specific functionalities throughout the whole framework (we are grateful to the authors):
 
-| Functionality      | Library                                                                                                                         |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------- |
-| Paths              | [pathlib](https://docs.python.org/3/library/pathlib.html) (distributed with Python since 3.4)                                   |
-| Videos, Images     | [OpenCV](https://pypi.org/project/opencv-python/)                                                                               |
-| Neural networks    | [PyTorch](https://pypi.org/project/torch/), [torchvision](https://pypi.org/project/torchvision/)                                |
-| Data handling      | [pandas](https://pypi.org/project/pandas/), [NumPy](https://pypi.org/project/numpy/)                                            |
-| Shape handling     | [GeoPandas](https://pypi.org/project/geopandas/), [Shapely](https://pypi.org/project/Shapely/)                                  |
-| Plotting, graphing | [Plotly](https://pypi.org/project/plotly/)                                                                                      |
-| User interface     | [Tkinter](https://docs.python.org/3/library/tkinter.html)                                                                            |
-| Web                | [Dash](https://pypi.org/project/dash/) (dashboards) |
+| Functionality      | Library                                                                                          |
+| ------------------ | ------------------------------------------------------------------------------------------------ |
+| Paths              | [pathlib](https://docs.python.org/3/library/pathlib.html) (distributed with Python since 3.4)    |
+| Videos, Images     | [OpenCV](https://pypi.org/project/opencv-python/)                                                |
+| Neural networks    | [PyTorch](https://pypi.org/project/torch/), [torchvision](https://pypi.org/project/torchvision/) |
+| Data handling      | [pandas](https://pypi.org/project/pandas/), [NumPy](https://pypi.org/project/numpy/)             |
+| Shape handling     | [GeoPandas](https://pypi.org/project/geopandas/), [Shapely](https://pypi.org/project/Shapely/)   |
+| Plotting, graphing | [Plotly](https://pypi.org/project/plotly/)                                                       |
+| User interface     | [Tkinter](https://docs.python.org/3/library/tkinter.html)                                        |
+| Web                | [Dash](https://pypi.org/project/dash/) (dashboards)                                              |
 
 ## Linting/Autoformatting
 
