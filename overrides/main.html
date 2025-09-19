@@ -1,7 +1,29 @@
-{% extends "base.html" %} {% block analytics %}
-<script
-  defer
-  data-domain="opentrafficcam.org"
-  src="https://plausible.platomo.org/js/script.js"
-></script>
+{% extends "base.html" %}
+
+{#
+  This template overrides the default Material template for all pages.
+  It conditionally adds the site-wide hero header and required styles
+  for all documentation pages located under docs/service/*.
+  This way, you don't need to set `template: hero.html` in each page's front matter.
+#}
+
+{% set _is_service_page = page and page.file and page.file.src_path and page.file.src_path.startswith('service/') %}
+
+{% block styles %} {{ super() }}
+  {# Add the extra CSS only for service pages, mirroring overrides/hero.html #}
+  {% if _is_service_page %}
+    <link href="/stylesheets/styles.css" rel="stylesheet" />
+    <link href="/stylesheets/bootstrap-grid.css" rel="stylesheet" />
+    <link href="/stylesheets/bootstrap-utilities.css" rel="stylesheet" />
+    <link href="/stylesheets/color.css" rel="stylesheet" />
+  {% endif %}
+{% endblock %}
+
+{# Inject hero header for all service pages #}
+{% block hero %}
+  {% if _is_service_page %}
+    {% include "partials/hero_header.html" %}
+  {% else %}
+    {{ super() }}
+  {% endif %}
 {% endblock %}

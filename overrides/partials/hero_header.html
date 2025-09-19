@@ -1,0 +1,118 @@
+{% set _hero_title = page and page.meta and page.meta.hero_title or (page and page.title) or config.site_name or 'OpenTrafficCam' %}
+{% set _hero_subtitle = page and page.meta and page.meta.hero_subtitle or 'Die transparente Verkehrsdatenerfassung' %}
+{% set _hero_layout = page and page.meta and page.meta.hero_layout or '' %}
+{% set _cta_text = page and page.meta and page.meta.hero_cta_text or 'Kontakt' %}
+{% set _cta_link = page and page.meta and page.meta.hero_cta_link or 'mailto:team@opentrafficcam.org?subject=Anfrage%20zu%20OpenTrafficCam' %}
+{% set _cta_variant = page and page.meta and page.meta.hero_cta_variant or 'primary' %}
+{% set _secondary_cta_text = page and page.meta and page.meta.hero_secondary_cta_text or '' %}
+{% set _secondary_cta_link = page and page.meta and page.meta.hero_secondary_cta_link or '' %}
+{% set _secondary_cta_variant = page and page.meta and page.meta.hero_secondary_cta_variant or 'secondary' %}
+{% set _video_url = page and page.meta and page.meta.hero_video_url or '' %}
+{% set _video_poster = page and page.meta and page.meta.hero_video_poster or '/assets/video/videoerfassung.webp' %}
+{% set _image_url = page and page.meta and page.meta.hero_image_url or '' %}
+{% set _btn_class = 'highlighted-btn' if _cta_variant == 'primary' else 'secondary-btn' %}
+{% set _btn2_class = 'highlighted-btn' if _secondary_cta_variant == 'primary' else 'secondary-btn' %}
+
+{% if _hero_layout == 'split-video' %}
+<header class="hero hero--split service-hero" role="banner">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <div class="hero-heading" style="text-align: left;">
+          <h1>{{ _hero_title }}</h1>
+        </div>
+        <div class="hero-subheading" style="text-align: left; margin-bottom: 1rem;">
+          <h2>{{ _hero_subtitle }}</h2>
+        </div>
+        <div style="text-align: left; display: flex; gap: .6rem; flex-wrap: wrap;">
+          <a class="md-button {{ _btn_class }}" href="{{ _cta_link }}">{{ _cta_text }}</a>
+          {% if _secondary_cta_text and _secondary_cta_link %}
+          <a class="md-button {{ _btn2_class }}" href="{{ _secondary_cta_link }}">{{ _secondary_cta_text }}</a>
+          {% endif %}
+        </div>
+      </div>
+      <div class="col-md-6">
+        {% if _video_url %}
+          <div style="position: relative; width: 100%; aspect-ratio: 16 / 9; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.15);">
+            <video oncontextmenu="return false;" autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;" poster="{{ _video_poster }}">
+              <source src="{{ _video_url }}" type="video/mp4" />
+              <p>Ihr Browser unterstützt das Video-Element nicht.</p>
+            </video>
+          </div>
+        {% else %}
+          <div style="position: relative; width: 100%; aspect-ratio: 16 / 9; background: #f2f2f2; border: 1px dashed #ccc; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #777;">
+            <span>Video-Platzhalter</span>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</header>
+{% elif _hero_layout == 'centered-cta' %}
+<header class="hero service-hero" role="banner" style="padding-bottom: 2.5rem;">
+  <div class="container" style="text-align: center;">
+    <img alt="OpenTrafficCam Logo" src="/assets/img/header.svg" loading="eager" />
+    <div class="hero-heading">
+      <h1>{{ _hero_title }}</h1>
+    </div>
+    <div class="hero-subheading" style="margin-bottom: 1rem;">
+      <h2>{{ _hero_subtitle }}</h2>
+    </div>
+    <div style="display: inline-flex; gap: .6rem; flex-wrap: wrap; justify-content: center;">
+      <a class="md-button {{ _btn_class }}" href="{{ _cta_link }}">{{ _cta_text }}</a>
+      {% if _secondary_cta_text and _secondary_cta_link %}
+      <a class="md-button {{ _btn2_class }}" href="{{ _secondary_cta_link }}">{{ _secondary_cta_text }}</a>
+      {% endif %}
+    </div>
+  </div>
+</header>
+{% elif _hero_layout == 'split-image' %}
+<header class="hero hero--split service-hero" role="banner">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <div class="hero-heading" style="text-align: left;">
+          <h1>{{ _hero_title }}</h1>
+        </div>
+        <div class="hero-subheading" style="text-align: left; margin-bottom: 1rem;">
+          <h2>{{ _hero_subtitle }}</h2>
+        </div>
+        <div style="text-align: left; display: flex; gap: .6rem; flex-wrap: wrap;">
+          <a class="md-button {{ _btn_class }}" href="{{ _cta_link }}">{{ _cta_text }}</a>
+          {% if _secondary_cta_text and _secondary_cta_link %}
+          <a class="md-button {{ _btn2_class }}" href="{{ _secondary_cta_link }}">{{ _secondary_cta_text }}</a>
+          {% endif %}
+        </div>
+      </div>
+      <div class="col-md-6">
+        {% if _image_url %}
+          <div style="position: relative; width: 100%; aspect-ratio: 16 / 9; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.15); background: #fafafa; border: 3px solid #fff;">
+            <img src="{{ _image_url }}" alt="Hero Bild" style="width:100%; height:100%; object-fit: cover;" />
+          </div>
+        {% else %}
+          <div style="position: relative; width: 100%; aspect-ratio: 16 / 9; background: #f8f8f8; border: 1px dashed #ccc; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #777;">
+            <span>Bild-Platzhalter</span>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</header>
+{% else %}
+<header class="hero service-hero" role="banner">
+  <div class="container">
+    <img
+      alt="OpenTrafficCam Logo - Innovative Verkehrsdatenerfassung"
+      src="/assets/img/header.svg"
+      loading="eager"
+    />
+
+    <div class="hero-heading">
+      <h1>{{ _hero_title }}</h1>
+    </div>
+    <div class="hero-subheading">
+      <h2>{{ _hero_subtitle }}</h2>
+    </div>
+  </div>
+</header>
+{% endif %}
