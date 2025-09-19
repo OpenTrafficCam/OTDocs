@@ -28,9 +28,19 @@ theme:
     repo: fontawesome/brands/github
 
 nav:
-  - index.md
-  - live.md
-  - pricing.md
+  - Home:
+    - index.md
+  - Angebot:
+        - service/index.md
+
+        - service/camera.md
+        - service/video_processing.md
+        - service/consulting.md
+  - Anwendungen:
+    - case_studies.md
+    - case_studies/live.md
+  - Pricing:
+    - pricing.md
   # - use-cases.md
   - Documentation:
       - Overview:
@@ -101,8 +111,10 @@ nav:
           - contribute/vscode.md
           - contribute/documentation.md
           # - contribute/otcamera.md
-  - Team:
-      - team.md
+  - Über uns:
+      - about_us.md
+  - Kontakt:
+      - contact.md
 extra_css:
   - stylesheets/color.css
   - stylesheets/fonts.css
