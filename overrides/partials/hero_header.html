@@ -13,6 +13,16 @@
 {% set _btn_class = 'highlighted-btn' if _cta_variant == 'primary' else 'secondary-btn' %}
 {% set _btn2_class = 'highlighted-btn' if _secondary_cta_variant == 'primary' else 'secondary-btn' %}
 
+{# If this page explicitly hides the title, also hide the top header topic and any first H1 in content #}
+{% if page and page.meta and page.meta.hide and 'title' in page.meta.hide %}
+<style>
+  /* Hide the current page title in the top header bar for this page */
+  .md-header .md-header__topic { display: none; }
+  /* Defensive: ensure the in-content H1 is hidden, even if theme logic changes */
+  .md-content .md-content__inner > h1:first-child { display: none !important; }
+</style>
+{% endif %}
+
 {% if _hero_layout == 'split-video' %}
 <header class="hero hero--split service-hero" role="banner">
   <div class="container">

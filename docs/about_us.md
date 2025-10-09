@@ -2,7 +2,8 @@
 title: Team
 hide:
   - navigation
-#  - toc
+  - toc
+  - title
 ---
 
 ## Entwicklung
@@ -81,3 +82,12 @@ Mit diesen Referenzdatensätzen können die mit OpenTrafficCam automatisiert abg
 - ![NFDI4ing](assets/img/NFDI4Ing.png){height="50" style="display: block; margin: 0 auto" }
 
 </div>
+
+
+## Kontakt
+
+Haben Sie Fragen oder möchten ein Projekt mit uns besprechen?
+
+<p class="cta-center">
+  <a class="md-button highlighted-btn" href="/contact">Kontakt aufnehmen</a>
+</p>
