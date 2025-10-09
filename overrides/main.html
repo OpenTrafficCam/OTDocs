@@ -1,12 +1,5 @@
 {% extends "base.html" %}
 
-{#
-  This template overrides the default Material template for all pages.
-  It conditionally adds the site-wide hero header and required styles
-  for all documentation pages located under docs/service/*.
-  This way, you don't need to set `template: hero.html` in each page's front matter.
-#}
-
 {% set _is_service_page = page and page.file and page.file.src_path and page.file.src_path.startswith('service/') %}
 
 {% block styles %} {{ super() }}
