@@ -27,8 +27,6 @@ theme:
     - content.icon
   icon:
     repo: fontawesome/brands/github
-    admonition:
-      faq: octicons/question-16
 
 nav:
   - Home:
