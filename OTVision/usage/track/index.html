@@ -1269,45 +1269,45 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#sigma_l" class="md-nav__link">
+  <a href="#sigma-l" class="md-nav__link">
     <span class="md-ellipsis">
-      sigma_l
+      sigma-l
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#sigma_h" class="md-nav__link">
+  <a href="#sigma-h" class="md-nav__link">
     <span class="md-ellipsis">
-      sigma_h
+      sigma-h
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#sigma_iou" class="md-nav__link">
+  <a href="#sigma-iou" class="md-nav__link">
     <span class="md-ellipsis">
-      sigma_iou
+      sigma-iou
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#t_min" class="md-nav__link">
+  <a href="#t-min" class="md-nav__link">
     <span class="md-ellipsis">
-      t_min
+      t-min
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#t_miss_max" class="md-nav__link">
+  <a href="#t-miss-max" class="md-nav__link">
     <span class="md-ellipsis">
-      t_miss_max
+      t-miss-max
     </span>
   </a>
   
@@ -2434,45 +2434,45 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#sigma_l" class="md-nav__link">
+  <a href="#sigma-l" class="md-nav__link">
     <span class="md-ellipsis">
-      sigma_l
+      sigma-l
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#sigma_h" class="md-nav__link">
+  <a href="#sigma-h" class="md-nav__link">
     <span class="md-ellipsis">
-      sigma_h
+      sigma-h
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#sigma_iou" class="md-nav__link">
+  <a href="#sigma-iou" class="md-nav__link">
     <span class="md-ellipsis">
-      sigma_iou
+      sigma-iou
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#t_min" class="md-nav__link">
+  <a href="#t-min" class="md-nav__link">
     <span class="md-ellipsis">
-      t_min
+      t-min
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#t_miss_max" class="md-nav__link">
+  <a href="#t-miss-max" class="md-nav__link">
     <span class="md-ellipsis">
-      t_miss_max
+      t-miss-max
     </span>
   </a>
   
@@ -2514,7 +2514,7 @@
 <h1 id="track">Track<a class="headerlink" href="#track" title="Permanent link">&para;</a></h1>
 <h2 id="synopsis">Synopsis<a class="headerlink" href="#synopsis" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>uv run track.py    [-p paths] [-c config]
-                    [--sigma_l] [--sigma_h] [--sigma_iou] [--t_min] [--t_miss_max]
+                    [--sigma-l] [--sigma-h] [--sigma-iou] [--t-min] [--t-miss-max]
                     [--overwrite]
 </code></pre></div>
 <h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
@@ -2546,31 +2546,31 @@ described below are used.</p>
 </div>
 <p>Any parameter passed to the CLI will overwrite the respective parameter from
 the config file.</p>
-<h3 id="sigma_l">sigma_l<a class="headerlink" href="#sigma_l" title="Permanent link">&para;</a></h3>
-<p><code>--sigma_l &lt;float&gt;</code></p>
+<h3 id="sigma-l">sigma-l<a class="headerlink" href="#sigma-l" title="Permanent link">&para;</a></h3>
+<p><code>--sigma-l &lt;float&gt;</code></p>
 <p>The lower confidence threshold for the IOU tracker.
-Detections with confidences below <code>sigma_l</code> are not considered for tracking at all.</p>
+Detections with confidences below <code>sigma-l</code> are not considered for tracking at all.</p>
 <p>This parameter is optional and defaults to <code>0.27</code>.</p>
-<h3 id="sigma_h">sigma_h<a class="headerlink" href="#sigma_h" title="Permanent link">&para;</a></h3>
-<p><code>--sigma_h &lt;float&gt;</code></p>
+<h3 id="sigma-h">sigma-h<a class="headerlink" href="#sigma-h" title="Permanent link">&para;</a></h3>
+<p><code>--sigma-h &lt;float&gt;</code></p>
 <p>The upper confidence threshold for the IOU tracker.
 Tracks are only considered as valid if they contain at least one detection with
-a confidence above sigma_h.</p>
+a confidence above sigma-h.</p>
 <p>This parameter is optional and defaults to <code>0.42</code>.</p>
-<h3 id="sigma_iou">sigma_iou<a class="headerlink" href="#sigma_iou" title="Permanent link">&para;</a></h3>
-<p><code>--sigma_iou &lt;float&gt;</code></p>
+<h3 id="sigma-iou">sigma-iou<a class="headerlink" href="#sigma-iou" title="Permanent link">&para;</a></h3>
+<p><code>--sigma-iou &lt;float&gt;</code></p>
 <p>Intersection-Over-Union threshold for the IOU tracker.
 Two detections in subsequent frames are considered to belong to the same track if
 their IOU value exceeds sigma_iou and this is the highest IOU of all possible
 combinations of detections.</p>
 <p>This parameter is optional and defaults to <code>0.38</code>.</p>
-<h3 id="t_min">t_min<a class="headerlink" href="#t_min" title="Permanent link">&para;</a></h3>
-<p><code>--t_min &lt;int&gt;</code></p>
+<h3 id="t-min">t-min<a class="headerlink" href="#t-min" title="Permanent link">&para;</a></h3>
+<p><code>--t-min &lt;int&gt;</code></p>
 <p>Minimum number of detections to count as a valid track.
 All tracks with less detections will be dismissed.</p>
 <p>This parameter is optional and defaults to <code>5</code>.</p>
-<h3 id="t_miss_max">t_miss_max<a class="headerlink" href="#t_miss_max" title="Permanent link">&para;</a></h3>
-<p><code>--t_miss_max &lt;int&gt;</code></p>
+<h3 id="t-miss-max">t-miss-max<a class="headerlink" href="#t-miss-max" title="Permanent link">&para;</a></h3>
+<p><code>--t-miss-max &lt;int&gt;</code></p>
 <p>Maximum number of missed detections before continuing a track.
 If more detections are missing, the track will not be continued.</p>
 <p>This parameter is optional and defaults to <code>51</code>.</p>
@@ -2598,7 +2598,7 @@ If more detections are missing, the track will not be continued.</p>
     <span class="md-icon" title="Letztes Update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="20. August 2025 21:28:47 CEST">20. August 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="17. Oktober 2025 16:14:21 CEST">17. Oktober 2025</span>
   </span>
 
     

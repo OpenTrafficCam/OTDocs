@@ -1223,27 +1223,27 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#fps_from_filename" class="md-nav__link">
+  <a href="#fps-from-filename" class="md-nav__link">
     <span class="md-ellipsis">
-      fps_from_filename
+      fps-from-filename
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#no_fps_from_filename" class="md-nav__link">
+  <a href="#no-fps-from-filename" class="md-nav__link">
     <span class="md-ellipsis">
-      no_fps_from_filename
+      no-fps-from-filename
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#input_fps" class="md-nav__link">
+  <a href="#input-fps" class="md-nav__link">
     <span class="md-ellipsis">
-      input_fps
+      input-fps
     </span>
   </a>
   
@@ -1261,7 +1261,7 @@
           <li class="md-nav__item">
   <a href="#delete-input" class="md-nav__link">
     <span class="md-ellipsis">
-      delete input
+      delete-input
     </span>
   </a>
   
@@ -2425,27 +2425,27 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#fps_from_filename" class="md-nav__link">
+  <a href="#fps-from-filename" class="md-nav__link">
     <span class="md-ellipsis">
-      fps_from_filename
+      fps-from-filename
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#no_fps_from_filename" class="md-nav__link">
+  <a href="#no-fps-from-filename" class="md-nav__link">
     <span class="md-ellipsis">
-      no_fps_from_filename
+      no-fps-from-filename
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#input_fps" class="md-nav__link">
+  <a href="#input-fps" class="md-nav__link">
     <span class="md-ellipsis">
-      input_fps
+      input-fps
     </span>
   </a>
   
@@ -2463,7 +2463,7 @@
           <li class="md-nav__item">
   <a href="#delete-input" class="md-nav__link">
     <span class="md-ellipsis">
-      delete input
+      delete-input
     </span>
   </a>
   
@@ -2496,8 +2496,8 @@
 <h1 id="convert">Convert<a class="headerlink" href="#convert" title="Permanent link">&para;</a></h1>
 <h2 id="synopsis">Synopsis<a class="headerlink" href="#synopsis" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>uv<span class="w"> </span>run<span class="w"> </span>convert.py<span class="w">  </span><span class="o">[</span>-p<span class="w"> </span>paths<span class="o">]</span><span class="w"> </span><span class="o">[</span>-c<span class="w"> </span>config<span class="o">]</span>
-<span class="w">                    </span><span class="o">[</span>--fps_from_filename<span class="o">]</span><span class="w"> </span><span class="o">[</span>--input_fps<span class="o">]</span>
-<span class="w">                    </span><span class="o">[</span>--delete_input<span class="o">]</span><span class="w"> </span><span class="o">[</span>--overwrite<span class="o">]</span>
+<span class="w">                    </span><span class="o">[</span>--fps-from-filename<span class="o">]</span><span class="w"> </span><span class="o">[</span>--input-fps<span class="o">]</span>
+<span class="w">                    </span><span class="o">[</span>--delete-input<span class="o">]</span><span class="w"> </span><span class="o">[</span>--overwrite<span class="o">]</span>
 </code></pre></div>
 <h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
 <p>In case you use raw <code>.h264</code> videos (e.g. from OTCamera), you need to convert
@@ -2531,42 +2531,42 @@ described below are used.</p>
 <p>Any parameter passed to the CLI will overwrite the respective parameter from
 the config file.</p>
 </div>
-<h3 id="fps_from_filename">fps_from_filename<a class="headerlink" href="#fps_from_filename" title="Permanent link">&para;</a></h3>
-<p><code>--fps_from_filename</code> to parse the video frame rates from the input <code>.h264</code> filenames.</p>
+<h3 id="fps-from-filename">fps-from-filename<a class="headerlink" href="#fps-from-filename" title="Permanent link">&para;</a></h3>
+<p><code>--fps-from-filename</code> to parse the video frame rates from the input <code>.h264</code> filenames.</p>
 <ul>
 <li>In this case the frame rate of each input <code>.h264</code> file has to be specified in
   the filename using the following pattern: <code>_FR&lt;fps&gt;_</code> (where <code>fps</code> is the frame rate)</li>
 <li>An example would be <code>_FR20_</code> in the following filename:
   <code>OTCamera01_FR20_2023-01-01_12-15-00.h264</code></li>
-<li>In this case, <a href="#input_fps"><code>input_fps</code></a> will be ignored.</li>
+<li>In this case, <a href="#input-fps"><code>input-fps</code></a> will be ignored.</li>
 </ul>
-<p>This parameter is used by default if <code>--no-fps_from_filename</code> and
-<code>--input_fps</code> are not specified.</p>
-<h3 id="no_fps_from_filename">no_fps_from_filename<a class="headerlink" href="#no_fps_from_filename" title="Permanent link">&para;</a></h3>
-<p>Use <code>--no-fps_from_filename</code> to prevent parsing the video frame rates from the
+<p>This parameter is used by default if <code>--no-fps-from-filename</code> and
+<code>--input-fps</code> are not specified.</p>
+<h3 id="no-fps-from-filename">no-fps-from-filename<a class="headerlink" href="#no-fps-from-filename" title="Permanent link">&para;</a></h3>
+<p>Use <code>--no-fps-from-filename</code> to prevent parsing the video frame rates from the
 input <code>.h264</code> filenames.</p>
 <ul>
-<li>In this case, an <a href="#input_fps"><code>input_fps</code></a> has to be specified.</li>
+<li>In this case, an <a href="#input-fps"><code>input-fps</code></a> has to be specified.</li>
 </ul>
-<h3 id="input_fps">input_fps<a class="headerlink" href="#input_fps" title="Permanent link">&para;</a></h3>
-<p><code>--input_fps &lt;int&gt;</code> to set the frame rate for all <code>.h264</code> files.</p>
+<h3 id="input-fps">input-fps<a class="headerlink" href="#input-fps" title="Permanent link">&para;</a></h3>
+<p><code>--input-fps &lt;int&gt;</code> to set the frame rate for all <code>.h264</code> files.</p>
 <ul>
-<li><code>input_fps</code> should be an integer value above zero.</li>
+<li><code>input-fps</code> should be an integer value above zero.</li>
 <li>E.g. if the input <code>.h264</code> have been recorded at 20 frames per second, specify this
   parameter as follows:
-  <code>--input_fps 20</code></li>
+  <code>--input-fps 20</code></li>
 </ul>
-<p>If <code>--fps_from_filename</code> is used, <code>input_fps</code> will be ignored.</p>
+<p>If <code>--fps-from-filename</code> is used, <code>input-fps</code> will be ignored.</p>
 <p>This parameter is optional and defaults to <code>20</code>.</p>
 <h3 id="overwrite">overwrite<a class="headerlink" href="#overwrite" title="Permanent link">&para;</a></h3>
 <p><code>--overwrite</code> to overwrite existing <code>.mp4</code> files.</p>
 <p><code>--no-overwrite</code> to prevent overwriting existing <code>.mp4</code> files.</p>
 <p>This parameter is optional and defaults to <code>--overwrite</code>.</p>
-<h3 id="delete-input">delete input<a class="headerlink" href="#delete-input" title="Permanent link">&para;</a></h3>
-<p><code>--delete_input</code> to delete input <code>.h264</code> files after conversion to <code>.mp4</code>
+<h3 id="delete-input">delete-input<a class="headerlink" href="#delete-input" title="Permanent link">&para;</a></h3>
+<p><code>--delete-input</code> to delete input <code>.h264</code> files after conversion to <code>.mp4</code>
 to save disk space.</p>
-<p><code>--no-delete_input</code> to keep input <code>.h264</code> files after conversion to <code>.mp4</code>.</p>
-<p>This parameter is optional and defaults to <code>--no-delete_input</code>.</p>
+<p><code>--no-delete-input</code> to keep input <code>.h264</code> files after conversion to <code>.mp4</code>.</p>
+<p>This parameter is optional and defaults to <code>--no-delete-input</code>.</p>
 
 
 
@@ -2587,7 +2587,7 @@ to save disk space.</p>
     <span class="md-icon" title="Letztes Update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="22. August 2025 16:04:48 CEST">22. August 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="17. Oktober 2025 16:14:21 CEST">17. Oktober 2025</span>
   </span>
 
     
