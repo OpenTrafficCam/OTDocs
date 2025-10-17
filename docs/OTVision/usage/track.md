@@ -4,7 +4,7 @@
 
 ```text
 uv run track.py    [-p paths] [-c config]
-                    [--sigma_l] [--sigma_h] [--sigma_iou] [--t_min] [--t_miss_max]
+                    [--sigma-l] [--sigma-h] [--sigma-iou] [--t-min] [--t-miss-max]
                     [--overwrite]
 ```
 
@@ -51,28 +51,28 @@ described below are used.
 Any parameter passed to the CLI will overwrite the respective parameter from
 the config file.
 
-### sigma_l
+### sigma-l
 
-`--sigma_l <float>`
+`--sigma-l <float>`
 
 The lower confidence threshold for the IOU tracker.
-Detections with confidences below `sigma_l` are not considered for tracking at all.
+Detections with confidences below `sigma-l` are not considered for tracking at all.
 
 This parameter is optional and defaults to `0.27`.
 
-### sigma_h
+### sigma-h
 
-`--sigma_h <float>`
+`--sigma-h <float>`
 
 The upper confidence threshold for the IOU tracker.
 Tracks are only considered as valid if they contain at least one detection with
-a confidence above sigma_h.
+a confidence above sigma-h.
 
 This parameter is optional and defaults to `0.42`.
 
-### sigma_iou
+### sigma-iou
 
-`--sigma_iou <float>`
+`--sigma-iou <float>`
 
 Intersection-Over-Union threshold for the IOU tracker.
 Two detections in subsequent frames are considered to belong to the same track if
@@ -81,18 +81,18 @@ combinations of detections.
 
 This parameter is optional and defaults to `0.38`.
 
-### t_min
+### t-min
 
-`--t_min <int>`
+`--t-min <int>`
 
 Minimum number of detections to count as a valid track.
 All tracks with less detections will be dismissed.
 
 This parameter is optional and defaults to `5`.
 
-### t_miss_max
+### t-miss-max
 
-`--t_miss_max <int>`
+`--t-miss-max <int>`
 
 Maximum number of missed detections before continuing a track.
 If more detections are missing, the track will not be continued.
