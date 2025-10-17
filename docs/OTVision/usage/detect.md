@@ -5,7 +5,7 @@
 ```text
 uv run detect.py   [-p paths] [--expected-duration] [-c config]
                     [-w weights] [--conf] [--iou] [--half] [--force]
-                    [--overwrite] [--detect_start] [--detect_end]
+                    [--overwrite] [--detect-start] [--detect-end]
 ```
 
 ## Description
