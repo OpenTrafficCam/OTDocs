@@ -6,35 +6,28 @@
 
 ## Key features
 
-* Configuration of traffic analyses using sections and flows
-* Generation of traffic counts and flow matrices
-* Export of event lists for detailed analysis
-* Visualization of tracks, events, and traffic data
-* Various visualization layers and filters
-* Runs on Windows, macOS, and Linux
+- Configuration of traffic analyses using sections and flows
+- Generation of traffic counts and flow matrices
+- Export of event lists for detailed analysis
+- Visualization of tracks, events, and traffic data
+- Various visualization layers and filters
+- Runs on Windows, macOS, and Linux
 
 ## Domain Elements
 
 OTAnalytics works with the following key concepts:
 
-* **Tracks**: Trajectories of road users, composed of a series of detections
-* **Track Points**: Representative points from each bounding box, forming the trajectory
-* **Sections**: Digital equivalents of physical detectors for traffic measurement
-* **Events**: Generated when a track's trajectory intersects a section
-* **Flows**: Traffic flows defined by a starting section and an ending section
-* **Track Assignments**: Assignment of tracks to flows based on events
-
-## Hardware Requirements
-
-OTAnalytics runs on most modern desktop PCs and laptops (e.g., with an i5 processor and 8 GB of RAM).
-
-* More RAM allows you to load more tracks of road users simultaneously
-* A faster processor improves the runtime of analyses and makes the user interface more responsive
+- **Tracks**: Trajectories of road users, composed of a series of detections
+- **Track Points**: Representative points from each bounding box, forming the trajectory
+- **Sections**: Digital equivalents of physical detectors for traffic measurement
+- **Events**: Generated when a track's trajectory intersects a section
+- **Flows**: Traffic flows defined by a starting section and an ending section
+- **Track Assignments**: Assignment of tracks to flows based on events
 
 ## Content of documentation
 
-* [Installation](installation.md): How to install OTAnalytics on different operating systems
-* [Usage UI](usage-ui.md): Detailed guide on how to use the graphical user interface
+- [Installation](installation.md): How to install OTAnalytics on different operating systems
+- [Usage UI](usage-ui.md): Detailed guide on how to use the graphical user interface
 
 Most of the code is developed by the OpenTrafficCam contributors
 (based on Python libraries like [NumPy](https://numpy.org/),

@@ -6,7 +6,8 @@ hide:
 ---
 
 <!-- markdownlint-disable-next-line MD025 -->
-# OpenTrafficCam LIVE Hoyerswerda
+
+## OpenTrafficCam LIVE Hoyerswerda
 
 ![OpenTrafficCam Live Hoyerswerda](assets/img/reallabor_hoy/OpenTrafficCam_LIVE_Hoy_Fullscreen.svg)
 
@@ -49,8 +50,8 @@ OpenTrafficCam LIVE soll als offenes System Transparenz schaffen, digitale Souve
 
 ### Technische Umsetzung
 
-Der Straßenverkehr wird mit **[OTCamera](../OTCamera)** aufgezeichnet und die Videostreams werden per **Mobilfunk (LTE/5G)** an das Rechenzentrum der **TU Dresden** übertragen.
-Dort erfolgen in Echtzeit mit **[OTVision](../OTVision)** KI-basierte Detektion und Tracking sowie mit **[OTAnalytics](../OTAnalytics)** die Bestimmung von Verkehrskennwerten.
+Der Straßenverkehr wird mit **[OTCamera](OTCamera/index.md)** aufgezeichnet und die Videostreams werden per **Mobilfunk (LTE/5G)** an das Rechenzentrum der **TU Dresden** übertragen.
+Dort erfolgen in Echtzeit mit **[OTVision](OTVision/index.md)** KI-basierte Detektion und Tracking sowie mit **[OTAnalytics](OTAnalytics/index.md)** die Bestimmung von Verkehrskennwerten.
 Die ermittelten Informationen werden per **Web-Dashboard** visualisiert und stehen für **Forschung, Entwicklung und lokale Verkehrsplanung** zur Verfügung.
 
 **Perspektivisch** sollen die Live-Informationen für Forschung und Entwicklung im Bereich **intelligentes Verkehrsmanagement** verwendet werden (zum Beispiel dynamische LSA-Steuerung).
@@ -155,46 +156,46 @@ Das Reallabor umfasst zwei Untersuchungsbereiche in der Neustadt Hoyerswerdas mi
 
 - **Fördergeber**
 
-    ---
+  ***
 
-    [Bundesministerium für Wirtschaft und Energie](https://www.bundeswirtschaftsministerium.de/Navigation/DE/Home/home.html)
+  [Bundesministerium für Wirtschaft und Energie](https://www.bundeswirtschaftsministerium.de/Navigation/DE/Home/home.html)
 
-    [Land Sachsen](https://www.sachsen.de/)
+  [Land Sachsen](https://www.sachsen.de/)
 
-    ---
+  ***
 
-    ![Logos Bundesministerium für Wirtschaft und Land Sachsen](assets/img/reallabor_hoy/Logos_BMWE_Sachsen.svg){ width="300" }
+  ![Logos Bundesministerium für Wirtschaft und Land Sachsen](assets/img/reallabor_hoy/Logos_BMWE_Sachsen.svg){ width="300" }
 
 - **Fördernehmer und Auftraggeber**
 
-    ---
+  ***
 
-    [TU Dresden](https://tu-dresden.de)
+  [TU Dresden](https://tu-dresden.de)
 
-    [Professur für Mobilitätssystemplanung](https://tu-dresden.de/bu/verkehr/ivs/msp)
+  [Professur für Mobilitätssystemplanung](https://tu-dresden.de/bu/verkehr/ivs/msp)
 
-    ---
+  ***
 
-    ![Logo TU Dresden](assets/img/reallabor_hoy/Logos_TUD_und_MSP.svg){ width="300" }
+  ![Logo TU Dresden](assets/img/reallabor_hoy/Logos_TUD_und_MSP.svg){ width="300" }
 
 - **Auftragnehmer**
 
-    ---
+  ***
 
-    [platomo GmbH](https://platomo.de/)
+  [platomo GmbH](https://platomo.de/)
 
-    ---
+  ***
 
-    ![Logo platomo GmbH](assets/img/platomo_logo_black.svg){ width="200" }
+  ![Logo platomo GmbH](assets/img/platomo_logo_black.svg){ width="200" }
 
 - **Kommunaler Partner**
 
-    ---
+  ***
 
-    [Stadt Hoyerswerda](https://www.hoyerswerda.de/)
+  [Stadt Hoyerswerda](https://www.hoyerswerda.de/)
 
-    ---
+  ***
 
-    ![Logo Hoyerswerda](assets/img/reallabor_hoy/hoyerswerda_logo.png){ width="200" }
+  ![Logo Hoyerswerda](assets/img/reallabor_hoy/hoyerswerda_logo.png){ width="200" }
 
 </div>
