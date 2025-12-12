@@ -101,6 +101,8 @@ nav:
           - contribute/vscode.md
           - contribute/documentation.md
           # - contribute/otcamera.md
+  - Blog:
+      - blog/index.md
   - Team:
       - team.md
 extra_css:
@@ -170,6 +172,7 @@ watch:
 
 plugins:
   - search
+  - blog
   - git-revision-date-localized:
       fallback_to_build_date: true
       type: date
