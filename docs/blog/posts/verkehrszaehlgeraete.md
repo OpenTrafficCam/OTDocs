@@ -1,9 +1,9 @@
 ---
 draft: false
 date: 2025-12-08
-title: Verkehrszählgeräte
+title: Verkehrszählgerät Welches für eine erfolgreiche Verkehrsplanung kaufen?
 site_name: Verkehrszählgerät für Kommunen und Planungsbüros
-slug: Verkehrszählgeräte
+slug: verkehrszaehlgeraete
 site_description: Sie möchten ein Verkehrszählgerät kaufen? ✔️ Welche Messgeräte zur Verkehrszählung gibt es? Wichtige Kriterien für Ihre Kaufentscheidung.
 categories:
   - Technologie
@@ -13,7 +13,6 @@ authors:
 
 ![Verkehrsströme](/assets/img/blog_images/header_image_blog.jpeg)
 
-# Verkehrszählgerät: Welches für eine erfolgreiche Verkehrsplanung kaufen?
 
 Ein Verkehrszählgerät liefert die essenzielle Datengrundlage für eine funktionierende Verkehrs-, Raum- und Stadtplanung. Nur wenn belastbare Informationen über Verkehrsströme, Fahrzeugarten und Nutzungsverhalten vorliegen, können Kommunen und Planungsbüros fundierte Entscheidungen treffen.
 
@@ -37,7 +36,6 @@ Geräte zur Verkehrszählung liefern gleich für mehrere Anwendungsfelder belast
 - Grundlage für Forschung & Modellierung: Die mit dem Verkehrszählgerät gewonnenen Daten bilden die Basis für Verkehrsmodelle, Simulationen und Prognosen – und damit für eine nachhaltige Mobilitätsplanung.
 
 ## Welche Arten von Verkehrszählgeräten gibt es? 
-
 ![OTCamera im Einsatz](/assets/img/blog_images/otcamera_in_use.jpg)
 
 In der Praxis taucht für automatische Messgeräte häufig auch der Begriff „Verkehrszähler“ auf. Fachlich korrekt handelt
@@ -107,6 +105,7 @@ Unabhängig davon, ob die Auswertung direkt in der Kamera (edge) oder über eine
 beide Varianten können datenschutzkonform umgesetzt werden. Und gleichzeitig gilt: Bei beiden Ansätzen können erhebliche
 Datenschutzrisiken entstehen, wenn Prozesse oder Konfigurationen nicht sauber abgestimmt sind.
 
+<!-- prettier-ignore-start -->
 !!! info "Datenschutz & Auswertung"
     Genau hier setzt platomo an: Gemeinsam mit spezialisierten Fachkanzleien prüfen wir die datenschutzrechtlichen
     Anforderungen und geben Kommunen sowie Planungsbüros klare, rechtssichere Leitlinien an die Hand – sowohl für den
@@ -114,6 +113,7 @@ Datenschutzrisiken entstehen, wenn Prozesse oder Konfigurationen nicht sauber ab
     aufgenommenen Materials. Alternativ übernehmen wir die datenschutzkonforme Auswertung auch vollständig für Sie –
     inklusive [KI-basierter Videoverarbeitung](https://opentrafficcam.org/OTVision/) und [verkehrsanalytischer
     Auswertung](https://opentrafficcam.org/OTAnalytics/).
+<!-- prettier-ignore-end -->
 
 ### Dauer, Ort und Zweck der Messung
 
