@@ -172,7 +172,12 @@ watch:
 
 plugins:
   - search
-  - blog
+  - blog:
+      archive: false
+      post_url_format: "{slug}"
+      post_url_max_categories: 2
+      pagination_per_page: 5
+      pagination_if_single_page: true
   - git-revision-date-localized:
       fallback_to_build_date: true
       type: date
