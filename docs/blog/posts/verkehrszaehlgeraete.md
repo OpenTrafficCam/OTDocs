@@ -34,7 +34,8 @@ Geräte zur Verkehrszählung liefern gleich für mehrere Anwendungsfelder belast
 - Maßnahmenbewertung: Daten aus Verkehrszählgeräten ermöglichen die Bewertung baulicher oder verkehrslenkender Maßnahmen und Verkehrsversuche. So lassen sich zukünftige Projekte auf Basis realer Daten verbessern.
 - Grundlage für Forschung & Modellierung: Die mit dem Verkehrszählgerät gewonnenen Daten bilden die Basis für Verkehrsmodelle, Simulationen und Prognosen – und damit für eine nachhaltige Mobilitätsplanung.
 
-## Welche Arten von Verkehrszählgeräten gibt es? 
+## Welche Arten von Verkehrszählgeräten gibt es?
+
 ![OTCamera im Einsatz](/assets/img/blog_images/otcamera_in_use.jpg)
 
 In der Praxis taucht für automatische Messgeräte häufig auch der Begriff „Verkehrszähler“ auf. Fachlich korrekt handelt
