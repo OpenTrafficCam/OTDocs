@@ -13,7 +13,6 @@ authors:
 
 ![Verkehrsströme](/assets/img/blog_images/header_image_blog.jpeg)
 
-
 Ein Verkehrszählgerät liefert die essenzielle Datengrundlage für eine funktionierende Verkehrs-, Raum- und Stadtplanung. Nur wenn belastbare Informationen über Verkehrsströme, Fahrzeugarten und Nutzungsverhalten vorliegen, können Kommunen und Planungsbüros fundierte Entscheidungen treffen.
 
 Auch platomo stand vor einigen Jahren vor der Herausforderung, die geeignete Technik für Verkehrszählungen zu finden. Die Erkenntnis: Viele Systeme sind entweder unflexibel, teuer oder datenschutzrechtlich problematisch. Aus dieser Erfahrung heraus entstand OpenTrafficCam – mit dem Ziel, Verkehrsdaten einfacher, präziser, rechtskonform und mit dem neusten Stand der Technik zu erfassen.
@@ -36,6 +35,7 @@ Geräte zur Verkehrszählung liefern gleich für mehrere Anwendungsfelder belast
 - Grundlage für Forschung & Modellierung: Die mit dem Verkehrszählgerät gewonnenen Daten bilden die Basis für Verkehrsmodelle, Simulationen und Prognosen – und damit für eine nachhaltige Mobilitätsplanung.
 
 ## Welche Arten von Verkehrszählgeräten gibt es? 
+
 ![OTCamera im Einsatz](/assets/img/blog_images/otcamera_in_use.jpg)
 
 In der Praxis taucht für automatische Messgeräte häufig auch der Begriff „Verkehrszähler“ auf. Fachlich korrekt handelt
