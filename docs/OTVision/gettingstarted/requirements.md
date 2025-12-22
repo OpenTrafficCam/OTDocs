@@ -40,7 +40,7 @@ information on how to install `uv` on your system.
 
 ### ffmpeg
 
-If you want to use videos recorded by [OTCamera](/OTCamera) with OTVision,
+If you want to use videos recorded by [OTCamera](../../OTCamera/index.md) with OTVision,
 you need to convert the videos to .mp4 files first.
 For the conversion, we use the Open Source software ffmpeg.
 
