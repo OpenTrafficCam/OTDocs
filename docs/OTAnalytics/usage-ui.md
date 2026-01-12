@@ -44,7 +44,7 @@ Tracks that intersect both sections of a flow in the defined order can be assign
 To achieve this, the events belonging to a track are sorted chronologically based on their time of occurrence.
 The assignment of a track to a flow is called **Track Assignment**.
 
-!!! info "Assignment of trajectories to flows"
+??? info "Assignment of trajectories to flows"
 
     A trajectory can be assigned to at most one flow. 
     To be assigned to a flow, a trajectory must cross the start section and the end section of the flow in the correct order (one Section-Enter event for the start section and one for the end section).
