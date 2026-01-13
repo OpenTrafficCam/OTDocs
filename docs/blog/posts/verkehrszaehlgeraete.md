@@ -11,7 +11,7 @@ authors:
   - buckse
 ---
 
-![Verkehrsströme](/assets/img/blog_images/header_image_blog.jpeg)
+![Header](/assets/img/blog_images/header_image_verkehrsstroeme.webp)
 
 Ein Verkehrszählgerät liefert die essenzielle Datengrundlage für eine funktionierende Verkehrs-, Raum- und Stadtplanung. Nur wenn belastbare Informationen über Verkehrsströme, Fahrzeugarten und Nutzungsverhalten vorliegen, können Kommunen und Planungsbüros fundierte Entscheidungen treffen.
 
@@ -36,7 +36,7 @@ Geräte zur Verkehrszählung liefern gleich für mehrere Anwendungsfelder belast
 
 ## Welche Arten von Verkehrszählgeräten gibt es?
 
-![OTCamera im Einsatz](/assets/img/blog_images/otcamera_in_use.jpg)
+![OTCamera im Einsatz](/assets/img/blog_images/otcamera_in_use.webp)
 
 In der Praxis taucht für automatische Messgeräte häufig auch der Begriff „Verkehrszähler“ auf. Fachlich korrekt handelt
 es sich jedoch um Verkehrszählgeräte oder automatische Zählsysteme. Die folgenden Technologien zählen zu den gängigen
@@ -84,7 +84,11 @@ Varianten. Sie unterscheiden sich in Erfassungsprinzip, Genauigkeit, Flexibilit�
   oft Datenschutzprobleme, an die man nicht auf Anhieb denkt. Die Datenverarbeitung ist außerdem sehr anspruchsvoll. In
   der Praxis sind die Laserscanner daher wenig relevant.
 
+  
+
 ## Verkehrszählgerät kaufen: Worauf Kommunen und Planungsbüros achten sollten
+
+![OTCamera im Einsatz](/assets/img/blog_images/verkehrsstroeme.webp)
 
 Bevor Sie ein Verkehrszählgerät kaufen, sollten Sie sich darüber klar werden, welche Art von Daten Sie benötigen.
 Einige Systeme liefern lediglich Zähldaten, andere ermöglichen durch Videoaufzeichnung und automatisierte Auswertung
