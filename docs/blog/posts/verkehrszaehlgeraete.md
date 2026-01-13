@@ -84,8 +84,6 @@ Varianten. Sie unterscheiden sich in Erfassungsprinzip, Genauigkeit, Flexibilit�
   oft Datenschutzprobleme, an die man nicht auf Anhieb denkt. Die Datenverarbeitung ist außerdem sehr anspruchsvoll. In
   der Praxis sind die Laserscanner daher wenig relevant.
 
-  
-
 ## Verkehrszählgerät kaufen: Worauf Kommunen und Planungsbüros achten sollten
 
 ![OTCamera im Einsatz](/assets/img/blog_images/verkehrsstroeme.webp)
