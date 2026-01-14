@@ -46,9 +46,9 @@ The assignment of a track to a flow is called **Track Assignment**.
 
 ??? info "Assignment of trajectories to flows"
 
-    A trajectory can be assigned to at most one flow. 
+    A trajectory can be assigned to at most one flow.
     To be assigned to a flow, a trajectory must cross the start section and the end section of the flow in the correct order (one Section-Enter event for the start section and one for the end section).
-    
+
     ### Cases
 
     1. A trajectory crosses exactly one start section and one end section (2 Section-Enter events)
@@ -63,32 +63,32 @@ The assignment of a track to a flow is called **Track Assignment**.
 
     - Flow A: Start = S1, End = E1
     - Flow B: Start = S2, End = E2
-    
+
     #### Case 1: Exactly one start and one end intersection
-    
+
     Trajectory T100 generates the following events:
-    
+
     |     Time | Event                          |
     | -------: | ------------------------------ |
     | 10:00:05 | Enter **S1** (Start of Flow A) |
     | 10:02:20 | Enter **E1** (End of Flow A)   |
 
     T100 crossed S1 → E1 in the correct order. There are exactly two relevant Section-Enter events (start + end). T100 is assigned to Flow A.
-    
+
     #### Case 2: More than two relevant start/end events
-    
+
     |     Time | Event                          |
     | -------: | ------------------------------ |
     | 11:00:10 | Enter **S1** (Start of Flow A) |
     | 11:00:30 | Enter **S2** (Start of Flow B) |
     | 11:01:00 | Enter **E1** (End of Flow A)   |
     | 11:06:00 | Enter **E2** (End of Flow B)   |
-    
+
     Candidate flows (start → end in correct order)
 
     - Flow A: S1 (11:00:10) → E1 (11:01:00) ⇒ Duration = 50 s
     - Flow B: S2 (11:00:30) → E2 (11:06:00) ⇒ Duration = 5 min 30 s
-    
+
     Assign the trajectory to the flow whose start and end Section-Enter events are furthest apart in time. T200 is assigned to Flow B, because 5:30 > 0:50.
 
 ## User Interface
