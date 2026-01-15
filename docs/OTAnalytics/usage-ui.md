@@ -118,8 +118,8 @@ The assignment of a track to a flow is called **Track Assignment**.
 
 ## User Interface
 
-The user interface is divided into four main areas: the **Configuration Bar**, \*
-\*Workspace**, **Visualization Layers**, and **Visualization Filters\*\*.
+The user interface is divided into four main areas: the **Configuration Bar**,
+**Workspace**, **Visualization Layers**, and **Visualization Filters**.
 
 The **Configuration Bar** consists of four parts:
 
