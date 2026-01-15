@@ -148,7 +148,7 @@ Kosten:
 
 ## Verkehrszählgerät kaufen: Worauf Kommunen und Planungsbüros achten sollten
 
-![OTCamera im Einsatz](/assets/img/blog_images/verkehrsstroeme.webp)
+![Verkehrstrajektorien](/assets/img/blog_images/verkehrsstroeme.webp)
 
 Bevor Sie ein Verkehrszählgerät kaufen, sollten Sie sich darüber klar werden, welche Art
 von Daten Sie benötigen.
