@@ -592,7 +592,7 @@ traffic counts.
 The `.csv` file includes the following values:
 
 | Value                 | Datatype | Description                                                           | Example             |
-|-----------------------|----------|-----------------------------------------------------------------------|---------------------|
+| --------------------- | -------- | --------------------------------------------------------------------- | ------------------- |
 | start time            | string   | Timestamp indicating the start of the interval                        | 2023-05-24 11:45:00 |
 | start occurrence date | string   | Date at the start of the interval                                     | 2023-05-24          |
 | start occurrence time | string   | Time at the start of the interval                                     | 11:45:00            |
@@ -624,7 +624,7 @@ the following formats:
 The export includes the following values for each event:
 
 | Value           | Datatype          | Description                                                                                                 | Example                                       |
-|-----------------|-------------------|-------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
+| --------------- | ----------------- | ----------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
 | road_user_id    | string            | Unique identifier for the track / road user                                                                 | 5f8cd584-f490-4fec-afd0-b55ebf39ab4e#0#102341 |
 | road_user_type  | string            | Track classification of the road user (e.g., car, pedestrian)                                               | car                                           |
 | hostname        | string            | Name of the camera or device capturing the data                                                             | OTCamera19                                    |
@@ -652,7 +652,7 @@ Button.
 The tracks assigned to flows are exported into a `.csv` file with the following format:
 
 | Value                 | Datatype  | Description                                                              | Example                                       |
-|-----------------------|-----------|--------------------------------------------------------------------------|-----------------------------------------------|
+| --------------------- | --------- | ------------------------------------------------------------------------ | --------------------------------------------- |
 | flow_id               | int       | Unique identifier for the flow                                           | 16                                            |
 | flow_name             | string    | Name of the flow                                                         | north --> east                                |
 | road_user_id          | string    | Unique identifier for the track / road user                              | 5f8cd584-f490-4fec-afd0-b55ebf39ab4e#0#102708 |
