@@ -101,6 +101,8 @@ nav:
           - contribute/vscode.md
           - contribute/documentation.md
           # - contribute/otcamera.md
+  - Blog:
+      - blog/index.md
   - Team:
       - team.md
 extra_css:
@@ -170,6 +172,11 @@ watch:
 
 plugins:
   - search
+  - blog:
+      archive: false
+      post_url_format: "{slug}"
+      pagination_per_page: 5
+      pagination_if_single_page: true
   - git-revision-date-localized:
       fallback_to_build_date: true
       type: date
