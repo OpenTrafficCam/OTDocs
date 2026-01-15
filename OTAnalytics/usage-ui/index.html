@@ -1583,6 +1583,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Terminology">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cases
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -3108,6 +3136,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Terminology">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cases
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -3414,21 +3470,36 @@
 
 
 <h1 id="usage-gui">Usage GUI<a class="headerlink" href="#usage-gui" title="Permanent link">&para;</a></h1>
-<p>After processing videos with OTVision´s tracking module (<a href="../../OTVision/usage/track">OTVision track</a>), you can use OTAnalytics for analysing traffic data.
-The OTAnalytics <strong>Graphical User Interface (GUI)</strong> enables you to configure analyses, extract valuable insights from your data, and export the results efficiently.</p>
+<p>After processing videos with OTVision´s tracking
+module (<a href="../../OTVision/usage/track">OTVision track</a>), you can use OTAnalytics for
+analysing traffic data.
+The OTAnalytics <strong>Graphical User Interface (GUI)</strong> enables you to configure analyses,
+extract valuable insights from your data, and export the results efficiently.</p>
 <h2 id="terminology">Terminology<a class="headerlink" href="#terminology" title="Permanent link">&para;</a></h2>
-<p>Vehicles and pedestrians are detected in the individual frames of the video using <a href="../../OTVision/usage/detect">detect in OTVision</a>.
-In a single frame of a video, each detected object (<strong>Detection</strong>) is represented by a <strong>Bounding Box</strong>,
- which is the rectangular area surrounding the detected vehicle or pedestrian together with its classification (e.g., car, bike, pedestrian).</p>
-<p>The <a href="../../OTVision/usage/track">tracker in OTVision</a> links consecutive detections, or bounding boxes, to form the <strong>Track</strong> of a <strong>Road User</strong>.</p>
-<p>A track is therefore composed of a series of detections, each with its own bounding box and classification.
+<p>Vehicles and pedestrians are detected in the individual frames of the video
+using <a href="../../OTVision/usage/detect">detect in OTVision</a>.
+In a single frame of a video, each detected object (<strong>Detection</strong>) is represented by
+a *
+*Bounding Box**,
+which is the rectangular area surrounding the detected vehicle or pedestrian together
+with its classification (e.g., car, bike, pedestrian).</p>
+<p>The <a href="../../OTVision/usage/track">tracker in OTVision</a> links consecutive detections, or
+bounding boxes, to form the <strong>Track</strong> of a <strong>Road User</strong>.</p>
+<p>A track is therefore composed of a series of detections, each with its own bounding box
+and classification.
 Ideally, all detections within a track share the same classification.
-However, in practice, a track may include detections with varying classifications (e.g., truck and truck_with_trailer).
-This typically occurs when a road user is poorly visible in some of the frames (far away, partially obscured).
-OTAnalytics assigns a single <strong>Track Classification</strong> to each track, as a road user can have only one classification in the real world (e.g., a vehicle is either a car or a bus).</p>
-<p>A track's trajectory is represented by a representative point from each bounding box associated with the track.
+However, in practice, a track may include detections with varying classifications (e.g.,
+truck and truck_with_trailer).
+This typically occurs when a road user is poorly visible in some of the frames (far
+away, partially obscured).
+OTAnalytics assigns a single <strong>Track Classification</strong> to each track, as a road user can
+have only one classification in the real world (e.g., a vehicle is either a car or a
+bus).</p>
+<p>A track's trajectory is represented by a representative point from each bounding box
+associated with the track.
 This point is called the <strong>Track Point</strong>.
-The trajectory is formed by connecting the track points collected across successive frames.</p>
+The trajectory is formed by connecting the track points collected across successive
+frames.</p>
 <div class="admonition info inline end">
 <p class="admonition-title">Offset examples</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">0.1, 0.1</label><label for="__tabbed_1_2">0.8, 0.3</label></div>
@@ -3442,42 +3513,133 @@ The trajectory is formed by connecting the track points collected across success
 </div>
 </div>
 </div>
-<p>The position of the track point within the bounding box can be configured using the <strong>Offset</strong> attribute.
-This offset is defined separately for the x- and y-axes, with values ranging from <code>0</code> to <code>1</code>.
+<p>The position of the track point within the bounding box can be configured using the *
+*Offset** attribute.
+This offset is defined separately for the x- and y-axes, with values ranging from <code>0</code> to
+<code>1</code>.
 Origin <code>(0, 0)</code> is the top left-hand corner of the bounding box.
-These values determine the relative position of the track point within the bounding box, providing flexibility in track point placement.</p>
+These values determine the relative position of the track point within the bounding box,
+providing flexibility in track point placement.</p>
 <p>To analyze the tracks, OTAnalytics provides <strong>Sections</strong> and <strong>Flows</strong>.
-Imagine sections as the digital equivalent of physical detectors used for traffic measurement, sometimes, also called virtual inductive loops (not to be confused with the detection of bounding boxes in OTVision).
+Imagine sections as the digital equivalent of physical detectors used for traffic
+measurement, sometimes, also called virtual inductive loops (not to be confused with the
+detection of bounding boxes in OTVision).
 Each time a track's trajectory intersects a section, an <strong>Event</strong> is generated.
-Each event contains detailed information, including the track's identifier, its position in the frame, and the timestamp of the intersection.</p>
+Each event contains detailed information, including the track's identifier, its position
+in the frame, and the timestamp of the intersection.</p>
 <p><strong>Flows</strong> define traffic flows to be analyzed.
-As explained in <a href="#flows">Flows</a>, a flow is defined by two sections: a starting section and an ending section.
-Tracks that intersect both sections of a flow in the defined order can be assigned to that flow.
-To achieve this, the events belonging to a track are sorted chronologically based on their time of occurrence.
+As explained in <a href="#flows">Flows</a>, a flow is defined by two sections: a starting section
+and an ending section.
+Tracks that intersect both sections of a flow in the defined order can be assigned to
+that flow.
+To achieve this, the events belonging to a track are sorted chronologically based on
+their time of occurrence.
 The assignment of a track to a flow is called <strong>Track Assignment</strong>.</p>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>The pair of events with the longest time interval between them is used to assign the track to the flow corresponding to the sections of both events.</p>
-</div>
+<details class="info">
+<summary>Assignment of trajectories to flows</summary>
+<p>A trajectory can be assigned to at most one flow.
+To be assigned to a flow, a trajectory must cross the start section and the end section of the flow in the correct order (one Section-Enter event for the start section and one for the end section).</p>
+<h3 id="cases">Cases<a class="headerlink" href="#cases" title="Permanent link">&para;</a></h3>
+<ol>
+<li>A trajectory crosses exactly one start section and one end section (2 Section-Enter events)<ul>
+<li>The trajectory is assigned to this flow</li>
+</ul>
+</li>
+<li>A trajectory crosses more than two start and end sections (3 or more Section-Enter events)<ul>
+<li>The trajectory is assigned to the flow whose sections were traversed for the longest duration (the Section-Enter events are furthest apart in time)</li>
+</ul>
+</li>
+</ol>
+<h3 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h3>
+<p>Sections: S1, S2, E1, E2</p>
+<p>Flows:</p>
+<ul>
+<li>Flow A: Start = S1, End = E1</li>
+<li>Flow B: Start = S2, End = E2</li>
+</ul>
+<h4 id="case-1-exactly-one-start-and-one-end-intersection">Case 1: Exactly one start and one end intersection<a class="headerlink" href="#case-1-exactly-one-start-and-one-end-intersection" title="Permanent link">&para;</a></h4>
+<p>Trajectory T100 generates the following events:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Time</th>
+<th>Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">10:00:05</td>
+<td>Enter <strong>S1</strong> (Start of Flow A)</td>
+</tr>
+<tr>
+<td style="text-align: right;">10:02:20</td>
+<td>Enter <strong>E1</strong> (End of Flow A)</td>
+</tr>
+</tbody>
+</table>
+<p>T100 crossed S1 → E1 in the correct order. There are exactly two relevant Section-Enter events (start + end). T100 is assigned to Flow A.</p>
+<h4 id="case-2-more-than-two-relevant-startend-events">Case 2: More than two relevant start/end events<a class="headerlink" href="#case-2-more-than-two-relevant-startend-events" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Time</th>
+<th>Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">11:00:10</td>
+<td>Enter <strong>S1</strong> (Start of Flow A)</td>
+</tr>
+<tr>
+<td style="text-align: right;">11:00:30</td>
+<td>Enter <strong>S2</strong> (Start of Flow B)</td>
+</tr>
+<tr>
+<td style="text-align: right;">11:01:00</td>
+<td>Enter <strong>E1</strong> (End of Flow A)</td>
+</tr>
+<tr>
+<td style="text-align: right;">11:06:00</td>
+<td>Enter <strong>E2</strong> (End of Flow B)</td>
+</tr>
+</tbody>
+</table>
+<p>Candidate flows (start → end in correct order)</p>
+<ul>
+<li>Flow A: S1 (11:00:10) → E1 (11:01:00) ⇒ Duration = 50 s</li>
+<li>Flow B: S2 (11:00:30) → E2 (11:06:00) ⇒ Duration = 5 min 30 s</li>
+</ul>
+<p>Assign the trajectory to the flow whose start and end Section-Enter events are furthest apart in time. T200 is assigned to Flow B, because 5:30 &gt; 0:50.</p>
+</details>
 <h2 id="user-interface">User Interface<a class="headerlink" href="#user-interface" title="Permanent link">&para;</a></h2>
-<p>The user interface is divided into four main areas: the <strong>Configuration Bar</strong>, <strong>Workspace</strong>, <strong>Visualization Layers</strong>, and <strong>Visualization Filters</strong>.</p>
+<p>The user interface is divided into four main areas: the <strong>Configuration Bar</strong>,
+<strong>Workspace</strong>, <strong>Visualization Layers</strong>, and <strong>Visualization Filters</strong>.</p>
 <p>The <strong>Configuration Bar</strong> consists of four parts:</p>
 <ol>
 <li><strong>Project</strong>: Manage project metadata and save or load <code>.otconfig</code> or <code>.otflow</code> files.</li>
-<li><strong>Tracks/Video</strong>: Add input files, where only track files can be added, while video files can be both added and removed. An overview of loaded video files is also displayed.</li>
-<li><strong>Sections/Flows</strong>: Create, edit, and delete sections and flows. The flow names are shown with numbers indicating the number of assigned tracks per flow.</li>
+<li><strong>Tracks/Video</strong>: Add input files, where only track files can be added, while video
+   files can be both added and removed. An overview of loaded video files is also
+   displayed.</li>
+<li><strong>Sections/Flows</strong>: Create, edit, and delete sections and flows. The flow names are
+   shown with numbers indicating the number of assigned tracks per flow.</li>
 <li><strong>Analysis</strong>: Export of analyzed traffic data.</li>
 </ol>
 <p>The <strong>Workspace</strong> consists of the <strong>Canvas</strong> and the <strong>Track Statistics</strong>.
 The canvas displays the tracks and video frames.
 It is also where the geometry of sections can be created or edited.
-Below the workspace, the <strong>Track Statistics</strong> provides key statistics about the displayed tracks.</p>
-<p>By choosing the <strong>Visualization Layers</strong>, that are located right to the workspace, one can customize <em>how</em> tracks are displayed.</p>
-<p>With the <strong>Visualization Filters</strong> located below the workspace, one can adjust <em>which</em> tracks are displayed.</p>
+Below the workspace, the <strong>Track Statistics</strong> provides key statistics about the
+displayed tracks.</p>
+<p>By choosing the <strong>Visualization Layers</strong>, that are located right to the workspace, one
+can customize <em>how</em> tracks are displayed.</p>
+<p>With the <strong>Visualization Filters</strong> located below the workspace, one can adjust <em>which</em>
+tracks are displayed.</p>
 <p><img alt="User Interface of OTAnalytics" src="user-interface.png" /></p>
 <h2 id="setup-the-project">Setup the project<a class="headerlink" href="#setup-the-project" title="Permanent link">&para;</a></h2>
-<p>To make the handling and reproducibility of analyses easier, all related data is organized within a project.
-Setting up a project ensures that all necessary information, such as videos, tracks, and configurations, is stored in one centralized place.
+<p>To make the handling and reproducibility of analyses easier, all related data is
+organized within a project.
+Setting up a project ensures that all necessary information, such as videos, tracks, and
+configurations, is stored in one centralized place.
 This simplifies workflows and maintains consistency across analyses.</p>
 <h3 id="enter-project-information">Enter project information<a class="headerlink" href="#enter-project-information" title="Permanent link">&para;</a></h3>
 <p>The project must first be named.
@@ -3486,8 +3648,10 @@ The project name is entered in the corresponding Name field.</p>
 <p class="admonition-title">Info</p>
 <p>It is recommended to choose a unique name (e.g. name of the measuring point, camera number; or a combination of several unique details).</p>
 </div>
-<p>The start time (date and time) of the first video must then be entered in the corresponding Start date fields.
-It is possible to enter in ISO 8601 format (YYYY-MM-DD) or German date format (DD.MM.YYYY).</p>
+<p>The start time (date and time) of the first video must then be entered in the
+corresponding Start date fields.
+It is possible to enter in ISO 8601 format (YYYY-MM-DD) or German date format (
+DD.MM.YYYY).</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>OTAnalytics assumes that all selected videos are contiguous in time.
@@ -3495,32 +3659,40 @@ If the videos to be processed have a time gap (e.g., videos from three days from
 </div>
 <h3 id="load-track-files">Load track files<a class="headerlink" href="#load-track-files" title="Permanent link">&para;</a></h3>
 <p>To analyze tracks in OTAnalytics, you must load the track files (.ottrk).
-This can be done using the <em>Add tracks...</em> button, which opens a file browser to select the respective files.
+This can be done using the <em>Add tracks...</em> button, which opens a file browser to select
+the respective files.
 Multiple track files can be added at once.
-If a corresponding video file exists, OTAnalytics will automatically load it alongside the track file.
+If a corresponding video file exists, OTAnalytics will automatically load it alongside
+the track file.
 If no associated video is found, the track file cannot be loaded.</p>
 <p>Alternatively, you can add videos only.
 This is particularly useful for configuring an analysis handled by the platomo team.
-To add videos, use the <em>Add...</em> button, and to remove them from the configuration, use the <em>Remove</em> button.</p>
+To add videos, use the <em>Add...</em> button, and to remove them from the configuration, use
+the <em>Remove</em> button.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>Added videos are displayed in alphabetical order in the “Videos” overview panel and are later processed in this order.
 The videos should therefore be named in such a way that the chronological order matches the alphabetical order.
 Additional zero-padding (e.g., <code>01</code>, <code>02</code>) is helpful if you want to ensure correct alphabetical sorting.</p>
 </div>
-<p>When you click a video in the configuration bar, the first image of the video is displayed as the background image.
+<p>When you click a video in the configuration bar, the first image of the video is
+displayed as the background image.
 This allows you to check whether all videos have been selected correctly.</p>
 <h3 id="save-and-open-the-project">Save and open the project<a class="headerlink" href="#save-and-open-the-project" title="Permanent link">&para;</a></h3>
-<p>Once you added all required tracks and videos and created all sections and flows, the project can be saved.</p>
+<p>Once you added all required tracks and videos and created all sections and flows, the
+project can be saved.</p>
 <ol>
 <li>Click on the <em>Save as...</em> button in the Project section of the configuration bar.</li>
-<li>Select a suitable filename in the file browser and save it in the same folder as the videos.</li>
+<li>Select a suitable filename in the file browser and save it in the same folder as the
+   videos.</li>
 </ol>
 <p>You can save the project in two ways:</p>
-<p>An <code>.otconfig</code> file stores all information necessary to reload the project in OTAnalytics.
+<p>An <code>.otconfig</code> file stores all information necessary to reload the project in
+OTAnalytics.
 This is the default option.</p>
 <p>An <code>.otflow</code> file stores only information about sections and flows.
-Hence, it can be reused / imported into another project with different videos of the same measurement site.</p>
+Hence, it can be reused / imported into another project with different videos of the
+same measurement site.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>We recommend regularly saving the progress of the project while it is still being processed.
@@ -3552,12 +3724,18 @@ The only difference is that the polygon is automatically closed when the add mod
 <p>A new line section is added in the following steps:</p>
 <ol>
 <li>Left-click on the <em>Add line</em> button, which starts the add mode.</li>
-<li>Set the first point by left-clicking at the correct position in the video image. The point is now fixed. Further points can be added to the section by moving the mouse and left-clicking again.
+<li>Set the first point by left-clicking at the correct position in the video image. The
+   point is now fixed. Further points can be added to the section by moving the mouse
+   and left-clicking again.
    A section must consist of at least two points.</li>
-<li>Once the desired length and shape of a section has been reached, right-click or press the <em>Enter</em> key to exit Add mode.
-   (Pressing the <em>Escape</em> key cancels add mode without saving the previously created section.)</li>
-<li>A pop-up window opens. Enter the name for the section in this window and confirm. The name is reused in the analysis.</li>
-<li>The created section appears with the assigned name in the sections part in the configuration bar.</li>
+<li>Once the desired length and shape of a section has been reached, right-click or press
+   the <span class="keys"><kbd class="key-enter">Enter</kbd></span> key to exit Add mode.
+   (Pressing the <span class="keys"><kbd class="key-escape">Esc</kbd></span> key cancels add mode without saving the previously created
+   section.)</li>
+<li>A pop-up window opens. Enter the name for the section in this window and confirm. The
+   name is reused in the analysis.</li>
+<li>The created section appears with the assigned name in the sections part in the
+   configuration bar.</li>
 <li>Repeat the process to add further sections.</li>
 </ol>
 <div class="admonition warning">
@@ -3569,13 +3747,17 @@ We recommend including the approximate compass direction of the geographical loc
 <h4 id="select-sections">Select sections<a class="headerlink" href="#select-sections" title="Permanent link">&para;</a></h4>
 <p>To select a specific section, click on its name in the list of sections.
 The selected section is now highlighted both in the list and on the canvas.</p>
-<p>You can also select multiple sections with <em>left-click</em> + <em>ctrl</em> on Windows or <em>cmd</em> on macOS.
-Deselect a single with <em>right-click</em> + <em>ctrl</em> on Windows or <em>cmd</em> on macOS or deselect all sections with <em>right-click</em> into a empty place in the list.</p>
+<p>You can also select multiple sections with <em>left-click</em> + <em>ctrl</em> on Windows or <em>cmd</em> on
+macOS.
+Deselect a single with <em>right-click</em> + <em>ctrl</em> on Windows or <em>cmd</em> on macOS or deselect
+all sections with <em>right-click</em> into a empty place in the list.</p>
 <h4 id="change-the-geometry-of-a-section">Change the geometry of a section<a class="headerlink" href="#change-the-geometry-of-a-section" title="Permanent link">&para;</a></h4>
-<p>The geometry of sections that have already been created can be changed using the following procedure:</p>
+<p>The geometry of sections that have already been created can be changed using the
+following procedure:</p>
 <ol>
 <li>First select the section to be changed in the list.</li>
-<li>Then start the change mode by left-clicking on the <em>Edit</em> button. The supporting points are now visible.</li>
+<li>Then start the change mode by left-clicking on the <em>Edit</em> button. The supporting
+   points are now visible.</li>
 <li>Support points can now be selected by left-clicking and reset as in add mode.</li>
 <li>The + button can be used to add another support point.</li>
 </ol>
@@ -3583,12 +3765,15 @@ Deselect a single with <em>right-click</em> + <em>ctrl</em> on Windows or <em>cm
 The old geometry is displayed as a dashed reference.</p>
 <ol>
 <li>Right-click to exit change mode and save the changes.</li>
-<li>Pressing the Escape button exits the change mode without saving the changes to the geometry.</li>
+<li>Pressing the Escape button exits the change mode without saving the changes to the
+   geometry.</li>
 </ol>
 <h4 id="change-attributes-of-a-section">Change attributes of a section<a class="headerlink" href="#change-attributes-of-a-section" title="Permanent link">&para;</a></h4>
-<p>The attributes (name and offset) of a section can be changed by clicking on the <em>Properties</em> button.
+<p>The attributes (name and offset) of a section can be changed by clicking on the
+<em>Properties</em> button.
 To do this, the desired section must first be selected from the list.</p>
-<p>The bounding box offset defines, which reference point of the bounding boxes of the track is used to trigger an event.</p>
+<p>The bounding box offset defines, which reference point of the bounding boxes of the
+track is used to trigger an event.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>Since the bounding box offset can be individually configured for each section, tracks intersecting different sections can be finely tuned.
@@ -3596,7 +3781,8 @@ This helps to increase the recording accuracy of the section or to fulfil specia
 </div>
 <h4 id="remove-sections">Remove sections<a class="headerlink" href="#remove-sections" title="Permanent link">&para;</a></h4>
 <p>A section can be removed by clicking on the <em>Remove</em> button.
-To do this, the desired section <strong>must be removed from any flows</strong> and it must be selected in the list.
+To do this, the desired section <strong>must be removed from any flows</strong> and it must be
+selected in the list.
 You can use multiselect to remove multiple sections at once.</p>
 <h3 id="flows">Flows<a class="headerlink" href="#flows" title="Permanent link">&para;</a></h3>
 <p>A flow always consists of exactly two sections: a start section and an end section.
@@ -3604,11 +3790,14 @@ To edit flows, the <em>Flows</em> tab must first be selected in the Sections/Flo
 <h4 id="add-flows">Add flows<a class="headerlink" href="#add-flows" title="Permanent link">&para;</a></h4>
 <p>A new flow is added in the following steps:</p>
 <ol>
-<li>Left-click on the <em>Add</em> button. A pop-up window opens. The appropriate sections can be selected from the drop-down menu.</li>
+<li>Left-click on the <em>Add</em> button. A pop-up window opens. The appropriate sections can
+   be selected from the drop-down menu.</li>
 <li>The start point of the flow is defined as the first section.</li>
 <li>The endpoint of the flow is defined as the second section.</li>
-<li>The name is automatically set in the <em>Name</em> field after selecting the two sections. This can be changed as required. The name is reused in the analysis.</li>
-<li>If you plan to perform speed measurements, you can enter the distance between the sections (which must be measured independently of OTAnalytics)</li>
+<li>The name is automatically set in the <em>Name</em> field after selecting the two sections.
+   This can be changed as required. The name is reused in the analysis.</li>
+<li>If you plan to perform speed measurements, you can enter the distance between the
+   sections (which must be measured independently of OTAnalytics)</li>
 </ol>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -3624,20 +3813,28 @@ The naming convention for the flows is <code>{Name of start section} --&gt; {Nam
 </div>
 <h4 id="select-flows">Select flows<a class="headerlink" href="#select-flows" title="Permanent link">&para;</a></h4>
 <p>To select a specific flow, click on its name in the list of flows.
-The selected flow is now highlighted both in the list and on the canvas (by an arrow indicating its direction).</p>
-<p>You can also select multiple flows with <em>left-click</em> + <em>ctrl</em> on Windows or <em>cmd</em> on macOS.
-Deselect a single with <em>right-click</em> + <em>ctrl</em> on Windows or <em>cmd</em> on macOS or deselect all sections with <em>right-click</em> into a empty place in the list.</p>
+The selected flow is now highlighted both in the list and on the canvas (by an arrow
+indicating its direction).</p>
+<p>You can also select multiple flows with <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-left-button">Left Button</kbd></span> on Windows or <span class="keys"><kbd class="key-command">Cmd</kbd><span>+</span><kbd class="key-left-button">Left Button</kbd></span>
+on
+macOS.
+Deselect a single with <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-right-button">Right Button</kbd></span> on Windows or <span class="keys"><kbd class="key-command">Cmd</kbd><span>+</span><kbd class="key-right-button">Right Button</kbd></span> on macOS or
+deselect
+all sections with <span class="keys"><kbd class="key-right-button">Right Button</kbd></span> into a empty place in the list.</p>
 <h4 id="edit-a-flow">Edit a flow<a class="headerlink" href="#edit-a-flow" title="Permanent link">&para;</a></h4>
 <p>To edit a flow, it must first be selected in the list.
-Then left-click on the <em>Properties</em> button to open the same pop-up window as when creating a flow.
+Then left-click on the <em>Properties</em> button to open the same pop-up window as when
+creating a flow.
 The desired changes can now be made.</p>
 <h4 id="remove-flows">Remove flows<a class="headerlink" href="#remove-flows" title="Permanent link">&para;</a></h4>
 <p>To remove a flow, it must first be selected in the list.
 Left-click on the <em>Remove</em> button to remove the selected flow.
 You can use multiselect to remove multiple flows at once.</p>
 <h2 id="visualization-layers">Visualization layers<a class="headerlink" href="#visualization-layers" title="Permanent link">&para;</a></h2>
-<p>Utilizing the different visualization layers helps you to explore the tracks and to refine traffic analysis by offering specific views of the data.
-Tracks are consistently displayed in the same colors, which are determined by their classification.
+<p>Utilizing the different visualization layers helps you to explore the tracks and to
+refine traffic analysis by offering specific views of the data.
+Tracks are consistently displayed in the same colors, which are determined by their
+classification.
 The visualization layers are organized into groups.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -3650,84 +3847,133 @@ The currently shown frame can be configured using the filter.
 If a date/time filter is set, the frame at the end of the range is shown.
 Otherwise, the first frame of the selected video is shown.</p>
 <h3 id="show-tracks">Show tracks<a class="headerlink" href="#show-tracks" title="Permanent link">&para;</a></h3>
-<p>This group of layers offers options to control which tracks are displayed based on their intersection with sections or their assignment to flows.</p>
-<p>They enable you to check the position of the sections and the definition of the flows and to optimise them iteratively.
-Checking, if the sections "catch" the correct tracks is a crucial step to ensure a good quality of each traffic analysis.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:5"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><input id="__tabbed_2_5" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">All</label><label for="__tabbed_2_2">Intersecting sections</label><label for="__tabbed_2_3">Not intersecting sections</label><label for="__tabbed_2_4">Assigned to flows</label><label for="__tabbed_2_5">Not assigned to flows</label></div>
+<p>This group of layers offers options to control which tracks are displayed based on their
+intersection with sections or their assignment to flows.</p>
+<p>They enable you to check the position of the sections and the definition of the flows
+and to optimise them iteratively.
+Checking, if the sections "catch" the correct tracks is a crucial step to ensure a good
+quality of each traffic analysis.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">All</label></div>
 <div class="tabbed-content">
-<div class="tabbed-block">
+<div class="tabbed-block"></div>
+</div>
+</div>
 <p>All tracks are shown.</p>
-<p><img alt="Show all tracks" src="show-tracks-all.png" /></p>
+<div class="highlight"><pre><span></span><code>![Show all tracks](usage-ui/show-tracks-all.png)
+</code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Intersecting sections</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
 </div>
-<div class="tabbed-block">
+</div>
 <p>Tracks intersecting at least one of the selected sections are shown.</p>
-<p><img alt="Show tracks intersecting the selected sections" src="show-tracks-intersecting-sections.png" /></p>
+<div class="highlight"><pre><span></span><code>![Show tracks intersecting the selected sections](usage-ui/show-tracks-intersecting-sections.png)
+</code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:1"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Not intersecting sections</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
 </div>
-<div class="tabbed-block">
+</div>
 <p>Tracks intersecting <strong>none</strong> of the selected sections are shown.</p>
-<p><img alt="Show tracks not intersection the selected sections" src="show-tracks-not-intersecting-sections.png" /></p>
+<div class="highlight"><pre><span></span><code>![Show tracks not intersection the selected sections](usage-ui/show-tracks-not-intersecting-sections.png)
+</code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:1"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">Assigned to flows</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
 </div>
-<div class="tabbed-block">
+</div>
 <p>Tracks assigned to at least one selected flow are shown.</p>
-<p><img alt="Show tracks assigned to flows" src="show-tracks-assigned-to-flows.png" /></p>
+<div class="highlight"><pre><span></span><code>![Show tracks assigned to flows](usage-ui/show-tracks-assigned-to-flows.png)
+</code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:1"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">Not assigned to flows</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
 </div>
-<div class="tabbed-block">
+</div>
 <p>Tracks assigned to <strong>none</strong> of the selected flows are shown.</p>
-<p><img alt="Show tracks not assigned to flows" src="show-tracks-not-assigned-to-flows.png" /></p>
-</div>
-</div>
-</div>
+<div class="highlight"><pre><span></span><code>![Show tracks not assigned to flows](usage-ui/show-tracks-not-assigned-to-flows.png)
+</code></pre></div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>When checking and optimising sections and flows, also have a look at the track statistics shown below the canvas.</p>
 </div>
 <h3 id="show-start-and-endpoints">Show start- and endpoints<a class="headerlink" href="#show-start-and-endpoints" title="Permanent link">&para;</a></h3>
-<p>In this group of layers, you can decide if the start- and endpoints of tracks are highlighted.
-Like in <a href="#show-tracks">Show tracks</a>, you can display the start- and endpoints based on their intersection with sections or their assignment to flows.</p>
-<p>They enable you, for example, to check whether some tracks are interrupted and where this may be clustered.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="3:5"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><input id="__tabbed_3_5" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">All</label><label for="__tabbed_3_2">Intersecting sections</label><label for="__tabbed_3_3">Not intersecting sections</label><label for="__tabbed_3_4">Assigned to flows</label><label for="__tabbed_3_5">Not assigned to flows</label></div>
+<p>In this group of layers, you can decide if the start- and endpoints of tracks are
+highlighted.
+Like in <a href="#show-tracks">Show tracks</a>, you can display the start- and endpoints based on
+their intersection with sections or their assignment to flows.</p>
+<p>They enable you, for example, to check whether some tracks are interrupted and where
+this may be clustered.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:1"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">All</label></div>
 <div class="tabbed-content">
-<div class="tabbed-block">
+<div class="tabbed-block"></div>
+</div>
+</div>
 <p>Start- and endpoints of all tracks are highlighted.</p>
-<p><img alt="Show start- and endpoints of all tracks" src="show-start-end-points-all.png" /></p>
-</div>
-<div class="tabbed-block">
-<p>Start- and endpoints of tracks intersecting at least one of the selected sections are highlighted.</p>
-<p><img alt="Show start- and endpoints of tracks intersecting the selected sections" src="show-start-end-points-intersecting-sections.png" /></p>
-</div>
-<div class="tabbed-block">
-<p>Start- and endpoints of tracks intersecting <strong>none</strong> of the selected sections are highlighted.</p>
-<p><img alt="Show start- and endpoints of tracks not intersection the selected sections" src="show-start-end-points-not-intersecting-sections.png" /></p>
-</div>
-<div class="tabbed-block">
-<p>Start- and endpoints of tracks assigned to at least one selected flow are highlighted.</p>
-<p><img alt="Show start- and endpoints of tracks assigned to flows" src="show-start-end-points-assigned-to-flows.png" /></p>
-</div>
-<div class="tabbed-block">
-<p>Start- and endpoints of tracks assigned to <strong>none</strong> of the selected flows are highlighted.</p>
-<p><img alt="Show start- and endpoints of tracks not assigned to flows" src="show-start-end-points-not-assigned-to-flows.png" /></p>
-</div>
-</div>
-</div>
-<h3 id="show-detections-of-current-frame">Show detections of current frame<a class="headerlink" href="#show-detections-of-current-frame" title="Permanent link">&para;</a></h3>
-<p>These layers visualize all detections of a single frame either using a bounding box or using the track point (with the current offset).</p>
-<p>It can be helpful for an in-depth assessment of the quality of samples of detections and tracks.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Bounding box</label><label for="__tabbed_4_2">Track point</label></div>
+<div class="highlight"><pre><span></span><code>![Show start- and endpoints of all tracks](usage-ui/show-start-end-points-all.png)
+</code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="8:1"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">Intersecting sections</label></div>
 <div class="tabbed-content">
-<div class="tabbed-block">
+<div class="tabbed-block"></div>
+</div>
+</div>
+<p>Start- and endpoints of tracks intersecting at least one of the selected sections are
+highlighted.</p>
+<div class="highlight"><pre><span></span><code>![Show start- and endpoints of tracks intersecting the selected sections](usage-ui/show-start-end-points-intersecting-sections.png)
+</code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="9:1"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">Not intersecting sections</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
+</div>
+</div>
+<p>Start- and endpoints of tracks intersecting <strong>none</strong> of the selected sections are
+highlighted.</p>
+<div class="highlight"><pre><span></span><code>![Show start- and endpoints of tracks not intersection the selected sections](usage-ui/show-start-end-points-not-intersecting-sections.png)
+</code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="10:1"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><div class="tabbed-labels"><label for="__tabbed_10_1">Assigned to flows</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
+</div>
+</div>
+<p>Start- and endpoints of tracks assigned to at least one selected flow are highlighted.</p>
+<div class="highlight"><pre><span></span><code>![Show start- and endpoints of tracks assigned to flows](usage-ui/show-start-end-points-assigned-to-flows.png)
+</code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="11:1"><input checked="checked" id="__tabbed_11_1" name="__tabbed_11" type="radio" /><div class="tabbed-labels"><label for="__tabbed_11_1">Not assigned to flows</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
+</div>
+</div>
+<p>Start- and endpoints of tracks assigned to <strong>none</strong> of the selected flows are
+highlighted.</p>
+<div class="highlight"><pre><span></span><code>![Show start- and endpoints of tracks not assigned to flows](usage-ui/show-start-end-points-not-assigned-to-flows.png)
+</code></pre></div>
+<h3 id="show-detections-of-current-frame">Show detections of current frame<a class="headerlink" href="#show-detections-of-current-frame" title="Permanent link">&para;</a></h3>
+<p>These layers visualize all detections of a single frame either using a bounding box or
+using the track point (with the current offset).</p>
+<p>It can be helpful for an in-depth assessment of the quality of samples of detections and
+tracks.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="12:1"><input checked="checked" id="__tabbed_12_1" name="__tabbed_12" type="radio" /><div class="tabbed-labels"><label for="__tabbed_12_1">Bounding box</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
+</div>
+</div>
 <p>The bounding boxes of all detections in the currently visible frame are shown.</p>
-<p><img alt="Show bounding box of detections in the current frame" src="show-detections-bounding-boxes.png" /></p>
+<div class="highlight"><pre><span></span><code>![Show bounding box of detections in the current frame](usage-ui/show-detections-bounding-boxes.png)
+</code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="13:1"><input checked="checked" id="__tabbed_13_1" name="__tabbed_13" type="radio" /><div class="tabbed-labels"><label for="__tabbed_13_1">Track point</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
 </div>
-<div class="tabbed-block">
+</div>
 <p>The track points of all detections in the currently visible frame are shown.</p>
-<p><img alt="Show track points of detections in the current frame" src="show-detections-track-point.png" /></p>
-</div>
-</div>
-</div>
+<div class="highlight"><pre><span></span><code>![Show track points of detections in the current frame](usage-ui/show-detections-track-point.png)
+</code></pre></div>
 <h3 id="show-events">Show events<a class="headerlink" href="#show-events" title="Permanent link">&para;</a></h3>
-<p>This group of layers highlights the locations of events triggered by the intersection of tracks with sections in a given period or at a given moment.</p>
+<p>This group of layers highlights the locations of events triggered by the intersection of
+tracks with sections in a given period or at a given moment.</p>
 <p>Like the other layers, they provide in-depth data validation.
-Additionally, the event locations themselves can serve as an interesting focus for traffic analysis.</p>
+Additionally, the event locations themselves can serve as an interesting focus for
+traffic analysis.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>The locations of the events are determined based on the bounding box offset <a href="#change-attributes-of-a-section">configured locally for each individual section</a>.</p>
@@ -3735,21 +3981,27 @@ Additionally, the event locations themselves can serve as an interesting focus f
 <p>As a result, the event locations may not align with the corresponding tracks.</p>
 <p>To align the tracks, select a specific section and hit the <em>Update with section offset</em> button.</p>
 </div>
-<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">Current filter</label><label for="__tabbed_5_2">Current frame</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="14:1"><input checked="checked" id="__tabbed_14_1" name="__tabbed_14" type="radio" /><div class="tabbed-labels"><label for="__tabbed_14_1">Current filter</label></div>
 <div class="tabbed-content">
-<div class="tabbed-block">
+<div class="tabbed-block"></div>
+</div>
+</div>
 <p>The locations of all events within the date/time filter range are shown.</p>
-<p><img alt="Show events in the current filter" src="show-events-current-filter.png" /></p>
+<div class="highlight"><pre><span></span><code>![Show events in the current filter](usage-ui/show-events-current-filter.png)
+</code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="15:1"><input checked="checked" id="__tabbed_15_1" name="__tabbed_15" type="radio" /><div class="tabbed-labels"><label for="__tabbed_15_1">Current frame</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
 </div>
-<div class="tabbed-block">
+</div>
 <p>All events present at the moment of the current frame are shown.</p>
-<p><img alt="Show events in the current filter" src="show-events-current-frame.png" /></p>
-</div>
-</div>
-</div>
+<div class="highlight"><pre><span></span><code>![Show events in the current filter](usage-ui/show-events-current-frame.png)
+</code></pre></div>
 <h2 id="visualization-filters">Visualization filters<a class="headerlink" href="#visualization-filters" title="Permanent link">&para;</a></h2>
-<p>As the number of analyzed video hours grows, distinguishing individual tracks in the visualization becomes increasingly difficult.
-Filters enable you to reduce the number of displayed track and the part of the track which is shown, making the visualization more focused and easier to manage.</p>
+<p>As the number of analyzed video hours grows, distinguishing individual tracks in the
+visualization becomes increasingly difficult.
+Filters enable you to reduce the number of displayed track and the part of the track
+which is shown, making the visualization more focused and easier to manage.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>Filters are applied only to the visualization in the workspace and to the calculation of track statistics displayed below.
@@ -3758,17 +4010,24 @@ Analyses and data exports always include all loaded tracks, regardless of any ap
 <h3 id="filter-by-time">Filter by Time<a class="headerlink" href="#filter-by-time" title="Permanent link">&para;</a></h3>
 <p>Filter tracks based on time and date.
 Only track points that are within the date/time range will be displayed.</p>
-<p>You can toggle the filter by checking/unchecking the box left to the <em>Filter by date</em> button.
-By clicking the <em>Filter by date</em> button, a popup appears where you can enter a custom date/time range.</p>
-<p>The <em>&lt;</em> and <em>&gt;</em> buttons to the right of the <em>Filter by date</em> button allow you to shift the filter forward or backward by its current duration.
-For more precise adjustments, use the <em>&lt;</em> and <em>&gt;</em> buttons below to fine-tune the filter's position (Seconds, Frames, Events).</p>
+<p>You can toggle the filter by checking/unchecking the box left to the <em>Filter by date</em>
+button.
+By clicking the <em>Filter by date</em> button, a popup appears where you can enter a custom
+date/time range.</p>
+<p>The <em>&lt;</em> and <em>&gt;</em> buttons to the right of the <em>Filter by date</em> button allow you to shift
+the filter forward or backward by its current duration.
+For more precise adjustments, use the <em>&lt;</em> and <em>&gt;</em> buttons below to fine-tune the
+filter's position (Seconds, Frames, Events).</p>
 <p><img alt="Configure filter" src="add-filter.png" /></p>
 <h3 id="filter-by-classification">Filter by Classification<a class="headerlink" href="#filter-by-classification" title="Permanent link">&para;</a></h3>
 <p>Filter tracks based on their classification (e.g., car, bicyclist).</p>
-<p>You can toggle the filter by checking/unchecking the box left to the <em>Filter by classification</em> button.
-By clicking the <em>Filter by classification</em> button, a popup appears where you can select the track classes to be displayed.</p>
+<p>You can toggle the filter by checking/unchecking the box left to the <em>Filter by
+classification</em> button.
+By clicking the <em>Filter by classification</em> button, a popup appears where you can select
+the track classes to be displayed.</p>
 <h2 id="analysis-exports">Analysis exports<a class="headerlink" href="#analysis-exports" title="Permanent link">&para;</a></h2>
-<p>After all sections and flows have been configured, you can choose an analysis for export.</p>
+<p>After all sections and flows have been configured, you can choose an analysis for
+export.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>We highly recommend using the different <a href="#visualization-layers">visualization layers</a> and the track statisics below the canvas before exporting analyses.
@@ -3776,10 +4035,13 @@ This is how you gain detailed insights into the data and can optimize the config
 It is important to ensure a good quality of your exports.</p>
 </div>
 <h3 id="traffic-counts">Traffic counts<a class="headerlink" href="#traffic-counts" title="Permanent link">&para;</a></h3>
-<p>This is the most commonly used metric for analysing traffic, supporting various use cases such as planning, simulation, and safety analysis.</p>
+<p>This is the most commonly used metric for analysing traffic, supporting various use
+cases such as planning, simulation, and safety analysis.</p>
 <p>The traffic counts are derived from the assignment of tracks to flows.
-They can be exported as a <code>.csv</code> file, which can be easily imported into your preferred software.
-You can specify the start and end date and time, as well as the interval for aggregating traffic counts.</p>
+They can be exported as a <code>.csv</code> file, which can be easily imported into your preferred
+software.
+You can specify the start and end date and time, as well as the interval for aggregating
+traffic counts.</p>
 <p><img alt="Configure export" src="configure-export-counts.png" /></p>
 <p>The <code>.csv</code> file includes the following values:</p>
 <table>
@@ -3861,12 +4123,18 @@ You can specify the start and end date and time, as well as the interval for agg
 </tbody>
 </table>
 <h3 id="event-list">Event list<a class="headerlink" href="#event-list" title="Permanent link">&para;</a></h3>
-<p>Traffic events provide a more granular data source for in-depth use cases, such as speed measurements, occupancy durations, or time gap analysis.</p>
-<p>The events (tracks intersecting sections) can be exported into a single file in one of the following formats:</p>
+<p>Traffic events provide a more granular data source for in-depth use cases, such as speed
+measurements, occupancy durations, or time gap analysis.</p>
+<p>The events (tracks intersecting sections) can be exported into a single file in one of
+the following formats:</p>
 <ul>
-<li><strong><code>.csv</code></strong> contains the event data in a format that can be read by many software products.</li>
-<li><strong><code>.xslx</code></strong> includes the event data along with additional information about the sections used to generate the events for further analysis in MS Excel.</li>
-<li><strong><code>.otevents</code></strong> is a bzip2-compressed JSON file that contains the event data, additional information about the sections used to generate the events, and metadata collected during processing.</li>
+<li><strong><code>.csv</code></strong> contains the event data in a format that can be read by many software
+  products.</li>
+<li><strong><code>.xslx</code></strong> includes the event data along with additional information about the
+  sections used to generate the events for further analysis in MS Excel.</li>
+<li><strong><code>.otevents</code></strong> is a bzip2-compressed JSON file that contains the event data,
+  additional information about the sections used to generate the events, and metadata
+  collected during processing.</li>
 </ul>
 <p>The export includes the following values for each event:</p>
 <table>
@@ -3978,8 +4246,10 @@ You can specify the start and end date and time, as well as the interval for agg
 </tbody>
 </table>
 <h3 id="road-user-assignments">Road User Assignments<a class="headerlink" href="#road-user-assignments" title="Permanent link">&para;</a></h3>
-<p>Use this export in case no aggregation of tracks to traffic counts is wanted, but the assignment strategy of OTAnalytics should be used.</p>
-<p>All tracks assigned to flows can be exported using the <em>Export road user assignments...</em> Button.
+<p>Use this export in case no aggregation of tracks to traffic counts is wanted, but the
+assignment strategy of OTAnalytics should be used.</p>
+<p>All tracks assigned to flows can be exported using the <em>Export road user assignments...</em>
+Button.
 The tracks assigned to flows are exported into a <code>.csv</code> file with the following format:</p>
 <table>
 <thead>
@@ -4156,12 +4426,19 @@ The tracks assigned to flows are exported into a <code>.csv</code> file with the
 </tbody>
 </table>
 <h3 id="track-statistics">Track Statistics<a class="headerlink" href="#track-statistics" title="Permanent link">&para;</a></h3>
-<p>This is a CSV export of the track statistics shown in the workspace below the camera image.</p>
+<p>This is a CSV export of the track statistics shown in the workspace below the camera
+image.</p>
 <h2 id="what-else">What else?<a class="headerlink" href="#what-else" title="Permanent link">&para;</a></h2>
-<p>If you encounter problems, have questions or like to request features, please <a href="https://github.com/OpenTrafficCam/OTAnalytics/issues/new">open an issue</a> on GitHub.</p>
+<p>If you encounter problems, have questions or like to request features,
+please <a href="https://github.com/OpenTrafficCam/OTAnalytics/issues/new">open an issue</a> on
+GitHub.</p>
 <p>We welcome code contributions (e.g. fixing bugs or adding features) by the community.
-If you consider contributing, please check the <a href="https://opentrafficcam.org/contribute/">contribute section</a> of this documentation first.</p>
-<p>If you like to receive professional support, please have a look at our <a href="https://opentrafficcam.org/pricing/">services</a> or <a href="mailto:team@opentrafficcam.org">contact us</a> for more information.</p>
+If you consider contributing, please check
+the <a href="https://opentrafficcam.org/contribute/">contribute section</a> of this documentation
+first.</p>
+<p>If you like to receive professional support, please have a look at
+our <a href="https://opentrafficcam.org/pricing/">services</a>
+or <a href="mailto:team@opentrafficcam.org">contact us</a> for more information.</p>
 
 
 
@@ -4182,7 +4459,7 @@ If you consider contributing, please check the <a href="https://opentrafficcam.o
     <span class="md-icon" title="Letztes Update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="29. Januar 2025 23:53:49 CET">29. Januar 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="15. Januar 2026 17:49:15 CET">15. Januar 2026</span>
   </span>
 
     
