@@ -1,15 +1,17 @@
 ---
 draft: false
 date: 2026-01-07
-title: "Verkehrszählgerät: Welches für eine erfolgreiche Verkehrsplanung kaufen?"
-site_name: Verkehrszählgerät für Kommunen und Planungsbüros
+title: "Verkehrszählgerät für Kommunen und Planungsbüros"
 slug: verkehrszaehlgeraet
-site_description: Sie möchten ein Verkehrszählgerät kaufen? Welche Messgeräte zur Verkehrszählung gibt es? Wichtige Kriterien für Ihre Kaufentscheidung.
+description: "Sie möchten ein Verkehrszählgerät kaufen? ✔️ Welche Messgeräte zur Verkehrszählung gibt es? Wichtige Kriterien für Ihre Kaufentscheidung.
+"
 categories:
   - Technologie
 authors:
   - sebastian
 ---
+
+# Verkehrszählgerät: Welches für eine erfolgreiche Verkehrsplanung kaufen?
 
 ![Verkehrsströme](/assets/img/blog_images/header_image_verkehrsstroeme.webp)
 
@@ -40,22 +42,26 @@ Parkraum? Wo lohnt sich der Ausbau von Radwegen?
 
 Geräte zur Verkehrszählung liefern gleich für mehrere Anwendungsfelder belastbare Daten:
 
-- Planungsgrundlage: Verkehrszählgeräte liefern objektive Daten für eine vorausschauende
+- **Planungsgrundlage**: Verkehrszählgeräte liefern objektive Daten für eine
+  vorausschauende
   und strategische Verkehrs- und Stadtplanung – wenn es zum Beispiel um den Ausbau von
   Straßen, die Steuerung von Lichtsignalanlagen oder um Maßnahmen zur Verkehrsberuhigung
   geht.
-- Entscheidungsbasis: Sie zeigen, wo Investitionen in Straßen, Radwege oder den
+- **Entscheidungsbasis**: Sie zeigen, wo Investitionen in Straßen, Radwege oder den
   öffentlichen Nahverkehr tatsächlich und als erstes notwendig sind.
-- Effizienzsteigerung: Ein Verkehrszählgerät ermöglicht datenbasierte Analysen, die bei
+- **Effizienzsteigerung**: Ein Verkehrszählgerät ermöglicht datenbasierte Analysen, die
+  bei
   der Verkehrsflussoptimierung, Stauvermeidung und Freigabezeitverteilung an Ampeln
   unterstützen.
-- Nachhaltigkeit: Die erfassten Kennzahlen unterstützen Kommunen dabei, den Fuß- und
+- **Nachhaltigkeit**: Die erfassten Kennzahlen unterstützen Kommunen dabei, den Fuß- und
   Radverkehr gezielt zu fördern, CO₂-Emissionen zu senken und vorhandene Infrastruktur
   besser auszunutzen.
-- Maßnahmenbewertung: Daten aus Verkehrszählgeräten ermöglichen die Bewertung baulicher
+- **Maßnahmenbewertung**: Daten aus Verkehrszählgeräten ermöglichen die Bewertung
+  baulicher
   oder verkehrslenkender Maßnahmen und Verkehrsversuche. So lassen sich zukünftige
   Projekte auf Basis realer Daten verbessern.
-- Grundlage für Forschung & Modellierung: Die mit dem Verkehrszählgerät gewonnenen Daten
+- **Grundlage für Forschung & Modellierung**: Die mit dem Verkehrszählgerät gewonnenen
+  Daten
   bilden die Basis für Verkehrsmodelle, Simulationen und Prognosen – und damit für eine
   nachhaltige Mobilitätsplanung.
 
