@@ -181,20 +181,19 @@ beiden Ansätzen können erhebliche
 Datenschutzrisiken entstehen, wenn Prozesse oder Konfigurationen nicht sauber abgestimmt
 sind.
 
-<!-- prettier-ignore-start -->
 !!! info "Datenschutz & Auswertung"
-Genau hier setzt platomo an: Gemeinsam mit spezialisierten Fachkanzleien prüfen wir die
-datenschutzrechtlichen
-Anforderungen und geben Kommunen sowie Planungsbüros klare, rechtssichere Leitlinien an
-die Hand – sowohl für den
-Einsatz [unserer Kameras](https://opentrafficcam.org/OTCamera/) als auch für die
-korrekte, DSGVO-konforme Auswertung des
-aufgenommenen Materials. Alternativ übernehmen wir die datenschutzkonforme Auswertung
-auch vollständig für Sie –
-inklusive [KI-basierter Videoverarbeitung](https://opentrafficcam.org/OTVision/)
-und [verkehrsanalytischer
-Auswertung](https://opentrafficcam.org/OTAnalytics/).
-<!-- prettier-ignore-end -->
+
+    Genau hier setzt platomo an: Gemeinsam mit spezialisierten Fachkanzleien prüfen wir die
+    datenschutzrechtlichen
+    Anforderungen und geben Kommunen sowie Planungsbüros klare, rechtssichere Leitlinien an
+    die Hand – sowohl für den
+    Einsatz [unserer Kameras](https://opentrafficcam.org/OTCamera/) als auch für die
+    korrekte, DSGVO-konforme Auswertung des
+    aufgenommenen Materials. Alternativ übernehmen wir die datenschutzkonforme Auswertung
+    auch vollständig für Sie –
+    inklusive [KI-basierter Videoverarbeitung](https://opentrafficcam.org/OTVision/)
+    und [verkehrsanalytischer
+    Auswertung](https://opentrafficcam.org/OTAnalytics/).
 
 ### Dauer, Ort und Zweck der Messung
 
