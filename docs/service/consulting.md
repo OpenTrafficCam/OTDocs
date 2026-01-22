@@ -89,12 +89,11 @@ Gemeinsam klären wir, welche Ressourcen Sie bereits haben – und wo wir Sie un
 
     **Ihre Optionen:**
 
-    - Sie liefern eigene Aufnahmen
-    - Aufnahme durch uns mit geschultem Personal
-    - Datenschutzkonforme Durchführung garantiert
+    - Sie liefern eigene Videos in einem geeigneten Format
+    - Aufnahme von Videos mit der OTCamera durch uns mit geschultem Personal
 
     ---
-    **Ergebnis:** Aufnahmen mit OTCamera oder direkt von Ihrer Kamerainfrastruktur
+  **Ergebnis:** Aufnahmen mit OTCamera oder direkt von Ihrer Kamerainfrastruktur
 
 -   :material-numeric-2-circle:{ .lg .middle } __Trajektorienerstellung__
 
@@ -204,11 +203,11 @@ Jede Fragestellung ist anders – hier zeigen wir exemplarisch, was mit individu
 
 ??? faq "In welchem Format erhalte ich die Ergebnisse?"
 
-    Je nach Bedarf als CSV, GeoJSON, Shapefile oder als visualisierte Grafiken und Videos.
+    Wir erstellen für Sie einen individuellen Kurzbereicht. Je nach Bedarf liefern wir zusätzliche Daten als CSV, GeoJSON, Shapefile oder als visualisierte Grafiken und Videos.
 
 ??? faq "Wie lange dauert eine Auswertung?"
 
-    Abhängig von Videomenge und Analysekomplexität – typischerweise wenige Tage bis zwei Wochen. Wir nennen Ihnen im Beratungsgespräch einen konkreten Zeitrahmen.
+    Abhängig von Videomenge und Analysekomplexität – typischerweise wenige Tage bis einen Monat. Wir nennen Ihnen im Beratungsgespräch einen konkreten Zeitrahmen.
 
 ??? faq "Gibt es Pauschalpreise oder wird nach Aufwand abgerechnet?"
 
@@ -228,15 +227,11 @@ Jede Fragestellung ist anders – hier zeigen wir exemplarisch, was mit individu
 
 ??? faq "Funktioniert die Analyse auch bei schlechten Lichtverhältnissen oder Nacht?"
 
-    Ja, unsere Detektionsmodelle sind auch für schwierige Lichtverhältnisse trainiert. Bei Nachtaufnahmen ist eine ausreichende Beleuchtung der Szene hilfreich – völlige Dunkelheit ohne Straßenbeleuchtung stößt an Grenzen. Infrarotkameras können wir ebenfalls auswerten. Schicken Sie uns gerne eine Beispielaufnahme zur Einschätzung.
+    Ja, unsere Detektionsmodelle sind auch für schwierige Lichtverhältnisse trainiert. Bei Nachtaufnahmen ist eine ausreichende Beleuchtung der Szene notwendig – bei völliger Dunkelheit ohne Straßenbeleuchtung stößt die Technik an ihre Grenzen. Bildmaterial von Infrarotkameras können wir ggfs. ebenfalls auswerten. Schicken Sie uns gerne eine Beispielaufnahme zur Einschätzung.
 
-??? faq "Wie wird der Datenschutz bei den Aufnahmen sichergestellt?"
+??? faq "Wie wird der Datenschutz bei den Aufnahmen durch platomo sichergestellt?"
 
     Datenschutz ist von Anfang an mitgedacht. Unsere Kameras arbeiten mit geringer Auflösung und manueller Defokussierung, sodass Gesichter und Kennzeichen nicht erkennbar sind. Irrelevante Bildbereiche werden ausgeblendet. Die Datenschutzkonformität wurde durch Datenschutzbeauftragte und Anwälte geprüft. Auf Wunsch unterstützen wir Sie auch bei der Abstimmung mit Ihrer Datenschutzstelle.
-
-??? faq "Erhalte ich einen fertigen Bericht oder nur Rohdaten?"
-
-    Beides ist möglich – ganz nach Ihrem Bedarf. Sie können die aufbereiteten Trajektorien als Rohdaten (CSV, GeoJSON) für eigene Auswertungen erhalten oder einen fertigen Bericht mit Visualisierungen und Handlungsempfehlungen. Wir stimmen das Lieferformat im Vorfeld mit Ihnen ab.
 
 ??? faq "Wie kann ich die Qualität der Ergebnisse überprüfen?"
 
