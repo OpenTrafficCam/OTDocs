@@ -90,12 +90,11 @@ Gemeinsam klären wir, welche Ressourcen Sie bereits haben – und wo wir Sie un
 
     **Ihre Optionen:**
 
-    - Sie liefern eigene Aufnahmen
-    - Aufnahme durch uns mit geschultem Personal
-    - Datenschutzkonforme Durchführung garantiert
+    - Sie liefern eigene Videos in einem geeigneten Format
+    - Aufnahme von Videos mit der OTCamera durch uns mit geschultem Personal
 
     ---
-    **Ergebnis:** Aufnahmen mit OTCamera oder direkt von Ihrer Kamerainfrastruktur
+  **Ergebnis:** Aufnahmen mit OTCamera oder direkt von Ihrer Kamerainfrastruktur
 
 -   :material-numeric-2-circle:{ .lg .middle } __Trajektorienerstellung__
 
@@ -199,47 +198,43 @@ Jede Fragestellung ist anders – hier zeigen wir exemplarisch, was mit individu
 
 ## Häufige Fragen
 
-??? question "Welche Kameras werden unterstützt?"
+??? faq "Welche Kameras werden unterstützt?"
 
     Wir analysieren Videos aller gängigen Verkehrskameras – von OTCamera über mioVision bis zu Ihrer bestehenden Infrastruktur.
 
-??? question "In welchem Format erhalte ich die Ergebnisse?"
+??? faq "In welchem Format erhalte ich die Ergebnisse?"
 
-    Je nach Bedarf als CSV, GeoJSON, Shapefile oder als visualisierte Grafiken und Videos.
+    Wir erstellen für Sie einen individuellen Kurzbereicht. Je nach Bedarf liefern wir zusätzliche Daten als CSV, GeoJSON, Shapefile oder als visualisierte Grafiken und Videos.
 
-??? question "Wie lange dauert eine Auswertung?"
+??? faq "Wie lange dauert eine Auswertung?"
 
-    Abhängig von Videomenge und Analysekomplexität – typischerweise wenige Tage bis zwei Wochen. Wir nennen Ihnen im Beratungsgespräch einen konkreten Zeitrahmen.
+    Abhängig von Videomenge und Analysekomplexität – typischerweise wenige Tage bis einen Monat. Wir nennen Ihnen im Beratungsgespräch einen konkreten Zeitrahmen.
 
-??? question "Gibt es Pauschalpreise oder wird nach Aufwand abgerechnet?"
+??? faq "Gibt es Pauschalpreise oder wird nach Aufwand abgerechnet?"
 
     Individuelle Analysen werden nach Aufwand abgerechnet – denn jede Fragestellung ist anders. Nach einem kurzen Beratungsgespräch erhalten Sie von uns eine transparente Aufwandsschätzung mit Festpreis, sodass Sie volle Kostensicherheit haben.
 
-??? question "Lohnt sich eine Analyse auch für kleinere Projekte?"
+??? faq "Lohnt sich eine Analyse auch für kleinere Projekte?"
 
     Ja, auch kleinere Projekte können von individuellen Analysen profitieren. Gerade bei konkreten Fragestellungen – etwa einer einzelnen Querungsstelle oder einem überschaubaren Parkplatz – ist der Aufwand oft geringer als erwartet. Sprechen Sie uns an, wir schätzen den Umfang gemeinsam ein.
 
-??? question "Können auch ältere Aufnahmen ausgewertet werden?"
+??? faq "Können auch ältere Aufnahmen ausgewertet werden?"
 
     Grundsätzlich ja, sofern Bildqualität und Kameraperspektive ausreichend sind. Wir prüfen Ihr Material gerne vorab und geben Ihnen eine ehrliche Einschätzung, ob eine Auswertung sinnvoll möglich ist.
 
-??? question "Wie lange sollte die Messdauer mindestens sein?"
+??? faq "Wie lange sollte die Messdauer mindestens sein?"
 
     Das hängt von der Fragestellung ab. Für Verkehrszählungen empfehlen wir mindestens 24 Stunden, um Tagesganglinien abzubilden. Bei Parkraumanalysen oder seltenen Ereignissen wie Konflikten sind oft mehrere Tage bis eine Woche sinnvoll. Wir beraten Sie zur optimalen Messdauer für Ihr Projekt.
 
-??? question "Funktioniert die Analyse auch bei schlechten Lichtverhältnissen oder Nacht?"
+??? faq "Funktioniert die Analyse auch bei schlechten Lichtverhältnissen oder Nacht?"
 
-    Ja, unsere Detektionsmodelle sind auch für schwierige Lichtverhältnisse trainiert. Bei Nachtaufnahmen ist eine ausreichende Beleuchtung der Szene hilfreich – völlige Dunkelheit ohne Straßenbeleuchtung stößt an Grenzen. Infrarotkameras können wir ebenfalls auswerten. Schicken Sie uns gerne eine Beispielaufnahme zur Einschätzung.
+    Ja, unsere Detektionsmodelle sind auch für schwierige Lichtverhältnisse trainiert. Bei Nachtaufnahmen ist eine ausreichende Beleuchtung der Szene notwendig – bei völliger Dunkelheit ohne Straßenbeleuchtung stößt die Technik an ihre Grenzen. Bildmaterial von Infrarotkameras können wir ggfs. ebenfalls auswerten. Schicken Sie uns gerne eine Beispielaufnahme zur Einschätzung.
 
-??? question "Wie wird der Datenschutz bei den Aufnahmen sichergestellt?"
+??? faq "Wie wird der Datenschutz bei den Aufnahmen durch platomo sichergestellt?"
 
     Datenschutz ist von Anfang an mitgedacht. Unsere Kameras arbeiten mit geringer Auflösung und manueller Defokussierung, sodass Gesichter und Kennzeichen nicht erkennbar sind. Irrelevante Bildbereiche werden ausgeblendet. Die Datenschutzkonformität wurde durch Datenschutzbeauftragte und Anwälte geprüft. Auf Wunsch unterstützen wir Sie auch bei der Abstimmung mit Ihrer Datenschutzstelle.
 
-??? question "Erhalte ich einen fertigen Bericht oder nur Rohdaten?"
-
-    Beides ist möglich – ganz nach Ihrem Bedarf. Sie können die aufbereiteten Trajektorien als Rohdaten (CSV, GeoJSON) für eigene Auswertungen erhalten oder einen fertigen Bericht mit Visualisierungen und Handlungsempfehlungen. Wir stimmen das Lieferformat im Vorfeld mit Ihnen ab.
-
-??? question "Wie kann ich die Qualität der Ergebnisse überprüfen?"
+??? faq "Wie kann ich die Qualität der Ergebnisse überprüfen?"
 
     Transparenz ist einer unserer Grundsätze. Durch den modularen Aufbau und offene Datenformate können Sie jeden Analyseschritt nachvollziehen. Auf Wunsch liefern wir Ihnen Videos mit eingeblendeten Trajektorien zur visuellen Kontrolle. Außerdem dokumentieren wir unsere Methodik und die verwendeten Parameter.
 
