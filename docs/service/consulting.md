@@ -75,9 +75,12 @@ Unser Team vereint Expertise in Verkehrsplanung und Computer Vision. Das ermögl
 </div>
 
 ## Ihr Weg zur individuellen Analyse.
-Unser Prozess ist modular aufgebaut. 
-Sie können jeden Schritt einzeln beauftragen oder die gesamte Pipeline aus einer Hand erhalten. 
-Gemeinsam klären wir, welche Ressourcen Sie bereits haben – und wo wir Sie unterstützen können.
+
+Unser Prozess ist modular aufgebaut.
+Sie können jeden Schritt einzeln beauftragen oder die gesamte Pipeline aus einer Hand
+erhalten.
+Gemeinsam klären wir, welche Ressourcen Sie bereits haben – und wo wir Sie unterstützen
+können.
 
 <div class="grid cards three-col" markdown>
 
@@ -135,7 +138,8 @@ Gemeinsam klären wir, welche Ressourcen Sie bereits haben – und wo wir Sie un
 
 ## Unsere Analysen in der Praxis.
 
-Jede Fragestellung ist anders – hier zeigen wir exemplarisch, was mit individuellen Trajektorienanalysen möglich ist.
+Jede Fragestellung ist anders – hier zeigen wir exemplarisch, was mit individuellen
+Trajektorienanalysen möglich ist.
 
 <br/>
 
