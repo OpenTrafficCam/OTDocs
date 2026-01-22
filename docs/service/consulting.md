@@ -1,7 +1,7 @@
 ---
 title: Spezialauswertungen
-hero_title: Spezialauswertungen
-hero_subtitle: Unabhängige Beratung rund um Spezialauswertungen
+hero_title: "Individuelle Analysen"
+hero_subtitle: Sie haben eine verkehrsplanerische Fragestellung – wir entwickeln die passende Analyse.
 hero_layout: split-image
 hero_cta_text: Jetzt Beratung anfordern
 hero_cta_link: /contact
