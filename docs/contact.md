@@ -5,29 +5,6 @@ hide:
   - title
 ---
 
-<style>
-  .contact-options > ul {
-    display: grid !important;
-    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-    gap: 1.25rem;
-  }
-  @media (max-width: 768px) {
-    .contact-options > ul {
-      grid-template-columns: 1fr !important;
-    }
-  }
-  .contact-cta {
-    text-align: center;
-    margin: 2.5rem 0;
-  }
-  .contact-proof {
-    text-align: center;
-    margin: 2.5rem 0;
-    color: var(--md-default-fg-color--light);
-    font-style: italic;
-  }
-</style>
-
 # Lassen Sie uns über Ihr Projekt sprechen
 
 Sie sind unsicher, ob Ihre verkehrsplanerische Fragestellung mit videobasierter Analyse lösbar ist? Genau dafür sind wir da. Ob konkretes Projekt oder erste Orientierung – wir beraten Sie gerne.
