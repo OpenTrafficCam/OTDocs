@@ -116,6 +116,19 @@ extra_javascript:
   - assets/js/auto-render.min.js
 
 extra:
+  consent:
+    title: Cookie-Einstellungen
+    description: >-
+      Wir verwenden Cookies, um die Nutzung unserer Website zu analysieren und
+      unsere Inhalte zu verbessern. Sie können Ihre Einstellungen jederzeit ändern.
+    actions:
+      - accept
+      - reject
+      - manage
+    cookies:
+      analytics:
+        name: Analyse-Cookies
+        checked: false
   social:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/opentrafficcam
