@@ -11,7 +11,7 @@ authors:
   - michael
 ---
 
-# Verkehrszählung mit Kamera: So unterstützt sie eine moderne Verkehrsplanung
+# Kamera für Verkehrszählung: So unterstützt sie eine moderne Verkehrsplanung
 
 Ob Leistungsfähigkeitsnachweise, Neu- oder Umbauten oder die Optimierung von
 Lichtsignalanlagen – Kommunen und Ingenieurbüros benötigen verlässliche Daten zu allen

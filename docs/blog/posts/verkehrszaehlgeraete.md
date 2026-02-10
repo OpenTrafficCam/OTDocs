@@ -1,6 +1,6 @@
 ---
 draft: false
-date: 2026-01-07
+date: 2026-01-06
 title: "Verkehrszählgerät für Kommunen und Planungsbüros"
 slug: verkehrszaehlgeraet
 description: "Sie möchten ein Verkehrszählgerät kaufen? ✔️ Welche Messgeräte zur Verkehrszählung gibt es? Wichtige Kriterien für Ihre Kaufentscheidung.
