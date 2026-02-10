@@ -9,7 +9,6 @@ The analysis must be configured in the [OTAnalytics **Graphical User Interface (
 python -m OTAnalytics [-h] 
                 [--cli] 
                 [--cli-mode {bulk,stream}]
-                [--cli-chunk-size CLI_CHUNK_SIZE] 
                 [--show-svz]
                 [--config CONFIG] 
                 [--ottrks OTTRKS [OTTRKS ...]]
@@ -65,16 +64,6 @@ Specify the execution mode for the CLI. Possible values are:
 - `stream`: Read data in chunks. Thus, reading `cli-chunk-size` tracks into memory and process them. Afterwards, read the next ones
 
 This parameter is optional. Defaults to `bulk`.
-
----
-
-### cli-chunk-size
-
-`--cli-chunk-size <integer>`
-
-Specify the chunk size for streaming OTAnalytics CLI. The chunk size configures the number of tracks to be read in streaming mode. Thus, the chunk size controls the necessary memory to process all track files.
-
-This parameter is optional.
 
 ---
 
