@@ -37,7 +37,6 @@ Alternativ werden die aufgezeichneten Videos von Zählpersonal ausgewertet.
 
 ### Welche Systeme für die Verkehrszählung mit Kamera gibt es?
 
-
 ![OpentrafficCam](/assets/img/blog_images/opentrafficcam.webp)
 
 Grundsätzlich gibt es zwei unterschiedliche Kamerasysteme, die ähnliche Anforderungen an
@@ -90,7 +89,6 @@ Punkten voraus. Dabei lassen sich die Vorteile in drei Themenfelder einordnen:
   dass sie optimale Sicht auf Knotenpunkte oder Streckenabschnitte bieten.
 
 ### Praxis- & Zukunftsfähigkeit
-
 
 ![Verkehrsströme](/assets/img/blog_images/verkehrsstroeme.webp)
 
