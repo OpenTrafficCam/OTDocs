@@ -1,37 +1,42 @@
-{% extends "base.html" %}
+{% extends "base.html" %} {% block analytics %}
+<!-- Plausible Analytics - loads immediately -->
+<script
+  defer
+  data-domain="opentrafficcam.org"
+  src="https://plausible.platomo.org/js/script.js"
+></script>
 
-{% block analytics %}
-  <!-- Plausible Analytics - loads immediately -->
-  <script
-    defer
-    data-domain="opentrafficcam.org"
-    src="https://plausible.platomo.org/js/script.js"
-  ></script>
+<!-- Microsoft Clarity - only with consent -->
+<script>
+  var __md_get_consent = function () {
+    return __md_get("__consent");
+  };
 
-  <!-- Microsoft Clarity - only with consent -->
-  <script>
-    var __md_get_consent = function() {
-      return __md_get('__consent');
-    };
+  // Prüfe ob Analytics akzeptiert wurden
+  if (__md_get_consent() && __md_get_consent().analytics) {
+    // Microsoft Clarity
+    (function (c, l, a, r, i, t, y) {
+      c[a] =
+        c[a] ||
+        function () {
+          (c[a].q = c[a].q || []).push(arguments);
+        };
+      t = l.createElement(r);
+      t.async = 1;
+      t.src = "https://www.clarity.ms/tag/" + i;
+      y = l.getElementsByTagName(r)[0];
+      y.parentNode.insertBefore(t, y);
+    })(window, document, "clarity", "script", "v1tuzucdwz");
+  }
 
-    // Prüfe ob Analytics akzeptiert wurden
+  // Listener für Consent-Änderungen
+  document$.subscribe(function () {
     if (__md_get_consent() && __md_get_consent().analytics) {
-      // Microsoft Clarity
-      (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-      })(window, document, "clarity", "script", "v1tuzucdwz");
-    }
-
-    // Listener für Consent-Änderungen
-    document$.subscribe(function() {
-      if (__md_get_consent() && __md_get_consent().analytics) {
-        // Reload page wenn Consent geändert wird, um Analytics zu laden
-        if (!window.__analytics_loaded) {
-          window.location.reload();
-        }
+      // Reload page wenn Consent geändert wird, um Analytics zu laden
+      if (!window.__analytics_loaded) {
+        window.location.reload();
       }
-    });
-  </script>
+    }
+  });
+</script>
 {% endblock %}
