@@ -13,6 +13,8 @@ authors:
 
 # Kamera für Verkehrszählung: So unterstützt sie eine moderne Verkehrsplanung
 
+![Install](/assets/img/blog_images/verkehrszaehlung_camera_install.webp)
+
 Ob Leistungsfähigkeitsnachweise, Neu- oder Umbauten oder die Optimierung von
 Lichtsignalanlagen – Kommunen und Ingenieurbüros benötigen verlässliche Daten zu allen
 Verkehrsmodi, um Entscheidungen in der Verkehrsplanung objektiv begründen zu können.
@@ -34,6 +36,9 @@ sind so in der Lage, Bewegungen zu analysieren und in auswertbare Kenngrößen u
 Alternativ werden die aufgezeichneten Videos von Zählpersonal ausgewertet.
 
 ### Welche Systeme für die Verkehrszählung mit Kamera gibt es?
+
+
+![OpentrafficCam](/assets/img/blog_images/opentrafficcam.webp)
 
 Grundsätzlich gibt es zwei unterschiedliche Kamerasysteme, die ähnliche Anforderungen an
 das Datenschutzkonzept stellen:
@@ -85,6 +90,9 @@ Punkten voraus. Dabei lassen sich die Vorteile in drei Themenfelder einordnen:
   dass sie optimale Sicht auf Knotenpunkte oder Streckenabschnitte bieten.
 
 ### Praxis- & Zukunftsfähigkeit
+
+
+![Verkehrsströme](/assets/img/blog_images/verkehrsstroeme.webp)
 
 - **Projektbasierte Einsetzbarkeit:** Wetterfeste mobile Kameras für die Fahrzeugzählung
   lassen sich ohne bauliche Eingriffe installieren und tagelang autonom betreiben – ideal
