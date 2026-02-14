@@ -1670,17 +1670,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#cli-chunk-size" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        cli-chunk-size
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#show-svz" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1780,10 +1769,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#no-track-export" class="md-nav__link">
+  <a href="#track-export" class="md-nav__link">
     <span class="md-ellipsis">
       
-        no-track-export
+        track-export
       
     </span>
   </a>
@@ -1791,10 +1780,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#no-track-statistics-export" class="md-nav__link">
+  <a href="#track-statistics-export" class="md-nav__link">
     <span class="md-ellipsis">
       
-        no-track-statistics-export
+        track-statistics-export
       
     </span>
   </a>
@@ -3154,17 +3143,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#cli-chunk-size" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        cli-chunk-size
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#show-svz" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3264,10 +3242,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#no-track-export" class="md-nav__link">
+  <a href="#track-export" class="md-nav__link">
     <span class="md-ellipsis">
       
-        no-track-export
+        track-export
       
     </span>
   </a>
@@ -3275,10 +3253,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#no-track-statistics-export" class="md-nav__link">
+  <a href="#track-statistics-export" class="md-nav__link">
     <span class="md-ellipsis">
       
-        no-track-statistics-export
+        track-statistics-export
       
     </span>
   </a>
@@ -3391,23 +3369,22 @@
 <p>After processing videos with OTVision´s tracking module (<a href="../../OTVision/usage/track/">OTVision track</a>), you can use OTAnalytics for analysing traffic data.
 The analysis must be configured in the <a href="../usage-ui/">OTAnalytics <strong>Graphical User Interface (GUI)</strong></a>. Afterwards, the analysis can be processed using the GUI or CLI interface.</p>
 <h2 id="synopsis">Synopsis<a class="headerlink" href="#synopsis" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>python -m OTAnalytics [-h] 
-                [--cli] 
+<div class="highlight"><pre><span></span><code>python -m OTAnalytics [-h]
+                [--cli]
                 [--cli-mode {bulk,stream}]
-                [--cli-chunk-size CLI_CHUNK_SIZE] 
                 [--show-svz]
-                [--config CONFIG] 
+                [--config CONFIG]
                 [--ottrks OTTRKS [OTTRKS ...]]
-                [--otflow OTFLOW] 
+                [--otflow OTFLOW]
                 [--save-dir SAVE_DIR]
-                [--save-name SAVE_NAME] 
+                [--save-name SAVE_NAME]
                 [--save-suffix SAVE_SUFFIX]
                 [--debug]
                 [--event-formats EVENT_FORMATS [EVENT_FORMATS ...]]
                 [--count-intervals COUNT_INTERVALS [COUNT_INTERVALS ...]]
-                [--no-track-export] 
-                [--no-track-statistics-export]
-                [--num-processes NUM_PROCESSES] 
+                [--track-export]
+                [--track-statistics-export]
+                [--num-processes NUM_PROCESSES]
                 [--logfile LOGFILE]
                 [--logfile_overwrite]
                 [--include-classes INCLUDE_CLASSES [INCLUDE_CLASSES ...]]
@@ -3436,11 +3413,6 @@ The CLI allows you to process a configured analysis on a high performance workst
 <li><code>stream</code>: Read data in chunks. Thus, reading <code>cli-chunk-size</code> tracks into memory and process them. Afterwards, read the next ones</li>
 </ul>
 <p>This parameter is optional. Defaults to <code>bulk</code>.</p>
-<hr />
-<h3 id="cli-chunk-size">cli-chunk-size<a class="headerlink" href="#cli-chunk-size" title="Permanent link">&para;</a></h3>
-<p><code>--cli-chunk-size &lt;integer&gt;</code></p>
-<p>Specify the chunk size for streaming OTAnalytics CLI. The chunk size configures the number of tracks to be read in streaming mode. Thus, the chunk size controls the necessary memory to process all track files.</p>
-<p>This parameter is optional.</p>
 <hr />
 <h3 id="show-svz">show-svz<a class="headerlink" href="#show-svz" title="Permanent link">&para;</a></h3>
 <p><code>--show-svz</code></p>
@@ -3492,13 +3464,13 @@ the resulting file may be <code>results_test.csv</code>.</p>
 <p>Example: <code>--count-intervals 5 10 15</code> will export event counts for 5-minute, 10-minute,
 and 15-minute intervals.</p>
 <hr />
-<h3 id="no-track-export">no-track-export<a class="headerlink" href="#no-track-export" title="Permanent link">&para;</a></h3>
-<p><code>--no-track-export</code></p>
-<p>Disable the export of track data as <code>.csv</code>.</p>
+<h3 id="track-export">track-export<a class="headerlink" href="#track-export" title="Permanent link">&para;</a></h3>
+<p><code>--track-export</code></p>
+<p>Enable the export of track data as <code>.csv</code>.</p>
 <hr />
-<h3 id="no-track-statistics-export">no-track-statistics-export<a class="headerlink" href="#no-track-statistics-export" title="Permanent link">&para;</a></h3>
-<p><code>--no-track-statistics-export</code></p>
-<p>Disable the export of track statistics as <code>.csv</code>.</p>
+<h3 id="track-statistics-export">track-statistics-export<a class="headerlink" href="#track-statistics-export" title="Permanent link">&para;</a></h3>
+<p><code>--track-statistics-export</code></p>
+<p>Enable the export of track statistics as <code>.csv</code>.</p>
 <hr />
 <h3 id="num-processes">num-processes<a class="headerlink" href="#num-processes" title="Permanent link">&para;</a></h3>
 <p><code>--num-processes &lt;integer&gt;</code></p>
@@ -3552,7 +3524,7 @@ If omitted, logs will be appended to the existing file.</p>
     <span class="md-icon" title="Letztes Update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="5. Mai 2025 09:16:24 CEST">5. Mai 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="14. Februar 2026 21:35:49 CET">14. Februar 2026</span>
   </span>
 
     
