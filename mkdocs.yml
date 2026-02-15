@@ -72,8 +72,6 @@ nav:
               - OTAnalytics/usage/usage-ui.md
               - OTAnalytics/usage/usage-cli.md
           - OTAnalytics/otconfig.md
-          - Accuracy:
-              - OTAnalytics/Accuracy/counts.md
 
       - OTLabels:
           - OTLabels/index.md

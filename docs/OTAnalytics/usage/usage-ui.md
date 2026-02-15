@@ -261,8 +261,8 @@ A new line section is added in the following steps:
 To select a specific section, click on its name in the list of sections.
 The selected section is now highlighted both in the list and on the canvas.
 
-You can also select multiple sections with _left-click_ + _ctrl_ on Windows or _cmd_ on macOS.
-Deselect a single with _right-click_ + _ctrl_ on Windows or _cmd_ on macOS or deselect all sections with _right-click_ into a empty place in the list.
+You can also select multiple sections with ++ctrl+left-button++ on Windows or ++cmd+left-button++ on macOS.
+Deselect a single with ++ctrl+right-button++ on Windows or ++cmd+right-button++ on macOS or deselect all sections with ++right-button++ into a empty place in the list.
 
 #### Change the geometry of a section
 
@@ -278,7 +278,7 @@ The selected point “sticks” to the mouse pointer until the left mouse button
 The old geometry is displayed as a dashed reference.
 
 1. Right-click to exit change mode and save the changes.
-1. Pressing the Escape button exits the change mode without saving the changes to the
+1. Pressing ++esc++ exits the change mode without saving the changes to the
    geometry.
 
 #### Change attributes of a section
@@ -334,8 +334,8 @@ To select a specific flow, click on its name in the list of flows.
 The selected flow is now highlighted both in the list and on the canvas (by an arrow
 indicating its direction).
 
-You can also select multiple flows with _left-click_ + _ctrl_ on Windows or _cmd_ on macOS.
-Deselect a single with _right-click_ + _ctrl_ on Windows or _cmd_ on macOS or deselect all sections with _right-click_ into a empty place in the list.
+You can also select multiple flows with ++ctrl+left-button++ on Windows or ++cmd+left-button++ on macOS.
+Deselect a single with ++ctrl+right-button++ on Windows or ++cmd+right-button++ on macOS or deselect all sections with ++right-button++ into a empty place in the list.
 
 #### Edit a flow
 
