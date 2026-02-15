@@ -2,7 +2,7 @@
 title: Documentation
 ---
 
-## Welcome to OpenTrafficCam
+# Welcome to OpenTrafficCam
 
 ![OpenTrafficCam Overview](../OpenTrafficCam_1200.svg)
 

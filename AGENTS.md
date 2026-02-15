@@ -6,7 +6,9 @@ This file provides guidance to AI coding agents when working with this repositor
 
 OTDocs is the documentation website for [OpenTrafficCam](https://opentrafficcam.org/), an open-source workflow for video-based traffic analysis. The site is built with MkDocs using the Material theme.
 
-**Language:** The main site pages (landing page, pricing, team) are in German (`language: de` in mkdocs.yml). The documentation section under `docs/` (OTCamera, OTVision, OTAnalytics, OTLabels, contribute) is written in English. Repository tooling (this file, README, configs, workflows) is also in English.
+**Language:** The main site pages (landing page, pricing, team) are in German (`language: de` in mkdocs.yml).
+The documentation section under `docs/` (OTCamera, OTVision, OTAnalytics, OTLabels, contribute) is written in English.
+Repository tooling (this file, README, configs, workflows) is also in English.
 
 ## Commands
 

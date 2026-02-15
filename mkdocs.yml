@@ -47,7 +47,6 @@ nav:
               - OTCamera/gettingstarted/installation/otcamera.md
           - OTCamera/gettingstarted/firstuse.md
           - Usage:
-              - OTCamera/usage/usage.md
               - OTCamera/usage/buttons_leds.md
               - OTCamera/usage/preparation_safety.md
               - OTCamera/usage/mounting.md
