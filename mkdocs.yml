@@ -46,26 +46,23 @@ nav:
               - OTCamera/gettingstarted/installation/wifi-ap.md
               - OTCamera/gettingstarted/installation/otcamera.md
           - OTCamera/gettingstarted/firstuse.md
-          - OTCamera/gettingstarted/assembly.md
           - Usage:
               - OTCamera/usage/usage.md
               - OTCamera/usage/buttons_leds.md
               - OTCamera/usage/preparation_safety.md
               - OTCamera/usage/mounting.md
               - OTCamera/usage/getvideos.md
-          - Advanced Usage:
-              - OTCamera/advanced_usage/configration.md
-              - OTCamera/advanced_usage/calibrate.md
+              - OTCamera/usage/configuration.md
       - OTVision:
           - OTVision/index.md
-          - OTVision/gettingstarted/requirements.md
-          - OTVision/gettingstarted/installation.md
-          - OTVision/gettingstarted/firstuse.md
+          - OTVision/requirements.md
+          - OTVision/installation.md
+          - OTVision/firstuse.md
           - Usage:
               - OTVision/usage/convert.md
               - OTVision/usage/detect.md
               - OTVision/usage/track.md
-              - OTVision/advanced_usage/configuration.md
+              - OTVision/usage/configuration.md
 
       - OTAnalytics:
           - OTAnalytics/index.md
@@ -73,8 +70,8 @@ nav:
           - OTAnalytics/installation.md
           - OTAnalytics/firstuse.md
           - Usage:
-              - OTAnalytics/usage-ui.md
-              - OTAnalytics/usage-cli.md
+              - OTAnalytics/usage/usage-ui.md
+              - OTAnalytics/usage/usage-cli.md
           - OTAnalytics/otconfig.md
           - Accuracy:
               - OTAnalytics/Accuracy/counts.md
