@@ -1,3 +1,4 @@
+
 # Usage CLI
 
 After processing videos with OTVision´s tracking module ([OTVision track](../../OTVision/usage/track.md)), you can use OTAnalytics for analysing traffic data.
@@ -9,7 +10,6 @@ The analysis must be configured in the [OTAnalytics **Graphical User Interface (
 python -m OTAnalytics [-h]
                 [--cli]
                 [--cli-mode {bulk,stream}]
-                [--cli-chunk-size CLI_CHUNK_SIZE]
                 [--show-svz]
                 [--config CONFIG]
                 [--ottrks OTTRKS [OTTRKS ...]]
@@ -20,8 +20,8 @@ python -m OTAnalytics [-h]
                 [--debug]
                 [--event-formats EVENT_FORMATS [EVENT_FORMATS ...]]
                 [--count-intervals COUNT_INTERVALS [COUNT_INTERVALS ...]]
-                [--no-track-export]
-                [--no-track-statistics-export]
+                [--track-export]
+                [--track-statistics-export]
                 [--num-processes NUM_PROCESSES]
                 [--logfile LOGFILE]
                 [--logfile_overwrite]
@@ -65,17 +65,6 @@ Specify the execution mode for the CLI. Possible values are:
 - `stream`: Read data in chunks. Thus, reading `cli-chunk-size` tracks into memory and process them. Afterwards, read the next ones
 
 This parameter is optional. Defaults to `bulk`.
-
----
-
-### cli-chunk-size
-
-`--cli-chunk-size <integer>`
-
-Specify the chunk size for streaming OTAnalytics CLI. The chunk size configures the number of tracks to be read in streaming mode.
-Thus, the chunk size controls the necessary memory to process all track files.
-
-This parameter is optional.
 
 ---
 
@@ -171,19 +160,19 @@ and 15-minute intervals.
 
 ---
 
-### no-track-export
+### track-export
 
-`--no-track-export`
+`--track-export`
 
-Disable the export of track data as `.csv`.
+Enable the export of track data as `.csv`.
 
 ---
 
-### no-track-statistics-export
+### track-statistics-export
 
-`--no-track-statistics-export`
+`--track-statistics-export`
 
-Disable the export of track statistics as `.csv`.
+Enable the export of track statistics as `.csv`.
 
 ---
 
