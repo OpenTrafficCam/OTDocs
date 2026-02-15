@@ -301,8 +301,3 @@ p {
   padding: 0.2em 0.4em;
   border-radius: 0.4em;
 }
-
-/* Hide right-hand in-page Table of Contents (MkDocs Material secondary sidebar) */
-.md-sidebar--secondary {
-  display: none !important;
-}
