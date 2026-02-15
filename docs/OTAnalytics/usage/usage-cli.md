@@ -1,7 +1,7 @@
 # Usage CLI
 
-After processing videos with OTVision´s tracking module ([OTVision track](../OTVision/usage/track.md)), you can use OTAnalytics for analysing traffic data.
-The analysis must be configured in the [OTAnalytics **Graphical User Interface (GUI)**](../OTAnalytics/usage-ui.md). Afterwards, the analysis can be processed using the GUI or CLI interface.
+After processing videos with OTVision´s tracking module ([OTVision track](../../OTVision/usage/track.md)), you can use OTAnalytics for analysing traffic data.
+The analysis must be configured in the [OTAnalytics **Graphical User Interface (GUI)**](usage-ui.md). Afterwards, the analysis can be processed using the GUI or CLI interface.
 
 ## Synopsis
 
@@ -31,9 +31,9 @@ python -m OTAnalytics [-h]
 
 ## Description
 
-If you have run [OTVision track](../OTVision/usage/track.md)
+If you have run [OTVision track](../../OTVision/usage/track.md)
 to extract movements of road users, you are ready to analyze the movements in each file.
-To do so, you first need to configure the analysis within the [OTAnalytics GUI](../OTAnalytics/usage-ui.md).
+To do so, you first need to configure the analysis within the [OTAnalytics GUI](usage-ui.md).
 Afterwards, you can analyze the data using the GUI or CLI.
 The CLI allows you to process a configured analysis on a high performance workstation.
 
@@ -90,7 +90,7 @@ Show SVZ-Tab in OTAnalytics GUI. If omitted the tab will be hidden.
 
 `--config <path/to/config file>`
 
-Path to otconfig file. The otconfig file contains the configuration of the analysis. How to create an otconfig file, see [Usage GUI](../OTAnalytics/usage-ui.md#save-and-open-the-project)
+Path to otconfig file. The otconfig file contains the configuration of the analysis. How to create an otconfig file, see [Usage GUI](usage-ui.md#save-and-open-the-project)
 
 ---
 
@@ -106,7 +106,7 @@ Specify one or more paths directories or to `.ottrk` files containing track data
 
 `--otflow <path/to/file>`
 
-Path to an `.otflow` file containing section information needed for analysis. How to create an otflow file, see [Usage GUI](../OTAnalytics/usage-ui.md#save-and-open-the-project)
+Path to an `.otflow` file containing section information needed for analysis. How to create an otflow file, see [Usage GUI](usage-ui.md#save-and-open-the-project)
 
 ---
 

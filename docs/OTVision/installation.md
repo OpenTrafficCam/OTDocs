@@ -102,7 +102,7 @@ We are happy to know about your experience.
 
 We welcome code contributions (e.g., fixing bugs or adding features) from others
 by forking the repository and creating a pull request.
-Please check the [contribute section](../../contribute/index.md)
+Please check the [contribute section](../contribute/index.md)
 of this documentation first.
 
 If you want to contribute code, additional requirements should be installed

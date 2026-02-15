@@ -10,13 +10,14 @@ You can either
 
 - modify this file (then you don´t have to specify it´s path in the CLI) or
 - build your own file and save it somewhere else (then you have to specify it´s path
-    in the CLI).
+  in the CLI).
 
 You can specify parameters for the sub-tasks that are provided by OTVision
 (`convert`, `detect`, `track`) in separate configuration files or in a single file.
 The scripts for the respective sub-tasks only read the parameters they need.
 
 !!! warning
+
     Any parameter passed to the CLI will overwrite the respective parameter from
     the config file.
 

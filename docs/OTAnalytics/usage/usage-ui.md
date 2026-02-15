@@ -1,15 +1,15 @@
 # Usage GUI
 
-After processing videos with OTVision´s tracking module ([OTVision track](../OTVision/usage/track.md)), you can use OTAnalytics for analysing traffic data.
+After processing videos with OTVision´s tracking module ([OTVision track](../../OTVision/usage/track.md)), you can use OTAnalytics for analyzing traffic data.
 The OTAnalytics **Graphical User Interface (GUI)** enables you to configure analyses, extract valuable insights from your data, and export the results efficiently.
 
 ## Terminology
 
-Vehicles and pedestrians are detected in the individual frames of the video using [detect in OTVision](../OTVision/usage/detect.md).
+Vehicles and pedestrians are detected in the individual frames of the video using [detect in OTVision](../../OTVision/usage/detect.md).
 In a single frame of a video, each detected object (**Detection**) is represented by a **Bounding Box**,
 which is the rectangular area surrounding the detected vehicle or pedestrian together with its classification (e.g., car, bike, pedestrian).
 
-The [tracker in OTVision](../OTVision/usage/track.md) links consecutive detections, or bounding boxes, to form the **Track** of a **Road User**.
+The [tracker in OTVision](../../OTVision/usage/track.md) links consecutive detections, or bounding boxes, to form the **Track** of a **Road User**.
 
 A track is therefore composed of a series of detections, each with its own bounding box and classification.
 Ideally, all detections within a track share the same classification.
@@ -22,8 +22,9 @@ This point is called the **Track Point**.
 The trajectory is formed by connecting the track points collected across successive frames.
 
 !!! info inline end "Offset examples"
-=== "0.1, 0.1"
-![Offset x=0.1, y=0.1](usage-ui/offset-x-0-1-y-0-1.png){ align=left }
+
+    === "0.1, 0.1"
+        ![Offset x=0.1, y=0.1](usage-ui/offset-x-0-1-y-0-1.png){ align=left }
 
     === "0.8, 0.3"
         ![Offset x=0.8, y=0.3](usage-ui/offset-x-0-8-y-0-3.png){ align=left }
@@ -34,7 +35,8 @@ Origin `(0, 0)` is the top left-hand corner of the bounding box.
 These values determine the relative position of the track point within the bounding box, providing flexibility in track point placement.
 
 To analyze the tracks, OTAnalytics provides **Sections** and **Flows**.
-Imagine sections as the digital equivalent of physical detectors used for traffic measurement, sometimes, also called virtual inductive loops (not to be confused with the detection of bounding boxes in OTVision).
+Imagine sections as the digital equivalent of physical detectors used for traffic measurement, sometimes,
+also called virtual inductive loops (not to be confused with the detection of bounding boxes in OTVision).
 Each time a track's trajectory intersects a section, an **Event** is generated.
 Each event contains detailed information, including the track's identifier, its position in the frame, and the timestamp of the intersection.
 
@@ -45,7 +47,8 @@ To achieve this, the events belonging to a track are sorted chronologically base
 The assignment of a track to a flow is called **Track Assignment**.
 
 !!! info
-The pair of events with the longest time interval between them is used to assign the track to the flow corresponding to the sections of both events.
+
+    The pair of events with the longest time interval between them is used to assign the track to the flow corresponding to the sections of both events.
 
 ## User Interface
 
@@ -81,14 +84,16 @@ The project must first be named.
 The project name is entered in the corresponding Name field.
 
 !!! info
-It is recommended to choose a unique name (e.g. name of the measuring point, camera number; or a combination of several unique details).
+
+    It is recommended to choose a unique name (e.g. name of the measuring point, camera number; or a combination of several unique details).
 
 The start time (date and time) of the first video must then be entered in the corresponding Start date fields.
 It is possible to enter in ISO 8601 format (YYYY-MM-DD) or German date format (DD.MM.YYYY).
 
 !!! info
-OTAnalytics assumes that all selected videos are contiguous in time.
-If the videos to be processed have a time gap (e.g., videos from three days from 6:00 a.m. to 10:00 p.m.), several projects with chronologically contiguous videos must be created.
+
+    OTAnalytics assumes that all selected videos are contiguous in time.
+    If the videos to be processed have a time gap (e.g., videos from three days from 6:00 a.m. to 10:00 p.m.), several projects with chronologically contiguous videos must be created.
 
 ### Load track files
 
@@ -103,9 +108,10 @@ This is particularly useful for configuring an analysis handled by the platomo t
 To add videos, use the _Add..._ button, and to remove them from the configuration, use the _Remove_ button.
 
 !!! tip
-Added videos are displayed in alphabetical order in the “Videos” overview panel and are later processed in this order.
-The videos should therefore be named in such a way that the chronological order matches the alphabetical order.
-Additional zero-padding (e.g., `01`, `02`) is helpful if you want to ensure correct alphabetical sorting.
+
+    Added videos are displayed in alphabetical order in the “Videos” overview panel and are later processed in this order.
+    The videos should therefore be named in such a way that the chronological order matches the alphabetical order.
+    Additional zero-padding (e.g., `01`, `02`) is helpful if you want to ensure correct alphabetical sorting.
 
 When you click a video in the configuration bar, the first image of the video is displayed as the background image.
 This allows you to check whether all videos have been selected correctly.
@@ -126,10 +132,11 @@ An `.otflow` file stores only information about sections and flows.
 Hence, it can be reused / imported into another project with different videos of the same measurement site.
 
 !!! tip
-We recommend regularly saving the progress of the project while it is still being processed.
-This prevents possible loss of data.
-The _Save_ button automatically saves the file to the last selected location.
-If it is colored in orange, changes have been made.
+
+    We recommend regularly saving the progress of the project while it is still being processed.
+    This prevents possible loss of data.
+    The _Save_ button automatically saves the file to the last selected location.
+    If it is colored in orange, changes have been made.
 
     We also recomment to store all project related files (videos, `.otdet`, `.ottrk` and `.otconfig`) in the same folder.
 
@@ -150,8 +157,9 @@ They are drawn directly on the background image in OTAnalytics.
 To do this, the _Sections_ tab must first be selected in the Sections/Flows section.
 
 !!! tip
-Both line sections and area sections can be created.
-If no occupancy durations (e.g., of parking areas) are analyzed, we recommend using line sections.
+
+    Both line sections and area sections can be created.
+    If no occupancy durations (e.g., of parking areas) are analyzed, we recommend using line sections.
 
     The following example is limited to line sections.
     However, the procedure described can also be applied to area sections.
@@ -171,8 +179,9 @@ A new line section is added in the following steps:
 1. Repeat the process to add further sections.
 
 !!! warning
-A name can only be assigned once, duplicate names of several sections are not possible.
-We recommend including the approximate compass direction of the geographical location (e.g. north, north-east) in the name of the section.
+
+    A name can only be assigned once, duplicate names of several sections are not possible.
+    We recommend including the approximate compass direction of the geographical location (e.g. north, north-east) in the name of the section.
 
 ![Add Sections](usage-ui/add-section.png)
 
@@ -207,8 +216,9 @@ To do this, the desired section must first be selected from the list.
 The bounding box offset defines, which reference point of the bounding boxes of the track is used to trigger an event.
 
 !!! tip
-Since the bounding box offset can be individually configured for each section, tracks intersecting different sections can be finely tuned.
-This helps to increase the recording accuracy of the section or to fulfil special use cases (e.g. if the front of a road user is to be recorded).
+
+    Since the bounding box offset can be individually configured for each section, tracks intersecting different sections can be finely tuned.
+    This helps to increase the recording accuracy of the section or to fulfil special use cases (e.g. if the front of a road user is to be recorded).
 
 #### Remove sections
 
@@ -232,15 +242,17 @@ A new flow is added in the following steps:
 1. If you plan to perform speed measurements, you can enter the distance between the sections (which must be measured independently of OTAnalytics)
 
 !!! warning
-A name can only be assigned once, duplicate names of several flows are not possible.
+
+    A name can only be assigned once, duplicate names of several flows are not possible.
 
 ![Add Flows](usage-ui/add-flow.png)
 
 !!! tip
-Entering flows for many sections can be tedious.
-Fortunately, OTAnalytics can **automatically generate flows** for all possible combinations of start and end sections.
-Just hit the _Generate_ button.
-The naming convention for the flows is `{Name of start section} --> {Name of end section}`.
+
+    Entering flows for many sections can be tedious.
+    Fortunately, OTAnalytics can **automatically generate flows** for all possible combinations of start and end sections.
+    Just hit the _Generate_ button.
+    The naming convention for the flows is `{Name of start section} --> {Name of end section}`.
 
 #### Select flows
 
@@ -269,7 +281,8 @@ Tracks are consistently displayed in the same colors, which are determined by th
 The visualization layers are organized into groups.
 
 !!! warning
-Some visualization layers are not updated automatically, when you change the configuration of the project or the sections/flows.
+
+    Some visualization layers are not updated automatically, when you change the configuration of the project or the sections/flows.
 
     If the visualization is **outdated**, just hit the *Update flow highlighting* button - calculations will be run and visulalization will be updated.
 
@@ -288,7 +301,8 @@ They enable you to check the position of the sections and the definition of the 
 Checking, if the sections "catch" the correct tracks is a crucial step to ensure a good quality of each traffic analysis.
 
 === "All"
-All tracks are shown.
+
+    All tracks are shown.
 
     ![Show all tracks](usage-ui/show-tracks-all.png)
 
@@ -323,27 +337,32 @@ Like in [Show tracks](#show-tracks), you can display the start- and endpoints ba
 They enable you, for example, to check whether some tracks are interrupted and where this may be clustered.
 
 === "All"
-Start- and endpoints of all tracks are highlighted.
+
+    Start- and endpoints of all tracks are highlighted.
 
     ![Show start- and endpoints of all tracks](usage-ui/show-start-end-points-all.png)
 
 === "Intersecting sections"
-Start- and endpoints of tracks intersecting at least one of the selected sections are highlighted.
+
+    Start- and endpoints of tracks intersecting at least one of the selected sections are highlighted.
 
     ![Show start- and endpoints of tracks intersecting the selected sections](usage-ui/show-start-end-points-intersecting-sections.png)
 
 === "Not intersecting sections"
-Start- and endpoints of tracks intersecting **none** of the selected sections are highlighted.
+
+    Start- and endpoints of tracks intersecting **none** of the selected sections are highlighted.
 
     ![Show start- and endpoints of tracks not intersection the selected sections](usage-ui/show-start-end-points-not-intersecting-sections.png)
 
 === "Assigned to flows"
-Start- and endpoints of tracks assigned to at least one selected flow are highlighted.
+
+    Start- and endpoints of tracks assigned to at least one selected flow are highlighted.
 
     ![Show start- and endpoints of tracks assigned to flows](usage-ui/show-start-end-points-assigned-to-flows.png)
 
 === "Not assigned to flows"
-Start- and endpoints of tracks assigned to **none** of the selected flows are highlighted.
+
+    Start- and endpoints of tracks assigned to **none** of the selected flows are highlighted.
 
     ![Show start- and endpoints of tracks not assigned to flows](usage-ui/show-start-end-points-not-assigned-to-flows.png)
 
@@ -354,12 +373,14 @@ These layers visualize all detections of a single frame either using a bounding 
 It can be helpful for an in-depth assessment of the quality of samples of detections and tracks.
 
 === "Bounding box"
-The bounding boxes of all detections in the currently visible frame are shown.
+
+    The bounding boxes of all detections in the currently visible frame are shown.
 
     ![Show bounding box of detections in the current frame](usage-ui/show-detections-bounding-boxes.png)
 
 === "Track point"
-The track points of all detections in the currently visible frame are shown.
+
+    The track points of all detections in the currently visible frame are shown.
 
     ![Show track points of detections in the current frame](usage-ui/show-detections-track-point.png)
 
@@ -371,7 +392,8 @@ Like the other layers, they provide in-depth data validation.
 Additionally, the event locations themselves can serve as an interesting focus for traffic analysis.
 
 !!! info
-The locations of the events are determined based on the bounding box offset [configured locally for each individual section](#change-attributes-of-a-section).
+
+    The locations of the events are determined based on the bounding box offset [configured locally for each individual section](#change-attributes-of-a-section).
 
     In contrast, a global offset can be set for visualising the tracks.
 
@@ -380,12 +402,14 @@ The locations of the events are determined based on the bounding box offset [con
     To align the tracks, select a specific section and hit the *Update with section offset* button.
 
 === "Current filter"
-The locations of all events within the date/time filter range are shown.
+
+    The locations of all events within the date/time filter range are shown.
 
     ![Show events in the current filter](usage-ui/show-events-current-filter.png)
 
 === "Current frame"
-All events present at the moment of the current frame are shown.
+
+    All events present at the moment of the current frame are shown.
 
     ![Show events in the current filter](usage-ui/show-events-current-frame.png)
 
@@ -395,8 +419,9 @@ As the number of analyzed video hours grows, distinguishing individual tracks in
 Filters enable you to reduce the number of displayed track and the part of the track which is shown, making the visualization more focused and easier to manage.
 
 !!! info
-Filters are applied only to the visualization in the workspace and to the calculation of track statistics displayed below.
-Analyses and data exports always include all loaded tracks, regardless of any applied filters.
+
+    Filters are applied only to the visualization in the workspace and to the calculation of track statistics displayed below.
+    Analyses and data exports always include all loaded tracks, regardless of any applied filters.
 
 ### Filter by Time
 
@@ -423,9 +448,10 @@ By clicking the _Filter by classification_ button, a popup appears where you can
 After all sections and flows have been configured, you can choose an analysis for export.
 
 !!! tip
-We highly recommend using the different [visualization layers](#visualization-layers) and the track statisics below the canvas before exporting analyses.
-This is how you gain detailed insights into the data and can optimize the configuration.
-It is important to ensure a good quality of your exports.
+
+    We highly recommend using the different [visualization layers](#visualization-layers) and the track statisics below the canvas before exporting analyses.
+    This is how you gain detailed insights into the data and can optimize the configuration.
+    It is important to ensure a good quality of your exports.
 
 ### Traffic counts
 
@@ -524,4 +550,3 @@ The tracks assigned to flows are exported into a `.csv` file with the following 
 ### Track Statistics
 
 This is a CSV export of the track statistics shown in the workspace below the camera image.
-

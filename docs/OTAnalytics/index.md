@@ -6,7 +6,8 @@ hide: toc
 
 > The **brain** of OpenTrafficCam.
 
-[OTAnalytics](https://github.com/OpenTrafficCam/OTAnalytics) is a set of self-developed algorithms to gather traffic measures based on trajectories of road users. It provides a user-friendly graphical interface for configuring analyses, extracting valuable insights from your data, and exporting the results efficiently.
+[OTAnalytics](https://github.com/OpenTrafficCam/OTAnalytics) is a set of self-developed algorithms to gather traffic measures based on trajectories of road users.
+It provides a user-friendly graphical interface for configuring analyses, extracting valuable insights from your data, and exporting the results efficiently.
 
 ## Key features
 
@@ -17,15 +18,15 @@ hide: toc
 - Various visualization layers and filters
 - Runs on Windows, macOS, and Linux
 
-For the terminology used in OTAnalytics (such as Tracks, Sections, Events, Flows, and more), see the [Terminology](usage-ui.md#terminology) section of the Usage GUI documentation.
+For the terminology used in OTAnalytics (such as Tracks, Sections, Events, Flows, and more), see the [Terminology](usage/usage-ui.md#terminology) section of the Usage GUI documentation.
 
 ## Content of documentation
 
 - [Requirements](requirements.md): Prerequisites for running OTAnalytics
 - [Installation](installation.md): How to install OTAnalytics on different operating systems
 - [First Use](firstuse.md): Quick walkthrough of your first analysis
-- [Usage GUI](usage-ui.md): Detailed guide on how to use the graphical user interface
-- [Usage CLI](usage-cli.md): Command-line interface reference
+- [Usage GUI](usage/usage-ui.md): Detailed guide on how to use the graphical user interface
+- [Usage CLI](usage/usage-cli.md): Command-line interface reference
 
 Most of the code is developed by the OpenTrafficCam contributors
 (based on Python libraries like [NumPy](https://numpy.org/),
