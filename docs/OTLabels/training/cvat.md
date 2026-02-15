@@ -1,6 +1,6 @@
 # CVAT
 
-CVAT is a free video and image annotation tool for computer vision.  
+CVAT is a free video and image annotation tool for computer vision.
 We recommend the developers guides for [Installation](https://github.com/openvinotoolkit/cvat/blob/develop/cvat/apps/documentation/installation.md) as well as the [user's guide](https://github.com/openvinotoolkit/cvat/blob/develop/cvat/apps/documentation/user_guide.md).
 
 If you want to label your own dataset to retrain models, keep in mind that the format of your new labels need to be the same as the format of the original dataset.
@@ -48,17 +48,10 @@ Even if only a part of an object is visible and the class of the object is recog
 We define certain set of videos as a **project**.
 Every project has multiple **tasks** (each consists of one video to annotate).
 Each task has a status ("Pending", "In Progress" and "Completed") and a progress bar showing the number of completed jobs.
-Open the task with click on "Open".  
+Open the task with click on "Open".
 For each task (or video) multiple **jobs** with a certain amounts of frames from the video are defined.
 Each job has a status ("annotation", "validation" and "completed"), an "assignee" (responsible for annotation) and a "reviewer" (responsible for reviewing the assignees annotation).
 Open the job with click on "Job #...".
-
-## Import datafix
-
-<!-- TODO Add description for importing datafix -->
-
-!!! info "Coming soon"
-    Unfortunately, there is no content here yet. But we are currently working on completing this site.
 
 ## Workflow
 
@@ -69,7 +62,7 @@ After finishing the initial labeling, the assignee requests a review (menu - req
 Then the reviewer checks the initial labeling done by the assignee and raises issues when there is a problem or question.
 After reviewing all video frames of the job, the reviewer submits the review by either accepting and completing the job or rejecting it (which sets the status of the job bach to "Annotation").
 Now the assignee has to check the issues, update the labels, resolve the issues and again request a review.
-The review process starts again and if necessary also next annotations, until the reviewer accepts the job and it is marked as "Completed".  
+The review process starts again and if necessary also next annotations, until the reviewer accepts the job and it is marked as "Completed".
 ![CVAT Workflow](cvat-macro-workflow.png)
 
 We recommend the following procedure for annotation in CVAT:
@@ -88,4 +81,5 @@ We recommend the following procedure for annotation in CVAT:
 <!-- TODO Add description for downloading annotation data -->
 
 !!! info "Coming soon"
+
     Unfortunately, there is no content here yet. But we are currently working on completing this site.

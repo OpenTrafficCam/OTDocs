@@ -72,7 +72,8 @@ This parameter is optional. Defaults to `bulk`.
 
 `--cli-chunk-size <integer>`
 
-Specify the chunk size for streaming OTAnalytics CLI. The chunk size configures the number of tracks to be read in streaming mode. Thus, the chunk size controls the necessary memory to process all track files.
+Specify the chunk size for streaming OTAnalytics CLI. The chunk size configures the number of tracks to be read in streaming mode.
+Thus, the chunk size controls the necessary memory to process all track files.
 
 This parameter is optional.
 
@@ -90,7 +91,8 @@ Show SVZ-Tab in OTAnalytics GUI. If omitted the tab will be hidden.
 
 `--config <path/to/config file>`
 
-Path to otconfig file. The otconfig file contains the configuration of the analysis. How to create an otconfig file, see [Usage GUI](usage-ui.md#save-and-open-the-project)
+Path to otconfig file. The otconfig file contains the configuration of the analysis.
+How to create an otconfig file, see [Usage GUI](usage-ui.md#save-and-open-the-project)
 
 ---
 
@@ -106,7 +108,8 @@ Specify one or more paths directories or to `.ottrk` files containing track data
 
 `--otflow <path/to/file>`
 
-Path to an `.otflow` file containing section information needed for analysis. How to create an otflow file, see [Usage GUI](usage-ui.md#save-and-open-the-project)
+Path to an `.otflow` file containing section information needed for analysis.
+How to create an otflow file, see [Usage GUI](usage-ui.md#save-and-open-the-project)
 
 ---
 

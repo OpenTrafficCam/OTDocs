@@ -18,8 +18,6 @@ It provides a user-friendly graphical interface for configuring analyses, extrac
 - Various visualization layers and filters
 - Runs on Windows, macOS, and Linux
 
-For the terminology used in OTAnalytics (such as Tracks, Sections, Events, Flows, and more), see the [Terminology](usage/usage-ui.md#terminology) section of the Usage GUI documentation.
-
 ## Content of documentation
 
 - [Requirements](requirements.md): Prerequisites for running OTAnalytics

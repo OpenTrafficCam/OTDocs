@@ -42,7 +42,8 @@ Then select the SD card on which the operating system will be installed.
 Press the Write button and wait until the Raspberry Pi Imager has completely written and verified your SD card.
 
 !!! tip
-Sometimes the verification may fail. Try another USB port on your PC or another card reader. If this does not help, maybe the SD card is broken.
+
+    Sometimes the verification may fail. Try another USB port on your PC or another card reader. If this does not help, maybe the SD card is broken.
 
 ??? help "Setup without Raspberry Pi Imager"
 

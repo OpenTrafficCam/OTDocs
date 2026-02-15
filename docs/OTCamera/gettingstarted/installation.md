@@ -24,8 +24,9 @@ We're assuming that you'll use an DS3132 RTC module.
 If you are using a different or no RTC module you should adjust the quick installer.
 
 !!! info
-If you like, you can also setup the Raspberry Pi and install OTCamera manually.
-The necessary steps are described on the following pages.
+
+    If you like, you can also setup the Raspberry Pi and install OTCamera manually.
+    The necessary steps are described on the following pages.
 
 ### Prepare the SD-Card
 
@@ -56,8 +57,3 @@ You will be asked for some config values.
 After the installer complete, simply reboot the Raspberry Pi and the OTCamera software should be up and running.
 
 If not, please report your issues using the [GitHub issue tracker](https://github.com/OpenTrafficCam/OTCamera/issues).
-
-!!! note
-We are planning to offer a ready-to-use image for the Raspberry Pi, which can be easily installed.
-The setup will then be even easier.
-Stay tuned :)

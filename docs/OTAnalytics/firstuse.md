@@ -5,7 +5,6 @@ If you haven't installed OTAnalytics yet, start with the [Requirements](requirem
 
 ## Run OTAnalytics
 
-If you left the terminal window, open it and navigate to the unzipped folder, again.
 Run the start script as follows:
 
 === "Windows"

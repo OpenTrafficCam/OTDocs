@@ -88,7 +88,8 @@ The aim of TIDE is exactly that, to give us this insight on how the different er
 [TIDE](https://dbolya.github.io/tide/) defines six main error types as follows:
 
 !!! info
-The following descriptions of the error types are directly taken from the [TIDE source code](https://github.com/dbolya/tide/blob/master/tidecv/errors/main_errors.py)
+
+    The following descriptions of the error types are directly taken from the [TIDE source code](https://github.com/dbolya/tide/blob/master/tidecv/errors/main_errors.py)
 
 1. **Classification Error**: Error caused when a prediction would have been marked positive if it had the correct class.
 

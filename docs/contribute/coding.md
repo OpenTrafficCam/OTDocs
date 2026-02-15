@@ -94,7 +94,8 @@ def hello_world(message: str = "Hello World", author: str = "Santa Claus"):
 ```
 
 !!! note
-If you are using Visual Studio Code, you may want to use the [Python Docstring Generator](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring) extension.
+
+    If you are using Visual Studio Code, you may want to use the [Python Docstring Generator](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring) extension.
 
 ### Comments
 

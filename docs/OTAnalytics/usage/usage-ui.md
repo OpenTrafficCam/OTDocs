@@ -327,7 +327,8 @@ Tracks assigned to **none** of the selected flows are shown.
     ![Show tracks not assigned to flows](usage-ui/show-tracks-not-assigned-to-flows.png)
 
 !!! tip
-When checking and optimising sections and flows, also have a look at the track statistics shown below the canvas.
+
+    When checking and optimising sections and flows, also have a look at the track statistics shown below the canvas.
 
 ### Show start- and endpoints
 

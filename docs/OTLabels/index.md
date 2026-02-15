@@ -23,4 +23,5 @@ and existing open source software packages ([CVAT](https://github.com/openvinoto
 - [Validation](validation/overview.md)
 - [Models](models/coco6.md)
 
-Most of the code describing the workflow will be developed by the OpenTrafficCam contributors (based on python libraries like [NumPy](https://numpy.org/), [pandas](https://pandas.pydata.org/), [tkinter](https://docs.python.org/3/library/tkinter.html) and [OpenCV](https://opencv.org/)).
+Most of the code describing the workflow will be developed by the OpenTrafficCam contributors
+(based on python libraries like [NumPy](https://numpy.org/), [pandas](https://pandas.pydata.org/), [tkinter](https://docs.python.org/3/library/tkinter.html) and [OpenCV](https://opencv.org/)).
