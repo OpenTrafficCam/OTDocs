@@ -1,0 +1,17 @@
+Port 22
+PermitRootLogin no
+PasswordAuthentication no
+ChallengeResponseAuthentication no
+AllowTcpForwarding no
+X11Forwarding no
+AllowAgentForwarding no
+PermitTunnel no
+PrintMotd no
+Subsystem sftp /bin/false
+AllowUsers deployer
+
+MaxAuthTries 3
+LoginGraceTime 30
+MaxSessions 2
+ClientAliveInterval 60
+ClientAliveCountMax 3

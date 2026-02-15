@@ -124,6 +124,7 @@ extra_javascript:
   - assets/js/auto-render.min.js
 
 extra:
+  enable_tracking: !ENV [ENABLE_TRACKING, "true"]
   social:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/opentrafficcam

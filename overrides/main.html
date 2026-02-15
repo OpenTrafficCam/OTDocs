@@ -1,7 +1,9 @@
 {% extends "base.html" %} {% block analytics %}
+{% if config.extra.enable_tracking != "false" %}
 <script
   defer
   data-domain="opentrafficcam.org"
   src="https://plausible.platomo.org/js/script.js"
 ></script>
+{% endif %}
 {% endblock %}

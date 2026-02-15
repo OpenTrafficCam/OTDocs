@@ -1,0 +1,36 @@
+services:
+  nginx:
+    image: nginx:alpine
+    container_name: otdocs-preview-web
+    volumes:
+      - preview-data:/usr/share/nginx/html:ro
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    networks:
+      - web
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.otdocs-preview.rule=HostRegexp(`{subdomain:pr-[0-9]+}.preview.opentrafficcam.org`)"
+      - "traefik.http.routers.otdocs-preview.entrypoints=websecure"
+      - "traefik.http.routers.otdocs-preview.tls.certresolver=ionos"
+      - "traefik.http.routers.otdocs-preview.tls.domains[0].main=preview.opentrafficcam.org"
+      - "traefik.http.routers.otdocs-preview.tls.domains[0].sans=*.preview.opentrafficcam.org"
+      - "traefik.http.services.otdocs-preview.loadbalancer.server.port=80"
+    restart: unless-stopped
+
+  receiver:
+    build: ./receiver
+    container_name: otdocs-preview-receiver
+    volumes:
+      - preview-data:/data
+    ports:
+      - "2222:22"
+    environment:
+      - AUTHORIZED_KEY=${AUTHORIZED_KEY}
+    restart: unless-stopped
+
+volumes:
+  preview-data:
+
+networks:
+  web:
+    external: true

@@ -1,0 +1,70 @@
+---
+name: Deploy PR Preview
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches: [master, main]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+concurrency:
+  group: preview-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  deploy-preview:
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+
+      - run: pip install -r requirements.txt
+
+      # Override site_url so canonical URLs and sitemap point to the preview.
+      # This relies on site_url being a top-level key in mkdocs.yml (not indented).
+      - name: Override site_url for preview
+        run: |
+          sed -i 's|^site_url:.*|site_url: https://pr-${{ github.event.pull_request.number }}.preview.opentrafficcam.org/|' mkdocs.yml
+
+      - name: Build site
+        run: mkdocs build
+        env:
+          ENABLE_TRACKING: "false"
+
+      - name: Add noindex robots.txt
+        run: printf 'User-agent: *\nDisallow: /\n' > site/robots.txt
+
+      - name: Set up SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.PREVIEW_SSH_PRIVATE_KEY }}" > ~/.ssh/preview_key
+          chmod 600 ~/.ssh/preview_key
+          ssh-keyscan -p 2222 -H "${{ secrets.PREVIEW_SSH_HOST }}" >> ~/.ssh/known_hosts || {
+            echo "::error::ssh-keyscan failed for preview host"
+            exit 1
+          }
+
+      - name: Deploy via rsync
+        run: |
+          rsync -avz --delete \
+            -e "ssh -i ~/.ssh/preview_key -p 2222" \
+            site/ \
+            "deployer@${{ secrets.PREVIEW_SSH_HOST }}:/data/pr-${{ github.event.pull_request.number }}/"
+
+      - name: Comment preview URL on PR
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          header: preview-deploy
+          message: |
+            **Preview:** https://pr-${{ github.event.pull_request.number }}.preview.opentrafficcam.org/
+
+            Built from ${{ github.event.pull_request.head.sha }}

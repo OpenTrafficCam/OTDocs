@@ -1,0 +1,34 @@
+---
+name: Cleanup PR Preview
+
+on:
+  pull_request:
+    types: [closed]
+    branches: [master, main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: preview-${{ github.event.pull_request.number }}
+
+jobs:
+  cleanup-preview:
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.PREVIEW_SSH_PRIVATE_KEY }}" > ~/.ssh/preview_key
+          chmod 600 ~/.ssh/preview_key
+          ssh-keyscan -p 2222 -H "${{ secrets.PREVIEW_SSH_HOST }}" >> ~/.ssh/known_hosts || {
+            echo "::error::ssh-keyscan failed for preview host"
+            exit 1
+          }
+
+      - name: Delete preview
+        run: |
+          ssh -i ~/.ssh/preview_key -p 2222 \
+            "deployer@${{ secrets.PREVIEW_SSH_HOST }}" \
+            "cleanup pr-${{ github.event.pull_request.number }}"

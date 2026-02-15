@@ -31,11 +31,13 @@
 
 <!-- Analytics -->
 {% block analytics %}
+{% if config.extra.enable_tracking != "false" %}
 <script
   defer
   data-domain="opentrafficcam.org"
   src="https://plausible.platomo.org/js/script.js"
 ></script>
+{% endif %}
 {% endblock %}
 
 <!-- Custom front matter -->
@@ -60,8 +62,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://opentrafficcam.org" />
 <meta property="og:image" content="assets/img/header.svg" />
+{% if config.extra.enable_tracking != "false" %}
 <link rel="preconnect" href="https://plausible.platomo.org" />
 <link rel="dns-prefetch" href="https://plausible.platomo.org" />
+{% endif %}
 {% endblock %}
 
 <!--Body starts here-->
