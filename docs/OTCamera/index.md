@@ -1,3 +1,7 @@
+---
+hide: toc
+---
+
 # Features
 
 > The **eye** of OpenTrafficCam.
@@ -12,9 +16,9 @@ Just [drop us a message](mailto:team@opentrafficcam.org).
 
 ## Key features
 
-* Based on Raspberry Pi Zero W
-* Waterproof case
-* Operation with buttons and/or web ui
-* Continuous recording for up to one week (depending on the external battery)
-* Privacy compliant recording
-* Low hardware costs per camera system (DIY)
+- Based on Raspberry Pi Zero W
+- Waterproof case
+- Operation with buttons and/or web ui
+- Continuous recording for up to one week (depending on the external battery)
+- Privacy compliant recording
+- Low hardware costs per camera system (DIY)

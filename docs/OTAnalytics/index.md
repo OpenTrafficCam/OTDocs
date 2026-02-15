@@ -1,3 +1,7 @@
+---
+hide: toc
+---
+
 # Features
 
 > The **brain** of OpenTrafficCam.
@@ -13,21 +17,15 @@
 - Various visualization layers and filters
 - Runs on Windows, macOS, and Linux
 
-## Domain Elements
-
-OTAnalytics works with the following key concepts:
-
-- **Tracks**: Trajectories of road users, composed of a series of detections
-- **Track Points**: Representative points from each bounding box, forming the trajectory
-- **Sections**: Digital equivalents of physical detectors for traffic measurement
-- **Events**: Generated when a track's trajectory intersects a section
-- **Flows**: Traffic flows defined by a starting section and an ending section
-- **Track Assignments**: Assignment of tracks to flows based on events
+For the terminology used in OTAnalytics (such as Tracks, Sections, Events, Flows, and more), see the [Terminology](usage-ui.md#terminology) section of the Usage GUI documentation.
 
 ## Content of documentation
 
+- [Requirements](requirements.md): Prerequisites for running OTAnalytics
 - [Installation](installation.md): How to install OTAnalytics on different operating systems
-- [Usage UI](usage-ui.md): Detailed guide on how to use the graphical user interface
+- [First Use](firstuse.md): Quick walkthrough of your first analysis
+- [Usage GUI](usage-ui.md): Detailed guide on how to use the graphical user interface
+- [Usage CLI](usage-cli.md): Command-line interface reference
 
 Most of the code is developed by the OpenTrafficCam contributors
 (based on Python libraries like [NumPy](https://numpy.org/),

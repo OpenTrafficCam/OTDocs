@@ -1,60 +1,49 @@
 # First Use
 
 This page guides you through your first steps with OTAnalytics using the Graphical User Interface (GUI).
-If you haven’t installed OTAnalytics yet, start with the Installation page.
+If you haven't installed OTAnalytics yet, start with the [Requirements](requirements.md) and [Installation](installation.md) pages.
 
-## Start OTAnalytics
+## Run OTAnalytics
 
-Open a terminal/command prompt, navigate to the unzipped OTAnalytics folder and launch the GUI:
+If you left the terminal window, open it and navigate to the unzipped folder, again.
+Run the start script as follows:
 
 === "Windows"
-`cmd
+
+    ```cmd
     .\start_gui.cmd
-    `
+    ```
 
 === "macOS / Linux"
-`sh
-    sh ./start_gui.sh
-    `
 
-The application window should open.
+    ```sh
+    sh ./start_gui.sh
+    ```
 
 ## Prepare your data
 
-OTAnalytics analyzes trajectories (tracks) computed by OTVision.
-Make sure you have:
+Make sure you have the [required input data](requirements.md#input-data) ready:
+`.ottrk` files from OTVision and, optionally, corresponding video files for visual validation.
 
-- One or more .ottrk files exported by OTVision Track
-- Optional: Corresponding video files for visual validation
+## Workflow overview
 
-If you do not have .ottrk files yet, see OTVision’s documentation on how to run detection and tracking.
+### 1. Set up the project
 
-## Create a new project
+Enter a project name and start date, then load your track files.
+See [Setup the project](usage/usage-ui.md#setup-the-project) for detailed instructions.
 
-1. Open OTAnalytics and go to the Project section in the top configuration bar.
-2. Enter a project name and set the start date/time of the first video.
-3. Save your project configuration regularly (creates a .otconfig file).
+### 2. Define sections and flows
 
-## Load tracks and videos
+Draw sections on the video image and create flows to define traffic relationships.
+See [Configure traffic analysis](usage/usage-ui.md#configure-traffic-analysis) for step-by-step guidance.
 
-1. Go to the Tracks/Video section.
-2. Click Add tracks... and select one or multiple .ottrk files.
-3. If videos with matching names are found, they will be loaded automatically. Otherwise, you can add videos separately.
+### 3. Validate with visualization
 
-Tip: Sort videos so their alphabetical order matches the chronological order of recording.
+Use the [visualization layers](usage/usage-ui.md#visualization-layers) and [filters](usage/usage-ui.md#visualization-filters) to check your configuration before exporting.
 
-## Define sections and flows
+### 4. Export results
 
-1. Switch to Sections/Flows.
-2. Create sections that correspond to virtual detectors in the scene (draw them in the canvas).
-3. Create flows by selecting a start section and an end section.
+Export traffic counts, event lists, or road user assignments.
+See [Analysis exports](usage/usage-ui.md#analysis-exports) for all export options.
 
-Each time a track crosses a section, an event is generated. Flows assign tracks based on these events.
-
-## Run the analysis and export
-
-1. Switch to Analysis.
-2. Choose what to export (counts, flow matrices, event lists, track statistics, etc.).
-3. Select a target folder and export to CSV/Excel.
-
-That’s it! You’ve completed your first analysis with OTAnalytics. For detailed explanations of all features, continue with Usage (GUI) and Usage (CLI).
+For detailed explanations of all features, continue with [Usage (GUI)](usage/usage-ui.md) and [Usage (CLI)](usage/usage-cli.md).

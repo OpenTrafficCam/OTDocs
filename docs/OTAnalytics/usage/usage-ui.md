@@ -525,11 +525,3 @@ The tracks assigned to flows are exported into a `.csv` file with the following 
 
 This is a CSV export of the track statistics shown in the workspace below the camera image.
 
-## What else?
-
-If you encounter problems, have questions or like to request features, please [open an issue](https://github.com/OpenTrafficCam/OTAnalytics/issues/new) on GitHub.
-
-We welcome code contributions (e.g. fixing bugs or adding features) by the community.
-If you consider contributing, please check the [contribute section](https://opentrafficcam.org/contribute/) of this documentation first.
-
-If you like to receive professional support, please have a look at our [services](https://opentrafficcam.org/pricing/) or [contact us](mailto:team@opentrafficcam.org) for more information.

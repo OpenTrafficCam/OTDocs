@@ -3,14 +3,7 @@
 In this section, we provide instructions how to install OTAnalytics on the most common
 Operating Systems.
 
-## Hardware requirements
-
-OTAnalytics runs on most modern desktop pcs and laptops (e.g. with an i5 processor and 8 GB of RAM).
-
-Please note:
-
-- More RAM allows you to load more tracks of road users simultaneously.
-- A faster processor will improve the runtime of the analyses and make the user interface more responsive.
+Before installing OTAnalytics, make sure your system meets all [requirements](requirements.md).
 
 ## Install Python 3.12
 
@@ -55,23 +48,6 @@ Open a terminal window (or command prompt), navigate to the unzipped folder and 
     ```
 
 Wait until the installation of dependencies is complete - this could take some time.
-
-## Run OTAnalytics
-
-If you left the terminal window, open it and navigate to the unzipped folder, again.
-Run the start script as follows:
-
-=== "Windows"
-
-    ```cmd
-    .\start_gui.cmd
-    ```
-
-=== "macOS / Linux"
-
-    ```sh
-    sh ./start_gui.sh
-    ```
 
 ## What else?
 

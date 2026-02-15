@@ -1,3 +1,7 @@
+---
+hide: toc
+---
+
 # Features
 
 > The **heart** of OpenTrafficCam.
