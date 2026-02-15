@@ -6,6 +6,14 @@ hide: toc
 
 > The **eye** of OpenTrafficCam.
 
+!!! warning "Major revision in progress"
+
+    We are currently developing a completely new PCB featuring a more robust power supply, GPS, LTE connectivity
+    and intrusion detection. The software is also being refactored to support the new PCB and modules.
+
+    The current documentation is based on the **legacy** Raspberry Pi Zero W, Raspberry Pi OS and camera stack.
+    We are moving to the **Raspberry Pi Zero 2W**, **Raspberry Pi OS Trixie** and the **new camera stack**.
+
 [OTCamera](https://github.com/OpenTrafficCam/OTCamera) is a mobile camera system for capturing traffic videos.
 
 It is intended for DIY enthusiasts.
