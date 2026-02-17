@@ -19,6 +19,7 @@ If everything is setup correctly, you will be asked to add the host key to the l
     ```
 
     !!! warning
+
         This guide should run on Windows 10 but you are modifying your system files.
         Please do not do anything you do not understand! Read the [source](https://superuser.com/a/1609071) for more information.
         We are not liable for any damage you may cause to your system. But we followed the steps ourselves and everything went well.
@@ -90,7 +91,9 @@ Exit the raspi-config selecting "Finish" and reboot the Pi afterwards.
 
 ## Power Saving Options
 
-After a reboot we also want to disable the HDMI output for additional power saving. [CNX Software](https://www.cnx-software.com/2021/12/09/raspberry-pi-zero-2-w-power-consumption/) made some great power measurements for some Raspberry Pis. We'll need to add a specific line to the file `/etc/rc.local` in order to deactivate HDMI on every boot.
+After a reboot we also want to disable the HDMI output for additional power saving. [CNX Software](https://www.cnx-software.com/2021/12/09/raspberry-pi-zero-2-w-power-consumption/) made some great power
+measurements for some Raspberry Pis.
+We'll need to add a specific line to the file `/etc/rc.local` in order to deactivate HDMI on every boot.
 
 ```bash
 sudo nano /etc/rc.local

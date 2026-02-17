@@ -13,7 +13,7 @@ authors:
 
 # Verkehrszählgerät: Welches für eine erfolgreiche Verkehrsplanung kaufen?
 
-![Verkehrsströme](/assets/img/blog_images/header_image_verkehrsstroeme.webp)
+![Verkehrsströme](../../assets/img/blog_images/header_image_verkehrsstroeme.webp)
 
 Ein Verkehrszählgerät liefert die essenzielle Datengrundlage für eine funktionierende
 Verkehrs-, Raum- und Stadtplanung. Nur wenn belastbare Informationen über
@@ -67,7 +67,7 @@ Geräte zur Verkehrszählung liefern gleich für mehrere Anwendungsfelder belast
 
 ## Welche Arten von Verkehrszählgeräten gibt es?
 
-![OTCamera im Einsatz](/assets/img/blog_images/otcamera_in_use.webp)
+![OTCamera im Einsatz](../../assets/img/blog_images/otcamera_in_use.webp)
 
 In der Praxis taucht für automatische Messgeräte häufig auch der Begriff
 „Verkehrszähler“ auf. Fachlich korrekt handelt
@@ -154,7 +154,7 @@ Kosten:
 
 ## Verkehrszählgerät kaufen: Worauf Kommunen und Planungsbüros achten sollten
 
-![Verkehrstrajektorien](/assets/img/blog_images/verkehrsstroeme.webp)
+![Verkehrstrajektorien](../../assets/img/blog_images/verkehrsstroeme.webp)
 
 Bevor Sie ein Verkehrszählgerät kaufen, sollten Sie sich darüber klar werden, welche Art
 von Daten Sie benötigen.
@@ -316,11 +316,13 @@ behalten Sie vollständige Kontrolle über Ihre Daten und Prozesse – und gewin
 die Flexibilität, Auswertungen
 so umzusetzen, wie es Ihr Projekt erfordert.
 
-Sie möchten verstehen, welche Verkehrszählgerät-Funktionen Ihre Projekte effizienter,
-sicherer und datenbasierter
-machen können? Wir beraten Sie gern, wie Sie unsere moderne Zähltechnik made in Germany
-gezielt einsetzen – von der
-Planung bis zur Analyse und
-Auswertung. [Kontaktieren Sie uns jetzt](https://opentrafficcam.org) für eine
-individuelle
-Beratung\!
+!!! info "Kontakt aufnehmen und mehr erfahren"
+
+    Sie möchten verstehen, welche Verkehrszählgerät-Funktionen Ihre Projekte effizienter,
+    sicherer und datenbasierter
+    machen können? Wir beraten Sie gern, wie Sie unsere moderne Zähltechnik made in Germany
+    gezielt einsetzen – von der
+    Planung bis zur Analyse und
+    Auswertung. [Kontaktieren Sie uns jetzt](https://opentrafficcam.org) für eine
+    individuelle
+    Beratung\!
