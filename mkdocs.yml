@@ -31,15 +31,10 @@ nav:
   - index.md
   - live.md
   - pricing.md
-  # - use-cases.md
   - Documentation:
       - Overview:
           - overview/index.md
           - overview/dataprivacy.md
-          # - Use Cases:
-          #    - overview/usecases/trafficcounts.md
-          #    - overview/usecases/vehiclespeeds.md
-          #    - overview/usecases/trafficsafety.md
       - OTCamera:
           - OTCamera/index.md
           - OTCamera/gettingstarted/requirements.md
@@ -51,29 +46,32 @@ nav:
               - OTCamera/gettingstarted/installation/wifi-ap.md
               - OTCamera/gettingstarted/installation/otcamera.md
           - OTCamera/gettingstarted/firstuse.md
-          - OTCamera/usage/buttons_leds.md
-          # - Advanced Usage:
-          # - OTCamera/advanced_usage/configration.md
-          # - OTCamera/advanced_usage/calibrate.md
+          - Usage:
+              - OTCamera/usage/buttons_leds.md
+              - OTCamera/usage/preparation_safety.md
+              - OTCamera/usage/mounting.md
+              - OTCamera/usage/getvideos.md
+              - OTCamera/usage/configuration.md
       - OTVision:
           - OTVision/index.md
-          - OTVision/gettingstarted/requirements.md
-          - OTVision/gettingstarted/installation.md
-          - OTVision/gettingstarted/firstuse.md
+          - OTVision/requirements.md
+          - OTVision/installation.md
+          - OTVision/firstuse.md
           - Usage:
               - OTVision/usage/convert.md
               - OTVision/usage/detect.md
               - OTVision/usage/track.md
-              - OTVision/advanced_usage/configuration.md
+              - OTVision/usage/configuration.md
 
       - OTAnalytics:
           - OTAnalytics/index.md
+          - OTAnalytics/requirements.md
           - OTAnalytics/installation.md
-          - OTAnalytics/usage-ui.md
-          - OTAnalytics/usage-cli.md
-      #          - OTAnalytics/otconfig.md
-      #          - Accuracy:
-      #              - OTAnalytics/Accuracy/counts.md
+          - OTAnalytics/firstuse.md
+          - Usage:
+              - OTAnalytics/usage/usage-ui.md
+              - OTAnalytics/usage/usage-cli.md
+          - OTAnalytics/otconfig.md
 
       - OTLabels:
           - OTLabels/index.md
@@ -110,6 +108,7 @@ extra_css:
   - stylesheets/fonts.css
   - stylesheets/katex.min.css
   - stylesheets/custom_admonitions.css
+  - stylesheets/styles.css
 extra_javascript:
   - assets/js/katex_mkdocs.js
   - assets/js/katex.min.js
