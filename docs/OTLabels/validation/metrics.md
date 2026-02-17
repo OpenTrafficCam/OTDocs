@@ -144,10 +144,6 @@ Out of the 8 cars that have been predicted:
 - none were incorrectly classified as a `person` and
 - 5 were incorrectly classified as `truck`
 
-## Traffic Measures
-
-To see, how well OpenTrafficCam performs see [OTAnalytics](../../OTAnalytics/Accuracy/counts.md).
-
 ## References
 
 [^1]: Padilla, R., Passos, W. L., Dias, T. L., Netto, S. L., & da Silva, E. A. (2021). A comparative analysis of object detection metrics with a companion open-source toolkit. Electronics, 10(3), 279. [https://doi.org/10.3390/electronics10030279](https://doi.org/10.3390/electronics10030279)
