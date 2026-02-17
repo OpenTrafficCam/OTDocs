@@ -18,6 +18,7 @@ By switching it off the power supply to the Raspberry Pi is interrupted.
 Therefore, it is recommended to keep the Reset switch always turned on unless there is a problem with the Raspberry Pi.
 
 !!! warning "Potential Data Loss"
+
     When the Reset switch is pressed, the Raspberry Pi turns off immediately but is not shut down properly.
     This can potentially affect the file system, and the SD card may become unreadable.
 
@@ -62,89 +63,15 @@ When the LED blinks, a new preview for the web interface is also generated.
 
 ## LED Blink Patterns
 
-| LED            | Blink Pattern     | Description                                                                                    |
-|----------------|-------------------|------------------------------------------------------------------------------------------------|
-| Boot (green)   | `__________`      | OTCamera powered off.                                                                          |
-| Boot (green)   | `**********`      | OTCamera is booting.                                                                           |
-| Boot (green)   | `*_*_______`      | OTCamera is running and connected to external power (USB).                                     |
-| Boot (green)   | `*_________`      | OTCamera is running and **not** connected to external power (USB).                             |
-| Wi-Fi (yellow) | `__________`      | Wi-Fi and Access Point (AP) are turned off.                                                    |
-| Wi-Fi (yellow) | `*_________`      | Wi-Fi and AP are turned on.                                                                    |
-| Wi-Fi (yellow) | `*_*_*_*_*_`      | Wi-Fi will turn off after a specific timer period (default is 15 minutes).                     |
-| Record (red)   | `*_________`      | OTCamera is currently recording videos.                                                        |
-| Record (red)   | `__________`      | OTCamera is **not** recording videos, probably because the current time is outside the recording timer. |
-|                | `_`: off  `*`: on |                                                                                                |
-
-<!--
-German translation for future use:
-
-# Schalter and LEDs
-
-OTCamera lässt sich über vier Schalter steuern und der Status wird über 3 LEDs signalisiert.
-
-Die Schalter von Links nach Rechts:
-
-- Reset
-- Boot
-- Wi-Fi
-- 24/7
-
-Die drei LEDs gehören zu den rechten drei Schaltern.
-
-Der **Reset**-Schalter sichert die konstante Stromversorgung für den Raspberry Pi. 
-Wird der Schalter ausgeschaltet, ist die Stromversorgung des Raspberry Pi unterbrochen.
-
-!!! warning "Möglicher Datenverlust"
-    Der Raspberry Pi wird bei der Betätigung des Reset-Schalters nicht heruntergefahren, sondern schaltet sich sofort aus.
-    Dadurch kann das Dateisystem beeinträchtigt werden und es kann sein, dass die SD-Karte nicht mehr lesbar ist.
-
-Der Reset-Schalter sollte immer eingeschaltet bleiben, sofern kein Problem mit dem Raspberry Pi besteht.
-
-Die drei anderen Schalter werden für den normalen Betrieb genutzt.
-
-Der **Boot**-Schalter ist dafür da, das System ein- und auszuschalten.
-Wird er eingeschaltet, leuchtet die grüne LED unter dem Schalter dauerhaft grün.
-
-Sobald der Raspberry Pi hochgefahren ist und OTCamera gestartet wurde, fängt die grüne LED an zu blinken.
-Blinkt sie doppelt, ist eine externe Stromversorgung über USB angeschlossen.
-Blinkt sie nur einmal, läuft das System auf der internen Batterie.
-
-Nachdem OTCamera hochgefahren ist, blinken außerdem die beiden anderen LEDs (wenn die beiden Schalter `Wi-Fi` und `24/7` eingeschaltet sind).
-
-Der **Wi-Fi**-Schalter steuert das Wi-Fi Modul des Raspberry Pi.
-Das betrifft einerseits die Verbindung zu einem Wi-Fi Netzwerk und andererseits den Wi-Fi Access Point der OTCamera selbst.
-
-Wird der Schalter ausgeschaltet, wird nach einem definierten Timer (Standard sind 15 Minuten) das Wi-Fi abgeschaltet.
-Das dient dazu, dass vor der Montage der Schalter ausgeschaltet werden kann, aber noch einige Minuten auf das Webinterface zugegriffen werden.
-So kann die Kamera sicher montiert und ausgerichtet werden.
-
-Die Wi-Fi LED blinkt einmal pro Sekunde, sobald der Timer aktiv ist.
-Wenn das Wi-Fi dauerhaft eingeschaltet ist, blinkt die LED einmal alle 5 Sekunden.
-Sobald das Wi-Fi ausgeschaltet wurde, blinkt die Wi-Fi LED nicht mehr und geht komplett aus.
-
-Wird der Wi-Fi Schalter wieder eingeschaltet wird der Timer abgebrochen bzw. das Wi-Fi wieder eingeschaltet.
-Bei erneutem Ausschalten startet der Timer wieder von vorne.
-
-Ist der Wi-Fi Schalter beim Starten der OTCamera bereits ausgeschaltet, wird das Wi-Fi direkt nach dem Start ausgeschaltet (also ohne Timer).
-
-Der **24/7** Schalter steuert, wann die OTCamera Videos aufzeichnet.
-Ist der Schalter eingeschaltet, wird immer aufgezeichnet.
-Wird der Schalter ausgeschaltet, wird nur zwischen einer konfigurierten Start- und Enduhrzeit aufgezeichnet (standardmäßig zwischen 06:00 Uhr bis 22:00 Uhr).
-
-Die LED unter dem Schalter signalisiert, ob die Kamera zur Zeit aufzeichnet. Sie sollte alle 5 Sekunden blinken.
-Wenn die LED blinkt, wurde auch ein neues Vorschaubild für das Webinterface erstellt.
-
-## LED Blink Patterns
-
-| LED            | Blink Pattern     | Description                                                                                    |
-|----------------|-------------------|------------------------------------------------------------------------------------------------|
-| Boot (green)   | `__________`      | OTCamera powered off.                                                                          |
-| Boot (green)   | `**********`      | OTCamera is booting.                                                                           |
-| Boot (green)   | `*_*_______`      | OTCamera is running and connected to external power (USB).                                     |
-| Boot (green)   | `*_________`      | OTCamera is running and **not** connected to external power (USB).                             |
-| Wi-Fi (yellow) | `__________`      | Wi-Fi and Access-Point (AP) are turned off.                                                    |
-| Wi-Fi (yellow) | `*_________`      | Wi-Fi and AP are turned on.                                                                    |
-| Wi-Fi (yellow) | `*_*_*_*_*_`      | Wi-Fi will turn out after specific timer (default is 15 minutes).                              |
-| Record (red)   | `*_________`      | OTCamera is currently recording videos.                                                        |
-| Record (red)   | `__________`      | OTCamera is **not** recording videos. Probably because current time is not in recording timer. |
-|                | `_`: off  `*`: on |                                                                                                | -->
+| LED            | Blink Pattern    | Description                                                                                             |
+| -------------- | ---------------- | ------------------------------------------------------------------------------------------------------- |
+| Boot (green)   | `__________`     | OTCamera powered off.                                                                                   |
+| Boot (green)   | `**********`     | OTCamera is booting.                                                                                    |
+| Boot (green)   | `*_*_______`     | OTCamera is running and connected to external power (USB).                                              |
+| Boot (green)   | `*_________`     | OTCamera is running and **not** connected to external power (USB).                                      |
+| Wi-Fi (yellow) | `__________`     | Wi-Fi and Access Point (AP) are turned off.                                                             |
+| Wi-Fi (yellow) | `*_________`     | Wi-Fi and AP are turned on.                                                                             |
+| Wi-Fi (yellow) | `*_*_*_*_*_`     | Wi-Fi will turn off after a specific timer period (default is 15 minutes).                              |
+| Record (red)   | `*_________`     | OTCamera is currently recording videos.                                                                 |
+| Record (red)   | `__________`     | OTCamera is **not** recording videos, probably because the current time is outside the recording timer. |
+|                | `_`: off `*`: on |                                                                                                         |

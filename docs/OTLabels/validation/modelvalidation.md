@@ -46,7 +46,7 @@ In our case, we will use the mAP and the [TIDE metrics](https://github.com/dboly
     OTValidate uses a list of class labels as a parameter.
     All predictions and ground truth data are then filtered according to that list of class labels.
     Meaning, all predictions or ground truth data, whose predicted or labeled class are not contained in the list, are discarded and therefore not regarded in the evaluation process.
-    This is especially useful if the ground truth data contains class labels that the model can't predict. 
+    This is especially useful if the ground truth data contains class labels that the model can't predict.
 
 ## Evaluation
 
@@ -70,7 +70,7 @@ Nevertheless, let us also have a look at the TIDE metrics to get an insight on t
 | --------------------------------------------------------- | ------------------------------------------------------------------ |
 | ![All TIDE](assets/plots/all/tide_errors_diagram_all.png) | ![All TIDE Stacked](assets/plots/all/tide_stacked_diagram_all.png) |
 
-What immediately stands out are the [Missed Ground Truth Error (Miss)](/OTLabels/validation/metrics/#tide-metrics) and the [Classification Error (Cls)](/OTLabels/validation/metrics/#tide-metrics).
+What immediately stands out are the [Missed Ground Truth Error (Miss)](metrics.md#tide-metrics) and the [Classification Error (Cls)](metrics.md#tide-metrics).
 Meaning, the models were not able to detect many ground truth bounding boxes or be able to classify them correctly.
 Thus, the models were able to detect the majority of the bounding boxes, but had problems predicting the correct classes.
 
@@ -81,7 +81,7 @@ It becomes apparent that the bigger models perform better at detecting bounding 
 But there is also a point where the models' performance, namely the YOLOv5m, YOLOv5l and YOLOv5x, don't differ much at all.
 Implying that there is not much of a trade-off in choosing the YOLOv5m or YOLOv5l over the YOLOv5x.
 
-Still, let us try to find out why the  **Missed Ground Truth Error** appears to be a problem for all four models by evaluating them on the data of each scene.
+Still, let us try to find out why the **Missed Ground Truth Error** appears to be a problem for all four models by evaluating them on the data of each scene.
 
 ### Evaluation on each dataset of a scene
 
