@@ -27,7 +27,7 @@ One or multiple paths to `.otdet` files or folders containing `.otdet` files.
 
 This parameter is required to run the `track.py` script.
 It has to be specified either using the CLI or in the
-[configuration](../advanced_usage/configuration.md) YAML file.
+[configuration](configuration.md) YAML file.
 
 ### config
 
@@ -37,7 +37,7 @@ or
 
 `--config "path/to/config file"`
 
-Path to a custom user [configuration](../advanced_usage/configuration.md) YAML file.
+Path to a custom user [configuration](configuration.md) YAML file.
 Other parameters (including `paths`) are parsed from this configuration file.
 
 This parameter is optional.
@@ -48,8 +48,9 @@ configuration file is specified, the default values of the parameters as
 described below are used.
 
 !!! warning
-Any parameter passed to the CLI will overwrite the respective parameter from
-the config file.
+
+    Any parameter passed to the CLI will overwrite the respective parameter from
+    the config file.
 
 ### sigma-l
 

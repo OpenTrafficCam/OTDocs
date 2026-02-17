@@ -88,6 +88,7 @@ The aim of TIDE is exactly that, to give us this insight on how the different er
 [TIDE](https://dbolya.github.io/tide/) defines six main error types as follows:
 
 !!! info
+
     The following descriptions of the error types are directly taken from the [TIDE source code](https://github.com/dbolya/tide/blob/master/tidecv/errors/main_errors.py)
 
 1. **Classification Error**: Error caused when a prediction would have been marked positive if it had the correct class.
@@ -145,9 +146,10 @@ Out of the 8 cars that have been predicted:
 
 ## Traffic Measures
 
-To see, how well OpenTrafficCam performs see [OTAnalytics](/OTAnalytics/Accuracy/counts/).
+To see, how well OpenTrafficCam performs see [OTAnalytics](../../OTAnalytics/Accuracy/counts.md).
 
 ## References
 
 [^1]: Padilla, R., Passos, W. L., Dias, T. L., Netto, S. L., & da Silva, E. A. (2021). A comparative analysis of object detection metrics with a companion open-source toolkit. Electronics, 10(3), 279. [https://doi.org/10.3390/electronics10030279](https://doi.org/10.3390/electronics10030279)
+
 [^2]: Bolya, D., Foley, S., Hays, J., & Hoffman, J. (2020). Tide: A general toolbox for identifying object detection errors. In Computer Vision–ECCV 2020: 16th European Conference, Glasgow, UK, August 23–28, 2020, Proceedings, Part III 16 (pp. 558-573). Springer International Publishing. [https://dbolya.github.io/tide/paper.pdf](https://dbolya.github.io/tide/paper.pdf)
