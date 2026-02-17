@@ -1,0 +1,9 @@
+authors:
+  sebastian:
+    name: Sebastian Buck
+    description: Experte für kamerabasierte Verkehrserfassung und Datenanalyse.
+    avatar: assets/img/team/sebastian_author.webp
+  michael:
+    name: Michael Heilig
+    description: Experte für intelligente Verkehrsplanung und kamerabasierte Verkehrszählung.
+    avatar: assets/img/team/michael_author.webp
