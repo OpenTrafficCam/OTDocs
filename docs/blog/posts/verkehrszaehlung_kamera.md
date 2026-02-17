@@ -1,8 +1,8 @@
 ---
 draft: false
-date: 2026-02-10
+date: 2026-02-17
 title: "Verkehrszählung Kamera: Funktion, Vorteile & Kaufleitfaden  "
-slug: verkehrszaehlung
+slug: verkehrszaehlung_kamera
 description: "Wie Kameras Verkehrszählungen automatisieren: Vorteile, Grenzen und Kaufkriterien für eine belastbare Verkehrsplanung. ✔️ Mehr erfahren!
 "
 categories:
@@ -13,7 +13,7 @@ authors:
 
 # Kamera für Verkehrszählung: So unterstützt sie eine moderne Verkehrsplanung
 
-![Install](/assets/img/blog_images/verkehrszaehlung_camera_install.webp)
+![Install](../../assets/img/blog_images/verkehrszaehlung_camera_install.webp)
 
 Ob Leistungsfähigkeitsnachweise, Neu- oder Umbauten oder die Optimierung von
 Lichtsignalanlagen – Kommunen und Ingenieurbüros benötigen verlässliche Daten zu allen
@@ -37,7 +37,7 @@ Alternativ werden die aufgezeichneten Videos von Zählpersonal ausgewertet.
 
 ### Welche Systeme für die Verkehrszählung mit Kamera gibt es?
 
-![OpentrafficCam](/assets/img/blog_images/opentrafficcam.webp)
+![OpentrafficCam](../../assets/img/blog_images/opentrafficcam.webp)
 
 Grundsätzlich gibt es zwei unterschiedliche Kamerasysteme, die ähnliche Anforderungen an
 das Datenschutzkonzept stellen:
@@ -50,7 +50,7 @@ das Datenschutzkonzept stellen:
 ## Was sind die Vorteile einer Verkehrszählung mit Kamera?
 
 Die Verkehrszählung mit Kameras ist vielen
-[Verkehrszählgeräten](https://opentrafficcam.org/blog/verkehrszaehlgeraet/) in mehreren
+[Verkehrszählgeräten](verkehrszaehlgeraete.md) in mehreren
 Punkten voraus. Dabei lassen sich die Vorteile in drei Themenfelder einordnen:
 
 ### Automatisierte & präzise Datenerfassung
@@ -90,7 +90,7 @@ Punkten voraus. Dabei lassen sich die Vorteile in drei Themenfelder einordnen:
 
 ### Praxis- & Zukunftsfähigkeit
 
-![Verkehrsströme](/assets/img/blog_images/verkehrsstroeme.webp)
+![Verkehrsströme](../../assets/img/blog_images/verkehrsstroeme.webp)
 
 - **Projektbasierte Einsetzbarkeit:** Wetterfeste mobile Kameras für die Fahrzeugzählung
   lassen sich ohne bauliche Eingriffe installieren und tagelang autonom betreiben – ideal
@@ -126,12 +126,14 @@ Trotz aller Vorteile gibt es Einschränkungen bei der Verkehrszählung mit Kamer
   oder ein leistungsfähiges KI-Modell liefern Kameras im schlechtesten Fall nur
   personalintensive, simple Zählwerte und keine belastbare Verkehrsanalyse.
 
-Erweist sich eine Kamera als die passende Lösung für ein Projekt, ist entscheidend, dass
-Hardware und Auswertung zu den fachlichen Anforderungen der Verkehrszählung passen.
-Moderne Systeme kombinieren dabei Datenerfassung, Datenschutz und Analyse in einem
-durchgängigen Workflow. Ein Beispiel dafür ist unsere
-[OTCamera](https://opentrafficcam.org/OTCamera/), die gemeinsam mit unserer nachgelagerten
-KI-basierten Auswertung und Analyse ein stimmiges und konsistentes Gesamtsystem bildet.
+!!! info "OpenTrafficCam"
+
+    Erweist sich eine Kamera als die passende Lösung für ein Projekt, ist entscheidend, dass
+    Hardware und Auswertung zu den fachlichen Anforderungen der Verkehrszählung passen.
+    Moderne Systeme kombinieren dabei Datenerfassung, Datenschutz und Analyse in einem
+    durchgängigen Workflow. Ein Beispiel dafür ist unsere
+    [OTCamera](../../OTCamera/index.md), die gemeinsam mit unserer nachgelagerten
+    KI-basierten Auswertung und Analyse ein stimmiges und konsistentes Gesamtsystem bildet.
 
 ## Kamera für Verkehrszählung kaufen: Worauf Sie achten sollten
 
@@ -241,8 +243,10 @@ Mit der Verkehrszählung per Kamera erfassen Kommunen und Planer Verkehrsdaten s
 präzise und flexibel – von reinen Zählwerten bis hin zu detaillierten Bewegungsanalysen.
 Und das inklusive automatisierter Auswertung und mit voller Datenkontrolle.
 
-Sie möchten mehr darüber erfahren, wie Sie durch eine Verkehrszählung mit Kamera
-belastbare Daten für eine zukunftssichere Verkehrsplanung gewinnen? Dann [kontaktieren Sie
-uns jetzt für ein
-Beratungsgespräch](https://outlook.office.com/book/OpenTrafficCam@platomo.de/?ismsaljsauthenabled=true)
-und erfahren Sie mehr über unser praxisbewährtes System!
+!!! info "Kontakt aufnehmen und mehr erfahren"
+
+    Sie möchten mehr darüber erfahren, wie Sie durch eine Verkehrszählung mit Kamera
+    belastbare Daten für eine zukunftssichere Verkehrsplanung gewinnen? Dann [kontaktieren Sie
+    uns jetzt für ein
+    Beratungsgespräch](https://outlook.office.com/book/OpenTrafficCam@platomo.de/?ismsaljsauthenabled=true)
+    und erfahren Sie mehr über unser praxisbewährtes System!
