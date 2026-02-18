@@ -387,22 +387,26 @@ quality of each traffic analysis.
     ![Show all tracks](usage-ui/show-tracks-all.png)
 
 === "Intersecting sections"
-Tracks intersecting at least one of the selected sections are shown.
+    
+    Tracks intersecting at least one of the selected sections are shown.
 
     ![Show tracks intersecting the selected sections](usage-ui/show-tracks-intersecting-sections.png)
 
 === "Not intersecting sections"
-Tracks intersecting **none** of the selected sections are shown.
+    
+    Tracks intersecting **none** of the selected sections are shown.
 
     ![Show tracks not intersection the selected sections](usage-ui/show-tracks-not-intersecting-sections.png)
 
 === "Assigned to flows"
-Tracks assigned to at least one selected flow are shown.
+    
+    Tracks assigned to at least one selected flow are shown.
 
     ![Show tracks assigned to flows](usage-ui/show-tracks-assigned-to-flows.png)
 
 === "Not assigned to flows"
-Tracks assigned to **none** of the selected flows are shown.
+    
+    Tracks assigned to **none** of the selected flows are shown.
 
     ![Show tracks not assigned to flows](usage-ui/show-tracks-not-assigned-to-flows.png)
 
