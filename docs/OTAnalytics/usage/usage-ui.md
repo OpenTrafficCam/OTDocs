@@ -36,8 +36,7 @@ frames.
     === "0.8, 0.3"
         ![Offset x=0.8, y=0.3](usage-ui/offset-x-0-8-y-0-3.png){ align=left }
 
-The position of the track point within the bounding box can be configured using the \*
-\*Offset\*\* attribute.
+The position of the track point within the bounding box can be configured using the **Offset** attribute.
 This offset is defined separately for the x- and y-axes, with values ranging from `0` to
 `1`.
 Origin `(0, 0)` is the top left-hand corner of the bounding box.
