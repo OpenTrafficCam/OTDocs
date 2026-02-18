@@ -24,13 +24,28 @@ theme:
     - search.suggest
     - search.highlight
     - content.tabs.link
+    - content.icon
   icon:
     repo: fontawesome/brands/github
 
 nav:
-  - index.md
-  - live.md
-  - pricing.md
+  - Home:
+      - index.md
+  - Angebot:
+      - service/index.md
+      - service/camera.md
+      - service/video_processing.md
+      - service/consulting.md
+  - Case Studies:
+      - case_studies.md
+  - Pricing:
+      - pricing.md
+  - Über uns:
+      - about_us.md
+  - Downloads:
+      - downloads.md
+  - Kontakt:
+      - contact.md
   - Documentation:
       - Overview:
           - overview/index.md
@@ -62,7 +77,6 @@ nav:
               - OTVision/usage/detect.md
               - OTVision/usage/track.md
               - OTVision/usage/configuration.md
-
       - OTAnalytics:
           - OTAnalytics/index.md
           - OTAnalytics/requirements.md
@@ -72,7 +86,6 @@ nav:
               - OTAnalytics/usage/usage-ui.md
               - OTAnalytics/usage/usage-cli.md
           - OTAnalytics/otconfig.md
-
       - OTLabels:
           - OTLabels/index.md
           - Getting Started:
@@ -95,14 +108,11 @@ nav:
           - contribute/github.md
           - contribute/coding.md
           - contribute/otanalytics.md
-          # - contribute/gui.md
           - contribute/vscode.md
           - contribute/documentation.md
           # - contribute/otcamera.md
   - Blog:
       - blog/index.md
-  - Team:
-      - team.md
 extra_css:
   - stylesheets/color.css
   - stylesheets/fonts.css
@@ -139,7 +149,7 @@ edit_uri: edit/master/docs/
 
 markdown_extensions:
   - toc:
-      permalink: true
+      permalink: false
       toc_depth: 3
   - admonition
   - pymdownx.emoji:

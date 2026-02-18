@@ -1,7 +1,27 @@
-{% extends "base.html" %} {% block analytics %}
-<script
-  defer
-  data-domain="opentrafficcam.org"
-  src="https://plausible.platomo.org/js/script.js"
-></script>
+{% extends "base.html" %}
+
+{% set _is_service_page = page and page.file and page.file.src_path and page.file.src_path.startswith('service/') %}
+
+{% block styles %} {{ super() }}
+  {# Add the extra CSS only for service pages, mirroring overrides/hero.html #}
+  {% if _is_service_page %}
+    <link href="/stylesheets/styles.css" rel="stylesheet" />
+    <link href="/stylesheets/bootstrap-grid.css" rel="stylesheet" />
+    <link href="/stylesheets/bootstrap-utilities.css" rel="stylesheet" />
+    <link href="/stylesheets/color.css" rel="stylesheet" />
+    {# Service pages shared stylesheet (only for camera, video_processing, consulting) #}
+    {% if page and page.file and page.file.src_path in ['service/camera.md','service/video_processing.md','service/consulting.md'] %}
+      <link href="/stylesheets/service.css" rel="stylesheet" />
+    {% endif %}
+  {% endif %}
 {% endblock %}
+
+{# Inject hero header for all service pages #}
+{% block hero %}
+  {% if _is_service_page %}
+    {% include "partials/hero_header.html" %}
+  {% else %}
+    {{ super() }}
+  {% endif %}
+{% endblock %}
+
