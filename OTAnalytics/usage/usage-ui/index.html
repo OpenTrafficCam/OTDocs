@@ -4139,42 +4139,30 @@ intersection with sections or their assignment to flows.</p>
 and to optimise them iteratively.
 Checking, if the sections "catch" the correct tracks is a crucial step to ensure a good
 quality of each traffic analysis.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">All</label><label for="__tabbed_2_2">Intersecting sections</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:5"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><input id="__tabbed_2_5" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">All</label><label for="__tabbed_2_2">Intersecting sections</label><label for="__tabbed_2_3">Not intersecting sections</label><label for="__tabbed_2_4">Assigned to flows</label><label for="__tabbed_2_5">Not assigned to flows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>All tracks are shown.</p>
 <p><img alt="Show all tracks" src="show-tracks-all.png" /></p>
 </div>
-<div class="tabbed-block"></div>
-</div>
-</div>
+<div class="tabbed-block">
 <p>Tracks intersecting at least one of the selected sections are shown.</p>
-<div class="highlight"><pre><span></span><code>![Show tracks intersecting the selected sections](usage-ui/show-tracks-intersecting-sections.png)
-</code></pre></div>
-<div class="tabbed-set tabbed-alternate" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Not intersecting sections</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block"></div>
+<p><img alt="Show tracks intersecting the selected sections" src="show-tracks-intersecting-sections.png" /></p>
 </div>
-</div>
+<div class="tabbed-block">
 <p>Tracks intersecting <strong>none</strong> of the selected sections are shown.</p>
-<div class="highlight"><pre><span></span><code>![Show tracks not intersection the selected sections](usage-ui/show-tracks-not-intersecting-sections.png)
-</code></pre></div>
-<div class="tabbed-set tabbed-alternate" data-tabs="4:1"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Assigned to flows</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block"></div>
+<p><img alt="Show tracks not intersection the selected sections" src="show-tracks-not-intersecting-sections.png" /></p>
 </div>
-</div>
+<div class="tabbed-block">
 <p>Tracks assigned to at least one selected flow are shown.</p>
-<div class="highlight"><pre><span></span><code>![Show tracks assigned to flows](usage-ui/show-tracks-assigned-to-flows.png)
-</code></pre></div>
-<div class="tabbed-set tabbed-alternate" data-tabs="5:1"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">Not assigned to flows</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block"></div>
+<p><img alt="Show tracks assigned to flows" src="show-tracks-assigned-to-flows.png" /></p>
 </div>
-</div>
+<div class="tabbed-block">
 <p>Tracks assigned to <strong>none</strong> of the selected flows are shown.</p>
-<div class="highlight"><pre><span></span><code>![Show tracks not assigned to flows](usage-ui/show-tracks-not-assigned-to-flows.png)
-</code></pre></div>
+<p><img alt="Show tracks not assigned to flows" src="show-tracks-not-assigned-to-flows.png" /></p>
+</div>
+</div>
+</div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>When checking and optimising sections and flows, also have a look at the track statistics shown below the canvas.</p>
@@ -4186,7 +4174,7 @@ Like in <a href="#show-tracks">Show tracks</a>, you can display the start- and e
 their intersection with sections or their assignment to flows.</p>
 <p>They enable you, for example, to check whether some tracks are interrupted and where
 this may be clustered.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="6:5"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><input id="__tabbed_6_3" name="__tabbed_6" type="radio" /><input id="__tabbed_6_4" name="__tabbed_6" type="radio" /><input id="__tabbed_6_5" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">All</label><label for="__tabbed_6_2">Intersecting sections</label><label for="__tabbed_6_3">Not intersecting sections</label><label for="__tabbed_6_4">Assigned to flows</label><label for="__tabbed_6_5">Not assigned to flows</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:5"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><input id="__tabbed_3_5" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">All</label><label for="__tabbed_3_2">Intersecting sections</label><label for="__tabbed_3_3">Not intersecting sections</label><label for="__tabbed_3_4">Assigned to flows</label><label for="__tabbed_3_5">Not assigned to flows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>Start- and endpoints of all tracks are highlighted.</p>
@@ -4215,7 +4203,7 @@ this may be clustered.</p>
 using the track point (with the current offset).</p>
 <p>It can be helpful for an in-depth assessment of the quality of samples of detections and
 tracks.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">Bounding box</label><label for="__tabbed_7_2">Track point</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Bounding box</label><label for="__tabbed_4_2">Track point</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>The bounding boxes of all detections in the currently visible frame are shown.</p>
@@ -4240,7 +4228,7 @@ traffic analysis.</p>
 <p>As a result, the event locations may not align with the corresponding tracks.</p>
 <p>To align the tracks, select a specific section and hit the <em>Update with section offset</em> button.</p>
 </div>
-<div class="tabbed-set tabbed-alternate" data-tabs="8:2"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">Current filter</label><label for="__tabbed_8_2">Current frame</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">Current filter</label><label for="__tabbed_5_2">Current frame</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>The locations of all events within the date/time filter range are shown.</p>
@@ -4695,7 +4683,7 @@ The tracks assigned to flows are exported into a <code>.csv</code> file with the
     <span class="md-icon" title="Letztes Update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="18. Februar 2026 10:50:32 CET">18. Februar 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="18. Februar 2026 12:26:17 CET">18. Februar 2026</span>
   </span>
 
     
