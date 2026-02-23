@@ -1,7 +1,7 @@
 .hero h1 {
   font-family: "Amatic SC", sans-serif;
   font-size: 5rem;
-  line-height: 0;
+  line-height: 1.2;
 }
 
 .hero h2 {
@@ -300,4 +300,105 @@ p {
   background-color: #def;
   padding: 0.2em 0.4em;
   border-radius: 0.4em;
+}
+
+/* Uniform hero height for service pages */
+.service-hero {
+  min-height: 52vh; /* match Beratung height */
+  display: flex;
+  align-items: center; /* vertical centering of inner container */
+}
+
+@media (max-width: 768px) {
+  .service-hero {
+    min-height: 44vh; /* slightly smaller on mobile */
+  }
+}
+
+
+/* Secondary button (outline, for service hero CTAs) */
+.md-button.secondary-btn {
+  display: inline-block;
+  padding: 0.7rem 1.2rem;
+  border-radius: 999px;
+  /* Give a faint tint so the button is visible without hover */
+  background-color: #fff !important;
+  color: var(--md-accent-fg-color) !important;
+  border: 2px solid var(--md-accent-fg-color) !important;
+  text-decoration: none !important;
+  font-weight: 700;
+  font-size: 0.95rem;
+  line-height: 1.2;
+  box-shadow: 0 3px 14px rgba(0,0,0,0.10);
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.05s ease, box-shadow 0.2s ease;
+}
+
+/* Arrow indicator */
+.md-button.secondary-btn::after {
+  content: "\2192"; /* → */
+  margin-left: 0.55rem;
+  transition: transform 0.15s ease;
+}
+
+.md-button.secondary-btn:hover::after,
+.md-button.secondary-btn:focus::after {
+  transform: translateX(2px);
+}
+
+.md-button.secondary-btn:hover,
+.md-button.secondary-btn:focus {
+  background-color: var(--md-accent-fg-color) !important;
+  color: var(--md-accent-bg-color) !important;
+  border-color: var(--md-accent-fg-color) !important;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.16);
+}
+
+/* Accessible focus ring */
+.md-button.secondary-btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--md-primary-fg-color) 30%, transparent), 0 4px 14px rgba(0,0,0,0.12);
+}
+
+.md-button.secondary-btn:active {
+  transform: translateY(1px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .md-button.secondary-btn,
+  .md-button.secondary-btn::after {
+    transition: none;
+  }
+}
+
+/* Swap colors for header hero buttons: default shows previous hover, and hover shows previous default */
+header.hero .md-button.highlighted-btn {
+  background-color: var(--md-primary-fg-color) !important; /* was hover */
+  color: var(--md-primary-bg-color) !important;
+  border-color: var(--md-primary-fg-color) !important;
+}
+header.hero .md-button.highlighted-btn:hover,
+header.hero .md-button.highlighted-btn:focus {
+  background-color: var(--md-accent-fg-color) !important; /* was default */
+  color: var(--md-accent-bg-color) !important;
+  border-color: var(--md-accent-fg-color) !important;
+}
+
+header.hero .md-button.secondary-btn {
+  background-color: var(--md-accent-fg-color) !important; /* was hover */
+  color: var(--md-accent-bg-color) !important;
+  border-color: var(--md-accent-fg-color) !important;
+}
+header.hero .md-button.secondary-btn:hover,
+header.hero .md-button.secondary-btn:focus {
+  background-color: #fff !important; /* was default */
+  color: var(--md-accent-fg-color) !important;
+  border-color: var(--md-accent-fg-color) !important;
+}
+
+/* Unified button shape: mostly square with slight rounding */
+.md-button,
+.md-typeset .md-button,
+.md-button.highlighted-btn,
+.md-button.secondary-btn {
+  border-radius: 6px !important;
 }
