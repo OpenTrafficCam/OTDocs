@@ -5,7 +5,9 @@ This section provides a guide on how to install and use OTValidate.
 ## Installation
 
 === "Windows"
+
     !!! note
+
         Installation instructions for Windows are following soon.
 
 === "Linux/ macOS Intel"

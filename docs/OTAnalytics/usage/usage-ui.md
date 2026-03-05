@@ -31,13 +31,14 @@ frames.
 !!! info inline end "Offset examples"
 
     === "0.1, 0.1"
+
         ![Offset x=0.1, y=0.1](usage-ui/offset-x-0-1-y-0-1.png){ align=left }
 
     === "0.8, 0.3"
+
         ![Offset x=0.8, y=0.3](usage-ui/offset-x-0-8-y-0-3.png){ align=left }
 
-The position of the track point within the bounding box can be configured using the \*
-\*Offset\*\* attribute.
+The position of the track point within the bounding box can be configured using the **Offset** attribute.
 This offset is defined separately for the x- and y-axes, with values ranging from `0` to
 `1`.
 Origin `(0, 0)` is the top left-hand corner of the bounding box.
@@ -387,22 +388,26 @@ quality of each traffic analysis.
     ![Show all tracks](usage-ui/show-tracks-all.png)
 
 === "Intersecting sections"
-Tracks intersecting at least one of the selected sections are shown.
+
+    Tracks intersecting at least one of the selected sections are shown.
 
     ![Show tracks intersecting the selected sections](usage-ui/show-tracks-intersecting-sections.png)
 
 === "Not intersecting sections"
-Tracks intersecting **none** of the selected sections are shown.
+
+    Tracks intersecting **none** of the selected sections are shown.
 
     ![Show tracks not intersection the selected sections](usage-ui/show-tracks-not-intersecting-sections.png)
 
 === "Assigned to flows"
-Tracks assigned to at least one selected flow are shown.
+
+    Tracks assigned to at least one selected flow are shown.
 
     ![Show tracks assigned to flows](usage-ui/show-tracks-assigned-to-flows.png)
 
 === "Not assigned to flows"
-Tracks assigned to **none** of the selected flows are shown.
+
+    Tracks assigned to **none** of the selected flows are shown.
 
     ![Show tracks not assigned to flows](usage-ui/show-tracks-not-assigned-to-flows.png)
 

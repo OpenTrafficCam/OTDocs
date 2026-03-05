@@ -2,7 +2,7 @@
 draft: false
 date: 2026-02-17
 title: "Verkehrszählung Kamera: Funktion, Vorteile & Kaufleitfaden  "
-slug: verkehrszaehlung_kamera
+slug: verkehrszaehlung-kamera
 description: "Wie Kameras Verkehrszählungen automatisieren: Vorteile, Grenzen und Kaufkriterien für eine belastbare Verkehrsplanung. ✔️ Mehr erfahren!
 "
 categories:
