@@ -38,7 +38,6 @@ nav:
       - service/consulting.md
   - Case Studies:
       - case_studies.md
-      - case_studies/live.md
   - Pricing:
       - pricing.md
   - Über uns:
@@ -62,22 +61,31 @@ nav:
               - OTCamera/gettingstarted/installation/wifi-ap.md
               - OTCamera/gettingstarted/installation/otcamera.md
           - OTCamera/gettingstarted/firstuse.md
-          - OTCamera/usage/buttons_leds.md
+          - Usage:
+              - OTCamera/usage/buttons_leds.md
+              - OTCamera/usage/preparation_safety.md
+              - OTCamera/usage/mounting.md
+              - OTCamera/usage/getvideos.md
+              - OTCamera/usage/configuration.md
       - OTVision:
           - OTVision/index.md
-          - OTVision/gettingstarted/requirements.md
-          - OTVision/gettingstarted/installation.md
-          - OTVision/gettingstarted/firstuse.md
+          - OTVision/requirements.md
+          - OTVision/installation.md
+          - OTVision/firstuse.md
           - Usage:
               - OTVision/usage/convert.md
               - OTVision/usage/detect.md
               - OTVision/usage/track.md
-              - OTVision/advanced_usage/configuration.md
+              - OTVision/usage/configuration.md
       - OTAnalytics:
           - OTAnalytics/index.md
+          - OTAnalytics/requirements.md
           - OTAnalytics/installation.md
-          - OTAnalytics/usage-ui.md
-          - OTAnalytics/usage-cli.md
+          - OTAnalytics/firstuse.md
+          - Usage:
+              - OTAnalytics/usage/usage-ui.md
+              - OTAnalytics/usage/usage-cli.md
+          - OTAnalytics/otconfig.md
       - OTLabels:
           - OTLabels/index.md
           - Getting Started:
@@ -102,11 +110,15 @@ nav:
           - contribute/otanalytics.md
           - contribute/vscode.md
           - contribute/documentation.md
+          # - contribute/otcamera.md
+  - Blog:
+      - blog/index.md
 extra_css:
   - stylesheets/color.css
   - stylesheets/fonts.css
   - stylesheets/katex.min.css
   - stylesheets/custom_admonitions.css
+  - stylesheets/styles.css
 extra_javascript:
   - assets/js/katex_mkdocs.js
   - assets/js/katex.min.js
@@ -169,6 +181,11 @@ watch:
 
 plugins:
   - search
+  - blog:
+      archive: false
+      post_url_format: "{slug}"
+      pagination_per_page: 5
+      pagination_if_single_page: true
   - git-revision-date-localized:
       fallback_to_build_date: true
       type: date

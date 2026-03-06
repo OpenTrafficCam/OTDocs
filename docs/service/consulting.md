@@ -6,7 +6,7 @@ hero_layout: split-image
 hero_cta_text: Jetzt Beratung anfordern
 hero_cta_link: /contact
 hero_cta_variant: secondary
-hero_image_url: /service/OTCamera.webp
+hero_image_url: /service/trajectories.webp
 hide:
   - toc
   - title
@@ -84,7 +84,7 @@ können.
 
 <div class="grid cards three-col" markdown>
 
--   :material-numeric-1-circle:{ .lg .middle } __Videoaufnahme__
+- :material-numeric-1-circle:{ .lg .middle } __Videoaufnahme__
 
     ---
 
@@ -96,13 +96,13 @@ können.
     - Aufnahme von Videos mit der OTCamera durch uns mit geschultem Personal
 
     ---
-  **Ergebnis:** Aufnahmen mit OTCamera oder direkt von Ihrer Kamerainfrastruktur
+    **Ergebnis:** Aufnahmen mit OTCamera oder direkt von Ihrer Kamerainfrastruktur
 
 -   :material-numeric-2-circle:{ .lg .middle } __Trajektorienerstellung__
 
     ---
 
-    ![Bild](/service/OTCamera.webp)
+    ![Bild](/service/trajectories.webp)
 
     **Unsere Leistung:**
 

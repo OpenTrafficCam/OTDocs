@@ -5,7 +5,7 @@
 ```text
 uv run detect.py   [-p paths] [--expected-duration] [-c config]
                     [-w weights] [--conf] [--iou] [--half] [--force]
-                    [--overwrite] [--detect_start] [--detect_end]
+                    [--overwrite] [--detect-start] [--detect-end]
 ```
 
 ## Description
@@ -43,7 +43,7 @@ One or multiple paths to video files or folders containing video files.
 
 This parameter is required to run `detect.py`.
 It has to be specified either using the CLI or in the
-[configuration](../advanced_usage/configuration.md) YAML file.
+[configuration](configuration.md) YAML file.
 
 ### expected-duration
 
@@ -63,7 +63,7 @@ or
 
 `--config "path/to/config file"`
 
-Path to a custom user [configuration](../advanced_usage/configuration.md) YAML file.
+Path to a custom user [configuration](configuration.md) YAML file.
 Other parameters (including `paths`) are parsed from this configuration file.
 
 This parameter is optional.

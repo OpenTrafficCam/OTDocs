@@ -4,8 +4,8 @@
 
 ```bash
 uv run convert.py  [-p paths] [-c config]
-                    [--fps_from_filename] [--input_fps]
-                    [--delete_input] [--overwrite]
+                    [--fps-from-filename] [--input-fps]
+                    [--delete-input] [--overwrite]
 ```
 
 ## Description
@@ -32,7 +32,7 @@ One or multiple paths to `.h264` files or folders containing `.h264` video files
 
 This parameter is required to run the `convert.py` script.
 It has to be specified either using the CLI or in the
-[configuration](../advanced_usage/configuration.md) YAML file.
+[configuration](configuration.md) YAML file.
 
 ### config
 
@@ -42,7 +42,7 @@ or
 
 `--config "path/to/config file"`
 
-Path to a custom user [configuration](../advanced_usage/configuration.md) YAML file.
+Path to a custom user [configuration](configuration.md) YAML file.
 Other parameters (including `paths`) are parsed from this configuration file.
 
 This parameter is optional.
@@ -57,36 +57,36 @@ described below are used.
     Any parameter passed to the CLI will overwrite the respective parameter from
     the config file.
 
-### fps_from_filename
+### fps-from-filename
 
-`--fps_from_filename` to parse the video frame rates from the input `.h264` filenames.
+`--fps-from-filename` to parse the video frame rates from the input `.h264` filenames.
 
 - In this case the frame rate of each input `.h264` file has to be specified in
   the filename using the following pattern: `_FR<fps>_` (where `fps` is the frame rate)
 - An example would be `_FR20_` in the following filename:
   `OTCamera01_FR20_2023-01-01_12-15-00.h264`
-- In this case, [`input_fps`](#input_fps) will be ignored.
+- In this case, [`input-fps`](#input-fps) will be ignored.
 
-This parameter is used by default if `--no-fps_from_filename` and
-`--input_fps` are not specified.
+This parameter is used by default if `--no-fps-from-filename` and
+`--input-fps` are not specified.
 
-### no_fps_from_filename
+### no-fps-from-filename
 
-Use `--no-fps_from_filename` to prevent parsing the video frame rates from the
+Use `--no-fps-from-filename` to prevent parsing the video frame rates from the
 input `.h264` filenames.
 
-- In this case, an [`input_fps`](#input_fps) has to be specified.
+- In this case, an [`input-fps`](#input-fps) has to be specified.
 
-### input_fps
+### input-fps
 
-`--input_fps <int>` to set the frame rate for all `.h264` files.
+`--input-fps <int>` to set the frame rate for all `.h264` files.
 
-- `input_fps` should be an integer value above zero.
+- `input-fps` should be an integer value above zero.
 - E.g. if the input `.h264` have been recorded at 20 frames per second, specify this
   parameter as follows:
-  `--input_fps 20`
+  `--input-fps 20`
 
-If `--fps_from_filename` is used, `input_fps` will be ignored.
+If `--fps-from-filename` is used, `input-fps` will be ignored.
 
 This parameter is optional and defaults to `20`.
 
@@ -98,11 +98,11 @@ This parameter is optional and defaults to `20`.
 
 This parameter is optional and defaults to `--overwrite`.
 
-### delete input
+### delete-input
 
-`--delete_input` to delete input `.h264` files after conversion to `.mp4`
+`--delete-input` to delete input `.h264` files after conversion to `.mp4`
 to save disk space.
 
-`--no-delete_input` to keep input `.h264` files after conversion to `.mp4`.
+`--no-delete-input` to keep input `.h264` files after conversion to `.mp4`.
 
-This parameter is optional and defaults to `--no-delete_input`.
+This parameter is optional and defaults to `--no-delete-input`.
