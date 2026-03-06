@@ -10,6 +10,7 @@ hero_image_url: /service/OTCamera.webp
 hide:
   - toc
   - title
+  - navigation
 ---
 
 
@@ -26,22 +27,22 @@ hide:
 
 <div class="grid cards" markdown>
 
-- :material-shield-check: **Robustheit**  
+- :material-shield-check: **Robustheit**
   Ausfallsichere Hardware im wetterfesten Gehäuse.
 
-- :material-power-plug: **Autark**  
+- :material-power-plug: **Autark**
   Mehrtägiger Betrieb mit Akku/Speicher – flexibel im Einsatz.
 
-- :material-shield-account: **Datenschutz**  
+- :material-shield-account: **Datenschutz**
   DSGVO‑konforme Nutzung durch Auflösung/Defokus und Abstände.
 
-- :material-cog: **Einstellungen**  
+- :material-cog: **Einstellungen**
   Bildrate, Auflösung, Aufnahmefenster – anpassbar an Ihren Use‑Case.
 
-- :material-connection: **Kompatibilität**  
+- :material-connection: **Kompatibilität**
   Reibungslos mit OTVision/OTAnalytics und Fremdmaterial.
 
-- :material-clock-fast: **Schnelles Setup**  
+- :material-clock-fast: **Schnelles Setup**
   Einfache Montage, klare Anleitung, zügige Inbetriebnahme.
 
 </div>
@@ -78,19 +79,19 @@ massa, nec semper lorem quam in massa.
 - :material-shield-check: **Robustheit**
   Ausfallsichere Hardware im wetterfesten Gehäuse.
 
-- :material-power-plug: **Autark**  
+- :material-power-plug: **Autark**
   Mehrtägiger Betrieb mit Akku/Speicher – flexibel im Einsatz.
 
-- :material-shield-account: **Datenschutz**  
+- :material-shield-account: **Datenschutz**
   DSGVO‑konforme Nutzung durch Auflösung/Defokus und Abstände.
 
-- :material-cog: **Einstellungen**  
+- :material-cog: **Einstellungen**
   Bildrate, Auflösung, Aufnahmefenster – anpassbar an Ihren Use‑Case.
 
-- :material-connection: **Kompatibilität**  
+- :material-connection: **Kompatibilität**
   Reibungslos mit OTVision/OTAnalytics und Fremdmaterial.
 
-- :material-clock-fast: **Schnelles Setup**  
+- :material-clock-fast: **Schnelles Setup**
   Einfache Montage, klare Anleitung, zügige Inbetriebnahme.
 
 

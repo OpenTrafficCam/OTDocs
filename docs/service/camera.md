@@ -10,6 +10,7 @@ hero_image_url: /service/OTCamera.webp
 hide:
   - toc
   - title
+  - navigation
 ---
 
 <div class="grid cards three-header" markdown>

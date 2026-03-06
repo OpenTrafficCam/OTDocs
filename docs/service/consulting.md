@@ -10,6 +10,7 @@ hero_image_url: /service/trajectories.webp
 hide:
   - toc
   - title
+  - navigation
 ---
 
 ## Aus Bewegungsdaten werden Planungsgrundlagen.
@@ -17,13 +18,13 @@ hide:
 Unser Team vereint Expertise in Verkehrsplanung und Computer Vision. Das ermöglicht individuelle Analysen von Videodaten:
 
 <div class="grid cards" markdown>
- 
+
 -   :material-bike:{ .lg .middle } __Fuß- und Radverkehr__
 
     ---
 
     Differenzierte Analyse von Fußgängern und Radfahrern inkl. Lastenräder und eScooter (z. B. Querungsanalysen)
- 
+
 -   :material-speedometer:{ .lg .middle } __Geschwindigkeiten__
 
     ---
@@ -41,7 +42,7 @@ Unser Team vereint Expertise in Verkehrsplanung und Computer Vision. Das ermögl
     ---
 
     Automatisierte Erkennung von möglichen kritischen Situationen über beliebige Zeiträume
-  
+
 -   :material-parking:{ .lg .middle } __Parkraumanalysen__
 
     ---

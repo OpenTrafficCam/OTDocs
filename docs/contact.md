@@ -3,6 +3,7 @@ title: Kontakt
 hide:
   - toc
   - title
+  - navigation
 ---
 
 # Lassen Sie uns über Ihr Projekt sprechen
