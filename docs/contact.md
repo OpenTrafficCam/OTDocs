@@ -34,6 +34,33 @@ Sie sind unsicher, ob Ihre verkehrsplanerische Fragestellung mit videobasierter 
 
 </div>
 
+## Schreiben Sie uns direkt
+
+<script src="https://unpkg.com/@botpoison/browser" defer></script>
+<form action="https://submit-form.com/L6fiYf0En" method="POST" data-botpoison-public-key="pk_d4402bf0-6635-4098-b650-bd29ec973418">
+  <input type="hidden" name="_redirect" value="https://opentrafficcam.org/contact-thank-you/" />
+  <input type="hidden" name="_append" value="false" />
+  <input type="hidden" name="_error" value="https://opentrafficcam.org/contact-error/" />
+  <input type="checkbox" name="_honeypot" style="display:none" tabindex="-1" autocomplete="off" />
+  <div class="contact-form">
+    <div class="contact-form__row">
+      <div class="contact-form__field">
+        <label for="name">Name *</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div class="contact-form__field">
+        <label for="email">E-Mail *</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+    </div>
+    <div class="contact-form__field">
+      <label for="message">Nachricht *</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+    </div>
+    <button type="submit" class="md-button md-button--primary">Nachricht senden</button>
+  </div>
+</form>
+
 ## Ihr Ansprechpartner
 
 <!-- TODO: Foto von Michael Heilig einfügen -->

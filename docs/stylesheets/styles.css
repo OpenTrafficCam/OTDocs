@@ -402,3 +402,57 @@ header.hero .md-button.secondary-btn:focus {
 .md-button.secondary-btn {
   border-radius: 6px !important;
 }
+
+/* Contact form */
+.contact-form {
+  max-width: 36rem;
+}
+
+.contact-form__row {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (width <= 768px) {
+  .contact-form__row {
+    flex-direction: column;
+  }
+}
+
+.contact-form__row .contact-form__field {
+  flex: 1;
+}
+
+.contact-form__field {
+  margin-bottom: 1rem;
+}
+
+.contact-form__field label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 700;
+}
+
+.contact-form__field input,
+.contact-form__field textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: inherit;
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+}
+
+.contact-form__field textarea {
+  resize: vertical;
+}
+
+.contact-form__field input:focus,
+.contact-form__field textarea:focus {
+  outline: none;
+  border-color: var(--md-accent-fg-color);
+  box-shadow: 0 0 0 2px color-mix(in oklab, var(--md-accent-fg-color) 25%, transparent);
+}
