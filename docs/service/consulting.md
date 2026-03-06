@@ -1,4 +1,5 @@
 ---
+template: service.html
 title: Spezialauswertungen
 hero_title: "Individuelle Analysen"
 hero_subtitle: Sie haben eine verkehrsplanerische Fragestellung – wir entwickeln die passende Analyse.

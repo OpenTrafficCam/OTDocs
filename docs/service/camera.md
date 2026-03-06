@@ -1,4 +1,5 @@
 ---
+template: service.html
 title: Hardware
 hero_title: OTCamera
 hero_subtitle: Deine Kamera für alle Begebenheiten
