@@ -95,17 +95,6 @@ hide:
 
     <div class="service-card">
       <div class="service-media">
-        <div class="service-badge" aria-hidden="true">🎞️</div>
-      </div>
-      <p class="service-title">Video Processing – von Rohdaten zu Insights</p>
-      <p class="service-desc">Automatisierte Erkennung und Verfolgung von Verkehrsteilnehmern – skalierbar, präzise und DSGVO‑konform.</p>
-      <div class="service-cta">
-        <a href="./video_processing/">Mehr erfahren</a>
-      </div>
-    </div>
-
-    <div class="service-card">
-      <div class="service-media">
         <div class="service-badge" aria-hidden="true">🧭</div>
       </div>
       <p class="service-title">Consulting – Expertise für Ihre Projekte</p>

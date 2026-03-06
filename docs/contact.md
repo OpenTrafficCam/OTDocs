@@ -75,4 +75,4 @@ Sie sind unsicher, ob Ihre verkehrsplanerische Fragestellung mit videobasierter 
 
 ---
 
-Noch nicht sicher, welche Auswertung Sie brauchen? Informieren Sie sich über unsere [Standardauswertungen](/service/video_processing/) und [Spezialauswertungen](/service/consulting/).
+Noch nicht sicher, welche Auswertung Sie brauchen? Informieren Sie sich über unser [Angebot](/service/) und unsere [Spezialauswertungen](/service/consulting/).
