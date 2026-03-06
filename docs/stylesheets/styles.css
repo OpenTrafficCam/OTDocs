@@ -315,7 +315,6 @@ p {
   }
 }
 
-
 /* Secondary button (outline, for service hero CTAs) */
 .md-button.secondary-btn {
   display: inline-block;
@@ -329,8 +328,13 @@ p {
   font-weight: 700;
   font-size: 0.95rem;
   line-height: 1.2;
-  box-shadow: 0 3px 14px rgba(0,0,0,0.10);
-  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.05s ease, box-shadow 0.2s ease;
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.1);
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.05s ease,
+    box-shadow 0.2s ease;
 }
 
 /* Arrow indicator */
@@ -350,13 +354,15 @@ p {
   background-color: var(--md-accent-fg-color) !important;
   color: var(--md-accent-bg-color) !important;
   border-color: var(--md-accent-fg-color) !important;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.16);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.16);
 }
 
 /* Accessible focus ring */
 .md-button.secondary-btn:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 3px color-mix(in oklab, var(--md-primary-fg-color) 30%, transparent), 0 4px 14px rgba(0,0,0,0.12);
+  box-shadow:
+    0 0 0 3px color-mix(in oklab, var(--md-primary-fg-color) 30%, transparent),
+    0 4px 14px rgba(0, 0, 0, 0.12);
 }
 
 .md-button.secondary-btn:active {
@@ -454,5 +460,6 @@ header.hero .md-button.secondary-btn:focus {
 .contact-form__field textarea:focus {
   outline: none;
   border-color: var(--md-accent-fg-color);
-  box-shadow: 0 0 0 2px color-mix(in oklab, var(--md-accent-fg-color) 25%, transparent);
+  box-shadow: 0 0 0 2px
+    color-mix(in oklab, var(--md-accent-fg-color) 25%, transparent);
 }

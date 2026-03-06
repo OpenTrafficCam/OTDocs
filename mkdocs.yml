@@ -39,9 +39,7 @@ nav:
       - pricing.md
   - Über uns:
       - about_us.md
-  - Kontakt:
-      - contact.md
-  - Documentation:
+  - Docs:
       - Overview:
           - overview/index.md
           - overview/dataprivacy.md
@@ -108,6 +106,8 @@ nav:
           # - contribute/otcamera.md
   - Blog:
       - blog/index.md
+  - Kontakt:
+      - contact.md
 extra_css:
   - stylesheets/color.css
   - stylesheets/fonts.css
