@@ -1,10 +1,9 @@
 ---
 draft: false
 date: 2026-03-06
-title: "Verkehrszählung: Fundierte Daten für eine zukunftsfähige Verkehrs- und Stadtplanung"
+title: "Verkehrszählung: Funktion, Anforderungen und Anwendungsbereiche"
 slug: verkehrszaehlung
-description: "Belastbare Verkehrszählungen als Grundlage moderner Stadtplanung: Methoden, Arten und Anwendungsbereiche für fundierte Planungsentscheidungen. ✔️ Mehr erfahren!
-"
+description: "Verkehrszählung als Grundlage moderner Verkehrs- und Stadtplanung. ✔️ Methoden, Kriterien und Einsatzbereiche verständlich erklärt."
 categories:
   - Technologie
 authors:
