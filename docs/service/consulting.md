@@ -90,7 +90,7 @@ können.
 
     ---
 
-    ![Bild](/assets/img/planning.webp)
+    ![Bild](/service/OTCamera.webp)
 
     **Ihre Optionen:**
 
@@ -119,7 +119,7 @@ können.
 
     ---
 
-    ![Bild](/service/OTCamera.webp)
+    ![Bild](/assets/img/planning.webp)
 
     **Was wir liefern:**
 
