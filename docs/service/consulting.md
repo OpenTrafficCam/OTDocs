@@ -90,7 +90,7 @@ können.
 
     ---
 
-    ![Bild](/service/OTCamera.webp)
+    ![Bild](/assets/img/planning.webp)
 
     **Ihre Optionen:**
 
