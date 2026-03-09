@@ -7,7 +7,7 @@ hero_layout: split-image
 hero_cta_text: Jetzt Beratung anfordern
 hero_cta_link: /contact
 hero_cta_variant: secondary
-hero_image_url: /service/trajectories.webp
+hero_image_url: /assets/img/consulting-trajektorienerstellung.webp
 hide:
   - toc
   - title
@@ -104,7 +104,7 @@ können.
 
     ---
 
-    ![Bild](/service/trajectories.webp)
+    ![Bild](/assets/img/consulting-trajektorienerstellung.webp)
 
     **Unsere Leistung:**
 
