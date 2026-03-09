@@ -145,7 +145,7 @@ Trajektorienanalysen möglich ist.
 
 <br/>
 
-![Park and Ride Analyse](/service/OTCamera.webp){ align=left width=300 }
+![Park and Ride Analyse](/assets/img/consulting-park-and-ride.webp){ align=left width=300 }
 
 ##### Park and Ride
 
@@ -158,7 +158,7 @@ Trajektorienanalysen möglich ist.
 <br/>
 
 
-![Querungsanalyse](/service/OTCamera.webp){ align=right width=300 }
+![Querungsanalyse](/assets/img/querungsanalysen.webp){ align=right width=300 }
 
 ##### Querungsanalysen
 
@@ -170,7 +170,7 @@ Trajektorienanalysen möglich ist.
 
 <br/><br/>
 
-![Konfliktanalyse](/service/OTCamera.webp){ align=left width=300 }
+![Konfliktanalyse](/assets/img/conflict-detection-bicyclist.webp){ align=left width=300 }
 
 ##### Konflikterkennung
 
@@ -182,7 +182,7 @@ Trajektorienanalysen möglich ist.
 
 <br/>
 
-![Multi-Kamera-Fusion](/service/OTCamera.webp){ align=right width=300 }
+![Multi-Kamera-Fusion](/assets/img/multicamera.webp){ align=right width=300 }
 
 ##### Multi-Kamera-Fusion
 
