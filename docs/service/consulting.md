@@ -7,7 +7,7 @@ hero_layout: split-image
 hero_cta_text: Jetzt Beratung anfordern
 hero_cta_link: /contact
 hero_cta_variant: secondary
-hero_image_url: /service/trajectories.webp
+hero_image_url: /assets/img/consulting-trajektorienerstellung.webp
 hide:
   - toc
   - title
@@ -104,7 +104,7 @@ können.
 
     ---
 
-    ![Bild](trajectories.webp)
+    ![Bild](consulting-trajektorienerstellung.webp)
 
     **Unsere Leistung:**
 
@@ -119,7 +119,7 @@ können.
 
     ---
 
-    ![Bild](OTCamera.webp)
+    ![Bild](/assets/img/planning.webp)
 
     **Was wir liefern:**
 
@@ -145,7 +145,7 @@ Trajektorienanalysen möglich ist.
 
 <br/>
 
-![Park and Ride Analyse](OTCamera.webp){ align=left width=300 }
+![Park and Ride Analyse](consulting-park-and-ride.webp){ align=left width=300 }
 
 ##### Park and Ride
 
@@ -158,7 +158,7 @@ Trajektorienanalysen möglich ist.
 <br/>
 
 
-![Querungsanalyse](OTCamera.webp){ align=right width=300 }
+![Querungsanalyse](querungsanalysen.webp){ align=right width=300 }
 
 ##### Querungsanalysen
 
@@ -170,7 +170,7 @@ Trajektorienanalysen möglich ist.
 
 <br/><br/>
 
-![Konfliktanalyse](OTCamera.webp){ align=left width=300 }
+![Konfliktanalyse](conflict-detection-bicyclist.webp){ align=left width=300 }
 
 ##### Konflikterkennung
 
@@ -182,7 +182,7 @@ Trajektorienanalysen möglich ist.
 
 <br/>
 
-![Multi-Kamera-Fusion](OTCamera.webp){ align=right width=300 }
+![Multi-Kamera-Fusion](multicamera.webp){ align=right width=300 }
 
 ##### Multi-Kamera-Fusion
 
