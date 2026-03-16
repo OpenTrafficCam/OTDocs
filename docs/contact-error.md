@@ -12,5 +12,5 @@ search:
 
 Bitte versuchen Sie es erneut oder schreiben Sie uns direkt per E-Mail.
 
-[Erneut versuchen](/contact/){ .md-button .md-button--primary }
+[Erneut versuchen](contact.md){ .md-button .md-button--primary }
 [E-Mail schreiben](mailto:info@opentrafficcam.org){ .md-button }

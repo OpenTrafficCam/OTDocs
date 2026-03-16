@@ -223,8 +223,8 @@ Aktuell testen wir die OTCamera im **dauerhaften Betrieb**. Bald: kontinuierlich
 **Sie haben Fragen oder Interesse an der OTCamera?**
 Wir beraten Sie gerne persönlich zu Ihrem Projekt.
 
-[Kontakt per E-Mail](/contact){ .md-button }
-[Termin buchen](/contact){ .md-button }
+[Kontakt per E-Mail](../contact.md){ .md-button }
+[Termin buchen](../contact.md){ .md-button }
 
 </div>
 
@@ -256,7 +256,7 @@ Wir beraten Sie gerne persönlich zu Ihrem Projekt.
 
 <div class="cta-dual" markdown>
 
-[Kontakt aufnehmen](/contact){ .md-button }
-[Dokumentation](/OTCamera/){ .md-button }
+[Kontakt aufnehmen](../contact.md){ .md-button }
+[Dokumentation](../OTCamera/index.md){ .md-button }
 
 </div>

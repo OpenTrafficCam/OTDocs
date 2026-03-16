@@ -72,7 +72,7 @@ Unser Team vereint Expertise in Verkehrsplanung und Computer Vision. Das ermögl
 
 <div class="cta-dual" markdown>
 
-[Jetzt Projekt besprechen](/contact){ .md-button }
+[Jetzt Projekt besprechen](../contact.md){ .md-button }
 
 </div>
 
@@ -90,7 +90,7 @@ können.
 
     ---
 
-    ![Bild](/service/OTCamera.webp)
+    ![Bild](OTCamera.webp)
 
     **Ihre Optionen:**
 
@@ -104,7 +104,7 @@ können.
 
     ---
 
-    ![Bild](/service/trajectories.webp)
+    ![Bild](trajectories.webp)
 
     **Unsere Leistung:**
 
@@ -119,7 +119,7 @@ können.
 
     ---
 
-    ![Bild](/service/OTCamera.webp)
+    ![Bild](OTCamera.webp)
 
     **Was wir liefern:**
 
@@ -134,7 +134,7 @@ können.
 
 <div class="cta-dual" markdown>
 
-[Jetzt Projekt besprechen](/contact){ .md-button }
+[Jetzt Projekt besprechen](../contact.md){ .md-button }
 
 </div>
 
@@ -145,7 +145,7 @@ Trajektorienanalysen möglich ist.
 
 <br/>
 
-![Park and Ride Analyse](/service/OTCamera.webp){ align=left width=300 }
+![Park and Ride Analyse](OTCamera.webp){ align=left width=300 }
 
 ##### Park and Ride
 
@@ -158,7 +158,7 @@ Trajektorienanalysen möglich ist.
 <br/>
 
 
-![Querungsanalyse](/service/OTCamera.webp){ align=right width=300 }
+![Querungsanalyse](OTCamera.webp){ align=right width=300 }
 
 ##### Querungsanalysen
 
@@ -170,7 +170,7 @@ Trajektorienanalysen möglich ist.
 
 <br/><br/>
 
-![Konfliktanalyse](/service/OTCamera.webp){ align=left width=300 }
+![Konfliktanalyse](OTCamera.webp){ align=left width=300 }
 
 ##### Konflikterkennung
 
@@ -182,7 +182,7 @@ Trajektorienanalysen möglich ist.
 
 <br/>
 
-![Multi-Kamera-Fusion](/service/OTCamera.webp){ align=right width=300 }
+![Multi-Kamera-Fusion](OTCamera.webp){ align=right width=300 }
 
 ##### Multi-Kamera-Fusion
 
@@ -197,7 +197,7 @@ Trajektorienanalysen möglich ist.
 
 <div class="cta-dual" markdown>
 
-[Jetzt Projekt besprechen](/contact){ .md-button }
+[Jetzt Projekt besprechen](../contact.md){ .md-button }
 
 </div>
 
@@ -247,7 +247,7 @@ Trajektorienanalysen möglich ist.
 
 <div class="cta-dual" markdown>
 
-[Kontakt aufnehmen](/contact){ .md-button }
-[Dokumentation](/OTCamera/){ .md-button }
+[Kontakt aufnehmen](../contact.md){ .md-button }
+[Dokumentation](../OTCamera/index.md){ .md-button }
 
 </div>
