@@ -12,7 +12,7 @@ authors:
 
 # Verkehrszählung: Fundierte Daten für eine zukunftsfähige Verkehrs- und Stadtplanung
 
-![Verkehrszählung](../../assets/img/blog_images/verkehrsstroeme.webp)
+![Verkehrszählung](../../assets/img/blog_images/querschnitt_tagesganglinie.webp)
 
 E-Scooter neben Stadtbus, Lastenrad neben Elektro-SUV – der innerstädtische Verkehr ist so
 vielfältig wie nie. Die wachsende Verkehrsbelastung trifft auf ein verändertes
@@ -110,7 +110,7 @@ Planungsentscheidungen zu treffen.
 
 ### Zählungen des Fuß- und Radverkehrs
 
-![Verkehrszählung](../../assets/img/blog_images/pur_Oranienburg.webp)
+![Verkehrszählung](../../assets/img/blog_images/verkehrsschnitt.webp)
 
 Fuß- und Radverkehrszählungen erfassen Mengen und zeitliche Verteilungen an Querschnitten,
 Knotenpunkten oder entlang von Straßenzügen. Typische Kenngrößen sind Verkehrsstärken,
