@@ -1,0 +1,13 @@
+{% extends "main.html" %}
+
+{% block styles %} {{ super() }}
+  <link href="/stylesheets/styles.css" rel="stylesheet" />
+  <link href="/stylesheets/bootstrap/bootstrap-grid.css" rel="stylesheet" />
+  <link href="/stylesheets/bootstrap/bootstrap-utilities.css" rel="stylesheet" />
+  <link href="/stylesheets/color.css" rel="stylesheet" />
+  <link href="/stylesheets/service.css" rel="stylesheet" />
+{% endblock %}
+
+{% block hero %}
+  {% include "partials/hero_header.html" %}
+{% endblock %}
