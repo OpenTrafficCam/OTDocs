@@ -63,7 +63,7 @@ Typische Datentypen, die heute erfasst werden:
 - Trajektorien als vollständige Bewegungspfade einzelner Verkehrsteilnehmender
 - Geschwindigkeiten – sowohl punktuell als auch über Streckenabschnitte
 - Zeitlücken und Abstände zwischen Fahrzeugen
-- Fahrzeugklassen, etwa Pkw, Lkw, Busse oder Zweiräder
+- Fahrzeugklassen, etwa Pkw, Lkw, Busse und Radfahrende sowie zu Fuß Gehende
 - Abbiegebeziehungen an Kreuzungen, Einmündungen und Kreisverkehren
 - Belegungsgrade im ruhenden Verkehr, etwa bei Parkraumanalysen
 
@@ -96,7 +96,8 @@ unter anderem diese Daten:
 - Fahrzeugklassen pro Strom
 - Zeitlücken zwischen Fahrzeugen
 
-Der besondere Vorteil videobasierter Systeme hier: Sie sind laut EVE die
+Der besondere Vorteil videobasierter Systeme hier: Sie sind laut EVE
+(Empfehlungen für Verkehrserhebungen) die
 einzige automatisierte Methode, die Abbiegebeziehungen am Knoten und
 Querschnittsdaten auf den Zufahrten gleichzeitig erfasst. Klassische
 Detektoren wie Induktionsschleifen oder Radar müssten dafür pro Querschnitt
@@ -111,8 +112,7 @@ Abfahrt.
 
 In vielen Städten ist Parkraum ein knappes Gut. Um fundierte Entscheidungen
 über Parkraumbewirtschaftung oder neue Stellplätze treffen zu können, sind
-belastbare Daten unerlässlich. Dabei weisen die EVE (Empfehlungen für
-Verkehrserhebungen) ausdrücklich darauf hin, dass Befragungen aufgrund
+belastbare Daten unerlässlich. Dabei weisen die EVE ausdrücklich darauf hin, dass Befragungen aufgrund
 psychologischer Verzerrungen hier nicht geeignet sind.
 
 Automatisierte Erfassungsmethoden wie sensor- oder kamerabasierte Systeme
@@ -180,17 +180,17 @@ Infrarotsensoren bis hin zu Bluetooth-Tracking oder Floating-Car-Data.
 
 Dabei setzen sich derzeit vor allem Videokameras mit nachgelagerter
 KI-basierter Auswertung als neuer Standard durch: Kameras können mehrere
-Fahrspuren gleichzeitig erfassen, unterschiedliche Verkehrsteilnehmende
+Fahrstreifen gleichzeitig erfassen, unterschiedliche Verkehrsteilnehmende
 erkennen und vollständige Bewegungsdaten ableiten.
 
 Der technische Workflow lässt sich vereinfacht so beschreiben:
 
 1. Kameraaufnahme: Eine Kamera erfasst den Verkehrsraum und zeichnet
    Videomaterial auf. Systeme wie unsere
-   [OTCamera](https://opentrafficcam.org) arbeiten dabei bereits bei der
+   [OTCamera](/OTCamera/) arbeiten dabei bereits bei der
    Aufnahme datenschutzkonform, etwa durch optische Defokussierung.
 2. KI-basierte Objekterkennung: Im Anschluss erkennt eine Software wie
-   [OTVision](https://opentrafficcam.org/OTVision/) Verkehrsteilnehmende
+   [OTVision](/OTVision/) Verkehrsteilnehmende
    im Bild und klassifiziert sie – beispielsweise in Pkw, Lkw, Fahrräder
    oder Busse.
 3. Tracking und Trajektorienbildung: Erkannte Objekte werden über mehrere
@@ -250,7 +250,7 @@ Schritte steht und fällt mit der Qualität der Verkehrserhebung.
 
 Moderne Videosysteme wie unsere OTCamera sowie die KI-basierte Verarbeitung
 mit OTVision und die anschließende Auswertung mit
-[OTAnalytics](https://opentrafficcam.org/OTAnalytics/) machen die
+[OTAnalytics](/OTAnalytics/) machen die
 Verkehrsdatenerfassung einfach, effizient und skalierbar. Ob an einzelnen
 Kreuzungen oder an Autobahnabschnitten: Vollautomatisiert, DSGVO-konform
 durch Privacy by Design und in der Lage, bis zu 18 differenzierte
