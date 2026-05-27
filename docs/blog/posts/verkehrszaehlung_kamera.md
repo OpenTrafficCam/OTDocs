@@ -21,7 +21,7 @@ Verkehrsmodi, um Entscheidungen in der Verkehrsplanung objektiv begründen zu k�
 Angesichts der komplexen Anforderungen setzen Städte und Planer daher auf kamerabasierte
 Verkehrszählungen.
 
-Die Verkehrszählung mit Kamera deckt große Erfassungsbereiche ab und liefert detaillierte
+Die [Verkehrszählung](verkehrszaehlung.md) mit Kamera deckt große Erfassungsbereiche ab und liefert detaillierte
 Einblicke ohne viel Aufwand. Lesen Sie hier, welche Vor- und Nachteile Kameras bei
 Verkehrszählungen haben und was Sie beim Kauf der Technik beachten sollten.
 
