@@ -15,8 +15,6 @@ theme:
   features:
     # - navigation.instant
     - navigation.tracking
-    - navigation.tabs
-    - navigation.tabs.sticky
     - navigation.sections
     # - navigation.expand
     - navigation.indexes
@@ -28,8 +26,9 @@ theme:
     repo: fontawesome/brands/github
 
 nav:
-  - index.md
-  - overview/dataprivacy.md
+  - Overview:
+      - index.md
+      - overview/dataprivacy.md
   - OTCamera:
       - OTCamera/index.md
       - OTCamera/gettingstarted/requirements.md
