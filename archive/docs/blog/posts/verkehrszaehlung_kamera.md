@@ -11,6 +11,7 @@ authors:
   - michael
 ---
 
+<!-- markdownlint-disable-next-line MD025 -->
 # Kamera für Verkehrszählung: So unterstützt sie eine moderne Verkehrsplanung
 
 ![Install](../../assets/img/blog_images/verkehrszaehlung_camera_install.webp)
