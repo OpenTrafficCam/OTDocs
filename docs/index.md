@@ -1,7 +1,7 @@
 ---
 title: Documentation
 ---
-
+<!-- markdownlint-disable-next-line MD025 -->
 # Welcome to OpenTrafficCam
 
 ![OpenTrafficCam Overview](OpenTrafficCam_1200.svg)
