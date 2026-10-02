@@ -10,9 +10,11 @@ authors:
   - sebastian
 ---
 
-<!-- markdownlint-disable-next-line MD025 -->
+<!-- markdownlint-disable MD025 -->
 
 # Verkehrsdatenerfassung: Grundlage moderner Verkehrsplanung
+
+<!-- markdownlint-enable MD025 -->
 
 ![Verkehrsstroeme](../../assets/img/blog_images/verkehrsstroeme.webp)
 

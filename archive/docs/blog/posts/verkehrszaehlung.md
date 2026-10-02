@@ -10,9 +10,11 @@ authors:
   - sebastian
 ---
 
-<!-- markdownlint-disable-next-line MD025 -->
+<!-- markdownlint-disable MD025 -->
 
 # Verkehrszählung: Fundierte Daten für eine zukunftsfähige Verkehrs- und Stadtplanung
+
+<!-- markdownlint-enable MD025 -->
 
 ![Verkehrszählung](../../assets/img/blog_images/querschnitt_tagesganglinie.webp)
 

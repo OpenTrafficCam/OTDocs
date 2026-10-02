@@ -5,9 +5,11 @@ hide:
 #  - toc
 ---
 
-<!-- markdownlint-disable-next-line MD025 -->
+<!-- markdownlint-disable MD025 -->
 
 # OpenTrafficCam LIVE Hoyerswerda
+
+<!-- markdownlint-enable MD025 -->
 
 ![OpenTrafficCam Live Hoyerswerda](assets/img/reallabor_hoy/OpenTrafficCam_LIVE_Hoy_Fullscreen.svg)
 
