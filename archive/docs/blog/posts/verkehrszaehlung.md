@@ -11,7 +11,6 @@ authors:
 ---
 
 <!-- markdownlint-disable-next-line MD025 -->
-
 # Verkehrszählung: Fundierte Daten für eine zukunftsfähige Verkehrs- und Stadtplanung
 
 ![Verkehrszählung](../../assets/img/blog_images/querschnitt_tagesganglinie.webp)
