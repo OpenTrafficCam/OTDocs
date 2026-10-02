@@ -11,7 +11,11 @@ authors:
   - sebastian
 ---
 
+<!-- markdownlint-disable MD025 -->
+
 # Verkehrszählgerät: Welches für eine erfolgreiche Verkehrsplanung kaufen?
+
+<!-- markdownlint-enable MD025 -->
 
 ![Verkehrsströme](../../assets/img/blog_images/header_image_verkehrsstroeme.webp)
 

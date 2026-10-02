@@ -71,7 +71,7 @@ auf der Mobilithek. Weitere Informationen finden Sie unter [www.mfund.de](https:
 
 Zudem werden Teile der Weiterentwicklung von OpenTrafficCam von der [Deutschen Forschungsgemeinschaft (DFG)](https://www.dfg.de/) gefördert.
 Konkret erfolgt im Rahmen des Projekts [NFDI4ing](https://nfdi4ing.de/) die Entwicklung von [OTGroundTruther](https://github.com/OpenTrafficCam/OTGroundTruther),
- einem Tool zur manuellen Erzeugung von Referenzdatensätzen.
+einem Tool zur manuellen Erzeugung von Referenzdatensätzen.
 Mit diesen Referenzdatensätzen können die mit OpenTrafficCam automatisiert abgeleiteten Verkehrskennwerte validiert werden.
 
 <div class="grid cards" markdown>
