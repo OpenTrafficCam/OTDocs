@@ -22,7 +22,6 @@ python -m OTAnalytics [-h]
                 [--count-intervals COUNT_INTERVALS [COUNT_INTERVALS ...]]
                 [--track-export]
                 [--track-statistics-export]
-                [--num-processes NUM_PROCESSES]
                 [--logfile LOGFILE]
                 [--logfile_overwrite]
                 [--include-classes INCLUDE_CLASSES [INCLUDE_CLASSES ...]]
@@ -173,15 +172,6 @@ Enable the export of track data as `.csv`.
 `--track-statistics-export`
 
 Enable the export of track statistics as `.csv`.
-
----
-
-### num-processes
-
-`--num-processes <integer>`
-
-Specify the number of processes to be used for multiprocessing.
-The CLI will divide the workload among these many processes to improve performance.
 
 ---
 
