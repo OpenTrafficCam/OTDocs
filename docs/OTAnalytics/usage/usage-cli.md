@@ -1,4 +1,3 @@
-
 # Usage CLI
 
 After processing videos with OTVision´s tracking module ([OTVision track](../../OTVision/usage/track.md)), you can use OTAnalytics for analysing traffic data.
