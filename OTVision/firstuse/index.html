@@ -3318,7 +3318,7 @@ This documentation is written for using the Command Prompt on Windows or the int
 terminals in Linux or macOS.</p>
 <h3 id="navigate-to-the-otvision-root-directory">Navigate to the OTVision root directory<a class="headerlink" href="#navigate-to-the-otvision-root-directory" title="Permanent link">&para;</a></h3>
 <p>Open a Terminal and navigate to the OTVision root folder.</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;path/to/OTVision&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span><span class="s2">"path/to/OTVision"</span>
 </code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Where is the OTVision root directory?</p>
@@ -3359,7 +3359,7 @@ you need to convert them to a supported video format
 (see <a href="#convert">convert.py</a>) first.
 Therefore, we provide the <code>convert.py</code> script.</p>
 <p>To convert <code>.h264</code> videos, run the following command after activating the venv:</p>
-<div class="highlight"><pre><span></span><code>uv run convert.py -p &quot;path/to/your/h264 files&quot;
+<div class="highlight"><pre><span></span><code>uv run convert.py -p "path/to/your/h264 files"
 </code></pre></div>
 <p>where <code>path/to/h264 files</code> is either the path to a single h264 video file
 or a folder containing multiple h264 video files.</p>
@@ -3372,7 +3372,7 @@ formats,
 you are ready to detect road users in each single frame of the video(s).
 Therefore, we provide the <code>detect.py</code> script.</p>
 <p>To detect video files, run the following command after activating your venv:</p>
-<div class="highlight"><pre><span></span><code>uv run detect.py -p &quot;path/to/your/video files&quot; --expected-duration &lt;video duration [sec]&gt;
+<div class="highlight"><pre><span></span><code>uv run detect.py -p "path/to/your/video files" --expected-duration &lt;video duration [sec]&gt;
 </code></pre></div>
 <p>where</p>
 <ul>
@@ -3399,7 +3399,7 @@ in the same folder with the same name as the input video file.</p>
 road users over multiple frames of the video (or even over multiple consecutive videos).
 Therefore, we provide the <code>track.py</code> script.</p>
 <p>To track <code>.otdet</code> files, run the following command after activating your venv:</p>
-<div class="highlight"><pre><span></span><code>uv run track.py -p &quot;path/to/your/otdet files&quot;
+<div class="highlight"><pre><span></span><code>uv run track.py -p "path/to/your/otdet files"
 </code></pre></div>
 <p>where <code>path/to/otdet files</code> is either the path to a single <code>.otdet</code> file
 or a folder containing your <code>.otdet</code> files.

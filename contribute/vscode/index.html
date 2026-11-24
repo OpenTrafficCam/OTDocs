@@ -3278,8 +3278,8 @@
 <h2 id="pylance-settings">Pylance Settings<a class="headerlink" href="#pylance-settings" title="Permanent link">&para;</a></h2>
 <p>To solve import errors in the repository, we need to add an extra path to the pylance config.</p>
 <p>For example in the workspace settings of OTCamera add:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">&quot;python.analysis.extraPaths&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">  </span><span class="s2">&quot;./OTCamera&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="nt">"python.analysis.extraPaths"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="s2">"./OTCamera"</span>
 <span class="p">]</span>
 </code></pre></div>
 <p>Or set it using the Settings-UI (Workspace -&gt; Pylance -&gt; Python - Analysis: Extra Path -&gt; add './OTCamera')</p>
@@ -3288,29 +3288,29 @@
 <p>You can insert the user snippets by start typing the "prefix" value. For example start typing <code>gpl_</code> and autocompletection should recognize the user snippets stated below.</p>
 <h3 id="gpl-license-information">GPL License Information<a class="headerlink" href="#gpl-license-information" title="Permanent link">&para;</a></h3>
 <p>Add the following snippet to <code>vscodedata/user/snippets/python.json</code></p>
-<div class="highlight"><pre><span></span><code><span class="nt">&quot;gpl_license_header&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;prefix&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;gpl_add_head&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;body&quot;</span><span class="p">:[</span>
-<span class="w">            </span><span class="s2">&quot;$LINE_COMMENT ${1:Program Name and Function}&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="s2">&quot;$LINE_COMMENT Copyright (C) $CURRENT_YEAR OpenTrafficCam Contributors&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="s2">&quot;$LINE_COMMENT &lt;https://github.com/OpenTrafficCam&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="s2">&quot;$LINE_COMMENT &lt;team@opentrafficcam.org&gt;&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="s2">&quot;$LINE_COMMENT&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="s2">&quot;$LINE_COMMENT This program is free software: you can redistribute it and/or modify&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="s2">&quot;$LINE_COMMENT it under the terms of the GNU General Public License as published by&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="s2">&quot;$LINE_COMMENT the Free Software Foundation, either version 3 of the License, or&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="s2">&quot;$LINE_COMMENT (at your option) any later version.&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="s2">&quot;$LINE_COMMENT&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="s2">&quot;$LINE_COMMENT This program is distributed in the hope that it will be useful,&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="s2">&quot;$LINE_COMMENT but WITHOUT ANY WARRANTY; without even the implied warranty of&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="s2">&quot;$LINE_COMMENT MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="s2">&quot;$LINE_COMMENT GNU General Public License for more details.&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="s2">&quot;$LINE_COMMENT&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="s2">&quot;$LINE_COMMENT You should have received a copy of the GNU General Public License&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="s2">&quot;$LINE_COMMENT along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<div class="highlight"><pre><span></span><code><span class="nt">"gpl_license_header"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"prefix"</span><span class="p">:</span><span class="w"> </span><span class="s2">"gpl_add_head"</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"body"</span><span class="p">:[</span>
+<span class="w">            </span><span class="s2">"$LINE_COMMENT ${1:Program Name and Function}"</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">"$LINE_COMMENT Copyright (C) $CURRENT_YEAR OpenTrafficCam Contributors"</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">"$LINE_COMMENT &lt;https://github.com/OpenTrafficCam"</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">"$LINE_COMMENT &lt;team@opentrafficcam.org&gt;"</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">"$LINE_COMMENT"</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">"$LINE_COMMENT This program is free software: you can redistribute it and/or modify"</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">"$LINE_COMMENT it under the terms of the GNU General Public License as published by"</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">"$LINE_COMMENT the Free Software Foundation, either version 3 of the License, or"</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">"$LINE_COMMENT (at your option) any later version."</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">"$LINE_COMMENT"</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">"$LINE_COMMENT This program is distributed in the hope that it will be useful,"</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">"$LINE_COMMENT but WITHOUT ANY WARRANTY; without even the implied warranty of"</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">"$LINE_COMMENT MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the"</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">"$LINE_COMMENT GNU General Public License for more details."</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">"$LINE_COMMENT"</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">"$LINE_COMMENT You should have received a copy of the GNU General Public License"</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">"$LINE_COMMENT along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;."</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">""</span><span class="p">,</span>
 <span class="w">        </span><span class="p">],</span>
-<span class="w">        </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Add GPLv3 license information in source code.&quot;</span>
+<span class="w">        </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Add GPLv3 license information in source code."</span>
 <span class="w">    </span><span class="p">}</span>
 </code></pre></div>
 <p>Add a short description and use tab to jump to the end of the snippet.</p>

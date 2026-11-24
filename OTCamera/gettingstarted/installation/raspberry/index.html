@@ -3261,11 +3261,11 @@ We are not liable for any damage you may cause to your system. But we followed t
 <li>
 <p>If you copy and paste the following code, you will unzip OpenSSH and overwrite the system's default OpenSSH version.</p>
 <div class="highlight"><pre><span></span><code><span class="c"># Overwrite windows installed bins</span>
-<span class="nv">$openSshBins</span> <span class="p">=</span> <span class="p">(</span><span class="nb">Get-ChildItem</span> <span class="s1">&#39;C:\WINDOWS\System32\OpenSSH\&#39;</span><span class="p">).</span><span class="n">Name</span>
+<span class="nv">$openSshBins</span> <span class="p">=</span> <span class="p">(</span><span class="nb">Get-ChildItem</span> <span class="s1">'C:\WINDOWS\System32\OpenSSH\'</span><span class="p">).</span><span class="n">Name</span>
 <span class="nb">Expand-Archive</span> <span class="n">-Path</span> <span class="p">.\</span><span class="n">OpenSSH-Win64</span><span class="p">.</span><span class="n">zip</span> <span class="n">-DestinationPath</span> <span class="p">.</span>
 <span class="n">takeown</span><span class="p">.</span><span class="n">exe</span> <span class="p">/</span><span class="n">a</span> <span class="p">/</span><span class="nb">r </span><span class="p">/</span><span class="n">f</span> <span class="n">C</span><span class="p">:\</span><span class="n">Windows</span><span class="p">\</span><span class="n">System32</span><span class="p">\</span><span class="n">OpenSSH</span><span class="p">\</span>
-<span class="n">icacls</span><span class="p">.</span><span class="n">exe</span> <span class="s1">&#39;C:\Windows\System32\OpenSSH&#39;</span> <span class="p">/</span><span class="n">grant</span> <span class="s1">&#39;BUILTIN\Administrators:(OI)(CI)F&#39;</span>
-<span class="n">icacls</span><span class="p">.</span><span class="n">exe</span> <span class="s1">&#39;C:\Windows\System32\OpenSSH&#39;</span> <span class="p">/</span><span class="n">grant</span> <span class="s1">&#39;BUILTIN\Administrators:F&#39;</span> <span class="p">/</span><span class="n">t</span>
+<span class="n">icacls</span><span class="p">.</span><span class="n">exe</span> <span class="s1">'C:\Windows\System32\OpenSSH'</span> <span class="p">/</span><span class="n">grant</span> <span class="s1">'BUILTIN\Administrators:(OI)(CI)F'</span>
+<span class="n">icacls</span><span class="p">.</span><span class="n">exe</span> <span class="s1">'C:\Windows\System32\OpenSSH'</span> <span class="p">/</span><span class="n">grant</span> <span class="s1">'BUILTIN\Administrators:F'</span> <span class="p">/</span><span class="n">t</span>
 <span class="nb">Stop-Service</span> <span class="n">ssh-agent</span>
 <span class="nv">$openSshBins</span> <span class="p">|</span> <span class="p">%{</span> <span class="nb">Copy-Item</span> <span class="n">-Path</span> <span class="p">.\</span><span class="n">OpenSSH-Win64</span><span class="p">\</span><span class="nv">$_</span> <span class="n">-Destination</span> <span class="n">C</span><span class="p">:\</span><span class="n">Windows</span><span class="p">\</span><span class="n">System32</span><span class="p">\</span><span class="n">OpenSSH</span><span class="p">\</span> <span class="p">}</span>
 <span class="nb">Start-Service</span> <span class="n">ssh-agent</span>
@@ -3347,7 +3347,7 @@ Additionally we'll insert <code>sbin/iw dev wlan0 set power_save off</code> to d
 <span class="c1"># rc.local</span>
 <span class="c1">#</span>
 <span class="c1"># This script is executed at the end of each multiuser runlevel.</span>
-<span class="c1"># Make sure that the script will &quot;exit 0&quot; on success or any other</span>
+<span class="c1"># Make sure that the script will "exit 0" on success or any other</span>
 <span class="c1"># value on error.</span>
 <span class="c1">#</span>
 <span class="c1"># In order to enable or disable this script just change the execution</span>
@@ -3357,8 +3357,8 @@ Additionally we'll insert <code>sbin/iw dev wlan0 set power_save off</code> to d
 
 <span class="c1"># Print the IP address</span>
 <span class="nv">_IP</span><span class="o">=</span><span class="k">$(</span>hostname<span class="w"> </span>-I<span class="k">)</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">true</span>
-<span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$_IP</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
-<span class="w">  </span><span class="nb">printf</span><span class="w"> </span><span class="s2">&quot;My IP address is %s\n&quot;</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$_IP</span><span class="s2">&quot;</span>
+<span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="s2">"</span><span class="nv">$_IP</span><span class="s2">"</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">  </span><span class="nb">printf</span><span class="w"> </span><span class="s2">"My IP address is %s\n"</span><span class="w"> </span><span class="s2">"</span><span class="nv">$_IP</span><span class="s2">"</span>
 <span class="k">fi</span>
 
 <span class="hll">/usr/bin/tvservice<span class="w"> </span>-o

@@ -3166,7 +3166,7 @@ Let's start with hostap.</p>
 <span class="c1"># file and hostapd will be started during system boot. An example configuration</span>
 <span class="c1"># file can be found at /usr/share/doc/hostapd/examples/hostapd.conf.gz</span>
 <span class="c1">#</span>
-<span class="hll"><span class="nv">DAEMON_CONF</span><span class="o">=</span><span class="s2">&quot;/etc/hostapd/hostapd.conf&quot;</span>
+<span class="hll"><span class="nv">DAEMON_CONF</span><span class="o">=</span><span class="s2">"/etc/hostapd/hostapd.conf"</span>
 </span>
 <span class="c1"># Additional daemon options to be appended to hostapd command:-</span>
 <span class="c1">#       -d   show more debug messages (-dd for even more)</span>
@@ -3176,7 +3176,7 @@ Let's start with hostap.</p>
 <span class="c1"># Note that -B (daemon mode) and -P (pidfile) options are automatically</span>
 <span class="c1"># configured by the init.d script and must not be added to DAEMON_OPTS.</span>
 <span class="c1">#</span>
-<span class="c1">#DAEMON_OPTS=&quot;&quot;</span>
+<span class="c1">#DAEMON_OPTS=""</span>
 </code></pre></div></td></tr></table></div>
 <p>Now let's edit this hostapd.conf file to configure our access point:</p>
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">/etc/hostapd/hostapd.conf</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
@@ -3306,7 +3306,7 @@ Make sure you are still inside the OTCamera directory.</p>
 <span class="c1"># rc.local</span>
 <span class="c1">#</span>
 <span class="c1"># This script is executed at the end of each multiuser runlevel.</span>
-<span class="c1"># Make sure that the script will &quot;exit 0&quot; on success or any other</span>
+<span class="c1"># Make sure that the script will "exit 0" on success or any other</span>
 <span class="c1"># value on error.</span>
 <span class="c1">#</span>
 <span class="c1"># In order to enable or disable this script just change the execution</span>
@@ -3316,14 +3316,14 @@ Make sure you are still inside the OTCamera directory.</p>
 
 <span class="c1"># Print the IP address</span>
 <span class="nv">_IP</span><span class="o">=</span><span class="k">$(</span>hostname<span class="w"> </span>-I<span class="k">)</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">true</span>
-<span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$_IP</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
-<span class="w">  </span><span class="nb">printf</span><span class="w"> </span><span class="s2">&quot;My IP address is %s\n&quot;</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$_IP</span><span class="s2">&quot;</span>
+<span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="s2">"</span><span class="nv">$_IP</span><span class="s2">"</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">  </span><span class="nb">printf</span><span class="w"> </span><span class="s2">"My IP address is %s\n"</span><span class="w"> </span><span class="s2">"</span><span class="nv">$_IP</span><span class="s2">"</span>
 <span class="k">fi</span>
 
 /usr/bin/tvservice<span class="w"> </span>-o
 /sbin/iw<span class="w"> </span>dev<span class="w"> </span>wlan0<span class="w"> </span><span class="nb">set</span><span class="w"> </span>power_save<span class="w"> </span>off
 
-<span class="hll">/bin/bash<span class="w"> </span>/usr/local/bin/wifistart<span class="s2">&quot;</span>
+<span class="hll">/bin/bash<span class="w"> </span>/usr/local/bin/wifistart<span class="s2">"</span>
 </span>
 <span class="s2">exit 0</span>
 </code></pre></div></td></tr></table></div>

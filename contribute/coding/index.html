@@ -3529,7 +3529,7 @@ Below we defined what we consider the most important standards.</p>
 <p>Each module, function, class or method should be described in a docstring (<a href="https://google.github.io/styleguide/pyguide.html#381-docstrings">Google style</a>)</p>
 <h3 id="docstrings-for-modules">Docstrings for Modules<a class="headerlink" href="#docstrings-for-modules" title="Permanent link">&para;</a></h3>
 <p>Each file should start with the <a href="../vscode/#snippets">license snippet</a> followed by a docstring describing the contents and usage of the module:</p>
-<div class="highlight"><pre><span></span><code><span class="sd">&quot;&quot;&quot;A one line summary of the module or program, terminated by a period.</span>
+<div class="highlight"><pre><span></span><code><span class="sd">"""A one line summary of the module or program, terminated by a period.</span>
 
 <span class="sd">Leave one blank line.  The rest of this docstring should contain an</span>
 <span class="sd">overall description of the module or program.  Optionally, it may also</span>
@@ -3540,23 +3540,23 @@ Below we defined what we consider the most important standards.</p>
 
 <span class="sd">  foo = ClassFoo()</span>
 <span class="sd">  bar = foo.FunctionBar()</span>
-<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">"""</span>
 </code></pre></div>
 <h3 id="docstrings-for-functions">Docstrings for Functions<a class="headerlink" href="#docstrings-for-functions" title="Permanent link">&para;</a></h3>
 <p>Each function must be described by a docstring:</p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">hello_world</span><span class="p">(</span><span class="n">message</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;Hello World&quot;</span><span class="p">,</span> <span class="n">author</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;Santa Claus&quot;</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Deliver a message from an author to the world.</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">hello_world</span><span class="p">(</span><span class="n">message</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">"Hello World"</span><span class="p">,</span> <span class="n">author</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">"Santa Claus"</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Deliver a message from an author to the world.</span>
 
-<span class="sd">    &quot;author says message&quot;</span>
+<span class="sd">    "author says message"</span>
 
 <span class="sd">    Args:</span>
-<span class="sd">        message (str, optional): Message to deliver. Defaults to &quot;Hello World&quot;.</span>
-<span class="sd">        author (str, optional): Author name. Defaults to &quot;Santa Claus&quot;.</span>
+<span class="sd">        message (str, optional): Message to deliver. Defaults to "Hello World".</span>
+<span class="sd">        author (str, optional): Author name. Defaults to "Santa Claus".</span>
 
 <span class="sd">    Returns:</span>
 <span class="sd">        str: the message said</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">msg</span> <span class="o">=</span> <span class="n">author</span> <span class="o">+</span> <span class="s2">&quot; says &quot;</span> <span class="o">+</span> <span class="n">message</span>
+<span class="sd">    """</span>
+    <span class="n">msg</span> <span class="o">=</span> <span class="n">author</span> <span class="o">+</span> <span class="s2">" says "</span> <span class="o">+</span> <span class="n">message</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
 
     <span class="k">return</span> <span class="n">msg</span>

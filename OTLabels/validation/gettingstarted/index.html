@@ -3335,7 +3335,7 @@ As a prerequisite the package manager <a href="https://brew.sh">Homebrew</a> is 
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/OpenTrafficCam/OTValidate.git
 <span class="nb">cd</span><span class="w"> </span>OTValidate
 brew<span class="w"> </span>install<span class="w"> </span>openblas
-<span class="nv">OPENBLAS</span><span class="o">=</span><span class="k">$(</span>brew<span class="w"> </span>--prefix<span class="w"> </span>openblas<span class="k">)</span><span class="w"> </span><span class="nv">CFLAGS</span><span class="o">=</span><span class="s2">&quot;-falign-functions=8 </span><span class="si">${</span><span class="nv">CFLAGS</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span><span class="nv">scipy</span><span class="o">==</span><span class="m">1</span>.7.2
+<span class="nv">OPENBLAS</span><span class="o">=</span><span class="k">$(</span>brew<span class="w"> </span>--prefix<span class="w"> </span>openblas<span class="k">)</span><span class="w"> </span><span class="nv">CFLAGS</span><span class="o">=</span><span class="s2">"-falign-functions=8 </span><span class="si">${</span><span class="nv">CFLAGS</span><span class="si">}</span><span class="s2">"</span><span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span><span class="nv">scipy</span><span class="o">==</span><span class="m">1</span>.7.2
 pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
 pip<span class="w"> </span>install<span class="w"> </span>.
 </code></pre></div>
@@ -3373,19 +3373,19 @@ make<span class="w"> </span>install_m1
 <div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">OTValidate</span><span class="w">  </span><span class="kn">import</span> <span class="n">evaluate_detection_performance</span>
 
 <span class="c1"># path to the directory containing the annotated dataset in otdet format</span>
-<span class="n">gt_data</span> <span class="o">=</span> <span class="s2">&quot;path/to/data1&quot;</span>
+<span class="n">gt_data</span> <span class="o">=</span> <span class="s2">"path/to/data1"</span>
 
 <span class="c1"># model weights</span>
-<span class="n">model1</span> <span class="o">=</span> <span class="s2">&quot;path/to/model_weights1.pt&quot;</span>
-<span class="n">model2</span> <span class="o">=</span> <span class="s2">&quot;path/to/model_weights2.pt&quot;</span>
-<span class="n">model3</span> <span class="o">=</span> <span class="s2">&quot;path/to/model_weights3.pt&quot;</span>
+<span class="n">model1</span> <span class="o">=</span> <span class="s2">"path/to/model_weights1.pt"</span>
+<span class="n">model2</span> <span class="o">=</span> <span class="s2">"path/to/model_weights2.pt"</span>
+<span class="n">model3</span> <span class="o">=</span> <span class="s2">"path/to/model_weights3.pt"</span>
 </code></pre></div>
 <p>Use the <code>evaluate_detection_performance</code> function to calculate a set of object detection metrics of the respective models:</p>
 <div class="highlight"><pre><span></span><code><span class="n">evaluate_detection_performance</span><span class="p">(</span>
     <span class="n">path_to_model_weights</span><span class="o">=</span><span class="p">[</span><span class="n">model1</span><span class="p">,</span> <span class="n">model2</span><span class="p">,</span> <span class="n">model3</span><span class="p">],</span>
     <span class="n">yolo_path</span><span class="o">=</span><span class="n">yolo_path</span><span class="p">,</span>
     <span class="n">otdet_gt_dir</span><span class="o">=</span><span class="n">gt_data</span><span class="p">,</span>
-    <span class="n">is_gt_xyxy_format</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="c1"># whether the ground truth&#39;s bounding box is in xyxy or xywh format</span>
+    <span class="n">is_gt_xyxy_format</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="c1"># whether the ground truth's bounding box is in xyxy or xywh format</span>
     <span class="n">normalized</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
 <span class="p">)</span>
 </code></pre></div>
