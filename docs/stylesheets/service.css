@@ -1,0 +1,48 @@
+.cta-dual {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.md-typeset h2 {
+  text-align: center;
+}
+
+.three-header {
+  display: flex !important;
+  justify-content: space-around !important;
+  text-align: center;
+}
+.three-header > ul > li {
+    padding: 1.1rem 1rem;
+    font-size: 1.05rem;
+}
+
+.grid.cards.tech-details-3col > ul {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+/* Force 3 columns side-by-side */
+.grid.cards.three-col > ul {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 1rem;
+}
+
+/* Force single column (stacked) */
+.grid.cards.single-col > ul {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 1rem;
+}
+
+/* Responsive: stack on mobile */
+@media (max-width: 768px) {
+  .grid.cards.three-col > ul {
+    grid-template-columns: 1fr !important;
+  }
+}
