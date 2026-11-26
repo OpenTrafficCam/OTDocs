@@ -56,4 +56,4 @@ If you encounter problems, have questions or like to request features, please [o
 We welcome code contributions (e.g. fixing bugs or adding features) by the community.
 If you consider contributing, please check the [contribute section](https://opentrafficcam.org/contribute/) of this documentation first.
 
-If you like to receive professional support, please have a look at our [services](https://opentrafficcam.org/pricing/) or [contact us](mailto:team@opentrafficcam.org) for more information.
+If you like to receive professional support, please [contact us](mailto:team@opentrafficcam.org) for more information.
